@@ -44,13 +44,13 @@ jobs:
           cache-dependency-path: requirements.lock
 
       - name: Cache Argos English-Japanese model
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: .cache/argos
           key: argos-en-ja-${{ runner.os }}-v1
 
       - name: Restore feed HTTP validators
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: .cache/feed-state.json
           key: feed-state-${{ runner.os }}-${{ github.run_id }}-${{ github.run_attempt }}

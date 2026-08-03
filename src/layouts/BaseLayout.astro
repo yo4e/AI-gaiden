@@ -22,7 +22,6 @@ const props = Astro.props;
   </head>
   <body>
     <a class="skip-link" href="#main-content">本文へ移動</a>
-    <TrialBanner />
     <header class="site-header">
       <div class="container site-header__inner">
         <a class="brand" href="/" aria-label="AI外電 トップページ">
@@ -39,6 +38,7 @@ const props = Astro.props;
     <main id="main-content">
       <slot />
     </main>
+    <TrialBanner />
     <footer class="site-footer">
       <div class="container site-footer__inner">
         <div>

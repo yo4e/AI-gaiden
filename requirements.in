@@ -1,7 +1,7 @@
 --extra-index-url https://download.pytorch.org/whl/cpu
 
 argostranslate==1.11.0
-beautifulsoup4==4.14.3
+beautifulsoup4==4.15.0
 feedparser==6.0.12
 python-dateutil==2.9.0.post0
 PyYAML==6.0.3

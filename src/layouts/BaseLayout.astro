@@ -1,6 +1,5 @@
 ---
 import SeoHead from '../components/SeoHead.astro';
-import TrialBanner from '../components/TrialBanner.astro';
 import '../styles/global.css';
 import '../styles/theme.css';
 import type { ComponentProps } from 'astro/types';
@@ -38,7 +37,6 @@ const props = Astro.props;
     <main id="main-content">
       <slot />
     </main>
-    <TrialBanner />
     <footer class="site-footer">
       <div class="container site-footer__inner">
         <div>

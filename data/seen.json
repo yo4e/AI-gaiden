@@ -1,0 +1,64 @@
+{
+  "items": {
+    "url:0bc671dd2735ab91413c00dbc042fa8f4e9fb876acd613335d004c68d3d46d0a": {
+      "first_seen_at": "2026-08-03T03:07:13.737060Z",
+      "published_at": "2026-07-28T13:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/products-and-platforms/products/search/dinner-party-hosting-tips"
+    },
+    "url:388fcf76f805893583afbc4f1162f65a8fbb8ae6cc42f28a885840da4f39b22a": {
+      "first_seen_at": "2026-08-03T03:07:13.737060Z",
+      "published_at": "2026-07-28T13:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/products-and-platforms/products/search/ai-mode-real-world-tips"
+    },
+    "url:3bbd8b07cb5a7e5a41480671273e089153a1edb0e012ee6b9c140ab34f7b4abe": {
+      "first_seen_at": "2026-08-03T03:07:13.737060Z",
+      "published_at": "2026-07-27T16:00:00Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-getting-started"
+    },
+    "url:44555fb737bc2545bd6b3d31cd7e9a4709807d68ede8586899514ba10b54b77d": {
+      "first_seen_at": "2026-08-03T03:07:13.737060Z",
+      "published_at": "2026-07-30T17:30:24Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app"
+    },
+    "url:4e90420c69645ce576fce1fa06fbd03e9ca526dfc19600edad8ffcd0bf588612": {
+      "first_seen_at": "2026-08-03T03:07:13.737060Z",
+      "published_at": "2026-07-27T18:00:00Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly"
+    },
+    "url:859cdcef3df01ae8d929e50b9f9da9f8126fe435aacd0a43ca0bd2b8ba0b3f21": {
+      "first_seen_at": "2026-08-03T03:07:13.737060Z",
+      "published_at": "2026-07-30T15:09:09Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/Dharma-AI/gpu-management"
+    },
+    "url:96537f9acc12bc3d68e6b6fb2d661a65772f583697352d4f1c191b91c0ae113e": {
+      "first_seen_at": "2026-08-03T03:07:13.737060Z",
+      "published_at": "2026-07-27T09:32:20Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams"
+    },
+    "url:9c57623ef609667de3c28690663edbc3d6ea9d6e32d9bc0cafa73a9b64ae67ae": {
+      "first_seen_at": "2026-08-03T03:07:13.737060Z",
+      "published_at": "2026-07-28T16:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks"
+    },
+    "url:9c980868c23ca002eb7f08b08c24455bac730da795770a83d77edadb51dcb49e": {
+      "first_seen_at": "2026-08-03T03:07:13.737060Z",
+      "published_at": "2026-07-28T16:27:42Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-infrastructure"
+    },
+    "url:a5bc54280bf29efc8ba4026101ad5cf8b064542a06824bd9a96bcd6a316715e4": {
+      "first_seen_at": "2026-08-03T03:07:13.737060Z",
+      "published_at": "2026-07-28T15:01:45Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders"
+    }
+  }
+}

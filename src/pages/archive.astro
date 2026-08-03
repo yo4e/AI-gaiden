@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { formatJapaneseDate } from '../lib/site';
+
+const entries = (await getCollection('daily')).sort((a, b) =>
+  b.data.date.localeCompare(a.data.date),
+);
+const months = new Map<string, typeof entries>();
+for (const entry of entries) {
+  const month = entry.data.date.slice(0, 7);
+  months.set(month, [...(months.get(month) || []), entry]);
+}
+---
+
+<BaseLayout
+  title="海外AIニュース一覧・過去記事｜AI外電"
+  description="AI外電が公式RSSから自動収集・自動翻訳した海外AIニュースの日次ダイジェストを、月別に一覧できます。"
+>
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="パンくず">
+        <ol><li><a href="/">トップ</a></li><li>過去記事</li></ol>
+      </nav>
+      <p class="eyebrow">Archive</p>
+      <h1>海外AIニュース一覧・過去記事</h1>
+      <p>公式発表を日本時間の日付ごとにまとめた、日本語ダイジェストのアーカイブです。</p>
+    </div>
+  </header>
+  <div class="container section">
+    {
+      months.size > 0 ? (
+        [...months].map(([month, monthEntries]) => (
+          <section class="archive-month">
+            <h2>{month.replace('-', '年')}月</h2>
+            <ul class="archive-list">
+              {monthEntries.map((entry) => (
+                <li>
+                  <time datetime={entry.data.date}>{formatJapaneseDate(entry.data.date)}</time>
+                  <a href={`/daily/${entry.data.date}/`}>{entry.data.title}</a>
+                  <small>
+                    {entry.data.itemCount}件・{entry.data.sources.join(' / ')}
+                  </small>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))
+      ) : (
+        <p class="empty-state">公開済みの日次ダイジェストはまだありません。</p>
+      )
+    }
+  </div>
+</BaseLayout>

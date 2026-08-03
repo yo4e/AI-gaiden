@@ -1,0 +1,64 @@
+---
+import SourceBadge from './SourceBadge.astro';
+import { formatJapaneseDateTime } from '../lib/site';
+
+interface NewsItem {
+  titleJa: string;
+  titleOriginal: string;
+  briefJa: string;
+  url: string;
+  sourceId: string;
+  sourceName: string;
+  publishedAt: string;
+  imageUrl?: string | null;
+  imageLicense?: string | null;
+  author?: string | null;
+  translationStatus: 'complete' | 'partial';
+}
+
+interface Props {
+  item: NewsItem;
+}
+
+const { item } = Astro.props;
+---
+
+<article class="news-card">
+  <div class="news-card__image-wrap">
+    <img
+      class="news-card__image"
+      src={item.imageUrl || '/default-news-image.svg'}
+      alt={item.imageUrl ? `${item.titleJa}のRSS配信画像` : ''}
+      width="640"
+      height="360"
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+    <small>
+      画像: {item.imageUrl ? `${item.sourceName}公式RSS` : 'AI外電 既定画像'}
+      {item.imageLicense && `（${item.imageLicense}）`}
+    </small>
+  </div>
+  <div class="news-card__body">
+    <div class="news-card__meta">
+      <SourceBadge id={item.sourceId} name={item.sourceName} />
+      <time datetime={item.publishedAt}>{formatJapaneseDateTime(item.publishedAt)} JST</time>
+    </div>
+    <h2>{item.titleJa}</h2>
+    <p class="original-title">
+      <span>原文タイトル:</span>
+      <span lang="en">{item.titleOriginal}</span>
+    </p>
+    <p>{item.briefJa}</p>
+    {item.author && <p class="byline">著者: {item.author}</p>}
+    {
+      item.translationStatus === 'partial' && (
+        <p class="translation-note">
+          概要を掲載できないため、タイトルと定型案内のみ掲載しています。
+        </p>
+      )
+    }
+    <a class="official-link" href={item.url} rel="noopener noreferrer">公式発表を原文で確認する</a>
+  </div>
+</article>

@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.astro/
+.cache/
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.DS_Store

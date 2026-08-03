@@ -1,0 +1,12 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+argostranslate==1.11.0
+beautifulsoup4==4.14.3
+feedparser==6.0.12
+python-dateutil==2.9.0.post0
+PyYAML==6.0.3
+requests==2.32.5
+pytest==8.4.2
+ruff==0.16.1
+torch==2.8.0+cpu ; sys_platform == "linux"
+torch==2.8.0 ; sys_platform != "linux"

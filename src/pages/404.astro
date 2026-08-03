@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="ページが見つかりません｜AI外電"
+  description="お探しのページは移動または削除された可能性があります。AI外電のトップまたは過去記事をご覧ください。"
+  noindex={true}
+>
+  <div class="narrow section prose">
+    <p class="eyebrow">404 Not Found</p>
+    <h1>ページが見つかりません</h1>
+    <p>URLが正しいかご確認ください。日次ダイジェストは新着があった日だけ生成されます。</p>
+    <p><a class="button-link" href="/">トップへ戻る</a> <a href="/archive/">過去記事を見る</a></p>
+  </div>
+</BaseLayout>

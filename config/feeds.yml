@@ -1,0 +1,51 @@
+feeds:
+  - id: google-ai
+    name: Google AI
+    url: https://blog.google/technology/ai/rss/
+    homepage: https://blog.google/technology/ai/
+    language: en
+    enabled: true
+    priority: 100
+    max_items_per_run: 5
+    image_policy: rss_only
+    categories:
+      - artificial-intelligence
+
+  - id: hugging-face
+    name: Hugging Face Blog
+    url: https://huggingface.co/blog/feed.xml
+    homepage: https://huggingface.co/blog
+    language: en
+    enabled: true
+    priority: 90
+    max_items_per_run: 5
+    image_policy: rss_only
+    categories:
+      - machine-learning
+      - open-source
+
+  - id: github-ai-ml
+    name: GitHub AI & ML
+    url: https://github.blog/ai-and-ml/feed/
+    homepage: https://github.blog/ai-and-ml/
+    language: en
+    enabled: true
+    priority: 80
+    max_items_per_run: 5
+    image_policy: rss_only
+    categories:
+      - developer-tools
+      - artificial-intelligence
+
+  - id: nvidia-deep-learning
+    name: NVIDIA Deep Learning Blog
+    url: https://blogs.nvidia.com/blog/category/deep-learning/feed/
+    homepage: https://blogs.nvidia.com/blog/category/deep-learning/
+    language: en
+    enabled: true
+    priority: 70
+    max_items_per_run: 5
+    image_policy: rss_only
+    categories:
+      - deep-learning
+      - hardware

@@ -1,0 +1,6 @@
+name: AI外電
+seo_title: 海外AIニュース速報｜AI外電
+headline: 海外AI公式発表を日本語で毎日ダイジェスト
+timezone: Asia/Tokyo
+repository_url: https://github.com/yo4e/AI-gaiden
+default_site_url: http://localhost:4321

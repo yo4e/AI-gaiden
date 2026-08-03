@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Example Official Atom Feed</title>
+  <id>https://atom.example.com/</id>
+  <updated>2026-08-03T01:00:00Z</updated>
+  <entry>
+    <title>Research toolkit update</title>
+    <link rel="alternate" href="https://atom.example.com/posts/toolkit/?ref=feed" />
+    <id>tag:atom.example.com,2026:toolkit</id>
+    <published>2026-08-03T00:30:00+00:00</published>
+    <updated>2026-08-03T01:00:00Z</updated>
+    <author><name>Example Labs</name></author>
+    <summary type="html">&lt;p&gt;The official release adds documented tooling.&lt;/p&gt;&lt;style&gt;body{display:none}&lt;/style&gt;</summary>
+    <link rel="enclosure" href="https://cdn.atom.example.com/toolkit.png" type="image/png" />
+  </entry>
+</feed>

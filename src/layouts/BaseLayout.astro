@@ -1,0 +1,56 @@
+---
+import SeoHead from '../components/SeoHead.astro';
+import TrialBanner from '../components/TrialBanner.astro';
+import '../styles/global.css';
+import type { ComponentProps } from 'astro/types';
+
+type SeoProps = ComponentProps<typeof SeoHead>;
+
+interface Props extends SeoProps {}
+
+const props = Astro.props;
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <SeoHead {...props} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">本文へ移動</a>
+    <TrialBanner />
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="/" aria-label="AI外電 トップページ">
+          <span class="brand__mark" aria-hidden="true">外</span>
+          <span>AI外電</span>
+        </a>
+        <nav aria-label="主要メニュー">
+          <a href="/archive/">過去記事</a>
+          <a href="/sources/">情報源</a>
+          <a href="/about/">このサイトについて</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div>
+          <strong>AI外電</strong>
+          <p>海外AI公式発表を、日本語で読みやすく。</p>
+        </div>
+        <nav aria-label="フッターメニュー">
+          <a href="/about/">運用方針</a>
+          <a href="/privacy/">プライバシー</a>
+          <a href="/feed.xml">RSS</a>
+        </nav>
+        <small>© {new Date().getFullYear()} AI外電 — 自動収集・自動翻訳による試験運用</small>
+      </div>
+    </footer>
+  </body>
+</html>

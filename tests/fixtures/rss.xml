@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Example Official AI Feed</title>
+    <link>https://example.com/ai</link>
+    <description>Fixture feed</description>
+    <item>
+      <title><![CDATA[<b>Example Model v2.1</b> is available]]></title>
+      <link>https://example.com/news/model?utm_source=test&amp;keep=yes#section</link>
+      <guid>fixture-model-21</guid>
+      <pubDate>Mon, 03 Aug 2026 00:00:00 +0000</pubDate>
+      <author>AI Research Team</author>
+      <description><![CDATA[
+        <p>The team introduced a model for documented research tasks. It includes a new evaluation.</p>
+        <script>alert('discard me')</script>
+        <img src="https://cdn.example.com/summary.jpg" alt="fixture" />
+      ]]></description>
+      <media:thumbnail url="https://cdn.example.com/thumb.jpg" />
+      <media:content url="https://cdn.example.com/content.jpg" type="image/jpeg" />
+      <enclosure url="https://cdn.example.com/enclosure.jpg" type="image/jpeg" />
+    </item>
+    <item>
+      <title>GUID-only official entry</title>
+      <guid isPermaLink="true">https://example.com/news/guid-only</guid>
+      <pubDate>Sun, 02 Aug 2026 23:00:00 GMT</pubDate>
+      <description>A short official-feed summary.</description>
+    </item>
+  </channel>
+</rss>

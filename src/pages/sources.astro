@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { sources } from '../data/sources';
+---
+
+<BaseLayout
+  title="海外AI公式ニュースの情報源一覧｜AI外電"
+  description="AI外電が取得対象とするGoogle AI、Hugging Face、GitHub、NVIDIAの公式RSSと、RSS限定の収集方針を紹介します。"
+>
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="パンくず">
+        <ol><li><a href="/">トップ</a></li><li>情報源</li></ol>
+      </nav>
+      <p class="eyebrow">Official sources</p>
+      <h1>海外AI公式ニュースの情報源一覧</h1>
+      <p>
+        以下の公式RSS/Atomのみを取得します。記事ページのHTMLから情報や画像を補完することはありません。
+      </p>
+    </div>
+  </header>
+  <div class="container section">
+    <div class="source-grid">
+      {
+        sources.map((source) => (
+          <article class="source-card" id={source.id}>
+            <h2>{source.name}</h2>
+            <p>{source.description}</p>
+            <dl>
+              <dt>状態</dt>
+              <dd class={source.enabled ? 'status-active' : ''}>
+                {source.enabled ? '取得中' : '一時停止'}
+              </dd>
+              <dt>公式サイト</dt>
+              <dd>
+                <a href={source.homepage} rel="noopener noreferrer">
+                  {source.homepage}
+                </a>
+              </dd>
+              <dt>公式RSS</dt>
+              <dd>
+                <a href={source.feedUrl} rel="noopener noreferrer">
+                  {source.feedUrl}
+                </a>
+              </dd>
+              <dt>画像方針</dt>
+              <dd>RSSに明示された画像のみ</dd>
+            </dl>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</BaseLayout>

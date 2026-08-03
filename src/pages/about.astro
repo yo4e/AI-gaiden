@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { REPOSITORY_URL } from '../lib/site';
+---
+
+<BaseLayout
+  title="AI外電について｜海外AIニュース自動ダイジェスト"
+  description="AI外電は、海外AI企業・開発者組織の公式RSSを自動収集し、ローカル翻訳モデルで日本語の日刊短報を生成する試験運用サイトです。"
+>
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="パンくず">
+        <ol><li><a href="/">トップ</a></li><li>AI外電について</li></ol>
+      </nav>
+      <p class="eyebrow">About AI Gaiden</p>
+      <h1>AI外電について</h1>
+      <p>海外のAI公式発表へ、日本語から素早くたどり着くための小さな日刊ダイジェストです。</p>
+    </div>
+  </header>
+  <article class="narrow section prose">
+    <h2>試験運用中です</h2>
+    <p>
+      AI外電は現在、収集・翻訳・静的ページ生成を無人で安全に継続できるか検証しています。自動翻訳には誤りがあり得るため、判断や引用の前には必ず公式リンクの原文をご確認ください。
+    </p>
+
+    <h2>更新の仕組み</h2>
+    <ol>
+      <li>設定済みの公式RSS/AtomをGitHub Actionsが毎朝取得します。</li>
+      <li>RSS内のタイトルと短い概要だけをサニタイズし、重複を除外します。</li>
+      <li>外部APIを使わず、実行環境内のArgos Translateで英語から日本語へ翻訳します。</li>
+      <li>事実や評価を加えない定型文で日次Markdownを生成し、検証成功時だけ公開します。</li>
+    </ol>
+
+    <h2>取得しないもの</h2>
+    <p>
+      元記事ページのHTMLはスクレイピングしません。RSSにない本文、<code>og:image</code
+      >、SNS投稿などを取りに行かず、RSSに含まれない事実を推測で補いません。OpenAIを含む外部AI
+      APIや翻訳APIも使用しません。
+    </p>
+
+    <h2>著作権と画像</h2>
+    <p>
+      原文タイトル、配信元、公式リンクを明示し、RSS概要は短い日本語案内へ変換して全文転載を避けます。画像はRSSに明示されたURLだけを参照し、ライセンス表記が配信されている場合は併記します。権利は各権利者に帰属します。
+    </p>
+
+    <h2>免責と連絡先</h2>
+    <p>
+      取得漏れ、配信遅延、誤訳、リンク切れが生じる可能性があります。重要な情報は公式発表を優先してください。不具合や掲載に関する連絡は、<a
+        href={`${REPOSITORY_URL}/issues`}
+        rel="noopener noreferrer">GitHub Issues</a
+      >で受け付けます。
+    </p>
+  </article>
+</BaseLayout>

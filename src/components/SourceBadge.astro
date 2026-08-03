@@ -1,0 +1,10 @@
+---
+interface Props {
+  id: string;
+  name: string;
+}
+
+const { id, name } = Astro.props;
+---
+
+<a class="source-badge" href={`/sources/#${id}`}>{name}</a>

@@ -1,0 +1,114 @@
+---
+import { getCollection } from 'astro:content';
+import NewsCard from '../components/NewsCard.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  DEFAULT_DESCRIPTION,
+  DEFAULT_TITLE,
+  SITE_HEADLINE,
+  formatJapaneseDateTime,
+} from '../lib/site';
+
+const entries = (await getCollection('daily')).sort((a, b) =>
+  b.data.date.localeCompare(a.data.date),
+);
+const latest = entries[0];
+const recent = entries.slice(0, 7);
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'AI外電',
+  alternateName: DEFAULT_TITLE,
+  url: new URL('/', Astro.site).href,
+  description: DEFAULT_DESCRIPTION,
+  inLanguage: 'ja',
+};
+---
+
+<BaseLayout title={DEFAULT_TITLE} description={DEFAULT_DESCRIPTION} structuredData={structuredData}>
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">Official AI News / Japanese Digest</p>
+      <h1>{SITE_HEADLINE}</h1>
+      <p class="hero__description">
+        海外AIニュースと生成AIの最新情報を、各社の公式RSSだけから収集。原文タイトルと公式リンクを添え、日本語の短報として毎日まとめます。
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Latest digest</p>
+          <h2>{latest ? `${latest.data.date} の海外AIニュース` : '最新の海外AIニュース'}</h2>
+        </div>
+        {latest && <a href={`/daily/${latest.data.date}/`}>日次ページを開く</a>}
+      </div>
+      {
+        latest ? (
+          <>
+            <p>
+              最終更新:{' '}
+              <time datetime={latest.data.updatedAt}>
+                {formatJapaneseDateTime(latest.data.updatedAt)} JST
+              </time>
+            </p>
+            <div class="news-list">
+              {latest.data.items.map((item) => (
+                <NewsCard item={item} />
+              ))}
+            </div>
+          </>
+        ) : (
+          <div class="empty-state">
+            <strong>公開済みのダイジェストはまだありません。</strong>
+            <p>初回の日次更新が成功すると、ここに公式発表の日本語短報が表示されます。</p>
+          </div>
+        )
+      }
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Recent editions</p>
+          <h2>過去7回のダイジェスト</h2>
+        </div>
+        <a href="/archive/">すべての過去記事</a>
+      </div>
+      {
+        recent.length > 0 ? (
+          <ul class="archive-preview">
+            {recent.map((entry) => (
+              <li>
+                <a href={`/daily/${entry.data.date}/`}>
+                  <strong>{entry.data.date}</strong>
+                  <span>
+                    {entry.data.itemCount}件・{entry.data.sources.join(' / ')}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p class="empty-state">日次ダイジェストの生成後、ここから過去の記事へ移動できます。</p>
+        )
+      }
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <p class="eyebrow">Sources & policy</p>
+      <h2>公式発表へ戻れる、透明なダイジェスト</h2>
+      <p>
+        Google AI、Hugging
+        Face、GitHub、NVIDIAの公式RSSを対象とし、記事ページのスクレイピングは行いません。日本語はローカル翻訳モデルと定型文で生成し、確認に必要な原文タイトルと配信元を必ず併記します。
+      </p>
+      <a class="button-link" href="/sources/">情報源と取得方針を見る</a>
+    </div>
+  </section>
+</BaseLayout>

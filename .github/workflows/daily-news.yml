@@ -2,8 +2,8 @@ name: Daily official AI news
 
 on:
   schedule:
-    # Every 3 hours, preserving the original 07:17 JST run.
-    - cron: '17 1,4,7,10,13,16,19,22 * * *'
+    # Temporary hourly validation run at :17; return to every 3 hours after confirming stability.
+    - cron: '17 * * * *'
   workflow_dispatch:
     inputs:
       bootstrap_days:
@@ -71,7 +71,7 @@ jobs:
           python scripts/validate_repository.py
 
       - name: Set up Node.js 22
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version-file: .nvmrc
           cache: npm

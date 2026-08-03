@@ -1,0 +1,60 @@
+:root {
+  --bg: #eeeff3;
+  --surface: #c4c8db;
+  --text: #0b0b0f;
+  --muted: #4a4a55;
+  --primary: #7a30d5;
+  --accent: #c6c928;
+
+  /* Compatibility aliases used by the existing stylesheet. */
+  --ink: var(--text);
+  --paper: var(--bg);
+  --green: var(--primary);
+  --gold: var(--accent);
+  --green-soft: #e6d8f7;
+  --line: #a6aabd;
+  --shadow: 0 10px 30px rgb(11 11 15 / 10%);
+}
+
+.skip-link {
+  background: var(--bg);
+}
+
+.trial-banner {
+  color: var(--bg);
+  background: var(--primary);
+}
+
+.site-header {
+  background: rgb(238 239 243 / 94%);
+}
+
+.brand__mark,
+.official-link,
+.button-link {
+  color: var(--bg);
+}
+
+.hero {
+  background:
+    linear-gradient(110deg, rgb(122 48 213 / 14%), transparent 56%),
+    var(--surface);
+}
+
+.news-card__image-wrap {
+  background: var(--bg);
+}
+
+.source-badge {
+  border-color: #9c70d7;
+}
+
+.translation-note,
+.daily-note {
+  background: #f4f5d8;
+}
+
+.site-footer {
+  color: var(--bg);
+  background: var(--text);
+}

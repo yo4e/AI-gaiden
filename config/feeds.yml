@@ -1,4 +1,18 @@
 feeds:
+  - id: openai-news
+    name: OpenAI News
+    url: https://openai.com/news/rss.xml
+    homepage: https://openai.com/news/
+    language: en
+    enabled: true
+    priority: 110
+    max_items_per_run: 5
+    image_policy: rss_only
+    categories:
+      - artificial-intelligence
+      - product
+      - research
+
   - id: google-ai
     name: Google AI
     url: https://blog.google/technology/ai/rss/
@@ -10,6 +24,20 @@ feeds:
     image_policy: rss_only
     categories:
       - artificial-intelligence
+
+  - id: google-deepmind
+    name: Google DeepMind
+    url: https://deepmind.google/blog/rss.xml
+    homepage: https://deepmind.google/blog/
+    language: en
+    enabled: true
+    priority: 95
+    max_items_per_run: 5
+    image_policy: rss_only
+    categories:
+      - artificial-intelligence
+      - research
+      - safety
 
   - id: hugging-face
     name: Hugging Face Blog
@@ -36,6 +64,20 @@ feeds:
     categories:
       - developer-tools
       - artificial-intelligence
+
+  - id: aws-machine-learning
+    name: AWS Artificial Intelligence
+    url: https://aws.amazon.com/blogs/machine-learning/feed/
+    homepage: https://aws.amazon.com/blogs/machine-learning/
+    language: en
+    enabled: true
+    priority: 75
+    max_items_per_run: 5
+    image_policy: rss_only
+    categories:
+      - artificial-intelligence
+      - machine-learning
+      - cloud
 
   - id: nvidia-deep-learning
     name: NVIDIA Deep Learning Blog

@@ -6,6 +6,12 @@
       "source": "google-ai",
       "url": "https://blog.google/products-and-platforms/products/search/dinner-party-hosting-tips"
     },
+    "url:129511f54188e7df4ed8e9053336c86e351ea4b1cebcb97326b55267c4322922": {
+      "first_seen_at": "2026-08-04T17:06:29.660372Z",
+      "published_at": "2026-08-04T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/learn-teach-chatgpt-work-codex"
+    },
     "url:3760a4949caa8e909bb3fa0034c4318087e544037959fa8a071a488a2599495f": {
       "first_seen_at": "2026-08-04T00:16:06.231356Z",
       "published_at": "2026-08-03T16:30:58Z",
@@ -42,6 +48,30 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly"
     },
+    "url:639d81441a0d947392fec3ea925322625063884e4fab0a9a5833310a2d78f30b": {
+      "first_seen_at": "2026-08-04T17:06:29.660372Z",
+      "published_at": "2026-08-04T13:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026"
+    },
+    "url:6bb3f934048965cc8fe40ff7286bc1d73fdff5cc902619e78dc98b0f853d7216": {
+      "first_seen_at": "2026-08-04T17:06:29.660372Z",
+      "published_at": "2026-08-03T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/alignment-multimodal-llms"
+    },
+    "url:7359c9bb4052aeb40e8235825a4a8259c5d95e9b83f2b21f70d4f0981e961ee5": {
+      "first_seen_at": "2026-08-04T17:06:29.660372Z",
+      "published_at": "2026-08-03T15:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/ai-agents-intensive-recap-2026"
+    },
+    "url:8434f80dc8576dd4ddf9d8039fc98ca4a025b6495b48a22bc51919ab454ccf34": {
+      "first_seen_at": "2026-08-04T17:06:29.660372Z",
+      "published_at": "2026-08-04T16:02:21Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/automated-web-insight-extraction-with-amazon-bedrock-agentcore"
+    },
     "url:859cdcef3df01ae8d929e50b9f9da9f8126fe435aacd0a43ca0bd2b8ba0b3f21": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
       "published_at": "2026-07-30T15:09:09Z",
@@ -77,6 +107,12 @@
       "published_at": "2026-07-28T15:01:45Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders"
+    },
+    "url:aa21db80f8b7b7664c23f0b5de6fc014a64920e8fdb45e2877008c81969f17ab": {
+      "first_seen_at": "2026-08-04T17:06:29.660372Z",
+      "published_at": "2026-08-04T13:58:29Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b"
     },
     "url:deec56a13e2b9b57f5b59222a713843e545d12e56c5cfa7a8c4462845968c02e": {
       "first_seen_at": "2026-08-04T00:16:06.231356Z",

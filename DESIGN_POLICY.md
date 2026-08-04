@@ -10,7 +10,13 @@
 
 ## コンセプト画像
 
+### 初期コンセプト
+
 ![AI外電 デザイン改修コンセプト](./ChatGPT%20Image%202026%E5%B9%B48%E6%9C%884%E6%97%A5%2010_39_05.png)
+
+### Product Design反映案
+
+![AI外電 Product Design反映案](./ai-gaiden-product-design-policy.png)
 
 ## 1. デザインの基本思想
 

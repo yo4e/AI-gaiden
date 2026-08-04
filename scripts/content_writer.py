@@ -10,6 +10,7 @@ from zoneinfo import ZoneInfo
 import yaml
 
 from scripts.models import PreparedItem
+from scripts.translation_quality import QUALITY_GATE_REASON_CODES
 from scripts.utils import is_http_url, parse_frontmatter
 
 JST = ZoneInfo("Asia/Tokyo")
@@ -115,6 +116,17 @@ def article_data_from_item(
         "imageLicense": item.image_license,
         "author": item.author,
         "translationStatus": item.translation_status,
+        "titleTranslationStatus": item.title_translation_status,
+        "summaryTranslationStatus": item.summary_translation_status,
+        "titleQualityGate": item.title_quality_gate,
+        "summaryQualityGate": item.summary_quality_gate,
+        "titleFallbackApplied": item.title_fallback_applied,
+        "summaryFallbackApplied": item.summary_fallback_applied,
+        "titleFallbackReasons": list(item.title_fallback_reasons),
+        "summaryFallbackReasons": list(item.summary_fallback_reasons),
+        "translationFallbackReasons": sorted(
+            set(item.title_fallback_reasons) | set(item.summary_fallback_reasons)
+        ),
         "dedupeKey": item.dedupe_key,
         "fetchedAt": fetched,
         "generatedAt": created,
@@ -169,6 +181,37 @@ def validate_article_data(data: dict[str, Any]) -> None:
             raise ContentValidationError(f"{key} must be an HTTP(S) URL")
     if data["translationStatus"] not in {"complete", "partial"}:
         raise ContentValidationError("translationStatus must be complete or partial")
+    translation_statuses = {
+        "legacy",
+        "translated",
+        "quality_rejected",
+        "translation_failed",
+        "source_missing",
+    }
+    for key in ("titleTranslationStatus", "summaryTranslationStatus"):
+        if key in data and data[key] not in translation_statuses:
+            raise ContentValidationError(f"{key} has an unsupported value")
+    for key in ("titleQualityGate", "summaryQualityGate"):
+        if key in data and data[key] not in {"passed", "rejected", "not_run"}:
+            raise ContentValidationError(f"{key} has an unsupported value")
+    for key in (
+        "titleFallbackApplied",
+        "summaryFallbackApplied",
+    ):
+        if key in data and not isinstance(data[key], bool):
+            raise ContentValidationError(f"{key} must be a boolean")
+    for key in (
+        "titleFallbackReasons",
+        "summaryFallbackReasons",
+        "translationFallbackReasons",
+    ):
+        if key in data and (
+            not isinstance(data[key], list)
+            or not all(isinstance(reason, str) and reason for reason in data[key])
+        ):
+            raise ContentValidationError(f"{key} must be a list of non-empty strings")
+        if key in data and any(reason not in QUALITY_GATE_REASON_CODES for reason in data[key]):
+            raise ContentValidationError(f"{key} contains an unknown quality reason code")
     if not isinstance(data["dedupeKey"], str) or not data["dedupeKey"].strip():
         raise ContentValidationError("dedupeKey must be non-empty")
     if not isinstance(data["humanEdited"], bool) or not isinstance(data["noindex"], bool):

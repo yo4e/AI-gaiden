@@ -30,6 +30,15 @@ const { article, previous, next } = Astro.props;
 const data = article.data;
 const canonicalPath = articlePath(data);
 const pageUrl = new URL(canonicalPath, Astro.site).href;
+const titleFallback =
+  data.titleFallbackApplied === true ||
+  (data.titleTranslationStatus !== undefined && data.titleTranslationStatus !== 'translated');
+const summaryFallback =
+  data.summaryFallbackApplied ||
+  data.summaryTranslationStatus === 'quality_rejected' ||
+  data.summaryTranslationStatus === 'translation_failed' ||
+  data.summaryTranslationStatus === 'source_missing' ||
+  (!data.summaryTranslationStatus && data.translationStatus === 'partial');
 const structuredData = [
   {
     '@context': 'https://schema.org',
@@ -118,6 +127,16 @@ const structuredData = [
       <div>
         <dt>翻訳状態</dt><dd>
           {data.translationStatus === 'complete' ? '概要あり' : 'タイトル・定型案内のみ'}
+        </dd>
+      </div>
+      <div>
+        <dt>タイトル翻訳</dt><dd>
+          {titleFallback ? '原題表示（フォールバック）' : '日本語訳あり'}
+        </dd>
+      </div>
+      <div>
+        <dt>概要翻訳</dt><dd>
+          {summaryFallback ? '公式リンク案内（フォールバック）' : '日本語概要あり'}
         </dd>
       </div>
     </dl>

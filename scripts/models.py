@@ -54,3 +54,11 @@ class PreparedItem:
     source_homepage: str | None = None
     fetched_at: datetime | None = None
     excerpt_ja: str | None = None
+    title_translation_status: str = "legacy"
+    summary_translation_status: str = "legacy"
+    title_quality_gate: str = "not_run"
+    summary_quality_gate: str = "not_run"
+    title_fallback_applied: bool = False
+    summary_fallback_applied: bool = False
+    title_fallback_reasons: tuple[str, ...] = ()
+    summary_fallback_reasons: tuple[str, ...] = ()

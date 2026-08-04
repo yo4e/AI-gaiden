@@ -52,6 +52,34 @@ feeds:
       - machine-learning
       - open-source
 
+  - id: microsoft-ai
+    name: Microsoft AI Blog
+    url: https://www.microsoft.com/en-us/ai/blog/feed
+    homepage: https://www.microsoft.com/en-us/ai/blog/
+    language: en
+    enabled: true
+    priority: 88
+    max_items_per_run: 5
+    image_policy: rss_only
+    categories:
+      - artificial-intelligence
+      - product
+      - enterprise
+
+  - id: mistral-ai
+    name: Mistral AI News
+    url: https://mistral.ai/rss.xml
+    homepage: https://mistral.ai/news/
+    language: en
+    enabled: true
+    priority: 85
+    max_items_per_run: 5
+    image_policy: rss_only
+    categories:
+      - artificial-intelligence
+      - product
+      - research
+
   - id: github-ai-ml
     name: GitHub AI & ML
     url: https://github.blog/ai-and-ml/feed/
@@ -64,6 +92,34 @@ feeds:
     categories:
       - developer-tools
       - artificial-intelligence
+
+  - id: apple-ml-research
+    name: Apple Machine Learning Research
+    url: https://machinelearning.apple.com/rss.xml
+    homepage: https://machinelearning.apple.com/
+    language: en
+    enabled: true
+    priority: 78
+    max_items_per_run: 5
+    image_policy: rss_only
+    categories:
+      - machine-learning
+      - research
+      - on-device
+
+  - id: cohere-blog
+    name: Cohere Blog
+    url: https://cohere.com/blog/rss.xml
+    homepage: https://cohere.com/blog
+    language: en
+    enabled: true
+    priority: 76
+    max_items_per_run: 5
+    image_policy: rss_only
+    categories:
+      - artificial-intelligence
+      - enterprise
+      - research
 
   - id: aws-machine-learning
     name: AWS Artificial Intelligence
@@ -91,3 +147,17 @@ feeds:
     categories:
       - deep-learning
       - hardware
+
+  - id: mlcommons
+    name: MLCommons
+    url: https://mlcommons.org/feed/
+    homepage: https://mlcommons.org/
+    language: en
+    enabled: true
+    priority: 65
+    max_items_per_run: 5
+    image_policy: rss_only
+    categories:
+      - benchmarks
+      - safety
+      - machine-learning

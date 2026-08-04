@@ -40,7 +40,7 @@ def article_relative_path(date_value: str, article_id: str) -> Path:
 def build_brief(item: Any, summary_ja: str) -> str:
     published_jst = item.published_at.astimezone(JST)
     date_text = f"{published_jst.month}月{published_jst.day}日"
-    prefix = f"{item.source_name}は{date_text}、「{item.title_ja}」を公式フィードで発表しました。"
+    prefix = f"{item.source_name}は{date_text}、『{item.title_ja}』を公式フィードで発表しました。"
     if summary_ja:
         summary = summary_ja.strip().rstrip("。.!！")
         middle = f"公式RSSによると、{summary}。"
@@ -184,10 +184,6 @@ def validate_article_data(data: dict[str, Any]) -> None:
     translation_statuses = {
         "legacy",
         "translated",
-        "fallback",
-        "rejected",
-        "failed",
-        "missing",
         "quality_rejected",
         "translation_failed",
         "source_missing",

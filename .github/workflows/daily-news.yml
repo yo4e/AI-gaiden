@@ -2,8 +2,8 @@ name: Daily official AI news
 
 on:
   schedule:
-    # Temporary hourly validation run at :17; return to every 3 hours after confirming stability.
-    - cron: '17 * * * *'
+    # Every 6 hours at 00:17, 06:17, 12:17, and 18:17 JST.
+    - cron: '17 3,9,15,21 * * *'
   workflow_dispatch:
     inputs:
       bootstrap_days:

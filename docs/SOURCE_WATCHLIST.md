@@ -1,0 +1,62 @@
+# AI外電 公式情報源ウォッチリスト
+
+更新日: 2026-08-04
+
+## 目的
+
+AI外電へ追加する価値は高いものの、現時点では安定した公式RSS/Atomを確認できない、重複や対象範囲を精査する必要がある、または継続性に懸念がある情報源を記録する。
+
+この文書にあるサイトをHTMLスクレイピングで代替してはならない。追加は、公式運営主体が配信するRSS/Atomまたは公式APIを確認し、HTTP応答、Content-Type、XML妥当性、最新記事の日時、利用条件を人間が再検証した後に行う。
+
+## 判定基準
+
+追加前に最低限、次を確認する。
+
+1. 配信元ドメインまたは公式に案内されたドメインから配信されている
+2. RSS 2.0またはAtomとして解析できる
+3. 最新記事が公式サイトの掲載内容と一致する
+4. 更新が停止・大幅遅延していない
+5. HTMLスクレイピングや第三者生成フィードではない
+6. 既存フィードと過度に重複しない
+7. タイトル、URL、公開日時、概要が安定して取得できる
+
+## 保留監視
+
+| 候補 | 公式ページ | 現状 | 追加条件 | 優先度 |
+| --- | --- | --- | --- | --- |
+| Anthropic News | <https://www.anthropic.com/news> | ニュース価値は非常に高いが、安定した公式RSS/Atomを確認できていない。第三者生成フィードは採用しない | Anthropic公式ドメインで継続更新されるフィードが公開される | 最優先監視 |
+| Meta AI Blog | <https://ai.meta.com/blog/> | `https://ai.meta.com/blog/rss/` が候補。アクセス安定性、最新記事、Content-TypeをGitHub Actions相当環境で再確認する必要がある | 複数回の取得で正常なXMLと最新記事を確認する | 高 |
+| Model Context Protocol Blog | <https://blog.modelcontextprotocol.io/> | 仕様変更、SDK、認証などの一次情報として有望だが、安定した公式RSS/Atomを確認できていない | 公式ブログがフィードを案内する、または公式ドメイン上の安定したフィードを確認する | 高 |
+| xAI News | <https://x.ai/news> | 主要モデル企業として重要だが、安定した公式RSS/Atomを確認できていない | xAI公式ドメインで継続更新されるフィードが公開される | 中〜高 |
+| Qwen Blog | <https://qwenlm.github.io/blog/> | 過去のフィード候補は更新停止・遅延の可能性がある。公式発表場所が分散している | 現行の公式発表面と同期したフィードを確認する | 中 |
+| DeepSeek News | <https://api-docs.deepseek.com/news/> | 公式ニュースページはあるが、安定した公式RSS/Atomを確認できていない | 公式フィードまたは公式APIが公開される | 中 |
+| Moonshot AI / Kimi | <https://www.moonshot.cn/> | 中国語圏の重要企業だが、継続取得できる公式フィード、言語、URL構造を確認できていない | 公式フィードの継続性と英日翻訳パイプラインへの適合を確認する | 中 |
+
+## 重複・範囲を見て保留
+
+| 候補 | 公式フィード候補 | 保留理由 |
+| --- | --- | --- |
+| Microsoft Research | <https://www.microsoft.com/en-us/research/feed/> | `Microsoft AI Blog`を先に追加した。研究全般を含むため、AI関連記事だけをRSSフィールドで安全に絞れるか確認してから判断する |
+| Google Research | <http://blog.research.google/feeds/posts/default?alt=rss> | Google AIとGoogle DeepMindとの重複が多い可能性がある。独自性と重複率を観測してから判断する |
+| Meta Engineering AI | Meta Engineering内のAIカテゴリフィード候補 | Meta AI Blogの代替として有望だが、研究・製品発表の網羅性とカテゴリ純度を確認する |
+
+## 追加済みだが要監視
+
+次のフィードは2026-08-04時点で追加したが、サイト移行やフィード停止が起きた場合は無理に代替せず、いったん無効化する。
+
+- Mistral AI News: <https://mistral.ai/rss.xml>
+- Microsoft AI Blog: <https://www.microsoft.com/en-us/ai/blog/feed>
+- Apple Machine Learning Research: <https://machinelearning.apple.com/rss.xml>
+- Cohere Blog: <https://cohere.com/blog/rss.xml>
+- MLCommons: <https://mlcommons.org/feed/>
+
+## 再確認の契機
+
+- 日次ワークフローで同一フィードが3回以上連続失敗した
+- 30日以上新着がなく、公式サイト側には新着がある
+- リダイレクト先ドメインが変わった
+- XMLではなくHTMLを返すようになった
+- 競合サービスが新しい公式フィードを採用している
+- 企業が新しいニュース、研究、開発者向けサイトへ移行した
+
+保留候補を追加するときは、確認日、候補URL、確認結果、採用しない理由をこの文書へ追記する。

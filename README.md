@@ -15,7 +15,13 @@
 - GitHub Actions（CI、定期更新）
 - Cloudflare Pages Git Integration（mainの更新を自動デプロイ）
 
-生成コンテンツは `src/content/daily/YYYY-MM-DD.md`、重複判定状態は `data/seen.json` に保存します。この2箇所は日次ワークフローが管理するため、原則として手動編集しないでください。
+## 個別記事と日次ビュー
+
+1ニュースを1つのMarkdownとして `src/content/articles/YYYY-MM-DD/<source-id>-<short-id>.md` に保存します。`<short-id>` は `dedupeKey` のSHA-256先頭8桁から決定するため、日本語タイトルや人間による本文修正ではURLが変わりません。公開URLは `/articles/YYYY/MM/DD/<article-id>/` です。
+
+`/daily/YYYY-MM-DD/` は `dateJst` で個別記事を集約する派生ページで、記事本文を複製せず抜粋と個別記事リンクだけを表示します。サイトRSS、トップ、アーカイブ、sitemapも個別記事URLを基準に生成されます。
+
+生成コンテンツは `src/content/articles/YYYY-MM-DD/<article-id>.md`、重複判定状態は `data/seen.json` に保存します。個別記事Markdownが正本で、`/daily/YYYY-MM-DD/` はそこから生成する集約ビューです。これらは日次ワークフローが管理するため、原則として手動編集しないでください。
 
 ## 取得対象の公式フィード
 
@@ -81,6 +87,8 @@ python scripts/update_news.py --bootstrap-days 3
 
 `--bootstrap-days` は1〜7日です。初回は全フィード合計10件まで取り込みます。新着が0件なら日次ページと `seen.json` を変更しません。1フィードだけ失敗した場合は他を継続し、全フィードが失敗した場合や翻訳モデルを準備できない場合は既存コンテンツを変更せず失敗します。
 
+既存のレガシー日次Markdownからの移行は、移行前のチェックアウトで一度だけ `python scripts/migrate_articles.py` を実行します。移行後は `src/content/articles/` の個別記事が正本となり、日次Markdownは残しません。
+
 フィード取得の条件付きGET状態は `.cache/feed-state.json` に保存され、日次Actionsでは専用cacheから前回値を復元します。Gitには含めません。元記事HTMLへのリクエストを行うコードはありません。
 
 ### 翻訳モデルとライセンス
@@ -108,7 +116,7 @@ Pull Requestとmainへのpushで次を行います。外部RSSにはアクセス
 - `contents: write` だけを付与し、Secretsや外部APIキーは不使用
 - Argos英日モデルをActions cacheへ保存
 - PythonテストとAstro buildが成功した後だけ処理を継続
-- 変更対象が `src/content/daily/*.md` と `data/seen.json` 以外なら失敗
+- 変更対象が `src/content/articles/**` と `data/seen.json` 以外なら失敗
 - ステージ済み差分がある場合だけbot名義でmainへ通常push（force pushなし）
 - 新着0件ならコミットしない
 
@@ -116,8 +124,8 @@ Repositoryの **Settings → Actions → General → Workflow permissions** で�
 
 推奨Repository Variable:
 
-| 名前 | 値 | 必須性 |
-| --- | --- | --- |
+| 名前       | 値                                         | 必須性                                  |
+| ---------- | ------------------------------------------ | --------------------------------------- |
 | `SITE_URL` | `https://<実際のプロジェクト名>.pages.dev` | 日次ビルドのcanonical検証用。設定を推奨 |
 
 Repository Secretsは不要です。Cloudflare API Tokenも登録しないでください。
@@ -141,7 +149,7 @@ GitHub Actionsが生成コンテンツをmainへpushすると、Cloudflare Pages
 
 ## 障害対応
 
-- **全フィード失敗**: Actionsログの配信元別エラーを確認します。既存Markdownと `seen.json` は変更されません。
+- **全フィード失敗**: Actionsログの配信元別エラーを確認します。既存記事Markdownと `seen.json` は変更されません。
 - **Argosモデル取得失敗**: Actions cacheを削除して手動再実行します。公式パッケージインデックスの障害中は待機し、外部翻訳APIへ切り替えません。
 - **schema / Astro build失敗**: 自動pushされません。生成frontmatterとテスト結果を確認します。
 - **push拒否**: mainのrulesetとActionsのWorkflow permissionsを確認します。force pushで回避しません。
@@ -154,7 +162,7 @@ GitHub Actionsが生成コンテンツをmainへpushすると、Cloudflare Pages
 - `/feed.xml` が本番URLで読めること
 - 日次ページに `CollectionPage`、`ItemList`、`BreadcrumbList` のJSON-LDがあること
 - Preview Deploymentが `noindex,nofollow` であること
-- 404、空の日次ページ、重複ニュースがインデックス対象に入っていないこと
+- 個別記事URL、既存の日次URL、404、空の日次ページ、重複ニュースが適切に扱われていること
 - LighthouseでPerformance 90、Accessibility 90、Best Practices 90、SEO 95以上を目標に確認すること
 
 ## Phase 2候補

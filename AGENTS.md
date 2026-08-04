@@ -52,7 +52,7 @@ Bluesky投稿は今回の対象外です。
 4. RSS取得、正規化、サニタイズを実装する。
 5. 重複排除を実装する。
 6. Argos Translateの英日翻訳アダプタを実装する。
-7. 日本語短報と日次Markdown生成を実装する。
+7. 日本語短報と個別記事Markdown・日次集約ページ生成を実装する。
 8. RSS画像だけを使う画像抽出を実装する。
 9. SEO、構造化データ、サイトマップ、サイトRSSを実装する。
 10. pytest、ruff、Astro check/buildを通す。
@@ -63,7 +63,7 @@ Bluesky投稿は今回の対象外です。
 
 - 日次実行は日本時間07:17相当を標準とする。
 - `workflow_dispatch`で手動実行可能にする。
-- 自動コミット対象は原則`src/content/daily/`と`data/seen.json`だけに限定する。
+- 自動コミット対象は原則`src/content/articles/`と`data/seen.json`だけに限定する。
 - PythonテストとAstro buildが成功するまでpushしない。
 - 新着がない場合はコミットしない。
 - 全フィード失敗時は既存コンテンツを変更しない。

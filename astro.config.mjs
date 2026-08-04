@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { readdirSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const isCloudflare = Boolean(process.env.CF_PAGES);
@@ -12,16 +13,33 @@ if (isCloudflare && !configuredSite) {
 }
 
 const site = configuredSite || 'http://localhost:4321';
+const articleLastModified = new Map();
 const dailyLastModified = new Map();
-const dailyDirectory = fileURLToPath(new URL('./src/content/daily/', import.meta.url));
+const articleDirectory = fileURLToPath(new URL('./src/content/articles/', import.meta.url));
+
+function markdownFiles(directory) {
+  const files = [];
+  for (const entry of readdirSync(directory, { withFileTypes: true })) {
+    const path = join(directory, entry.name);
+    if (entry.isDirectory()) files.push(...markdownFiles(path));
+    else if (entry.isFile() && entry.name.endsWith('.md')) files.push(path);
+  }
+  return files;
+}
 
 try {
-  for (const filename of readdirSync(dailyDirectory).filter((name) => name.endsWith('.md'))) {
-    const markdown = readFileSync(`${dailyDirectory}/${filename}`, 'utf8');
-    const date = markdown.match(/^date:\s*['"]?(\d{4}-\d{2}-\d{2})/m)?.[1];
+  for (const filename of markdownFiles(articleDirectory)) {
+    const markdown = readFileSync(filename, 'utf8');
+    const date = markdown.match(/^dateJst:\s*['"]?(\d{4}-\d{2}-\d{2})/m)?.[1];
+    const articleId = markdown.match(/^articleId:\s*['"]?([^'"\n]+)/m)?.[1];
     const updatedAt = markdown.match(/^updatedAt:\s*['"]?([^'"\n]+)/m)?.[1];
-    if (date && updatedAt) {
-      dailyLastModified.set(`/daily/${date}/`, new Date(updatedAt));
+    if (date && articleId && updatedAt) {
+      const updated = new Date(updatedAt);
+      const [year, month, day] = date.split('-');
+      articleLastModified.set(`/articles/${year}/${month}/${day}/${articleId}/`, updated);
+      const dailyPath = `/daily/${date}/`;
+      const previous = dailyLastModified.get(dailyPath);
+      if (!previous || updated > previous) dailyLastModified.set(dailyPath, updated);
     }
   }
 } catch (error) {
@@ -39,7 +57,7 @@ export default defineConfig({
           filter: (page) => !page.endsWith('/404/'),
           serialize(item) {
             const pathname = new URL(item.url).pathname;
-            const lastmod = dailyLastModified.get(pathname);
+            const lastmod = articleLastModified.get(pathname) || dailyLastModified.get(pathname);
             return lastmod ? { ...item, lastmod } : item;
           },
         }),

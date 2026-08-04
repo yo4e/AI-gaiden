@@ -8,11 +8,17 @@ from datetime import UTC, datetime, timedelta
 from pathlib import Path
 from typing import Any
 
-from scripts.content_writer import build_brief, write_daily_pages
+from scripts.content_writer import article_id_for, build_brief, build_excerpt, write_article_files
 from scripts.feed_reader import FeedReader
 from scripts.models import NormalizedItem, PreparedItem
 from scripts.translator import ArgosTranslator, TranslationError, Translator, limit_summary
-from scripts.utils import load_feed_configs, load_json, recover_dedupe_keys, write_json_atomic
+from scripts.utils import (
+    load_feed_configs,
+    load_json,
+    recover_article_metadata,
+    recover_dedupe_keys,
+    write_json_atomic,
+)
 
 LOGGER = logging.getLogger(__name__)
 MAX_SEEN_ITEMS = 5000
@@ -37,10 +43,22 @@ def _atomic_copy(source: Path, destination: Path) -> None:
         raise
 
 
+def _load_seen_safely(seen_path: Path) -> dict[str, Any]:
+    try:
+        seen = load_json(seen_path, {"items": {}})
+    except ValueError as exc:
+        LOGGER.warning("Could not read seen.json; recovering from article files: %s", exc)
+        return {"items": {}}
+    if not isinstance(seen.get("items", {}), dict):
+        LOGGER.warning("seen.json has no valid items object; recovering from article files")
+        return {"items": {}}
+    return seen
+
+
 def _known_keys(seen: dict[str, Any], content_dir: Path) -> set[str]:
     stored = seen.get("items", {})
     if not isinstance(stored, dict):
-        raise UpdateError("data/seen.json must contain an items object")
+        stored = {}
     return set(stored) | recover_dedupe_keys(content_dir)
 
 
@@ -52,7 +70,9 @@ def _is_recent(item: NormalizedItem, now: datetime, days: int) -> bool:
     )
 
 
-def _prepare_item(item: NormalizedItem, translator: Translator) -> PreparedItem:
+def _prepare_item(
+    item: NormalizedItem, translator: Translator, fetched_at: datetime | None = None
+) -> PreparedItem:
     if not item.published_at:
         raise TranslationError("Cannot publish an item with an unknown date")
     title_ja = translator.translate(item.title)
@@ -82,13 +102,16 @@ def _prepare_item(item: NormalizedItem, translator: Translator) -> PreparedItem:
         author=item.author,
         translation_status=translation_status,
         dedupe_key=item.dedupe_key,
+        source_homepage=item.source_homepage,
+        fetched_at=fetched_at or item.published_at,
     )
+    brief = build_brief(partial, summary_ja)
     return PreparedItem(
         source_id=partial.source_id,
         source_name=partial.source_name,
         title_ja=partial.title_ja,
         title_original=partial.title_original,
-        brief_ja=build_brief(partial, summary_ja),
+        brief_ja=brief,
         url=partial.url,
         canonical_url=partial.canonical_url,
         published_at=partial.published_at,
@@ -97,13 +120,21 @@ def _prepare_item(item: NormalizedItem, translator: Translator) -> PreparedItem:
         author=partial.author,
         translation_status=partial.translation_status,
         dedupe_key=partial.dedupe_key,
+        source_homepage=partial.source_homepage,
+        fetched_at=partial.fetched_at,
+        excerpt_ja=build_excerpt(brief),
     )
 
 
 def _updated_seen(
-    seen: dict[str, Any], prepared: list[PreparedItem], generated_at: datetime
+    seen: dict[str, Any],
+    prepared: list[PreparedItem],
+    generated_at: datetime,
+    recovered: dict[str, dict[str, Any]],
 ) -> dict[str, Any]:
     items = dict(seen.get("items", {}))
+    for key, value in recovered.items():
+        items.setdefault(key, value)
     first_seen_at = generated_at.astimezone(UTC).isoformat().replace("+00:00", "Z")
     for item in prepared:
         items[item.dedupe_key] = {
@@ -113,6 +144,7 @@ def _updated_seen(
             .isoformat()
             .replace("+00:00", "Z"),
             "first_seen_at": first_seen_at,
+            "article_id": article_id_for(item.source_id, item.dedupe_key),
         }
     if len(items) > MAX_SEEN_ITEMS:
         ordered = sorted(
@@ -137,7 +169,8 @@ def run_update(
         raise UpdateError("bootstrap_days must be between 1 and 7")
     generated_at = (now or datetime.now(UTC)).astimezone(UTC)
     configs = load_feed_configs(config_path)
-    seen = load_json(seen_path, {"items": {}})
+    seen = _load_seen_safely(seen_path)
+    recovered = recover_article_metadata(content_dir)
     known = _known_keys(seen, content_dir)
     initial_run = not known
     feed_reader = reader or FeedReader(cache_path)
@@ -207,7 +240,7 @@ def run_update(
     title_failures = 0
     for item in unique:
         try:
-            prepared.append(_prepare_item(item, local_translator))
+            prepared.append(_prepare_item(item, local_translator, generated_at))
         except TranslationError as exc:
             title_failures += 1
             LOGGER.warning("Title translation failed; item skipped: %s (%s)", item.dedupe_key, exc)
@@ -218,25 +251,25 @@ def run_update(
     seen_path.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="ai-gaiden-update-") as temporary_root:
         temporary = Path(temporary_root)
-        staged_content = temporary / "daily"
-        generated_paths = write_daily_pages(
+        staged_content = temporary / "articles"
+        generated_paths = write_article_files(
             prepared,
             existing_dir=content_dir,
             output_dir=staged_content,
             generated_at=generated_at,
         )
         staged_seen = temporary / "seen.json"
-        write_json_atomic(staged_seen, _updated_seen(seen, prepared, generated_at))
+        write_json_atomic(staged_seen, _updated_seen(seen, prepared, generated_at, recovered))
 
         for staged_path in generated_paths:
-            destination = content_dir / staged_path.name
-            _atomic_copy(staged_path, destination)
+            destination = content_dir / staged_path
+            _atomic_copy(staged_content / staged_path, destination)
         _atomic_copy(staged_seen, seen_path)
 
     LOGGER.info(
         "Translation: success=%d title_failed=%d generated_pages=%s commit_needed=yes",
         len(prepared),
         title_failures,
-        ",".join(path.name for path in generated_paths),
+        ",".join(path.as_posix() for path in generated_paths),
     )
     return len(prepared)

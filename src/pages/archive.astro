@@ -1,21 +1,21 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { groupArticlesByDate, sortArticles } from '../lib/articles';
 import { formatJapaneseDate } from '../lib/site';
 
-const entries = (await getCollection('daily')).sort((a, b) =>
-  b.data.date.localeCompare(a.data.date),
-);
-const months = new Map<string, typeof entries>();
-for (const entry of entries) {
-  const month = entry.data.date.slice(0, 7);
-  months.set(month, [...(months.get(month) || []), entry]);
+const articles = sortArticles(await getCollection('articles'));
+const grouped = groupArticlesByDate(articles);
+const months = new Map<string, [string, (typeof articles)[number][]][]>();
+for (const [date, dayArticles] of grouped) {
+  const month = date.slice(0, 7);
+  months.set(month, [...(months.get(month) || []), [date, dayArticles]]);
 }
 ---
 
 <BaseLayout
   title="海外AIニュース一覧・過去記事｜AI外電"
-  description="AI外電が公式RSSから自動収集・自動翻訳した海外AIニュースの日次ダイジェストを、月別に一覧できます。"
+  description="AI外電が公式RSSから自動収集・自動翻訳した海外AIニュースを、記事単位と日付別に一覧できます。"
 >
   <header class="page-header">
     <div class="container">
@@ -34,12 +34,15 @@ for (const entry of entries) {
           <section class="archive-month">
             <h2>{month.replace('-', '年')}月</h2>
             <ul class="archive-list">
-              {monthEntries.map((entry) => (
+              {monthEntries.map(([date, dayArticles]) => (
                 <li>
-                  <time datetime={entry.data.date}>{formatJapaneseDate(entry.data.date)}</time>
-                  <a href={`/daily/${entry.data.date}/`}>{entry.data.title}</a>
+                  <time datetime={date}>{formatJapaneseDate(date)}</time>
+                  <a href={`/daily/${date}/`}>{dayArticles[0].data.titleJa}</a>
                   <small>
-                    {entry.data.itemCount}件・{entry.data.sources.join(' / ')}
+                    {dayArticles.length}件・
+                    {[...new Set(dayArticles.map((article) => article.data.sourceName))].join(
+                      ' / ',
+                    )}
                   </small>
                 </li>
               ))}
@@ -47,7 +50,7 @@ for (const entry of entries) {
           </section>
         ))
       ) : (
-        <p class="empty-state">公開済みの日次ダイジェストはまだありません。</p>
+        <p class="empty-state">公開済みの記事はまだありません。</p>
       )
     }
   </div>

@@ -17,7 +17,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Update AI外電 from configured official feeds")
     parser.add_argument("--config", type=Path, default=Path("config/feeds.yml"))
     parser.add_argument("--seen", type=Path, default=Path("data/seen.json"))
-    parser.add_argument("--content-dir", type=Path, default=Path("src/content/daily"))
+    parser.add_argument("--content-dir", type=Path, default=Path("src/content/articles"))
     parser.add_argument("--cache", type=Path, default=Path(".cache/feed-state.json"))
     parser.add_argument(
         "--bootstrap-days",

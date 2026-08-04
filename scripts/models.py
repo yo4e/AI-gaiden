@@ -33,6 +33,7 @@ class NormalizedItem:
     image_url: str | None
     image_license: str | None
     dedupe_key: str
+    source_homepage: str | None = None
 
 
 @dataclass(frozen=True, slots=True)
@@ -50,3 +51,6 @@ class PreparedItem:
     author: str | None
     translation_status: str
     dedupe_key: str
+    source_homepage: str | None = None
+    fetched_at: datetime | None = None
+    excerpt_ja: str | None = None

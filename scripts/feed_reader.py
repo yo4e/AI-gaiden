@@ -107,6 +107,7 @@ def normalize_entry(entry: Any, config: FeedConfig) -> NormalizedItem | None:
         image_url=image_url,
         image_license=image_license,
         dedupe_key=dedupe_key,
+        source_homepage=config.homepage,
     )
 
 

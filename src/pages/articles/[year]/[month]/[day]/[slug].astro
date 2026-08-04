@@ -1,0 +1,129 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../../../layouts/BaseLayout.astro';
+import { articlePath, sortArticles } from '../../../../../lib/articles';
+import { formatJapaneseDate, formatJapaneseDateTime } from '../../../../../lib/site';
+
+interface Props {
+  article: CollectionEntry<'articles'>;
+  previous?: CollectionEntry<'articles'>;
+  next?: CollectionEntry<'articles'>;
+}
+
+export async function getStaticPaths() {
+  const articles = sortArticles(await getCollection('articles'));
+  return articles.map((article, index) => {
+    const [year, month, day] = article.data.dateJst.split('-');
+    return {
+      params: { year, month, day, slug: article.data.articleId },
+      props: {
+        article,
+        previous: articles[index - 1],
+        next: articles[index + 1],
+      },
+    };
+  });
+}
+
+const { article, previous, next } = Astro.props;
+const data = article.data;
+const canonicalPath = articlePath(data);
+const pageUrl = new URL(canonicalPath, Astro.site).href;
+const structuredData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'NewsArticle',
+    headline: data.titleJa,
+    description: data.description,
+    url: pageUrl,
+    datePublished: data.publishedAt,
+    dateModified: data.updatedAt,
+    inLanguage: 'ja',
+    image: data.imageUrl ? [data.imageUrl] : undefined,
+    author: data.author ? { '@type': 'Person', name: data.author } : undefined,
+    isPartOf: { '@type': 'WebSite', name: 'AI外電', url: new URL('/', Astro.site).href },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'トップ', item: new URL('/', Astro.site).href },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: formatJapaneseDate(data.dateJst),
+        item: new URL(`/daily/${data.dateJst}/`, Astro.site).href,
+      },
+      { '@type': 'ListItem', position: 3, name: data.titleJa, item: pageUrl },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title={`${data.titleJa}｜${data.sourceName}｜AI外電`}
+  description={data.description}
+  canonicalPath={canonicalPath}
+  image={data.imageUrl || '/default-news-image.svg'}
+  type="article"
+  publishedAt={data.publishedAt}
+  updatedAt={data.updatedAt}
+  noindex={data.noindex}
+  structuredData={structuredData}
+>
+  <header class="page-header">
+    <div class="container narrow">
+      <nav class="breadcrumbs" aria-label="パンくず">
+        <ol>
+          <li><a href="/">トップ</a></li>
+          <li><a href={`/daily/${data.dateJst}/`}>{data.dateJst}</a></li>
+          <li>{data.titleJa}</li>
+        </ol>
+      </nav>
+      <p class="eyebrow">{data.sourceName} / AI外電 article</p>
+      <h1>{data.titleJa}</h1>
+      <p class="article-lead">{data.description}</p>
+      <p>
+        <time datetime={data.publishedAt}>{formatJapaneseDateTime(data.publishedAt)} JST</time>・
+        {data.author ? `著者: ${data.author}` : '原文公開情報'}
+      </p>
+    </div>
+  </header>
+  <article class="container narrow section article-detail">
+    <p class="daily-note">
+      この記事は公式RSSから自動収集し、ローカル翻訳モデルと定型編集で生成しています。翻訳や取得内容の正確性は保証されないため、重要な確認は公式発表を優先してください。
+    </p>
+    <h2>日本語短報</h2>
+    <p class="article-brief">{data.briefJa}</p>
+
+    <dl class="article-facts">
+      <div><dt>原文タイトル</dt><dd lang="en">{data.titleOriginal}</dd></div>
+      <div>
+        <dt>配信元</dt><dd><a href={`/sources/#${data.sourceId}`}>{data.sourceName}</a></dd>
+      </div>
+      <div>
+        <dt>原文公開日時</dt><dd>
+          <time datetime={data.publishedAt}>{formatJapaneseDateTime(data.publishedAt)} JST</time>
+        </dd>
+      </div>
+      <div>
+        <dt>翻訳状態</dt><dd>
+          {data.translationStatus === 'complete' ? '概要あり' : 'タイトル・定型案内のみ'}
+        </dd>
+      </div>
+    </dl>
+
+    <p>
+      <a class="button-link" href={data.sourceUrl} rel="noopener noreferrer"
+        >公式発表を原文で確認する</a
+      >
+    </p>
+
+    <nav class="date-navigation article-navigation" aria-label="前後の記事">
+      {previous ? <a href={articlePath(previous.data)}>← 前の記事</a> : <span />}
+      <a href={`/daily/${data.dateJst}/`}>同日の一覧</a>
+      {next ? <a href={articlePath(next.data)}>次の記事 →</a> : <span />}
+    </nav>
+  </article>
+</BaseLayout>

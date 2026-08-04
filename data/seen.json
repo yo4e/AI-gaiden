@@ -30,6 +30,12 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app"
     },
+    "url:4a9b73e77846b899c80a1aedb22971ace82ebcc3d3b85836ae454a41eb1c3e86": {
+      "first_seen_at": "2026-08-04T06:07:12.261432Z",
+      "published_at": "2026-08-03T22:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/apple-is-getting-this-wrong"
+    },
     "url:4e90420c69645ce576fce1fa06fbd03e9ca526dfc19600edad8ffcd0bf588612": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
       "published_at": "2026-07-27T18:00:00Z",
@@ -47,6 +53,12 @@
       "published_at": "2026-07-27T09:32:20Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams"
+    },
+    "url:97e92714d577da88c6e3099e0cf9afb3cc981105dadc42fff6bf30703b8cd73b": {
+      "first_seen_at": "2026-08-04T06:07:12.261432Z",
+      "published_at": "2026-08-03T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/circles"
     },
     "url:9c57623ef609667de3c28690663edbc3d6ea9d6e32d9bc0cafa73a9b64ae67ae": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",

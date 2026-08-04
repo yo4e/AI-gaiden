@@ -208,12 +208,34 @@ def recover_dedupe_keys(content_dir: Path) -> set[str]:
     keys: set[str] = set()
     if not content_dir.exists():
         return keys
-    for path in content_dir.glob("*.md"):
+    for path in content_dir.rglob("*.md"):
         data = parse_frontmatter(path)
+        if isinstance(data.get("dedupeKey"), str) and data["dedupeKey"]:
+            keys.add(data["dedupeKey"])
+        # Keep recovery compatible with a checkout that still has legacy daily files.
         items = data.get("items", [])
-        if not isinstance(items, list):
-            continue
-        for item in items:
-            if isinstance(item, dict) and isinstance(item.get("dedupeKey"), str):
-                keys.add(item["dedupeKey"])
+        if isinstance(items, list):
+            for item in items:
+                if isinstance(item, dict) and isinstance(item.get("dedupeKey"), str):
+                    keys.add(item["dedupeKey"])
     return keys
+
+
+def recover_article_metadata(content_dir: Path) -> dict[str, dict[str, Any]]:
+    """Recover minimal seen-state metadata from immutable article frontmatter."""
+    recovered: dict[str, dict[str, Any]] = {}
+    if not content_dir.exists():
+        return recovered
+    for path in content_dir.rglob("*.md"):
+        data = parse_frontmatter(path)
+        key = data.get("dedupeKey")
+        if not isinstance(key, str) or not key:
+            continue
+        recovered[key] = {
+            "url": data.get("canonicalUrl") or data.get("sourceUrl"),
+            "source": data.get("sourceId"),
+            "published_at": data.get("publishedAt"),
+            "first_seen_at": data.get("generatedAt"),
+            "article_id": data.get("articleId"),
+        }
+    return recovered

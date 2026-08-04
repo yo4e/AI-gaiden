@@ -92,7 +92,7 @@ jobs:
           invalid=0
           while IFS= read -r path; do
             case "$path" in
-              src/content/daily/*.md|data/seen.json) ;;
+              src/content/articles/*.md|src/content/articles/**/*.md|data/seen.json) ;;
               *)
                 echo "::error::Unexpected generated change: $path"
                 invalid=1
@@ -102,8 +102,8 @@ jobs:
           if [[ "$invalid" -ne 0 ]]; then
             exit 1
           fi
-          git diff -- src/content/daily data/seen.json
-          git add -- src/content/daily data/seen.json
+          git diff -- src/content/articles data/seen.json
+          git add -- src/content/articles data/seen.json
           if git diff --cached --quiet; then
             echo "has_changes=false" >> "$GITHUB_OUTPUT"
           else

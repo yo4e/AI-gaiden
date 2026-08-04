@@ -3,7 +3,17 @@ from __future__ import annotations
 from dataclasses import replace
 from datetime import UTC, datetime
 
-from scripts.content_writer import build_brief, validate_daily_data, write_daily_pages
+import pytest
+
+from scripts.content_writer import (
+    ContentValidationError,
+    article_data_from_item,
+    article_id_for,
+    build_brief,
+    render_article_markdown,
+    validate_article_data,
+    write_article_files,
+)
 from scripts.models import PreparedItem
 from scripts.utils import parse_frontmatter
 
@@ -23,6 +33,7 @@ def make_item(**overrides) -> PreparedItem:
         "author": "Example Labs",
         "translation_status": "complete",
         "dedupe_key": "url:fixture-key",
+        "source_homepage": "https://example.com/",
     }
     values.update(overrides)
     return PreparedItem(**values)
@@ -37,18 +48,30 @@ def test_brief_has_required_length_and_disclosure() -> None:
     assert "公式発表" in brief
 
 
-def test_writes_valid_frontmatter_and_merges_existing_day(tmp_path) -> None:
+def test_article_id_is_stable_when_translated_title_changes() -> None:
+    key = "url:fixture-key"
+    assert article_id_for("example-ai", key) == article_id_for("example-ai", key)
+    assert article_id_for("example-ai", key) != article_id_for("example-ai", "url:other")
+
+
+def test_writes_one_immutable_article_file_per_item(tmp_path) -> None:
     existing_dir = tmp_path / "existing"
     output_dir = tmp_path / "output"
     existing_dir.mkdir()
     generated_at = datetime(2026, 8, 3, 3, 0, tzinfo=UTC)
 
-    first = make_item(brief_ja=build_brief(make_item(), "最初の公式概要を日本語化した内容です"))
-    first_paths = write_daily_pages(
+    first_base = make_item()
+    first = replace(
+        first_base,
+        brief_ja=build_brief(first_base, "最初の公式概要を日本語化した内容です"),
+    )
+    first_paths = write_article_files(
         [first], existing_dir=existing_dir, output_dir=output_dir, generated_at=generated_at
     )
-    first_path = first_paths[0]
-    first_path.replace(existing_dir / first_path.name)
+    assert len(first_paths) == 1
+    first_path = output_dir / first_paths[0]
+    (existing_dir / first_paths[0]).parent.mkdir(parents=True)
+    first_path.replace(existing_dir / first_paths[0])
 
     second_base = make_item(
         title_ja="別の公式発表",
@@ -63,15 +86,38 @@ def test_writes_valid_frontmatter_and_merges_existing_day(tmp_path) -> None:
         brief_ja=build_brief(second_base, "二つ目の公式概要を日本語化した内容です"),
     )
     merged_dir = tmp_path / "merged"
-    merged_path = write_daily_pages(
-        [second], existing_dir=existing_dir, output_dir=merged_dir, generated_at=generated_at
-    )[0]
-    data = parse_frontmatter(merged_path)
+    merged_paths = write_article_files(
+        [first, second], existing_dir=existing_dir, output_dir=merged_dir, generated_at=generated_at
+    )
 
-    validate_daily_data(data)
-    assert data["itemCount"] == 2
-    assert len(data["description"]) in range(120, 161)
-    assert {item["dedupeKey"] for item in data["items"]} == {
-        "url:fixture-key",
-        "url:second-key",
-    }
+    assert len(merged_paths) == 1
+    data = parse_frontmatter(merged_dir / merged_paths[0])
+    validate_article_data(data)
+    assert data["dedupeKey"] == "url:second-key"
+    assert data["articleId"] == article_id_for("example-ai", "url:second-key")
+
+
+def test_same_generation_batch_article_path_collision_raises(tmp_path) -> None:
+    base = make_item(
+        brief_ja=build_brief(make_item(), "同じURLの公式概要を日本語化した内容です")
+    )
+    conflicting = replace(base, title_ja="別の翻訳タイトル")
+
+    with pytest.raises(ContentValidationError, match="collision in generation batch"):
+        write_article_files(
+            [base, conflicting],
+            existing_dir=tmp_path / "existing",
+            output_dir=tmp_path / "output",
+            generated_at=datetime(2026, 8, 3, 3, 0, tzinfo=UTC),
+        )
+
+
+def test_generated_markdown_has_no_duplicate_body() -> None:
+    item = make_item(
+        brief_ja=build_brief(make_item(), "本文を生成しない正本設計を確認する公式概要です")
+    )
+    data = article_data_from_item(
+        item, generated_at=datetime(2026, 8, 3, 3, 0, tzinfo=UTC)
+    )
+
+    assert render_article_markdown(data).split("---", 2)[-1].strip() == ""

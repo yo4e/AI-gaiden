@@ -3,51 +3,63 @@ import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
 import NewsCard from '../../components/NewsCard.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import {
+  articleDateRange,
+  articlePath,
+  dailyDescription,
+  dailyTitle,
+  groupArticlesByDate,
+  sortArticles,
+} from '../../lib/articles';
 import { formatJapaneseDate, formatJapaneseDateTime } from '../../lib/site';
 
 interface Props {
-  entry: CollectionEntry<'daily'>;
-  previous?: CollectionEntry<'daily'>;
-  next?: CollectionEntry<'daily'>;
+  date: string;
+  articles: CollectionEntry<'articles'>[];
+  previous?: string;
+  next?: string;
 }
 
 export async function getStaticPaths() {
-  const entries = (await getCollection('daily')).sort((a, b) =>
-    a.data.date.localeCompare(b.data.date),
-  );
-  return entries.map((entry, index) => ({
-    params: { date: entry.data.date },
+  const grouped = groupArticlesByDate(await getCollection('articles'));
+  const dates = [...grouped.keys()].sort();
+  return dates.map((date, index) => ({
+    params: { date },
     props: {
-      entry,
-      previous: entries[index - 1],
-      next: entries[index + 1],
+      date,
+      articles: sortArticles(grouped.get(date) || []),
+      previous: dates[index - 1],
+      next: dates[index + 1],
     },
   }));
 }
 
-const { entry, previous, next } = Astro.props;
-const canonicalPath = `/daily/${entry.data.date}/`;
+const { date, articles, previous, next } = Astro.props;
+const title = dailyTitle(date, articles);
+const description = dailyDescription(date, articles);
+const canonicalPath = `/daily/${date}/`;
 const pageUrl = new URL(canonicalPath, Astro.site).href;
+const range = articleDateRange(articles);
 const structuredData = [
   {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: entry.data.title,
-    description: entry.data.description,
+    name: title,
+    description,
     url: pageUrl,
-    datePublished: entry.data.publishedAt,
-    dateModified: entry.data.updatedAt,
+    datePublished: range.publishedAt,
+    dateModified: range.updatedAt,
     inLanguage: 'ja',
     mainEntity: {
       '@type': 'ItemList',
-      numberOfItems: entry.data.itemCount,
-      itemListElement: entry.data.items.map((item, index) => ({
+      numberOfItems: articles.length,
+      itemListElement: articles.map((article, index) => ({
         '@type': 'ListItem',
         position: index + 1,
         item: {
-          '@type': 'Thing',
-          name: item.titleJa,
-          url: item.url,
+          '@type': 'Article',
+          name: article.data.titleJa,
+          url: new URL(articlePath(article.data), Astro.site).href,
         },
       })),
     },
@@ -63,58 +75,52 @@ const structuredData = [
         name: '過去記事',
         item: new URL('/archive/', Astro.site).href,
       },
-      { '@type': 'ListItem', position: 3, name: entry.data.date, item: pageUrl },
+      { '@type': 'ListItem', position: 3, name: date, item: pageUrl },
     ],
   },
 ];
 ---
 
 <BaseLayout
-  title={entry.data.title}
-  description={entry.data.description}
+  title={title}
+  description={description}
   canonicalPath={canonicalPath}
-  image={entry.data.items.find((item) => item.imageUrl)?.imageUrl || '/default-news-image.svg'}
-  noindex={entry.data.noindex}
+  image={articles.find((article) => article.data.imageUrl)?.data.imageUrl ||
+    '/default-news-image.svg'}
   type="article"
-  publishedAt={entry.data.publishedAt}
-  updatedAt={entry.data.updatedAt}
+  publishedAt={range.publishedAt}
+  updatedAt={range.updatedAt}
   structuredData={structuredData}
 >
   <header class="page-header">
     <div class="container">
       <nav class="breadcrumbs" aria-label="パンくず">
         <ol>
-          <li><a href="/">トップ</a></li><li><a href="/archive/">過去記事</a></li><li>
-            {entry.data.date}
-          </li>
+          <li><a href="/">トップ</a></li><li><a href="/archive/">過去記事</a></li><li>{date}</li>
         </ol>
       </nav>
-      <p class="eyebrow">Daily digest / {entry.data.itemCount} stories</p>
-      <h1>{entry.data.title}</h1>
-      <p>{entry.data.description}</p>
+      <p class="eyebrow">Daily digest / {articles.length} stories</p>
+      <h1>{title}</h1>
+      <p>{description}</p>
       <p>
-        <time datetime={entry.data.date}>{formatJapaneseDate(entry.data.date)}</time>・最終更新 <time
-          datetime={entry.data.updatedAt}>{formatJapaneseDateTime(entry.data.updatedAt)} JST</time
+        <time datetime={date}>{formatJapaneseDate(date)}</time>・最終更新 <time
+          datetime={range.updatedAt}>{formatJapaneseDateTime(range.updatedAt)} JST</time
         >
       </p>
     </div>
   </header>
   <div class="container section">
     <p class="daily-note">
-      このページは公式RSSの内容を自動翻訳・定型編集しています。正確な仕様や表現は、各項目の公式発表でご確認ください。
+      このページは記事単位の公式RSS情報を日本時間の日付で集約した一覧です。各記事の本文と原文は個別ページ・公式発表でご確認ください。
     </p>
     <div class="news-list">
-      {entry.data.items.map((item) => <NewsCard item={item} />)}
+      {articles.map((article) => <NewsCard article={article} />)}
     </div>
     {
       (previous || next) && (
         <nav class="date-navigation" aria-label="前後の日次ダイジェスト">
-          {previous ? (
-            <a href={`/daily/${previous.data.date}/`}>← {previous.data.date}</a>
-          ) : (
-            <span />
-          )}
-          {next ? <a href={`/daily/${next.data.date}/`}>{next.data.date} →</a> : <span />}
+          {previous ? <a href={`/daily/${previous}/`}>← {previous}</a> : <span />}
+          {next ? <a href={`/daily/${next}/`}>{next} →</a> : <span />}
         </nav>
       )
     }

@@ -143,6 +143,7 @@ AI-gaiden/
 │  ├─ feed_reader.py
 │  ├─ translator.py
 │  ├─ content_writer.py
+│  ├─ migrate_articles.py
 │  ├─ image_extractor.py
 │  └─ utils.py
 ├─ src/
@@ -153,8 +154,9 @@ AI-gaiden/
 │  │  └─ SeoHead.astro
 │  ├─ content/
 │  │  ├─ config.ts
-│  │  └─ daily/
-│  │     └─ YYYY-MM-DD.md
+│  │  └─ articles/
+│  │     └─ YYYY-MM-DD/
+│  │        └─ <source-id>-<short-id>.md
 │  ├─ layouts/
 │  │  └─ BaseLayout.astro
 │  ├─ pages/
@@ -165,7 +167,8 @@ AI-gaiden/
 │  │  ├─ privacy.astro
 │  │  ├─ 404.astro
 │  │  ├─ feed.xml.ts
-│  │  └─ daily/[date].astro
+│  │  ├─ daily/[date].astro
+│  │  └─ articles/[year]/[month]/[day]/[slug].astro
 │  └─ styles/
 │     └─ global.css
 ├─ tests/
@@ -381,59 +384,69 @@ Google AIは8月3日、「〇〇」を公開しました。公式RSSによると
 - 末尾に公式発表へのリンクを置く。
 - 自動翻訳であることを記事ページ上にも表示する。
 
-## 11. 日次ページ生成
+## 11. 個別記事と日次集約
 
-### 11.1 生成単位
+### 11.1 正本と派生ビュー
 
-MVPでは、個別の薄い記事ページを大量生成せず、**日次ダイジェストページを1日1ページ**作る。
+1ニュースを1つのMarkdownファイルとして `src/content/articles/YYYY-MM-DD/<article-id>.md` に保存し、`articles` コレクションを情報の正本とする。日次ページは `dateJst` で個別記事を集約する派生ビューであり、日次Markdownを正本として保持しない。
 
-理由:
+SEO上の薄いページ量産は避けつつ、個別ニュースの恒久URL、検索導線、共有単位、修正履歴を持たせる。日次ページには記事本文を複製せず、抜粋・原文タイトル・配信元・個別記事リンクだけを表示する。
 
-- SEO上の薄いコンテンツ量産を避ける。
-- 同日に複数社の動きをまとめ、ページの情報価値を確保する。
-- 重複ページとインデックス肥大を抑える。
+### 11.2 決定的なID・URL
 
-### 11.2 ファイル形式
+`articleId` は `<source-id>-<sha256(dedupeKey)先頭8桁>` とする。公開URLは次の形式で、翻訳タイトルの変更に依存しない。
 
-`src/content/daily/YYYY-MM-DD.md`
+```text
+/articles/YYYY/MM/DD/<articleId>/
+```
 
-Frontmatter例:
+同じ `dedupeKey` からは常に同じ `articleId` とMarkdownパスを生成する。短い固定IDは衝突を検知し、既存ファイルを上書きしない。
+
+### 11.3 個別記事frontmatter
 
 ```yaml
 ---
-title: "海外AIニュース 2026年8月3日｜Google・GitHub・NVIDIA"
-description: "2026年8月3日に公開された海外AI公式発表を日本語で短く紹介します。"
-date: 2026-08-03
-publishedAt: 2026-08-03T22:30:00+09:00
-updatedAt: 2026-08-03T22:30:00+09:00
-itemCount: 4
-sources:
-  - google-ai
-  - github-ai-ml
+articleId: google-ai-4a9b73e7
+titleJa: 日本語タイトル
+titleOriginal: Original title
+description: 個別記事の検索向け説明文。
+briefJa: 日本語短報
+excerptJa: 日次ページ向けの短い抜粋
+publishedAt: 2026-08-03T22:00:00Z
+dateJst: 2026-08-04
+sourceId: google-ai
+sourceName: Google AI
+sourceHomepage: https://blog.google/technology/ai/
+sourceUrl: https://example.com/official-post
+canonicalUrl: https://example.com/official-post
+imageUrl: null
+imageLicense: null
+author: null
+translationStatus: complete
+dedupeKey: url:...
+fetchedAt: 2026-08-04T22:17:00+09:00
+generatedAt: 2026-08-04T22:17:00+09:00
+updatedAt: 2026-08-04T22:17:00+09:00
+humanEdited: false
+correctionHistory: []
 noindex: false
 ---
 ```
 
-本文または構造化データには、各項目について以下を保存する。
+本文は生成せず、frontmatterを個別記事の正本として扱う。Astroの個別記事ページがfrontmatterから日本語短報、原文タイトル、公式リンク、自動収集・自動翻訳の注意書きを一度だけ表示する。`fetchedAt`、`generatedAt`、`updatedAt`、翻訳状態、人間修正フラグ、訂正履歴は後続の透明性・修正運用を阻害しないために保持する。`author`はRSSに含まれる原文著者として「原文著者」と表示し、AI外電の`NewsArticle.author`には設定しない。
 
-- 日本語タイトル
-- 原文タイトル
-- 日本語短報
-- 公式URL
-- 配信元名
-- 公開日時
-- 画像URL（RSS内にある場合）
-- 翻訳状態
-- dedupe key
+### 11.4 日次ページ
 
-### 11.3 新着ゼロの日
+既存の `/daily/YYYY-MM-DD/` URLは維持し、`articles` を `dateJst` でグループ化して静的生成する。日次ページの構造化データは `CollectionPage` + `ItemList` + `BreadcrumbList` とし、各 `ListItem` は個別記事URLを指す。前後の日次ページと同日個別記事への導線を表示する。
+
+### 11.5 新着ゼロの日
 
 - 空の日次ページは作らない。
 - 「本日のニュースはありません」という薄いページを量産しない。
 - リポジトリへ変更がなければコミットしない。
 - トップページには最後に成功した更新日時を表示する。
 
-### 11.4 初回実行
+### 11.6 初回実行
 
 - 過去3日分だけを取得対象とする。
 - フィードの全履歴を一括取り込みしない。
@@ -467,7 +480,7 @@ noindex: false
 
 - SEO向けH1
 - 試験運用バナー
-- 最新の日次ダイジェスト全文または主要項目
+- 最新日の個別記事抜粋と個別記事ページへのリンク
 - 過去7日分へのリンク
 - 情報源一覧への導線
 - 最終更新日時
@@ -477,16 +490,25 @@ noindex: false
 - 日付別ダイジェスト
 - パンくず
 - 前日/翌日の存在するページへのナビゲーション
-- 各ニュースのH2
-- 日本語短報、原文タイトル、配信元、日時、画像、公式リンク
+- 各ニュースのH2と個別記事リンク
+- 抜粋、原文タイトル、配信元、日時、画像、公式リンク（全文は個別ページ）
 
-### 13.3 `/archive/`
+### 13.3 `/articles/YYYY/MM/DD/<article-id>/`
+
+- 個別ニュースの恒久URL
+- 日本語タイトル、短報、原文タイトル、配信元、公開日時、翻訳状態
+- `NewsArticle` と `BreadcrumbList` の構造化データ
+- 公式発表へのリンク
+- 同日の日次ページ、前後記事、配信元ページへの内部リンク
+- 自動収集・自動翻訳・定型編集であることの明示
+
+### 13.4 `/archive/`
 
 - 月別グループ
 - 日付、見出し、件数、主な配信元
 - ページ数が増えたら年別ページへ分割可能な構造
 
-### 13.4 `/sources/`
+### 13.5 `/sources/`
 
 - 配信元名
 - 公式ホームページ
@@ -494,7 +516,7 @@ noindex: false
 - 取得対象の説明
 - 有効/一時停止状態
 
-### 13.5 `/about/`
+### 13.6 `/about/`
 
 - サイトの目的
 - 試験運用中であること
@@ -505,7 +527,7 @@ noindex: false
 - 著作権・画像の取り扱い方針
 - 連絡先は初期段階ではGitHub Issuesへのリンクでもよい
 
-### 13.6 `/privacy/`
+### 13.7 `/privacy/`
 
 - 初期段階でCookie、広告、個人情報収集を行わないこと
 - Cloudflareの配信基盤を使用すること
@@ -539,6 +561,7 @@ SEOは後付けではなく、初期実装の受け入れ条件とする。た�
 
 - トップ: `海外AIニュース速報｜AI外電`
 - 日次: `海外AIニュース YYYY年M月D日｜主要見出し｜AI外電`
+- 個別記事: `<日本語タイトル>｜AI外電`
 - アーカイブ: `海外AIニュース一覧・過去記事｜AI外電`
 - 情報源: `海外AI公式ニュースの情報源一覧｜AI外電`
 - About: `AI外電について｜海外AIニュース自動ダイジェスト`
@@ -559,7 +582,7 @@ SEOは後付けではなく、初期実装の受け入れ条件とする。た�
 - `datePublished` / `dateModified`相当の情報
 - favicon
 
-日次descriptionは、その日の主要見出しを自然な文章で120〜160文字程度にまとめる。単純なキーワード列挙にしない。
+日次descriptionと個別記事descriptionは、表示内容と一致する自然な文章で作る。単純なキーワード列挙や、途中で単語を切る不自然な切り詰めを避ける。
 
 ### 14.4 canonicalと環境分離
 
@@ -574,6 +597,7 @@ SEOは後付けではなく、初期実装の受け入れ条件とする。た�
 
 - トップ: `WebSite`
 - 日次ページ: `CollectionPage` + `ItemList`
+- 個別記事: `NewsArticle` + `BreadcrumbList`（AI外電の短報ページであることを明示）
 - パンくず: `BreadcrumbList`
 - 運営主体が確定していない段階で架空の`Organization`を設定しない。
 - 実際の表示内容と一致しない`NewsArticle`を乱用しない。
@@ -589,9 +613,10 @@ SEOは後付けではなく、初期実装の受け入れ条件とする。た�
 
 ### 14.7 内部リンク
 
-- トップから最新記事とアーカイブへリンク
+- トップから最新の個別記事とアーカイブへリンク
 - 日次ページから前後の日次ページへリンク
 - 配信元名から`/sources/`内の該当アンカーへリンク
+- 個別記事から同日の日次ページ、前後記事、公式発表へリンク
 - パンくずを表示
 - 孤立ページを作らない
 
@@ -691,7 +716,7 @@ github-actions[bot]
 
 - `git add -A`の前に対象差分を表示する。
 - 自動生成対象外のソースコード差分が存在する場合はpushせず失敗させる。
-- 自動コミット対象は原則`src/content/daily/`と`data/seen.json`だけ。
+- 自動コミット対象は`src/content/articles/**`と`data/seen.json`だけ。
 - push前に`git pull --rebase`を行う。
 - 同時実行を防ぐconcurrencyを設定する。
 
@@ -827,7 +852,7 @@ Phase 1ではWranglerによる直接デプロイを使用しない。Cloudflare 
 
 ### 19.2 結合テスト
 
-fixtureから日次Markdownを生成し、Astro buildが成功すること。
+fixtureから個別記事Markdownを生成し、日次集約ページと個別記事ページを含むAstro buildが成功すること。
 
 ### 19.3 スナップショット
 
@@ -868,7 +893,7 @@ fixtureから日次Markdownを生成し、Astro buildが成功すること。
 4. RSS設定とfixture
 5. PythonのRSS解析・正規化・重複排除
 6. Argos翻訳アダプタ
-7. 短報・日次Markdown生成
+7. 短報・個別記事Markdown生成と日次集約
 8. ActionsのCI
 9. Actionsの日次更新
 10. Cloudflare Pages向けビルド確認
@@ -885,7 +910,10 @@ fixtureから日次Markdownを生成し、Astro buildが成功すること。
 - [ ] 全ページに「試験運用中」が表示される。
 - [ ] HTMLスクレイピングを行うコードが存在しない。
 - [ ] AI/翻訳APIキーを要求しない。
-- [ ] fixtureから日本語日次ページを生成できる。
+- [ ] fixtureから日本語個別記事と日次集約ページを生成できる。
+- [ ] 既存日次Markdownの全記事が個別Markdownへ移行されている。
+- [ ] 同じ`dedupeKey`から記事ID・固定URLが再現される。
+- [ ] 既存の日次URLが利用でき、RSSとsitemapが個別記事URLを指す。
 - [ ] RSSにない画像を記事ページから探しに行かない。
 - [ ] 新着ゼロの日に空ページを生成しない。
 - [ ] 同一記事を二重掲載しない。

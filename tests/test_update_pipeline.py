@@ -5,6 +5,7 @@ from pathlib import Path
 
 import pytest
 
+from scripts.content_writer import article_id_for
 from scripts.feed_reader import FeedResult, parse_feed_bytes
 from scripts.models import FeedConfig
 from scripts.translator import TranslationError, Translator
@@ -57,7 +58,7 @@ def test_fixture_to_japanese_daily_markdown_and_deduplication(
 ) -> None:
     config_path = tmp_path / "feeds.yml"
     seen_path = tmp_path / "seen.json"
-    content_dir = tmp_path / "daily"
+    content_dir = tmp_path / "articles"
     write_config(config_path)
     seen_path.write_text('{"items": {}}\n', encoding="utf-8")
     items = parse_feed_bytes((fixture_dir / "rss.xml").read_bytes(), feed_config)
@@ -76,11 +77,12 @@ def test_fixture_to_japanese_daily_markdown_and_deduplication(
     )
 
     assert count == 2
-    page = content_dir / "2026-08-03.md"
+    page = content_dir / "2026-08-03" / f"{article_id_for('example-ai', items[0].dedupe_key)}.md"
     assert page.exists()
     data = parse_frontmatter(page)
-    assert data["itemCount"] == 2
-    assert all("公式発表" in item["briefJa"] for item in data["items"])
+    assert data["dateJst"] == "2026-08-03"
+    assert data["articleId"] == article_id_for("example-ai", items[0].dedupe_key)
+    assert "公式発表" in data["briefJa"]
 
     second_count = run_update(
         config_path=config_path,
@@ -93,13 +95,13 @@ def test_fixture_to_japanese_daily_markdown_and_deduplication(
         translator=JapaneseFixtureTranslator(),
     )
     assert second_count == 0
-    assert parse_frontmatter(page)["itemCount"] == 2
+    assert len(list(content_dir.rglob("*.md"))) == 2
 
 
 def test_all_feed_failures_leave_existing_files_unchanged(tmp_path, feed_config) -> None:
     config_path = tmp_path / "feeds.yml"
     seen_path = tmp_path / "seen.json"
-    content_dir = tmp_path / "daily"
+    content_dir = tmp_path / "articles"
     content_dir.mkdir()
     write_config(config_path)
     seen_path.write_text('{"items": {"existing": {}}}\n', encoding="utf-8")
@@ -120,3 +122,40 @@ def test_all_feed_failures_leave_existing_files_unchanged(tmp_path, feed_config)
 
     assert sentinel.read_text(encoding="utf-8") == "unchanged"
     assert seen_path.read_text(encoding="utf-8") == '{"items": {"existing": {}}}\n'
+
+
+def test_corrupted_seen_recovers_keys_from_article_files(
+    tmp_path, fixture_dir, feed_config
+) -> None:
+    config_path = tmp_path / "feeds.yml"
+    seen_path = tmp_path / "seen.json"
+    content_dir = tmp_path / "articles"
+    write_config(config_path)
+    seen_path.write_text('{"items": {}}\n', encoding="utf-8")
+    items = parse_feed_bytes((fixture_dir / "rss.xml").read_bytes(), feed_config)
+    reader = FixtureReader([FeedResult(feed_config, True, False, tuple(items))])
+    now = datetime(2026, 8, 3, 3, 0, tzinfo=UTC)
+
+    assert run_update(
+        config_path=config_path,
+        seen_path=seen_path,
+        content_dir=content_dir,
+        cache_path=tmp_path / "cache.json",
+        bootstrap_days=3,
+        now=now,
+        reader=reader,
+        translator=JapaneseFixtureTranslator(),
+    ) == 2
+    seen_path.write_text("not json", encoding="utf-8")
+
+    assert run_update(
+        config_path=config_path,
+        seen_path=seen_path,
+        content_dir=content_dir,
+        cache_path=tmp_path / "cache.json",
+        bootstrap_days=3,
+        now=now,
+        reader=reader,
+        translator=JapaneseFixtureTranslator(),
+    ) == 0
+    assert len(list(content_dir.rglob("*.md"))) == 2

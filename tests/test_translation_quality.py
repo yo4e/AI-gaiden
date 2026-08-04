@@ -61,6 +61,43 @@ def test_missing_product_name_is_rejected() -> None:
     assert "missing_proper_noun" in result.reasons
 
 
+def test_general_title_case_phrases_can_be_translated() -> None:
+    cases = (
+        (
+            "Automated Reasoning policy refinement in Amazon Bedrock",
+            "Amazon Bedrockにおける自動推論ポリシーの改善",
+        ),
+        (
+            "Understanding Alignment in Multimodal LLMs",
+            "マルチモーダルLLMにおけるアラインメントの理解",
+        ),
+        (
+            "How Formula improves automated workflows",
+            "数式が自動化ワークフローをどう改善するか",
+        ),
+        (
+            "ChatGPT Work helps legal teams",
+            "ChatGPTが法務チームの業務を支援",
+        ),
+    )
+
+    for source, translated in cases:
+        result = check_translation_quality(source, translated, "title")
+        assert result.passed is True, (source, result.reasons)
+
+
+def test_explicit_additional_protected_term_is_enforced() -> None:
+    result = check_translation_quality(
+        "Project Aurora launches a research tool",
+        "新しい研究ツールを公開しました",
+        "title",
+        protected_terms=("Project Aurora",),
+    )
+
+    assert result.passed is False
+    assert "missing_proper_noun" in result.reasons
+
+
 def test_unnatural_repetition_is_rejected() -> None:
     result = check_translation_quality(
         "A model update",

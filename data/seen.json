@@ -6,6 +6,12 @@
       "source": "google-ai",
       "url": "https://blog.google/products-and-platforms/products/search/dinner-party-hosting-tips"
     },
+    "url:3760a4949caa8e909bb3fa0034c4318087e544037959fa8a071a488a2599495f": {
+      "first_seen_at": "2026-08-04T00:16:06.231356Z",
+      "published_at": "2026-08-03T16:30:58Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/automated-reasoning-policy-refinement-in-amazon-bedrock"
+    },
     "url:388fcf76f805893583afbc4f1162f65a8fbb8ae6cc42f28a885840da4f39b22a": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
       "published_at": "2026-07-28T13:00:00Z",
@@ -59,6 +65,18 @@
       "published_at": "2026-07-28T15:01:45Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders"
+    },
+    "url:deec56a13e2b9b57f5b59222a713843e545d12e56c5cfa7a8c4462845968c02e": {
+      "first_seen_at": "2026-08-04T00:16:06.231356Z",
+      "published_at": "2026-08-03T07:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live"
+    },
+    "url:fbeab4f946087e752299b768eda19c5424ff00a36e42d407a00da97ee1663fe7": {
+      "first_seen_at": "2026-08-04T00:16:06.231356Z",
+      "published_at": "2026-08-03T17:24:15Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/from-weeks-to-minutes-how-formula-1-uses-agentic-ai-on-aws-to-accelerate-data-operations"
     }
   }
 }

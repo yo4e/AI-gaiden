@@ -12,23 +12,33 @@
 - Astro 7 + TypeScript（静的HTML）
 - Python 3.12（RSS取得、正規化、重複排除、翻訳、Markdown生成）
 - Argos Translate（ローカル英日翻訳）
-- GitHub Actions（CI、毎日07:17 JST頃の更新）
+- GitHub Actions（CI、定期更新）
 - Cloudflare Pages Git Integration（mainの更新を自動デプロイ）
 
 生成コンテンツは `src/content/daily/YYYY-MM-DD.md`、重複判定状態は `data/seen.json` に保存します。この2箇所は日次ワークフローが管理するため、原則として手動編集しないでください。
 
 ## 取得対象の公式フィード
 
-2026年8月3日にHTTPステータスとRSS/XMLのContent-Typeを再確認した初期フィードです。
+2026年8月4日時点で有効化している公式フィードです。
 
 | 配信元 | 公式フィード | 用途 |
 | --- | --- | --- |
+| OpenAI News | <https://openai.com/news/rss.xml> | OpenAIの製品、研究、安全性、企業発表 |
 | Google AI | <https://blog.google/technology/ai/rss/> | Google公式ブログのAI発表 |
+| Google DeepMind | <https://deepmind.google/blog/rss.xml> | モデル、研究、安全性、科学分野の公式発表 |
 | Hugging Face Blog | <https://huggingface.co/blog/feed.xml> | モデル、データセット、研究・開発情報 |
+| Microsoft AI Blog | <https://www.microsoft.com/en-us/ai/blog/feed> | AI製品、企業導入、開発基盤の公式発表 |
+| Mistral AI News | <https://mistral.ai/rss.xml> | モデル、製品、研究、企業向け機能の公式発表 |
 | GitHub AI & ML | <https://github.blog/ai-and-ml/feed/> | 開発者向けAI・機械学習情報 |
+| Apple Machine Learning Research | <https://machinelearning.apple.com/rss.xml> | 基盤モデル、オンデバイスAI、機械学習研究 |
+| Cohere Blog | <https://cohere.com/blog/rss.xml> | 企業向けAI、モデル、研究、導入事例 |
+| AWS Artificial Intelligence | <https://aws.amazon.com/blogs/machine-learning/feed/> | 生成AI、機械学習、Amazon Bedrockの公式技術情報 |
 | NVIDIA Deep Learning Blog | <https://blogs.nvidia.com/blog/category/deep-learning/feed/> | ディープラーニング関連情報 |
+| MLCommons | <https://mlcommons.org/feed/> | AIベンチマーク、性能評価、安全性評価 |
 
 設定は `config/feeds.yml` にあります。新しい配信元は公式RSS/Atomであることを人間が確認したうえで追加し、表示用の `src/data/sources.ts` も同じIDで更新してください。RSSがないサイトをHTML解析で代替してはいけません。
+
+追加を保留している候補と再確認条件は [`docs/SOURCE_WATCHLIST.md`](docs/SOURCE_WATCHLIST.md) に記録します。
 
 ## ローカル実行
 
@@ -94,7 +104,7 @@ Pull Requestとmainへのpushで次を行います。外部RSSにはアクセス
 
 ### 日次更新 (`.github/workflows/daily-news.yml`)
 
-- 毎日22:17 UTC（07:17 JST頃）と `workflow_dispatch` で実行
+- 6時間ごとの定期実行と `workflow_dispatch` に対応
 - `contents: write` だけを付与し、Secretsや外部APIキーは不使用
 - Argos英日モデルをActions cacheへ保存
 - PythonテストとAstro buildが成功した後だけ処理を継続
@@ -149,6 +159,6 @@ GitHub Actionsが生成コンテンツをmainへpushすると、Cloudflare Pages
 
 ## Phase 2候補
 
-Blueskyへの日次告知、投稿済みID管理、カスタムドメイン、Search Console、Cloudflare Web Analytics、公式フィード追加、人間による追記欄、翻訳モデル品質比較はPhase 2へ残しています。
+Blueskyへの日次告知、投稿済みID管理、カスタムドメイン、Search Console、Cloudflare Web Analytics、継続的な公式フィード追加、人間による追記欄、翻訳モデル品質比較はPhase 2へ残しています。
 
 詳細仕様は [`docs/IMPLEMENTATION_SPEC.md`](docs/IMPLEMENTATION_SPEC.md)、作業規則は [`AGENTS.md`](AGENTS.md) を参照してください。

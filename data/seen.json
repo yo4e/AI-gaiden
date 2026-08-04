@@ -66,6 +66,12 @@
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/technology/developers-tools/ai-agents-intensive-recap-2026"
     },
+    "url:80911412e4d1c0f0cf5f71d0adb2b01d83689d9ff1dfcfa41904e7e4252c4a99": {
+      "first_seen_at": "2026-08-04T22:31:58.507698Z",
+      "published_at": "2026-08-04T18:39:14Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-web-search-on-amazon-bedrock-for-foundation-model-grounding"
+    },
     "url:8434f80dc8576dd4ddf9d8039fc98ca4a025b6495b48a22bc51919ab454ccf34": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
       "published_at": "2026-08-04T16:02:21Z",
@@ -114,11 +120,23 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b"
     },
+    "url:c99ec862b4e71599bc42c6f96a94ea0c61758ad0ed0c0445d6331b28e4539a2c": {
+      "first_seen_at": "2026-08-04T22:31:58.507698Z",
+      "published_at": "2026-08-04T19:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models"
+    },
     "url:deec56a13e2b9b57f5b59222a713843e545d12e56c5cfa7a8c4462845968c02e": {
       "first_seen_at": "2026-08-04T00:16:06.231356Z",
       "published_at": "2026-08-03T07:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live"
+    },
+    "url:f1d4877545a986a0c7349b5eb5d1a44624b88463c561ca50722ab9ee15c187b7": {
+      "first_seen_at": "2026-08-04T22:31:58.507698Z",
+      "published_at": "2026-08-04T19:02:34Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows"
     },
     "url:fbeab4f946087e752299b768eda19c5424ff00a36e42d407a00da97ee1663fe7": {
       "first_seen_at": "2026-08-04T00:16:06.231356Z",

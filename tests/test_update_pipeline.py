@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from datetime import UTC, datetime
 from pathlib import Path
 
@@ -33,6 +34,11 @@ class JapaneseFixtureTranslator(Translator):
 class AlwaysFailTranslator(Translator):
     def translate(self, text: str) -> str:
         raise TranslationError(f"fixture failure: {text[:10]}")
+
+
+class QualityFailTranslator(Translator):
+    def translate(self, text: str) -> str:
+        return "AI AI AI AI"
 
 
 def write_config(path: Path) -> None:
@@ -83,6 +89,9 @@ def test_fixture_to_japanese_daily_markdown_and_deduplication(
     assert data["dateJst"] == "2026-08-03"
     assert data["articleId"] == article_id_for("example-ai", items[0].dedupe_key)
     assert "公式発表" in data["briefJa"]
+    assert data["titleTranslationStatus"] == "translated"
+    assert data["summaryTranslationStatus"] == "translated"
+    assert data["titleFallbackApplied"] is False
 
     second_count = run_update(
         config_path=config_path,
@@ -96,6 +105,69 @@ def test_fixture_to_japanese_daily_markdown_and_deduplication(
     )
     assert second_count == 0
     assert len(list(content_dir.rglob("*.md"))) == 2
+
+
+def test_quality_gate_fallback_still_generates_article_and_seen_state(
+    tmp_path, fixture_dir, feed_config
+) -> None:
+    config_path = tmp_path / "feeds.yml"
+    seen_path = tmp_path / "seen.json"
+    content_dir = tmp_path / "articles"
+    write_config(config_path)
+    seen_path.write_text('{"items": {}}\n', encoding="utf-8")
+    items = parse_feed_bytes((fixture_dir / "rss.xml").read_bytes(), feed_config)
+    reader = FixtureReader([FeedResult(feed_config, True, False, tuple(items))])
+
+    assert (
+        run_update(
+            config_path=config_path,
+            seen_path=seen_path,
+            content_dir=content_dir,
+            cache_path=tmp_path / "cache.json",
+            bootstrap_days=3,
+            now=datetime(2026, 8, 3, 3, 0, tzinfo=UTC),
+            reader=reader,
+            translator=QualityFailTranslator(),
+        )
+        == 2
+    )
+    files = sorted(content_dir.rglob("*.md"))
+    assert len(files) == 2
+    for path in files:
+        data = parse_frontmatter(path)
+        assert data["titleTranslationStatus"] == "quality_rejected"
+        assert data["titleFallbackApplied"] is True
+        assert "excessive_repetition" in data["translationFallbackReasons"]
+        assert data["titleJa"] == data["titleOriginal"]
+    assert len(json.loads(seen_path.read_text(encoding="utf-8"))["items"]) == 2
+
+
+def test_all_translation_failures_use_safe_fallbacks(tmp_path, fixture_dir, feed_config) -> None:
+    config_path = tmp_path / "feeds.yml"
+    seen_path = tmp_path / "seen.json"
+    content_dir = tmp_path / "articles"
+    write_config(config_path)
+    seen_path.write_text('{"items": {}}\n', encoding="utf-8")
+    items = parse_feed_bytes((fixture_dir / "rss.xml").read_bytes(), feed_config)
+    reader = FixtureReader([FeedResult(feed_config, True, False, tuple(items))])
+
+    assert (
+        run_update(
+            config_path=config_path,
+            seen_path=seen_path,
+            content_dir=content_dir,
+            cache_path=tmp_path / "cache.json",
+            bootstrap_days=3,
+            now=datetime(2026, 8, 3, 3, 0, tzinfo=UTC),
+            reader=reader,
+            translator=AlwaysFailTranslator(),
+        )
+        == 2
+    )
+    data = parse_frontmatter(sorted(content_dir.rglob("*.md"))[0])
+    assert data["titleTranslationStatus"] == "translation_failed"
+    assert data["summaryTranslationStatus"] == "translation_failed"
+    assert data["titleJa"] == data["titleOriginal"]
 
 
 def test_all_feed_failures_leave_existing_files_unchanged(tmp_path, feed_config) -> None:

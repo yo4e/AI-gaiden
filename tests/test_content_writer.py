@@ -121,3 +121,57 @@ def test_generated_markdown_has_no_duplicate_body() -> None:
     )
 
     assert render_article_markdown(data).split("---", 2)[-1].strip() == ""
+
+
+def test_translation_quality_state_is_serialized() -> None:
+    item = make_item(
+        brief_ja=build_brief(make_item(), "品質ゲートの状態を保存する公式概要です"),
+        title_translation_status="quality_rejected",
+        summary_translation_status="translated",
+        title_quality_gate="rejected",
+        summary_quality_gate="passed",
+        title_fallback_applied=True,
+        title_fallback_reasons=("missing_number", "excessive_repetition"),
+    )
+    data = article_data_from_item(
+        item, generated_at=datetime(2026, 8, 3, 3, 0, tzinfo=UTC)
+    )
+
+    assert data["titleTranslationStatus"] == "quality_rejected"
+    assert data["summaryTranslationStatus"] == "translated"
+    assert data["titleFallbackApplied"] is True
+    assert data["translationFallbackReasons"] == ["excessive_repetition", "missing_number"]
+    validate_article_data(data)
+
+
+def test_human_edited_existing_article_is_not_overwritten(tmp_path) -> None:
+    item = make_item(brief_ja=build_brief(make_item(), "人間編集を保護する公式概要です"))
+    existing_dir = tmp_path / "existing"
+    output_dir = tmp_path / "first-output"
+    paths = write_article_files(
+        [item],
+        existing_dir=existing_dir,
+        output_dir=output_dir,
+        generated_at=datetime(2026, 8, 3, 3, 0, tzinfo=UTC),
+    )
+    existing_path = existing_dir / paths[0]
+    existing_path.parent.mkdir(parents=True, exist_ok=True)
+    generated_path = output_dir / paths[0]
+    generated_path.replace(existing_path)
+    edited = existing_path.read_text(encoding="utf-8").replace(
+        "humanEdited: false\ncorrectionHistory: []",
+        "humanEdited: true\ncorrectionHistory:\n- note: human edit",
+    )
+    existing_path.write_text(edited, encoding="utf-8")
+    before = existing_path.read_bytes()
+
+    assert (
+        write_article_files(
+            [item],
+            existing_dir=existing_dir,
+            output_dir=tmp_path / "second-output",
+            generated_at=datetime(2026, 8, 4, 3, 0, tzinfo=UTC),
+        )
+        == []
+    )
+    assert existing_path.read_bytes() == before

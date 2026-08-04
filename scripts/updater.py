@@ -4,6 +4,7 @@ import logging
 import os
 import shutil
 import tempfile
+from dataclasses import dataclass
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
 from typing import Any
@@ -11,6 +12,7 @@ from typing import Any
 from scripts.content_writer import article_id_for, build_brief, build_excerpt, write_article_files
 from scripts.feed_reader import FeedReader
 from scripts.models import NormalizedItem, PreparedItem
+from scripts.translation_quality import check_translation_quality
 from scripts.translator import ArgosTranslator, TranslationError, Translator, limit_summary
 from scripts.utils import (
     load_feed_configs,
@@ -26,6 +28,15 @@ MAX_SEEN_ITEMS = 5000
 
 class UpdateError(RuntimeError):
     """Raised when a safe news update cannot be completed."""
+
+
+@dataclass(frozen=True, slots=True)
+class TranslationOutcome:
+    value: str
+    status: str
+    quality_gate: str
+    fallback_applied: bool
+    fallback_reasons: tuple[str, ...]
 
 
 def _atomic_copy(source: Path, destination: Path) -> None:
@@ -70,29 +81,84 @@ def _is_recent(item: NormalizedItem, now: datetime, days: int) -> bool:
     )
 
 
+def _translate_with_quality(
+    source_text: str,
+    translator: Translator,
+    *,
+    target_type: str,
+    source_id: str,
+    dedupe_key: str,
+    fallback_result: str,
+) -> TranslationOutcome:
+    source = source_text.strip()
+    if not source:
+        return TranslationOutcome("", "source_missing", "not_run", True, ("source_missing",))
+    try:
+        translated = translator.translate(source)
+    except TranslationError:
+        LOGGER.warning(
+            "Translation fallback source=%s dedupe=%s field=%s reasons=%s result=%s",
+            source_id,
+            dedupe_key,
+            target_type,
+            "translation_failed",
+            fallback_result,
+        )
+        return TranslationOutcome(
+            "", "translation_failed", "not_run", True, ("translation_failed",)
+        )
+
+    gate = check_translation_quality(source, translated or "", target_type)
+    if not gate.passed:
+        reasons = tuple(gate.reasons)
+        LOGGER.warning(
+            "Translation quality fallback source=%s dedupe=%s field=%s reasons=%s result=%s",
+            source_id,
+            dedupe_key,
+            target_type,
+            ",".join(reasons),
+            fallback_result,
+        )
+        return TranslationOutcome("", "quality_rejected", "rejected", True, reasons)
+    return TranslationOutcome(translated.strip(), "translated", "passed", False, ())
+
+
 def _prepare_item(
     item: NormalizedItem, translator: Translator, fetched_at: datetime | None = None
 ) -> PreparedItem:
     if not item.published_at:
         raise TranslationError("Cannot publish an item with an unknown date")
-    title_ja = translator.translate(item.title)
-    if not title_ja or len(title_ja) > 180:
-        raise TranslationError("Title translation was empty or unreasonably long")
+    title_original = item.title.strip() or "公式発表"
+    title_outcome = _translate_with_quality(
+        item.title,
+        translator,
+        target_type="title",
+        source_id=item.source_id,
+        dedupe_key=item.dedupe_key,
+        fallback_result="original_title",
+    )
+    title_ja = title_outcome.value or title_original
     summary_input = limit_summary(item.summary)
-    translation_status = "complete" if summary_input else "partial"
-    summary_ja = ""
-    if summary_input:
-        try:
-            summary_ja = translator.translate(summary_input)
-        except TranslationError as exc:
-            LOGGER.warning("Summary translation failed for %s: %s", item.dedupe_key, exc)
-            translation_status = "partial"
+    summary_outcome = _translate_with_quality(
+        summary_input,
+        translator,
+        target_type="summary",
+        source_id=item.source_id,
+        dedupe_key=item.dedupe_key,
+        fallback_result="template_notice",
+    )
+    summary_ja = summary_outcome.value
+    translation_status = (
+        "complete"
+        if title_outcome.status == "translated" and summary_outcome.status == "translated"
+        else "partial"
+    )
 
     partial = PreparedItem(
         source_id=item.source_id,
         source_name=item.source_name,
         title_ja=title_ja,
-        title_original=item.title,
+        title_original=title_original,
         brief_ja="",
         url=item.url,
         canonical_url=item.canonical_url,
@@ -104,6 +170,14 @@ def _prepare_item(
         dedupe_key=item.dedupe_key,
         source_homepage=item.source_homepage,
         fetched_at=fetched_at or item.published_at,
+        title_translation_status=title_outcome.status,
+        summary_translation_status=summary_outcome.status,
+        title_quality_gate=title_outcome.quality_gate,
+        summary_quality_gate=summary_outcome.quality_gate,
+        title_fallback_applied=title_outcome.fallback_applied,
+        summary_fallback_applied=summary_outcome.fallback_applied,
+        title_fallback_reasons=title_outcome.fallback_reasons,
+        summary_fallback_reasons=summary_outcome.fallback_reasons,
     )
     brief = build_brief(partial, summary_ja)
     return PreparedItem(
@@ -123,6 +197,14 @@ def _prepare_item(
         source_homepage=partial.source_homepage,
         fetched_at=partial.fetched_at,
         excerpt_ja=build_excerpt(brief),
+        title_translation_status=partial.title_translation_status,
+        summary_translation_status=partial.summary_translation_status,
+        title_quality_gate=partial.title_quality_gate,
+        summary_quality_gate=partial.summary_quality_gate,
+        title_fallback_applied=partial.title_fallback_applied,
+        summary_fallback_applied=partial.summary_fallback_applied,
+        title_fallback_reasons=partial.title_fallback_reasons,
+        summary_fallback_reasons=partial.summary_fallback_reasons,
     )
 
 
@@ -237,13 +319,21 @@ def run_update(
         auto_install=os.environ.get("ARGOS_AUTO_INSTALL") == "1"
     )
     prepared: list[PreparedItem] = []
-    title_failures = 0
+    translation_fallbacks = 0
     for item in unique:
         try:
-            prepared.append(_prepare_item(item, local_translator, generated_at))
+            prepared_item = _prepare_item(item, local_translator, generated_at)
+            prepared.append(prepared_item)
+            translation_fallbacks += int(
+                prepared_item.title_fallback_applied or prepared_item.summary_fallback_applied
+            )
         except TranslationError as exc:
-            title_failures += 1
-            LOGGER.warning("Title translation failed; item skipped: %s (%s)", item.dedupe_key, exc)
+            LOGGER.warning(
+                "Item preparation failed source=%s dedupe=%s: %s",
+                item.source_id,
+                item.dedupe_key,
+                exc,
+            )
     if not prepared:
         raise UpdateError("Every new item failed title translation; existing content was unchanged")
 
@@ -267,9 +357,9 @@ def run_update(
         _atomic_copy(staged_seen, seen_path)
 
     LOGGER.info(
-        "Translation: success=%d title_failed=%d generated_pages=%s commit_needed=yes",
+        "Translation: success=%d fallback_items=%d generated_pages=%s commit_needed=yes",
         len(prepared),
-        title_failures,
+        translation_fallbacks,
         ",".join(path.as_posix() for path in generated_paths),
     )
     return len(prepared)

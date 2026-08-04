@@ -4,6 +4,8 @@ import logging
 import re
 from abc import ABC, abstractmethod
 
+from scripts.translation_quality import PROTECTED_TERMS
+
 
 class TranslationError(RuntimeError):
     """Raised when local translation is unavailable or produces unusable output."""
@@ -15,21 +17,6 @@ class Translator(ABC):
         """Translate English text to Japanese without a network translation service."""
 
 
-PROTECTED_TERMS = (
-    "Hugging Face",
-    "TensorFlow",
-    "PyTorch",
-    "GitHub",
-    "Copilot",
-    "NVIDIA",
-    "Google",
-    "Gemini",
-    "Claude",
-    "Llama",
-    "OpenAI",
-    "ChatGPT",
-    "CUDA",
-)
 URL_RE = re.compile(r"https?://[^\s]+")
 VERSION_RE = re.compile(r"\b(?:v?\d+(?:\.\d+){1,3}|[A-Z]{2,}[A-Z0-9.-]*)\b")
 CONTROL_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")

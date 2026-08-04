@@ -142,6 +142,7 @@ AI-gaiden/
 │  ├─ update_news.py
 │  ├─ feed_reader.py
 │  ├─ translator.py
+│  ├─ translation_quality.py
 │  ├─ content_writer.py
 │  ├─ migrate_articles.py
 │  ├─ image_extractor.py
@@ -357,10 +358,34 @@ categories: string[]
 
 ### 9.4 失敗時
 
-- タイトル翻訳に失敗した項目は掲載しない。
-- 概要翻訳だけ失敗した場合は、タイトルと定型文のみで掲載可能だが、`translation_status: partial`を保存する。
+- タイトルと概要は別々の翻訳単位・品質判定単位として扱う。
+- タイトル翻訳の品質不合格または処理失敗時は、不自然な日本語を公開せず原題を主表示する。記事自体は失わない。
+- 概要翻訳の品質不合格または処理失敗時は、日本語概要を表示せず「概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください。」という定型案内へ切り替える。
 - 英語全文を日本語ページへ無断でそのまま掲載しない。
-- 失敗を隠さずActionsログに記録する。
+- 既存記事は同一`dedupeKey`なら再生成せず、`humanEdited`、`correctionHistory`を含むfrontmatterを保護する。
+- 失敗とフォールバックを、配信元ID・`dedupeKey`・対象種別・理由コード・フォールバック結果だけActionsログへ記録する。原文・翻訳文の全文はログへ出さない。
+
+### 9.5 翻訳品質ゲート
+
+品質ゲートは翻訳モデルから独立した`translation_quality.py`の`check_translation_quality(source_text, translated_text, target_type)`で実装し、`QualityGateResult(passed, reasons)`を返す。`target_type`は`title`または`summary`で、主観的な自然さの採点ではなく、誤検知を抑えた保守的な安全検査に限定する。
+
+検査項目は次のとおり。
+
+- 空文字、異常な短さ・長さ、制御文字
+- 保護用プレースホルダーの残存
+- 原文にある数字、割合、バージョン番号の欠落
+- 原文URLの欠落または破損
+- 製品名、モデル名、組織名など保護対象の固有名詞の欠落
+- 同じ単語・短い語句の不自然な反復
+- 日本語がほとんどなく英文が過剰に残る状態
+- 記号列だけ、または日本語見出しとして成立しない状態
+- 既知の誤訳パターン
+
+理由コードは次を安定した文字列として扱い、frontmatter、テスト、ログから参照できるようにする。
+
+`empty_translation`、`too_short`、`too_long`、`placeholder_remaining`、`missing_number`、`missing_url`、`invalid_url`、`missing_proper_noun`、`excessive_repetition`、`excessive_english`、`symbol_only`、`not_japanese_heading`、`known_mistranslation`、`invalid_characters`、`source_missing`、`translation_failed`
+
+品質ゲート不合格は異常終了ではなく、タイトルまたは概要単位のフォールバックとして処理する。タイトルと概要の片方が不合格でも、もう片方の成功結果は保持する。
 
 ## 10. 日本語短報の生成
 
@@ -423,6 +448,15 @@ imageUrl: null
 imageLicense: null
 author: null
 translationStatus: complete
+titleTranslationStatus: translated
+summaryTranslationStatus: translated
+titleQualityGate: passed
+summaryQualityGate: passed
+titleFallbackApplied: false
+summaryFallbackApplied: false
+titleFallbackReasons: []
+summaryFallbackReasons: []
+translationFallbackReasons: []
 dedupeKey: url:...
 fetchedAt: 2026-08-04T22:17:00+09:00
 generatedAt: 2026-08-04T22:17:00+09:00
@@ -433,7 +467,7 @@ noindex: false
 ---
 ```
 
-本文は生成せず、frontmatterを個別記事の正本として扱う。Astroの個別記事ページがfrontmatterから日本語短報、原文タイトル、公式リンク、自動収集・自動翻訳の注意書きを一度だけ表示する。`fetchedAt`、`generatedAt`、`updatedAt`、翻訳状態、人間修正フラグ、訂正履歴は後続の透明性・修正運用を阻害しないために保持する。`author`はRSSに含まれる原文著者として「原文著者」と表示し、AI外電の`NewsArticle.author`には設定しない。
+本文は生成せず、frontmatterを個別記事の正本として扱う。Astroの個別記事ページがfrontmatterから日本語短報、原文タイトル、公式リンク、自動収集・自動翻訳の注意書きを一度だけ表示する。`fetchedAt`、`generatedAt`、`updatedAt`、翻訳状態、人間修正フラグ、訂正履歴は後続の透明性・修正運用を阻害しないために保持する。`titleTranslationStatus`と`summaryTranslationStatus`は`translated`、`quality_rejected`、`translation_failed`、`source_missing`を区別し、`titleFallbackApplied`、`summaryFallbackApplied`と理由配列で安全弁の適用結果を保存する。既存記事ではこれらの新フィールドを省略可能とし、従来の`translationStatus`だけでも読み込めるようにする。`author`はRSSに含まれる原文著者として「原文著者」と表示し、AI外電の`NewsArticle.author`には設定しない。
 
 ### 11.4 日次ページ
 
@@ -847,6 +881,7 @@ Phase 1ではWranglerによる直接デプロイを使用しない。Cloudflare 
 - 重複排除
 - 画像優先順位
 - 翻訳失敗
+- 翻訳品質ゲート、理由コード、タイトル/概要別フォールバック
 - 文字数制限
 - frontmatter生成
 

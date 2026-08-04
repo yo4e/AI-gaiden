@@ -22,6 +22,19 @@ const articles = defineCollection({
     imageLicense: z.string().nullable().optional(),
     author: z.string().nullable().optional(),
     translationStatus: z.enum(['complete', 'partial']),
+    titleTranslationStatus: z
+      .enum(['legacy', 'translated', 'quality_rejected', 'translation_failed', 'source_missing'])
+      .optional(),
+    summaryTranslationStatus: z
+      .enum(['legacy', 'translated', 'quality_rejected', 'translation_failed', 'source_missing'])
+      .optional(),
+    titleQualityGate: z.enum(['passed', 'rejected', 'not_run']).optional(),
+    summaryQualityGate: z.enum(['passed', 'rejected', 'not_run']).optional(),
+    titleFallbackApplied: z.boolean().optional(),
+    summaryFallbackApplied: z.boolean().optional(),
+    titleFallbackReasons: z.array(z.string()).optional(),
+    summaryFallbackReasons: z.array(z.string()).optional(),
+    translationFallbackReasons: z.array(z.string()).optional(),
     dedupeKey: z.string().min(1),
     fetchedAt: z.iso.datetime({ offset: true }),
     generatedAt: z.iso.datetime({ offset: true }),

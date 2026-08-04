@@ -18,6 +18,9 @@ interface Article {
     imageLicense?: string | null;
     author?: string | null;
     translationStatus: 'complete' | 'partial';
+    summaryTranslationStatus?:
+      'legacy' | 'translated' | 'quality_rejected' | 'translation_failed' | 'source_missing';
+    summaryFallbackApplied?: boolean;
   };
 }
 
@@ -60,7 +63,9 @@ const internalPath = articlePath(item);
     <p>{item.excerptJa}</p>
     {item.author && <p class="byline">原文著者: {item.author}</p>}
     {
-      item.translationStatus === 'partial' && (
+      (item.summaryFallbackApplied ||
+        (item.summaryTranslationStatus && item.summaryTranslationStatus !== 'translated') ||
+        (!item.summaryTranslationStatus && item.translationStatus === 'partial')) && (
         <p class="translation-note">概要の翻訳がないため、公式リンクで発表内容をご確認ください。</p>
       )
     }

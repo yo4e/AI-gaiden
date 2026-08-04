@@ -13,10 +13,6 @@ from scripts.models import PreparedItem
 from scripts.utils import is_http_url, parse_frontmatter
 
 JST = ZoneInfo("Asia/Tokyo")
-DISCLOSURE = (
-    "この個別記事は、公式RSSの内容を自動収集し、ローカル翻訳モデルと定型編集で生成しています。"
-    "正確な内容は各公式発表をご確認ください。"
-)
 ARTICLE_ID_RE = re.compile(r"[a-z0-9][a-z0-9-]*-[0-9a-f]{8}")
 
 
@@ -182,6 +178,7 @@ def validate_article_data(data: dict[str, Any]) -> None:
 
 
 def render_article_markdown(data: dict[str, Any]) -> str:
+    """Render frontmatter-only Markdown; frontmatter is the article source of truth."""
     validate_article_data(data)
     frontmatter = yaml.safe_dump(
         data,
@@ -190,14 +187,7 @@ def render_article_markdown(data: dict[str, Any]) -> str:
         width=1000,
         default_flow_style=False,
     ).strip()
-    body = (
-        f"# {data['titleJa']}\n\n"
-        f"{data['briefJa']}\n\n"
-        f"原文タイトル: {data['titleOriginal']}\n\n"
-        f"[公式発表を原文で確認する]({data['sourceUrl']})\n\n"
-        f"{DISCLOSURE}\n"
-    )
-    return f"---\n{frontmatter}\n---\n\n{body}"
+    return f"---\n{frontmatter}\n---\n"
 
 
 def write_article_files(
@@ -217,7 +207,9 @@ def write_article_files(
         article_id = article_id_for(item.source_id, item.dedupe_key)
         relative_path = article_relative_path(date_value, article_id)
         if relative_path in seen_paths:
-            continue
+            raise ContentValidationError(
+                f"Article path collision in generation batch: {relative_path}"
+            )
         seen_paths.add(relative_path)
         existing_path = existing_dir / relative_path
         if existing_path.exists():

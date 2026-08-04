@@ -41,7 +41,6 @@ const structuredData = [
     dateModified: data.updatedAt,
     inLanguage: 'ja',
     image: data.imageUrl ? [data.imageUrl] : undefined,
-    author: data.author ? { '@type': 'Person', name: data.author } : undefined,
     isPartOf: { '@type': 'WebSite', name: 'AI外電', url: new URL('/', Astro.site).href },
   },
   {
@@ -83,10 +82,9 @@ const structuredData = [
       </nav>
       <p class="eyebrow">{data.sourceName} / AI外電 article</p>
       <h1>{data.titleJa}</h1>
-      <p class="article-lead">{data.description}</p>
       <p>
         <time datetime={data.publishedAt}>{formatJapaneseDateTime(data.publishedAt)} JST</time>・
-        {data.author ? `著者: ${data.author}` : '原文公開情報'}
+        {data.author ? `原文著者: ${data.author}` : '原文公開情報'}
       </p>
     </div>
   </header>
@@ -102,6 +100,16 @@ const structuredData = [
       <div>
         <dt>配信元</dt><dd><a href={`/sources/#${data.sourceId}`}>{data.sourceName}</a></dd>
       </div>
+      {
+        data.author && (
+          <div>
+            <>
+              <dt>原文著者</dt>
+              <dd>{data.author}</dd>
+            </>
+          </div>
+        )
+      }
       <div>
         <dt>原文公開日時</dt><dd>
           <time datetime={data.publishedAt}>{formatJapaneseDateTime(data.publishedAt)} JST</time>

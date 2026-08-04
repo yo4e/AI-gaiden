@@ -22,23 +22,23 @@ AI外電へ追加する価値は高いものの、現時点では安定した公
 
 ## 保留監視
 
-| 候補 | 公式ページ | 現状 | 追加条件 | 優先度 |
-| --- | --- | --- | --- | --- |
-| Anthropic News | <https://www.anthropic.com/news> | ニュース価値は非常に高いが、安定した公式RSS/Atomを確認できていない。第三者生成フィードは採用しない | Anthropic公式ドメインで継続更新されるフィードが公開される | 最優先監視 |
-| Meta AI Blog | <https://ai.meta.com/blog/> | `https://ai.meta.com/blog/rss/` が候補。アクセス安定性、最新記事、Content-TypeをGitHub Actions相当環境で再確認する必要がある | 複数回の取得で正常なXMLと最新記事を確認する | 高 |
-| Model Context Protocol Blog | <https://blog.modelcontextprotocol.io/> | 仕様変更、SDK、認証などの一次情報として有望だが、安定した公式RSS/Atomを確認できていない | 公式ブログがフィードを案内する、または公式ドメイン上の安定したフィードを確認する | 高 |
-| xAI News | <https://x.ai/news> | 主要モデル企業として重要だが、安定した公式RSS/Atomを確認できていない | xAI公式ドメインで継続更新されるフィードが公開される | 中〜高 |
-| Qwen Blog | <https://qwenlm.github.io/blog/> | 過去のフィード候補は更新停止・遅延の可能性がある。公式発表場所が分散している | 現行の公式発表面と同期したフィードを確認する | 中 |
-| DeepSeek News | <https://api-docs.deepseek.com/news/> | 公式ニュースページはあるが、安定した公式RSS/Atomを確認できていない | 公式フィードまたは公式APIが公開される | 中 |
-| Moonshot AI / Kimi | <https://www.moonshot.cn/> | 中国語圏の重要企業だが、継続取得できる公式フィード、言語、URL構造を確認できていない | 公式フィードの継続性と英日翻訳パイプラインへの適合を確認する | 中 |
+| 候補                        | 公式ページ                              | 現状                                                                                                                         | 追加条件                                                                         | 優先度     |
+| --------------------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ---------- |
+| Anthropic News              | <https://www.anthropic.com/news>        | ニュース価値は非常に高いが、安定した公式RSS/Atomを確認できていない。第三者生成フィードは採用しない                           | Anthropic公式ドメインで継続更新されるフィードが公開される                        | 最優先監視 |
+| Meta AI Blog                | <https://ai.meta.com/blog/>             | `https://ai.meta.com/blog/rss/` が候補。アクセス安定性、最新記事、Content-TypeをGitHub Actions相当環境で再確認する必要がある | 複数回の取得で正常なXMLと最新記事を確認する                                      | 高         |
+| Model Context Protocol Blog | <https://blog.modelcontextprotocol.io/> | 仕様変更、SDK、認証などの一次情報として有望だが、安定した公式RSS/Atomを確認できていない                                      | 公式ブログがフィードを案内する、または公式ドメイン上の安定したフィードを確認する | 高         |
+| xAI News                    | <https://x.ai/news>                     | 主要モデル企業として重要だが、安定した公式RSS/Atomを確認できていない                                                         | xAI公式ドメインで継続更新されるフィードが公開される                              | 中〜高     |
+| Qwen Blog                   | <https://qwenlm.github.io/blog/>        | 過去のフィード候補は更新停止・遅延の可能性がある。公式発表場所が分散している                                                 | 現行の公式発表面と同期したフィードを確認する                                     | 中         |
+| DeepSeek News               | <https://api-docs.deepseek.com/news/>   | 公式ニュースページはあるが、安定した公式RSS/Atomを確認できていない                                                           | 公式フィードまたは公式APIが公開される                                            | 中         |
+| Moonshot AI / Kimi          | <https://www.moonshot.cn/>              | 中国語圏の重要企業だが、継続取得できる公式フィード、言語、URL構造を確認できていない                                          | 公式フィードの継続性と英日翻訳パイプラインへの適合を確認する                     | 中         |
 
 ## 重複・範囲を見て保留
 
-| 候補 | 公式フィード候補 | 保留理由 |
-| --- | --- | --- |
-| Microsoft Research | <https://www.microsoft.com/en-us/research/feed/> | `Microsoft AI Blog`を先に追加した。研究全般を含むため、AI関連記事だけをRSSフィールドで安全に絞れるか確認してから判断する |
-| Google Research | <http://blog.research.google/feeds/posts/default?alt=rss> | Google AIとGoogle DeepMindとの重複が多い可能性がある。独自性と重複率を観測してから判断する |
-| Meta Engineering AI | Meta Engineering内のAIカテゴリフィード候補 | Meta AI Blogの代替として有望だが、研究・製品発表の網羅性とカテゴリ純度を確認する |
+| 候補                | 公式フィード候補                                          | 保留理由                                                                                                                 |
+| ------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Microsoft Research  | <https://www.microsoft.com/en-us/research/feed/>          | `Microsoft AI Blog`を先に追加した。研究全般を含むため、AI関連記事だけをRSSフィールドで安全に絞れるか確認してから判断する |
+| Google Research     | <http://blog.research.google/feeds/posts/default?alt=rss> | Google AIとGoogle DeepMindとの重複が多い可能性がある。独自性と重複率を観測してから判断する                               |
+| Meta Engineering AI | Meta Engineering内のAIカテゴリフィード候補                | Meta AI Blogの代替として有望だが、研究・製品発表の網羅性とカテゴリ純度を確認する                                         |
 
 ## 追加済みだが要監視
 

@@ -58,7 +58,7 @@ const internalPath = articlePath(item);
       <span lang="en">{item.titleOriginal}</span>
     </p>
     <p>{item.excerptJa}</p>
-    {item.author && <p class="byline">著者: {item.author}</p>}
+    {item.author && <p class="byline">原文著者: {item.author}</p>}
     {
       item.translationStatus === 'partial' && (
         <p class="translation-note">概要の翻訳がないため、公式リンクで発表内容をご確認ください。</p>

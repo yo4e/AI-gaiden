@@ -40,6 +40,7 @@ def migrate(
 ) -> int:
     configs = {config.id: config for config in load_feed_configs(feeds_path)}
     migrated = 0
+    seen_paths: set[Path] = set()
     for daily_path in sorted(source_dir.glob("*.md")):
         daily_data = parse_frontmatter(daily_path)
         generated_at = parse_feed_datetime(str(daily_data.get("updatedAt"))) or datetime.now(UTC)
@@ -74,6 +75,9 @@ def migrate(
                 created_iso=generated_at.astimezone().isoformat(timespec="seconds"),
             )
             relative_path = article_relative_path(data["dateJst"], data["articleId"])
+            if relative_path in seen_paths:
+                raise ValueError(f"Article path collision in migration batch: {relative_path}")
+            seen_paths.add(relative_path)
             destination = output_dir / relative_path
             if destination.exists() and not overwrite:
                 existing = parse_frontmatter(destination)

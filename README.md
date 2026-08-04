@@ -27,20 +27,20 @@
 
 2026年8月4日時点で有効化している公式フィードです。
 
-| 配信元 | 公式フィード | 用途 |
-| --- | --- | --- |
-| OpenAI News | <https://openai.com/news/rss.xml> | OpenAIの製品、研究、安全性、企業発表 |
-| Google AI | <https://blog.google/technology/ai/rss/> | Google公式ブログのAI発表 |
-| Google DeepMind | <https://deepmind.google/blog/rss.xml> | モデル、研究、安全性、科学分野の公式発表 |
-| Hugging Face Blog | <https://huggingface.co/blog/feed.xml> | モデル、データセット、研究・開発情報 |
-| Microsoft AI Blog | <https://www.microsoft.com/en-us/ai/blog/feed> | AI製品、企業導入、開発基盤の公式発表 |
-| Mistral AI News | <https://mistral.ai/rss.xml> | モデル、製品、研究、企業向け機能の公式発表 |
-| GitHub AI & ML | <https://github.blog/ai-and-ml/feed/> | 開発者向けAI・機械学習情報 |
-| Apple Machine Learning Research | <https://machinelearning.apple.com/rss.xml> | 基盤モデル、オンデバイスAI、機械学習研究 |
-| Cohere Blog | <https://cohere.com/blog/rss.xml> | 企業向けAI、モデル、研究、導入事例 |
-| AWS Artificial Intelligence | <https://aws.amazon.com/blogs/machine-learning/feed/> | 生成AI、機械学習、Amazon Bedrockの公式技術情報 |
-| NVIDIA Deep Learning Blog | <https://blogs.nvidia.com/blog/category/deep-learning/feed/> | ディープラーニング関連情報 |
-| MLCommons | <https://mlcommons.org/feed/> | AIベンチマーク、性能評価、安全性評価 |
+| 配信元                          | 公式フィード                                                 | 用途                                           |
+| ------------------------------- | ------------------------------------------------------------ | ---------------------------------------------- |
+| OpenAI News                     | <https://openai.com/news/rss.xml>                            | OpenAIの製品、研究、安全性、企業発表           |
+| Google AI                       | <https://blog.google/technology/ai/rss/>                     | Google公式ブログのAI発表                       |
+| Google DeepMind                 | <https://deepmind.google/blog/rss.xml>                       | モデル、研究、安全性、科学分野の公式発表       |
+| Hugging Face Blog               | <https://huggingface.co/blog/feed.xml>                       | モデル、データセット、研究・開発情報           |
+| Microsoft AI Blog               | <https://www.microsoft.com/en-us/ai/blog/feed>               | AI製品、企業導入、開発基盤の公式発表           |
+| Mistral AI News                 | <https://mistral.ai/rss.xml>                                 | モデル、製品、研究、企業向け機能の公式発表     |
+| GitHub AI & ML                  | <https://github.blog/ai-and-ml/feed/>                        | 開発者向けAI・機械学習情報                     |
+| Apple Machine Learning Research | <https://machinelearning.apple.com/rss.xml>                  | 基盤モデル、オンデバイスAI、機械学習研究       |
+| Cohere Blog                     | <https://cohere.com/blog/rss.xml>                            | 企業向けAI、モデル、研究、導入事例             |
+| AWS Artificial Intelligence     | <https://aws.amazon.com/blogs/machine-learning/feed/>        | 生成AI、機械学習、Amazon Bedrockの公式技術情報 |
+| NVIDIA Deep Learning Blog       | <https://blogs.nvidia.com/blog/category/deep-learning/feed/> | ディープラーニング関連情報                     |
+| MLCommons                       | <https://mlcommons.org/feed/>                                | AIベンチマーク、性能評価、安全性評価           |
 
 設定は `config/feeds.yml` にあります。新しい配信元は公式RSS/Atomであることを人間が確認したうえで追加し、表示用の `src/data/sources.ts` も同じIDで更新してください。RSSがないサイトをHTML解析で代替してはいけません。
 

@@ -3,9 +3,14 @@ from __future__ import annotations
 from dataclasses import replace
 from datetime import UTC, datetime
 
+import pytest
+
 from scripts.content_writer import (
+    ContentValidationError,
+    article_data_from_item,
     article_id_for,
     build_brief,
+    render_article_markdown,
     validate_article_data,
     write_article_files,
 )
@@ -90,3 +95,29 @@ def test_writes_one_immutable_article_file_per_item(tmp_path) -> None:
     validate_article_data(data)
     assert data["dedupeKey"] == "url:second-key"
     assert data["articleId"] == article_id_for("example-ai", "url:second-key")
+
+
+def test_same_generation_batch_article_path_collision_raises(tmp_path) -> None:
+    base = make_item(
+        brief_ja=build_brief(make_item(), "同じURLの公式概要を日本語化した内容です")
+    )
+    conflicting = replace(base, title_ja="別の翻訳タイトル")
+
+    with pytest.raises(ContentValidationError, match="collision in generation batch"):
+        write_article_files(
+            [base, conflicting],
+            existing_dir=tmp_path / "existing",
+            output_dir=tmp_path / "output",
+            generated_at=datetime(2026, 8, 3, 3, 0, tzinfo=UTC),
+        )
+
+
+def test_generated_markdown_has_no_duplicate_body() -> None:
+    item = make_item(
+        brief_ja=build_brief(make_item(), "本文を生成しない正本設計を確認する公式概要です")
+    )
+    data = article_data_from_item(
+        item, generated_at=datetime(2026, 8, 3, 3, 0, tzinfo=UTC)
+    )
+
+    assert render_article_markdown(data).split("---", 2)[-1].strip() == ""

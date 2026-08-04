@@ -11,16 +11,11 @@ from scripts.content_writer import article_id_for, validate_article_data  # noqa
 from scripts.utils import load_feed_configs, parse_frontmatter  # noqa: E402
 
 
-def main() -> int:
-    root = Path(__file__).resolve().parents[1]
-    configs = load_feed_configs(root / "config/feeds.yml")
-    enabled_ids = {config.id for config in configs if config.enabled}
-    if not enabled_ids:
-        raise ValueError("At least one official feed must be enabled")
-
-    content_dir = root / "src/content/articles"
+def validate_articles(content_dir: Path, configs: list) -> tuple[int, set[str], set[str]]:
+    """Validate article files against all configured sources, including disabled ones."""
     if not content_dir.exists():
         raise ValueError("src/content/articles must exist")
+    configured_ids = {config.id for config in configs}
     article_count = 0
     dedupe_keys: set[str] = set()
     article_ids: set[str] = set()
@@ -36,11 +31,22 @@ def main() -> int:
             raise ValueError(f"Duplicate articleId: {data['articleId']}")
         if data["articleId"] != article_id_for(data["sourceId"], data["dedupeKey"]):
             raise ValueError(f"articleId is not deterministic: {path}")
-        if data["sourceId"] not in enabled_ids:
-            raise ValueError(f"Article references a disabled or unknown source: {path}")
+        if data["sourceId"] not in configured_ids:
+            raise ValueError(f"Article references an unknown source: {path}")
         dedupe_keys.add(data["dedupeKey"])
         article_ids.add(data["articleId"])
         article_count += 1
+    return article_count, dedupe_keys, article_ids
+
+
+def main() -> int:
+    root = Path(__file__).resolve().parents[1]
+    configs = load_feed_configs(root / "config/feeds.yml")
+    if not any(config.enabled for config in configs):
+        raise ValueError("At least one official feed must be enabled")
+
+    content_dir = root / "src/content/articles"
+    article_count, dedupe_keys, article_ids = validate_articles(content_dir, configs)
 
     legacy_dir = root / "src/content/daily"
     if legacy_dir.exists() and any(legacy_dir.glob("*.md")):

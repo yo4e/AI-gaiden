@@ -33,8 +33,10 @@ QUALITY_GATE_REASON_CODES = (
     "translation_failed",
 )
 
-# These are terms that the existing Argos adapter protects.  A quality gate must
+# These are terms that the existing Argos adapter protects. A quality gate must
 # still check them after translation in case a model changes or corrupts a token.
+# General Title Case phrases are deliberately excluded: ordinary concepts such as
+# "Automated Reasoning" must be allowed to become natural Japanese.
 PROTECTED_TERMS = (
     "Hugging Face",
     "TensorFlow",
@@ -79,42 +81,12 @@ _NUMBER_RE = re.compile(
     r"(?<![A-Za-z0-9])v?\d+(?:[.,]\d+)*(?:\s*[%％])?(?![A-Za-z0-9])",
     re.IGNORECASE,
 )
-_PROPER_SEQUENCE_RE = re.compile(
-    r"\b[A-Z][A-Za-z0-9.+-]*(?:\s+[A-Z][A-Za-z0-9.+-]*){1,3}\b"
-)
 _ASCII_WORD_RE = re.compile(r"\b[A-Za-z][A-Za-z0-9'-]*\b")
 _JAPANESE_RE = re.compile(r"[\u3040-\u30ff\u3400-\u9fff]")
 _REPEATED_ASCII_RE = re.compile(
     r"\b([A-Za-z][A-Za-z0-9'-]{1,24})(?:\s+\1){1,}\b", re.IGNORECASE
 )
 _REPEATED_JAPANESE_RE = re.compile(r"([\u3040-\u30ff\u3400-\u9fff]{2,12})\1{2,}")
-
-_GENERIC_NAME_WORDS = {
-    "a",
-    "an",
-    "and",
-    "ai",
-    "available",
-    "blog",
-    "company",
-    "for",
-    "from",
-    "inside",
-    "latest",
-    "model",
-    "new",
-    "news",
-    "official",
-    "our",
-    "research",
-    "team",
-    "the",
-    "this",
-    "to",
-    "update",
-    "ways",
-    "with",
-}
 
 
 @dataclass(frozen=True)
@@ -157,14 +129,12 @@ def _number_tokens(value: str) -> list[str]:
 
 
 def _proper_terms(value: str, extra_terms: Iterable[str] = ()) -> list[str]:
+    """Return only terms that callers explicitly require to survive translation."""
+
     candidates = list(PROTECTED_TERMS) + [term for term in extra_terms if term]
-    candidates.extend(_PROPER_SEQUENCE_RE.findall(value))
     selected: list[str] = []
     for candidate in sorted(set(candidates), key=len, reverse=True):
         if candidate.casefold() not in value.casefold():
-            continue
-        words = candidate.split()
-        if len(candidate) < 3 or all(word.casefold() in _GENERIC_NAME_WORDS for word in words):
             continue
         if any(candidate.casefold() in existing.casefold() for existing in selected):
             continue

@@ -17,9 +17,9 @@ imageLicense: null
 author: Louisa Liu
 translationStatus: complete
 dedupeKey: url:8434f80dc8576dd4ddf9d8039fc98ca4a025b6495b48a22bc51919ab454ccf34
-fetchedAt: '2026-08-05T02:06:29+09:00'
-generatedAt: '2026-08-05T02:06:29+09:00'
-updatedAt: '2026-08-05T02:06:29+09:00'
+fetchedAt: '2026-08-05T07:31:58+09:00'
+generatedAt: '2026-08-05T07:31:58+09:00'
+updatedAt: '2026-08-05T07:31:58+09:00'
 humanEdited: false
 correctionHistory: []
 noindex: false

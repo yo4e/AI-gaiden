@@ -165,6 +165,7 @@ AI-gaiden/
 │  │  ├─ index.astro
 │  │  ├─ archive.astro
 │  │  ├─ sources.astro
+│  │  ├─ sources/[sourceId].astro
 │  │  ├─ about.astro
 │  │  ├─ editorial-policy.astro
 │  │  ├─ privacy.astro
@@ -558,11 +559,19 @@ noindex: false
 
 ### 13.5 `/sources/`
 
-- 配信元名
-- 公式ホームページ
-- RSS URL
-- 取得対象の説明
-- 有効/一時停止状態
+- 全配信元への入口を維持し、配信元名から`/sources/<sourceId>/`へリンクする。
+- 配信元名、公式ホームページ、公式RSS/Atom URL、取得対象の説明、有効/一時停止状態を表示する。
+- カテゴリ、画像方針、AI外電の記事数を表示する。
+
+### 13.5.1 `/sources/<sourceId>/`
+
+- `sourceId`から生成する安定URLとし、例として`/sources/openai-news/`を使う。
+- 配信元情報、公式サイト、RSS/Atom URL、取得状態、カテゴリ、画像方針、AI外電の記事数を表示する。
+- 最新記事一覧は記事カードで表示し、記事カード、外電票、配信元ページを相互にリンクする。
+- 掲載記事が2件未満の薄い配信元ページは生成するが、`noindex,nofollow`を付けてsitemapから除外する。
+- 2件以上の記事がある配信元ページだけをindex対象とし、sitemapへ収録する。
+- `config/feeds.yml`と`src/data/sources.ts`の配信元メタデータはリポジトリ検証で一致を確認する。
+- アクセス解析や外部サービスはこの段階で実装しない。
 
 ### 13.6 `/about/`
 
@@ -693,8 +702,9 @@ SEOは後付けではなく、初期実装の受け入れ条件とする。た�
 
 - トップから最新の個別記事とアーカイブへリンク
 - 日次ページから前後の日次ページへリンク
-- 配信元名から`/sources/`内の該当アンカーへリンク
+- 配信元名から`/sources/<sourceId>/`の安定URLへリンク
 - 個別記事から同日の日次ページ、前後記事、公式発表へリンク
+- 配信元ページから掲載記事と公式発表へリンク
 - パンくずを表示
 - Aboutとフッターから`/editorial-policy/`へリンクする
 - 孤立ページを作らない

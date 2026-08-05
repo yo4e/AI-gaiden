@@ -1,0 +1,161 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+import NewsCard from '../../components/NewsCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { sources } from '../../data/sources';
+import { articlePath, sortArticles } from '../../lib/articles';
+import { sourceCategoryLabel, sourceImagePolicyLabel } from '../../lib/sourcePresentation';
+
+interface Props {
+  source: (typeof sources)[number];
+  articles: CollectionEntry<'articles'>[];
+}
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+  return sources.map((source) => ({
+    params: { sourceId: source.id },
+    props: {
+      source,
+      articles: sortArticles(articles.filter((article) => article.data.sourceId === source.id)),
+    },
+  }));
+}
+
+const { source, articles } = Astro.props as Props;
+const articleCount = articles.length;
+const latestArticles = articles.slice(0, 5);
+const isThin = articleCount < 2;
+const canonicalPath = `/sources/${source.id}/`;
+const pageUrl = new URL(canonicalPath, Astro.site).href;
+const description = `${source.name}の公式RSS/Atom、取得設定、カテゴリ、画像方針、AI外電の掲載記事${articleCount}件を確認できます。`;
+const structuredData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: `${source.name}の公式ニュース｜AI外電`,
+    description,
+    url: pageUrl,
+    inLanguage: 'ja',
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: articleCount,
+      itemListElement: latestArticles.map((article, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: {
+          '@type': 'Article',
+          name: article.data.titleJa,
+          url: new URL(articlePath(article.data), Astro.site).href,
+        },
+      })),
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'トップ', item: new URL('/', Astro.site).href },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: '情報源',
+        item: new URL('/sources/', Astro.site).href,
+      },
+      { '@type': 'ListItem', position: 3, name: source.name, item: pageUrl },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title={`${source.name}の公式ニュース｜AI外電`}
+  description={description}
+  canonicalPath={canonicalPath}
+  noindex={isThin}
+  structuredData={structuredData}
+>
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="パンくず">
+        <ol>
+          <li><a href="/">トップ</a></li>
+          <li><a href="/sources/">情報源</a></li>
+          <li>{source.name}</li>
+        </ol>
+      </nav>
+      <p class="eyebrow">Official source / {articleCount} stories</p>
+      <h1>{source.name}</h1>
+      <p>{source.description}</p>
+    </div>
+  </header>
+
+  <div class="container section">
+    <section class="source-page__summary" aria-labelledby="source-details-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Source details</p>
+          <h2 id="source-details-heading">配信元情報</h2>
+        </div>
+        <a href="/sources/">← 情報源一覧へ</a>
+      </div>
+      <dl class="source-page__meta">
+        <div>
+          <dt>設定状態</dt>
+          <dd class={source.enabled ? 'status-active' : ''}>
+            {source.enabled ? '取得対象' : '一時停止'}
+          </dd>
+        </div>
+        <div>
+          <dt>公式サイト</dt>
+          <dd><a href={source.homepage} rel="noopener noreferrer">{source.homepage}</a></dd>
+        </div>
+        <div>
+          <dt>公式RSS・Atom URL</dt>
+          <dd><a href={source.feedUrl} rel="noopener noreferrer">{source.feedUrl}</a></dd>
+        </div>
+        <div>
+          <dt>カテゴリ</dt>
+          <dd>{source.categories.map(sourceCategoryLabel).join('、')}</dd>
+        </div>
+        <div>
+          <dt>画像方針</dt>
+          <dd>{sourceImagePolicyLabel(source.imagePolicy)}</dd>
+        </div>
+        <div>
+          <dt>AI外電の記事数</dt>
+          <dd>{articleCount}件</dd>
+        </div>
+      </dl>
+      {
+        isThin && (
+          <p class="daily-note">
+            掲載記事が2件未満のため、この配信元ページは検索エンジンに登録しません。記事が増えるまでsitemapにも収録しません。
+          </p>
+        )
+      }
+    </section>
+  </div>
+
+  <div class="container section source-page__articles">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Latest AI-gaiden stories</p>
+        <h2>最新記事一覧</h2>
+      </div>
+      <p>{articleCount}件</p>
+    </div>
+    {
+      latestArticles.length > 0 ? (
+        <div class="news-list">
+          {latestArticles.map((article) => (
+            <NewsCard article={article} />
+          ))}
+        </div>
+      ) : (
+        <p class="empty-state">この配信元の記事はまだありません。</p>
+      )
+    }
+  </div>
+</BaseLayout>

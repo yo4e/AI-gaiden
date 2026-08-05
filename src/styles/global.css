@@ -525,6 +525,34 @@ h1 {
   overflow-wrap: anywhere;
 }
 
+.source-page__meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 0;
+}
+
+.source-page__meta div {
+  padding: 1rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.source-page__meta dt {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.source-page__meta dd {
+  margin: 0.35rem 0 0;
+  overflow-wrap: anywhere;
+}
+
+.source-page__articles {
+  padding-top: 0;
+}
+
 .status-active {
   color: var(--green);
   font-weight: 700;

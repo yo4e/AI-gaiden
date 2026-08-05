@@ -23,6 +23,8 @@
 
 個別記事には、配信元、原文情報、取得・生成・更新日時、翻訳状態、フォールバック、人間修正の有無をまとめた「外電票」を表示します。公開対象の訂正履歴がある記事だけ、日時と説明を追加表示します。
 
+`/sources/` は全配信元の入口です。各配信元には `sourceId` 由来の安定URL（例: `/sources/openai-news/`）を用意し、公式サイト、RSS/Atom URL、取得状態、カテゴリ、画像方針、掲載記事数、最新記事を表示します。掲載記事が2件未満の薄い配信元ページは `noindex,nofollow` とし、sitemapにも収録しません。
+
 `/feed.xml` は個別記事単位の正式なサイトRSSです。各itemはAI外電が作成した日本語短報、配信元、原文公開日時、更新日時、翻訳状態、固定個別記事URLを含みます。元RSS本文、元記事本文、画像、長い逐語翻訳は含めません。日次ダイジェスト単位の `/daily/feed.xml` は現在提供していません。利用条件は[編集・訂正ポリシー](/editorial-policy/)に掲載しています。
 
 生成コンテンツは `src/content/articles/YYYY-MM-DD/<article-id>.md`、重複判定状態は `data/seen.json` に保存します。個別記事Markdownが正本で、`/daily/YYYY-MM-DD/` はそこから生成する集約ビューです。これらは日次ワークフローが管理するため、原則として手動編集しないでください。
@@ -50,7 +52,7 @@
 | NVIDIA Deep Learning Blog       | <https://blogs.nvidia.com/blog/category/deep-learning/feed/> | ディープラーニング関連情報                     |
 | MLCommons                       | <https://mlcommons.org/feed/>                                | AIベンチマーク、性能評価、安全性評価           |
 
-設定は `config/feeds.yml` にあります。新しい配信元は公式RSS/Atomであることを人間が確認したうえで追加し、表示用の `src/data/sources.ts` も同じIDで更新してください。RSSがないサイトをHTML解析で代替してはいけません。
+設定は `config/feeds.yml` にあります。新しい配信元は公式RSS/Atomであることを人間が確認したうえで追加し、表示用の `src/data/sources.ts` も更新してください。リポジトリ検証が両方の配信元メタデータの整合性を確認します。RSSがないサイトをHTML解析で代替してはいけません。
 
 追加を保留している候補と再確認条件は [`docs/SOURCE_WATCHLIST.md`](docs/SOURCE_WATCHLIST.md) に記録します。
 
@@ -170,6 +172,7 @@ GitHub Actionsが生成コンテンツをmainへpushすると、Cloudflare Pages
 ## 公開後のSEO確認
 
 - 各ページのtitle、description、canonical、OGメタが一意で本番URLを指すこと
+- 2件以上の記事がある配信元ページがsitemapに入り、薄い配信元ページがnoindexになること
 - `/robots.txt` が `/sitemap-index.xml` を参照すること
 - `/feed.xml` が本番URLで読めること
 - `/feed.xml` のlink/GUIDが絶対固定個別記事URLで一致し、descriptionが日本語短報だけであること

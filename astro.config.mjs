@@ -15,6 +15,7 @@ if (isCloudflare && !configuredSite) {
 const site = configuredSite || 'http://localhost:4321';
 const articleLastModified = new Map();
 const dailyLastModified = new Map();
+const sourceArticleCounts = new Map();
 const articleDirectory = fileURLToPath(new URL('./src/content/articles/', import.meta.url));
 
 function markdownFiles(directory) {
@@ -32,7 +33,11 @@ try {
     const markdown = readFileSync(filename, 'utf8');
     const date = markdown.match(/^dateJst:\s*['"]?(\d{4}-\d{2}-\d{2})/m)?.[1];
     const articleId = markdown.match(/^articleId:\s*['"]?([^'"\n]+)/m)?.[1];
+    const sourceId = markdown.match(/^sourceId:\s*['"]?([^'"\n]+)/m)?.[1];
     const updatedAt = markdown.match(/^updatedAt:\s*['"]?([^'"\n]+)/m)?.[1];
+    if (sourceId) {
+      sourceArticleCounts.set(sourceId, (sourceArticleCounts.get(sourceId) || 0) + 1);
+    }
     if (date && articleId && updatedAt) {
       const updated = new Date(updatedAt);
       const [year, month, day] = date.split('-');
@@ -54,7 +59,12 @@ export default defineConfig({
     ? []
     : [
         sitemap({
-          filter: (page) => !page.endsWith('/404/'),
+          filter: (page) => {
+            const pathname = new URL(page).pathname;
+            if (pathname.endsWith('/404/')) return false;
+            const sourceId = pathname.match(/^\/sources\/([^/]+)\/$/)?.[1];
+            return !sourceId || (sourceArticleCounts.get(sourceId) || 0) >= 2;
+          },
           serialize(item) {
             const pathname = new URL(item.url).pathname;
             const lastmod = articleLastModified.get(pathname) || dailyLastModified.get(pathname);

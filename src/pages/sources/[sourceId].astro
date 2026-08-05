@@ -5,6 +5,10 @@ import NewsCard from '../../components/NewsCard.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { sources } from '../../data/sources';
 import { articlePath, sortArticles } from '../../lib/articles';
+import {
+  sourceCategoryLabel,
+  sourceImagePolicyLabel,
+} from '../../lib/sourcePresentation';
 
 interface Props {
   source: (typeof sources)[number];
@@ -28,7 +32,7 @@ const latestArticles = articles.slice(0, 5);
 const isThin = articleCount < 2;
 const canonicalPath = `/sources/${source.id}/`;
 const pageUrl = new URL(canonicalPath, Astro.site).href;
-const description = `${source.name}の公式RSS/Atom、取得状態、カテゴリ、画像方針、AI外電の掲載記事${articleCount}件を確認できます。`;
+const description = `${source.name}の公式RSS/Atom、取得設定、カテゴリ、画像方針、AI外電の掲載記事${articleCount}件を確認できます。`;
 const structuredData = [
   {
     '@context': 'https://schema.org',
@@ -101,9 +105,9 @@ const structuredData = [
       </div>
       <dl class="source-page__meta">
         <div>
-          <dt>取得状態</dt>
+          <dt>設定状態</dt>
           <dd class={source.enabled ? 'status-active' : ''}>
-            {source.enabled ? '取得中' : '一時停止'}
+            {source.enabled ? '取得対象' : '一時停止'}
           </dd>
         </div>
         <div>
@@ -116,11 +120,11 @@ const structuredData = [
         </div>
         <div>
           <dt>カテゴリ</dt>
-          <dd>{source.categories.join('、')}</dd>
+          <dd>{source.categories.map(sourceCategoryLabel).join('、')}</dd>
         </div>
         <div>
           <dt>画像方針</dt>
-          <dd>RSSに明示された画像のみ（{source.imagePolicy}）</dd>
+          <dd>{sourceImagePolicyLabel(source.imagePolicy)}</dd>
         </div>
         <div>
           <dt>AI外電の記事数</dt>

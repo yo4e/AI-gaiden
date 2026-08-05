@@ -18,6 +18,10 @@ export interface ArticleData {
   imageLicense?: string | null;
   author?: string | null;
   translationStatus: 'complete' | 'partial';
+  titleTranslationStatus?:
+    'legacy' | 'translated' | 'quality_rejected' | 'translation_failed' | 'source_missing';
+  summaryTranslationStatus?:
+    'legacy' | 'translated' | 'quality_rejected' | 'translation_failed' | 'source_missing';
   dedupeKey: string;
   fetchedAt: string;
   generatedAt: string;

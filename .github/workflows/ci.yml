@@ -53,3 +53,6 @@ jobs:
 
       - name: Build static site
         run: npm run build
+
+      - name: Validate generated RSS and sitemap
+        run: npm run validate:rss

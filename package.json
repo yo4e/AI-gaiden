@@ -7,6 +7,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "check": "astro check",
+    "validate:rss": "python3 scripts/validate_rss.py dist/feed.xml dist/sitemap-index.xml dist",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },

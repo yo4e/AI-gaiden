@@ -642,6 +642,9 @@ SEOは後付けではなく、初期実装の受け入れ条件とする。た�
 - `@astrojs/sitemap`で本番URL基準の`/sitemap-index.xml`または`/sitemap.xml`を生成する。
 - `robots.txt`からサイトマップを参照する。
 - サイト自身のRSS `/feed.xml`を生成する。
+- `/feed.xml`は個別記事単位の正式なサイトRSSとし、各itemのlink/GUIDを絶対固定個別記事URLで一致させる。descriptionはAI外電の日本語短報だけを使い、元RSS本文、元記事本文、画像、長い逐語翻訳を含めない。
+- 各itemは配信元、原文公開日時（`pubDate`）、AI外電の更新日時（Atom名前空間の`updated`）、翻訳状態を保持し、sitemapの個別記事URLと一致することを検証する。
+- 日次単位の `/daily/feed.xml` は当面生成せず、RSS利用条件と方針をAboutページに掲載する。
 - 空ページ、テストfixture、内部JSON、Preview環境をサイトマップへ入れない。
 - `lastmod`を適切に出力する。
 

@@ -21,6 +21,8 @@
 
 `/daily/YYYY-MM-DD/` は `dateJst` で個別記事を集約する派生ページで、記事本文を複製せず抜粋と個別記事リンクだけを表示します。サイトRSS、トップ、アーカイブ、sitemapも個別記事URLを基準に生成されます。
 
+`/feed.xml` は個別記事単位の正式なサイトRSSです。各itemはAI外電が作成した日本語短報、配信元、原文公開日時、更新日時、翻訳状態、固定個別記事URLを含みます。元RSS本文、元記事本文、画像、長い逐語翻訳は含めません。日次ダイジェスト単位の `/daily/feed.xml` は現在提供していません。利用条件はAboutページに掲載しています。
+
 生成コンテンツは `src/content/articles/YYYY-MM-DD/<article-id>.md`、重複判定状態は `data/seen.json` に保存します。個別記事Markdownが正本で、`/daily/YYYY-MM-DD/` はそこから生成する集約ビューです。これらは日次ワークフローが管理するため、原則として手動編集しないでください。
 
 ## 取得対象の公式フィード
@@ -71,6 +73,7 @@ Astroの型検証と本番ビルド:
 ```bash
 npm run check
 SITE_URL=https://example.pages.dev npm run build
+npm run validate:rss
 ```
 
 ローカル開発では `SITE_URL` を省略すると `http://localhost:4321` を使います。Cloudflare Pages上では `SITE_URL` が未設定だと意図的にビルドを失敗させます。
@@ -111,6 +114,7 @@ Pull Requestとmainへのpushで次を行います。外部RSSにはアクセス
 4. `npm ci`
 5. `npm run check`
 6. `npm run build`
+7. `npm run validate:rss`
 
 ### 日次更新 (`.github/workflows/daily-news.yml`)
 
@@ -162,6 +166,8 @@ GitHub Actionsが生成コンテンツをmainへpushすると、Cloudflare Pages
 - 各ページのtitle、description、canonical、OGメタが一意で本番URLを指すこと
 - `/robots.txt` が `/sitemap-index.xml` を参照すること
 - `/feed.xml` が本番URLで読めること
+- `/feed.xml` のlink/GUIDが絶対固定個別記事URLで一致し、descriptionが日本語短報だけであること
+- `/feed.xml` の各itemが配信元、公開日時、更新日時、翻訳状態、カテゴリを持ち、sitemapの個別記事URLと一致すること
 - 日次ページに `CollectionPage`、`ItemList`、`BreadcrumbList` のJSON-LDがあること
 - Preview Deploymentが `noindex,nofollow` であること
 - 個別記事URL、既存の日次URL、404、空の日次ページ、重複ニュースが適切に扱われていること

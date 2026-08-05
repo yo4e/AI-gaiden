@@ -1,5 +1,6 @@
 ---
 import SeoHead from '../components/SeoHead.astro';
+import { OPERATOR_NAME } from '../lib/site';
 import '../styles/global.css';
 import '../styles/theme.css';
 import type { ComponentProps } from 'astro/types';
@@ -48,7 +49,9 @@ const props = Astro.props;
           <a href="/privacy/">プライバシー</a>
           <a href="/feed.xml">RSS</a>
         </nav>
-        <small>© {new Date().getFullYear()} AI外電 — 自動収集・自動翻訳による試験運用</small>
+        <small
+          >運営: {OPERATOR_NAME} · © {new Date().getFullYear()} AI外電 — 自動収集・自動翻訳による試験運用</small
+        >
       </div>
     </footer>
   </body>

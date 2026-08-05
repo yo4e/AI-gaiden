@@ -2,6 +2,10 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { sources } from '../data/sources';
+import {
+  sourceCategoryLabel,
+  sourceImagePolicyLabel,
+} from '../lib/sourcePresentation';
 
 const articles = await getCollection('articles');
 const articleCounts = new Map<string, number>();
@@ -36,9 +40,9 @@ for (const article of articles) {
             </h2>
             <p>{source.description}</p>
             <dl>
-              <dt>状態</dt>
+              <dt>設定状態</dt>
               <dd class={source.enabled ? 'status-active' : ''}>
-                {source.enabled ? '取得中' : '一時停止'}
+                {source.enabled ? '取得対象' : '一時停止'}
               </dd>
               <dt>公式サイト</dt>
               <dd>
@@ -53,9 +57,9 @@ for (const article of articles) {
                 </a>
               </dd>
               <dt>画像方針</dt>
-              <dd>RSSに明示された画像のみ</dd>
+              <dd>{sourceImagePolicyLabel(source.imagePolicy)}</dd>
               <dt>カテゴリ</dt>
-              <dd>{source.categories.join('、')}</dd>
+              <dd>{source.categories.map(sourceCategoryLabel).join('、')}</dd>
               <dt>掲載記事数</dt>
               <dd>{articleCounts.get(source.id) || 0}件</dd>
             </dl>

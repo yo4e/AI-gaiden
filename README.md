@@ -114,7 +114,7 @@ python scripts/update_news.py --bootstrap-days 3
 
 Issue #16の比較基盤は、実際の公式RSSから取得した40件の英語タイトル・概要を評価コーパステンプレートとして [`data/translation_benchmark/corpus.jsonl`](data/translation_benchmark/corpus.jsonl) に保存しています。人間参考訳と人間採点は空欄のままです。Argos Translate、OPUS-MT、FuguMT、M2M100を同じ入力契約で比較し、タイトルと概要を別々に品質ゲートへ通します。
 
-候補の一次情報、ライセンス、商用可否、モデル容量、CPU時間・メモリ・取得時間・キャッシュ容量、Actions実行方針は [`config/translation_benchmark.yml`](config/translation_benchmark.yml) に記録しています。CPU時間・メモリ・取得時間・キャッシュ容量は未計測のまま推測値を入れていません。個別ライセンスが不明なArgos英日パッケージと、追加の人手確認が必要なFuguMTは本番候補から除外しています。本番で使うモデルはこの比較だけで自動決定しません。
+候補の一次情報、ライセンス、商用可否、モデル容量、Actions実行方針は [`config/translation_benchmark.yml`](config/translation_benchmark.yml) に記録しています。実行環境依存のCPU時間・メモリ・取得時間・キャッシュ容量・モデルリビジョンは、明示的なローカル実測スナップショットへ記録し、未計測値を推測しません。個別ライセンスが不明なArgos英日パッケージと、追加の人手確認が必要なFuguMTは本番候補から除外しています。本番で使うモデルはこの比較だけで自動決定しません。
 
 比較はローカルで明示的に実行します。通常CI・日次workflowは大型モデルを取得しません。
 
@@ -129,7 +129,7 @@ python -m pip install "transformers<5"
 python scripts/run_translation_benchmark.py --candidate opus-mt-en-ja
 ```
 
-結果は同一条件のJSON、CSV、Markdownとして `data/translation_benchmark/results/` に出力されます。モデルやArgosパッケージを取得する場合だけ、ローカルで `--allow-model-download` を追加してください。自然さ、人間参考訳、人間採点、本番採用モデルは人間の確認事項として残しています。
+結果は同一条件のJSON、CSV、Markdownとして `data/translation_benchmark/results/` に保存されます。モデルやArgosパッケージを取得する場合だけ、ローカルで `--allow-model-download` を追加してください。自然さ、人間参考訳、人間採点、本番採用モデルは人間の確認事項として残しています。実測JSONから [`scripts/create_human_evaluation.py`](scripts/create_human_evaluation.py) を実行すると、12件のA〜D匿名評価表と、評価後にだけ開く別ファイルのモデル対応表を [`data/translation_benchmark/human_evaluation/`](data/translation_benchmark/human_evaluation/) に作成できます。
 
 ## GitHub Actions
 

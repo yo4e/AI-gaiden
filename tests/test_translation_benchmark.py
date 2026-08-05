@@ -1,9 +1,13 @@
 from __future__ import annotations
 
+import csv
+import json
+import re
 from contextlib import nullcontext
 from pathlib import Path
 
 import scripts.translation_benchmark as benchmark
+from scripts.create_human_evaluation import create_evaluation_files
 from scripts.translation_benchmark import (
     BenchmarkCandidate,
     BenchmarkConfig,
@@ -168,3 +172,64 @@ def test_runner_separates_title_summary_and_writes_three_formats(tmp_path, monke
     assert any(row["status"] == "quality_rejected" for row in result["runs"])
     assert all(path.exists() for path in paths)
     assert "candidate_id,target_type,item_id" in paths[1].read_text(encoding="utf-8")
+    measurement = result["candidate_measurements"][0]
+    assert result["runtime"]["device"] == "cpu"
+    assert measurement["inference_time_ms_total"] is not None
+    assert measurement["memory_measurement_scope"]
+
+
+def test_committed_results_create_blinded_human_evaluation_files(tmp_path) -> None:
+    result_path = ROOT / "data/translation_benchmark/results/translation-benchmark.json"
+    corpus_path = ROOT / "data/translation_benchmark/corpus.jsonl"
+
+    paths = create_evaluation_files(result_path, corpus_path, tmp_path)
+
+    with paths[0].open(encoding="utf-8", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    with paths[2].open(encoding="utf-8", newline="") as handle:
+        key_rows = list(csv.DictReader(handle))
+    markdown = paths[1].read_text(encoding="utf-8")
+    sections = markdown.split("\n## ")[1:]
+    section_headers = [section.splitlines()[0] for section in sections]
+    summary_sources = {
+        row["sample_id"]: row["source_text"]
+        for row in rows
+        if row["target_type"] == "summary"
+    }
+    assert len(sections) == 24
+    assert sum(header.endswith("(title)") for header in section_headers) == 12
+    assert sum(header.endswith("(summary)") for header in section_headers) == 12
+    assert all(
+        len(re.findall(r"^\| [A-D] \|", section, flags=re.MULTILINE)) == 4
+        for section in sections
+    )
+    assert all(
+        {match for match in re.findall(r"^\| ([A-D]) \|", section, flags=re.MULTILINE)}
+        == {"A", "B", "C", "D"}
+        for section in sections
+    )
+    for sample_id, source_text in summary_sources.items():
+        summary_section = next(
+            section
+            for section in sections
+            if section.startswith(f"{sample_id} (summary)")
+        )
+        assert f"- Original: {source_text}" in summary_section
+    assert len(rows) == 12 * 2 * 4
+    assert {row["blinded_key"] for row in rows} == {"A", "B", "C", "D"}
+    assert len(key_rows) == 4
+    assert all(not row["meaning_accuracy"] for row in rows)
+
+
+def test_human_evaluation_decision_is_machine_readable() -> None:
+    result = json.loads(
+        (
+            ROOT
+            / "data/translation_benchmark/human_evaluation/evaluation_results.json"
+        ).read_text(encoding="utf-8")
+    )
+
+    assert len(result["comparisons"]) == 10
+    assert result["votes"] == {"C": 3, "D": 7}
+    assert result["interim_adoption"]["status"] == "keep_current_argos"
+    assert result["interim_adoption"]["production_code_change"] is False

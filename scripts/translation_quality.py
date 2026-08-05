@@ -74,7 +74,7 @@ KNOWN_MISTRANSLATION_PATTERNS = (
 
 _CONTROL_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
 _PLACEHOLDER_RE = re.compile(
-    r"(?:ZXQ\d{4}QXZ|__PROTECTED_\d+__|\{\{[^}]+\}\}|\[\[[^]]+\]\])"
+    r"(?:ZX(?:Q?\d+Q?XZ|QXZ)|__PROTECTED_\d+__|\{\{[^}]+\}\}|\[\[[^]]+\]\])"
 )
 _URL_RE = re.compile(r"https?://[^\s<>\u3000]*", re.IGNORECASE)
 _NUMBER_RE = re.compile(

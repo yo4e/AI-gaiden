@@ -25,7 +25,7 @@ candidates:
     cache_size: not_measured
     actions_feasibility: existing_daily_path; comparison_manual_only
     production_candidate: false
-    exclusion_reason: The individual en-ja package license is not stated in the official package metadata.
+    exclusion_reason: 'The individual en-ja package license and training-data provenance are not stated in official package metadata; keep this as a temporary existing-path dependency only and do not redistribute or expand use.'
 
   - id: opus-mt-en-ja
     label: OPUS-MT en→ja
@@ -33,16 +33,16 @@ candidates:
     model_id: Helsinki-NLP/opus-mt-en-jap
     official_url: https://github.com/Helsinki-NLP/Opus-MT
     model_card_url: https://huggingface.co/Helsinki-NLP/opus-mt-en-jap
-    license: Apache-2.0
-    commercial_status: license-permits-commercial-use
+    license: 'HF: Apache-2.0; upstream OPUS-MT: CC-BY-4.0 (unresolved conflict)'
+    commercial_status: 'commercial-use-not-prohibited; applicable-license-unresolved'
     model_size: 551 MB (repository page)
     cpu_time: not_measured
     memory: not_measured
     download_time: not_measured
     cache_size: not_measured
     actions_feasibility: manual_only; no_automatic_download
-    production_candidate: true
-    exclusion_reason: ''
+    production_candidate: false
+    exclusion_reason: 'Human evaluation found frequent semantically unusable output; the license display and corpus-level training-data provenance are unresolved, so this candidate is not approved for production.'
 
   - id: fugumt-en-ja
     label: FuguMT en→ja
@@ -51,7 +51,7 @@ candidates:
     official_url: https://huggingface.co/staka/fugumt-en-ja
     model_card_url: https://huggingface.co/staka/fugumt-en-ja
     license: CC-BY-SA-4.0
-    commercial_status: license-has-share-alike-conditions
+    commercial_status: commercial-use-permitted-with-attribution-share-alike-obligations
     model_size: 124 MB (repository page)
     cpu_time: not_measured
     memory: not_measured
@@ -59,7 +59,7 @@ candidates:
     cache_size: not_measured
     actions_feasibility: manual_only; no_automatic_download
     production_candidate: false
-    exclusion_reason: Share-alike and model/data provenance conditions require human review before production use.
+    exclusion_reason: 'Commercial use is not prohibited by the stated CC license, but attribution and ShareAlike obligations apply; the model/data version mapping is not pinned and placeholder corruption failed the quality gate, so protection fixes, provenance confirmation, and re-evaluation are required before production use.'
 
   - id: m2m100-418m
     label: M2M100 418M en→ja
@@ -75,5 +75,5 @@ candidates:
     download_time: not_measured
     cache_size: not_measured
     actions_feasibility: manual_only; no_automatic_download
-    production_candidate: true
-    exclusion_reason: ''
+    production_candidate: false
+    exclusion_reason: 'The benchmark produced no result; the 3.88 GB resource burden and source-level English-Japanese training-data rights were not confirmed, so this candidate is not approved for production.'

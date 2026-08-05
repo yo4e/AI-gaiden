@@ -27,7 +27,7 @@ def test_generated_rss_contract_fixture(tmp_path: Path) -> None:
       <atom:updated>2026-08-05T09:00:00+09:00</atom:updated>
       <gaiden:translationStatus>complete</gaiden:translationStatus>
       <category>Example AI</category>
-      <source url="https://example.com/">Example AI</source>
+      <source url="https://example.com/feed.xml">Example AI</source>
     </item>
   </channel>
 </rss>

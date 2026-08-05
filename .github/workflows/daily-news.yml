@@ -1,6 +1,7 @@
 name: Daily official AI news
 
 on:
+  pull_request:
   schedule:
     # Every 6 hours at 00:17, 06:17, 12:17, and 18:17 JST.
     - cron: '17 3,9,15,21 * * *'
@@ -112,7 +113,7 @@ jobs:
           fi
 
       - name: Commit and push generated content
-        if: steps.changes.outputs.has_changes == 'true'
+        if: github.event_name != 'pull_request' && steps.changes.outputs.has_changes == 'true'
         shell: bash
         run: |
           git config user.name 'github-actions[bot]'
@@ -121,6 +122,10 @@ jobs:
           git commit -m "chore(news): update daily AI digest for ${digest_date}"
           git push origin HEAD:main
 
+      - name: Report pull request smoke test
+        if: github.event_name == 'pull_request'
+        run: echo 'Daily workflow smoke test completed; push was intentionally disabled.'
+
       - name: Report no new content
-        if: steps.changes.outputs.has_changes != 'true'
+        if: github.event_name != 'pull_request' && steps.changes.outputs.has_changes != 'true'
         run: echo 'No new official-feed items; no commit was created.'

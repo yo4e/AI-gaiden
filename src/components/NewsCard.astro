@@ -70,8 +70,12 @@ const internalPath = articlePath(item);
       )
     }
     <p class="card-links">
-      <a class="official-link" href={internalPath}>AI外電の記事を読む</a>
-      <a href={item.sourceUrl} rel="noopener noreferrer">公式発表を原文で確認する</a>
+      <a class="article-link" href={internalPath}
+        >AI外電の短報を読む <span aria-hidden="true">→</span></a
+      >
+      <a class="official-link" href={item.sourceUrl} rel="noopener noreferrer"
+        >公式発表を原文で確認 <span aria-hidden="true">↗</span></a
+      >
     </p>
   </div>
 </article>

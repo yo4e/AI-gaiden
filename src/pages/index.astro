@@ -33,16 +33,16 @@ const structuredData = {
         <p class="eyebrow">Official AI News / Japanese Digest</p>
         <h1>{SITE_HEADLINE}</h1>
         <p class="hero__description">
-          海外AIニュースと生成AIの最新情報を、各社の公式RSSだけから収集。原文タイトルと公式リンクを添え、日本語の短報として毎日まとめます。
+          海外AI企業・研究組織の公式RSSを収集し、原題と公式リンクを添えた短い日本語ニュースとして届けます。
         </p>
         <ul class="hero__values" aria-label="AI外電の特徴">
           <li>
             <span class="hero__value-number" aria-hidden="true">01</span>
-            <span><strong>公式情報のみ</strong><small>各社・研究組織の公式RSSを対象</small></span>
+            <span><strong>公式情報のみ</strong><small>企業・研究組織の公式RSSを対象</small></span>
           </li>
           <li>
             <span class="hero__value-number" aria-hidden="true">02</span>
-            <span><strong>原文へ戻れる</strong><small>原文タイトルと公式リンクを明示</small></span>
+            <span><strong>原文へ戻れる</strong><small>原題と公式リンクを必ず併記</small></span>
           </li>
           <li>
             <span class="hero__value-number" aria-hidden="true">03</span>
@@ -52,28 +52,47 @@ const structuredData = {
       </div>
       <aside class="hero-panel" aria-labelledby="hero-panel-heading">
         <div class="hero-panel__header">
-          <p class="eyebrow">How it works</p>
-          <h2 id="hero-panel-heading">公式発表を、静かに整理する</h2>
+          <p class="eyebrow">Information flow</p>
+          <h2 id="hero-panel-heading">一次情報へ戻れる短報</h2>
         </div>
-        <dl class="hero-panel__flow">
-          <div>
-            <dt>01</dt>
-            <dd>公式RSS / Atom</dd>
-            <span>企業・研究組織から取得</span>
-          </div>
-          <div>
-            <dt>02</dt>
-            <dd>AI外電</dd>
-            <span>重複を除き、日本語短報へ整形</span>
-          </div>
-          <div>
-            <dt>03</dt>
-            <dd>原文リンク</dd>
-            <span>重要な確認は公式発表へ戻る</span>
-          </div>
-        </dl>
+        <figure class="hero-diagram">
+          <svg viewBox="0 0 520 270" role="img" aria-labelledby="diagram-title diagram-desc">
+            <title id="diagram-title">AI外電の情報フロー</title>
+            <desc id="diagram-desc">
+              企業と研究組織の公式RSSをAI外電が日本語短報へ整理し、読者が原文へ戻れる構造を示します。
+            </desc>
+            <path class="hero-diagram__line" d="M86 62 C165 70 170 112 224 128" />
+            <path class="hero-diagram__line" d="M86 208 C165 198 172 154 224 142" />
+            <path class="hero-diagram__line" d="M296 128 C354 111 360 71 438 62" />
+            <path class="hero-diagram__line" d="M296 142 C354 158 360 199 438 208" />
+            <circle class="hero-diagram__node" cx="66" cy="58" r="34" />
+            <circle class="hero-diagram__dot" cx="66" cy="58" r="5" />
+            <text class="hero-diagram__text" x="66" y="108" text-anchor="middle">企業</text>
+            <circle class="hero-diagram__node" cx="66" cy="212" r="34" />
+            <circle class="hero-diagram__dot" cx="66" cy="212" r="5" />
+            <text class="hero-diagram__text" x="66" y="262" text-anchor="middle">研究</text>
+            <rect class="hero-diagram__card" x="205" y="89" width="110" height="92" />
+            <rect class="hero-diagram__accent" x="220" y="105" width="80" height="12" />
+            <line class="hero-diagram__line" x1="220" y1="132" x2="288" y2="132" />
+            <line class="hero-diagram__line" x1="220" y1="146" x2="282" y2="146" />
+            <line class="hero-diagram__line" x1="220" y1="160" x2="292" y2="160" />
+            <text class="hero-diagram__text" x="260" y="76" text-anchor="middle">AI外電</text>
+            <circle class="hero-diagram__node" cx="458" cy="58" r="34" />
+            <circle class="hero-diagram__dot" cx="458" cy="58" r="5" />
+            <text class="hero-diagram__text" x="458" y="108" text-anchor="middle">短報</text>
+            <circle class="hero-diagram__node" cx="458" cy="212" r="34" />
+            <circle class="hero-diagram__dot" cx="458" cy="212" r="5" />
+            <text class="hero-diagram__text" x="458" y="262" text-anchor="middle">原文</text>
+            <text class="hero-diagram__label" x="260" y="204" text-anchor="middle">
+              公式RSS → 日本語短報 → 公式発表
+            </text>
+          </svg>
+          <figcaption>
+            公式RSSから短報を生成し、確認が必要な情報は原文へ戻れる構造です。
+          </figcaption>
+        </figure>
         <p class="hero-panel__status">
-          <span>現在の掲載</span>
+          <span>最新掲載</span>
           <strong>{latestArticles.length}件</strong>
           {latestDate && <time datetime={latestDate}>{latestDate} JST</time>}
         </p>
@@ -93,7 +112,7 @@ const structuredData = {
       {
         latestArticles.length > 0 ? (
           <>
-            <p>
+            <p class="latest-updated">
               最終更新:{' '}
               <time datetime={latestArticles[0].data.updatedAt}>
                 {formatJapaneseDateTime(latestArticles[0].data.updatedAt)} JST
@@ -129,14 +148,14 @@ const structuredData = {
           <ul class="archive-preview">
             {recentDates.map((date) => {
               const dayArticles = grouped.get(date) || [];
+              const sources = [...new Set(dayArticles.map((article) => article.data.sourceName))];
               return (
                 <li>
                   <a href={`/daily/${date}/`}>
-                    <strong>{date}</strong>
-                    <span>
-                      {dayArticles.length}件・
-                      {[...new Set(dayArticles.map((a) => a.data.sourceName))].join(' / ')}
-                    </span>
+                    <span class="archive-preview__date">{date}</span>
+                    <span class="archive-preview__count">{dayArticles.length}件</span>
+                    <span class="archive-preview__sources">{sources.join(' / ')}</span>
+                    <span class="archive-preview__arrow" aria-hidden="true">→</span>
                   </a>
                 </li>
               );
@@ -149,29 +168,20 @@ const structuredData = {
     </div>
   </section>
 
-  <section class="section">
+  <section class="section section--policy">
     <div class="container">
       <div class="policy-callout">
         <div>
           <p class="eyebrow">Sources & policy</p>
           <h2>公式発表へ戻れる、透明なダイジェスト</h2>
           <p>
-            現在設定している12の公式RSSを対象とし、記事ページのスクレイピングは行いません。日本語はローカル翻訳モデルと定型文で生成し、確認に必要な原文タイトルと配信元を必ず併記します。
+            公式RSSのみを対象に、自動収集・自動翻訳の範囲を明示し、原題と公式リンクを併記します。
           </p>
         </div>
         <a class="button-link" href="/sources/"
           >情報源と運用方針を見る <span aria-hidden="true">→</span></a
         >
       </div>
-    </div>
-  </section>
-
-  <section class="section section--principles">
-    <div class="container principles" aria-label="運用原則">
-      <div><strong>軽量</strong><span>静的HTMLと最小限のCSS</span></div>
-      <div><strong>アクセシブル</strong><span>高コントラスト、明確なフォーカス</span></div>
-      <div><strong>非誇張的</strong><span>原文にない評価を加えない</span></div>
-      <div><strong>検証可能</strong><span>出典・翻訳・外部リンクを明示</span></div>
     </div>
   </section>
 </BaseLayout>

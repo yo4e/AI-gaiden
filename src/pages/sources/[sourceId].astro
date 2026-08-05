@@ -5,10 +5,7 @@ import NewsCard from '../../components/NewsCard.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { sources } from '../../data/sources';
 import { articlePath, sortArticles } from '../../lib/articles';
-import {
-  sourceCategoryLabel,
-  sourceImagePolicyLabel,
-} from '../../lib/sourcePresentation';
+import { sourceCategoryLabel, sourceImagePolicyLabel } from '../../lib/sourcePresentation';
 
 interface Props {
   source: (typeof sources)[number];

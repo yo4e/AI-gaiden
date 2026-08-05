@@ -2,10 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { sources } from '../data/sources';
-import {
-  sourceCategoryLabel,
-  sourceImagePolicyLabel,
-} from '../lib/sourcePresentation';
+import { sourceCategoryLabel, sourceImagePolicyLabel } from '../lib/sourcePresentation';
 
 const articles = await getCollection('articles');
 const articleCounts = new Map<string, number>();

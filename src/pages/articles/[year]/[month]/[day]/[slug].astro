@@ -1,9 +1,10 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
+import ArticleBulletin from '../../../../../components/ArticleBulletin.astro';
 import BaseLayout from '../../../../../layouts/BaseLayout.astro';
 import { articlePath, sortArticles } from '../../../../../lib/articles';
-import { formatJapaneseDate, formatJapaneseDateTime } from '../../../../../lib/site';
+import { formatJapaneseDate } from '../../../../../lib/site';
 
 interface Props {
   article: CollectionEntry<'articles'>;
@@ -30,15 +31,6 @@ const { article, previous, next } = Astro.props;
 const data = article.data;
 const canonicalPath = articlePath(data);
 const pageUrl = new URL(canonicalPath, Astro.site).href;
-const titleFallback =
-  data.titleFallbackApplied === true ||
-  (data.titleTranslationStatus !== undefined && data.titleTranslationStatus !== 'translated');
-const summaryFallback =
-  data.summaryFallbackApplied ||
-  data.summaryTranslationStatus === 'quality_rejected' ||
-  data.summaryTranslationStatus === 'translation_failed' ||
-  data.summaryTranslationStatus === 'source_missing' ||
-  (!data.summaryTranslationStatus && data.translationStatus === 'partial');
 const structuredData = [
   {
     '@context': 'https://schema.org',
@@ -91,10 +83,6 @@ const structuredData = [
       </nav>
       <p class="eyebrow">{data.sourceName} / AI外電 article</p>
       <h1>{data.titleJa}</h1>
-      <p>
-        <time datetime={data.publishedAt}>{formatJapaneseDateTime(data.publishedAt)} JST</time>・
-        {data.author ? `原文著者: ${data.author}` : '原文公開情報'}
-      </p>
     </div>
   </header>
   <article class="container narrow section article-detail">
@@ -104,48 +92,7 @@ const structuredData = [
     <h2>日本語短報</h2>
     <p class="article-brief">{data.briefJa}</p>
 
-    <dl class="article-facts">
-      <div><dt>原文タイトル</dt><dd lang="en">{data.titleOriginal}</dd></div>
-      <div>
-        <dt>配信元</dt><dd><a href={`/sources/#${data.sourceId}`}>{data.sourceName}</a></dd>
-      </div>
-      {
-        data.author && (
-          <div>
-            <>
-              <dt>原文著者</dt>
-              <dd>{data.author}</dd>
-            </>
-          </div>
-        )
-      }
-      <div>
-        <dt>原文公開日時</dt><dd>
-          <time datetime={data.publishedAt}>{formatJapaneseDateTime(data.publishedAt)} JST</time>
-        </dd>
-      </div>
-      <div>
-        <dt>翻訳状態</dt><dd>
-          {data.translationStatus === 'complete' ? '概要あり' : 'タイトル・定型案内のみ'}
-        </dd>
-      </div>
-      <div>
-        <dt>タイトル翻訳</dt><dd>
-          {titleFallback ? '原題表示（フォールバック）' : '日本語訳あり'}
-        </dd>
-      </div>
-      <div>
-        <dt>概要翻訳</dt><dd>
-          {summaryFallback ? '公式リンク案内（フォールバック）' : '日本語概要あり'}
-        </dd>
-      </div>
-    </dl>
-
-    <p>
-      <a class="button-link" href={data.sourceUrl} rel="noopener noreferrer"
-        >公式発表を原文で確認する</a
-      >
-    </p>
+    <ArticleBulletin data={data} />
 
     <nav class="date-navigation article-navigation" aria-label="前後の記事">
       {previous ? <a href={articlePath(previous.data)}>← 前の記事</a> : <span />}

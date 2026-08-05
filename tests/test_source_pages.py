@@ -12,8 +12,11 @@ def test_sources_entrypoint_lists_all_source_metadata_and_counts() -> None:
         "getCollection('articles')",
         "articleCounts",
         "source.categories",
+        "sourceCategoryLabel",
+        "sourceImagePolicyLabel",
         "掲載記事数",
         "配信元ページを見る",
+        "取得対象",
     ):
         assert phrase in page
 
@@ -28,14 +31,35 @@ def test_source_detail_page_has_stable_urls_and_thin_page_policy() -> None:
         "source.enabled",
         "source.categories",
         "source.imagePolicy",
+        "sourceCategoryLabel",
+        "sourceImagePolicyLabel",
         "最新記事一覧",
         "<NewsCard article={article} />",
         "const isThin = articleCount < 2",
         "noindex={isThin}",
         "sitemapにも収録しません",
         "canonicalPath",
+        "取得対象",
     ):
         assert phrase in page
+
+
+def test_source_metadata_uses_reader_facing_labels() -> None:
+    presentation = (ROOT / "src/lib/sourcePresentation.ts").read_text(encoding="utf-8")
+
+    for phrase in (
+        "'artificial-intelligence': 'AI'",
+        "'machine-learning': '機械学習'",
+        "'developer-tools': '開発者向けツール'",
+        "'rss_only'",
+        "公式RSS・Atomに明示された画像のみ",
+    ):
+        assert phrase in presentation
+
+    for path in ("src/pages/sources.astro", "src/pages/sources/[sourceId].astro"):
+        page = (ROOT / path).read_text(encoding="utf-8")
+        assert "（{source.imagePolicy}）" not in page
+        assert "source.categories.join('、')" not in page
 
 
 def test_article_source_links_use_source_detail_pages() -> None:

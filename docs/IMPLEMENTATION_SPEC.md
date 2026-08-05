@@ -390,6 +390,21 @@ categories: string[]
 
 品質ゲート不合格は異常終了ではなく、タイトルまたは概要単位のフォールバックとして処理する。タイトルと概要の片方が不合格でも、もう片方の成功結果は保持する。
 
+### 9.6 オフライン翻訳モデル比較（Phase 2 Issue #16）
+
+翻訳品質の比較は、`scripts/run_translation_benchmark.py`をローカルで明示的に実行する独立処理とする。通常CIと日次workflowは比較モデルを取得せず、既存のArgos翻訳運用にも影響を与えない。
+
+- 実際の公式RSS/Atomから取得した30〜50件のタイトル・概要を`data/translation_benchmark/corpus.jsonl`へ固定する。
+- `reference_title_ja`、`reference_summary_ja`、人間採点は空欄または`null`のテンプレートとして保持し、値を自動生成しない。
+- Argos、FuguMT、OPUS-MT、M2M100を同じテキスト入力契約で比較し、タイトルと概要を別々に計測する。
+- `check_translation_quality`を全候補へ適用し、`translation_fidelity_metrics`で数字、URL、明示した固有名詞の総数・保持数を集計する。
+- 推論時間、ピークメモリ、品質ゲート、保持率をJSON/CSV/Markdownへ出力する。未実測値を推測せず`not_measured`として記録する。
+- 小さな用語集は`config/translation_glossary.yml`に独立させ、保護する製品名と安定した日本語表記を管理する。
+- 公式モデルカード・公式リポジトリを一次情報としてライセンス、商用可否、容量、CPU・メモリ・取得時間・キャッシュ容量、Actions実行方針を`config/translation_benchmark.yml`へ記録する。
+- 個別ライセンスが不明、または人間の法務確認が必要な候補は本番候補から除外する。本番採用モデルは比較結果から自動決定しない。
+- `--allow-model-download`はローカル専用の明示オプションとし、大型モデルを通常CI・日次workflowで取得しない。
+- 既存記事、固定URL、RSS、`data/seen.json`を比較のために再生成・更新しない。
+
 ## 10. 日本語短報の生成
 
 生成AIを使わず、翻訳済み情報を定型フォーマットへ組み込む。
@@ -937,6 +952,8 @@ Phase 1ではWranglerによる直接デプロイを使用しない。Cloudflare 
 - 画像優先順位
 - 翻訳失敗
 - 翻訳品質ゲート、理由コード、タイトル/概要別フォールバック
+- 翻訳比較コーパスの件数、参考訳・人間採点の空欄、候補メタデータ、用語集、数字/URL/固有名詞保持率
+- 比較runnerのタイトル/概要分離、候補共通品質ゲート、JSON/CSV/Markdown出力、モデル未取得時の扱い
 - 文字数制限
 - frontmatter生成
 
@@ -973,6 +990,7 @@ fixtureから個別記事Markdownを生成し、日次集約ページと個別�
 - Cloudflare Pages設定
 - 自動生成ファイルを手動編集しない注意
 - 翻訳モデルとライセンス
+- オフライン翻訳比較のコーパス、候補メタデータ、実行条件、結果出力、未計測値の扱い
 - Phase 2としてBluesky投稿を予定していること
 
 ## 22. Codex実装順序
@@ -989,6 +1007,8 @@ fixtureから個別記事Markdownを生成し、日次集約ページと個別�
 10. Cloudflare Pages向けビルド確認
 11. READMEと運用手順
 12. 全受け入れ条件の確認
+
+Phase 2では、既存のArgos日次運用を変更せず、`scripts/run_translation_benchmark.py`によるローカル比較を追加できる。比較で得た数値だけでは本番モデルを切り替えず、人間による自然さ・参考訳・ライセンス・Actions実行可否の確認を経て別途判断する。
 
 ## 23. 受け入れ条件
 
@@ -1032,7 +1052,7 @@ Phase 1の運用確認後に別設計で実施する。
 - Cloudflare Web Analytics
 - フィード追加
 - 人間による注目記事への追記欄
-- 翻訳モデル品質の比較
+- 本番翻訳モデルの選定と切り替え（オフライン比較基盤はIssue #16で追加）
 
 ## 25. 実装上の最重要原則
 

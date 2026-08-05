@@ -1,0 +1,37 @@
+version: 1
+terms:
+  # Product and organization names are protected from model-side spelling changes.
+  - source: OpenAI API
+    target: OpenAI API
+    protect: true
+  - source: ChatGPT
+    target: ChatGPT
+    protect: true
+  - source: GPT-Live
+    target: GPT-Live
+    protect: true
+  - source: GitHub Copilot
+    target: GitHub Copilot
+    protect: true
+  - source: Amazon Bedrock
+    target: Amazon Bedrock
+    protect: true
+  - source: Google DeepMind
+    target: Google DeepMind
+    protect: true
+  - source: M2M100
+    target: M2M100
+    protect: true
+  # Stable Japanese terminology is applied after a model returns text.
+  - source: agentic AI
+    target: エージェント型AI
+    protect: false
+  - source: foundation model
+    target: 基盤モデル
+    protect: false
+  - source: inference
+    target: 推論
+    protect: false
+  - source: fine-tuning
+    target: ファインチューニング
+    protect: false

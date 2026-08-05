@@ -8,6 +8,7 @@ if __package__ in {None, ""}:
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from scripts.content_writer import article_id_for, validate_article_data  # noqa: E402
+from scripts.translation_benchmark import validate_benchmark_assets  # noqa: E402
 from scripts.utils import load_feed_configs, parse_frontmatter  # noqa: E402
 
 SOURCE_OBJECT_RE = re.compile(r"  \{\n(?P<body>.*?)\n  \},", re.DOTALL)
@@ -122,10 +123,13 @@ def main() -> int:
 
     source_text = (root / "src/data/sources.ts").read_text(encoding="utf-8")
     source_count = validate_source_consistency(configs, source_text)
+    benchmark_corpus_count, benchmark_candidate_count = validate_benchmark_assets(root)
     print(
         f"Validated {len(configs)} feed configs and {source_count} site sources, "
         f"{article_count} article files, "
-        f"{len(dedupe_keys)} unique dedupe keys"
+        f"{len(dedupe_keys)} unique dedupe keys, "
+        f"{benchmark_corpus_count} benchmark items and "
+        f"{benchmark_candidate_count} translation candidates"
     )
     return 0
 

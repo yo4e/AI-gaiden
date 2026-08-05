@@ -1,0 +1,79 @@
+version: 1
+corpus: data/translation_benchmark/corpus.jsonl
+glossary: config/translation_glossary.yml
+results_directory: data/translation_benchmark/results
+
+runner:
+  # Every candidate receives the same deterministic generation settings.
+  max_input_tokens: 512
+  max_new_tokens: 256
+  num_beams: 1
+
+candidates:
+  - id: argos-en-ja
+    label: Argos Translate en→ja
+    backend: argos
+    package: translate-en_ja-1_1
+    official_url: https://github.com/argosopentech/argos-translate
+    model_card_url: https://github.com/argosopentech/argos-translate/issues/507
+    license: unknown
+    commercial_status: unknown
+    model_size: unknown
+    cpu_time: not_measured
+    memory: not_measured
+    download_time: not_measured
+    cache_size: not_measured
+    actions_feasibility: existing_daily_path; comparison_manual_only
+    production_candidate: false
+    exclusion_reason: The individual en-ja package license is not stated in the official package metadata.
+
+  - id: opus-mt-en-ja
+    label: OPUS-MT en→ja
+    backend: marian
+    model_id: Helsinki-NLP/opus-mt-en-jap
+    official_url: https://github.com/Helsinki-NLP/Opus-MT
+    model_card_url: https://huggingface.co/Helsinki-NLP/opus-mt-en-jap
+    license: Apache-2.0
+    commercial_status: license-permits-commercial-use
+    model_size: 551 MB (repository page)
+    cpu_time: not_measured
+    memory: not_measured
+    download_time: not_measured
+    cache_size: not_measured
+    actions_feasibility: manual_only; no_automatic_download
+    production_candidate: true
+    exclusion_reason: ''
+
+  - id: fugumt-en-ja
+    label: FuguMT en→ja
+    backend: marian
+    model_id: staka/fugumt-en-ja
+    official_url: https://huggingface.co/staka/fugumt-en-ja
+    model_card_url: https://huggingface.co/staka/fugumt-en-ja
+    license: CC-BY-SA-4.0
+    commercial_status: license-has-share-alike-conditions
+    model_size: 124 MB (repository page)
+    cpu_time: not_measured
+    memory: not_measured
+    download_time: not_measured
+    cache_size: not_measured
+    actions_feasibility: manual_only; no_automatic_download
+    production_candidate: false
+    exclusion_reason: Share-alike and model/data provenance conditions require human review before production use.
+
+  - id: m2m100-418m
+    label: M2M100 418M en→ja
+    backend: m2m100
+    model_id: facebook/m2m100_418M
+    official_url: https://github.com/facebookresearch/fairseq
+    model_card_url: https://huggingface.co/facebook/m2m100_418M
+    license: MIT
+    commercial_status: license-permits-commercial-use
+    model_size: 3.88 GB (repository page)
+    cpu_time: not_measured
+    memory: not_measured
+    download_time: not_measured
+    cache_size: not_measured
+    actions_feasibility: manual_only; no_automatic_download
+    production_candidate: true
+    exclusion_reason: ''

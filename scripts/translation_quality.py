@@ -5,7 +5,7 @@ from __future__ import annotations
 import re
 from collections import Counter
 from collections.abc import Iterable
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from typing import Literal
 from urllib.parse import urlsplit
 
@@ -97,6 +97,21 @@ class QualityGateResult:
     reasons: list[str]
 
 
+@dataclass(frozen=True)
+class TranslationFidelity:
+    """Counts of source tokens retained by a candidate translation."""
+
+    numbers_total: int
+    numbers_preserved: int
+    urls_total: int
+    urls_preserved: int
+    proper_nouns_total: int
+    proper_nouns_preserved: int
+
+    def as_dict(self) -> dict[str, int]:
+        return asdict(self)
+
+
 def _normalise(value: str | None) -> str:
     return re.sub(r"\s+", " ", value or "").strip()
 
@@ -145,6 +160,41 @@ def _proper_terms(value: str, extra_terms: Iterable[str] = ()) -> list[str]:
 def _add_reason(reasons: list[str], reason: str) -> None:
     if reason not in reasons:
         reasons.append(reason)
+
+
+def _preserved_count(source_values: list[str], translated_values: list[str]) -> int:
+    remaining = Counter(translated_values)
+    preserved = 0
+    for value in source_values:
+        if remaining[value] > 0:
+            remaining[value] -= 1
+            preserved += 1
+    return preserved
+
+
+def translation_fidelity_metrics(
+    source_text: str,
+    translated_text: str,
+    *,
+    protected_terms: Iterable[str] = (),
+) -> TranslationFidelity:
+    """Return reproducible number, URL, and explicit proper-noun retention counts."""
+
+    source_numbers = _number_tokens(source_text)
+    translated_numbers = _number_tokens(translated_text)
+    source_urls = [normalize_url(url) for url in _urls(source_text)]
+    translated_urls = [normalize_url(url) for url in _urls(translated_text)]
+    source_terms = _proper_terms(source_text, protected_terms)
+    translated_folded = translated_text.casefold()
+    preserved_terms = [term for term in source_terms if term.casefold() in translated_folded]
+    return TranslationFidelity(
+        numbers_total=len(source_numbers),
+        numbers_preserved=_preserved_count(source_numbers, translated_numbers),
+        urls_total=len(source_urls),
+        urls_preserved=_preserved_count(source_urls, translated_urls),
+        proper_nouns_total=len(source_terms),
+        proper_nouns_preserved=len(preserved_terms),
+    )
 
 
 def check_translation_quality(

@@ -22,7 +22,9 @@ VERSION_RE = re.compile(r"\b(?:v?\d+(?:\.\d+){1,3}|[A-Z]{2,}[A-Z0-9.-]*)\b")
 CONTROL_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
 
 
-def _protect(text: str) -> tuple[str, dict[str, str]]:
+def protect_translation_input(
+    text: str, *, extra_protected_terms: tuple[str, ...] = ()
+) -> tuple[str, dict[str, str]]:
     replacements: dict[str, str] = {}
 
     def replace(value: str) -> str:
@@ -31,13 +33,15 @@ def _protect(text: str) -> tuple[str, dict[str, str]]:
         return token
 
     protected = URL_RE.sub(lambda match: replace(match.group(0)), text)
-    for term in sorted(PROTECTED_TERMS, key=len, reverse=True):
+    protected_terms = set(PROTECTED_TERMS)
+    protected_terms.update(term for term in extra_protected_terms if term)
+    for term in sorted(protected_terms, key=len, reverse=True):
         protected = re.sub(re.escape(term), lambda match: replace(match.group(0)), protected)
     protected = VERSION_RE.sub(lambda match: replace(match.group(0)), protected)
     return protected, replacements
 
 
-def _restore(text: str, replacements: dict[str, str]) -> str:
+def restore_translation_output(text: str, replacements: dict[str, str]) -> str:
     restored = text
     for token, value in reversed(list(replacements.items())):
         restored = restored.replace(token, value)
@@ -45,6 +49,16 @@ def _restore(text: str, replacements: dict[str, str]) -> str:
         spaced = " ".join(token)
         restored = restored.replace(spaced, value)
     return restored
+
+
+def _protect(text: str) -> tuple[str, dict[str, str]]:
+    """Backward-compatible internal alias for the production Argos adapter."""
+    return protect_translation_input(text)
+
+
+def _restore(text: str, replacements: dict[str, str]) -> str:
+    """Backward-compatible internal alias for existing callers and tests."""
+    return restore_translation_output(text, replacements)
 
 
 def validate_translation(value: str, *, maximum: int = 1000) -> str:
@@ -62,7 +76,9 @@ def validate_translation(value: str, *, maximum: int = 1000) -> str:
 class ArgosTranslator(Translator):
     """English-to-Japanese adapter backed by an installed Argos package."""
 
-    def __init__(self, *, auto_install: bool = False) -> None:
+    def __init__(
+        self, *, auto_install: bool = False, extra_protected_terms: tuple[str, ...] = ()
+    ) -> None:
         try:
             import argostranslate.package as package
             import argostranslate.translate as translate
@@ -76,6 +92,7 @@ class ArgosTranslator(Translator):
 
         self._package = package
         self._translate_module = translate
+        self._extra_protected_terms = extra_protected_terms
         if not self._has_language_pair() and auto_install:
             self._install_language_pair()
         if not self._has_language_pair():
@@ -115,12 +132,14 @@ class ArgosTranslator(Translator):
     def translate(self, text: str) -> str:
         if not text.strip():
             return ""
-        protected, replacements = _protect(text)
+        protected, replacements = protect_translation_input(
+            text, extra_protected_terms=self._extra_protected_terms
+        )
         try:
             translated = self._translate_module.translate(protected, "en", "ja")
         except Exception as exc:
             raise TranslationError(f"Argos translation failed: {exc}") from exc
-        return validate_translation(_restore(translated, replacements))
+        return validate_translation(restore_translation_output(translated, replacements))
 
 
 def limit_summary(value: str, maximum: int = 400) -> str:

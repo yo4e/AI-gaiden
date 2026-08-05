@@ -110,6 +110,27 @@ python scripts/update_news.py --bootstrap-days 3
 
 英日モデル `translate-en_ja-1_1` は、2026年8月時点の配布パッケージ内READMEにモデル個別のライセンス表記がありません。モデルはリポジトリや公開成果物へ再配布せず、Actionsキャッシュ内で実行時利用だけを行います。本番運用を拡大する前に、公式側の最新メタデータと配布条件を再確認してください。
 
+### オフライン翻訳モデル比較
+
+Issue #16の比較基盤は、実際の公式RSSから取得した40件の英語タイトル・概要を評価コーパステンプレートとして [`data/translation_benchmark/corpus.jsonl`](data/translation_benchmark/corpus.jsonl) に保存しています。人間参考訳と人間採点は空欄のままです。Argos Translate、OPUS-MT、FuguMT、M2M100を同じ入力契約で比較し、タイトルと概要を別々に品質ゲートへ通します。
+
+候補の一次情報、ライセンス、商用可否、モデル容量、CPU時間・メモリ・取得時間・キャッシュ容量、Actions実行方針は [`config/translation_benchmark.yml`](config/translation_benchmark.yml) に記録しています。CPU時間・メモリ・取得時間・キャッシュ容量は未計測のまま推測値を入れていません。個別ライセンスが不明なArgos英日パッケージと、追加の人手確認が必要なFuguMTは本番候補から除外しています。本番で使うモデルはこの比較だけで自動決定しません。
+
+比較はローカルで明示的に実行します。通常CI・日次workflowは大型モデルを取得しません。
+
+```bash
+python scripts/run_translation_benchmark.py
+```
+
+OPUS-MT、FuguMT、M2M100を実測する場合は、通常の依存環境へ追加せずローカル環境だけに任意依存を入れます。
+
+```bash
+python -m pip install "transformers<5"
+python scripts/run_translation_benchmark.py --candidate opus-mt-en-ja
+```
+
+結果は同一条件のJSON、CSV、Markdownとして `data/translation_benchmark/results/` に出力されます。モデルやArgosパッケージを取得する場合だけ、ローカルで `--allow-model-download` を追加してください。自然さ、人間参考訳、人間採点、本番採用モデルは人間の確認事項として残しています。
+
 ## GitHub Actions
 
 ### CI (`.github/workflows/ci.yml`)
@@ -184,6 +205,6 @@ GitHub Actionsが生成コンテンツをmainへpushすると、Cloudflare Pages
 
 ## Phase 2候補
 
-Blueskyへの日次告知、投稿済みID管理、カスタムドメイン、Search Console、Cloudflare Web Analytics、継続的な公式フィード追加、人間による追記欄、翻訳モデル品質比較はPhase 2へ残しています。
+Blueskyへの日次告知、投稿済みID管理、カスタムドメイン、Search Console、Cloudflare Web Analytics、継続的な公式フィード追加、人間による追記欄、本番翻訳モデルの選定はPhase 2以降へ残しています。オフライン比較基盤自体は [`docs/TRANSLATION_BENCHMARK.md`](docs/TRANSLATION_BENCHMARK.md) に記載しています。
 
 詳細仕様は [`docs/IMPLEMENTATION_SPEC.md`](docs/IMPLEMENTATION_SPEC.md)、作業規則は [`AGENTS.md`](AGENTS.md) を参照してください。

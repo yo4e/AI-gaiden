@@ -49,7 +49,7 @@ Issue #16では、現在のArgos Translateを含む英日ローカル翻訳候�
 - 今回は実行結果がなく、3.88 GBのresource負荷、GitHub Actionsでの実用性、品質を評価できない。
 - したがって、ライセンス表示だけを根拠に採用せず、未実測とデータ来歴未確定を理由に不採用とする。
 
-### 最終運用判断案
+### 最終運用判断
 
 品質・実行性・権利情報の三条件を現時点で同時に満たす切替候補はない。
 
@@ -96,7 +96,7 @@ python scripts/run_translation_benchmark.py --allow-model-download
 
 小さな用語集は `config/translation_glossary.yml` に独立して置き、製品名の保護と定型的な日本語用語の後処理を分けています。数字、URL、製品名の保持率は `scripts/translation_quality.py` の `translation_fidelity_metrics` で集計します。流暢さ、人間参考訳、人間採点は品質ゲートの自動判定に混ぜません。
 
-比較結果だけで本番モデルを切り替えず、人間参考訳の作成、追加の自然さ評価、FuguMTのplaceholder保護修正、候補ごとのversion/provenance確認、必要に応じたActions実行可能性確認を残課題とします。今回の一次情報確認では、未確認事項を商用可または商用不可と推測して確定していません。
+比較結果だけで本番モデルを切り替えません。人間参考訳の作成、追加の自然さ評価、FuguMTのplaceholder保護修正、候補ごとのversion/provenance確認、必要に応じたActions実行可能性確認は、将来の改善候補として残します。これらはPR #30の完了・merge条件には含めません。今回の一次情報確認では、未確認事項を商用可または商用不可と推測して確定していません。
 
 ## 人間評価用の匿名サンプル
 
@@ -114,4 +114,4 @@ python scripts/create_human_evaluation.py
 
 暫定的には現行Argosを維持し、FuguMT・OPUS-MT・M2M100への本番切替は行いません。品質ゲート、保護プレースホルダー、数字・固有名詞検査に失敗した場合は原題中心の安全な表示へフォールバックします。評価結果の機械可読データとMarkdown要約は [`data/translation_benchmark/human_evaluation/evaluation_results.json`](../data/translation_benchmark/human_evaluation/evaluation_results.json) と [`evaluation_results.md`](../data/translation_benchmark/human_evaluation/evaluation_results.md) に保存しています。
 
-残作業は、FuguMTのプレースホルダー保護修正後の再評価、Hugging Face版とupstreamのversion/provenance対応の確認、必要時のM2M100再実測、人間参考訳と追加の自然さ評価です。Argosの個別package権利情報とOPUS-MTの適用ライセンス・corpus単位の権利情報は未確定のままです。本PRでは本番モデルを切り替えません。
+FuguMTのプレースホルダー保護修正後の再評価、Hugging Face版とupstreamのversion/provenance対応の確認、必要時のM2M100再実測、人間参考訳と追加の自然さ評価は、PR #30後の改善候補です。Argosの個別package権利情報とOPUS-MTの適用ライセンス・corpus単位の権利情報は未確定として記録済みであり、本PRでは本番モデルを切り替えません。

@@ -159,85 +159,85 @@ opus-mt-en-ja,title,mlcommons-5353db8781d0,translated,True,[],69.98,1055.88,0,0,
 opus-mt-en-ja,summary,mlcommons-5353db8781d0,translated,True,[],226.566,1055.88,0,0,0,0,0,0,"新し い クミン の ため に , クレテ の 二 つ の クミン が あ っ て , 聖所 の ふもと に 付けつけ られ て い る . その 内側 は 二 つ に し て , 内側 の 広 い もの で あ る ."
 opus-mt-en-ja,title,mlcommons-a7d894d8a5b9,translated,True,[],78.778,1055.88,0,0,0,0,0,0,"ボテ・ベノテのズガデ,ベノン,タシャン,"
 opus-mt-en-ja,summary,mlcommons-a7d894d8a5b9,translated,True,[],111.556,1055.88,0,0,0,0,0,0,"ベネヤカン , クエベノン , ベネジン ・ ヤカン , ネアリヤ に あ る ."
-fugumt-en-ja,title,openai-c99ec862b4e7,translated,True,[],91.613,704.48,0,0,0,0,1,1,OpenAIモデルを含む第三者のサイバー評価
-fugumt-en-ja,summary,openai-c99ec862b4e7,translated,True,[],147.484,704.48,0,0,0,0,1,1,OpenAIは、最近のサードパーティのサイバーセキュリティ評価インシデントを説明し、AIモデルテストと評価を強化するための新しい安全対策の概要を説明します。
-fugumt-en-ja,title,openai-129511f54188,translated,True,[],89.629,704.48,0,0,0,0,2,2,ChatGPT 仕事と Codex で学び、教える新しい方法。
-fugumt-en-ja,summary,openai-129511f54188,translated,True,[],162.356,704.48,1,1,0,0,2,2,K-12の教師、大学の教育者、学生が学び、教え、研究し、構築するのに役立つChatGPT WorkとCodexの新しい教育プラグインを探ります。
-fugumt-en-ja,title,openai-4a9b73e77846,translated,True,[],48.646,704.48,0,0,0,0,1,1,Appleはこれを間違っています
-fugumt-en-ja,summary,openai-4a9b73e77846,quality_rejected,False,['missing_proper_noun'],134.569,704.48,0,0,0,0,3,2,OpenAIはAppleの根拠のない訴訟に対応し、従業員に関する請求を訂正し、何が起きたかを文書化して共有します。
-fugumt-en-ja,title,openai-deec56a13e2b,translated,True,[],83.029,704.48,0,0,0,0,0,0,レスポンシブボイスのリアルタイムシステムAIを6ヶ月で構築しました。
-fugumt-en-ja,summary,openai-deec56a13e2b,translated,True,[],114.962,704.48,0,0,0,0,1,1,GPT-Liveは、ターンレス音声モデルと低レイテンシアーキテクチャを使用して、AIとの連続的な音声インタラクションを可能にする。
-fugumt-en-ja,title,openai-97e92714d577,translated,True,[],73.326,704.48,0,0,0,0,1,1,Circles は OpenAI テクノロジーで通信のパーソナライズを実現します。
-fugumt-en-ja,summary,openai-97e92714d577,translated,True,[],219.931,704.48,2,2,0,0,2,2,CirclesはOpenAI APIとCodexを使用してAI-ネイティブ電話体験を強化し、ARPUを22%増加させ、ターンを9%削減し、開発効率を向上させます。
+fugumt-en-ja,title,openai-c99ec862b4e7,translated,True,[],96.754,752.12,0,0,0,0,1,1,OpenAIモデルを含む第三者のサイバー評価
+fugumt-en-ja,summary,openai-c99ec862b4e7,translated,True,[],139.691,752.12,0,0,0,0,1,1,OpenAIは、最近のサードパーティのサイバーセキュリティ評価インシデントを説明し、AIモデルテストと評価を強化するための新しい安全対策の概要を説明します。
+fugumt-en-ja,title,openai-129511f54188,translated,True,[],92.612,752.12,0,0,0,0,2,2,ChatGPT 仕事と Codex で学び、教える新しい方法。
+fugumt-en-ja,summary,openai-129511f54188,translated,True,[],148.818,752.12,1,1,0,0,2,2,K-12の教師、大学の教育者、学生が学び、教え、研究し、構築するのに役立つChatGPT WorkとCodexの新しい教育プラグインを探ります。
+fugumt-en-ja,title,openai-4a9b73e77846,translated,True,[],45.0,752.12,0,0,0,0,1,1,Appleはこれを間違っています
+fugumt-en-ja,summary,openai-4a9b73e77846,quality_rejected,False,['missing_proper_noun'],131.692,752.12,0,0,0,0,3,2,OpenAIはAppleの根拠のない訴訟に対応し、従業員に関する請求を訂正し、何が起きたかを文書化して共有します。
+fugumt-en-ja,title,openai-deec56a13e2b,translated,True,[],80.383,752.12,0,0,0,0,0,0,レスポンシブボイスのリアルタイムシステムAIを6ヶ月で構築しました。
+fugumt-en-ja,summary,openai-deec56a13e2b,translated,True,[],111.396,752.12,0,0,0,0,1,1,GPT-Liveは、ターンレス音声モデルと低レイテンシアーキテクチャを使用して、AIとの連続的な音声インタラクションを可能にする。
+fugumt-en-ja,title,openai-97e92714d577,translated,True,[],70.927,752.12,0,0,0,0,1,1,Circles は OpenAI テクノロジーで通信のパーソナライズを実現します。
+fugumt-en-ja,summary,openai-97e92714d577,translated,True,[],194.63,752.12,2,2,0,0,2,2,CirclesはOpenAI APIとCodexを使用してAI-ネイティブ電話体験を強化し、ARPUを22%増加させ、ターンを9%削減し、開発効率を向上させます。
 fugumt-en-ja,title,google-639d81441a0d,translation_failed,False,['translation_failed: Local translation returned invalid text'],,,0,0,0,0,0,0,
 fugumt-en-ja,summary,google-639d81441a0d,translation_failed,False,['translation_failed: Local translation returned invalid text'],,,0,0,0,0,0,0,
-fugumt-en-ja,title,google-9c57623ef609,translated,True,[],121.485,704.48,1,1,0,0,1,1,Gemini API 管理エージェント: 3.6 フラッシュ、フック、および多く。
+fugumt-en-ja,title,google-9c57623ef609,translated,True,[],116.552,752.12,1,1,0,0,1,1,Gemini API 管理エージェント: 3.6 フラッシュ、フック、および多く。
 fugumt-en-ja,summary,google-9c57623ef609,translation_failed,False,['translation_failed: Local translation returned invalid text'],,,0,0,0,0,0,0,
-fugumt-en-ja,title,deepmind-c8c2521853f8,translated,True,[],113.476,704.48,1,1,0,0,1,1,Gemini Robotics ER 2:ビデオ理解、タスクオーケストレーション、マルチロボットコラボレーションによるロボット工学のパワー
-fugumt-en-ja,summary,deepmind-c8c2521853f8,translated,True,[],186.881,704.48,1,1,0,0,1,1,Gemini Robotics ER 2は、ロボットが現実世界のタスクを推論、コラボレーション、解決するのを助けます。これは、ロボットアプリケーションのためのビデオ理解、ツールオーケストレーション、マルチロボットコラボレーションのステップ変化を表します。
-fugumt-en-ja,title,deepmind-e08c4d4e6d11,translated,True,[],93.326,704.48,0,0,0,0,1,1,科学発見のフロンティアを加速する:Googleの創世記ミッションへの4000万ドルのコミットメント
-fugumt-en-ja,summary,deepmind-e08c4d4e6d11,translated,True,[],108.387,704.48,0,0,0,0,1,1,Googleは創世記ミッションのためにAIトークンとクレジットで$ 40Mをコミットします。
-fugumt-en-ja,title,deepmind-5e431bbf920c,translated,True,[],133.885,704.48,3,3,0,0,1,1,Gemini 3.6フラッシュ、3.5フラッシュライト、3.5フラッシュサイバーを導入。
-fugumt-en-ja,summary,deepmind-5e431bbf920c,quality_rejected,False,['missing_number'],166.975,704.48,3,2,0,0,1,1,Gemini フラッシュ、3.5 フラッシュ ライト、3.5 フラッシュ サイバーを含む新しい Gemini モデルを導入しています。
+fugumt-en-ja,title,deepmind-c8c2521853f8,translated,True,[],113.994,752.12,1,1,0,0,1,1,Gemini Robotics ER 2:ビデオ理解、タスクオーケストレーション、マルチロボットコラボレーションによるロボット工学のパワー
+fugumt-en-ja,summary,deepmind-c8c2521853f8,translated,True,[],184.355,752.12,1,1,0,0,1,1,Gemini Robotics ER 2は、ロボットが現実世界のタスクを推論、コラボレーション、解決するのを助けます。これは、ロボットアプリケーションのためのビデオ理解、ツールオーケストレーション、マルチロボットコラボレーションのステップ変化を表します。
+fugumt-en-ja,title,deepmind-e08c4d4e6d11,translated,True,[],92.687,752.12,0,0,0,0,1,1,科学発見のフロンティアを加速する:Googleの創世記ミッションへの4000万ドルのコミットメント
+fugumt-en-ja,summary,deepmind-e08c4d4e6d11,translated,True,[],107.277,752.12,0,0,0,0,1,1,Googleは創世記ミッションのためにAIトークンとクレジットで$ 40Mをコミットします。
+fugumt-en-ja,title,deepmind-5e431bbf920c,translated,True,[],131.993,752.12,3,3,0,0,1,1,Gemini 3.6フラッシュ、3.5フラッシュライト、3.5フラッシュサイバーを導入。
+fugumt-en-ja,summary,deepmind-5e431bbf920c,quality_rejected,False,['missing_number'],168.908,752.12,3,2,0,0,1,1,Gemini フラッシュ、3.5 フラッシュ ライト、3.5 フラッシュ サイバーを含む新しい Gemini モデルを導入しています。
 fugumt-en-ja,title,microsoft-b4e8bc639f2f,translation_failed,False,['translation_failed: Local translation returned invalid text'],,,0,0,0,0,0,0,
-fugumt-en-ja,summary,microsoft-b4e8bc639f2f,translated,True,[],310.601,704.48,0,0,0,0,0,0,お茶はたくさん飲みます 普段は 毎日 本物のカップで 朝食をとっています そこで私のチームが新しいシリーズのアイデアを持って来てくれたとき 彼らがそれを関連性を持って欲しがったのです 正直 最初はしていました しかし結局 その名前は私が今 本当に元気に感じるものを捉えました リーダーがZQ0000QXZで組織を変革するペース そして彼らが学んでいることを どれほど寛大に共有しているかです
-fugumt-en-ja,title,microsoft-725b173772a1,translated,True,[],123.42,704.48,0,0,0,0,1,1,MicrosoftのFY26を振り返る:AI実験からフロンティア変換まで
-fugumt-en-ja,summary,microsoft-725b173772a1,translated,True,[],180.774,704.48,0,0,0,0,0,0,この会計年度を通じて、あらゆる業界やセグメントの顧客が、AI実験から、実際のビジネス成果のためにAIを展開するようになり、イノベーションを解き放ち、成長のための新たな機会が生まれました。
-fugumt-en-ja,title,microsoft-a2ae9bea5eb1,translated,True,[],98.942,704.48,0,0,0,0,0,0,AI を使用して非営利団体の内側にその影響を拡大します。
-fugumt-en-ja,summary,microsoft-a2ae9bea5eb1,translated,True,[],122.778,704.48,0,0,0,0,0,0,非営利団体がAIを適用してコミュニティを強化し、機会を拡大し、世界中で永続的な影響を生み出している方法をご覧ください。
-fugumt-en-ja,title,microsoft-8a136f766dc2,translated,True,[],97.764,704.48,0,0,0,0,0,0,AI戦略ロードマップ:成功したAI変換の5つの要因
+fugumt-en-ja,summary,microsoft-b4e8bc639f2f,translated,True,[],312.641,752.12,0,0,0,0,0,0,お茶はたくさん飲みます 普段は 毎日 本物のカップで 朝食をとっています そこで私のチームが新しいシリーズのアイデアを持って来てくれたとき 彼らがそれを関連性を持って欲しがったのです 正直 最初はしていました しかし結局 その名前は私が今 本当に元気に感じるものを捉えました リーダーがZQ0000QXZで組織を変革するペース そして彼らが学んでいることを どれほど寛大に共有しているかです
+fugumt-en-ja,title,microsoft-725b173772a1,translated,True,[],124.916,752.12,0,0,0,0,1,1,MicrosoftのFY26を振り返る:AI実験からフロンティア変換まで
+fugumt-en-ja,summary,microsoft-725b173772a1,translated,True,[],177.704,752.12,0,0,0,0,0,0,この会計年度を通じて、あらゆる業界やセグメントの顧客が、AI実験から、実際のビジネス成果のためにAIを展開するようになり、イノベーションを解き放ち、成長のための新たな機会が生まれました。
+fugumt-en-ja,title,microsoft-a2ae9bea5eb1,translated,True,[],71.737,752.12,0,0,0,0,0,0,AI を使用して非営利団体の内側にその影響を拡大します。
+fugumt-en-ja,summary,microsoft-a2ae9bea5eb1,translated,True,[],100.409,752.12,0,0,0,0,0,0,非営利団体がAIを適用してコミュニティを強化し、機会を拡大し、世界中で永続的な影響を生み出している方法をご覧ください。
+fugumt-en-ja,title,microsoft-8a136f766dc2,translated,True,[],83.313,752.12,0,0,0,0,0,0,AI戦略ロードマップ:成功したAI変換の5つの要因
 fugumt-en-ja,summary,microsoft-8a136f766dc2,translation_failed,False,['translation_failed: Local translation returned invalid text'],,,0,0,0,0,0,0,
-fugumt-en-ja,title,microsoft-06b9034541c7,translated,True,[],60.125,704.48,0,0,0,0,0,0,中小企業はAIの招待を待っていない。
-fugumt-en-ja,summary,microsoft-06b9034541c7,translated,True,[],106.454,704.48,0,0,0,0,0,0,安全なAIでリードするSMBは、信頼を構築し、ワークフローを統合し、セキュリティをチーム全体の成長の基礎にしています。
+fugumt-en-ja,title,microsoft-06b9034541c7,translated,True,[],59.626,752.12,0,0,0,0,0,0,中小企業はAIの招待を待っていない。
+fugumt-en-ja,summary,microsoft-06b9034541c7,translated,True,[],109.493,752.12,0,0,0,0,0,0,安全なAIでリードするSMBは、信頼を構築し、ワークフローを統合し、セキュリティをチーム全体の成長の基礎にしています。
 fugumt-en-ja,title,github-f1d4877545a9,translation_failed,False,['translation_failed: Local translation returned invalid text'],,,0,0,0,0,0,0,
-fugumt-en-ja,summary,github-f1d4877545a9,translated,True,[],64.033,704.48,0,0,0,0,0,0,コードを1行も書かずに、作業を簡単にするためのツールの構築方法を学びましょう。
-fugumt-en-ja,title,github-44555fb737bc,translated,True,[],70.351,704.48,0,0,0,0,1,1,GitHub Copilotアプリでセッションを積み重ね、リクエストをプルします。
+fugumt-en-ja,summary,github-f1d4877545a9,translated,True,[],64.529,752.12,0,0,0,0,0,0,コードを1行も書かずに、作業を簡単にするためのツールの構築方法を学びましょう。
+fugumt-en-ja,title,github-44555fb737bc,translated,True,[],67.876,752.12,0,0,0,0,1,1,GitHub Copilotアプリでセッションを積み重ね、リクエストをプルします。
 fugumt-en-ja,summary,github-44555fb737bc,translation_failed,False,['translation_failed: Local translation returned invalid text'],,,0,0,0,0,0,0,
-fugumt-en-ja,title,github-4e90420c6964,translated,True,[],44.921,704.48,0,0,0,0,0,0,ハーネスは、(ほとんど)必要なすべてです。
-fugumt-en-ja,summary,github-4e90420c6964,translated,True,[],110.596,704.48,0,0,0,0,1,1,新しいAIツールをすべて追跡することなく、ソフトウェアのプロトタイプ、計画、実装、レビューのための実用的なGitHub Copilotワークフロー。
+fugumt-en-ja,title,github-4e90420c6964,translated,True,[],46.747,752.12,0,0,0,0,0,0,ハーネスは、(ほとんど)必要なすべてです。
+fugumt-en-ja,summary,github-4e90420c6964,translated,True,[],115.733,752.12,0,0,0,0,1,1,新しいAIツールをすべて追跡することなく、ソフトウェアのプロトタイプ、計画、実装、レビューのための実用的なGitHub Copilotワークフロー。
 fugumt-en-ja,title,github-3bbd8b07cb5a,translation_failed,False,['translation_failed: Local translation returned invalid text'],,,0,0,0,0,0,0,
-fugumt-en-ja,summary,github-3bbd8b07cb5a,translated,True,[],151.379,704.48,0,0,0,0,1,1,GitHub Copilot アプリに新しい?プロジェクトを開始し、AI エージェントと作業し、キャンバスを探索し、開発ワークフローを合理化する方法を学びます。
-fugumt-en-ja,title,github-98b061f17888,translated,True,[],95.162,704.48,0,0,0,0,1,1,Copilot vs. 生のAPIアクセス:実際に何を支払うのですか?
-fugumt-en-ja,summary,github-98b061f17888,translated,True,[],89.85,704.48,0,0,0,0,1,1,Copilotは、APIのレートでの使用を請求するようになりました。
-fugumt-en-ja,title,apple-6bb3f9340489,translated,True,[],38.148,704.48,0,0,0,0,0,0,マルチモーダルLMにおけるアライメントの理解:包括的研究
-fugumt-en-ja,summary,apple-6bb3f9340489,translated,True,[],131.406,704.48,0,0,0,0,0,0,選好アライメントは、大規模言語モデル(LLM)のパフォーマンス向上に重要な要素となっているが、マルチモーダル大規模言語モデル(MLLM)への影響は、言語モデルと同様に、幻覚のような課題に遭遇する。
-fugumt-en-ja,title,apple-47092aa08a50,translated,True,[],83.395,704.48,0,0,0,0,0,0,次元還元はネットワーク科学と出会う:UMAPのkNNグラフのセンスメイキング
-fugumt-en-ja,summary,apple-47092aa08a50,translated,True,[],166.795,704.48,0,0,0,0,0,0,UMAPは高次元データの探索に広く使われているが、典型的なワークフローは低次元埋め込みに焦点を当てており、UMAPが内部的に構築するリッチk-nearest-neighborグラフを見下ろしている。
-fugumt-en-ja,title,apple-9cec8797d4f0,translated,True,[],53.691,704.48,0,0,0,0,0,0,MoMo:時空間アクショントークン化によるロボット操作におけるダイヤルモーションモード
-fugumt-en-ja,summary,apple-9cec8797d4f0,translated,True,[],183.921,704.48,0,0,0,0,0,0,ロボットは、さまざまなコンテキストで効果的に動作するためには、操作タスクを正確に実行するだけでなく、そのアクションがどのように展開するかをタスク、オブジェクト、インタラクション設定に適応させる必要がある。この実行レベルのバリエーションを、タスク間で共有される再利用可能な行動要因として学習できるかどうかを問う。
-fugumt-en-ja,title,apple-cef8c7b3465e,translated,True,[],44.426,704.48,0,0,0,0,0,0,時間深度拡散変換器を用いたメモリ効率の良い音声合成
-fugumt-en-ja,summary,apple-cef8c7b3465e,translated,True,[],223.859,704.48,1,1,0,0,1,1,Siri Expressive Voicesは、AFM 3 Core Advanced、Appleの最も強力なオンデバイス基盤モデルを搭載した、リアルタイムかつ完全にデバイス上で、構成可能なリッチな音声を合成する。この研究は、その機能の背後にあるメモリ効率の高いオーディオ合成アーキテクチャを示している。
-fugumt-en-ja,title,apple-f11735103919,translated,True,[],74.512,704.48,0,0,0,0,0,0,GH-ESD:インスタンスレベルの視覚タスクのための接地仮説駆動型エラースライス発見
-fugumt-en-ja,summary,apple-f11735103919,quality_rejected,False,['missing_proper_noun'],150.062,704.48,0,0,0,0,1,0,意味的にコヒーレントなサブセット(エラースライス)上の視覚モデルの体系的な失敗は、堅牢性と評価の限界を明らかにする。既存のスライス発見アプローチは、主に表現空間や事前定義された属性の組み合わせにおけるクラスタとしてモデル化する。
-fugumt-en-ja,title,aws-80911412e4d1,translated,True,[],61.584,704.48,0,0,0,0,1,1,基礎モデル接地のためのAmazon Bedrock上のWeb検索の導入
-fugumt-en-ja,summary,aws-80911412e4d1,translated,True,[],185.189,704.48,0,0,0,0,1,1,今日、Amazon BedrockでWeb Searchが一般向けに利用可能になった。これは、現在のWeb知識におけるモデル応答を基盤とするサーバサイドの組み込みツールである。Web Searchによって、Amazon Bedrockでは、接地はネイティブ機能になる。
-fugumt-en-ja,title,aws-8434f80dc857,translated,True,[],73.963,704.48,0,0,0,0,2,2,Amazon Bedrock AgentCoreによるWebインサイトの自動抽出
+fugumt-en-ja,summary,github-3bbd8b07cb5a,translated,True,[],152.234,752.12,0,0,0,0,1,1,GitHub Copilot アプリに新しい?プロジェクトを開始し、AI エージェントと作業し、キャンバスを探索し、開発ワークフローを合理化する方法を学びます。
+fugumt-en-ja,title,github-98b061f17888,translated,True,[],96.508,752.12,0,0,0,0,1,1,Copilot vs. 生のAPIアクセス:実際に何を支払うのですか?
+fugumt-en-ja,summary,github-98b061f17888,translated,True,[],90.297,752.12,0,0,0,0,1,1,Copilotは、APIのレートでの使用を請求するようになりました。
+fugumt-en-ja,title,apple-6bb3f9340489,translated,True,[],38.148,752.12,0,0,0,0,0,0,マルチモーダルLMにおけるアライメントの理解:包括的研究
+fugumt-en-ja,summary,apple-6bb3f9340489,translated,True,[],134.021,752.12,0,0,0,0,0,0,選好アライメントは、大規模言語モデル(LLM)のパフォーマンス向上に重要な要素となっているが、マルチモーダル大規模言語モデル(MLLM)への影響は、言語モデルと同様に、幻覚のような課題に遭遇する。
+fugumt-en-ja,title,apple-47092aa08a50,translated,True,[],83.7,752.12,0,0,0,0,0,0,次元還元はネットワーク科学と出会う:UMAPのkNNグラフのセンスメイキング
+fugumt-en-ja,summary,apple-47092aa08a50,translated,True,[],168.62,752.12,0,0,0,0,0,0,UMAPは高次元データの探索に広く使われているが、典型的なワークフローは低次元埋め込みに焦点を当てており、UMAPが内部的に構築するリッチk-nearest-neighborグラフを見下ろしている。
+fugumt-en-ja,title,apple-9cec8797d4f0,translated,True,[],54.462,752.12,0,0,0,0,0,0,MoMo:時空間アクショントークン化によるロボット操作におけるダイヤルモーションモード
+fugumt-en-ja,summary,apple-9cec8797d4f0,translated,True,[],180.936,752.12,0,0,0,0,0,0,ロボットは、さまざまなコンテキストで効果的に動作するためには、操作タスクを正確に実行するだけでなく、そのアクションがどのように展開するかをタスク、オブジェクト、インタラクション設定に適応させる必要がある。この実行レベルのバリエーションを、タスク間で共有される再利用可能な行動要因として学習できるかどうかを問う。
+fugumt-en-ja,title,apple-cef8c7b3465e,translated,True,[],44.952,752.12,0,0,0,0,0,0,時間深度拡散変換器を用いたメモリ効率の良い音声合成
+fugumt-en-ja,summary,apple-cef8c7b3465e,translated,True,[],224.879,752.12,1,1,0,0,1,1,Siri Expressive Voicesは、AFM 3 Core Advanced、Appleの最も強力なオンデバイス基盤モデルを搭載した、リアルタイムかつ完全にデバイス上で、構成可能なリッチな音声を合成する。この研究は、その機能の背後にあるメモリ効率の高いオーディオ合成アーキテクチャを示している。
+fugumt-en-ja,title,apple-f11735103919,translated,True,[],75.034,752.12,0,0,0,0,0,0,GH-ESD:インスタンスレベルの視覚タスクのための接地仮説駆動型エラースライス発見
+fugumt-en-ja,summary,apple-f11735103919,quality_rejected,False,['missing_proper_noun'],151.823,752.12,0,0,0,0,1,0,意味的にコヒーレントなサブセット(エラースライス)上の視覚モデルの体系的な失敗は、堅牢性と評価の限界を明らかにする。既存のスライス発見アプローチは、主に表現空間や事前定義された属性の組み合わせにおけるクラスタとしてモデル化する。
+fugumt-en-ja,title,aws-80911412e4d1,translated,True,[],66.038,752.12,0,0,0,0,1,1,基礎モデル接地のためのAmazon Bedrock上のWeb検索の導入
+fugumt-en-ja,summary,aws-80911412e4d1,translated,True,[],199.673,752.12,0,0,0,0,1,1,今日、Amazon BedrockでWeb Searchが一般向けに利用可能になった。これは、現在のWeb知識におけるモデル応答を基盤とするサーバサイドの組み込みツールである。Web Searchによって、Amazon Bedrockでは、接地はネイティブ機能になる。
+fugumt-en-ja,title,aws-8434f80dc857,translated,True,[],77.755,752.12,0,0,0,0,2,2,Amazon Bedrock AgentCoreによるWebインサイトの自動抽出
 fugumt-en-ja,summary,aws-8434f80dc857,translation_failed,False,['translation_failed: Local translation returned invalid text'],,,0,0,0,0,0,0,
-fugumt-en-ja,title,aws-fbeab4f94608,translated,True,[],118.779,704.48,1,1,0,0,1,1,数週間から数分まで: Formula 1®はAWSでエージェントAIを使用してデータ操作を加速します。
+fugumt-en-ja,title,aws-fbeab4f94608,translated,True,[],120.635,752.12,1,1,0,0,1,1,数週間から数分まで: Formula 1®はAWSでエージェントAIを使用してデータ操作を加速します。
 fugumt-en-ja,summary,aws-fbeab4f94608,translation_failed,False,['translation_failed: Local translation returned invalid text'],,,0,0,0,0,0,0,
 fugumt-en-ja,title,aws-3760a4949caa,translation_failed,False,['translation_failed: Local translation returned invalid text'],,,0,0,0,0,0,0,
-fugumt-en-ja,summary,aws-3760a4949caa,translated,True,[],154.197,704.48,0,0,0,0,1,1,Amazon Bedrockは自動推論ポリシーの洗練をサポートする。この改善エンジンはテストの失敗を診断し、ルール問題や言語問題に対する形式論理的な修正を提案し、変更が有効になる前に承認する。
-fugumt-en-ja,title,aws-c12cd3eece71,translated,True,[],32.762,704.48,0,0,0,0,0,0,Amazon Quickにおけるエージェントカタログエクスペリエンスの発表
-fugumt-en-ja,summary,aws-c12cd3eece71,translated,True,[],269.229,704.48,0,0,0,0,1,1,Amazon Quickは、データキュレーターが自然言語で上流のカタログアセットを発見し、継承されたセマンティクスでデータセットとトピックを自動的に作成するためのAI-パワードワークフローであるAgentic Catalog Experienceを紹介した。現在、AWS Glue Data CatalogとDatabricks Unity Catalogのプレビュー版である。
-fugumt-en-ja,title,nvidia-d950eaa58be5,translated,True,[],86.584,704.48,0,0,0,0,1,1,NVIDIA NemotronはLangChain Deep Agents Harnessでベンチマークリード性能を達成
-fugumt-en-ja,summary,nvidia-d950eaa58be5,translated,True,[],148.921,704.48,2,1,0,0,1,1,NVIDIA Nemotron 3 Ultraは、最大かつ最も広く採用されているAIエージェントオーケストレーションプラットフォームを備えたトップクローズドモデルよりも低コストでリーディングパフォーマンスを提供しています。
-fugumt-en-ja,title,nvidia-72401a2f0f4a,translated,True,[],154.399,704.48,0,0,0,0,1,1,"NVIDIA Rubin Platform, Open Models, Autonomous Driving: NVIDIA は、CES で未来に向けて青写真を発表しました。"
-fugumt-en-ja,summary,nvidia-72401a2f0f4a,translated,True,[],226.295,704.48,1,1,0,0,1,1,NVIDIAの創設者でCEO Jensen Huang氏は、Fontainebleau Las Vegasでステージに上がり、CES 2026を開き、AIがすべてのドメインとデバイスにスケールすることを宣言した。
-fugumt-en-ja,title,nvidia-8baf142be276,translated,True,[],85.939,704.48,0,0,0,0,1,1,AIが複雑化するにつれて、モデルビルダーはNVIDIAに依存
+fugumt-en-ja,summary,aws-3760a4949caa,translated,True,[],151.72,752.12,0,0,0,0,1,1,Amazon Bedrockは自動推論ポリシーの洗練をサポートする。この改善エンジンはテストの失敗を診断し、ルール問題や言語問題に対する形式論理的な修正を提案し、変更が有効になる前に承認する。
+fugumt-en-ja,title,aws-c12cd3eece71,translated,True,[],32.402,752.12,0,0,0,0,0,0,Amazon Quickにおけるエージェントカタログエクスペリエンスの発表
+fugumt-en-ja,summary,aws-c12cd3eece71,translated,True,[],272.797,752.12,0,0,0,0,1,1,Amazon Quickは、データキュレーターが自然言語で上流のカタログアセットを発見し、継承されたセマンティクスでデータセットとトピックを自動的に作成するためのAI-パワードワークフローであるAgentic Catalog Experienceを紹介した。現在、AWS Glue Data CatalogとDatabricks Unity Catalogのプレビュー版である。
+fugumt-en-ja,title,nvidia-d950eaa58be5,translated,True,[],86.516,752.12,0,0,0,0,1,1,NVIDIA NemotronはLangChain Deep Agents Harnessでベンチマークリード性能を達成
+fugumt-en-ja,summary,nvidia-d950eaa58be5,translated,True,[],151.511,752.12,2,1,0,0,1,1,NVIDIA Nemotron 3 Ultraは、最大かつ最も広く採用されているAIエージェントオーケストレーションプラットフォームを備えたトップクローズドモデルよりも低コストでリーディングパフォーマンスを提供しています。
+fugumt-en-ja,title,nvidia-72401a2f0f4a,translated,True,[],153.861,752.12,0,0,0,0,1,1,"NVIDIA Rubin Platform, Open Models, Autonomous Driving: NVIDIA は、CES で未来に向けて青写真を発表しました。"
+fugumt-en-ja,summary,nvidia-72401a2f0f4a,translated,True,[],227.197,752.12,1,1,0,0,1,1,NVIDIAの創設者でCEO Jensen Huang氏は、Fontainebleau Las Vegasでステージに上がり、CES 2026を開き、AIがすべてのドメインとデバイスにスケールすることを宣言した。
+fugumt-en-ja,title,nvidia-8baf142be276,translated,True,[],86.112,752.12,0,0,0,0,1,1,AIが複雑化するにつれて、モデルビルダーはNVIDIAに依存
 fugumt-en-ja,summary,nvidia-8baf142be276,translation_failed,False,['translation_failed: Local translation returned invalid text'],,,0,0,0,0,0,0,
 fugumt-en-ja,title,nvidia-9706f1c4881e,translation_failed,False,['translation_failed: Local translation returned invalid text'],,,0,0,0,0,0,0,
-fugumt-en-ja,summary,nvidia-9706f1c4881e,translated,True,[],261.147,704.48,0,0,0,0,1,1,ケルト語(コーンウォール語、アイルランド語、スコットランド・ゲール語、ウェールズ語など)は、英国最古の生きた言語です。UK-LLMの主権であるAIイニシアチブは、NVIDIA NemotronをベースとしたAIモデルを構築しています。
-fugumt-en-ja,title,nvidia-2bef3f3a504a,translated,True,[],83.306,704.48,0,0,0,0,1,1,ポーランドの国際研究者、ディープラーニング、NVIDIA GPUが予測をどう変えるか
-fugumt-en-ja,summary,nvidia-2bef3f3a504a,translated,True,[],151.299,704.48,0,0,0,0,0,0,気象学者は1世紀以上もの間、黒板や方程式、そして今やスーパーコンピューターで嵐を追いかけてきました。しかし、その進歩の過程で、彼らはまだ1つの、一見単純な成分、すなわち水蒸気に遭遇しました。
+fugumt-en-ja,summary,nvidia-9706f1c4881e,translated,True,[],254.696,752.12,0,0,0,0,1,1,ケルト語(コーンウォール語、アイルランド語、スコットランド・ゲール語、ウェールズ語など)は、英国最古の生きた言語です。UK-LLMの主権であるAIイニシアチブは、NVIDIA NemotronをベースとしたAIモデルを構築しています。
+fugumt-en-ja,title,nvidia-2bef3f3a504a,translated,True,[],89.612,752.12,0,0,0,0,1,1,ポーランドの国際研究者、ディープラーニング、NVIDIA GPUが予測をどう変えるか
+fugumt-en-ja,summary,nvidia-2bef3f3a504a,translated,True,[],166.473,752.12,0,0,0,0,0,0,気象学者は1世紀以上もの間、黒板や方程式、そして今やスーパーコンピューターで嵐を追いかけてきました。しかし、その進歩の過程で、彼らはまだ1つの、一見単純な成分、すなわち水蒸気に遭遇しました。
 fugumt-en-ja,title,mlcommons-404c989e7fdb,translation_failed,False,['translation_failed: Local translation returned invalid text'],,,0,0,0,0,0,0,
-fugumt-en-ja,summary,mlcommons-404c989e7fdb,quality_rejected,False,['missing_number'],143.564,704.48,1,0,0,0,0,0,GTCでのデモンストレーションから、財団リリースまで、新しい結果、自動送信パイプライン、GTCへのロードマップ、そして今年の後半にローリング提出。
-fugumt-en-ja,title,mlcommons-b123bdf304bb,translated,True,[],104.642,704.48,0,0,0,0,1,1,MedPerfがGoogleクラウドコンピューティングに出会う:脳腫瘍研究のためのセキュアなAIベンチマーク
-fugumt-en-ja,summary,mlcommons-b123bdf304bb,translated,True,[],219.146,704.48,1,1,0,0,2,2,ラスベガスで開催されたGoogle Cloud Next 2026で、MLCommonsとGoogle Cloudは、患者データ、モデルIP、ベンチマーク整合性を保護する信頼できる医療用AIの能力を示した。
-fugumt-en-ja,title,mlcommons-ee62dfe9b879,translated,True,[],75.931,704.48,1,1,0,0,0,0,提出の要求:MLPerf推論v6.1のためのエッジエージェント推論ベンチマーク
-fugumt-en-ja,summary,mlcommons-ee62dfe9b879,translated,True,[],54.033,704.48,0,0,0,0,0,0,単一エッジアクセラレータ上でのマルチターンエージェントLLMのベンチマーク
-fugumt-en-ja,title,mlcommons-5353db8781d0,translated,True,[],33.424,704.48,0,0,0,0,0,0,MLPerf推論のためのエージェント推論
-fugumt-en-ja,summary,mlcommons-5353db8781d0,translated,True,[],95.208,704.48,0,0,0,0,0,0,成長中のコンテキスト下でLLMサービスシステムを測定するための新しいマルチターンベンチマークとクローズドループエージェントワークフロー。
-fugumt-en-ja,title,mlcommons-a7d894d8a5b9,translated,True,[],68.467,704.48,0,0,0,0,0,0,超低消費電力AIの次の波の裏にあるベンチマーク
+fugumt-en-ja,summary,mlcommons-404c989e7fdb,quality_rejected,False,['missing_number'],151.26,752.12,1,0,0,0,0,0,GTCでのデモンストレーションから、財団リリースまで、新しい結果、自動送信パイプライン、GTCへのロードマップ、そして今年の後半にローリング提出。
+fugumt-en-ja,title,mlcommons-b123bdf304bb,translated,True,[],104.952,752.12,0,0,0,0,1,1,MedPerfがGoogleクラウドコンピューティングに出会う:脳腫瘍研究のためのセキュアなAIベンチマーク
+fugumt-en-ja,summary,mlcommons-b123bdf304bb,translated,True,[],216.97,752.12,1,1,0,0,2,2,ラスベガスで開催されたGoogle Cloud Next 2026で、MLCommonsとGoogle Cloudは、患者データ、モデルIP、ベンチマーク整合性を保護する信頼できる医療用AIの能力を示した。
+fugumt-en-ja,title,mlcommons-ee62dfe9b879,translated,True,[],74.797,752.12,1,1,0,0,0,0,提出の要求:MLPerf推論v6.1のためのエッジエージェント推論ベンチマーク
+fugumt-en-ja,summary,mlcommons-ee62dfe9b879,translated,True,[],53.163,752.12,0,0,0,0,0,0,単一エッジアクセラレータ上でのマルチターンエージェントLLMのベンチマーク
+fugumt-en-ja,title,mlcommons-5353db8781d0,translated,True,[],32.249,752.12,0,0,0,0,0,0,MLPerf推論のためのエージェント推論
+fugumt-en-ja,summary,mlcommons-5353db8781d0,translated,True,[],92.528,752.12,0,0,0,0,0,0,成長中のコンテキスト下でLLMサービスシステムを測定するための新しいマルチターンベンチマークとクローズドループエージェントワークフロー。
+fugumt-en-ja,title,mlcommons-a7d894d8a5b9,translated,True,[],67.885,752.12,0,0,0,0,0,0,超低消費電力AIの次の波の裏にあるベンチマーク
 fugumt-en-ja,summary,mlcommons-a7d894d8a5b9,translation_failed,False,['translation_failed: Local translation returned invalid text'],,,0,0,0,0,0,0,
 m2m100-418m,title,openai-c99ec862b4e7,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
 m2m100-418m,summary,openai-c99ec862b4e7,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,

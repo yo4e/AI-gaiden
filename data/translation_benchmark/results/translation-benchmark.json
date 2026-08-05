@@ -127,7 +127,7 @@
         "argos_packages": 134515061
       },
       "cache_measurement_scope": "configured local cache roots",
-      "memory_measurement_scope": "benchmark process cumulative peak RSS; not isolated per candidate"
+      "memory_measurement_scope": "benchmark process cumulative peak RSS; one candidate per run"
     },
     {
       "candidate_id": "opus-mt-en-ja",
@@ -150,7 +150,7 @@
         "huggingface_hub": 553676034
       },
       "cache_measurement_scope": "configured local cache roots",
-      "memory_measurement_scope": "benchmark process cumulative peak RSS; not isolated per candidate"
+      "memory_measurement_scope": "benchmark process cumulative peak RSS; one candidate per run"
     },
     {
       "candidate_id": "fugumt-en-ja",
@@ -173,7 +173,7 @@
         "huggingface_hub": 246275917
       },
       "cache_measurement_scope": "configured local cache roots",
-      "memory_measurement_scope": "benchmark process cumulative peak RSS; not isolated per candidate"
+      "memory_measurement_scope": "benchmark process cumulative peak RSS; one candidate per run"
     },
     {
       "candidate_id": "m2m100-418m",

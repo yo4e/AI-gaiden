@@ -135,7 +135,12 @@ def merge_results(
             result["aggregates"].extend(_unavailable_aggregates(candidate.id))
             continue
         snapshot = by_id[candidate.id]
-        result["candidate_measurements"].extend(snapshot["candidate_measurements"])
+        for measurement in snapshot["candidate_measurements"]:
+            measurement = dict(measurement)
+            measurement["memory_measurement_scope"] = (
+                "benchmark process cumulative peak RSS; one candidate per run"
+            )
+            result["candidate_measurements"].append(measurement)
         result["runs"].extend(snapshot["runs"])
         result["aggregates"].extend(snapshot["aggregates"])
     return result

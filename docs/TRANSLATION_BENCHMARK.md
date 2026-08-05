@@ -58,7 +58,7 @@ python scripts/run_translation_benchmark.py --allow-model-download
 
 ## 人間評価用の匿名サンプル
 
-`scripts/create_human_evaluation.py` は、実測JSONから12件（10〜15件の範囲）の代表サンプルを決定的に抽出し、タイトルと概要を含むA〜Dの匿名評価表を `data/translation_benchmark/human_evaluation/representative_samples.csv` と `.md` に出力します。評価項目は意味の正確さ、日本語の自然さ、見出しの明瞭さ、数字・固有名詞保持、原文にない追加です。評価者は空欄を記入し、評価完了後にだけ同ディレクトリの `model_key.csv` を開きます。対応表を使う前に候補を自動採用せず、実測結果だけで本番モデルを切り替えません。
+`scripts/create_human_evaluation.py` は、実測JSONから12件（10〜15件の範囲）の代表サンプルを決定的に抽出し、タイトルと概要を含むA〜Dの匿名評価表を `data/translation_benchmark/human_evaluation/representative_samples.csv` と `.md` に出力します。Markdownは`(sample_id, target_type)`単位の24セクションに分け、各セクションをA〜Dの4候補と対応する原文だけにします。評価項目は意味の正確さ、日本語の自然さ、見出しの明瞭さ、数字・固有名詞保持、原文にない追加です。評価者は空欄を記入し、評価完了後にだけ同ディレクトリの `model_key.csv` を開きます。対応表を使う前に候補を自動採用せず、実測結果だけで本番モデルを切り替えません。
 
 ```bash
 python scripts/create_human_evaluation.py

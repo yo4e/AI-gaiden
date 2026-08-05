@@ -1,6 +1,6 @@
 # 人間評価用サンプル
 
-`representative_samples.csv` と `representative_samples.md` は、40件コーパスから選んだ12件について、タイトルと概要をA〜Dへ匿名化した評価表です。モデル名はこの2ファイルに含めません。
+`representative_samples.csv` と `representative_samples.md` は、40件コーパスから選んだ12件について、タイトルと概要をA〜Dへ匿名化した評価表です。Markdownは`(sample_id, target_type)`ごとの24セクションに分かれ、各セクションはA〜Dの4候補と対応する原文だけを含みます。モデル名はこの2ファイルに含めません。
 
 各出力を次の基準で評価してください。
 

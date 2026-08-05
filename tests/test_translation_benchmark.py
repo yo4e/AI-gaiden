@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import re
 from contextlib import nullcontext
 from pathlib import Path
 
@@ -186,6 +187,33 @@ def test_committed_results_create_blinded_human_evaluation_files(tmp_path) -> No
         rows = list(csv.DictReader(handle))
     with paths[2].open(encoding="utf-8", newline="") as handle:
         key_rows = list(csv.DictReader(handle))
+    markdown = paths[1].read_text(encoding="utf-8")
+    sections = markdown.split("\n## ")[1:]
+    section_headers = [section.splitlines()[0] for section in sections]
+    summary_sources = {
+        row["sample_id"]: row["source_text"]
+        for row in rows
+        if row["target_type"] == "summary"
+    }
+    assert len(sections) == 24
+    assert sum(header.endswith("(title)") for header in section_headers) == 12
+    assert sum(header.endswith("(summary)") for header in section_headers) == 12
+    assert all(
+        len(re.findall(r"^\| [A-D] \|", section, flags=re.MULTILINE)) == 4
+        for section in sections
+    )
+    assert all(
+        {match for match in re.findall(r"^\| ([A-D]) \|", section, flags=re.MULTILINE)}
+        == {"A", "B", "C", "D"}
+        for section in sections
+    )
+    for sample_id, source_text in summary_sources.items():
+        summary_section = next(
+            section
+            for section in sections
+            if section.startswith(f"{sample_id} (summary)")
+        )
+        assert f"- Original: {source_text}" in summary_section
     assert len(rows) == 12 * 2 * 4
     assert {row["blinded_key"] for row in rows} == {"A", "B", "C", "D"}
     assert len(key_rows) == 4

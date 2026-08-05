@@ -71,11 +71,11 @@ def _write_samples_markdown(rows: list[dict[str, Any]], path: Path) -> None:
         "evaluation columns before opening `model_key.csv`.",
         "",
     ]
-    for sample_id, group in _group_rows(rows):
+    for (sample_id, target_type), group in _group_rows(rows):
         first = group[0]
         lines.extend(
             [
-                f"## {sample_id} ({first['target_type']})",
+                f"## {sample_id} ({target_type})",
                 "",
                 f"- Item: `{first['item_id']}`",
                 f"- Source: {first['source_name']} — <{first['source_url']}>",
@@ -94,10 +94,13 @@ def _write_samples_markdown(rows: list[dict[str, Any]], path: Path) -> None:
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
-def _group_rows(rows: list[dict[str, Any]]) -> list[tuple[str, list[dict[str, Any]]]]:
-    groups: dict[str, list[dict[str, Any]]] = {}
+def _group_rows(
+    rows: list[dict[str, Any]],
+) -> list[tuple[tuple[str, str], list[dict[str, Any]]]]:
+    groups: dict[tuple[str, str], list[dict[str, Any]]] = {}
     for row in rows:
-        groups.setdefault(row["sample_id"], []).append(row)
+        key = (row["sample_id"], row["target_type"])
+        groups.setdefault(key, []).append(row)
     return list(groups.items())
 
 

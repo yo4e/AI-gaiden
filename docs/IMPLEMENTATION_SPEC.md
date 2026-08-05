@@ -152,6 +152,7 @@ AI-gaiden/
 │  │  ├─ TrialBanner.astro
 │  │  ├─ NewsCard.astro
 │  │  ├─ SourceBadge.astro
+│  │  ├─ ArticleBulletin.astro
 │  │  └─ SeoHead.astro
 │  ├─ content/
 │  │  ├─ config.ts
@@ -487,6 +488,18 @@ noindex: false
 - フィードの全履歴を一括取り込みしない。
 - 全フィード合計で最大10件までとする。
 - `workflow_dispatch`の入力で`bootstrap_days`を変更できるようにするが、上限7日とする。
+
+### 11.7 外電票と訂正履歴
+
+個別記事のメタデータは再利用可能な`ArticleBulletin.astro`で表示し、記事本文と視覚的に分離する。
+
+- 配信元、原文タイトル、原文公開日時、AI外電取得日時、初回生成日時、最終更新日時を表示する。
+- タイトル翻訳状態、概要翻訳状態、フォールバックの有無、人間修正の有無、公式発表リンクを表示する。
+- 翻訳の内部理由コードはそのまま表示せず、人間向けの状態名へ変換する。
+- `correctionHistory`が空の場合は訂正・更新履歴欄を表示しない。
+- 公開対象の履歴レコードは日時と説明だけを表示し、未定義・不正なレコードは表示しない。
+- 既存記事frontmatterを一括変更せず、固定URL、`humanEdited`、`correctionHistory`を自動生成で上書きしない。
+- 原文著者は記事情報として表示できるが、`NewsArticle.author`には設定しない。
 
 ## 12. 画像方針
 

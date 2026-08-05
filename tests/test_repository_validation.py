@@ -1,10 +1,16 @@
 from __future__ import annotations
 
 from datetime import UTC, datetime
+from pathlib import Path
+
+import pytest
 
 from scripts.content_writer import article_data_from_item, render_article_markdown
 from scripts.models import FeedConfig
-from scripts.validate_repository import validate_articles
+from scripts.utils import load_feed_configs
+from scripts.validate_repository import validate_articles, validate_source_consistency
+
+ROOT = Path(__file__).resolve().parents[1]
 
 
 def make_validation_item():
@@ -54,3 +60,23 @@ def test_historical_article_from_disabled_configured_source_is_valid(tmp_path) -
     assert article_count == 1
     assert dedupe_keys == {data["dedupeKey"]}
     assert article_ids == {data["articleId"]}
+
+
+def test_site_source_catalog_matches_feed_configuration() -> None:
+    configs = load_feed_configs(ROOT / "config/feeds.yml")
+    source_text = (ROOT / "src/data/sources.ts").read_text(encoding="utf-8")
+
+    assert validate_source_consistency(configs, source_text) == len(configs)
+
+
+def test_site_source_catalog_rejects_feed_url_drift() -> None:
+    configs = load_feed_configs(ROOT / "config/feeds.yml")
+    source_text = (ROOT / "src/data/sources.ts").read_text(encoding="utf-8")
+    changed = source_text.replace(
+        "feedUrl: 'https://openai.com/news/rss.xml'",
+        "feedUrl: 'https://example.com/incorrect.xml'",
+        1,
+    )
+
+    with pytest.raises(ValueError, match="Source metadata differs for openai-news"):
+        validate_source_consistency(configs, changed)

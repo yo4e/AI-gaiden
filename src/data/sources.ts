@@ -5,6 +5,8 @@ export type Source = {
   feedUrl: string;
   description: string;
   enabled: boolean;
+  categories: string[];
+  imagePolicy: 'rss_only';
 };
 
 export const sources: Source[] = [
@@ -15,6 +17,8 @@ export const sources: Source[] = [
     feedUrl: 'https://openai.com/news/rss.xml',
     description: 'OpenAIの製品、研究、安全性、企業発表を掲載する公式ニュース',
     enabled: true,
+    categories: ['artificial-intelligence', 'product', 'research'],
+    imagePolicy: 'rss_only',
   },
   {
     id: 'google-ai',
@@ -23,6 +27,8 @@ export const sources: Source[] = [
     feedUrl: 'https://blog.google/technology/ai/rss/',
     description: 'Googleが公式ブログで発表するAI関連情報',
     enabled: true,
+    categories: ['artificial-intelligence'],
+    imagePolicy: 'rss_only',
   },
   {
     id: 'google-deepmind',
@@ -31,6 +37,8 @@ export const sources: Source[] = [
     feedUrl: 'https://deepmind.google/blog/rss.xml',
     description: 'Google DeepMindのモデル、研究、安全性、科学分野の公式発表',
     enabled: true,
+    categories: ['artificial-intelligence', 'research', 'safety'],
+    imagePolicy: 'rss_only',
   },
   {
     id: 'hugging-face',
@@ -39,6 +47,8 @@ export const sources: Source[] = [
     feedUrl: 'https://huggingface.co/blog/feed.xml',
     description: 'Hugging Faceのモデル、データセット、研究・開発情報',
     enabled: true,
+    categories: ['machine-learning', 'open-source'],
+    imagePolicy: 'rss_only',
   },
   {
     id: 'microsoft-ai',
@@ -47,6 +57,8 @@ export const sources: Source[] = [
     feedUrl: 'https://www.microsoft.com/en-us/ai/blog/feed',
     description: 'MicrosoftのAI製品、企業導入、開発基盤に関する公式発表',
     enabled: true,
+    categories: ['artificial-intelligence', 'product', 'enterprise'],
+    imagePolicy: 'rss_only',
   },
   {
     id: 'mistral-ai',
@@ -55,6 +67,8 @@ export const sources: Source[] = [
     feedUrl: 'https://mistral.ai/rss.xml',
     description: 'Mistral AIのモデル、製品、研究、企業向け機能の公式発表',
     enabled: true,
+    categories: ['artificial-intelligence', 'product', 'research'],
+    imagePolicy: 'rss_only',
   },
   {
     id: 'github-ai-ml',
@@ -63,6 +77,8 @@ export const sources: Source[] = [
     feedUrl: 'https://github.blog/ai-and-ml/feed/',
     description: 'GitHubが公式ブログで発表するAI・機械学習情報',
     enabled: true,
+    categories: ['developer-tools', 'artificial-intelligence'],
+    imagePolicy: 'rss_only',
   },
   {
     id: 'apple-ml-research',
@@ -71,6 +87,8 @@ export const sources: Source[] = [
     feedUrl: 'https://machinelearning.apple.com/rss.xml',
     description: 'Appleの基盤モデル、オンデバイスAI、機械学習研究の公式発表',
     enabled: true,
+    categories: ['machine-learning', 'research', 'on-device'],
+    imagePolicy: 'rss_only',
   },
   {
     id: 'cohere-blog',
@@ -79,6 +97,8 @@ export const sources: Source[] = [
     feedUrl: 'https://cohere.com/blog/rss.xml',
     description: 'Cohereの企業向けAI、モデル、研究、導入事例に関する公式ブログ',
     enabled: true,
+    categories: ['artificial-intelligence', 'enterprise', 'research'],
+    imagePolicy: 'rss_only',
   },
   {
     id: 'aws-machine-learning',
@@ -87,6 +107,8 @@ export const sources: Source[] = [
     feedUrl: 'https://aws.amazon.com/blogs/machine-learning/feed/',
     description: 'AWSの生成AI、機械学習、Amazon Bedrockなどに関する公式技術情報',
     enabled: true,
+    categories: ['artificial-intelligence', 'machine-learning', 'cloud'],
+    imagePolicy: 'rss_only',
   },
   {
     id: 'nvidia-deep-learning',
@@ -95,6 +117,8 @@ export const sources: Source[] = [
     feedUrl: 'https://blogs.nvidia.com/blog/category/deep-learning/feed/',
     description: 'NVIDIA公式ブログのディープラーニング関連情報',
     enabled: true,
+    categories: ['deep-learning', 'hardware'],
+    imagePolicy: 'rss_only',
   },
   {
     id: 'mlcommons',
@@ -103,5 +127,7 @@ export const sources: Source[] = [
     feedUrl: 'https://mlcommons.org/feed/',
     description: 'AIベンチマーク、性能評価、安全性評価に関するMLCommons公式発表',
     enabled: true,
+    categories: ['benchmarks', 'safety', 'machine-learning'],
+    imagePolicy: 'rss_only',
   },
 ];

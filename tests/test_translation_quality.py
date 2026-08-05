@@ -29,6 +29,17 @@ def test_placeholder_remaining_is_rejected() -> None:
     assert "placeholder_remaining" in result.reasons
 
 
+def test_malformed_protected_placeholder_is_rejected() -> None:
+    result = check_translation_quality(
+        "Amazon Bedrock Browser update",
+        "Amazon Bedrock ZX0005QXZ Browserの更新",
+        "summary",
+    )
+
+    assert result.passed is False
+    assert "placeholder_remaining" in result.reasons
+
+
 def test_missing_number_is_rejected() -> None:
     result = check_translation_quality(
         "Revenue increased by 22% with v2.1",

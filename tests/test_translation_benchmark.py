@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import json
 import re
 from contextlib import nullcontext
 from pathlib import Path
@@ -218,3 +219,17 @@ def test_committed_results_create_blinded_human_evaluation_files(tmp_path) -> No
     assert {row["blinded_key"] for row in rows} == {"A", "B", "C", "D"}
     assert len(key_rows) == 4
     assert all(not row["meaning_accuracy"] for row in rows)
+
+
+def test_human_evaluation_decision_is_machine_readable() -> None:
+    result = json.loads(
+        (
+            ROOT
+            / "data/translation_benchmark/human_evaluation/evaluation_results.json"
+        ).read_text(encoding="utf-8")
+    )
+
+    assert len(result["comparisons"]) == 10
+    assert result["votes"] == {"C": 3, "D": 7}
+    assert result["interim_adoption"]["status"] == "keep_current_argos"
+    assert result["interim_adoption"]["production_code_change"] is False

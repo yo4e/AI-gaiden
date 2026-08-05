@@ -18,7 +18,7 @@ This file is generated from the committed RSS corpus; human references and score
 | ------------- | ----------- | ---------------------------------------- | -------------: | -----------------: | ---------------: | ------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | argos-en-ja   | available   | 1.1:en_ja                                |       1717.396 |          21187.471 |          264.843 |  567.22 | —                                                                                                                                                                             |
 | opus-mt-en-ja | available   | a863894cdd2b80f3bc1c5966734aee9ffec207d1 |      22723.716 |          18956.901 |          236.961 | 1055.88 | —                                                                                                                                                                             |
-| fugumt-en-ja  | available   | fbb91252110cf97d90291eb808629ab0b10f7928 |      18926.575 |           9435.233 |           117.94 |  786.55 | —                                                                                                                                                                             |
+| fugumt-en-ja  | available   | fbb91252110cf97d90291eb808629ab0b10f7928 |              — |           7855.333 |          120.851 |  704.48 | —                                                                                                                                                                             |
 | m2m100-418m   | unavailable | unknown                                  |              — |                  — |                — |       — | The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured. |
 
 ## Quality and fidelity aggregates
@@ -29,7 +29,7 @@ This file is generated from the committed RSS corpus; human references and score
 | argos-en-ja   | title   |     40/40 |          40 |             0 | 254.728 |     9/9 |  0/0 |        26/26 |
 | opus-mt-en-ja | summary |     40/40 |          13 |            27 | 305.582 |    0/18 |  0/0 |         0/36 |
 | opus-mt-en-ja | title   |     40/40 |          14 |            26 |  168.34 |     0/9 |  0/0 |         0/26 |
-| fugumt-en-ja  | summary |     40/40 |          32 |             8 |  156.98 |   12/18 |  0/0 |        30/36 |
-| fugumt-en-ja  | title   |     40/40 |          34 |             6 |  78.901 |     7/9 |  0/0 |        21/26 |
+| fugumt-en-ja  | summary |     32/40 |          28 |             4 | 160.696 |   10/13 |  0/0 |        23/25 |
+| fugumt-en-ja  | title   |     33/40 |          33 |             0 |  82.214 |     7/7 |  0/0 |        21/21 |
 | m2m100-418m   | title   |      0/40 |           0 |             0 |       — |     0/0 |  0/0 |          0/0 |
 | m2m100-418m   | summary |      0/40 |           0 |             0 |       — |     0/0 |  0/0 |          0/0 |

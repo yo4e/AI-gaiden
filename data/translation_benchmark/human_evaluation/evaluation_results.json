@@ -1,0 +1,50 @@
+{
+  "evaluation_date": "2026-08-05",
+  "source": "Issue #16 latest human evaluation comment",
+  "scope": {
+    "sample_count": 5,
+    "evaluated_pairs": 10,
+    "blinded_keys": ["C", "D"],
+    "target_types": ["title", "summary"]
+  },
+  "comparisons": [
+    { "sample_id": "S01", "target_type": "title", "winner": "D" },
+    { "sample_id": "S01", "target_type": "summary", "winner": "D" },
+    { "sample_id": "S05", "target_type": "title", "winner": "C" },
+    { "sample_id": "S05", "target_type": "summary", "winner": "D" },
+    { "sample_id": "S07", "target_type": "title", "winner": "D" },
+    { "sample_id": "S07", "target_type": "summary", "winner": "C" },
+    { "sample_id": "S09", "target_type": "title", "winner": "D" },
+    { "sample_id": "S09", "target_type": "summary", "winner": "D" },
+    { "sample_id": "S10", "target_type": "title", "winner": "D" },
+    { "sample_id": "S10", "target_type": "summary", "winner": "C" }
+  ],
+  "votes": {
+    "C": 3,
+    "D": 7
+  },
+  "model_mapping_file": "model_key.csv",
+  "findings": [
+    "FuguMT was more natural and readable in the blind comparison.",
+    "FuguMT produced malformed ZX...QXZ protected placeholders in multiple outputs, creating a critical proper-name/product-name retention risk.",
+    "Argos was preferred in examples where FuguMT placeholder corruption occurred.",
+    "OPUS-MT produced many semantically unusable outputs and is not a production candidate.",
+    "M2M100 produced no result in the measured environment and cannot be quality-evaluated."
+  ],
+  "interim_adoption": {
+    "status": "keep_current_argos",
+    "current_blinded_key": "C",
+    "switch_to_fugumt": false,
+    "switch_to_opus_mt": false,
+    "switch_to_m2m100": false,
+    "production_code_change": false,
+    "fallback_policy": "Use the original-title-centered safe display when a protected placeholder, proper noun, number, or quality gate check fails."
+  },
+  "remaining_work": [
+    "Complete primary-source license, model-data provenance, and commercial-use verification for each candidate.",
+    "Document the adoption rationale and rejected-candidate rationale.",
+    "Keep FuguMT out of production until placeholder protection is corrected and re-evaluated.",
+    "Run a resource-capable M2M100 measurement if it remains necessary.",
+    "Keep human reference translations, additional naturalness evaluation, and final production adoption as human decisions."
+  ]
+}

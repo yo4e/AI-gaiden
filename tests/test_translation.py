@@ -30,6 +30,11 @@ def test_invalid_translation_is_rejected() -> None:
         validate_translation("ZXQ0001QXZが残っています")
 
 
+def test_malformed_protected_placeholder_is_rejected() -> None:
+    with pytest.raises(TranslationError):
+        validate_translation("Amazon Bedrock ZX0005QXZ Browser")
+
+
 def test_nested_protected_terms_are_restored_in_reverse_order() -> None:
     protected, replacements = _protect("GitHub Copilot v2.1 uses GPU")
     assert _restore(protected, replacements) == "GitHub Copilot v2.1 uses GPU"
@@ -65,6 +70,13 @@ class SummaryOnlyQualityFailureTranslator:
         return "The team introduced a model for documented research tasks"
 
 
+class MalformedPlaceholderTranslator:
+    def translate(self, text: str) -> str:
+        if "Example Model" in text:
+            return "Example Model ZX0005QXZ"
+        return "研究チームが公式発表の概要を公開しました"
+
+
 def test_title_translation_failure_uses_original_title_fallback(fixture_dir, feed_config) -> None:
     from scripts.feed_reader import parse_feed_bytes
 
@@ -87,6 +99,18 @@ def test_title_quality_failure_does_not_reject_summary(fixture_dir, feed_config)
     assert prepared.title_translation_status == "quality_rejected"
     assert prepared.summary_translation_status == "translated"
     assert prepared.summary_fallback_applied is False
+
+
+def test_malformed_placeholder_uses_original_title_fallback(fixture_dir, feed_config) -> None:
+    from scripts.feed_reader import parse_feed_bytes
+
+    item = parse_feed_bytes((fixture_dir / "rss.xml").read_bytes(), feed_config)[0]
+    prepared = _prepare_item(item, MalformedPlaceholderTranslator())
+
+    assert prepared.title_ja == item.title
+    assert prepared.title_translation_status == "quality_rejected"
+    assert prepared.title_fallback_applied is True
+    assert "placeholder_remaining" in prepared.title_fallback_reasons
 
 
 def test_summary_quality_failure_keeps_translated_title(fixture_dir, feed_config) -> None:

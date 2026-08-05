@@ -20,6 +20,7 @@ class Translator(ABC):
 URL_RE = re.compile(r"https?://[^\s]+")
 VERSION_RE = re.compile(r"\b(?:v?\d+(?:\.\d+){1,3}|[A-Z]{2,}[A-Z0-9.-]*)\b")
 CONTROL_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
+PLACEHOLDER_RE = re.compile(r"ZX(?:Q?\d+Q?XZ|QXZ)")
 
 
 def protect_translation_input(
@@ -67,7 +68,7 @@ def validate_translation(value: str, *, maximum: int = 1000) -> str:
         not result
         or len(result) > maximum
         or CONTROL_RE.search(result)
-        or re.search(r"ZXQ\d{4}QXZ", result)
+        or PLACEHOLDER_RE.search(result)
     ):
         raise TranslationError("Local translation returned invalid text")
     return result

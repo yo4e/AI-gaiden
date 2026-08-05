@@ -65,3 +65,11 @@ python scripts/create_human_evaluation.py
 ```
 
 `representative_samples.csv` と `.md` は評価用の空欄を保持し、`model_key.csv` はモデル名との対応を別ファイルに分離します。
+
+### 評価済みの結果と暫定判断
+
+2026-08-05の人間評価では、S01・S05・S07・S09・S10のtitle/summary計10組についてC（Argos Translate）とD（FuguMT）を比較し、Dが7票、Cが3票でした。自然さ・読みやすさはFuguMTが優勢でしたが、FuguMTには`ZX...QXZ`形式の保護プレースホルダー破損が複数あり、固有名詞・製品名保持に致命的なリスクがあります。OPUS-MTは意味不成立が多く、M2M100は実行結果がなく評価不能でした。
+
+暫定的には現行Argosを維持し、FuguMT・OPUS-MT・M2M100への本番切替は行いません。品質ゲート、保護プレースホルダー、数字・固有名詞検査に失敗した場合は原題中心の安全な表示へフォールバックします。評価結果の機械可読データとMarkdown要約は [`data/translation_benchmark/human_evaluation/evaluation_results.json`](../data/translation_benchmark/human_evaluation/evaluation_results.json) と [`evaluation_results.md`](../data/translation_benchmark/human_evaluation/evaluation_results.md) に保存しています。
+
+残作業は、候補のライセンス・データ来歴・商用可否の一次情報確認、採用/不採用理由の文書化、FuguMTのプレースホルダー保護修正後の再評価、必要時のM2M100再実測、人間参考訳と追加の自然さ評価です。本PRでは本番モデルを切り替えません。

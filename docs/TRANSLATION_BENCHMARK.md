@@ -40,6 +40,8 @@ runnerは各候補へタイトルと概要を別々に渡し、同じ `max_input
 - CSV: 1入力・1候補・1対象種別の機械可読な行
 - Markdown: タイトル/概要別の集計表
 
+このフォローアップで作成した結果スナップショットは、実行日時の異なる値を混ぜないため、JSON・CSV・Markdownを同じコミットで保存します。`candidate_measurements`には実行環境、実際に読み込んだモデルリビジョン、アダプタ初期化に要した時間、推論時間、ピークRSS、設定したローカルキャッシュの前後容量を記録します。初回取得時間はダウンロードだけを分離できないため、キャッシュ増分があった場合の「アダプタ初期化（取得を含む）」として記録し、それ以外は`null`とします。ピークメモリは候補ごとに同一ベンチマークプロセス内で観測した累積ピークRSSであり、候補単位にプロセスを分離した値ではないことを明記します。
+
 モデルの取得は既定で無効です。キャッシュ済みのモデルだけを比較し、明示的にローカルで取得する場合は次を使います。
 
 ```bash
@@ -53,3 +55,13 @@ python scripts/run_translation_benchmark.py --allow-model-download
 小さな用語集は `config/translation_glossary.yml` に独立して置き、製品名の保護と定型的な日本語用語の後処理を分けています。数字、URL、製品名の保持率は `scripts/translation_quality.py` の `translation_fidelity_metrics` で集計します。流暢さ、人間参考訳、人間採点は品質ゲートの自動判定に混ぜません。
 
 比較結果だけで本番モデルを切り替えず、人間参考訳の作成、自然さの評価、ライセンス確認、Actionsでの実行可能性確認を完了条件として残します。
+
+## 人間評価用の匿名サンプル
+
+`scripts/create_human_evaluation.py` は、実測JSONから12件（10〜15件の範囲）の代表サンプルを決定的に抽出し、タイトルと概要を含むA〜Dの匿名評価表を `data/translation_benchmark/human_evaluation/representative_samples.csv` と `.md` に出力します。評価項目は意味の正確さ、日本語の自然さ、見出しの明瞭さ、数字・固有名詞保持、原文にない追加です。評価者は空欄を記入し、評価完了後にだけ同ディレクトリの `model_key.csv` を開きます。対応表を使う前に候補を自動採用せず、実測結果だけで本番モデルを切り替えません。
+
+```bash
+python scripts/create_human_evaluation.py
+```
+
+`representative_samples.csv` と `.md` は評価用の空欄を保持し、`model_key.csv` はモデル名との対応を別ファイルに分離します。

@@ -8,9 +8,13 @@ from __future__ import annotations
 
 import csv
 import hashlib
+import importlib.metadata
 import json
+import os
+import platform
 import time
 from dataclasses import asdict, dataclass
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any, Protocol
 
@@ -91,6 +95,7 @@ class BenchmarkConfig:
     max_new_tokens: int
     num_beams: int
     candidates: tuple[BenchmarkCandidate, ...]
+    project_root: Path = Path(".")
 
 
 class BenchmarkAdapter(Protocol):
@@ -171,6 +176,7 @@ def load_benchmark_config(path: Path, root: Path | None = None) -> BenchmarkConf
             max_new_tokens=int(runner.get("max_new_tokens", 256)),
             num_beams=int(runner.get("num_beams", 1)),
             candidates=tuple(candidates),
+            project_root=root,
         )
     except (KeyError, TypeError, ValueError) as exc:
         raise BenchmarkConfigurationError(
@@ -354,6 +360,123 @@ def _rss_peak_memory_mb() -> float | None:
     return round(value / (1024 * 1024) if value > 10_000_000 else value / 1024, 2)
 
 
+def _installed_version(distribution: str) -> str | None:
+    try:
+        return importlib.metadata.version(distribution)
+    except importlib.metadata.PackageNotFoundError:
+        return None
+
+
+def _runtime_environment() -> dict[str, Any]:
+    environment: dict[str, Any] = {
+        "measured_at_utc": datetime.now(UTC).isoformat(),
+        "python": platform.python_version(),
+        "platform": platform.platform(),
+        "system": platform.system(),
+        "release": platform.release(),
+        "machine": platform.machine(),
+        "processor": platform.processor() or "unknown",
+        "cpu_count": os.cpu_count(),
+        "device": "cpu",
+        "argostranslate_version": _installed_version("argostranslate") or "not_installed",
+        "transformers_version": _installed_version("transformers") or "not_installed",
+        "torch_version": _installed_version("torch") or "not_installed",
+    }
+    try:
+        import torch
+
+        environment["torch_threads"] = torch.get_num_threads()
+    except ImportError:
+        environment["torch_threads"] = None
+    return environment
+
+
+def _cache_roots(
+    candidate: BenchmarkCandidate,
+    config: BenchmarkConfig,
+) -> tuple[tuple[str, Path], ...]:
+    benchmark_cache = config.project_root / ".cache/translation-benchmark"
+
+    def configured_path(value: str | None, fallback: Path) -> Path:
+        path = Path(value).expanduser() if value else fallback
+        return path if path.is_absolute() else config.project_root / path
+
+    if candidate.backend == "argos":
+        paths = (
+            (
+                "argos_packages",
+                configured_path(
+                    os.environ.get("ARGOS_PACKAGES_DIR"),
+                    benchmark_cache / "argos/packages",
+                ),
+            ),
+            ("argos_data", benchmark_cache / "argos/data"),
+        )
+    else:
+        cache_value = os.environ.get("HUGGINGFACE_HUB_CACHE") or os.environ.get("HF_HOME")
+        cache_label = (
+            "huggingface_hub"
+            if os.environ.get("HUGGINGFACE_HUB_CACHE")
+            else "huggingface_home"
+        )
+        paths = (
+            (
+                cache_label,
+                configured_path(cache_value, benchmark_cache / "huggingface"),
+            ),
+        )
+    unique: list[tuple[str, Path]] = []
+    seen: set[Path] = set()
+    for label, path in paths:
+        resolved = path.expanduser().resolve()
+        if resolved not in seen:
+            unique.append((label, resolved))
+            seen.add(resolved)
+    return tuple(unique)
+
+
+def _directory_size(path: Path) -> int:
+    if not path.exists():
+        return 0
+    if path.is_file():
+        return path.stat().st_size
+    return sum(item.stat().st_size for item in path.rglob("*") if item.is_file())
+
+
+def _cache_snapshot(candidate: BenchmarkCandidate, config: BenchmarkConfig) -> dict[str, int]:
+    return {label: _directory_size(path) for label, path in _cache_roots(candidate, config)}
+
+
+def _model_revision(
+    candidate: BenchmarkCandidate, adapter: BenchmarkAdapter | None
+) -> str | None:
+    if adapter is None:
+        return None
+    if candidate.backend in {"marian", "m2m100"}:
+        for loaded in (
+            getattr(adapter, "_tokenizer", None),
+            getattr(adapter, "_model", None),
+            getattr(getattr(adapter, "_model", None), "config", None),
+        ):
+            revision = getattr(loaded, "_commit_hash", None)
+            if revision:
+                return str(revision)
+            init_kwargs = getattr(loaded, "init_kwargs", {})
+            if isinstance(init_kwargs, dict) and init_kwargs.get("_commit_hash"):
+                return str(init_kwargs["_commit_hash"])
+        return None
+    if candidate.backend == "argos":
+        try:
+            import argostranslate.package as package
+
+            for installed in package.get_installed_packages():
+                if installed.from_code == "en" and installed.to_code == "ja":
+                    return f"{installed.package_version}:{installed.package_path.name}"
+        except (ImportError, OSError, AttributeError):
+            return None
+    return None
+
+
 def _run_row(
     candidate: BenchmarkCandidate,
     item: BenchmarkItem,
@@ -461,18 +584,71 @@ def run_benchmark(
         missing = sorted(selected - {candidate.id for candidate in candidates})
         raise BenchmarkConfigurationError(f"Unknown benchmark candidate(s): {', '.join(missing)}")
     rows: list[dict[str, Any]] = []
+    candidate_measurements: list[dict[str, Any]] = []
     for candidate in candidates:
+        cache_before = _cache_snapshot(candidate, config)
+        setup_started = time.perf_counter()
         adapter: BenchmarkAdapter | None = None
         adapter_error: str | None = None
         try:
             adapter = _make_adapter(candidate, config, glossary, allow_download=allow_download)
         except Exception as exc:
             adapter_error = str(exc)
+        setup_elapsed_ms = round((time.perf_counter() - setup_started) * 1000, 3)
+        cache_after = _cache_snapshot(candidate, config)
         for item in corpus:
             for target_type in ("title", "summary"):
                 rows.append(
                     _run_row(candidate, item, target_type, adapter, adapter_error, glossary)
                 )
+        candidate_rows = [row for row in rows if row["candidate_id"] == candidate.id]
+        inference_rows = [row for row in candidate_rows if row["elapsed_ms"] is not None]
+        cache_delta = {
+            label: cache_after.get(label, 0) - cache_before.get(label, 0)
+            for label in sorted(set(cache_before) | set(cache_after))
+        }
+        bytes_added = sum(max(value, 0) for value in cache_delta.values())
+        candidate_measurements.append(
+            {
+                "candidate_id": candidate.id,
+                "status": "available" if adapter is not None else "unavailable",
+                "failure_reason": adapter_error,
+                "model_revision": _model_revision(candidate, adapter) or "unknown",
+                "setup_elapsed_ms": setup_elapsed_ms,
+                "initial_acquisition_time_ms": (
+                    setup_elapsed_ms if allow_download and bytes_added > 0 else None
+                ),
+                "initial_acquisition_scope": (
+                    "adapter_setup_including_download" if bytes_added > 0 else "not_measured"
+                ),
+                "inference_time_ms_total": round(
+                    sum(row["elapsed_ms"] for row in inference_rows), 3
+                )
+                if inference_rows
+                else None,
+                "inference_time_ms_average": (
+                    round(
+                        sum(row["elapsed_ms"] for row in inference_rows)
+                        / len(inference_rows),
+                        3,
+                    )
+                    if inference_rows
+                    else None
+                ),
+                "peak_memory_mb": (
+                    max(row["peak_memory_mb"] for row in inference_rows)
+                    if inference_rows
+                    else None
+                ),
+                "cache_bytes_before": cache_before,
+                "cache_bytes_after": cache_after,
+                "cache_bytes_delta": cache_delta,
+                "cache_measurement_scope": "configured local cache roots",
+                "memory_measurement_scope": (
+                    "benchmark process cumulative peak RSS; not isolated per candidate"
+                ),
+            }
+        )
     return {
         "version": config.version,
         "corpus_sha256": hashlib.sha256(config.corpus_path.read_bytes()).hexdigest(),
@@ -483,7 +659,9 @@ def run_benchmark(
             "num_beams": config.num_beams,
             "model_download_allowed": allow_download,
         },
+        "runtime": _runtime_environment(),
         "candidates": [candidate.as_dict() for candidate in candidates],
+        "candidate_measurements": candidate_measurements,
         "runs": rows,
         "aggregates": _aggregate(rows),
     }
@@ -513,7 +691,7 @@ def write_results(result: dict[str, Any], output_directory: Path) -> tuple[Path,
         "translated_text",
     )
     with csv_path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         for row in result["runs"]:
             writer.writerow({field: row[field] for field in fieldnames})
@@ -523,10 +701,42 @@ def write_results(result: dict[str, Any], output_directory: Path) -> tuple[Path,
         "This file is generated from the committed RSS corpus; "
         "human references and scores remain blank.",
         "",
+        "## Runtime",
+        "",
+        f"- Measured at (UTC): {result['runtime']['measured_at_utc']}",
+        f"- Platform: {result['runtime']['platform']}",
+        f"- Python: {result['runtime']['python']}",
+        f"- Machine: {result['runtime']['machine']}",
+        f"- CPU count: {result['runtime']['cpu_count']}",
+        f"- Torch: {result['runtime']['torch_version']}",
+        f"- Transformers: {result['runtime']['transformers_version']}",
+        "",
+        "## Candidate measurements",
+        "",
+        "| Candidate | Status | Revision | Acquisition ms | Inference total ms | "
+        "Inference avg ms | Peak MB | Failure/notes |",
+        "| --- | --- | --- | ---: | ---: | ---: | ---: | --- |",
+    ]
+    for measurement in result["candidate_measurements"]:
+        lines.append(
+            f"| {measurement['candidate_id']} | {measurement['status']} | "
+            f"{measurement['model_revision']} | "
+            f"{measurement['initial_acquisition_time_ms'] or '—'} | "
+            f"{measurement['inference_time_ms_total'] or '—'} | "
+            f"{measurement['inference_time_ms_average'] or '—'} | "
+            f"{measurement['peak_memory_mb'] or '—'} | "
+            f"{measurement['failure_reason'] or '—'} |"
+        )
+    lines.extend(
+        [
+            "",
+            "## Quality and fidelity aggregates",
+            "",
         "| Candidate | Target | Available | Gate passed | Gate rejected | Avg ms | "
         "Numbers | URLs | Proper nouns |",
         "| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |",
-    ]
+        ]
+    )
     for row in result["aggregates"]:
         lines.append(
             f"| {row['candidate_id']} | {row['target_type']} | {row['available']}/{row['items']} | "

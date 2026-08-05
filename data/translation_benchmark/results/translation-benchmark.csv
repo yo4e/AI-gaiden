@@ -1,0 +1,321 @@
+candidate_id,target_type,item_id,status,quality_passed,quality_reasons,elapsed_ms,peak_memory_mb,numbers_total,numbers_preserved,urls_total,urls_preserved,proper_nouns_total,proper_nouns_preserved,translated_text
+argos-en-ja,title,openai-c99ec862b4e7,translated,True,[],5131.904,542.14,0,0,0,0,1,1,OpenAIモデルを含むサードパーティのサイバー評価
+argos-en-ja,summary,openai-c99ec862b4e7,translated,True,[],226.143,548.38,0,0,0,0,1,1,OpenAIは、最近のサードパーティのサイバーセキュリティ評価インシデントを説明し、AIモデルのテストと評価を強化するための新しい安全策を概説します。
+argos-en-ja,title,openai-129511f54188,translated,True,[],125.789,549.2,0,0,0,0,2,2,ChatGPTの仕事およびCodexと学ぶ新しい方法
+argos-en-ja,summary,openai-129511f54188,translated,True,[],260.131,550.16,1,1,0,0,2,2,ChatGPTワークとCodex用の新しい教育プラグインを探索して、K-12教師、大学教育者、そして学生が学び、教え、研究、そして構築を支援します。
+argos-en-ja,title,openai-4a9b73e77846,translated,True,[],71.826,550.69,0,0,0,0,1,1,Appleはこの間違いを得ています
+argos-en-ja,summary,openai-4a9b73e77846,quality_rejected,False,['missing_proper_noun'],217.761,551.45,0,0,0,0,3,2,OpenAIはAppleのベースレスな訴訟に対処し、従業員についてのクレームを修正し、何が起こったのかを文書化したメッセージを共有します。
+argos-en-ja,title,openai-deec56a13e2b,translated,True,[],95.54,551.48,0,0,0,0,0,0,6ヶ月で応答音声AI用のリアルタイムシステムを構築する方法
+argos-en-ja,summary,openai-deec56a13e2b,translated,True,[],220.727,551.53,0,0,0,0,1,1,GPT-Liveは、ターンレススピーチモデルと低レイテンシーアーキテクチャを使用して、AIとの継続的な音声相互作用を可能にし、より速く、より自然な会話。
+argos-en-ja,title,openai-97e92714d577,translated,True,[],144.894,551.55,0,0,0,0,1,1,サークルは、OpenAI技術でtelcoパーソナライゼーションを強化
+argos-en-ja,summary,openai-97e92714d577,translated,True,[],430.47,560.77,2,2,0,0,2,2,サークルは、OpenAI API と Codex を使用して、AI-native telco エクスペリエンスを出力し、ARPU を 22% 増加させ、チューンを9% 削減し、開発効率を改善します。
+argos-en-ja,title,google-639d81441a0d,translated,True,[],95.901,561.2,1,1,0,0,0,0,2026年7月に発表した最新のAIニュース
+argos-en-ja,summary,google-639d81441a0d,translated,True,[],76.562,561.22,0,0,0,0,0,0,7月 AIのrecapのヘッダー
+argos-en-ja,title,google-9c57623ef609,translated,True,[],173.293,561.45,1,1,0,0,1,1,Gemini APIの管理された代理店:3.6 フラッシュ、ホックおよび多く
+argos-en-ja,summary,google-9c57623ef609,translated,True,[],140.274,561.45,1,1,0,0,1,1,管理された代理店 Gemini 3.6 フラッシュ、ホックおよび制動機
+argos-en-ja,title,deepmind-c8c2521853f8,translated,True,[],198.943,561.45,1,1,0,0,1,1,Gemini ロボティクス ER 2:ビデオの理解、タスクのオーケストレーション、マルチロボットのコラボレーションによるロボットの力付け
+argos-en-ja,summary,deepmind-c8c2521853f8,translated,True,[],327.382,561.66,1,1,0,0,1,1,GeminiのロボティクスER 2は、ロボットの理由、コラボレーション、および現実世界のタスクを解決するのに役立ちます。 ロボティックアプリケーション向けビデオ理解、ツールのオーケストレーション、マルチロボットのコラボレーションのステップチェンジを表現しています。
+argos-en-ja,title,deepmind-e08c4d4e6d11,translated,True,[],146.717,561.66,0,0,0,0,1,1,科学的発見のフロンティアを加速:Googleの$ 40Mの約束の創世記ミッション
+argos-en-ja,summary,deepmind-e08c4d4e6d11,translated,True,[],166.723,561.66,0,0,0,0,1,1,GoogleはGenesisの代表団のためのAIのトークンそしてクレジットの$ 40Mを託します
+argos-en-ja,title,deepmind-5e431bbf920c,translated,True,[],215.05,561.66,3,3,0,0,1,1,Gemini 3.6フラッシュ、3.5フラッシュライト、3.5フラッシュサイバーの紹介
+argos-en-ja,summary,deepmind-5e431bbf920c,translated,True,[],272.118,561.72,3,3,0,0,1,1,Gemini 3.6フラッシュ、3.5フラッシュライト、3.5フラッシュサイバーなどの新しいGeminiモデルを紹介します。
+argos-en-ja,title,microsoft-b4e8bc639f2f,translated,True,[],88.021,561.81,0,0,0,0,0,0,お茶とは? AI変換をナビゲートするリーダーからのレッスン
+argos-en-ja,summary,microsoft-b4e8bc639f2f,translated,True,[],533.837,562.42,0,0,0,0,0,0,たくさんのお茶を飲みます。 英語の朝食、通常、実際のカップで毎日。 そこで、新しいシリーズのアイデアで私のチームに来たとき、彼らはそれを再ラタブルに望んでいた、そして正直に、私は最初に躊躇していた。 しかし、一日の終わりに、名前は、私は今、本当に元気にする何かを捉えました:リーダーがAIで彼らの組織を変革しているペース、そして、彼らは彼らが互いに学習しているものを分かち合います。
+argos-en-ja,title,microsoft-725b173772a1,translated,True,[],170.967,562.42,0,0,0,0,1,1,MicrosoftのFY26:AI実験からフロンティアトランスフォーメーションまで
+argos-en-ja,summary,microsoft-725b173772a1,translated,True,[],338.238,562.5,0,0,0,0,0,0,過去の会計年度を通じて、AIの実験からAIを本格的に展開し、あらゆる業界やセグメントを横断する顧客を移動。 イノベーションのロックを解除し、成長の新しい機会を創出しました。
+argos-en-ja,title,microsoft-a2ae9bea5eb1,translated,True,[],76.731,562.5,0,0,0,0,0,0,AIを使用した非営利団体内でのインパクトを拡張
+argos-en-ja,summary,microsoft-a2ae9bea5eb1,translated,True,[],158.906,562.5,0,0,0,0,0,0,非営利団体がAIのコミュニティを強化し、機会を拡大し、世界中で持続的な影響を生み出せる方法を発見してください。
+argos-en-ja,title,microsoft-8a136f766dc2,translated,True,[],125.04,562.5,0,0,0,0,0,0,AI戦略ロードマップ:成功したAI変換の5つのドライバ
+argos-en-ja,summary,microsoft-8a136f766dc2,translated,True,[],308.324,562.5,0,0,0,0,1,1,MicrosoftのAIを探検 戦略ロードマップと、組織がAIパイロットを超えて、信頼できる、測定可能なAI機能を企業全体で構築できる方法を学びます。
+argos-en-ja,title,microsoft-06b9034541c7,translated,True,[],109.637,562.5,0,0,0,0,0,0,中小企業はAIの招待状を待っていません。
+argos-en-ja,summary,microsoft-06b9034541c7,translated,True,[],181.629,562.5,0,0,0,0,0,0,セキュアなAIを主導するSMBは、信頼の構築、ワークフローの統合、セキュリティをチーム全体の成長の基盤にしています。
+argos-en-ja,title,github-f1d4877545a9,translated,True,[],174.469,562.5,0,0,0,0,2,2,GitHubの法的チームがCopilot CLIを使用してワークフローを合理化する方法
+argos-en-ja,summary,github-f1d4877545a9,translated,True,[],91.528,562.5,0,0,0,0,0,0,単一行のコードを書くことなく、作業を簡素化するためのツールを作成する方法を学びます。
+argos-en-ja,title,github-44555fb737bc,translated,True,[],89.199,562.5,0,0,0,0,1,1,GitHub Copilotアプリでのセッションとプルリクエスト
+argos-en-ja,summary,github-44555fb737bc,translated,True,[],152.684,562.52,0,0,0,0,1,1,GitHub Copilotアプリでスタックされたセッションとプルリクエストを使用して、鉱山の古いコードベースを近代化する方法を学びます。
+argos-en-ja,title,github-4e90420c6964,translated,True,[],63.719,562.75,0,0,0,0,0,0,ハーネスはあなたが必要とするすべてです(ほとんど)
+argos-en-ja,summary,github-4e90420c6964,translated,True,[],272.003,562.75,0,0,0,0,1,1,GitHub Copilot は、新しい AI ツールを追いかけることなく、ソフトウェアのプロトタイピング、計画、実装、およびレビューのための実用的な GitHub Copilot ワークフローです。
+argos-en-ja,title,github-3bbd8b07cb5a,translated,True,[],76.443,562.78,0,0,0,0,1,1,初心者向けGitHub Copilotアプリ:開始
+argos-en-ja,summary,github-3bbd8b07cb5a,translated,True,[],222.954,563.08,0,0,0,0,1,1,GitHub Copilotアプリに新しい? プロジェクトを始める方法を学び、AIエージェントと連携し、キャンバスを探索し、開発ワークフローを合理化します。
+argos-en-ja,title,github-98b061f17888,translated,True,[],133.853,563.08,0,0,0,0,1,1,Copilot対生APIアクセス:実際に支払うべきことは何ですか。
+argos-en-ja,summary,github-98b061f17888,translated,True,[],216.073,563.08,0,0,0,0,1,1,Copilotは、リストされたAPIレートでの使用を請求しました。 コーディングワークフロー、ポリシー、およびハーネスで直接モデルアクセスを比較します。
+argos-en-ja,title,apple-6bb3f9340489,translated,True,[],72.107,563.08,0,0,0,0,0,0,マルチモーダルLLMにおけるアライメントの理解:包括的な研究
+argos-en-ja,summary,apple-6bb3f9340489,translated,True,[],335.044,563.12,0,0,0,0,0,0,設定アライメントは、大規模なランゲージモデル(LLM)のパフォーマンスを向上させる上で重要なコンポーネントになっていますが、マルチモーダル大ランゲージモデル(MLLM)での衝撃は比較的安価です。 言語モデルと同様に、MLLMはイメージ理解のタスクは幻覚のような課題に遭遇します。
+argos-en-ja,title,apple-47092aa08a50,translated,True,[],151.371,563.12,0,0,0,0,0,0,UMAP の kNN のグラフの次元の減少はネットワークの科学に会います
+argos-en-ja,summary,apple-47092aa08a50,translated,True,[],360.964,563.16,0,0,0,0,0,0,UMAPは、高次元のデータを探索するために広く使用されていますが、典型的なワークフローは、その低次元の埋め込みに焦点を当て、主にUMAPが内部で構築する豊富なk-nearest-neighborグラフを見下ろす。 この内部表現の可能性を発揮します。
+argos-en-ja,title,apple-9cec8797d4f0,translated,True,[],101.902,563.16,0,0,0,0,0,0,MoMo:Spatiotemporal Action Tokenizationによるロボット操作におけるダイアルモーションモード
+argos-en-ja,summary,apple-9cec8797d4f0,translated,True,[],290.303,563.17,0,0,0,0,0,0,多様なコンテキスト間で効果的に操作するには、ロボットは操作タスクを正確に実行するだけでなく、タスク、オブジェクト、および相互作用の設定に展開するアクションを適応させる必要があります。 この実行レベルのバリエーションは、タスク間で共有された再利用可能な行動要因として学習できるかどうかを尋ねます。
+argos-en-ja,title,apple-cef8c7b3465e,translated,True,[],111.725,563.17,0,0,0,0,0,0,記憶Decoupledの気道の深さの拡散の変圧器が付いている有効な可聴周波統合
+argos-en-ja,summary,apple-cef8c7b3465e,translated,True,[],361.02,563.17,1,1,0,0,1,1,Siri Expressive Voicesは、AFM 3コアアドバンスト、Appleの最も強力なオンデバイスファンデーションモデルを搭載した、リアルタイムで完全な構成可能なスピーチを合成します。 この作品は、その機能の背後に記憶効率の高いオーディオ合成アーキテクチャを提示します。
+argos-en-ja,title,apple-f11735103919,translated,True,[],151.144,563.17,0,0,0,0,0,0,GH-ESD: Instanceレベルの視野のタスクのための地上されたhypothesis主導の間違いのスライスの発見
+argos-en-ja,summary,apple-f11735103919,quality_rejected,False,['missing_proper_noun'],295.234,563.17,0,0,0,0,1,0,誤りのスライスとして知られる皮下にある視覚モデルの系統的障害は、堅牢性と評価の制限を明らかにします。 既存のスライスディスカバリーは、明示的な空間のクラスターやあらかじめ定義された属性の組み合わせとして大規模なモデルのスライスにアプローチします。
+argos-en-ja,title,aws-80911412e4d1,translated,True,[],89.689,563.17,0,0,0,0,1,1,Amazon Bedrockの基礎モデルの接地のためのWeb検索の紹介
+argos-en-ja,summary,aws-80911412e4d1,translated,True,[],268.708,563.17,0,0,0,0,1,1,今日、Amazon BedrockでWeb検索の一般的な可用性を紹介しています。 現在のWebナレッジでモデル応答を接地するサーバー側の組み込みツールです。 Web検索では、Amazon Bedrockのネイティブ機能となります。
+argos-en-ja,title,aws-8434f80dc857,translated,True,[],117.284,563.19,0,0,0,0,2,2,Amazon Bedrock AgentCoreによる自動Webインサイト抽出
+argos-en-ja,summary,aws-8434f80dc857,quality_rejected,False,['excessive_repetition'],391.573,563.19,0,0,0,0,3,3,数千ものウェブサイトを手早くから抽出することで、圧倒的な情報が得られます。 この投稿では、Amazon Bedrock AgentCoreブラウザ、Amazon Bedrock、Amazon OpenSearch Serverless、AWS Lambdaを使用して自動Webインサイト抽出ソリューションを構築する方法を紹介します。
+argos-en-ja,title,aws-fbeab4f94608,translated,True,[],212.523,563.19,1,1,0,0,1,1,数週間から数分で: フォーミュラ 1® は、AWS のエージェント AI を使用してデータ操作を加速する方法
+argos-en-ja,summary,aws-fbeab4f94608,translated,True,[],372.148,563.19,3,3,0,0,3,3,フォーミュラ1®は、AWSと提携し、AIをAmazon Bedrock AgentCoreを使用して、MarTechデータプラットフォームを変換します。 F1が最大8週間から約40分でデータをオンボーディングする方法を学びます。
+argos-en-ja,title,aws-3760a4949caa,translated,True,[],101.756,563.19,0,0,0,0,1,1,Amazon Bedrockの自動化されたReasoningの方針の改良
+argos-en-ja,summary,aws-3760a4949caa,quality_rejected,False,['excessive_repetition'],289.341,563.19,0,0,0,0,1,1,Amazon Bedrockは、自動自動自動自動合理的なポリシーの改良をサポートしています。 洗練エンジンは、テストに失敗し、ルールの問題や言語の問題のための正式なロジック修正を提案し、効果を取る前にすべての変更を承認します。
+argos-en-ja,title,aws-c12cd3eece71,translated,True,[],43.254,563.19,0,0,0,0,0,0,Amazonクイックでエージェントカタログ体験を発表
+argos-en-ja,summary,aws-c12cd3eece71,translated,True,[],391.551,563.19,0,0,0,0,1,1,Amazon Quickは、データキュレータ用のAI-poweredワークフローで、自然言語のアップストリームカタログアセットを発見し、データセットやトピックを継承したセマンティックスを自動生成します。 AWSの接着剤データカタログおよびDatabricks Unity Catalogのプレビューで。
+argos-en-ja,title,nvidia-d950eaa58be5,translated,True,[],166.351,563.19,0,0,0,0,1,1,NVIDIAのNemotronはLangChainの深い代理店の馬具とのBenchmark-Leadingの性能を達成します
+argos-en-ja,summary,nvidia-d950eaa58be5,translated,True,[],401.411,563.19,2,2,0,0,1,1,NVIDIAのNemotron 3 Ultraは最も大きく、最も広く採用されたAIの代理店のオーケストレーションのプラットホームが付いている上の閉鎖したモデルより低い費用の一流の性能を提供します。 LangChainはNVIDIAのNemotron 3 Ultraのための深い代理店の馬具をtuned。
+argos-en-ja,title,nvidia-72401a2f0f4a,translated,True,[],219.291,563.19,0,0,0,0,1,1,NVIDIA Rubinのプラットホーム、開いたモデル、自動運転:NVIDIA CESで未来のためのBlueprintを提示します
+argos-en-ja,summary,nvidia-72401a2f0f4a,translated,True,[],390.921,566.8,1,1,0,0,1,1,NVIDIAの創設者およびCEOのJensen HuangはFontainebleauのラスベガスでCES 2026を開けるために、AIがあらゆるドメインおよびあらゆる装置にスケーリングであることを宣言しました。
+argos-en-ja,title,nvidia-8baf142be276,translated,True,[],145.771,566.8,0,0,0,0,1,1,AIがより複雑に育つにつれて、モデルビルダーはNVIDIAに頼っています
+argos-en-ja,summary,nvidia-8baf142be276,translated,True,[],418.301,567.2,1,1,0,0,2,2,OpenAIが12月にGPT-5.2を発売しました。 NVIDIAのホッパーおよびGB200 NVL72システムを含むNVIDIAのインフラで訓練され、配備されました。
+argos-en-ja,title,nvidia-9706f1c4881e,translated,True,[],259.957,567.2,0,0,0,0,1,1,島を渡る範囲: UK-LLM は AI に UK 言語に NVIDIA Nemotron を持って来ます
+argos-en-ja,summary,nvidia-9706f1c4881e,translated,True,[],422.927,567.2,0,0,0,0,1,1,ケルン語、アイルランド語、スコットランドのゲール語、ウェールズ語を含むケルト語は、英国最古のリビング言語です。 UK-LLM sovereign AIイニシアチブはAIモデルをNVIDIA Nemotronに基づいて構築しています。
+argos-en-ja,title,nvidia-2bef3f3a504a,translated,True,[],136.816,567.2,0,0,0,0,1,1,それは湿度だ:ポーランドの国際研究者、ディープラーニング、NVIDIA GPUが予測を変更できる方法
+argos-en-ja,summary,nvidia-2bef3f3a504a,translated,True,[],239.522,567.2,0,0,0,0,0,0,1年以上にわたり、気象学者はチョークボード、方程式、そして今、スーパーコンピュータで嵐を追いました。 すべての進歩のために、彼らはまだ1つの受容性単純成分の上に立ち往生します:水蒸気。
+argos-en-ja,title,mlcommons-404c989e7fdb,translated,True,[],92.389,567.2,1,1,0,0,0,0,MLPerf エンドポイント v0.7: 財団リリース
+argos-en-ja,summary,mlcommons-404c989e7fdb,translated,True,[],226.23,567.2,1,1,0,0,0,0,GTCでのデモから基礎リリースまで:新しい結果、自動投稿パイプライン、およびv1.0へのロードマップは、今年後半に配信を転がします。
+argos-en-ja,title,mlcommons-b123bdf304bb,translated,True,[],189.966,567.2,0,0,0,0,1,1,MedPerfはGoogleに会います クラウド機密コンピューティング:セキュアAI 脳腫瘍研究のためのベンチマーク
+argos-en-ja,summary,mlcommons-b123bdf304bb,translated,True,[],388.785,567.22,1,1,0,0,2,2,Googleの雲はラスベガス、MLCommonsおよびGoogleの次の2026年を続きます クラウドは、患者のデータ、モデルIP、およびベンチマークの完全性を保護する信頼できる医学AIのための機能を示しました。
+argos-en-ja,title,mlcommons-ee62dfe9b879,translated,True,[],130.565,567.22,1,1,0,0,0,0,演題募集:MLPerf 推論 v6.1のエッジエージェントインフェレンスベンチマーク
+argos-en-ja,summary,mlcommons-ee62dfe9b879,translated,True,[],89.13,567.22,0,0,0,0,0,0,単一のエッジアクセラレータ上のマルチトーンエージェントLLMを Benchmarking
+argos-en-ja,title,mlcommons-5353db8781d0,translated,True,[],85.85,567.22,0,0,0,0,0,0,MLPerfインフェレンスのための有能な推論
+argos-en-ja,summary,mlcommons-5353db8781d0,translated,True,[],137.182,567.22,0,0,0,0,0,0,LLMのサービングシステムを測定するための新しいマルチターンベンチマーク、およびクローズドループエージェントのワークフロー。
+argos-en-ja,title,mlcommons-a7d894d8a5b9,translated,True,[],101.484,567.22,0,0,0,0,0,0,超低電力 AI の次の波の後ろのベンチマーク
+argos-en-ja,summary,mlcommons-a7d894d8a5b9,translated,True,[],113.578,567.22,0,0,0,0,0,0,MLPerf の小さな: 端の AI を Benchmarking
+opus-mt-en-ja,title,openai-c99ec862b4e7,quality_rejected,False,['missing_proper_noun'],136.268,850.59,0,0,0,0,1,0,"彼らは,いぎわぎ を し て , 持ちぎ と , であり , ぶどう 酒ン を 放 ち ,"
+opus-mt-en-ja,summary,openai-c99ec862b4e7,quality_rejected,False,['missing_proper_noun'],311.022,853.66,0,0,0,0,1,0,"アスンクロント , 三 分 の 一 は ユサル ・ クレオン に 至 る まで , 三 分 の 一 は 新し い クミン を 航海 する . それ は 追手 が 追 わ れ て い る . それ は 追放 者 と な り , 恐怖 と 追 っ て 来る ."
+opus-mt-en-ja,title,openai-129511f54188,quality_rejected,False,['missing_proper_noun'],139.199,853.66,0,0,0,0,2,0,"彼女たちは,ビグワ度に,また,うみごとと,うじなごとを教える者,また,うじなごとを町町などに教えなさい."
+opus-mt-en-ja,summary,openai-129511f54188,quality_rejected,False,"['missing_number', 'missing_proper_noun']",385.165,854.39,1,0,0,0,2,0,"新し い 記憶 を 解 い て くれ た 新し い 記録 , 意ル クミン , ビル (神) ルカ), そして , ルカスケルセナ , テモテ , ビルセナ , まじない を 静め , これ を 教え る 者 たち , また , 改宗 者 たち , 宴 を 築 く 者 たち , あらかじめ 建て て い る 者 たち で あ る ."
+opus-mt-en-ja,title,openai-4a9b73e77846,quality_rejected,False,['missing_proper_noun'],75.166,858.94,0,0,0,0,1,0,"ユウラクククリ 者 は , この あやまち を 犯 す ."
+opus-mt-en-ja,summary,openai-4a9b73e77846,quality_rejected,False,['missing_proper_noun'],296.924,859.03,0,0,0,0,3,0,"アビククシャザン の back タイム , コンククリ 者 , コンネン など の 境 を 定め て , その 中 の 規定 を 穀物 , 審判 の 上 に それ を she い , 定め られ て い る . その 任命 の 言葉 は , 成就 する もの で あ る ."
+opus-mt-en-ja,title,openai-deec56a13e2b,translated,True,[],186.072,859.03,0,0,0,0,0,0,"わたし たち は , どう し て ラパトエル の よう に 大きな 声 を あげ て い る の だ ろ う . それ は , 今 六 か月 の 間 , かおり を 高め る こと で あ っ て ,"
+opus-mt-en-ja,summary,openai-deec56a13e2b,quality_rejected,False,['missing_proper_noun'],349.639,859.28,0,0,0,0,1,0,"不平 を きた ら せ る 者 , しぼ む 感謝 を 言 う 者 , スクススス と い う 者 , 言葉 の 深 い こと , また 行 か な い 者 たち の こと に よ っ て , わたし たち を fellな しぼ る 者 , いわば , 不敵 な 栄光 の 支流 の 神 が , わたし たち に 命 じ られ る から で あ る ."
+opus-mt-en-ja,title,openai-97e92714d577,quality_rejected,False,['missing_proper_noun'],73.615,860.28,0,0,0,0,1,0,"権力 あ る 軍勢 は ピグロン を 打 ち ,"
+opus-mt-en-ja,summary,openai-97e92714d577,quality_rejected,False,"['missing_number', 'missing_proper_noun']",395.709,865.81,2,0,0,0,2,0,"アヅモナ , 従 っ て ナバク , よく 意レゴン , よく 意ダイ , 後 に 寄留 し , マナナナナ , 肉ダイシャン , カナ , 意匠 , カナ , アン ハジンマ タナ , アンカ ダイ , マシャンナ , マナ , マシャン に い た ."
+opus-mt-en-ja,title,google-639d81441a0d,quality_rejected,False,['missing_number'],153.599,866.47,1,0,0,0,0,0,"こう し た わけ で , わたし たち は 積荷 を 航海 し た こと が 決定 し た の で , クレトス に それ を 伝え ,"
+opus-mt-en-ja,summary,google-639d81441a0d,translated,True,[],78.07,866.47,0,0,0,0,0,0,"シシャ エル の かしら は , 長 きた る 者 になり ,"
+opus-mt-en-ja,title,google-9c57623ef609,quality_rejected,False,"['missing_number', 'missing_proper_noun']",258.037,867.05,1,0,0,0,1,0,"クレオン , クリオンナ , クミンネ など の が あ る . 金 細工 人 が これ を 囲 ん で い る . また いば を 設け て , すいか り , そして , むちこ さ れ る こと も , もう 一 度 ,"
+opus-mt-en-ja,summary,google-9c57623ef609,quality_rejected,False,"['missing_number', 'missing_proper_noun']",181.488,872.44,1,0,0,0,1,0,"クレテ ・ クレクバテ , アタク , クタハッコン , ネアリヤ , ネアリヤ , カクン を 守 る 者 は ,"
+opus-mt-en-ja,title,deepmind-c8c2521853f8,quality_rejected,False,"['missing_number', 'missing_proper_noun']",208.626,874.11,1,0,0,0,1,0,"マクナデバル・ハッネコ,ヘルダダイ,ス力を飾る力があり,知識ルカナ,さやさや色の船者,カルカスびと,カレセテびと,"
+opus-mt-en-ja,summary,deepmind-c8c2521853f8,quality_rejected,False,"['missing_number', 'missing_proper_noun']",400.262,880.08,1,0,0,0,1,0,"(これ から ヘルネナ , クタビア , 寄留 し , ナゲバブ , クミンなどの 支払 っ て い る .) これ は ヘレシ , クミス に 二 つ の 物 で あ っ て , 知恵 あ る 者 たち で あ る . すなわち 威勢 の 望まし い こと , クシャント と い う 者 で あ る ."
+opus-mt-en-ja,title,deepmind-e08c4d4e6d11,quality_rejected,False,['missing_proper_noun'],190.707,882.27,0,0,0,0,1,0,"アスクリスポ, 内端ピレトテ・カイリバテは,クレスフスであって,カフトラクスとアカフカクリ族 み,"
+opus-mt-en-ja,summary,deepmind-e08c4d4e6d11,quality_rejected,False,['missing_proper_noun'],233.139,884.66,0,0,0,0,1,0,"アスンクリト , クレゴンクリスベナフタナア アワイ , カフタナ と カルネ と の 念 に つ い て い る 者 たち が , クミン を 産 み ,"
+opus-mt-en-ja,title,deepmind-5e431bbf920c,quality_rejected,False,"['missing_number', 'missing_proper_noun']",171.872,885.38,3,0,0,0,1,0,"アビクリ者,シャフタナ,コクバびと,ロデバびと,カシワイ,アカフタナ,アカフタナ,アカフタナ,"
+opus-mt-en-ja,summary,deepmind-5e431bbf920c,quality_rejected,False,"['missing_number', 'missing_proper_noun']",243.392,885.41,3,0,0,0,1,0,"わたし たち は , 新し い 門 を 造 る こと に し て , 新し い "" アンクン ・ ユサケンドン "" に , 新し い ナフレオン , クフレオン (すなわち , スフレフタタタ "" ."
+opus-mt-en-ja,title,microsoft-b4e8bc639f2f,translated,True,[],97.075,889.45,0,0,0,0,0,0,"カルマテはふたり. 航ンデは いつ,アホマテはロデの父,"
+opus-mt-en-ja,summary,microsoft-b4e8bc639f2f,translated,True,[],470.848,896.25,0,0,0,0,0,0,"わたし は モレネ , 寄留 する べ な く , カルネ , 杯 の 中 に , 一 日 ごと に わたし の 所 に 来 , わたし の 会 う べ き 物 を ネレス に 運 び , これ を 希望 する もの の ため に , 決心 深 い 者 に し た . これ は , 暴虐 の 日 に ラネボ と い う 姿 と で あ っ た . しかし 彼 ら は 最初め る ."
+opus-mt-en-ja,title,microsoft-725b173772a1,quality_rejected,False,['missing_proper_noun'],268.178,900.72,0,0,0,0,1,0,"黒雲 を 放 っ て , クパネム , クミン を 望み 見 た . アクワン から パトラク ・ カクム に 至 り , 大き入帆 は 異な っ て , 三 の クエネケ なげ を 失 い ,"
+opus-mt-en-ja,summary,microsoft-725b173772a1,translated,True,[],387.261,907.03,0,0,0,0,0,0,"すなわち , この 計画 は 昨年 に わた っ て , with流 の 改宗 者 改宗 者 , クレスケン ・ スケル から 退 く こと に 耳 を 傾け , クミレス に は 自任 じ , クミン を 受 く こと に な っ て い る . この 堅 い わざ は , 新し い わざ を な す こと が でき る の で あ る ."
+opus-mt-en-ja,title,microsoft-a2ae9bea5eb1,translated,True,[],140.684,909.2,0,0,0,0,0,0,"また , 元 おこな っ た こと は , わたし たち たち の 中 に , かろうじて , 積荷 を 休 ま せ て くれ な い よう に し ,"
+opus-mt-en-ja,summary,microsoft-a2ae9bea5eb1,translated,True,[],212.556,912.86,0,0,0,0,0,0,"その 葉 は 切れ ず , 生存 は 堅 く 立 っ て , 強め る こと が でき な い し , 勢い を 守 り , その 後 , なお 勇気 を 保 つ こと が でき な い よう に し て い る ."
+opus-mt-en-ja,title,microsoft-8a136f766dc2,translated,True,[],142.682,915.17,0,0,0,0,0,0,"クロン・アロガ,クタク,クミンなどのところを当り,シベノクびと 自分の記念・アホバイ."
+opus-mt-en-ja,summary,microsoft-8a136f766dc2,quality_rejected,False,['missing_proper_noun'],335.959,921.09,0,0,0,0,1,0,"アスンクバケナテ・ネケルネコ,意ルネコおよび意統と決まって,ハッコン・ネケルの意) ハレケル・ネケルネケクエ・ハレケルを建て,大いなる意深く建てる. すなわちハレトン・ハレケクを建て,ハレトダデの近くの近く grace建てようとする."
+opus-mt-en-ja,title,microsoft-06b9034541c7,translated,True,[],179.35,924.38,0,0,0,0,0,0,"クレスケとクミンは,当座をこすべることがなく,クレケントケントケン・アケンには,かじりを航行す必要がない."
+opus-mt-en-ja,summary,microsoft-06b9034541c7,translated,True,[],254.836,928.56,0,0,0,0,0,0,"権トル を 堅 く 持 っ て い く し , クミン を 打 っ て 建物 を 建て , 堅 く ルネ・ 授け られ て い る 建物 を 建て , ウゼタン を 堅 く 造 る ."
+opus-mt-en-ja,title,github-f1d4877545a9,quality_rejected,False,['missing_proper_noun'],138.807,932.03,0,0,0,0,2,0,"良いアピフカイムをます アハベノン・ スフルびとが,あなたのともしびをとって,尽きる 国をかこす."
+opus-mt-en-ja,summary,github-f1d4877545a9,translated,True,[],123.44,934.58,0,0,0,0,0,0,"未来 の ます を 朗読 する など , どう か , 香 の たえ に よ っ て 建て られ る よう に ."
+opus-mt-en-ja,title,github-44555fb737bc,quality_rejected,False,['missing_proper_noun'],83.706,936.34,0,0,0,0,1,0,"たくまでにあいさつを加え,肉のた飾りを 長度 stood帯をつけなさい."
+opus-mt-en-ja,summary,github-44555fb737bc,quality_rejected,False,['missing_proper_noun'],189.91,939.53,0,0,0,0,1,0,"わたし たち は , ふりか に し た いま 長 い 生活 を し て い た ら わか と , すじ 高 い 部分 を その ふたこと に し て は い な ら な い の だ ."
+opus-mt-en-ja,title,github-4e90420c6964,translated,True,[],61.734,941.19,0,0,0,0,0,0,"againstきアビスポは,みな,あなたの益になる."
+opus-mt-en-ja,summary,github-4e90420c6964,quality_rejected,False,['missing_proper_noun'],298.551,942.53,0,0,0,0,1,0,"アクンクントケルナテ び と クンミン は , クンントケン を 襲 い , クミン テケン を 育て る 者 , それ を 鍛え る 者 , 新し い ぶどう 酒 に よ っ て 鍛え た ."
+opus-mt-en-ja,title,github-3bbd8b07cb5a,quality_rejected,False,['missing_proper_noun'],98.673,943.12,0,0,0,0,1,0,"黒 酒 ・ きた る 者ショベル , クムハル , ベノテ ,"
+opus-mt-en-ja,summary,github-3bbd8b07cb5a,quality_rejected,False,['missing_proper_noun'],265.306,944.31,0,0,0,0,1,0,"アビム の 子 コンネ , クレオン に 至 る まで は , どれ . なぜ なら , 威厳 は パト に , 世 は 吹 き た る こと , あなたの 働き は 異な り , あなた がた の 支流 は , 尽き る こと が でき る か ."
+opus-mt-en-ja,title,github-98b061f17888,quality_rejected,False,['missing_proper_noun'],151.751,945.14,0,0,0,0,1,0,"(これなら,アカノンとオン. パトラケルはパトブのことでも,流産はなんの報いであろうか. あなた がたの持ち物は何か."
+opus-mt-en-ja,summary,github-98b061f17888,quality_rejected,False,['missing_proper_noun'],363.061,947.12,0,0,0,0,1,0,"それ から , かの アクプロ の クミロ が , クミス に さ れ て い た の で , クレト と クミク守帆 し た . それ は クレトケル ・ クレトケルクス に , 航行 の 行 を な し , それ に よ っ て 航行 を さ せ , 人々 の LORD に よ っ て 働 い た ."
+opus-mt-en-ja,title,apple-6bb3f9340489,translated,True,[],90.21,947.72,0,0,0,0,0,0,"知恵はかんときによって身を飾り, なぜこれからすは,よごむところの類."
+opus-mt-en-ja,summary,apple-6bb3f9340489,translated,True,[],356.04,949.86,0,0,0,0,0,0,"賢 い 者 は さやなげ を 放 ち , クモナ の きば に は さ が あ り , クパン の 去 っ て 生 じ , クモン が その 中 に あ る . 向か っ て これ を ケレシ ・ ハシュ ネケル に し , さと い い い い い , さと し か の よう に する ."
+opus-mt-en-ja,title,apple-47092aa08a50,translated,True,[],184.77,950.98,0,0,0,0,0,0,"キシテル ・ アビフル ハシ , シフタク , シフタク , フアネケブ および フトフび と は フトフ で あ る ."
+opus-mt-en-ja,summary,apple-47092aa08a50,translated,True,[],281.747,952.89,0,0,0,0,0,0,"滅ぼすネコが,高くて,いどめる記録と, 肉桂をつくすなど,あのたらない記録が,高くあって,しゃコルをネボし,しげる者を堅くする. ""罪 あや,しゃや,しゃトケナ・ネケモン""."
+opus-mt-en-ja,title,apple-9cec8797d4f0,translated,True,[],205.914,954.41,0,0,0,0,0,0,"モラダ は 盗 び と の 不義 , モラダ の モラダ に あ る Jerusalemき を ケナアび と る . アカククン に は ベノン が あ り , クシ び と が あ る ."
+opus-mt-en-ja,summary,apple-9cec8797d4f0,translated,True,[],383.476,957.34,0,0,0,0,0,0,"いったい , 吹 く こと に つ い て は , 吹 い て は , 人 の 交わり を する こと を し な い . ただ で , 事 ばかり で な く , その 自制 する こと を 否定 する こと も , あ る . また "" 自制 自制 する "" を 知 ろ う . これ から 自制 する 力 の あ る 所 "" と 言 い , 証明 は , 証明 を 否定 する ."
+opus-mt-en-ja,title,apple-cef8c7b3465e,translated,True,[],172.016,958.8,0,0,0,0,0,0,"(エコデび と びと の 間 に は 金タパトライ , アビフび と の back で 耕 す 者 ずは い なご が あ る ."
+opus-mt-en-ja,summary,apple-cef8c7b3465e,quality_rejected,False,"['missing_number', 'missing_proper_noun']",408.224,962.25,1,0,0,0,1,0,"すなわち , 尊 い 熟練 し た 姿 の あ る 者 , すなわち , 富 ん だ 者 , 熟練 な 感動 に お い て は , 明知 , ゼ容 と 高慢 な 軍勢 を 越え て 来る 者 を 見 ながら , 意志 と , 騒 ぐ 者 , 騒 ぐ 権威 と , 騒 ぐ べ き 騒乱 と を 越え て い ま す . これ は 記録 と が 神 の もの で す ."
+opus-mt-en-ja,title,apple-f11735103919,translated,True,[],240.942,964.59,0,0,0,0,0,0,"アゾバク , クシャン ・ ネレシャン , クタフル ・ ネケブ に 至 っ て い る . また クミラクタクブ に ま す . エクミン に は 寄 る 所 が あ る ."
+opus-mt-en-ja,summary,apple-f11735103919,quality_rejected,False,['missing_proper_noun'],359.543,967.91,0,0,0,0,1,0,"受け る 者 は , 幻 の give行 を 知 り ながら , ハネス から の , スシャンクミ まで の , クミスん と 同行 者 で あ る . また , さと い 姿 を 消 す 者 の よう に , 消 す 者 が あ り , さと い い , 騒 ぐ 者 の 消 す こと を , あ り ま す ."
+opus-mt-en-ja,title,aws-80911412e4d1,quality_rejected,False,['missing_proper_noun'],135.324,969.2,0,0,0,0,1,0,"その中に,ラクロドが,かげにも,航海ために,しんぼぼナトケびとが危けてあるころ,"
+opus-mt-en-ja,summary,aws-80911412e4d1,quality_rejected,False,['missing_proper_noun'],376.893,973.16,0,0,0,0,1,0,"わたし たち は , 宴クレス の 幕屋 に い て , クレスクンクニド の "" . それ は クレソポン の ら に 手 を 設け , クレトン の 地 で は 人々に手 を はら ん で , クミン を 建て る . ここ に は クミン が あ り , クレトテカ の 地 に 属 する から で あ る ."
+opus-mt-en-ja,title,aws-8434f80dc857,quality_rejected,False,['missing_proper_noun'],169.737,975.0,0,0,0,0,2,0,"ザカテ ・ かた に は パネア の あ る 所 に は ザン の 着物 を も っ て ザコン ・ ザレア を 打 ち ,"
+opus-mt-en-ja,summary,aws-8434f80dc857,quality_rejected,False,['missing_proper_noun'],370.061,979.39,0,0,0,0,3,0,"手 に め く ば , 麻 の 綱 で , ひれ を する 者 の かおり は , すみやか に 開 い て しま い , そして , 持ちの かおり を 築 く かおり と し て , クミン ・ スケナ , タビアス , タビム , および 小羊 の 意匠 を 築 く こと を , よ く こと が でき る ."
+opus-mt-en-ja,title,aws-fbeab4f94608,quality_rejected,False,"['missing_number', 'missing_proper_noun']",230.592,982.2,1,0,0,0,1,0,"アビフカ から , 権流 の 地域 に 及 び , アホリヨ ・ スジフ から パレレエル に 至 り , カジン に 達 する 港 ,"
+opus-mt-en-ja,summary,aws-fbeab4f94608,quality_rejected,False,"['missing_number', 'missing_proper_noun']",352.614,986.86,3,0,0,0,3,0,"アスンクリオンのラミオが,パウロの改宗者,フレゴン・クレゴンを建て,カラミケロから,わたしたちのところ 第一 宮を建てたいと,かろうじて去ってきた. そして,カラクモネ・アカラケナ・カクリク 臨 み,寄り,寄りなさい."
+opus-mt-en-ja,title,aws-3760a4949caa,quality_rejected,False,['missing_proper_noun'],128.565,988.56,0,0,0,0,1,0,"忍耐 は , 錬達 に 寄 る クモナ , クモナ , アカデモナ で あ る ."
+opus-mt-en-ja,summary,aws-3760a4949caa,quality_rejected,False,['missing_proper_noun'],447.076,994.66,0,0,0,0,1,0,"また 今 い る スパナナナナナ , 汚れ た 者 , クレス ・ ビクバス は か れ た が , クレススス は これ を 飾 る 者 たち , また では 偽り の 姿 が 絶え , 威勢 の 長 で あ る . あなた は すべて の 文 を 堅 く し , この 事 を なし遂げ られ , これ に 対 し て は 論議 を 与え られ る ."
+opus-mt-en-ja,title,aws-c12cd3eece71,translated,True,[],174.718,996.28,0,0,0,0,0,0,"マカヅ テ ・ ネジブ に は ベンデケル . マク 出身 の ナアラ は マハラ と い う hand ,"
+opus-mt-en-ja,summary,aws-c12cd3eece71,quality_rejected,False,['missing_proper_noun'],541.723,1004.5,0,0,0,0,1,0,"マデ ナ の 地域 , よく は 意 を 放 し , シフタク , よく シュマナ と イ , よく 意匠 と イデバシ の 三 人 が これ を 用い て , では では 寄留ン ・ シフモン に 至 り , シフカシャ と その 他 の 女 を 継 ぐ こと が でき る . セラ は られ て い る . アホシダナ と 見え , ペレテ と を 継 が し て , そこ に 与え て い る ."
+opus-mt-en-ja,title,nvidia-d950eaa58be5,quality_rejected,False,"['missing_proper_noun', 'excessive_repetition']",250.222,1010.25,0,0,0,0,1,0,アスンクナテ・ベネケルナナナナナナナナナナナはベノテ・ハケルハシタとさとし. アハルハルクタクバテ・ハシベリクル・ハレテはハルハルハマ.
+opus-mt-en-ja,summary,nvidia-d950eaa58be5,quality_rejected,False,"['missing_number', 'missing_proper_noun', 'excessive_repetition']",351.625,1016.77,2,0,0,0,1,0,"ザズバクナナナナナナ を 打 つ に は , かおり を 規定 する 丸 い 杯 に まさ る . 長 いす は 上が っ て 彼 を な し , かおり は 大き く て , かおり と な り , commandments を 放 つ こと が でき な い . すなわち シュマケル は その 顔 を 脱 ぐ こと を し な い ."
+opus-mt-en-ja,title,nvidia-72401a2f0f4a,quality_rejected,False,['missing_proper_noun'],334.087,1023.48,0,0,0,0,1,0,"アワン の ため に ナクバク , クミン , 岩 , すおな い た 所 など を 飾 る 者 , クシャン の 入口 を ナフレシ , カフカン に 至 ら せ , カシャ の 入口 に あい る 腰ピ しめ を 張 り , カレカン に 至 ら せ ま す ."
+opus-mt-en-ja,summary,nvidia-72401a2f0f4a,quality_rejected,False,"['missing_number', 'missing_proper_noun']",427.105,1030.05,1,0,0,0,1,0,"ナバク , クタ , クレシ び と , クレオン ・ クレシャンミ ・ クレケル の 人々 は これ を 用い て , "" スクミン ・ クミン ・ ハレケン ・ ハレケン , および 意統 の 者 "" と 呼 ぶ . また 取 る べ き 者 は すべて の 姿 を 用い て ナ と 麗し く する ."
+opus-mt-en-ja,title,nvidia-8baf142be276,quality_rejected,False,['missing_proper_noun'],196.998,1031.23,0,0,0,0,1,0,"ナベル・ すなわち , すなわち , ケルダシャン , モラダ , モラダ , カルタク , タハルク , タハルタ・ カシャン に 至 り ,"
+opus-mt-en-ja,summary,nvidia-8baf142be276,quality_rejected,False,"['missing_number', 'missing_proper_noun']",299.631,1034.73,1,0,0,0,2,0,"また,小病ナトル,記バク,意ンクンネコン,ナフトニびとの改宗者がまだつかくいくてみをなす. 寄留者ナナフル・ネケンにはルナフカフトケル,シワびと,カフカテおよび意統の事を当る."
+opus-mt-en-ja,title,nvidia-9706f1c4881e,quality_rejected,False,['missing_proper_noun'],295.236,1037.86,0,0,0,0,1,0,"アワ の 子 は "" アワン "" と い い , クワンンンカイ "" と 同ワンンン を 去 れ ば , クミンククフカカカフび と クン に みつ い た . アワは クワン を きたげ る こと を あ る ."
+opus-mt-en-ja,summary,nvidia-9706f1c4881e,quality_rejected,False,['missing_proper_noun'],361.236,1041.98,0,0,0,0,1,0,"実は,種 のネト,テレネ,クタ,スケルマス,意ろの決心 まくもの , メケルネス,マケルネケルネケナ,意統の決心者,すなわち,スフトケルネ・ネケとかんが, つや自分の本ベ言者,シベトケルカテ・シャシャンです."
+opus-mt-en-ja,title,nvidia-2bef3f3a504a,quality_rejected,False,['missing_proper_noun'],256.91,1045.34,0,0,0,0,1,0,"今 はの 場所 で あ り , いまい の 場所 が あ っ て , アピデモン の アケロム , 肉の ピレゴデ , カル ・ カレネ , カフレネ など , あっとげ を 知 っ て い る ."
+opus-mt-en-ja,summary,nvidia-2bef3f3a504a,translated,True,[],200.13,1047.94,0,0,0,0,0,0,"彼らは悪きどれよりも,いなやみがあって, 何か 持ちの中に突き出て,たかのスシャビびと,クミンまでも追い立つ. 彼らはみな,混乱にすぎ, 酒の動く人々収穫をう."
+opus-mt-en-ja,title,mlcommons-404c989e7fdb,quality_rejected,False,['missing_number'],132.355,1049.23,1,0,0,0,0,0,"メナク および じり を 出立 し て ナフル ・ クシャフル , クミン を 出立 し ,"
+opus-mt-en-ja,summary,mlcommons-404c989e7fdb,quality_rejected,False,['missing_number'],231.581,1052.53,1,0,0,0,0,0,"アゾバから三階の土台まで,もろもろの土台を支持する力がある. 新しい時を 至る所まで,一階,ピコハマテ,アンミスナおよび二年間も,こわれた. この backの backは,一 年目ほど言する."
+opus-mt-en-ja,title,mlcommons-b123bdf304bb,quality_rejected,False,['missing_proper_noun'],211.884,1052.8,0,0,0,0,1,0,"アスカクバイ , アシャン ・ ベノバ , クタクンン , タヘシャ , ベノテカイ , アカクリ 者 タヘタナ の アカナ が あ る ."
+opus-mt-en-ja,summary,mlcommons-b123bdf304bb,quality_rejected,False,"['missing_number', 'missing_proper_noun']",286.368,1055.09,1,0,0,0,2,0,"アビクナナナナ , カレシ , 次 は アイネト , スフデバテ , スフデバナ , カデモナ , アカナ , カフトレフ , カフデヤ で あ る . わたし を 知 れ ば せ る 者 は 寛容 を "" ."
+opus-mt-en-ja,title,mlcommons-ee62dfe9b879,quality_rejected,False,"['missing_number', 'excessive_repetition']",218.577,1055.48,1,0,0,0,0,0,"アゾバ を 打 ち , クベネ・ クシャン を (エシタタタタタタタタタタ) に ベンケル ・ シャベ ・ シャベ の み ,"
+opus-mt-en-ja,summary,mlcommons-ee62dfe9b879,translated,True,[],73.552,1055.48,0,0,0,0,0,0,"ベロン・バハノン,ペレテのエパシャンを用い,"
+opus-mt-en-ja,title,mlcommons-5353db8781d0,translated,True,[],69.98,1055.88,0,0,0,0,0,0,"クリオント , クタク , リベカ ,"
+opus-mt-en-ja,summary,mlcommons-5353db8781d0,translated,True,[],226.566,1055.88,0,0,0,0,0,0,"新し い クミン の ため に , クレテ の 二 つ の クミン が あ っ て , 聖所 の ふもと に 付けつけ られ て い る . その 内側 は 二 つ に し て , 内側 の 広 い もの で あ る ."
+opus-mt-en-ja,title,mlcommons-a7d894d8a5b9,translated,True,[],78.778,1055.88,0,0,0,0,0,0,"ボテ・ベノテのズガデ,ベノン,タシャン,"
+opus-mt-en-ja,summary,mlcommons-a7d894d8a5b9,translated,True,[],111.556,1055.88,0,0,0,0,0,0,"ベネヤカン , クエベノン , ベネジン ・ ヤカン , ネアリヤ に あ る ."
+fugumt-en-ja,title,openai-c99ec862b4e7,translated,True,[],81.291,786.55,0,0,0,0,1,1,OpenAIモデルを含む第三者のサイバー評価
+fugumt-en-ja,summary,openai-c99ec862b4e7,translated,True,[],149.452,786.55,0,0,0,0,1,1,OpenAIは、最近のサードパーティのサイバーセキュリティ評価インシデントを説明し、AIモデルテストと評価を強化するための新しい安全対策の概要を説明します。
+fugumt-en-ja,title,openai-129511f54188,translated,True,[],89.979,786.55,0,0,0,0,2,2,ChatGPT 仕事と Codex で学び、教える新しい方法。
+fugumt-en-ja,summary,openai-129511f54188,translated,True,[],151.38,786.55,1,1,0,0,2,2,K-12の教師、大学の教育者、学生が学び、教え、研究し、構築するのに役立つChatGPT WorkとCodexの新しい教育プラグインを探ります。
+fugumt-en-ja,title,openai-4a9b73e77846,translated,True,[],44.74,786.55,0,0,0,0,1,1,Appleはこれを間違っています
+fugumt-en-ja,summary,openai-4a9b73e77846,quality_rejected,False,['missing_proper_noun'],130.952,786.55,0,0,0,0,3,2,OpenAIはAppleの根拠のない訴訟に対応し、従業員に関する請求を訂正し、何が起きたかを文書化して共有します。
+fugumt-en-ja,title,openai-deec56a13e2b,translated,True,[],80.406,786.55,0,0,0,0,0,0,レスポンシブボイスのリアルタイムシステムAIを6ヶ月で構築しました。
+fugumt-en-ja,summary,openai-deec56a13e2b,translated,True,[],156.624,786.55,0,0,0,0,1,1,GPT-Liveは、ターンレス音声モデルと低レイテンシアーキテクチャを使用して、AIとの連続的な音声インタラクションを可能にする。
+fugumt-en-ja,title,openai-97e92714d577,translated,True,[],71.276,786.55,0,0,0,0,1,1,Circles は OpenAI テクノロジーで通信のパーソナライズを実現します。
+fugumt-en-ja,summary,openai-97e92714d577,translated,True,[],192.68,786.55,2,2,0,0,2,2,CirclesはOpenAI APIとCodexを使用してAI-ネイティブ電話体験を強化し、ARPUを22%増加させ、ターンを9%削減し、開発効率を向上させます。
+fugumt-en-ja,title,google-639d81441a0d,quality_rejected,False,['missing_number'],53.227,786.55,1,0,0,0,0,0,2016年7月に発表した最新のZX1000000QXZニュース。
+fugumt-en-ja,summary,google-639d81441a0d,translated,True,[],50.7,786.55,0,0,0,0,0,0,7月 ZX1000000QXZ リキャップヘッダー。
+fugumt-en-ja,title,google-9c57623ef609,translated,True,[],118.116,786.55,1,1,0,0,1,1,Gemini API 管理エージェント: 3.6 フラッシュ、フック、および多く。
+fugumt-en-ja,summary,google-9c57623ef609,quality_rejected,False,"['missing_number', 'missing_proper_noun']",78.163,786.55,1,0,0,0,1,0,管理エージェントZX10001QXZ ZX10002QXZフラッシュ、フック、トリガー。
+fugumt-en-ja,title,deepmind-c8c2521853f8,translated,True,[],116.296,786.55,1,1,0,0,1,1,Gemini Robotics ER 2:ビデオ理解、タスクオーケストレーション、マルチロボットコラボレーションによるロボット工学のパワー
+fugumt-en-ja,summary,deepmind-c8c2521853f8,translated,True,[],189.071,786.55,1,1,0,0,1,1,Gemini Robotics ER 2は、ロボットが現実世界のタスクを推論、コラボレーション、解決するのを助けます。これは、ロボットアプリケーションのためのビデオ理解、ツールオーケストレーション、マルチロボットコラボレーションのステップ変化を表します。
+fugumt-en-ja,title,deepmind-e08c4d4e6d11,translated,True,[],94.402,786.55,0,0,0,0,1,1,科学発見のフロンティアを加速する:Googleの創世記ミッションへの4000万ドルのコミットメント
+fugumt-en-ja,summary,deepmind-e08c4d4e6d11,translated,True,[],108.868,786.55,0,0,0,0,1,1,Googleは創世記ミッションのためにAIトークンとクレジットで$ 40Mをコミットします。
+fugumt-en-ja,title,deepmind-5e431bbf920c,translated,True,[],132.965,786.55,3,3,0,0,1,1,Gemini 3.6フラッシュ、3.5フラッシュライト、3.5フラッシュサイバーを導入。
+fugumt-en-ja,summary,deepmind-5e431bbf920c,quality_rejected,False,['missing_number'],164.793,786.55,3,2,0,0,1,1,Gemini フラッシュ、3.5 フラッシュ ライト、3.5 フラッシュ サイバーを含む新しい Gemini モデルを導入しています。
+fugumt-en-ja,title,microsoft-b4e8bc639f2f,translated,True,[],60.214,786.55,0,0,0,0,0,0,ZX1000000QXZの変革を導くリーダーたちの教訓とは?
+fugumt-en-ja,summary,microsoft-b4e8bc639f2f,translated,True,[],301.552,786.55,0,0,0,0,0,0,お茶はたくさん飲みます 普段は 毎日 本物のカップで 朝食をとっています そこで私のチームが新しいシリーズのアイデアを持って来てくれたとき 彼らがそれを関連性を持って欲しがったのです 正直 最初はしていました しかし結局 その名前は私が今 本当に元気に感じるものを捉えました リーダーがZQ0000QXZで組織を変革するペース そして彼らが学んでいることを どれほど寛大に共有しているかです
+fugumt-en-ja,title,microsoft-725b173772a1,translated,True,[],121.818,786.55,0,0,0,0,1,1,MicrosoftのFY26を振り返る:AI実験からフロンティア変換まで
+fugumt-en-ja,summary,microsoft-725b173772a1,translated,True,[],173.094,786.55,0,0,0,0,0,0,この会計年度を通じて、あらゆる業界やセグメントの顧客が、AI実験から、実際のビジネス成果のためにAIを展開するようになり、イノベーションを解き放ち、成長のための新たな機会が生まれました。
+fugumt-en-ja,title,microsoft-a2ae9bea5eb1,translated,True,[],68.506,786.55,0,0,0,0,0,0,AI を使用して非営利団体の内側にその影響を拡大します。
+fugumt-en-ja,summary,microsoft-a2ae9bea5eb1,translated,True,[],98.385,786.55,0,0,0,0,0,0,非営利団体がAIを適用してコミュニティを強化し、機会を拡大し、世界中で永続的な影響を生み出している方法をご覧ください。
+fugumt-en-ja,title,microsoft-8a136f766dc2,translated,True,[],83.188,786.55,0,0,0,0,0,0,AI戦略ロードマップ:成功したAI変換の5つの要因
+fugumt-en-ja,summary,microsoft-8a136f766dc2,translated,True,[],158.962,786.55,0,0,0,0,1,1,MicrosoftのAI戦略ロードマップを調べ、組織がAIパイロットを超えて、信頼できる測定可能なZXQXZ機能を構築する方法を学びます。
+fugumt-en-ja,title,microsoft-06b9034541c7,translated,True,[],61.89,786.55,0,0,0,0,0,0,中小企業はAIの招待を待っていない。
+fugumt-en-ja,summary,microsoft-06b9034541c7,translated,True,[],107.29,786.55,0,0,0,0,0,0,安全なAIでリードするSMBは、信頼を構築し、ワークフローを統合し、セキュリティをチーム全体の成長の基礎にしています。
+fugumt-en-ja,title,github-f1d4877545a9,quality_rejected,False,['missing_proper_noun'],109.649,786.55,0,0,0,0,2,0,ZX20002QXZの法務チームがZX20003QXZ ZX20004QXZを使ってワークフローを合理化しました。
+fugumt-en-ja,summary,github-f1d4877545a9,translated,True,[],63.352,786.55,0,0,0,0,0,0,コードを1行も書かずに、作業を簡単にするためのツールの構築方法を学びましょう。
+fugumt-en-ja,title,github-44555fb737bc,translated,True,[],67.71,786.55,0,0,0,0,1,1,GitHub Copilotアプリでセッションを積み重ね、リクエストをプルします。
+fugumt-en-ja,summary,github-44555fb737bc,quality_rejected,False,['missing_proper_noun'],104.901,786.55,0,0,0,0,1,0,スタックセッションとプルリクエストを使って、古いコードベースをモダナイズした方法について、ZXQ000000QXZアプリで学びましょう。
+fugumt-en-ja,title,github-4e90420c6964,translated,True,[],45.945,786.55,0,0,0,0,0,0,ハーネスは、(ほとんど)必要なすべてです。
+fugumt-en-ja,summary,github-4e90420c6964,translated,True,[],112.266,786.55,0,0,0,0,1,1,新しいAIツールをすべて追跡することなく、ソフトウェアのプロトタイプ、計画、実装、レビューのための実用的なGitHub Copilotワークフロー。
+fugumt-en-ja,title,github-3bbd8b07cb5a,quality_rejected,False,['missing_proper_noun'],52.447,786.55,0,0,0,0,1,0,初心者向けZX10001QXZアプリ: 始める
+fugumt-en-ja,summary,github-3bbd8b07cb5a,translated,True,[],148.602,786.55,0,0,0,0,1,1,GitHub Copilot アプリに新しい?プロジェクトを開始し、AI エージェントと作業し、キャンバスを探索し、開発ワークフローを合理化する方法を学びます。
+fugumt-en-ja,title,github-98b061f17888,translated,True,[],98.214,786.55,0,0,0,0,1,1,Copilot vs. 生のAPIアクセス:実際に何を支払うのですか?
+fugumt-en-ja,summary,github-98b061f17888,translated,True,[],93.259,786.55,0,0,0,0,1,1,Copilotは、APIのレートでの使用を請求するようになりました。
+fugumt-en-ja,title,apple-6bb3f9340489,translated,True,[],39.297,786.55,0,0,0,0,0,0,マルチモーダルLMにおけるアライメントの理解:包括的研究
+fugumt-en-ja,summary,apple-6bb3f9340489,translated,True,[],142.086,786.55,0,0,0,0,0,0,選好アライメントは、大規模言語モデル(LLM)のパフォーマンス向上に重要な要素となっているが、マルチモーダル大規模言語モデル(MLLM)への影響は、言語モデルと同様に、幻覚のような課題に遭遇する。
+fugumt-en-ja,title,apple-47092aa08a50,translated,True,[],84.932,786.55,0,0,0,0,0,0,次元還元はネットワーク科学と出会う:UMAPのkNNグラフのセンスメイキング
+fugumt-en-ja,summary,apple-47092aa08a50,translated,True,[],165.561,786.55,0,0,0,0,0,0,UMAPは高次元データの探索に広く使われているが、典型的なワークフローは低次元埋め込みに焦点を当てており、UMAPが内部的に構築するリッチk-nearest-neighborグラフを見下ろしている。
+fugumt-en-ja,title,apple-9cec8797d4f0,translated,True,[],53.649,786.55,0,0,0,0,0,0,MoMo:時空間アクショントークン化によるロボット操作におけるダイヤルモーションモード
+fugumt-en-ja,summary,apple-9cec8797d4f0,translated,True,[],181.36,786.55,0,0,0,0,0,0,ロボットは、さまざまなコンテキストで効果的に動作するためには、操作タスクを正確に実行するだけでなく、そのアクションがどのように展開するかをタスク、オブジェクト、インタラクション設定に適応させる必要がある。この実行レベルのバリエーションを、タスク間で共有される再利用可能な行動要因として学習できるかどうかを問う。
+fugumt-en-ja,title,apple-cef8c7b3465e,translated,True,[],45.23,786.55,0,0,0,0,0,0,時間深度拡散変換器を用いたメモリ効率の良い音声合成
+fugumt-en-ja,summary,apple-cef8c7b3465e,translated,True,[],226.091,786.55,1,1,0,0,1,1,Siri Expressive Voicesは、AFM 3 Core Advanced、Appleの最も強力なオンデバイス基盤モデルを搭載した、リアルタイムかつ完全にデバイス上で、構成可能なリッチな音声を合成する。この研究は、その機能の背後にあるメモリ効率の高いオーディオ合成アーキテクチャを示している。
+fugumt-en-ja,title,apple-f11735103919,translated,True,[],75.683,786.55,0,0,0,0,0,0,GH-ESD:インスタンスレベルの視覚タスクのための接地仮説駆動型エラースライス発見
+fugumt-en-ja,summary,apple-f11735103919,quality_rejected,False,['missing_proper_noun'],159.226,786.55,0,0,0,0,1,0,意味的にコヒーレントなサブセット(エラースライス)上の視覚モデルの体系的な失敗は、堅牢性と評価の限界を明らかにする。既存のスライス発見アプローチは、主に表現空間や事前定義された属性の組み合わせにおけるクラスタとしてモデル化する。
+fugumt-en-ja,title,aws-80911412e4d1,translated,True,[],64.981,786.55,0,0,0,0,1,1,基礎モデル接地のためのAmazon Bedrock上のWeb検索の導入
+fugumt-en-ja,summary,aws-80911412e4d1,translated,True,[],189.067,786.55,0,0,0,0,1,1,今日、Amazon BedrockでWeb Searchが一般向けに利用可能になった。これは、現在のWeb知識におけるモデル応答を基盤とするサーバサイドの組み込みツールである。Web Searchによって、Amazon Bedrockでは、接地はネイティブ機能になる。
+fugumt-en-ja,title,aws-8434f80dc857,translated,True,[],75.131,786.55,0,0,0,0,2,2,Amazon Bedrock AgentCoreによるWebインサイトの自動抽出
+fugumt-en-ja,summary,aws-8434f80dc857,quality_rejected,False,"['missing_proper_noun', 'excessive_repetition']",244.947,786.55,0,0,0,0,3,2,数十のウェブサイトから手作業で洞察を抽出することは、すぐに圧倒的になる。この記事では、Amazon Bedrock ZX0005QXZ Browser、Amazon Bedrock、Amazon OpenSearch Serverless、AWS Lambdaを使用して、自動Webインサイト抽出ソリューションを構築する方法を示す。
+fugumt-en-ja,title,aws-fbeab4f94608,translated,True,[],118.635,786.55,1,1,0,0,1,1,数週間から数分まで: Formula 1®はAWSでエージェントAIを使用してデータ操作を加速します。
+fugumt-en-ja,summary,aws-fbeab4f94608,quality_rejected,False,"['missing_number', 'missing_proper_noun']",175.08,786.55,3,1,0,0,3,2,Formula 1®はAWSと提携し、AIをAmazon Bedrock ZX0006QXZにエージェントとして使用し、MarTechデータプラットフォームを変革します。
+fugumt-en-ja,title,aws-3760a4949caa,quality_rejected,False,['missing_proper_noun'],47.532,786.55,0,0,0,0,1,0,ZX10001QXZにおける自動推論ポリシーの洗練
+fugumt-en-ja,summary,aws-3760a4949caa,translated,True,[],152.144,786.55,0,0,0,0,1,1,Amazon Bedrockは自動推論ポリシーの洗練をサポートする。この改善エンジンはテストの失敗を診断し、ルール問題や言語問題に対する形式論理的な修正を提案し、変更が有効になる前に承認する。
+fugumt-en-ja,title,aws-c12cd3eece71,translated,True,[],32.875,786.55,0,0,0,0,0,0,Amazon Quickにおけるエージェントカタログエクスペリエンスの発表
+fugumt-en-ja,summary,aws-c12cd3eece71,translated,True,[],270.889,786.55,0,0,0,0,1,1,Amazon Quickは、データキュレーターが自然言語で上流のカタログアセットを発見し、継承されたセマンティクスでデータセットとトピックを自動的に作成するためのAI-パワードワークフローであるAgentic Catalog Experienceを紹介した。現在、AWS Glue Data CatalogとDatabricks Unity Catalogのプレビュー版である。
+fugumt-en-ja,title,nvidia-d950eaa58be5,translated,True,[],87.241,786.55,0,0,0,0,1,1,NVIDIA NemotronはLangChain Deep Agents Harnessでベンチマークリード性能を達成
+fugumt-en-ja,summary,nvidia-d950eaa58be5,translated,True,[],151.117,786.55,2,1,0,0,1,1,NVIDIA Nemotron 3 Ultraは、最大かつ最も広く採用されているAIエージェントオーケストレーションプラットフォームを備えたトップクローズドモデルよりも低コストでリーディングパフォーマンスを提供しています。
+fugumt-en-ja,title,nvidia-72401a2f0f4a,translated,True,[],155.26,786.55,0,0,0,0,1,1,"NVIDIA Rubin Platform, Open Models, Autonomous Driving: NVIDIA は、CES で未来に向けて青写真を発表しました。"
+fugumt-en-ja,summary,nvidia-72401a2f0f4a,translated,True,[],227.119,786.55,1,1,0,0,1,1,NVIDIAの創設者でCEO Jensen Huang氏は、Fontainebleau Las Vegasでステージに上がり、CES 2026を開き、AIがすべてのドメインとデバイスにスケールすることを宣言した。
+fugumt-en-ja,title,nvidia-8baf142be276,translated,True,[],87.974,786.55,0,0,0,0,1,1,AIが複雑化するにつれて、モデルビルダーはNVIDIAに依存
+fugumt-en-ja,summary,nvidia-8baf142be276,translated,True,[],281.411,786.55,1,1,0,0,2,2,プロフェッショナルな知識作業でこれまでで最も有能なモデルシリーズと説明されているものを公開したOpenAIは、12月にGPT-5.2をローンチし、NVIDIA HopperやGB200 ZX10008QXZシステムを含むZX0005QXZインフラストラクチャでトレーニングされ、デプロイされました。
+fugumt-en-ja,title,nvidia-9706f1c4881e,quality_rejected,False,['missing_proper_noun'],110.922,786.55,0,0,0,0,1,0,島々に届く: UK-LLMはZX20002QXZをZX20003QXZ言語に持ち込む
+fugumt-en-ja,summary,nvidia-9706f1c4881e,translated,True,[],254.003,786.55,0,0,0,0,1,1,ケルト語(コーンウォール語、アイルランド語、スコットランド・ゲール語、ウェールズ語など)は、英国最古の生きた言語です。UK-LLMの主権であるAIイニシアチブは、NVIDIA NemotronをベースとしたAIモデルを構築しています。
+fugumt-en-ja,title,nvidia-2bef3f3a504a,translated,True,[],80.924,786.55,0,0,0,0,1,1,ポーランドの国際研究者、ディープラーニング、NVIDIA GPUが予測をどう変えるか
+fugumt-en-ja,summary,nvidia-2bef3f3a504a,translated,True,[],150.097,786.55,0,0,0,0,0,0,気象学者は1世紀以上もの間、黒板や方程式、そして今やスーパーコンピューターで嵐を追いかけてきました。しかし、その進歩の過程で、彼らはまだ1つの、一見単純な成分、すなわち水蒸気に遭遇しました。
+fugumt-en-ja,title,mlcommons-404c989e7fdb,quality_rejected,False,['missing_number'],62.477,786.55,1,0,0,0,0,0,MLPerfがZX1000000QXZを終了: 財団リリース
+fugumt-en-ja,summary,mlcommons-404c989e7fdb,quality_rejected,False,['missing_number'],144.137,786.55,1,0,0,0,0,0,GTCでのデモンストレーションから、財団リリースまで、新しい結果、自動送信パイプライン、GTCへのロードマップ、そして今年の後半にローリング提出。
+fugumt-en-ja,title,mlcommons-b123bdf304bb,translated,True,[],104.751,786.55,0,0,0,0,1,1,MedPerfがGoogleクラウドコンピューティングに出会う:脳腫瘍研究のためのセキュアなAIベンチマーク
+fugumt-en-ja,summary,mlcommons-b123bdf304bb,translated,True,[],219.016,786.55,1,1,0,0,2,2,ラスベガスで開催されたGoogle Cloud Next 2026で、MLCommonsとGoogle Cloudは、患者データ、モデルIP、ベンチマーク整合性を保護する信頼できる医療用AIの能力を示した。
+fugumt-en-ja,title,mlcommons-ee62dfe9b879,translated,True,[],75.043,786.55,1,1,0,0,0,0,提出の要求:MLPerf推論v6.1のためのエッジエージェント推論ベンチマーク
+fugumt-en-ja,summary,mlcommons-ee62dfe9b879,translated,True,[],53.398,786.55,0,0,0,0,0,0,単一エッジアクセラレータ上でのマルチターンエージェントLLMのベンチマーク
+fugumt-en-ja,title,mlcommons-5353db8781d0,translated,True,[],32.446,786.55,0,0,0,0,0,0,MLPerf推論のためのエージェント推論
+fugumt-en-ja,summary,mlcommons-5353db8781d0,translated,True,[],92.812,786.55,0,0,0,0,0,0,成長中のコンテキスト下でLLMサービスシステムを測定するための新しいマルチターンベンチマークとクローズドループエージェントワークフロー。
+fugumt-en-ja,title,mlcommons-a7d894d8a5b9,translated,True,[],68.773,786.55,0,0,0,0,0,0,超低消費電力AIの次の波の裏にあるベンチマーク
+fugumt-en-ja,summary,mlcommons-a7d894d8a5b9,translated,True,[],65.291,786.55,0,0,0,0,0,0,MLPerf Tiny: エッジでのZX1000000QXZのベンチマーク
+m2m100-418m,title,openai-c99ec862b4e7,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,openai-c99ec862b4e7,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,openai-129511f54188,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,openai-129511f54188,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,openai-4a9b73e77846,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,openai-4a9b73e77846,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,openai-deec56a13e2b,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,openai-deec56a13e2b,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,openai-97e92714d577,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,openai-97e92714d577,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,google-639d81441a0d,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,google-639d81441a0d,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,google-9c57623ef609,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,google-9c57623ef609,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,deepmind-c8c2521853f8,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,deepmind-c8c2521853f8,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,deepmind-e08c4d4e6d11,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,deepmind-e08c4d4e6d11,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,deepmind-5e431bbf920c,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,deepmind-5e431bbf920c,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,microsoft-b4e8bc639f2f,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,microsoft-b4e8bc639f2f,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,microsoft-725b173772a1,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,microsoft-725b173772a1,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,microsoft-a2ae9bea5eb1,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,microsoft-a2ae9bea5eb1,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,microsoft-8a136f766dc2,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,microsoft-8a136f766dc2,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,microsoft-06b9034541c7,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,microsoft-06b9034541c7,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,github-f1d4877545a9,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,github-f1d4877545a9,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,github-44555fb737bc,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,github-44555fb737bc,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,github-4e90420c6964,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,github-4e90420c6964,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,github-3bbd8b07cb5a,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,github-3bbd8b07cb5a,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,github-98b061f17888,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,github-98b061f17888,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,apple-6bb3f9340489,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,apple-6bb3f9340489,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,apple-47092aa08a50,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,apple-47092aa08a50,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,apple-9cec8797d4f0,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,apple-9cec8797d4f0,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,apple-cef8c7b3465e,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,apple-cef8c7b3465e,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,apple-f11735103919,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,apple-f11735103919,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,aws-80911412e4d1,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,aws-80911412e4d1,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,aws-8434f80dc857,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,aws-8434f80dc857,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,aws-fbeab4f94608,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,aws-fbeab4f94608,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,aws-3760a4949caa,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,aws-3760a4949caa,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,aws-c12cd3eece71,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,aws-c12cd3eece71,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,nvidia-d950eaa58be5,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,nvidia-d950eaa58be5,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,nvidia-72401a2f0f4a,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,nvidia-72401a2f0f4a,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,nvidia-8baf142be276,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,nvidia-8baf142be276,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,nvidia-9706f1c4881e,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,nvidia-9706f1c4881e,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,nvidia-2bef3f3a504a,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,nvidia-2bef3f3a504a,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,mlcommons-404c989e7fdb,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,mlcommons-404c989e7fdb,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,mlcommons-b123bdf304bb,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,mlcommons-b123bdf304bb,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,mlcommons-ee62dfe9b879,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,mlcommons-ee62dfe9b879,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,mlcommons-5353db8781d0,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,mlcommons-5353db8781d0,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,title,mlcommons-a7d894d8a5b9,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,
+m2m100-418m,summary,mlcommons-a7d894d8a5b9,unavailable,False,"['The M2M100 benchmark process was terminated during generation before the runner wrote result files; timing, memory, acquisition, cache, and revision values are not measured.']",,,0,0,0,0,0,0,

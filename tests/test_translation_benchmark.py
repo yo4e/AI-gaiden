@@ -1,9 +1,11 @@
 from __future__ import annotations
 
+import csv
 from contextlib import nullcontext
 from pathlib import Path
 
 import scripts.translation_benchmark as benchmark
+from scripts.create_human_evaluation import create_evaluation_files
 from scripts.translation_benchmark import (
     BenchmarkCandidate,
     BenchmarkConfig,
@@ -168,3 +170,23 @@ def test_runner_separates_title_summary_and_writes_three_formats(tmp_path, monke
     assert any(row["status"] == "quality_rejected" for row in result["runs"])
     assert all(path.exists() for path in paths)
     assert "candidate_id,target_type,item_id" in paths[1].read_text(encoding="utf-8")
+    measurement = result["candidate_measurements"][0]
+    assert result["runtime"]["device"] == "cpu"
+    assert measurement["inference_time_ms_total"] is not None
+    assert measurement["memory_measurement_scope"]
+
+
+def test_committed_results_create_blinded_human_evaluation_files(tmp_path) -> None:
+    result_path = ROOT / "data/translation_benchmark/results/translation-benchmark.json"
+    corpus_path = ROOT / "data/translation_benchmark/corpus.jsonl"
+
+    paths = create_evaluation_files(result_path, corpus_path, tmp_path)
+
+    with paths[0].open(encoding="utf-8", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    with paths[2].open(encoding="utf-8", newline="") as handle:
+        key_rows = list(csv.DictReader(handle))
+    assert len(rows) == 12 * 2 * 4
+    assert {row["blinded_key"] for row in rows} == {"A", "B", "C", "D"}
+    assert len(key_rows) == 4
+    assert all(not row["meaning_accuracy"] for row in rows)

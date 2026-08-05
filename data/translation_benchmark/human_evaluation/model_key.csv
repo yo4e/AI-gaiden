@@ -1,0 +1,5 @@
+blinded_key,candidate_id,label,model_revision
+A,opus-mt-en-ja,OPUS-MT en→ja,a863894cdd2b80f3bc1c5966734aee9ffec207d1
+B,m2m100-418m,M2M100 418M en→ja,unknown
+C,argos-en-ja,Argos Translate en→ja,1.1:en_ja
+D,fugumt-en-ja,FuguMT en→ja,fbb91252110cf97d90291eb808629ab0b10f7928

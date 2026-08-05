@@ -31,12 +31,15 @@ interface Props {
 const { article } = Astro.props;
 const item = article.data;
 const internalPath = articlePath(item);
+const imageClass = item.imageUrl
+  ? 'news-card__image news-card__image--source'
+  : 'news-card__image news-card__image--default';
 ---
 
 <article class="news-card">
   <div class="news-card__image-wrap">
     <img
-      class="news-card__image"
+      class={imageClass}
       src={item.imageUrl || '/default-news-image.svg'}
       alt={item.imageUrl ? `${item.titleJa}のRSS配信画像` : ''}
       width="640"
@@ -45,10 +48,14 @@ const internalPath = articlePath(item);
       decoding="async"
       referrerpolicy="no-referrer"
     />
-    <small>
-      画像: {item.imageUrl ? `${item.sourceName}公式RSS` : 'AI外電 既定画像'}
-      {item.imageLicense && `（${item.imageLicense}）`}
-    </small>
+    {
+      item.imageUrl && (
+        <small>
+          画像: {item.sourceName}公式RSS
+          {item.imageLicense && `（${item.imageLicense}）`}
+        </small>
+      )
+    }
   </div>
   <div class="news-card__body">
     <div class="news-card__meta">

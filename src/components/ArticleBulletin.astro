@@ -11,16 +11,71 @@ interface PublicCorrection {
   description: string;
 }
 
+interface TranslationPresentation {
+  label: string;
+  fallback: boolean;
+}
+
+type TranslationStatus =
+  | 'legacy'
+  | 'translated'
+  | 'quality_rejected'
+  | 'translation_failed'
+  | 'source_missing'
+  | undefined;
+
+const DATE_ONLY_RE = /^\d{4}-\d{2}-\d{2}$/;
+const OFFSET_DATETIME_RE =
+  /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2}(?:\.\d{1,9})?)?(?:Z|[+-]\d{2}:\d{2})$/;
+
 const { data } = Astro.props;
-const titleFallback =
-  data.titleFallbackApplied === true ||
-  (data.titleTranslationStatus !== undefined && data.titleTranslationStatus !== 'translated');
-const summaryFallback =
-  data.summaryFallbackApplied === true ||
-  data.summaryTranslationStatus === 'quality_rejected' ||
-  data.summaryTranslationStatus === 'translation_failed' ||
-  data.summaryTranslationStatus === 'source_missing' ||
-  (!data.summaryTranslationStatus && data.translationStatus === 'partial');
+const legacySummaryFallback = data.briefJa.includes(
+  '概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください。',
+);
+
+function titleTranslationPresentation(
+  status: TranslationStatus,
+  fallbackApplied: boolean | undefined,
+): TranslationPresentation {
+  if (status === 'quality_rejected') {
+    return { label: '品質確認で不合格のため原題表示', fallback: true };
+  }
+  if (status === 'translation_failed') {
+    return { label: '翻訳処理に失敗したため原題表示', fallback: true };
+  }
+  if (status === 'source_missing') {
+    return { label: '原題表示（翻訳元なし）', fallback: true };
+  }
+  if (fallbackApplied === true) {
+    return { label: '原題表示（フォールバック）', fallback: true };
+  }
+  if (status === 'translated') {
+    return { label: '日本語訳あり', fallback: false };
+  }
+  return { label: '詳細な翻訳状態の記録なし', fallback: false };
+}
+
+function summaryTranslationPresentation(
+  status: TranslationStatus,
+  fallbackApplied: boolean | undefined,
+): TranslationPresentation {
+  if (status === 'quality_rejected') {
+    return { label: '品質確認で不合格のため公式リンク案内', fallback: true };
+  }
+  if (status === 'translation_failed') {
+    return { label: '翻訳処理に失敗したため公式リンク案内', fallback: true };
+  }
+  if (status === 'source_missing') {
+    return { label: 'RSSに概要がないため公式リンク案内', fallback: true };
+  }
+  if (fallbackApplied === true || legacySummaryFallback) {
+    return { label: '公式リンク案内（詳細記録なし）', fallback: true };
+  }
+  if (status === 'translated') {
+    return { label: '日本語概要あり', fallback: false };
+  }
+  return { label: '詳細な翻訳状態の記録なし', fallback: false };
+}
 
 function stringProperty(record: Record<string, unknown>, keys: string[]): string | undefined {
   for (const key of keys) {
@@ -30,21 +85,49 @@ function stringProperty(record: Record<string, unknown>, keys: string[]): string
   return undefined;
 }
 
+function validDateOnly(value: string): boolean {
+  if (!DATE_ONLY_RE.test(value)) return false;
+  const [year, month, day] = value.split('-').map(Number);
+  const parsed = new Date(`${value}T00:00:00Z`);
+  return (
+    !Number.isNaN(parsed.getTime()) &&
+    parsed.getUTCFullYear() === year &&
+    parsed.getUTCMonth() + 1 === month &&
+    parsed.getUTCDate() === day
+  );
+}
+
+function validCorrectionDate(value: string): boolean {
+  if (DATE_ONLY_RE.test(value)) return validDateOnly(value);
+  return (
+    OFFSET_DATETIME_RE.test(value) &&
+    validDateOnly(value.slice(0, 10)) &&
+    !Number.isNaN(new Date(value).getTime())
+  );
+}
+
 function publicCorrection(value: unknown): PublicCorrection | null {
   if (!value || typeof value !== 'object' || Array.isArray(value)) return null;
   const record = value as Record<string, unknown>;
   const date = stringProperty(record, ['date', 'correctedAt', 'updatedAt']);
   const description = stringProperty(record, ['description', 'summary']);
-  const validDate = date && !Number.isNaN(new Date(date).getTime());
-  return validDate && description ? { date, description } : null;
+  return date && description && validCorrectionDate(date) ? { date, description } : null;
 }
 
 function correctionDate(value: string): string {
-  return /^\d{4}-\d{2}-\d{2}$/.test(value)
+  return DATE_ONLY_RE.test(value)
     ? formatJapaneseDate(value)
     : `${formatJapaneseDateTime(value)} JST`;
 }
 
+const titleTranslation = titleTranslationPresentation(
+  data.titleTranslationStatus,
+  data.titleFallbackApplied,
+);
+const summaryTranslation = summaryTranslationPresentation(
+  data.summaryTranslationStatus,
+  data.summaryFallbackApplied,
+);
 const corrections = data.correctionHistory
   .map(publicCorrection)
   .filter((correction): correction is PublicCorrection => correction !== null);
@@ -61,10 +144,8 @@ const corrections = data.correctionHistory
     {
       data.author && (
         <div>
-          <>
-            <dt>原文著者</dt>
-            <dd>{data.author}</dd>
-          </>
+          <dt>原文著者</dt>
+          <dd>{data.author}</dd>
         </div>
       )
     }
@@ -90,15 +171,15 @@ const corrections = data.correctionHistory
     </div>
     <div>
       <dt>タイトル翻訳</dt>
-      <dd>{titleFallback ? '原題表示（フォールバック）' : '日本語訳あり'}</dd>
+      <dd>{titleTranslation.label}</dd>
     </div>
     <div>
       <dt>概要翻訳</dt>
-      <dd>{summaryFallback ? '公式リンク案内（フォールバック）' : '日本語概要あり'}</dd>
+      <dd>{summaryTranslation.label}</dd>
     </div>
     <div>
       <dt>フォールバック</dt>
-      <dd>{titleFallback || summaryFallback ? 'あり' : 'なし'}</dd>
+      <dd>{titleTranslation.fallback || summaryTranslation.fallback ? 'あり' : 'なし'}</dd>
     </div>
     <div>
       <dt>人間修正</dt>

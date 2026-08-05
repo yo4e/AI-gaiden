@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from contextlib import nullcontext
 from pathlib import Path
 
 import scripts.translation_benchmark as benchmark
@@ -53,6 +54,73 @@ def test_fidelity_counts_numbers_urls_and_product_names_separately() -> None:
 class FakeAdapter:
     def translate(self, text: str) -> str:
         return f"日本語 {text}"
+
+
+class FakeM2MTokenizer:
+    def __init__(self) -> None:
+        self.src_lang = None
+        self.src_lang_when_tokenized = None
+
+    def __call__(self, *args, **kwargs):
+        self.src_lang_when_tokenized = self.src_lang
+        return {"input_ids": [[1]]}
+
+    def get_lang_id(self, language: str) -> int:
+        assert language == "ja"
+        return 42
+
+    def batch_decode(self, output, *, skip_special_tokens: bool) -> list[str]:
+        assert skip_special_tokens is True
+        return ["日本語の出力"]
+
+
+class FakeM2MModel:
+    def eval(self) -> None:
+        return None
+
+    def generate(self, **kwargs):
+        assert kwargs["forced_bos_token_id"] == 42
+        return [[2]]
+
+
+class FakeTorch:
+    def inference_mode(self):
+        return nullcontext()
+
+
+def test_m2m100_sets_source_language_before_tokenization() -> None:
+    candidate = benchmark.BenchmarkCandidate(
+        id="m2m100-test",
+        label="M2M100 test",
+        backend="m2m100",
+        model_id="facebook/m2m100_418M",
+        package=None,
+        official_url="https://example.com",
+        model_card_url="https://example.com/model",
+        license="MIT",
+        commercial_status="test",
+        model_size="test",
+        cpu_time="not_measured",
+        memory="not_measured",
+        download_time="not_measured",
+        cache_size="not_measured",
+        actions_feasibility="test",
+        production_candidate=False,
+        exclusion_reason="test",
+    )
+    tokenizer = FakeM2MTokenizer()
+    adapter = object.__new__(benchmark.TransformersAdapter)
+    adapter._candidate = candidate
+    adapter._tokenizer = tokenizer
+    adapter._model = FakeM2MModel()
+    adapter._torch = FakeTorch()
+    adapter._max_input_tokens = 512
+    adapter._max_new_tokens = 256
+    adapter._num_beams = 1
+    adapter._protected_terms = ()
+
+    assert adapter.translate("A test title") == "日本語の出力"
+    assert tokenizer.src_lang_when_tokenized == "en"
 
 
 def test_runner_separates_title_summary_and_writes_three_formats(tmp_path, monkeypatch) -> None:

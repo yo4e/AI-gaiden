@@ -298,12 +298,6 @@ class TransformersAdapter:
         protected, replacements = protect_translation_input(
             text, extra_protected_terms=self._protected_terms
         )
-        inputs = self._tokenizer(
-            [protected],
-            return_tensors="pt",
-            truncation=True,
-            max_length=self._max_input_tokens,
-        )
         generation_options: dict[str, Any] = {
             "max_new_tokens": self._max_new_tokens,
             "num_beams": self._num_beams,
@@ -312,6 +306,12 @@ class TransformersAdapter:
         if self._candidate.backend == "m2m100":
             self._tokenizer.src_lang = "en"
             generation_options["forced_bos_token_id"] = self._tokenizer.get_lang_id("ja")
+        inputs = self._tokenizer(
+            [protected],
+            return_tensors="pt",
+            truncation=True,
+            max_length=self._max_input_tokens,
+        )
         with self._torch.inference_mode():
             output = self._model.generate(**inputs, **generation_options)
         decoded = self._tokenizer.batch_decode(output, skip_special_tokens=True)[0]

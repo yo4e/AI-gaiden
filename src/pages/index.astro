@@ -14,7 +14,7 @@ const articles = sortArticles(await getCollection('articles'));
 const grouped = groupArticlesByDate(articles);
 const latestDate = [...grouped.keys()][0];
 const latestArticles = latestDate ? grouped.get(latestDate) || [] : [];
-const recentDates = [...grouped.keys()].slice(0, 7);
+const recentDates = [...grouped.keys()].slice(0, 8);
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
@@ -28,16 +28,60 @@ const structuredData = {
 
 <BaseLayout title={DEFAULT_TITLE} description={DEFAULT_DESCRIPTION} structuredData={structuredData}>
   <section class="hero">
-    <div class="container">
-      <p class="eyebrow">Official AI News / Japanese Digest</p>
-      <h1>{SITE_HEADLINE}</h1>
-      <p class="hero__description">
-        海外AIニュースと生成AIの最新情報を、各社の公式RSSだけから収集。原文タイトルと公式リンクを添え、日本語の短報として毎日まとめます。
-      </p>
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">Official AI News / Japanese Digest</p>
+        <h1>{SITE_HEADLINE}</h1>
+        <p class="hero__description">
+          海外AIニュースと生成AIの最新情報を、各社の公式RSSだけから収集。原文タイトルと公式リンクを添え、日本語の短報として毎日まとめます。
+        </p>
+        <ul class="hero__values" aria-label="AI外電の特徴">
+          <li>
+            <span class="hero__value-number" aria-hidden="true">01</span>
+            <span><strong>公式情報のみ</strong><small>各社・研究組織の公式RSSを対象</small></span>
+          </li>
+          <li>
+            <span class="hero__value-number" aria-hidden="true">02</span>
+            <span><strong>原文へ戻れる</strong><small>原文タイトルと公式リンクを明示</small></span>
+          </li>
+          <li>
+            <span class="hero__value-number" aria-hidden="true">03</span>
+            <span><strong>透明な運用</strong><small>自動収集・自動翻訳の範囲を公開</small></span>
+          </li>
+        </ul>
+      </div>
+      <aside class="hero-panel" aria-labelledby="hero-panel-heading">
+        <div class="hero-panel__header">
+          <p class="eyebrow">How it works</p>
+          <h2 id="hero-panel-heading">公式発表を、静かに整理する</h2>
+        </div>
+        <dl class="hero-panel__flow">
+          <div>
+            <dt>01</dt>
+            <dd>公式RSS / Atom</dd>
+            <span>企業・研究組織から取得</span>
+          </div>
+          <div>
+            <dt>02</dt>
+            <dd>AI外電</dd>
+            <span>重複を除き、日本語短報へ整形</span>
+          </div>
+          <div>
+            <dt>03</dt>
+            <dd>原文リンク</dd>
+            <span>重要な確認は公式発表へ戻る</span>
+          </div>
+        </dl>
+        <p class="hero-panel__status">
+          <span>現在の掲載</span>
+          <strong>{latestArticles.length}件</strong>
+          {latestDate && <time datetime={latestDate}>{latestDate} JST</time>}
+        </p>
+      </aside>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="latest-digest">
     <div class="container">
       <div class="section-heading">
         <div>
@@ -76,7 +120,7 @@ const structuredData = {
       <div class="section-heading">
         <div>
           <p class="eyebrow">Recent editions</p>
-          <h2>過去7回のダイジェスト</h2>
+          <h2>過去8回のダイジェスト</h2>
         </div>
         <a href="/archive/">すべての過去記事</a>
       </div>
@@ -106,13 +150,28 @@ const structuredData = {
   </section>
 
   <section class="section">
-    <div class="container narrow">
-      <p class="eyebrow">Sources & policy</p>
-      <h2>公式発表へ戻れる、透明なダイジェスト</h2>
-      <p>
-        現在設定している12の公式RSSを対象とし、記事ページのスクレイピングは行いません。日本語はローカル翻訳モデルと定型文で生成し、確認に必要な原文タイトルと配信元を必ず併記します。
-      </p>
-      <a class="button-link" href="/sources/">情報源と取得方針を見る</a>
+    <div class="container">
+      <div class="policy-callout">
+        <div>
+          <p class="eyebrow">Sources & policy</p>
+          <h2>公式発表へ戻れる、透明なダイジェスト</h2>
+          <p>
+            現在設定している12の公式RSSを対象とし、記事ページのスクレイピングは行いません。日本語はローカル翻訳モデルと定型文で生成し、確認に必要な原文タイトルと配信元を必ず併記します。
+          </p>
+        </div>
+        <a class="button-link" href="/sources/"
+          >情報源と運用方針を見る <span aria-hidden="true">→</span></a
+        >
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--principles">
+    <div class="container principles" aria-label="運用原則">
+      <div><strong>軽量</strong><span>静的HTMLと最小限のCSS</span></div>
+      <div><strong>アクセシブル</strong><span>高コントラスト、明確なフォーカス</span></div>
+      <div><strong>非誇張的</strong><span>原文にない評価を加えない</span></div>
+      <div><strong>検証可能</strong><span>出典・翻訳・外部リンクを明示</span></div>
     </div>
   </section>
 </BaseLayout>

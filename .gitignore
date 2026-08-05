@@ -8,3 +8,6 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 .DS_Store
+data/translation_benchmark/results/translation-benchmark.json
+data/translation_benchmark/results/translation-benchmark.csv
+data/translation_benchmark/results/translation-benchmark.md

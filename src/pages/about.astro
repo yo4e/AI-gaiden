@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { REPOSITORY_URL } from '../lib/site';
+import { OPERATOR_NAME, OPERATOR_STATEMENT, REPOSITORY_URL } from '../lib/site';
 ---
 
 <BaseLayout
@@ -22,6 +22,9 @@ import { REPOSITORY_URL } from '../lib/site';
     <p>
       AI外電は現在、収集・翻訳・静的ページ生成を無人で安全に継続できるか検証しています。自動翻訳には誤りがあり得るため、判断や引用の前には必ず公式リンクの原文をご確認ください。
     </p>
+
+    <h2>運営主体</h2>
+    <p>{OPERATOR_STATEMENT}</p>
 
     <h2>更新の仕組み</h2>
     <ol>
@@ -58,9 +61,9 @@ import { REPOSITORY_URL } from '../lib/site';
 
     <h2>免責と連絡先</h2>
     <p>
-      取得漏れ、配信遅延、誤訳、リンク切れが生じる可能性があります。重要な情報は公式発表を優先してください。不具合や掲載に関する連絡は、<a
-        href={`${REPOSITORY_URL}/issues`}
-        rel="noopener noreferrer">GitHub Issues</a
+      取得漏れ、配信遅延、誤訳、リンク切れが生じる可能性があります。重要な情報は公式発表を優先してください。不具合や掲載に関する連絡は、{
+        OPERATOR_NAME
+      }の<a href={`${REPOSITORY_URL}/issues`} rel="noopener noreferrer">GitHub Issues</a
       >で受け付けます。
     </p>
   </article>

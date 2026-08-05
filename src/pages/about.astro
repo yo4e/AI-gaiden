@@ -25,7 +25,7 @@ import { REPOSITORY_URL } from '../lib/site';
 
     <h2>更新の仕組み</h2>
     <ol>
-      <li>設定済みの公式RSS/AtomをGitHub Actionsが毎朝取得します。</li>
+      <li>設定済みの公式RSS/AtomをGitHub Actionsが定期的に取得します。</li>
       <li>RSS内のタイトルと短い概要だけをサニタイズし、重複を除外します。</li>
       <li>外部APIを使わず、実行環境内のArgos Translateで英語から日本語へ翻訳します。</li>
       <li>

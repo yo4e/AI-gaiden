@@ -1,0 +1,52 @@
+name: Patch editorial policy spec once
+
+on:
+  push:
+    branches:
+      - codex/issue-21a-editorial-policy
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: codex/issue-21a-editorial-policy
+          fetch-depth: 0
+
+      - name: Update canonical implementation spec
+        shell: python
+        run: |
+          from pathlib import Path
+
+          path = Path('docs/IMPLEMENTATION_SPEC.md')
+          text = path.read_text(encoding='utf-8')
+          replacements = {
+              '更新日: 2026-08-03': '更新日: 2026-08-05',
+              '│  │  ├─ about.astro\n│  │  ├─ privacy.astro': '│  │  ├─ about.astro\n│  │  ├─ editorial-policy.astro\n│  │  ├─ privacy.astro',
+              '- 編集・訂正ポリシー（掲載基準、訂正方法、公式発表の更新・撤回への対応、ニュースとコラムの分離）': '- 編集・訂正ポリシーの概要と `/editorial-policy/` への導線',
+              '### 13.9 編集・訂正ポリシー\n\n- Aboutページの`#editorial-policy`で、公式RSS/Atomのみを掲載対象とし、元記事HTMLのスクレイピングを行わないことを説明する。': '### 13.9 `/editorial-policy/`\n\n- 編集・訂正ポリシーは独立した安定URLを正本とし、固有のtitle、description、canonicalを設定する。\n- Aboutの`#editorial-policy`には概要と独立ページへの導線だけを置く。\n- 公式RSS/Atomのみを掲載対象とし、元記事HTMLのスクレイピングを行わないことを説明する。\n- 原文タイトル、配信元、公式発表へのリンクを各記事で明示する方針を説明する。\n- サイトRSSの利用条件と日次RSSを提供しない方針を掲載する。',
+              '- About: `AI外電について｜海外AIニュース自動ダイジェスト`': '- About: `AI外電について｜海外AIニュース自動ダイジェスト`\n- 編集・訂正ポリシー: `編集・訂正ポリシー｜AI外電`',
+              '- 日次単位の `/daily/feed.xml` は当面生成せず、RSS利用条件と方針をAboutページに掲載する。': '- 日次単位の `/daily/feed.xml` は当面生成せず、RSS利用条件と方針を`/editorial-policy/`に掲載する。',
+              '- パンくずを表示\n- 孤立ページを作らない': '- パンくずを表示\n- Aboutとフッターから`/editorial-policy/`へリンクする\n- 孤立ページを作らない',
+          }
+          for old, new in replacements.items():
+              count = text.count(old)
+              if count != 1:
+                  raise SystemExit(f'Expected exactly one match, got {count}: {old}')
+              text = text.replace(old, new)
+          path.write_text(text, encoding='utf-8')
+
+      - name: Remove one-time workflow and push
+        shell: bash
+        run: |
+          rm .github/workflows/patch-policy-docs.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/IMPLEMENTATION_SPEC.md .github/workflows/patch-policy-docs.yml
+          git commit -m 'docs(policy): document stable editorial policy URL'
+          git push origin HEAD:codex/issue-21a-editorial-policy

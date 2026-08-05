@@ -32,3 +32,12 @@ def test_editorial_policy_is_reachable_from_about_and_footer() -> None:
     assert 'href="/editorial-policy/"' in about
     assert 'href="/editorial-policy/"' in layout
     assert 'href="/about/#editorial-policy"' not in layout
+
+
+def test_implementation_spec_names_the_policy_page_as_the_source_of_truth() -> None:
+    spec = (ROOT / "docs/IMPLEMENTATION_SPEC.md").read_text(encoding="utf-8")
+
+    assert "### 13.9 `/editorial-policy/`" in spec
+    assert "独立した安定URLを正本" in spec
+    assert "RSS利用条件と方針を`/editorial-policy/`に掲載" in spec
+    assert "Aboutページの`#editorial-policy`で" not in spec

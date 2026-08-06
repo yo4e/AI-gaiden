@@ -1,13 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
-  <title id="title">AI外電</title>
-  <desc id="desc">公式AIニュースの日本語ダイジェスト</desc>
-  <rect width="640" height="360" fill="#edf3f5"/>
-  <path d="M0 276 138 176l104 68 128-118 112 82 158-126v278H0Z" fill="#356d89" opacity=".09"/>
-  <path d="M0 310 168 208l98 54 124-82 112 67 138-92v205H0Z" fill="#356d89" opacity=".06"/>
-  <rect x="62" y="56" width="58" height="58" fill="#ffffff" stroke="#526169" stroke-width="2"/>
-  <text x="91" y="94" text-anchor="middle" fill="#24556d" font-family="sans-serif" font-size="28" font-weight="700">外</text>
-  <text x="62" y="184" fill="#16212a" font-family="sans-serif" font-size="44" font-weight="700">AI外電</text>
-  <text x="64" y="224" fill="#53636c" font-family="sans-serif" font-size="18" letter-spacing="1">OFFICIAL AI NEWS</text>
-  <text x="64" y="252" fill="#53636c" font-family="sans-serif" font-size="18" letter-spacing="1">JAPANESE DIGEST</text>
-  <line x1="62" y1="286" x2="298" y2="286" stroke="#356d89" stroke-width="2" opacity=".55"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1448 1086" role="img" aria-labelledby="title desc">
+  <title id="title">AI外電 既定画像</title>
+  <desc id="desc">淡い青灰色の抽象的なAI・ネットワークパターン</desc>
+  <image href="/default-news-image.png" width="1448" height="1086" preserveAspectRatio="xMidYMid slice" />
 </svg>

@@ -1,0 +1,2 @@
+/gaiden https://gaiden.news/ 301
+/gaiden/* https://gaiden.news/:splat 301

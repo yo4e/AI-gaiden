@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { sources } from '../data/sources';
+import { sourceCategoryLabel, sourceImagePolicyLabel } from '../lib/sourcePresentation';
 
 const articles = await getCollection('articles');
 const articleCounts = new Map<string, number>();
@@ -26,51 +27,52 @@ for (const article of articles) {
       <p class="eyebrow">Official sources</p>
       <h1>情報源一覧</h1>
       <p>
-        収集対象は公式RSS/Atomフィードのみです。記事ページのHTMLから情報を補完することはありません。内容はすべて機械翻訳・AI要約によるものです。
+        収集対象は公式RSS/Atomフィードのみです。記事ページのHTMLから情報を補完せず、ローカル翻訳モデルと定型編集で日本語短報を生成します。
       </p>
     </div>
   </header>
 
   <div class="container section">
     <div class="source-grid">
-      {sources.map((source) => {
-        const count = articleCounts.get(source.id) || 0;
-        return (
-          <article class="source-card" id={source.id}>
-            <div class="source-card__header">
-              <h2>
-                <a href={`/sources/${source.id}/`}>{source.name}</a>
-              </h2>
-              {count > 0 ? (
-                <span class="source-card__count">{count}<small>件</small></span>
-              ) : (
-                <span class="source-card__count source-card__count--empty">新着なし</span>
-              )}
-            </div>
-            {source.description && (
+      {
+        sources.map((source) => {
+          const count = articleCounts.get(source.id) || 0;
+          return (
+            <article class="source-card" id={source.id}>
+              <div class="source-card__header">
+                <h2>
+                  <a href={`/sources/${source.id}/`}>{source.name}</a>
+                </h2>
+                <span class="source-card__count" aria-label={`掲載記事数 ${count}件`}>
+                  {count}<small>件</small>
+                </span>
+              </div>
+              <div class="source-card__meta">
+                <span class={source.enabled ? 'status-active' : ''}>
+                  {source.enabled ? '取得対象' : '一時停止'}
+                </span>
+                <span>{sourceImagePolicyLabel(source.imagePolicy)}</span>
+              </div>
               <p class="source-card__desc">{source.description}</p>
-            )}
-            {source.categories && source.categories.length > 0 && (
-              <div class="source-card__categories">
-                {source.categories.map((cat: string) => (
-                  <span class="source-card__category">{cat}</span>
+              <div class="source-card__categories" aria-label="カテゴリ">
+                {source.categories.map((category) => (
+                  <span class="source-card__category">{sourceCategoryLabel(category)}</span>
                 ))}
               </div>
-            )}
-            <div class="source-card__links">
-              {source.homepage && (
+              <div class="source-card__links">
+                <a class="source-card__detail-link" href={`/sources/${source.id}/`}>
+                  配信元ページを見る →
+                </a>
                 <a href={source.homepage} rel="noopener noreferrer">公式サイト ↗</a>
-              )}
-              {source.feedUrl && (
                 <a href={source.feedUrl} rel="noopener noreferrer">RSS ↗</a>
-              )}
-            </div>
-          </article>
-        );
-      })}
+              </div>
+            </article>
+          );
+        })
+      }
     </div>
-    <p style="margin-top: 1.25rem; font-size: 0.8rem; color: var(--muted);">
-      件数は直近の収集数です。RSSフィードに新着がない場合、収集件数は 0 になります。
+    <p class="source-grid__note">
+      掲載記事数はAI外電内で公開している記事の累計です。0件は、現時点で公開済み記事がないことを示します。
     </p>
   </div>
 </BaseLayout>

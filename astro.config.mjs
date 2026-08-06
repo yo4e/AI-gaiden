@@ -4,15 +4,11 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+const PRODUCTION_SITE_URL = 'https://ai.gaiden.news';
 const isCloudflare = Boolean(process.env.CF_PAGES);
 const isPreview = isCloudflare && process.env.CF_PAGES_BRANCH !== 'main';
 const configuredSite = process.env.SITE_URL;
-
-if (isCloudflare && !configuredSite) {
-  throw new Error('Cloudflare Pages builds require the SITE_URL environment variable.');
-}
-
-const site = configuredSite || 'http://localhost:4321';
+const site = isCloudflare ? PRODUCTION_SITE_URL : configuredSite || 'http://localhost:4321';
 const articleLastModified = new Map();
 const dailyLastModified = new Map();
 const sourceArticleCounts = new Map();

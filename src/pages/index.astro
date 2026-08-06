@@ -15,6 +15,7 @@ const grouped = groupArticlesByDate(articles);
 const latestDate = [...grouped.keys()][0];
 const latestArticles = latestDate ? grouped.get(latestDate) || [] : [];
 const recentDates = [...grouped.keys()].slice(0, 8);
+const headlineLines = SITE_HEADLINE.split('\n');
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
@@ -30,7 +31,9 @@ const structuredData = {
   <section class="hero">
     <div class="container">
       <div class="hero__copy">
-        <h1>{SITE_HEADLINE}</h1>
+        <h1>
+          {headlineLines.map((line) => <span>{line}</span>)}
+        </h1>
         <p class="hero__description">
           海外AI企業・研究組織の公式RSS/Atomのみを対象に、ローカル翻訳モデルと定型編集で毎日配信します。原題と公式リンクを常に併記し、自動処理であることを明示します。
         </p>

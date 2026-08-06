@@ -4,7 +4,11 @@ import { getCollection } from 'astro:content';
 import ArticleBulletin from '../../../../../components/ArticleBulletin.astro';
 import BaseLayout from '../../../../../layouts/BaseLayout.astro';
 import { articlePath, sortArticles } from '../../../../../lib/articles';
-import { formatJapaneseDate, formatJapaneseDateTime } from '../../../../../lib/site';
+import {
+  OPERATOR_NAME,
+  formatJapaneseDate,
+  formatJapaneseDateTime,
+} from '../../../../../lib/site';
 
 interface Props {
   article: CollectionEntry<'articles'>;
@@ -31,6 +35,11 @@ const { article, previous, next } = Astro.props;
 const data = article.data;
 const canonicalPath = articlePath(data);
 const pageUrl = new URL(canonicalPath, Astro.site).href;
+const articleImage = data.imageUrl || '/default-news-image.svg';
+const articleImageUrl = new URL(articleImage, Astro.site).href;
+const articleImageClass = data.imageUrl
+  ? 'article-hero__image article-hero__image--source'
+  : 'article-hero__image article-hero__image--default';
 const structuredData = [
   {
     '@context': 'https://schema.org',
@@ -41,7 +50,7 @@ const structuredData = [
     datePublished: data.publishedAt,
     dateModified: data.updatedAt,
     inLanguage: 'ja',
-    image: data.imageUrl ? [data.imageUrl] : undefined,
+    image: [articleImageUrl],
     isPartOf: { '@type': 'WebSite', name: 'AI外電', url: new URL('/', Astro.site).href },
   },
   {
@@ -65,7 +74,7 @@ const structuredData = [
   title={`${data.titleJa}｜${data.sourceName}｜AI外電`}
   description={data.excerptJa}
   canonicalPath={canonicalPath}
-  image={data.imageUrl || '/default-news-image.svg'}
+  image={articleImage}
   type="article"
   publishedAt={data.publishedAt}
   updatedAt={data.updatedAt}
@@ -89,23 +98,28 @@ const structuredData = [
     <h1>{data.titleJa}</h1>
     <p class="original-title" lang="en"><em>{data.titleOriginal}</em></p>
 
-    {
-      data.imageUrl && (
-        <figure class="article-hero">
-          <img
-            src={data.imageUrl}
-            alt={`${data.sourceName}: ${data.titleOriginal}`}
-            loading="eager"
-            decoding="async"
-            referrerpolicy="no-referrer"
-          />
-          <figcaption>
-            画像: {data.sourceName}公式RSS
-            {data.imageLicense && `（${data.imageLicense}）`}
-          </figcaption>
-        </figure>
-      )
-    }
+    <figure class="article-hero">
+      <img
+        class={articleImageClass}
+        src={articleImage}
+        alt={data.imageUrl ? `${data.sourceName}: ${data.titleOriginal}` : `${OPERATOR_NAME}のAI外電既定画像`}
+        loading="eager"
+        decoding="async"
+        referrerpolicy="no-referrer"
+      />
+      <figcaption>
+        {
+          data.imageUrl ? (
+            <>
+              画像: {data.sourceName}公式RSS
+              {data.imageLicense && `（${data.imageLicense}）`}
+            </>
+          ) : (
+            <>画像: {OPERATOR_NAME} 既定画像</>
+          )
+        }
+      </figcaption>
+    </figure>
 
     <h2>日本語短報</h2>
     <p class="article-brief">{data.briefJa}</p>

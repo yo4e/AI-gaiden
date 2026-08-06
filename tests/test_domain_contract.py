@@ -32,3 +32,13 @@ def test_operator_site_replaces_the_legacy_embedded_page() -> None:
     assert "href={OPERATOR_URL}" in about_page
     assert "/gaiden https://gaiden.news/ 301" in redirects
     assert not (REPOSITORY_ROOT / "src/pages/gaiden.astro").exists()
+
+
+def test_domain_migration_is_recorded_in_project_documentation() -> None:
+    readme = read_repository_file("README.md")
+    implementation_spec = read_repository_file("docs/IMPLEMENTATION_SPEC.md")
+
+    assert f"正式URL: <{PRODUCTION_SITE_URL}/>" in readme
+    assert f"正式公開先: **{PRODUCTION_SITE_URL}/**" in implementation_spec
+    assert "### 1.3 公開ドメイン" in implementation_spec
+    assert "ai-gaiden.pages.dev" in implementation_spec

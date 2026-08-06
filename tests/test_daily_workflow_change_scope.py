@@ -1,15 +1,15 @@
 from __future__ import annotations
 
 from pathlib import Path
-import subprocess
+from subprocess import CompletedProcess, run
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 WORKFLOW_PATH = REPOSITORY_ROOT / ".github" / "workflows" / "daily-news.yml"
 
 
-def run_git(repository: Path, *args: str) -> subprocess.CompletedProcess[str]:
-    return subprocess.run(
+def run_git(repository: Path, *args: str) -> CompletedProcess[str]:
+    return run(
         ["git", *args],
         cwd=repository,
         check=True,
@@ -18,7 +18,7 @@ def run_git(repository: Path, *args: str) -> subprocess.CompletedProcess[str]:
     )
 
 
-def run_scope_check(repository: Path) -> subprocess.CompletedProcess[str]:
+def run_scope_check(repository: Path) -> CompletedProcess[str]:
     script = r'''
 invalid=0
 while IFS= read -r path; do
@@ -32,7 +32,7 @@ while IFS= read -r path; do
 done < <(git status --porcelain=v1 --untracked-files=all | cut -c4-)
 exit "$invalid"
 '''
-    return subprocess.run(
+    return run(
         ["bash", "-c", script],
         cwd=repository,
         check=False,

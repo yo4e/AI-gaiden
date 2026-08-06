@@ -4,7 +4,7 @@ import { getCollection } from 'astro:content';
 import ArticleBulletin from '../../../../../components/ArticleBulletin.astro';
 import BaseLayout from '../../../../../layouts/BaseLayout.astro';
 import { articlePath, sortArticles } from '../../../../../lib/articles';
-import { formatJapaneseDate } from '../../../../../lib/site';
+import { formatJapaneseDate, formatJapaneseDateTime } from '../../../../../lib/site';
 
 interface Props {
   article: CollectionEntry<'articles'>;
@@ -36,7 +36,7 @@ const structuredData = [
     '@context': 'https://schema.org',
     '@type': 'NewsArticle',
     headline: data.titleJa,
-    description: data.description,
+    description: data.excerptJa,
     url: pageUrl,
     datePublished: data.publishedAt,
     dateModified: data.updatedAt,
@@ -63,41 +63,74 @@ const structuredData = [
 
 <BaseLayout
   title={`${data.titleJa}｜${data.sourceName}｜AI外電`}
-  description={data.description}
+  description={data.excerptJa}
   canonicalPath={canonicalPath}
-  image={data.imageUrl || '/default-news-image.svg'}
+  image={data.imageUrl || undefined}
   type="article"
   publishedAt={data.publishedAt}
   updatedAt={data.updatedAt}
-  noindex={data.noindex}
   structuredData={structuredData}
 >
-  <header class="page-header">
-    <div class="container narrow">
-      <nav class="breadcrumbs" aria-label="パンくず">
-        <ol>
-          <li><a href="/">トップ</a></li>
-          <li><a href={`/daily/${data.dateJst}/`}>{data.dateJst}</a></li>
-          <li>{data.titleJa}</li>
-        </ol>
-      </nav>
-      <p class="eyebrow">{data.sourceName} / AI外電 article</p>
-      <h1>{data.titleJa}</h1>
+  <div class="container narrow article-detail">
+    <nav class="breadcrumbs" aria-label="パンくず">
+      <ol>
+        <li><a href="/">トップ</a></li>
+        <li><a href={`/daily/${data.dateJst}/`}>{data.dateJst}</a></li>
+        <li>{data.sourceName}</li>
+      </ol>
+    </nav>
+
+    <div class="news-card__meta">
+      <a href={`/sources/${data.sourceId}/`} class="source-badge">{data.sourceName}</a>
+      <time datetime={data.publishedAt} style="font-size: 0.82rem; color: var(--muted);">
+        {formatJapaneseDateTime(data.publishedAt)} JST
+      </time>
     </div>
-  </header>
-  <article class="container narrow section article-detail">
-    <p class="daily-note">
-      この記事は公式RSSから自動収集し、ローカル翻訳モデルと定型編集で生成しています。翻訳や取得内容の正確性は保証されないため、重要な確認は公式発表を優先してください。
-    </p>
+
+    <h1>{data.titleJa}</h1>
+    <p class="original-title" lang="en"><em>{data.titleOriginal}</em></p>
+
+    {data.imageUrl && (
+      <figure style="margin: 2rem 0; border: 1px solid var(--line); overflow: hidden;">
+        <img
+          src={data.imageUrl}
+          alt={`${data.sourceName}: ${data.titleOriginal}`}
+          style="width: 100%; aspect-ratio: 16 / 7; object-fit: cover; display: block;"
+          loading="eager"
+          decoding="async"
+          referrerpolicy="no-referrer"
+        />
+      </figure>
+    )}
+
     <h2>日本語短報</h2>
     <p class="article-brief">{data.briefJa}</p>
 
     <ArticleBulletin data={data} />
 
-    <nav class="date-navigation article-navigation" aria-label="前後の記事">
-      {previous ? <a href={articlePath(previous.data)}>← 前の記事</a> : <span />}
-      <a href={`/daily/${data.dateJst}/`}>同日の一覧</a>
-      {next ? <a href={articlePath(next.data)}>次の記事 →</a> : <span />}
+    <p class="daily-note">
+      この記事は公式RSSから自動収集し、ローカル翻訳モデルと定型編集で生成しています。翻訳や取得内容の正確性は保証されないため、重要な確認は公式発表を優先してください。
+    </p>
+
+    <div class="article-official">
+      <p class="article-official-label">公式原文</p>
+      <a class="article-official-link" href={data.sourceUrl} rel="noopener noreferrer">
+        ↗ {data.titleOriginal}
+      </a>
+    </div>
+
+    <nav class="article-nav" aria-label="前後の記事">
+      {previous ? (
+        <a href={articlePath(previous.data)}>← 前の記事</a>
+      ) : (
+        <span></span>
+      )}
+      <a class="center-link" href={`/daily/${data.dateJst}/`}>同日の一覧</a>
+      {next ? (
+        <a href={articlePath(next.data)}>次の記事 →</a>
+      ) : (
+        <span></span>
+      )}
     </nav>
-  </article>
+  </div>
 </BaseLayout>

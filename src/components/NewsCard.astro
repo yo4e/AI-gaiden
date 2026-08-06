@@ -14,12 +14,16 @@ interface Article {
     sourceId: string;
     sourceName: string;
     publishedAt: string;
+    updatedAt: string;
     imageUrl?: string | null;
-    imageLicense?: string | null;
     author?: string | null;
     translationStatus: 'complete' | 'partial';
     summaryTranslationStatus?:
-      'legacy' | 'translated' | 'quality_rejected' | 'translation_failed' | 'source_missing';
+      | 'legacy'
+      | 'translated'
+      | 'quality_rejected'
+      | 'translation_failed'
+      | 'source_missing';
     summaryFallbackApplied?: boolean;
   };
 }
@@ -31,58 +35,55 @@ interface Props {
 const { article } = Astro.props;
 const item = article.data;
 const internalPath = articlePath(item);
-const imageClass = item.imageUrl
-  ? 'news-card__image news-card__image--source'
-  : 'news-card__image news-card__image--default';
+const hasFallback =
+  item.summaryFallbackApplied ||
+  (item.summaryTranslationStatus && item.summaryTranslationStatus !== 'translated') ||
+  (!item.summaryTranslationStatus && item.translationStatus === 'partial');
 ---
 
 <article class="news-card">
-  <div class="news-card__image-wrap">
+  <a
+    class="news-card__image-wrap"
+    href={internalPath}
+    tabindex="-1"
+    aria-hidden="true"
+  >
     <img
-      class={imageClass}
+      class="news-card__image"
       src={item.imageUrl || '/default-news-image.svg'}
-      alt={item.imageUrl ? `${item.titleJa}のRSS配信画像` : ''}
-      width="640"
-      height="360"
+      alt=""
+      width="320"
+      height="240"
       loading="lazy"
       decoding="async"
       referrerpolicy="no-referrer"
     />
-    {
-      item.imageUrl && (
-        <small>
-          画像: {item.sourceName}公式RSS
-          {item.imageLicense && `（${item.imageLicense}）`}
-        </small>
-      )
-    }
-  </div>
+  </a>
   <div class="news-card__body">
     <div class="news-card__meta">
       <SourceBadge id={item.sourceId} name={item.sourceName} />
-      <time datetime={item.publishedAt}>{formatJapaneseDateTime(item.publishedAt)} JST</time>
+      <time datetime={item.publishedAt}>
+        {formatJapaneseDateTime(item.publishedAt)} JST
+      </time>
     </div>
-    <h2><a href={internalPath}>{item.titleJa}</a></h2>
-    <p class="original-title">
-      <span>原文タイトル:</span>
-      <span lang="en">{item.titleOriginal}</span>
-    </p>
-    <p>{item.excerptJa}</p>
-    {item.author && <p class="byline">原文著者: {item.author}</p>}
-    {
-      (item.summaryFallbackApplied ||
-        (item.summaryTranslationStatus && item.summaryTranslationStatus !== 'translated') ||
-        (!item.summaryTranslationStatus && item.translationStatus === 'partial')) && (
-        <p class="translation-note">概要の翻訳がないため、公式リンクで発表内容をご確認ください。</p>
-      )
-    }
-    <p class="card-links">
-      <a class="article-link" href={internalPath}
-        >AI外電の短報を読む <span aria-hidden="true">→</span></a
-      >
-      <a class="official-link" href={item.sourceUrl} rel="noopener noreferrer"
-        >公式発表を原文で確認 <span aria-hidden="true">↗</span></a
-      >
-    </p>
+    <a href={internalPath} class="news-card__content-link">
+      <h2>{item.titleJa}</h2>
+      <p class="original-title" lang="en">{item.titleOriginal}</p>
+      {!hasFallback && <p>{item.excerptJa}</p>}
+    </a>
+    {hasFallback && (
+      <p class="translation-note">
+        概要の翻訳がないため、公式リンクで発表内容をご確認ください。
+      </p>
+    )}
+    {item.author && (
+      <p class="byline">原文著者: {item.author}</p>
+    )}
+    <div class="news-card__card-links">
+      <a href={internalPath}>AI外電の短報を読む →</a>
+      <a class="official" href={item.sourceUrl} rel="noopener noreferrer">
+        公式発表を原文で確認 ↗
+      </a>
+    </div>
   </div>
 </article>

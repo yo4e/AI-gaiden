@@ -2,72 +2,75 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { sources } from '../data/sources';
-import { sourceCategoryLabel, sourceImagePolicyLabel } from '../lib/sourcePresentation';
 
 const articles = await getCollection('articles');
 const articleCounts = new Map<string, number>();
 for (const article of articles) {
-  articleCounts.set(article.data.sourceId, (articleCounts.get(article.data.sourceId) || 0) + 1);
+  const sid = article.data.sourceId;
+  articleCounts.set(sid, (articleCounts.get(sid) || 0) + 1);
 }
 ---
 
 <BaseLayout
   title="海外AI公式ニュースの情報源一覧｜AI外電"
-  description="AI外電が取得対象とする全配信元の公式RSS/Atomと、RSS限定の収集方針を紹介します。"
+  description="AI外電が取得対象とする全配信元の公式RSS/Atomと収集方針を紹介します。"
 >
   <header class="page-header">
     <div class="container">
       <nav class="breadcrumbs" aria-label="パンくず">
-        <ol><li><a href="/">トップ</a></li><li>情報源</li></ol>
+        <ol>
+          <li><a href="/">トップ</a></li>
+          <li>情報源</li>
+        </ol>
       </nav>
       <p class="eyebrow">Official sources</p>
-      <h1>海外AI公式ニュースの情報源一覧</h1>
+      <h1>情報源一覧</h1>
       <p>
-        以下の公式RSS/Atomのみを取得します。記事ページのHTMLから情報や画像を補完することはありません。
+        収集対象は公式RSS/Atomフィードのみです。記事ページのHTMLから情報を補完することはありません。内容はすべて機械翻訳・AI要約によるものです。
       </p>
     </div>
   </header>
+
   <div class="container section">
     <div class="source-grid">
-      {
-        sources.map((source) => (
+      {sources.map((source) => {
+        const count = articleCounts.get(source.id) || 0;
+        return (
           <article class="source-card" id={source.id}>
-            <h2>
-              <a href={`/sources/${source.id}/`}>{source.name}</a>
-            </h2>
-            <p>{source.description}</p>
-            <dl>
-              <dt>設定状態</dt>
-              <dd class={source.enabled ? 'status-active' : ''}>
-                {source.enabled ? '取得対象' : '一時停止'}
-              </dd>
-              <dt>公式サイト</dt>
-              <dd>
-                <a href={source.homepage} rel="noopener noreferrer">
-                  {source.homepage}
-                </a>
-              </dd>
-              <dt>公式RSS</dt>
-              <dd>
-                <a href={source.feedUrl} rel="noopener noreferrer">
-                  {source.feedUrl}
-                </a>
-              </dd>
-              <dt>画像方針</dt>
-              <dd>{sourceImagePolicyLabel(source.imagePolicy)}</dd>
-              <dt>カテゴリ</dt>
-              <dd>{source.categories.map(sourceCategoryLabel).join('、')}</dd>
-              <dt>掲載記事数</dt>
-              <dd>{articleCounts.get(source.id) || 0}件</dd>
-            </dl>
-            <p>
-              <a class="official-link" href={`/sources/${source.id}/`}>
-                配信元ページを見る
-              </a>
-            </p>
+            <div class="source-card__header">
+              <h2>
+                <a href={`/sources/${source.id}/`}>{source.name}</a>
+              </h2>
+              {count > 0 ? (
+                <span class="source-card__count">{count}<small>件</small></span>
+              ) : (
+                <span class="source-card__count source-card__count--empty">新着なし</span>
+              )}
+            </div>
+            {source.description && (
+              <p class="source-card__desc">{source.description}</p>
+            )}
+            {source.categories && source.categories.length > 0 && (
+              <div class="source-card__categories">
+                {source.categories.map((cat: string) => (
+                  <span class="source-card__category">{cat}</span>
+                ))}
+              </div>
+            )}
+            <div class="source-card__links">
+              {source.homepage && (
+                <a href={source.homepage} rel="noopener noreferrer">公式サイト ↗</a>
+              )}
+              {source.feedUrl && (
+                <a href={source.feedUrl} rel="noopener noreferrer">RSS ↗</a>
+              )}
+            </div>
           </article>
-        ))
-      }
+        );
+      })}
     </div>
+    <p style="margin-top: 1.25rem; font-size: 0.8rem; color: var(--muted);">
+      件数は直近の収集数です。RSSフィードに新着がない場合、収集件数は 0 になります。
+    </p>
   </div>
 </BaseLayout>

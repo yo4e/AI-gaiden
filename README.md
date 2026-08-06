@@ -5,6 +5,12 @@
 > **試験運用中**  
 > 本サイトの記事は、公式フィードを基に自動収集・自動翻訳・定型編集を行います。翻訳や要約に誤りが含まれる可能性があるため、重要な情報は必ずリンク先の公式発表をご確認ください。
 
+## 公開URL
+
+- 正式URL: <https://ai.gaiden.news/>
+- 運営主体: <https://gaiden.news/>
+- `ai-gaiden.pages.dev` はCloudflare Pagesの既存ホストとして残しますが、正規URLには使用しません。
+
 外部AI API・翻訳API、記事ページのHTMLスクレイピング、RSSにない `og:image` の取得は行いません。英日翻訳はGitHub Actionsランナー内のArgos Translateで完結します。Bluesky連携はPhase 2の候補で、現在のコードには含まれません。
 
 ## 技術構成
@@ -80,11 +86,11 @@ Astroの型検証と本番ビルド:
 
 ```bash
 npm run check
-SITE_URL=https://example.pages.dev npm run build
+SITE_URL=https://ai.gaiden.news npm run build
 npm run validate:rss
 ```
 
-ローカル開発では `SITE_URL` を省略すると `http://localhost:4321` を使います。Cloudflare Pages上では `SITE_URL` が未設定だと意図的にビルドを失敗させます。
+ローカル開発では `SITE_URL` を省略すると `http://localhost:4321` を使います。Cloudflare Pages上の本番・Previewビルドでは、canonical、OG、JSON-LD、RSS、sitemapの基準URLを `https://ai.gaiden.news` に固定します。
 
 ## ニュース更新
 

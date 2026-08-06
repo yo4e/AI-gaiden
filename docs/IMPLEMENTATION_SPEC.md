@@ -11,8 +11,8 @@
 - ブランド名: **AI外電**
 - SEOタイトル: **海外AIニュース速報｜AI外電**
 - H1: **海外AI公式発表を日本語で毎日ダイジェスト**
-- 初期公開先: Cloudflare Pages の `*.pages.dev`
-- 独自ドメイン: 当面なし。継続運用の判断後に取得する。
+- 正式公開先: **https://ai.gaiden.news/**（Cloudflare Pages）
+- 独自ドメイン: **gaiden.news** を取得し、AI外電は **ai.gaiden.news** で運用する。
 
 ### 1.2 目的
 
@@ -27,6 +27,13 @@
 - GitHub Actionsで収集・翻訳・生成・コミットを自動化する。
 - GitHubへのpushを契機にCloudflare Pagesが自動デプロイする。
 - Blueskyへの自動投稿はPhase 2とし、Phase 1には実装しない。
+
+### 1.3 公開ドメイン
+
+- 外電通信: **https://gaiden.news/**
+- AI外電: **https://ai.gaiden.news/**
+- `ai-gaiden.pages.dev` はCloudflare Pagesの既存ホストとして残すが、canonical等の正規URLには使わない。
+- 記事、日次、配信元、RSSの既存パス構造は維持し、ホスト名だけを独自ドメインへ移行する。
 
 ## 2. 試験運用表示
 
@@ -67,7 +74,7 @@
 - SNS埋め込み
 - コメント機能
 - 会員機能
-- 独自ドメイン
+- 独自ドメイン（Phase 1では対象外。2026年8月6日にPhase 2で導入済み）
 - 広告
 - 有料購読
 - Cloudflare Workers / Pages Functions

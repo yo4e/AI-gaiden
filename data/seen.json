@@ -36,6 +36,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app"
     },
+    "url:4a6b874ba5509dc494df62125cb5063d7247b899afb73b3adaa49b716ce55fe7": {
+      "article_id": "aws-machine-learning-275b634e",
+      "first_seen_at": "2026-08-06T06:08:02.329753Z",
+      "published_at": "2026-08-05T18:00:57Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/run-production-ai-agents-in-n8n-with-amazon-bedrock-agentcore-harness"
+    },
     "url:4a9b73e77846b899c80a1aedb22971ace82ebcc3d3b85836ae454a41eb1c3e86": {
       "first_seen_at": "2026-08-04T06:07:12.261432Z",
       "published_at": "2026-08-03T22:00:00Z",
@@ -108,6 +115,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/allenai/olmoearth-infrastructure"
     },
+    "url:9eb8c760edade595b4c7ef0228c2cef0f074914ff1416d4158875e0a6200acd3": {
+      "article_id": "aws-machine-learning-fc27445c",
+      "first_seen_at": "2026-08-06T06:08:02.329753Z",
+      "published_at": "2026-08-05T18:50:02Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-lendingtree-built-a-multi-agent-mortgage-assistant-on-amazon-bedrock"
+    },
     "url:a5bc54280bf29efc8ba4026101ad5cf8b064542a06824bd9a96bcd6a316715e4": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
       "published_at": "2026-07-28T15:01:45Z",
@@ -120,17 +134,38 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b"
     },
+    "url:bf8f6a60ac502b75f65dc978b5ca844c5be162e560d0e4e7f43c2a41b0be720c": {
+      "article_id": "apple-ml-research-708b0043",
+      "first_seen_at": "2026-08-06T06:08:02.329753Z",
+      "published_at": "2026-08-05T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/taming-outlier-tokens"
+    },
     "url:c99ec862b4e71599bc42c6f96a94ea0c61758ad0ed0c0445d6331b28e4539a2c": {
       "first_seen_at": "2026-08-04T22:31:58.507698Z",
       "published_at": "2026-08-04T19:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models"
     },
+    "url:db756ec4d6e59ca936da7aa8eca44d5d6459a0ef221677a8ea82662f0ffa317c": {
+      "article_id": "aws-machine-learning-27a97a3d",
+      "first_seen_at": "2026-08-06T06:08:02.329753Z",
+      "published_at": "2026-08-05T18:09:03Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-mobileye-transformed-support-operations-using-amazon-bedrock-agentcore"
+    },
     "url:deec56a13e2b9b57f5b59222a713843e545d12e56c5cfa7a8c4462845968c02e": {
       "first_seen_at": "2026-08-04T00:16:06.231356Z",
       "published_at": "2026-08-03T07:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live"
+    },
+    "url:ea850b1a9c912609462a439893945e59b89d629abde9532c3a32b7330d6d6442": {
+      "article_id": "aws-machine-learning-8c14dce9",
+      "first_seen_at": "2026-08-06T06:08:02.329753Z",
+      "published_at": "2026-08-05T18:02:23Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-we-built-an-mcp-bridge-to-give-our-agentcore-hosted-ai-agent-access-to-local-mcp-tools"
     },
     "url:f1d4877545a986a0c7349b5eb5d1a44624b88463c561ca50722ab9ee15c187b7": {
       "first_seen_at": "2026-08-04T22:31:58.507698Z",

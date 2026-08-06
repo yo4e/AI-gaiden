@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
-      SITE_URL: https://example.pages.dev
+      SITE_URL: https://ai.gaiden.news
     steps:
       - name: Check out repository
         uses: actions/checkout@v7

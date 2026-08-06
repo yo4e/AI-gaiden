@@ -16,6 +16,7 @@ interface Article {
     publishedAt: string;
     updatedAt: string;
     imageUrl?: string | null;
+    imageLicense?: string | null;
     author?: string | null;
     translationStatus: 'complete' | 'partial';
     summaryTranslationStatus?:
@@ -35,6 +36,9 @@ interface Props {
 const { article } = Astro.props;
 const item = article.data;
 const internalPath = articlePath(item);
+const imageClass = item.imageUrl
+  ? 'news-card__image news-card__image--source'
+  : 'news-card__image news-card__image--default';
 const hasFallback =
   item.summaryFallbackApplied ||
   (item.summaryTranslationStatus && item.summaryTranslationStatus !== 'translated') ||
@@ -42,43 +46,46 @@ const hasFallback =
 ---
 
 <article class="news-card">
-  <a
-    class="news-card__image-wrap"
-    href={internalPath}
-    tabindex="-1"
-    aria-hidden="true"
-  >
-    <img
-      class="news-card__image"
-      src={item.imageUrl || '/default-news-image.svg'}
-      alt=""
-      width="320"
-      height="240"
-      loading="lazy"
-      decoding="async"
-      referrerpolicy="no-referrer"
-    />
-  </a>
+  <figure class="news-card__media">
+    <a class="news-card__image-wrap" href={internalPath} tabindex="-1" aria-hidden="true">
+      <img
+        class={imageClass}
+        src={item.imageUrl || '/default-news-image.svg'}
+        alt=""
+        width="320"
+        height="240"
+        loading="lazy"
+        decoding="async"
+        referrerpolicy="no-referrer"
+      />
+    </a>
+    {
+      item.imageUrl && (
+        <figcaption>
+          画像: {item.sourceName}公式RSS
+          {item.imageLicense && `（${item.imageLicense}）`}
+        </figcaption>
+      )
+    }
+  </figure>
   <div class="news-card__body">
     <div class="news-card__meta">
       <SourceBadge id={item.sourceId} name={item.sourceName} />
-      <time datetime={item.publishedAt}>
-        {formatJapaneseDateTime(item.publishedAt)} JST
-      </time>
+      <time datetime={item.publishedAt}>{formatJapaneseDateTime(item.publishedAt)} JST</time>
     </div>
     <a href={internalPath} class="news-card__content-link">
       <h2>{item.titleJa}</h2>
       <p class="original-title" lang="en">{item.titleOriginal}</p>
       {!hasFallback && <p>{item.excerptJa}</p>}
     </a>
-    {hasFallback && (
-      <p class="translation-note">
-        概要の翻訳がないため、公式リンクで発表内容をご確認ください。
-      </p>
-    )}
-    {item.author && (
-      <p class="byline">原文著者: {item.author}</p>
-    )}
+    {
+      hasFallback && (
+        <p class="translation-note">
+          概要の翻訳がないため、公式リンクで発表内容をご確認ください。
+        </p>
+      )
+    }
+    {item.author && <p class="byline">原文著者: {item.author}</p>}
     <div class="news-card__card-links">
       <a href={internalPath}>AI外電の短報を読む →</a>
       <a class="official" href={item.sourceUrl} rel="noopener noreferrer">

@@ -17,7 +17,7 @@ def test_production_domain_is_used_for_generated_absolute_urls() -> None:
 
     assert f"const PRODUCTION_SITE_URL = '{PRODUCTION_SITE_URL}'" in astro_config
     assert f"SITE_URL: {PRODUCTION_SITE_URL}" in ci_workflow
-    assert "'https://ai.gaiden.news'" in daily_workflow
+    assert f"SITE_URL: {PRODUCTION_SITE_URL}" in daily_workflow
     assert f"export const SITE_URL = '{PRODUCTION_SITE_URL}'" in site_constants
 
 

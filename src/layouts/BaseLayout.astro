@@ -1,7 +1,8 @@
 ---
+import type { ComponentProps } from 'astro/types';
 import SeoHead from '../components/SeoHead.astro';
 import TrialBanner from '../components/TrialBanner.astro';
-import type { ComponentProps } from 'astro/types';
+import { OPERATOR_NAME } from '../lib/site';
 import '../styles/theme.css';
 import '../styles/global.css';
 import '../styles/refinement.css';
@@ -56,7 +57,10 @@ const props = Astro.props;
             <a href="/privacy/">プライバシー</a>
             <a href="/feed.xml">RSS</a>
           </nav>
-          <small class="site-footer__legal">© {new Date().getFullYear()} AI外電 — 自動収集・自動翻訳による試験運用</small>
+          <small class="site-footer__legal">
+            <span>運営: {OPERATOR_NAME}</span>
+            <span>© {new Date().getFullYear()} AI外電 — 自動収集・自動翻訳による試験運用</span>
+          </small>
         </div>
       </div>
     </footer>

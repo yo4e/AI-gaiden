@@ -1,0 +1,90 @@
+name: Issue 40 one-time documentation patch
+
+on:
+  push:
+    branches:
+      - site/issue-40-custom-domain
+
+permissions:
+  contents: write
+
+jobs:
+  patch-documents:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out migration branch
+        uses: actions/checkout@v7
+        with:
+          ref: site/issue-40-custom-domain
+          fetch-depth: 0
+
+      - name: Update domain documentation
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          production_url = "https://ai.gaiden.news"
+
+          readme_path = Path("README.md")
+          readme = readme_path.read_text(encoding="utf-8")
+          if "## 公開URL" not in readme:
+              marker = "外部AI API・翻訳API、記事ページのHTMLスクレイピング、RSSにない `og:image` の取得は行いません。"
+              section = (
+                  "## 公開URL\n\n"
+                  f"- 正式URL: <{production_url}/>\n"
+                  "- 運営主体: <https://gaiden.news/>\n"
+                  "- `ai-gaiden.pages.dev` はCloudflare Pagesの既存ホストとして残しますが、正規URLには使用しません。\n\n"
+              )
+              readme = readme.replace(marker, section + marker, 1)
+          readme = readme.replace("SITE_URL=https://example.pages.dev npm run build", f"SITE_URL={production_url} npm run build")
+          readme = readme.replace(
+              "ローカル開発では `SITE_URL` を省略すると `http://localhost:4321` を使います。Cloudflare Pages上では `SITE_URL` が未設定だと意図的にビルドを失敗させます。",
+              "ローカル開発では `SITE_URL` を省略すると `http://localhost:4321` を使います。Cloudflare Pages上の本番・Previewビルドでは、canonical、OG、JSON-LD、RSS、sitemapの基準URLを `https://ai.gaiden.news` に固定します。",
+          )
+          readme_path.write_text(readme, encoding="utf-8")
+
+          spec_path = Path("docs/IMPLEMENTATION_SPEC.md")
+          spec = spec_path.read_text(encoding="utf-8")
+          spec = spec.replace(
+              "- 初期公開先: Cloudflare Pages の `*.pages.dev`",
+              f"- 正式公開先: **{production_url}/**（Cloudflare Pages）",
+          )
+          spec = spec.replace(
+              "- 独自ドメイン: 当面なし。継続運用の判断後に取得する。",
+              "- 独自ドメイン: **gaiden.news** を取得し、AI外電は **ai.gaiden.news** で運用する。",
+          )
+          spec = spec.replace(
+              "- 独自ドメイン\n",
+              "- 独自ドメイン（Phase 1では対象外。2026年8月6日にPhase 2で導入済み）\n",
+              1,
+          )
+          spec = spec.replace("SITE_URL=https://<実際のプロジェクト名>.pages.dev", f"SITE_URL={production_url}")
+          if "### 1.3 公開ドメイン" not in spec:
+              domain_section = f"""### 1.3 公開ドメイン
+
+- 外電通信: **https://gaiden.news/**
+- AI外電: **{production_url}/**
+- `ai-gaiden.pages.dev` はCloudflare Pagesの既存ホストとして残すが、canonical等の正規URLには使わない。
+- 記事、日次、配信元、RSSの既存パス構造は維持し、ホスト名だけを独自ドメインへ移行する。
+
+"""
+              spec = spec.replace("## 2. 試験運用表示", domain_section + "## 2. 試験運用表示", 1)
+          spec_path.write_text(spec, encoding="utf-8")
+
+          Path(".github/workflows/issue-40-docs-once.yml").unlink()
+          PY
+
+      - name: Commit documentation patch
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md docs/IMPLEMENTATION_SPEC.md .github/workflows/issue-40-docs-once.yml
+          if git diff --cached --quiet; then
+            echo 'No documentation changes were required.'
+            exit 0
+          fi
+          git commit -m 'docs: record ai.gaiden.news migration'
+          git push origin HEAD:site/issue-40-custom-domain

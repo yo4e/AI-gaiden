@@ -2,6 +2,71 @@
 
 この文書は、実装仕様とは別に、公開後の運用変更と判断理由を記録する。
 
+## 2026-08-07: Chromeで`gaiden.news`がブロックされた事象と復旧手順
+
+通常のChromeプロファイルで、`https://gaiden.news/`が開けたり、HTTP 403のようなエラー表示になったりする事象を調査した。
+
+調査時に再現した実際のエラーは、Cloudflareや配信元が返したHTTP 403ではなく、Chrome内部の`ERR_BLOCKED_BY_CLIENT`だった。
+
+### 確認結果
+
+- `https://ai.gaiden.news/`は通常Chromeで12回再読み込みし、すべて正常表示した
+- `https://gaiden.news/`は通常Chromeで12回再読み込みし、すべて`ERR_BLOCKED_BY_CLIENT`になった
+- `https://ai-gaiden.pages.dev/`と`https://gaiden-news.pages.dev/`は正常表示した
+- シークレットウィンドウでは`https://gaiden.news/`を正常表示できた
+- エラー時の`document.URL`は`chrome-error://chromewebdata/`だった
+- エラー本文は「このページは Chrome によってブロックされています」だった
+- Cloudflare Security Eventsには、該当ホスト・該当時間帯のイベントがなかった
+- Cloudflareへ到達したHTTPレスポンスがないため、`cf-ray`、`server`、`cf-cache-status`、`cf-mitigated`等のレスポンスヘッダーも存在しなかった
+
+以上から、調査時に再現した事象はCloudflareやサイト実装ではなく、通常Chromeプロファイル内でネットワーク送信前に遮断されたものと判断した。
+
+### MetaMaskとの関係
+
+Chrome拡張機能MetaMaskのcontent scriptから、次の警告が出ていた。
+
+- `MaxListenersExceededWarning`
+- `ObjectMultiplex - orphaned data`
+- `app-init-liveness`
+- `background-liveness`
+
+拡張機能IDは`nkbihfbeogaeaoehlefnkodbefgpgknn`、スクリプトは`scripts/contentscript.js`だった。
+
+MetaMaskを一時的に無効化すると`https://gaiden.news/`は正常表示した。その後MetaMaskを再有効化しても正常表示を維持した。
+
+このため、恒常的なドメインブロックではなく、MetaMaskのcontent script、バックグラウンド処理、Service Worker等の一時的な内部状態不良が解消した可能性が高い。ただし、警告と遮断の直接的な因果関係までは確認していない。
+
+### 再発時の初動
+
+同様の表示障害が起きた場合は、Cloudflare設定を変更する前に次の順で切り分ける。
+
+1. エラー表示が`HTTP ERROR 403`か`ERR_BLOCKED_BY_CLIENT`か確認する
+2. シークレットウィンドウで同じURLを開く
+3. `*.pages.dev`のPages標準ドメインでも確認する
+4. 通常Chromeだけ失敗する場合は、MetaMaskを一度無効化して再読み込みする
+5. 復旧後にMetaMaskを再有効化し、再発するか確認する
+6. 直らない場合は、広告ブロック、セキュリティ、VPN、プロキシ等の拡張機能を順に確認する
+
+`ERR_BLOCKED_BY_CLIENT`で`document.URL`が`chrome-error://chromewebdata/`の場合、Cloudflareへリクエストが届いていないため、Security EventsやRay IDの調査を先に行っても該当記録は得られない。
+
+### 本物のHTTP 403が再発した場合
+
+Chromeのエラーではなく、documentリクエストとしてHTTP 403が記録された場合は別事象として扱う。
+
+DevToolsのNetworkで次を記録し、`cf-ray`をCloudflare Security Eventsと照合する。
+
+- Request URL
+- Request Method
+- Status Code
+- `cf-ray`
+- `server`
+- `cf-cache-status`
+- `cf-mitigated`
+- `location`
+- Response本文
+
+原因が特定できるまで、DNS、Pages Custom domains、Managed Rules、Redirect Rules等の設定は変更しない。
+
 ## 2026-08-04: RSS取得頻度を6時間ごとへ変更
 
 公式フィード追加後の一時的な毎時実行で、自動取得・自動生成・mainへのコミット・Cloudflare Pagesへの反映が正常に動くことを確認したため、定期実行を6時間ごとへ変更した。

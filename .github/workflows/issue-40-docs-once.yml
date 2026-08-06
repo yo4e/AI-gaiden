@@ -62,14 +62,13 @@ jobs:
           )
           spec = spec.replace("SITE_URL=https://<実際のプロジェクト名>.pages.dev", f"SITE_URL={production_url}")
           if "### 1.3 公開ドメイン" not in spec:
-              domain_section = f"""### 1.3 公開ドメイン
-
-- 外電通信: **https://gaiden.news/**
-- AI外電: **{production_url}/**
-- `ai-gaiden.pages.dev` はCloudflare Pagesの既存ホストとして残すが、canonical等の正規URLには使わない。
-- 記事、日次、配信元、RSSの既存パス構造は維持し、ホスト名だけを独自ドメインへ移行する。
-
-"""
+              domain_section = (
+                  "### 1.3 公開ドメイン\n\n"
+                  "- 外電通信: **https://gaiden.news/**\n"
+                  f"- AI外電: **{production_url}/**\n"
+                  "- `ai-gaiden.pages.dev` はCloudflare Pagesの既存ホストとして残すが、canonical等の正規URLには使わない。\n"
+                  "- 記事、日次、配信元、RSSの既存パス構造は維持し、ホスト名だけを独自ドメインへ移行する。\n\n"
+              )
               spec = spec.replace("## 2. 試験運用表示", domain_section + "## 2. 試験運用表示", 1)
           spec_path.write_text(spec, encoding="utf-8")
 

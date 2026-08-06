@@ -135,13 +135,11 @@
   aspect-ratio: 16 / 7;
 }
 
-.article-hero__image--source {
-  object-fit: cover;
-}
-
+.article-hero__image--source,
 .article-hero__image--default {
-  padding: clamp(1rem, 4vw, 2.5rem);
-  object-fit: contain;
+  padding: 0;
+  object-fit: cover;
+  object-position: center;
 }
 
 .site-footer__legal {

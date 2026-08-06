@@ -26,7 +26,7 @@ jobs:
       ARGOS_PACKAGES_DIR: ${{ github.workspace }}/.cache/argos/packages
       ARGOS_AUTO_INSTALL: '1'
       BOOTSTRAP_DAYS: ${{ inputs.bootstrap_days || '3' }}
-      SITE_URL: ${{ vars.SITE_URL || 'https://example.pages.dev' }}
+      SITE_URL: https://ai.gaiden.news
     steps:
       - name: Check out main
         uses: actions/checkout@v7

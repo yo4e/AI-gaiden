@@ -23,7 +23,7 @@ Bluesky投稿は今回の対象外です。
 - 新着がある場合だけ生成コンテンツをmainへ自動コミットする。
 - Cloudflare PagesはGitHubリポジトリとのGit Integrationでデプロイする。
 - Wrangler、Cloudflare API Token、Direct Uploadは使わない。
-- 当面は`pages.dev` URLを使い、独自ドメインを前提にしない。
+- 正式な公開URLは`https://ai.gaiden.news/`とし、`*.pages.dev`はCloudflare Pagesの既存ホストとして扱う。
 - SecretやTokenをコミットしない。
 - Bluesky関連コードを実装しない。
 
@@ -78,11 +78,12 @@ CodexはCloudflareアカウントへアクセスできなくてもよい。リ�
 - Build command: `npm ci && npm run build`
 - Output directory: `dist`
 - Root directory: `/`
-- 本番環境変数: `SITE_URL=https://<実際のプロジェクト名>.pages.dev`
+- Custom domain: `ai.gaiden.news`
+- GitHub Actionsやローカル本番検証の`SITE_URL`: `https://ai.gaiden.news`
 
-GitHub Actionsがmainへ生成コンテンツをpushすると、Cloudflare Pages側のGit Integrationが自動で再ビルド・再デプロイする構成です。
+Cloudflare Pages上のビルドではAstro設定が`https://ai.gaiden.news`を正規URLとして使用します。GitHub Actionsがmainへ生成コンテンツをpushすると、Cloudflare Pages側のGit Integrationが自動で再ビルド・再デプロイする構成です。
 
-Preview Deploymentでは`CF_PAGES_BRANCH`等を使い、`main`以外を`noindex,nofollow`にしてください。
+Preview Deploymentでは`CF_PAGES_BRANCH`等を使い、`main`以外を`noindex,nofollow`にしてください。Previewのcanonical、OG、構造化データは本番ドメインを指します。
 
 ## 実装時の判断
 

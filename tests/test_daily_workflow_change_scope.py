@@ -3,7 +3,6 @@ from __future__ import annotations
 from pathlib import Path
 from subprocess import CompletedProcess, run
 
-
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 WORKFLOW_PATH = REPOSITORY_ROOT / ".github" / "workflows" / "daily-news.yml"
 

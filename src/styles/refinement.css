@@ -5,7 +5,12 @@
  */
 
 .hero h1 {
-  white-space: pre-line;
+  font-size: clamp(1.25rem, 6.8vw, 2.5rem);
+}
+
+.hero h1 span {
+  display: block;
+  white-space: nowrap;
 }
 
 .hero__trial {

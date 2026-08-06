@@ -5,7 +5,7 @@ export const DEFAULT_DESCRIPTION =
 export const SITE_HEADLINE = '海外AI公式発表を\n日本語で毎日ダイジェスト';
 export const REPOSITORY_URL = 'https://github.com/yo4e/AI-gaiden';
 export const OPERATOR_NAME = '外電通信';
-export const OPERATOR_DISCLOSURE = '外電通信は、個人事業主・山田が運営する事業の一つです。';
+export const OPERATOR_DISCLOSURE = '外電通信は、個人事業主・山田佳江が運営する事業の一つです。';
 export const OPERATOR_STATEMENT = `AI外電は、${OPERATOR_NAME}が運営しています。${OPERATOR_DISCLOSURE}`;
 
 export function isPreviewBuild(): boolean {

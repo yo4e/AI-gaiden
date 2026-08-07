@@ -108,6 +108,18 @@ python scripts/update_news.py --bootstrap-days 3
 
 既存のレガシー日次Markdownからの移行は、移行前のチェックアウトで一度だけ `python scripts/migrate_articles.py` を実行します。移行後は `src/content/articles/` の個別記事が正本となり、日次Markdownは残しません。
 
+### 翻訳品質指標の集計
+
+記事frontmatterに保存された翻訳状態、品質ゲート、フォールバック、人間修正、訂正履歴を、外部サービスやネットワークアクセスなしで集計できます。本文は品質判定に使わず、記事ファイルも変更しません。
+
+```bash
+python scripts/report_quality_metrics.py
+python scripts/report_quality_metrics.py --format json
+python scripts/report_quality_metrics.py --source openai-news --from 2026-08-01 --to 2026-08-31
+```
+
+標準出力のMarkdownは人間向け、`--format json`は機械処理向けです。全体、`sourceId`別、`dateJst`別の集計を同じ入力から決定的に生成します。状態・品質ゲート・フォールバック・人間修正・訂正履歴の割合は記録されたフィールドを分母とし、fallback reasonと品質問題の割合は選択した全記事を分母とします。各値には件数、分母、分母の種類、割合を含み、旧記事の欠損フィールドは欠損件数として別に扱います。
+
 フィード取得の条件付きGET状態は `.cache/feed-state.json` に保存され、日次Actionsでは専用cacheから前回値を復元します。Gitには含めません。元記事HTMLへのリクエストを行うコードはありません。
 
 ### 翻訳モデルとライセンス

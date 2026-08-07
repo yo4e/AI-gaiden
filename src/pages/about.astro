@@ -39,6 +39,37 @@ import { OPERATOR_NAME, OPERATOR_URL, REPOSITORY_URL } from '../lib/site';
       </li>
     </ol>
 
+    <h2>技術構成</h2>
+    <p>
+      AI外電は、公式フィードの取得から翻訳、記事生成、テスト、公開までを自動化した静的サイトとして構成しています。
+    </p>
+    <ul>
+      <li>
+        <strong>フロントエンド:</strong> AstroとTypeScriptを使用し、記事をMarkdownで管理して静的HTMLとしてビルドします。
+      </li>
+      <li>
+        <strong>収集・生成:</strong> Python 3.12とfeedparserを中心に、公式RSS/Atomの取得、正規化、重複排除、記事データ生成を行います。
+      </li>
+      <li>
+        <strong>翻訳:</strong> Argos Translateの英日モデルをGitHub Actions実行環境内で動かし、外部のAI APIや翻訳APIに送信せず日本語化します。品質ゲートを通らない場合は原題や安全な案内文へフォールバックします。
+      </li>
+      <li>
+        <strong>自動化:</strong> GitHub Actionsを6時間ごとに実行し、新着がある場合だけ生成コンテンツをmainへコミットします。公開前にPython、Astro、RSSなどの検証を通します。
+      </li>
+      <li>
+        <strong>配信:</strong> Cloudflare PagesのGit Integrationを利用し、mainの更新を検知して静的サイトを自動ビルド・デプロイします。
+      </li>
+      <li>
+        <strong>品質管理:</strong> pytest、Ruff、Astro check、Prettier、リポジトリ整合性検証、RSS・sitemap検証を組み合わせ、自動更新が変更できるファイル範囲も制限しています。
+      </li>
+    </ul>
+    <p>
+      記事HTMLのスクレイピングや外部AI APIへの依存を避け、一次情報への近さ、再現性、低い運用コスト、障害時の切り分けやすさを重視しています。実装の詳細は<a
+        href={REPOSITORY_URL}
+        rel="noopener noreferrer">GitHubリポジトリ</a
+      >で公開しています。
+    </p>
+
     <h2>取得しないもの</h2>
     <p>
       元記事ページのHTMLはスクレイピングしません。RSSにない本文、<code>og:image</code

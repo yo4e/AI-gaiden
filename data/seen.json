@@ -40,6 +40,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app"
     },
+    "url:2081fd8810403c1a0211ecffee53b72f418536664714228771ed593eb426abb9": {
+      "article_id": "aws-machine-learning-c33164f7",
+      "first_seen_at": "2026-08-07T21:58:33.543829Z",
+      "published_at": "2026-08-07T16:22:50Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-trends-automates-root-cause-analysis-with-amazon-bedrock"
+    },
     "url:23ccd9ff0c11ef81ec2380b190cca16b9bf8060ea7b88f5f2fe29d03a80c6c2f": {
       "article_id": "hugging-face-f07d5d44",
       "first_seen_at": "2026-08-06T23:21:45.836993Z",
@@ -104,6 +111,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly"
     },
+    "url:624979042481ff504b8cdd9f4fefd24e5c9226e8b96822c1d4945a834a37fbab": {
+      "article_id": "hugging-face-a7333d02",
+      "first_seen_at": "2026-08-07T21:58:33.543829Z",
+      "published_at": "2026-08-07T17:53:32Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/allenai/tutormoments"
+    },
     "url:639d81441a0d947392fec3ea925322625063884e4fab0a9a5833310a2d78f30b": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
       "published_at": "2026-08-04T13:00:00Z",
@@ -166,6 +180,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/circles"
     },
+    "url:9a05a28afb7c8eb8e003cdda5e7988e79896dcd5d467549a81c874733a81edaf": {
+      "article_id": "aws-machine-learning-2ae4977b",
+      "first_seen_at": "2026-08-07T21:58:33.543829Z",
+      "published_at": "2026-08-07T16:26:58Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-cohere-health-digitizes-clinical-policies-using-amazon-bedrock-agentcore"
+    },
     "url:9c57623ef609667de3c28690663edbc3d6ea9d6e32d9bc0cafa73a9b64ae67ae": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
       "published_at": "2026-07-28T16:00:00Z",
@@ -204,6 +225,13 @@
       "published_at": "2026-07-28T15:01:45Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders"
+    },
+    "url:a5c2e6f70feec70eb8fe6adb333476e641bbfe79de6e0ee2f3ba2e707d8e1a50": {
+      "article_id": "aws-machine-learning-3dce1827",
+      "first_seen_at": "2026-08-07T21:58:33.543829Z",
+      "published_at": "2026-08-07T16:21:00Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/determining-playoff-clinching-scenarios-in-the-nhl-using-constraint-programming"
     },
     "url:aa21db80f8b7b7664c23f0b5de6fc014a64920e8fdb45e2877008c81969f17ab": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
@@ -264,6 +292,13 @@
       "published_at": "2026-08-03T07:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live"
+    },
+    "url:e66cc71d0943fe40ad6453dad08e9df8e67072ce6e9fa35d606a5faf12a1f86c": {
+      "article_id": "openai-news-d2941603",
+      "first_seen_at": "2026-08-07T21:58:33.543829Z",
+      "published_at": "2026-08-07T15:20:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities"
     },
     "url:ea850b1a9c912609462a439893945e59b89d629abde9532c3a32b7330d6d6442": {
       "article_id": "aws-machine-learning-8c14dce9",

@@ -20,6 +20,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai"
     },
+    "url:10ff1b585a39057ba378a0097cca952a32686f2d91acb92c41c59855618bcc41": {
+      "article_id": "microsoft-ai-bf5f8b6f",
+      "first_seen_at": "2026-08-07T01:03:20.241097Z",
+      "published_at": "2026-08-04T15:00:00Z",
+      "source": "microsoft-ai",
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/08/04/accelerating-frontier-transformation-enrich-employee-experience"
+    },
     "url:129511f54188e7df4ed8e9053336c86e351ea4b1cebcb97326b55267c4322922": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
       "published_at": "2026-08-04T00:00:00Z",
@@ -223,6 +230,13 @@
       "published_at": "2026-08-04T19:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models"
+    },
+    "url:c9a3fec6ff09eaff115ea42e54d3be3de2a238a4d0d9e4d8bd19fe5fa6ee0c11": {
+      "article_id": "apple-ml-research-31cfde2d",
+      "first_seen_at": "2026-08-07T01:03:20.241097Z",
+      "published_at": "2026-08-06T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/deepambigqa-multihop-questions"
     },
     "url:db756ec4d6e59ca936da7aa8eca44d5d6459a0ef221677a8ea82662f0ffa317c": {
       "article_id": "aws-machine-learning-27a97a3d",

@@ -950,6 +950,36 @@ Phase 1ではWranglerによる直接デプロイを使用しない。Cloudflare 
 
 処理は一時ディレクトリで生成し、全検証成功後に本番ファイルへ置き換える。途中失敗で壊れたMarkdownを残さない。
 
+### 18.3 翻訳品質指標レポート（Issue #44）
+
+翻訳品質に関する運用指標は、アクセス解析や外部サービスを使わず、`src/content/articles/**/*.md` のYAML frontmatterだけから [`scripts/report_quality_metrics.py`](../scripts/report_quality_metrics.py) で再現可能に集計する。Markdown本文は読み取って判定せず、記事ファイルも書き換えない。ネットワークアクセスも行わない。
+
+CLIは次の形式を提供する。
+
+```bash
+python scripts/report_quality_metrics.py
+python scripts/report_quality_metrics.py --format json
+python scripts/report_quality_metrics.py --source openai-news
+python scripts/report_quality_metrics.py --from 2026-08-01 --to 2026-08-31
+```
+
+`--source`は`sourceId`の完全一致、`--from`と`--to`は`dateJst`の包含範囲で適用する。フィルター後の入力から、全体、配信元別、日付別を同じ順序で出力する。標準出力のMarkdownは人間向け、`--format json`は`schemaVersion`、フィルター、総記事数、集計、グループ別集計を含む機械処理向け形式とする。
+
+最低限の集計項目は次のとおり。
+
+- `translationStatus`、`titleTranslationStatus`、`summaryTranslationStatus`、`titleQualityGate`、`summaryQualityGate`の値別件数・割合
+- `titleFallbackApplied`、`summaryFallbackApplied`、`humanEdited`が`true`の件数・割合
+- 公開可能な`correctionHistory`を持つ記事の件数・割合
+- `titleFallbackReasons`、`summaryFallbackReasons`、`translationFallbackReasons`の理由別件数
+- 品質ゲート不合格、タイトル/概要の翻訳失敗、タイトル/概要の原文欠落、`translationStatus=partial`の件数・割合
+- 配信元別・日付別のタイトル/概要フォールバック率
+
+割合の分母は指標ごとに明示する。状態、品質ゲート、フォールバック、人間修正、訂正履歴は該当フィールドが記録された記事を分母とし、fallback reasonと品質問題は選択後の全記事を分母とする。フィールドがない旧記事は値を推測せず、欠損件数として記録する。分母が0の場合はJSONの`rate`を`null`、Markdownでは`—`とする。
+
+「公開可能な訂正履歴」は、サイトの`ArticleBulletin.astro`と同じく、履歴要素に有効な日付（`YYYY-MM-DD`またはタイムゾーン付きISO日時）と説明（`description`または`summary`）があるものとする。空配列や不正な要素は件数に含めない。
+
+このスクリプトの定義はfixtureベースのpytestで固定し、完全翻訳、タイトル/概要フォールバック、品質ゲート、翻訳失敗、原文欠落、旧記事、`humanEdited`、訂正履歴、配信元/日付フィルター、ゼロ除算、出力順序を検証する。アクセス解析による訪問者指標やサイト上への品質指標公開は対象外とする。
+
 ## 19. テスト要件
 
 ### 19.1 単体テスト

@@ -233,6 +233,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/determining-playoff-clinching-scenarios-in-the-nhl-using-constraint-programming"
     },
+    "url:a75caca250ebf501fe2294137e1e42a169455cc61b33fef053c8b0bee93e5a66": {
+      "article_id": "apple-ml-research-1b8fa118",
+      "first_seen_at": "2026-08-08T04:31:57.464657Z",
+      "published_at": "2026-08-07T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/arbitrage-efficient-reasoning"
+    },
     "url:aa21db80f8b7b7664c23f0b5de6fc014a64920e8fdb45e2877008c81969f17ab": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
       "published_at": "2026-08-04T13:58:29Z",
@@ -266,6 +273,13 @@
       "published_at": "2026-08-05T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/taming-outlier-tokens"
+    },
+    "url:c797381f6cd4b45af698941ec3ddb6aebb6d0308654d793fecd6d6ea1d0d1e69": {
+      "article_id": "apple-ml-research-02c8e899",
+      "first_seen_at": "2026-08-08T04:31:57.464657Z",
+      "published_at": "2026-08-07T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/diffusion-autoregressive-performance"
     },
     "url:c99ec862b4e71599bc42c6f96a94ea0c61758ad0ed0c0445d6331b28e4539a2c": {
       "first_seen_at": "2026-08-04T22:31:58.507698Z",

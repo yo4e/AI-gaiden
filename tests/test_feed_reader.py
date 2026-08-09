@@ -3,8 +3,9 @@ from __future__ import annotations
 from datetime import UTC
 
 import pytest
+import requests
 
-from scripts.feed_reader import FeedParseError, parse_feed_bytes
+from scripts.feed_reader import FeedParseError, FeedReader, parse_feed_bytes
 from scripts.models import FeedConfig
 
 
@@ -56,3 +57,39 @@ def test_marks_missing_date_unknown(feed_config: FeedConfig) -> None:
     assert item.date_status == "unknown"
     assert item.published_at is None
     assert item.dedupe_key == ""
+
+
+def test_fetch_accepts_feed_xml_served_as_text_plain(
+    tmp_path, fixture_dir, feed_config: FeedConfig, monkeypatch
+) -> None:
+    response = requests.Response()
+    response.status_code = 200
+    response._content = (fixture_dir / "rss.xml").read_bytes()
+    response.headers["Content-Type"] = "text/plain; charset=utf-8"
+    response.url = feed_config.url
+
+    reader = FeedReader(tmp_path / "feed-state.json")
+    monkeypatch.setattr(reader.session, "get", lambda *args, **kwargs: response)
+
+    result, _ = reader._fetch(feed_config)
+
+    assert result.success is True
+    assert len(result.items) == 2
+
+
+def test_fetch_rejects_html_with_non_feed_content_type(
+    tmp_path, feed_config: FeedConfig, monkeypatch
+) -> None:
+    response = requests.Response()
+    response.status_code = 200
+    response._content = b"<!doctype html><html><body>not a feed</body></html>"
+    response.headers["Content-Type"] = "text/html; charset=utf-8"
+    response.url = feed_config.url
+
+    reader = FeedReader(tmp_path / "feed-state.json")
+    monkeypatch.setattr(reader.session, "get", lambda *args, **kwargs: response)
+
+    result, _ = reader._fetch(feed_config)
+
+    assert result.success is False
+    assert result.error == "Unexpected Content-Type: text/html; charset=utf-8"

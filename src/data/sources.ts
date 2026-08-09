@@ -96,7 +96,7 @@ export const sources: Source[] = [
     homepage: 'https://cohere.com/blog',
     feedUrl: 'https://cohere.com/blog/rss.xml',
     description: 'Cohereの企業向けAI、モデル、研究、導入事例に関する公式ブログ',
-    enabled: true,
+    enabled: false,
     categories: ['artificial-intelligence', 'enterprise', 'research'],
     imagePolicy: 'rss_only',
   },

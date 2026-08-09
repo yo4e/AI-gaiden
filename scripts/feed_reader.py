@@ -42,6 +42,22 @@ class FeedResult:
     error: str | None = None
 
 
+def _looks_like_feed_xml(payload: bytes) -> bool:
+    prefix = payload[:2048].lstrip()
+    if prefix.startswith(b"\xef\xbb\xbf"):
+        prefix = prefix[3:].lstrip()
+    lowered = prefix.lower()
+    if lowered.startswith((b"<rss", b"<feed")):
+        return True
+    if not lowered.startswith(b"<?xml"):
+        return False
+    declaration_end = lowered.find(b"?>")
+    if declaration_end == -1:
+        return False
+    root = lowered[declaration_end + 2 :].lstrip()
+    return root.startswith((b"<rss", b"<feed"))
+
+
 def parse_feed_bytes(payload: bytes, config: FeedConfig) -> list[NormalizedItem]:
     if len(payload) > MAX_FEED_BYTES:
         raise FeedParseError(f"Feed exceeds {MAX_FEED_BYTES} bytes")
@@ -180,8 +196,15 @@ class FeedReader:
                 return FeedResult(config, True, True, ()), False
             response.raise_for_status()
             content_type = response.headers.get("Content-Type", "").lower()
-            if not any(marker in content_type for marker in ACCEPTED_CONTENT_TYPES):
+            known_content_type = any(marker in content_type for marker in ACCEPTED_CONTENT_TYPES)
+            if not known_content_type and not _looks_like_feed_xml(response.content):
                 raise FeedParseError(f"Unexpected Content-Type: {content_type or 'missing'}")
+            if not known_content_type:
+                LOGGER.warning(
+                    "Feed %s returned unusual Content-Type %s; accepted by XML signature",
+                    config.id,
+                    content_type or "missing",
+                )
             items = parse_feed_bytes(response.content, config)
         except (requests.RequestException, FeedParseError) as exc:
             return FeedResult(config, False, False, (), str(exc)), False

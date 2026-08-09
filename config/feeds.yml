@@ -112,7 +112,7 @@ feeds:
     url: https://cohere.com/blog/rss.xml
     homepage: https://cohere.com/blog
     language: en
-    enabled: true
+    enabled: false
     priority: 76
     max_items_per_run: 5
     image_policy: rss_only

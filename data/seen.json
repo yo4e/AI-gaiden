@@ -1,5 +1,12 @@
 {
   "items": {
+    "url:013cf06e857ce80e8c35cee5cc798d8411a0b5b9696bdfe840b80c5705f56dc0": {
+      "article_id": "google-ai-c0831638",
+      "first_seen_at": "2026-08-10T16:12:13.389844Z",
+      "published_at": "2026-08-10T14:30:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/products/ads-commerce/google-ads-analytics-ai-updates"
+    },
     "url:0a728b4df1ea2e24ba1c82d26b599c97bdb14f7c45ec405936ae9072a6839848": {
       "article_id": "aws-machine-learning-cca0719b",
       "first_seen_at": "2026-08-06T23:21:45.836993Z",
@@ -85,6 +92,13 @@
       "published_at": "2026-07-27T16:00:00Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-getting-started"
+    },
+    "url:3d196224ab27a2df369cbcf0994d8b85125e1e44f774a26b897579f4f210801c": {
+      "article_id": "openai-news-d9113ca7",
+      "first_seen_at": "2026-08-10T16:12:13.389844Z",
+      "published_at": "2026-08-10T14:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/responsible-ai-infrastructure-texas"
     },
     "url:44555fb737bc2545bd6b3d31cd7e9a4709807d68ede8586899514ba10b54b77d": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
@@ -174,6 +188,13 @@
       "published_at": "2026-08-06T18:57:55Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/securing-ai-agents-with-temporal-policies-in-amazon-bedrock-agentcore"
+    },
+    "url:95f74aeac90a93bb12cebd08a06d378eabf5fb66ffb6f949438941dc9bb3bdbe": {
+      "article_id": "openai-news-c69af76a",
+      "first_seen_at": "2026-08-10T16:12:13.389844Z",
+      "published_at": "2026-08-10T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/model-ml"
     },
     "url:96537f9acc12bc3d68e6b6fb2d661a65772f583697352d4f1c191b91c0ae113e": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
@@ -313,6 +334,13 @@
       "published_at": "2026-08-03T07:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live"
+    },
+    "url:dfb586131bf3d3cb04b45c447ddda1020a0bfabb4f918d58630b10079556383d": {
+      "article_id": "hugging-face-8ba0a4cf",
+      "first_seen_at": "2026-08-10T16:12:13.389844Z",
+      "published_at": "2026-08-10T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/muse-glimmer"
     },
     "url:e66cc71d0943fe40ad6453dad08e9df8e67072ce6e9fa35d606a5faf12a1f86c": {
       "article_id": "openai-news-d2941603",

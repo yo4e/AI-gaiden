@@ -7,6 +7,13 @@
       "source": "google-ai",
       "url": "https://blog.google/products/ads-commerce/google-ads-analytics-ai-updates"
     },
+    "url:081601c279be28d3ef5aa58c1540b9bc9f0ea3d8209b55f9f8aeb4a2083ecf36": {
+      "article_id": "openai-news-303f6c98",
+      "first_seen_at": "2026-08-10T22:01:43.331237Z",
+      "published_at": "2026-08-10T10:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows"
+    },
     "url:0a728b4df1ea2e24ba1c82d26b599c97bdb14f7c45ec405936ae9072a6839848": {
       "article_id": "aws-machine-learning-cca0719b",
       "first_seen_at": "2026-08-06T23:21:45.836993Z",
@@ -47,6 +54,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app"
     },
+    "url:167c901a4800acececb4fdc340f543511cf773629cebd13f55c38d60ff42b290": {
+      "article_id": "aws-machine-learning-35086584",
+      "first_seen_at": "2026-08-10T22:01:43.331237Z",
+      "published_at": "2026-08-10T16:30:46Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-nops-shipped-finops-agents-75-faster-with-amazon-bedrock-agentcore"
+    },
     "url:2081fd8810403c1a0211ecffee53b72f418536664714228771ed593eb426abb9": {
       "article_id": "aws-machine-learning-c33164f7",
       "first_seen_at": "2026-08-07T21:58:33.543829Z",
@@ -60,6 +74,13 @@
       "published_at": "2026-08-06T00:00:00Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/baseten"
+    },
+    "url:29b0e61ec6cd1ed38342bd3f0d233e41901ac8706bcd8411d89efe21c8f9b7d6": {
+      "article_id": "openai-news-f3b45494",
+      "first_seen_at": "2026-08-10T22:01:43.331237Z",
+      "published_at": "2026-08-10T10:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands"
     },
     "url:3760a4949caa8e909bb3fa0034c4318087e544037959fa8a071a488a2599495f": {
       "first_seen_at": "2026-08-04T00:16:06.231356Z",
@@ -125,6 +146,20 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly"
     },
+    "url:5367cc95a8fd98172eb15540985f3472c41b6f393d6d65c9bf889b4f9238cbc1": {
+      "article_id": "openai-news-681282c2",
+      "first_seen_at": "2026-08-10T22:01:43.331237Z",
+      "published_at": "2026-08-10T17:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/building-an-ai-native-finance-function"
+    },
+    "url:5890b1cfd4cc38aa3885e02e9fc3010d881da63d5d8b82ee82ae0ed7c4531d58": {
+      "article_id": "hugging-face-2406b838",
+      "first_seen_at": "2026-08-10T22:01:43.331237Z",
+      "published_at": "2026-08-10T16:25:36Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents"
+    },
     "url:624979042481ff504b8cdd9f4fefd24e5c9226e8b96822c1d4945a834a37fbab": {
       "article_id": "hugging-face-a7333d02",
       "first_seen_at": "2026-08-07T21:58:33.543829Z",
@@ -137,6 +172,13 @@
       "published_at": "2026-08-04T13:00:00Z",
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026"
+    },
+    "url:65c11cd6697d24998d9d17cfaffde38706fc2f1b41e928f72fde891ca215539a": {
+      "article_id": "github-ai-ml-a7943a0b",
+      "first_seen_at": "2026-08-10T22:01:43.331237Z",
+      "published_at": "2026-08-10T19:30:00Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/engineering/using-the-github-copilot-sdk-for-java"
     },
     "url:6bb3f934048965cc8fe40ff7286bc1d73fdff5cc902619e78dc98b0f853d7216": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
@@ -374,6 +416,13 @@
       "published_at": "2026-08-03T17:24:15Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/from-weeks-to-minutes-how-formula-1-uses-agentic-ai-on-aws-to-accelerate-data-operations"
+    },
+    "url:ff38a160f9f7629841b74335c9a1a1b080e8be6e4f36590262218e5d80497b3c": {
+      "article_id": "aws-machine-learning-252f8649",
+      "first_seen_at": "2026-08-10T22:01:43.331237Z",
+      "published_at": "2026-08-10T16:34:37Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/run-interactive-ides-on-amazon-eks-with-sagemaker-ai-to-power-up-your-ai-workflows"
     }
   }
 }

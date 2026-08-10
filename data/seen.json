@@ -149,6 +149,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/introducing-web-search-on-amazon-bedrock-for-foundation-model-grounding"
     },
+    "url:815edfe6383208a72cfe7f7d043ea0afc2543b1ffb0ccb04372202c8f4eb8186": {
+      "article_id": "hugging-face-4007b14a",
+      "first_seen_at": "2026-08-10T10:39:12.380171Z",
+      "published_at": "2026-08-10T10:05:36Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation"
+    },
     "url:8434f80dc8576dd4ddf9d8039fc98ca4a025b6495b48a22bc51919ab454ccf34": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
       "published_at": "2026-08-04T16:02:21Z",

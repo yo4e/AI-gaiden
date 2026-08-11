@@ -6,12 +6,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import {
   articleDateRange,
   articlePath,
+  dailyDisplayTitle,
   dailyDescription,
   dailyTitle,
   groupArticlesByDate,
   sortArticles,
 } from '../../lib/articles';
-import { formatJapaneseDate, formatJapaneseDateTime } from '../../lib/site';
+import { defaultNewsImagePath, formatJapaneseDate, formatJapaneseDateTime } from '../../lib/site';
 
 interface Props {
   date: string;
@@ -35,7 +36,8 @@ export async function getStaticPaths() {
 }
 
 const { date, articles, previous, next } = Astro.props;
-const title = dailyTitle(date, articles);
+const seoTitle = dailyTitle(date, articles);
+const displayTitle = dailyDisplayTitle(date, articles.length);
 const description = dailyDescription(date, articles);
 const canonicalPath = `/daily/${date}/`;
 const pageUrl = new URL(canonicalPath, Astro.site).href;
@@ -44,7 +46,7 @@ const structuredData = [
   {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: title,
+    name: seoTitle,
     description,
     url: pageUrl,
     datePublished: range.publishedAt,
@@ -82,25 +84,27 @@ const structuredData = [
 ---
 
 <BaseLayout
-  title={title}
+  title={seoTitle}
   description={description}
   canonicalPath={canonicalPath}
   image={articles.find((article) => article.data.imageUrl)?.data.imageUrl ||
-    '/default-news-image.png'}
+    defaultNewsImagePath(articles[0]?.data.articleId || date)}
   type="article"
   publishedAt={range.publishedAt}
   updatedAt={range.updatedAt}
   structuredData={structuredData}
 >
-  <header class="page-header">
+  <header class="page-header page-header--daily">
     <div class="container">
       <nav class="breadcrumbs" aria-label="パンくず">
         <ol>
-          <li><a href="/">トップ</a></li><li><a href="/archive/">過去記事</a></li><li>{date}</li>
+          <li><a href="/">トップ</a></li><li><a href="/archive/">過去記事</a></li><li>
+            {formatJapaneseDate(date)}
+          </li>
         </ol>
       </nav>
       <p class="eyebrow">Daily digest / {articles.length} stories</p>
-      <h1>{title}</h1>
+      <h1>{displayTitle}</h1>
       <p>{description}</p>
       <p>
         <time datetime={date}>{formatJapaneseDate(date)}</time>・最終更新 <time
@@ -119,8 +123,22 @@ const structuredData = [
     {
       (previous || next) && (
         <nav class="date-navigation" aria-label="前後の日次ダイジェスト">
-          {previous ? <a href={`/daily/${previous}/`}>← {previous}</a> : <span />}
-          {next ? <a href={`/daily/${next}/`}>{next} →</a> : <span />}
+          {previous ? (
+            <a class="date-navigation__link" href={`/daily/${previous}/`}>
+              <small>前のダイジェスト</small>
+              <span>← {formatJapaneseDate(previous)}</span>
+            </a>
+          ) : (
+            <span />
+          )}
+          {next ? (
+            <a class="date-navigation__link date-navigation__link--next" href={`/daily/${next}/`}>
+              <small>次のダイジェスト</small>
+              <span>{formatJapaneseDate(next)} →</span>
+            </a>
+          ) : (
+            <span />
+          )}
         </nav>
       )
     }

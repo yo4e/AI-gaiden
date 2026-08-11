@@ -6,6 +6,7 @@ import BaseLayout from '../../../../../layouts/BaseLayout.astro';
 import { articlePath, sortArticles } from '../../../../../lib/articles';
 import {
   OPERATOR_NAME,
+  defaultNewsImagePath,
   formatJapaneseDate,
   formatJapaneseDateTime,
 } from '../../../../../lib/site';
@@ -35,7 +36,7 @@ const { article, previous, next } = Astro.props;
 const data = article.data;
 const canonicalPath = articlePath(data);
 const pageUrl = new URL(canonicalPath, Astro.site).href;
-const articleImage = data.imageUrl || '/default-news-image.png';
+const articleImage = data.imageUrl || defaultNewsImagePath(data.articleId);
 const articleImageUrl = new URL(articleImage, Astro.site).href;
 const articleImageClass = data.imageUrl
   ? 'article-hero__image article-hero__image--source'
@@ -85,7 +86,7 @@ const structuredData = [
     <nav class="breadcrumbs" aria-label="パンくず">
       <ol>
         <li><a href="/">トップ</a></li>
-        <li><a href={`/daily/${data.dateJst}/`}>{data.dateJst}</a></li>
+        <li><a href={`/daily/${data.dateJst}/`}>{formatJapaneseDate(data.dateJst)}</a></li>
         <li>{data.titleJa}</li>
       </ol>
     </nav>
@@ -102,7 +103,9 @@ const structuredData = [
       <img
         class={articleImageClass}
         src={articleImage}
-        alt={data.imageUrl ? `${data.sourceName}: ${data.titleOriginal}` : `${OPERATOR_NAME}のAI外電既定画像`}
+        alt={data.imageUrl
+          ? `${data.sourceName}: ${data.titleOriginal}`
+          : `${OPERATOR_NAME}のAI外電既定画像`}
         loading="eager"
         decoding="async"
         referrerpolicy="no-referrer"
@@ -138,9 +141,9 @@ const structuredData = [
     </div>
 
     <nav class="article-nav" aria-label="前後の記事">
-      {previous ? <a href={articlePath(previous.data)}>← 前の記事</a> : <span></span>}
+      {previous ? <a href={articlePath(previous.data)}>← 前の記事</a> : <span />}
       <a class="center-link" href={`/daily/${data.dateJst}/`}>同日の一覧</a>
-      {next ? <a href={articlePath(next.data)}>次の記事 →</a> : <span></span>}
+      {next ? <a href={articlePath(next.data)}>次の記事 →</a> : <span />}
     </nav>
   </div>
 </BaseLayout>

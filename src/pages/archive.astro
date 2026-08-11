@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { groupArticlesByDate, sortArticles } from '../lib/articles';
-import { formatJapaneseDate } from '../lib/site';
+import { formatJapaneseDate, formatJapaneseMonth } from '../lib/site';
 
 const articles = sortArticles(await getCollection('articles'));
 const grouped = groupArticlesByDate(articles);
@@ -32,18 +32,20 @@ for (const [date, dayArticles] of grouped) {
       months.size > 0 ? (
         [...months].map(([month, monthEntries]) => (
           <section class="archive-month">
-            <h2>{month.replace('-', '年')}月</h2>
+            <h2>{formatJapaneseMonth(month)}</h2>
             <ul class="archive-list">
               {monthEntries.map(([date, dayArticles]) => (
                 <li>
                   <time datetime={date}>{formatJapaneseDate(date)}</time>
-                  <a href={`/daily/${date}/`}>{dayArticles[0].data.titleJa}</a>
-                  <small>
-                    {dayArticles.length}件・
-                    {[...new Set(dayArticles.map((article) => article.data.sourceName))].join(
-                      ' / ',
-                    )}
-                  </small>
+                  <div class="archive-list__content">
+                    <a href={`/daily/${date}/`}>{dayArticles[0].data.titleJa}</a>
+                    <small>
+                      {dayArticles.length}件・
+                      {[...new Set(dayArticles.map((article) => article.data.sourceName))].join(
+                        ' / ',
+                      )}
+                    </small>
+                  </div>
                 </li>
               ))}
             </ul>

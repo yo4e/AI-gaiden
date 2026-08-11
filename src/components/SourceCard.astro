@@ -1,0 +1,41 @@
+---
+import type { Source } from '../data/sources';
+import { sourceCategoryLabel, sourceImagePolicyLabel } from '../lib/sourcePresentation';
+
+interface Props {
+  source: Source;
+  count: number;
+}
+
+const { source, count } = Astro.props;
+---
+
+<article class="source-card" id={source.id}>
+  <div class="source-card__header">
+    <h3>
+      <a href={`/sources/${source.id}/`}>{source.name}</a>
+    </h3>
+    <span class="source-card__count" aria-label={`掲載記事数 ${count}件`}>
+      {count}<small>件</small>
+    </span>
+  </div>
+  <div class="source-card__meta">
+    <span class={source.enabled ? 'status-active' : ''}>
+      {source.enabled ? '取得対象' : '一時停止'}
+    </span>
+    <span>{sourceImagePolicyLabel(source.imagePolicy)}</span>
+  </div>
+  <p class="source-card__desc">{source.description}</p>
+  <div class="source-card__categories" aria-label="カテゴリ">
+    {
+      source.categories.map((category) => (
+        <span class="source-card__category">{sourceCategoryLabel(category)}</span>
+      ))
+    }
+  </div>
+  <div class="source-card__links">
+    <a class="source-card__detail-link" href={`/sources/${source.id}/`}> 配信元ページを見る → </a>
+    <a href={source.homepage} rel="noopener noreferrer">公式サイト ↗</a>
+    <a href={source.feedUrl} rel="noopener noreferrer">RSS ↗</a>
+  </div>
+</article>

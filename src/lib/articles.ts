@@ -61,6 +61,10 @@ export function dailyTitle(date: string, articles: ArticleLike[]): string {
   return `海外AIニュース ${formatJapaneseDate(date)}｜${shortHeadline}｜AI外電`;
 }
 
+export function dailyDisplayTitle(date: string, articleCount: number): string {
+  return `${formatJapaneseDate(date)}の海外AIニュース（${articleCount}件）`;
+}
+
 export function dailyDescription(date: string, articles: ArticleLike[]): string {
   const sources = [...new Set(articles.map((article) => article.data.sourceName))].join('、');
   const headlines = articles

@@ -10,6 +10,19 @@ export const OPERATOR_URL = 'https://gaiden.news/';
 export const OPERATOR_DISCLOSURE = '外電通信は、個人事業主・山田佳江が運営する事業の一つです。';
 export const OPERATOR_STATEMENT = `AI外電は、${OPERATOR_NAME}が運営しています。${OPERATOR_DISCLOSURE}`;
 
+const DEFAULT_NEWS_IMAGE_PATHS = [
+  '/default-news-image-1.webp',
+  '/default-news-image-2.webp',
+  '/default-news-image-3.webp',
+  '/default-news-image-4.webp',
+  '/default-news-image-5.webp',
+  '/default-news-image-6.webp',
+  '/default-news-image-7.webp',
+  '/default-news-image-8.webp',
+  '/default-news-image-9.webp',
+  '/default-news-image-10.webp',
+] as const;
+
 export function isPreviewBuild(): boolean {
   return Boolean(process.env.CF_PAGES) && process.env.CF_PAGES_BRANCH !== 'main';
 }
@@ -23,13 +36,37 @@ export function formatJapaneseDate(value: string): string {
   }).format(new Date(`${value}T00:00:00+09:00`));
 }
 
+export function formatJapaneseMonth(value: string): string {
+  return new Intl.DateTimeFormat('ja-JP', {
+    timeZone: 'Asia/Tokyo',
+    year: 'numeric',
+    month: 'long',
+  }).format(new Date(`${value}-01T00:00:00+09:00`));
+}
+
 export function formatJapaneseDateTime(value: string): string {
   return new Intl.DateTimeFormat('ja-JP', {
     timeZone: 'Asia/Tokyo',
     year: 'numeric',
-    month: 'numeric',
+    month: 'long',
     day: 'numeric',
     hour: '2-digit',
     minute: '2-digit',
+    hourCycle: 'h23',
   }).format(new Date(value));
+}
+
+export function defaultNewsImagePath(seed: string): string {
+  const randomSuffix = seed.match(/[0-9a-f]{8}$/i)?.[0];
+  if (randomSuffix) {
+    const index = Number.parseInt(randomSuffix, 16) % DEFAULT_NEWS_IMAGE_PATHS.length;
+    return DEFAULT_NEWS_IMAGE_PATHS[index];
+  }
+
+  let hash = 2166136261;
+  for (const character of seed) {
+    hash ^= character.charCodeAt(0);
+    hash = Math.imul(hash, 16777619) >>> 0;
+  }
+  return DEFAULT_NEWS_IMAGE_PATHS[hash % DEFAULT_NEWS_IMAGE_PATHS.length];
 }

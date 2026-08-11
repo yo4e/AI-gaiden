@@ -7,10 +7,15 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def test_sources_entrypoint_lists_all_source_metadata_and_counts() -> None:
     page = (ROOT / "src/pages/sources.astro").read_text(encoding="utf-8")
+    card = (ROOT / "src/components/SourceCard.astro").read_text(encoding="utf-8")
+    implementation = page + card
 
     for phrase in (
         "getCollection('articles')",
         "articleCounts",
+        "publishedSources",
+        "preparingSources",
+        "準備中・一時停止",
         "source.categories",
         "sourceCategoryLabel",
         "sourceImagePolicyLabel",
@@ -18,7 +23,7 @@ def test_sources_entrypoint_lists_all_source_metadata_and_counts() -> None:
         "配信元ページを見る",
         "取得対象",
     ):
-        assert phrase in page
+        assert phrase in implementation
 
 
 def test_source_detail_page_has_stable_urls_and_thin_page_policy() -> None:

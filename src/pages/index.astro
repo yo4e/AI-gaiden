@@ -7,6 +7,7 @@ import {
   DEFAULT_DESCRIPTION,
   DEFAULT_TITLE,
   SITE_HEADLINE,
+  formatJapaneseDate,
   formatJapaneseDateTime,
 } from '../lib/site';
 
@@ -45,20 +46,32 @@ const structuredData = {
     </div>
   </section>
 
-  <section class="section" id="latest-digest">
+  <section class="section section--latest" id="latest-digest">
     <div class="container">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Latest articles</p>
-          <h2>{latestDate ? `${latestDate} の海外AIニュース` : '最新の海外AIニュース'}</h2>
+          <p class="eyebrow">Latest digest</p>
+          <h2>
+            {
+              latestDate
+                ? `${formatJapaneseDate(latestDate)}の海外AIニュース`
+                : '最新の海外AIニュース'
+            }
+          </h2>
         </div>
-        {latestDate && <a href={`/daily/${latestDate}/`}>日次ページを開く</a>}
+        {
+          latestDate && (
+            <a class="internal-cta" href={`/daily/${latestDate}/`}>
+              日次ページを開く →
+            </a>
+          )
+        }
       </div>
       {
         latestArticles.length > 0 ? (
           <>
             <p class="latest-updated">
-              最終更新:{' '}
+              <span>最終更新</span>
               <time datetime={latestArticles[0].data.updatedAt}>
                 {formatJapaneseDateTime(latestArticles[0].data.updatedAt)} JST
               </time>
@@ -86,7 +99,7 @@ const structuredData = {
           <p class="eyebrow">Recent editions</p>
           <h2>過去8回のダイジェスト</h2>
         </div>
-        <a href="/archive/">すべての過去記事</a>
+        <a class="internal-cta" href="/archive/">すべての過去記事 →</a>
       </div>
       {
         recentDates.length > 0 ? (
@@ -98,11 +111,12 @@ const structuredData = {
                 <li>
                   <a href={`/daily/${date}/`}>
                     <div>
-                      <span class="archive-preview__date">{date}</span>
+                      <span class="archive-preview__date">{formatJapaneseDate(date)}</span>
                       <span class="archive-preview__sources">{sources.join(' · ')}</span>
                     </div>
                     <span class="archive-preview__count">
-                      {dayArticles.length}<small>件</small>
+                      {dayArticles.length}
+                      <small>件</small>
                     </span>
                   </a>
                 </li>
@@ -110,9 +124,7 @@ const structuredData = {
             })}
           </ul>
         ) : (
-          <p class="empty-state">
-            日次ダイジェストの生成後、ここから過去の記事へ移動できます。
-          </p>
+          <p class="empty-state">日次ダイジェストの生成後、ここから過去の記事へ移動できます。</p>
         )
       }
     </div>

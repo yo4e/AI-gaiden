@@ -1,7 +1,7 @@
 ---
 import SourceBadge from './SourceBadge.astro';
 import { articlePath } from '../lib/articles';
-import { formatJapaneseDateTime } from '../lib/site';
+import { defaultNewsImagePath, formatJapaneseDateTime } from '../lib/site';
 
 interface Article {
   data: {
@@ -20,11 +20,7 @@ interface Article {
     author?: string | null;
     translationStatus: 'complete' | 'partial';
     summaryTranslationStatus?:
-      | 'legacy'
-      | 'translated'
-      | 'quality_rejected'
-      | 'translation_failed'
-      | 'source_missing';
+      'legacy' | 'translated' | 'quality_rejected' | 'translation_failed' | 'source_missing';
     summaryFallbackApplied?: boolean;
   };
 }
@@ -36,6 +32,7 @@ interface Props {
 const { article } = Astro.props;
 const item = article.data;
 const internalPath = articlePath(item);
+const imageSource = item.imageUrl || defaultNewsImagePath(item.articleId);
 const imageClass = item.imageUrl
   ? 'news-card__image news-card__image--source'
   : 'news-card__image news-card__image--default';
@@ -50,10 +47,10 @@ const hasFallback =
     <a class="news-card__image-wrap" href={internalPath} tabindex="-1" aria-hidden="true">
       <img
         class={imageClass}
-        src={item.imageUrl || '/default-news-image.png'}
+        src={imageSource}
         alt=""
-        width="320"
-        height="240"
+        width="1200"
+        height="900"
         loading="lazy"
         decoding="async"
         referrerpolicy="no-referrer"
@@ -76,18 +73,18 @@ const hasFallback =
     <a href={internalPath} class="news-card__content-link">
       <h2>{item.titleJa}</h2>
       <p class="original-title" lang="en">{item.titleOriginal}</p>
-      {!hasFallback && <p>{item.excerptJa}</p>}
+      {!hasFallback && <p class="news-card__excerpt">{item.excerptJa}</p>}
     </a>
     {
       hasFallback && (
-        <p class="translation-note">
+        <p class="news-card__excerpt translation-note">
           概要の翻訳がないため、公式リンクで発表内容をご確認ください。
         </p>
       )
     }
     {item.author && <p class="byline">原文著者: {item.author}</p>}
     <div class="news-card__card-links">
-      <a href={internalPath}>AI外電の短報を読む →</a>
+      <a class="internal-cta" href={internalPath}>AI外電の短報を読む →</a>
       <a class="official" href={item.sourceUrl} rel="noopener noreferrer">
         公式発表を原文で確認 ↗
       </a>

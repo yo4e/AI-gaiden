@@ -30,15 +30,15 @@
 }
 
 .news-card {
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 .news-card__media {
   position: relative;
-  width: 16rem;
+  width: clamp(16rem, 32%, 24rem);
   aspect-ratio: 4 / 3;
-  flex: 0 0 16rem;
-  align-self: flex-start;
+  flex: 0 0 clamp(16rem, 32%, 24rem);
+  align-self: stretch;
   margin: 0;
   overflow: hidden;
   border-right: 1px solid var(--line-soft);
@@ -86,6 +86,7 @@
   background: var(--surface);
   font-size: 0.68rem;
   line-height: 1.5;
+  text-align: right;
 }
 
 .news-card__card-links .official {
@@ -132,13 +133,15 @@
 
 .article-hero img {
   width: 100%;
-  aspect-ratio: 16 / 7;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
 }
 
 .article-hero__image--source,
 .article-hero__image--default {
   padding: 0;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -166,10 +169,6 @@
 
   .source-card__links {
     flex-wrap: wrap;
-  }
-
-  .article-hero img {
-    aspect-ratio: 16 / 9;
   }
 
   .site-footer__legal {

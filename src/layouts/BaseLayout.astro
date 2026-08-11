@@ -10,6 +10,27 @@ type SeoProps = ComponentProps<typeof SeoHead>;
 interface Props extends SeoProps {}
 
 const props = Astro.props;
+const currentPath = Astro.url.pathname;
+const navItems = [
+  {
+    href: '/#latest-digest',
+    label: '最新記事',
+    active:
+      currentPath === '/' ||
+      currentPath.startsWith('/daily/') ||
+      currentPath.startsWith('/articles/'),
+  },
+  { href: '/archive/', label: '過去記事', active: currentPath.startsWith('/archive/') },
+  { href: '/sources/', label: '情報源', active: currentPath.startsWith('/sources/') },
+  {
+    href: '/about/',
+    label: 'このサイトについて',
+    active:
+      currentPath.startsWith('/about/') ||
+      currentPath.startsWith('/editorial-policy/') ||
+      currentPath.startsWith('/privacy/'),
+  },
+];
 ---
 
 <!doctype html>
@@ -29,10 +50,13 @@ const props = Astro.props;
           <small>海外AI公式発表 日本語ダイジェスト</small>
         </a>
         <nav aria-label="主要メニュー">
-          <a href="/#latest-digest">最新記事</a>
-          <a href="/archive/">過去記事</a>
-          <a href="/sources/">情報源</a>
-          <a href="/about/">このサイトについて</a>
+          {
+            navItems.map((item) => (
+              <a href={item.href} aria-current={item.active ? 'page' : undefined}>
+                {item.label}
+              </a>
+            ))
+          }
         </nav>
       </div>
     </header>

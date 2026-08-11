@@ -1,8 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SourceCard from '../components/SourceCard.astro';
 import { sources } from '../data/sources';
-import { sourceCategoryLabel, sourceImagePolicyLabel } from '../lib/sourcePresentation';
 
 const articles = await getCollection('articles');
 const articleCounts = new Map<string, number>();
@@ -10,6 +10,14 @@ for (const article of articles) {
   const sid = article.data.sourceId;
   articleCounts.set(sid, (articleCounts.get(sid) || 0) + 1);
 }
+const sourceEntries = sources.map((source) => ({
+  source,
+  count: articleCounts.get(source.id) || 0,
+}));
+const publishedSources = sourceEntries.filter(({ source, count }) => source.enabled && count > 0);
+const preparingSources = sourceEntries.filter(
+  ({ source, count }) => !source.enabled || count === 0,
+);
 ---
 
 <BaseLayout
@@ -33,44 +41,30 @@ for (const article of articles) {
   </header>
 
   <div class="container section">
-    <div class="source-grid">
-      {
-        sources.map((source) => {
-          const count = articleCounts.get(source.id) || 0;
-          return (
-            <article class="source-card" id={source.id}>
-              <div class="source-card__header">
-                <h2>
-                  <a href={`/sources/${source.id}/`}>{source.name}</a>
-                </h2>
-                <span class="source-card__count" aria-label={`掲載記事数 ${count}件`}>
-                  {count}<small>件</small>
-                </span>
-              </div>
-              <div class="source-card__meta">
-                <span class={source.enabled ? 'status-active' : ''}>
-                  {source.enabled ? '取得対象' : '一時停止'}
-                </span>
-                <span>{sourceImagePolicyLabel(source.imagePolicy)}</span>
-              </div>
-              <p class="source-card__desc">{source.description}</p>
-              <div class="source-card__categories" aria-label="カテゴリ">
-                {source.categories.map((category) => (
-                  <span class="source-card__category">{sourceCategoryLabel(category)}</span>
-                ))}
-              </div>
-              <div class="source-card__links">
-                <a class="source-card__detail-link" href={`/sources/${source.id}/`}>
-                  配信元ページを見る →
-                </a>
-                <a href={source.homepage} rel="noopener noreferrer">公式サイト ↗</a>
-                <a href={source.feedUrl} rel="noopener noreferrer">RSS ↗</a>
-              </div>
-            </article>
-          );
-        })
-      }
-    </div>
+    <section class="source-group" aria-labelledby="published-sources-heading">
+      <div class="source-group__heading">
+        <h2 id="published-sources-heading">掲載中の情報源</h2>
+        <p>{publishedSources.length}配信元</p>
+      </div>
+      <div class="source-grid">
+        {publishedSources.map(({ source, count }) => <SourceCard source={source} count={count} />)}
+      </div>
+    </section>
+    {
+      preparingSources.length > 0 && (
+        <section class="source-group" aria-labelledby="preparing-sources-heading">
+          <div class="source-group__heading">
+            <h2 id="preparing-sources-heading">準備中・一時停止</h2>
+            <p>{preparingSources.length}配信元</p>
+          </div>
+          <div class="source-grid source-grid--pending">
+            {preparingSources.map(({ source, count }) => (
+              <SourceCard source={source} count={count} />
+            ))}
+          </div>
+        </section>
+      )
+    }
     <p class="source-grid__note">
       掲載記事数はAI外電内で公開している記事の累計です。0件は、現時点で公開済み記事がないことを示します。
     </p>

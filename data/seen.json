@@ -188,6 +188,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/first-orion-accelerates-qa-automation-using-amazon-nova-act"
     },
+    "url:5d3aff0aba5d0b8a3f2e93df1ad39730fb85c89988a96a7dff89f13df3bf1726": {
+      "article_id": "openai-news-93a243bd",
+      "first_seen_at": "2026-08-11T22:08:35.529397Z",
+      "published_at": "2026-08-11T10:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/daybreak-models-are-now-available-on-aws"
+    },
     "url:624979042481ff504b8cdd9f4fefd24e5c9226e8b96822c1d4945a834a37fbab": {
       "article_id": "hugging-face-a7333d02",
       "first_seen_at": "2026-08-07T21:58:33.543829Z",
@@ -207,6 +214,13 @@
       "published_at": "2026-08-10T19:30:00Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/engineering/using-the-github-copilot-sdk-for-java"
+    },
+    "url:6aa592d3dc7a40084fc26ef49c0a2a4849efce3311e7000757ceedd84f35c52d": {
+      "article_id": "aws-machine-learning-56997e2f",
+      "first_seen_at": "2026-08-11T22:08:35.529397Z",
+      "published_at": "2026-08-11T16:14:33Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-onestruction-built-the-ishigaki-ids-foundation-model-with-aws-genaiic"
     },
     "url:6bb3f934048965cc8fe40ff7286bc1d73fdff5cc902619e78dc98b0f853d7216": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
@@ -251,6 +265,13 @@
       "published_at": "2026-07-30T15:09:09Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/Dharma-AI/gpu-management"
+    },
+    "url:89df3427e525131aaaac50888389b5a09475c7e1001e5ab9fb1744efb73cc88b": {
+      "article_id": "google-ai-461d392a",
+      "first_seen_at": "2026-08-11T22:08:35.529397Z",
+      "published_at": "2026-08-11T17:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations"
     },
     "url:93e5dec2f2f712e34a34310fc188fb3e02f13f39022d255dcd7fb216a3339f34": {
       "article_id": "aws-machine-learning-8c775447",
@@ -344,6 +365,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b"
     },
+    "url:b19ec562c455e753267b0e04107e2217c787cdc2a4884378a6d93cdc79d11f47": {
+      "article_id": "openai-news-859e2b45",
+      "first_seen_at": "2026-08-11T22:08:35.529397Z",
+      "published_at": "2026-08-11T10:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/testing-ads-in-chatgpt"
+    },
     "url:b1c9322e571fec76add6efbb8731702af6e8bef4bc88e55c10f99eba51b1b389": {
       "article_id": "openai-news-b704c300",
       "first_seen_at": "2026-08-06T23:21:45.836993Z",
@@ -405,6 +433,13 @@
       "published_at": "2026-08-11T14:45:00Z",
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/08/benchmark-is-worth-trusting"
+    },
+    "url:d8a71eb7325669ff71f036f17a2104d7d6ed908ffc98b61d89e7f22fa21eef07": {
+      "article_id": "aws-machine-learning-e1ffcb41",
+      "first_seen_at": "2026-08-11T22:08:35.529397Z",
+      "published_at": "2026-08-11T21:38:06Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/accelerate-cyber-defense-with-openai-and-aws-daybreak-red-daybreak-blue-now-available-to-eligible-customers-on-amazon-bedrock"
     },
     "url:db756ec4d6e59ca936da7aa8eca44d5d6459a0ef221677a8ea82662f0ffa317c": {
       "article_id": "aws-machine-learning-27a97a3d",

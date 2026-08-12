@@ -103,6 +103,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands"
     },
+    "url:2c563947428818b93259f9d0ea1b317a6ae63a349ada6ec8668a3f4447646bba": {
+      "article_id": "hugging-face-7eeeaa9a",
+      "first_seen_at": "2026-08-12T16:12:48.060680Z",
+      "published_at": "2026-08-12T14:00:51Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b"
+    },
     "url:3760a4949caa8e909bb3fa0034c4318087e544037959fa8a071a488a2599495f": {
       "first_seen_at": "2026-08-04T00:16:06.231356Z",
       "published_at": "2026-08-03T16:30:58Z",
@@ -332,6 +339,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-lendingtree-built-a-multi-agent-mortgage-assistant-on-amazon-bedrock"
     },
+    "url:a2903b1976e9e15dd87644aa5c64129d8a190e3a3571cfa9e28254ce2bfe057a": {
+      "article_id": "aws-machine-learning-a69175ac",
+      "first_seen_at": "2026-08-12T16:12:48.060680Z",
+      "published_at": "2026-08-12T13:44:58Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/pay-with-confidence-how-solv-labs-built-verifiable-auditable-agent-payments-on-amazon-bedrock-agentcore-payments"
+    },
     "url:a50effc579949c7646c13737d86c56aa19b241f0915ff56cb742177f552f4f68": {
       "article_id": "aws-machine-learning-7d0be8ef",
       "first_seen_at": "2026-08-06T23:21:45.836993Z",
@@ -364,6 +378,13 @@
       "published_at": "2026-08-04T13:58:29Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b"
+    },
+    "url:aec50bce133680e8ddf125ac991e61d50a8d53bb9eddfa9b035860d493aa2898": {
+      "article_id": "aws-machine-learning-829fc29f",
+      "first_seen_at": "2026-08-12T16:12:48.060680Z",
+      "published_at": "2026-08-12T13:46:28Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-oneadvanced-deployed-over-50-ai-agents-on-uk-sovereign-aws"
     },
     "url:b19ec562c455e753267b0e04107e2217c787cdc2a4884378a6d93cdc79d11f47": {
       "article_id": "openai-news-859e2b45",
@@ -406,6 +427,20 @@
       "published_at": "2026-08-11T15:59:22Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/deploying-anthropic-claude-apps-gateway-for-aws-for-enterprise-workloads"
+    },
+    "url:c26c8d5a4e90c67829e9c660ce4116c2b017553675393f87c94877de7e77f6bb": {
+      "article_id": "google-deepmind-a315b2da",
+      "first_seen_at": "2026-08-12T16:12:48.060680Z",
+      "published_at": "2026-08-12T14:01:59Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands"
+    },
+    "url:c2ed76bfcf51bfba74a867f5c453c4e233f7f3c0b5425ebf063cced04764f8e0": {
+      "article_id": "aws-machine-learning-f5a49205",
+      "first_seen_at": "2026-08-12T16:12:48.060680Z",
+      "published_at": "2026-08-12T13:42:48Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/tiered-kv-cache-for-large-llms-on-amazon-sagemaker-hyperpod-with-curvine"
     },
     "url:c797381f6cd4b45af698941ec3ddb6aebb6d0308654d793fecd6d6ea1d0d1e69": {
       "article_id": "apple-ml-research-02c8e899",
@@ -460,6 +495,13 @@
       "published_at": "2026-08-10T00:00:00Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/muse-glimmer"
+    },
+    "url:e063daae6225e156953956818763e28a3d67a709a94829ba10d52a2df2fa945f": {
+      "article_id": "openai-news-fa2d12eb",
+      "first_seen_at": "2026-08-12T16:12:48.060680Z",
+      "published_at": "2026-08-12T06:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/how-enterprises-put-ai-to-work"
     },
     "url:e66cc71d0943fe40ad6453dad08e9df8e67072ce6e9fa35d606a5faf12a1f86c": {
       "article_id": "openai-news-d2941603",

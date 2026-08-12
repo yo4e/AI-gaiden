@@ -96,6 +96,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/baseten"
     },
+    "url:249a5e1ede4df4c078023a6f0eb49ede54fb5bdd187586ea50eee351b3c1007c": {
+      "article_id": "hugging-face-952b04c2",
+      "first_seen_at": "2026-08-12T22:06:40.410035Z",
+      "published_at": "2026-08-12T16:14:36Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-embeddings"
+    },
     "url:29b0e61ec6cd1ed38342bd3f0d233e41901ac8706bcd8411d89efe21c8f9b7d6": {
       "article_id": "openai-news-f3b45494",
       "first_seen_at": "2026-08-10T22:01:43.331237Z",
@@ -248,6 +255,13 @@
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/technology/developers-tools/ai-agents-intensive-recap-2026"
     },
+    "url:7e17b92474bcfd24464a27163487c58f8c3702b5d2deb1221ec1963be55fb02b": {
+      "article_id": "github-ai-ml-588f1340",
+      "first_seen_at": "2026-08-12T22:06:40.410035Z",
+      "published_at": "2026-08-12T19:00:00Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/github-copilot/write-your-first-prompt-with-the-github-copilot-app"
+    },
     "url:80911412e4d1c0f0cf5f71d0adb2b01d83689d9ff1dfcfa41904e7e4252c4a99": {
       "first_seen_at": "2026-08-04T22:31:58.507698Z",
       "published_at": "2026-08-04T18:39:14Z",
@@ -312,6 +326,13 @@
       "published_at": "2026-08-07T16:26:58Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-cohere-health-digitizes-clinical-policies-using-amazon-bedrock-agentcore"
+    },
+    "url:9bafa93fe08b847d5d92140912eaaad9a7a6da1c55940aa1439e6fdd8c2d3c44": {
+      "article_id": "openai-news-bf0b0d05",
+      "first_seen_at": "2026-08-12T22:06:40.410035Z",
+      "published_at": "2026-08-12T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/ringcentral"
     },
     "url:9c57623ef609667de3c28690663edbc3d6ea9d6e32d9bc0cafa73a9b64ae67ae": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
@@ -441,6 +462,13 @@
       "published_at": "2026-08-12T13:42:48Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/tiered-kv-cache-for-large-llms-on-amazon-sagemaker-hyperpod-with-curvine"
+    },
+    "url:c5cc2137750496da11923242447637e42cccdf5767caa0a4839bc039c033297b": {
+      "article_id": "aws-machine-learning-5f171162",
+      "first_seen_at": "2026-08-12T22:06:40.410035Z",
+      "published_at": "2026-08-12T17:45:20Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/part-2-amazon-bedrock-cost-attribution-with-amazon-athena-and-cudos"
     },
     "url:c797381f6cd4b45af698941ec3ddb6aebb6d0308654d793fecd6d6ea1d0d1e69": {
       "article_id": "apple-ml-research-02c8e899",

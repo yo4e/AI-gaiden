@@ -14,6 +14,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-pixieset-achieved-35-ai-feature-adoption-by-solving-the-right-problem-with-amazon-bedrock"
     },
+    "url:05f14b4e1e89cd91f110a5189c0427a8a5a082c150bca048d34aaf051ae98e82": {
+      "article_id": "aws-machine-learning-a26c712e",
+      "first_seen_at": "2026-08-13T16:12:48.826746Z",
+      "published_at": "2026-08-13T15:48:15Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-quick-for-microsoft-365-agentic-ai-where-you-work"
+    },
     "url:077b61a0fed02bcc2a083d299a0c55e24311ad526ecaa535f96d02762c586c8f": {
       "article_id": "hugging-face-0946b371",
       "first_seen_at": "2026-08-11T16:13:54.723524Z",
@@ -35,6 +42,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/configure-rate-limits-for-ai-traffic-on-agentcore-gateway"
     },
+    "url:0b3298a080c8194d1f16addde55334222afe83ec147132a41c06a9f76007d3af": {
+      "article_id": "aws-machine-learning-b8c65acc",
+      "first_seen_at": "2026-08-13T16:12:48.826746Z",
+      "published_at": "2026-08-13T15:56:07Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/automate-legacy-web-applications-with-amazon-bedrock-agentcore-browser-tool"
+    },
     "url:0bc671dd2735ab91413c00dbc042fa8f4e9fb876acd613335d004c68d3d46d0a": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
       "published_at": "2026-07-28T13:00:00Z",
@@ -54,6 +68,13 @@
       "published_at": "2026-08-11T12:00:27Z",
       "source": "mistral-ai",
       "url": "https://mistral.ai/news/regional-inference-open-models-new-compute"
+    },
+    "url:10a29b4804e0e8482f58543b09461165ed139ffe5c09dda6219b0ee18fdea803": {
+      "article_id": "aws-machine-learning-507f2eda",
+      "first_seen_at": "2026-08-13T16:12:48.826746Z",
+      "published_at": "2026-08-13T15:52:44Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/accelerating-ma-due-diligence-with-amazon-bedrock-agentcore"
     },
     "url:10ff1b585a39057ba378a0097cca952a32686f2d91acb92c41c59855618bcc41": {
       "article_id": "microsoft-ai-bf5f8b6f",
@@ -209,6 +230,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/daybreak-models-are-now-available-on-aws"
     },
+    "url:5e7836db2c1590662c40c19382d6bdf91af2a53f42f19fbd97ff6c18495188d4": {
+      "article_id": "aws-machine-learning-81ee5ea6",
+      "first_seen_at": "2026-08-13T16:12:48.826746Z",
+      "published_at": "2026-08-13T16:02:10Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/monitor-on-premises-and-multi-cloud-ai-agents-with-agentcore-observability"
+    },
     "url:624979042481ff504b8cdd9f4fefd24e5c9226e8b96822c1d4945a834a37fbab": {
       "article_id": "hugging-face-a7333d02",
       "first_seen_at": "2026-08-07T21:58:33.543829Z",
@@ -241,6 +269,13 @@
       "published_at": "2026-08-03T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/alignment-multimodal-llms"
+    },
+    "url:6eaab463a55def8752bc46f2c536b71667c705dda0554f0b21cc44218f91b669": {
+      "article_id": "openai-news-181c00e0",
+      "first_seen_at": "2026-08-13T16:12:48.826746Z",
+      "published_at": "2026-08-13T09:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/dali-rajic-chief-revenue-officer"
     },
     "url:7347f06e7c916544f6e962de36961dbcdf8c00a50f21f56435f6b7de8971923e": {
       "article_id": "openai-news-bfe94563",

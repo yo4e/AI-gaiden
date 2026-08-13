@@ -55,6 +55,13 @@
       "source": "google-ai",
       "url": "https://blog.google/products-and-platforms/products/search/dinner-party-hosting-tips"
     },
+    "url:0c237f0828d6e054811e11d2815026e3958e1575c52ae7b79fc63f6ea0fa54f3": {
+      "article_id": "apple-ml-research-e4bd2d7d",
+      "first_seen_at": "2026-08-13T22:06:40.301314Z",
+      "published_at": "2026-08-13T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/unlearning-low-influence-points"
+    },
     "url:0c4923a8268d927d546252610841ad4a1fc1c83aca865bccdf7cd8269d11f0bf": {
       "article_id": "openai-news-5a01c20d",
       "first_seen_at": "2026-08-06T23:21:45.836993Z",
@@ -138,6 +145,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b"
     },
+    "url:353217afc4f706b5339de407629065a4820f98bc0f70c28c174d08c10ec6ab52": {
+      "article_id": "hugging-face-32425e5c",
+      "first_seen_at": "2026-08-13T22:06:40.301314Z",
+      "published_at": "2026-08-13T17:16:04Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop"
+    },
     "url:3760a4949caa8e909bb3fa0034c4318087e544037959fa8a071a488a2599495f": {
       "first_seen_at": "2026-08-04T00:16:06.231356Z",
       "published_at": "2026-08-03T16:30:58Z",
@@ -209,6 +223,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/building-an-ai-native-finance-function"
     },
+    "url:57f8b7f378e9c39afee2b695124e64c9f4d434320943b412f6cfb54e9fb0229e": {
+      "article_id": "hugging-face-a0ab9baa",
+      "first_seen_at": "2026-08-13T22:06:40.301314Z",
+      "published_at": "2026-08-13T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/icml-2026-open-reproductions"
+    },
     "url:5890b1cfd4cc38aa3885e02e9fc3010d881da63d5d8b82ee82ae0ed7c4531d58": {
       "article_id": "hugging-face-2406b838",
       "first_seen_at": "2026-08-10T22:01:43.331237Z",
@@ -276,6 +297,13 @@
       "published_at": "2026-08-13T09:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/dali-rajic-chief-revenue-officer"
+    },
+    "url:6f8368ac763b73731923fdf243c388a7d207e8e71307ee44061b49625d794f6b": {
+      "article_id": "openai-news-5b2f2ba9",
+      "first_seen_at": "2026-08-13T22:06:40.301314Z",
+      "published_at": "2026-08-13T11:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/builders-guide-to-gpt-5-6"
     },
     "url:7347f06e7c916544f6e962de36961dbcdf8c00a50f21f56435f6b7de8971923e": {
       "article_id": "openai-news-bfe94563",
@@ -477,6 +505,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/taming-outlier-tokens"
     },
+    "url:c0986f6628d189a1ac370992d714e2906f134950b6ed170922abe5ac2caf0e49": {
+      "article_id": "openai-news-da4f0b0e",
+      "first_seen_at": "2026-08-13T22:06:40.301314Z",
+      "published_at": "2026-08-13T10:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/previewing-ultrafast"
+    },
     "url:c0e112286f70a5c900178ec3c9c86945e027ac1763339ad2d27f8af99a6af7a7": {
       "article_id": "aws-machine-learning-c8c22f2e",
       "first_seen_at": "2026-08-11T16:13:54.723524Z",
@@ -532,6 +567,13 @@
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/08/benchmark-is-worth-trusting"
     },
+    "url:d8531b3bebbaf6641750e3efb410170dc9d4eacb196bd3e1d8ae895c0bc27335": {
+      "article_id": "google-deepmind-bc6e556d",
+      "first_seen_at": "2026-08-13T22:06:40.301314Z",
+      "published_at": "2026-08-13T17:04:18Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-7-flash"
+    },
     "url:d8a71eb7325669ff71f036f17a2104d7d6ed908ffc98b61d89e7f22fa21eef07": {
       "article_id": "aws-machine-learning-e1ffcb41",
       "first_seen_at": "2026-08-11T22:08:35.529397Z",
@@ -565,6 +607,13 @@
       "published_at": "2026-08-12T06:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/how-enterprises-put-ai-to-work"
+    },
+    "url:e546c9507c4bdece8e78a9938c5519585e0b65f749ccceed110f32b1026fe6bd": {
+      "article_id": "google-ai-ca8b9e0b",
+      "first_seen_at": "2026-08-13T22:06:40.301314Z",
+      "published_at": "2026-08-13T16:45:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets"
     },
     "url:e66cc71d0943fe40ad6453dad08e9df8e67072ce6e9fa35d606a5faf12a1f86c": {
       "article_id": "openai-news-d2941603",

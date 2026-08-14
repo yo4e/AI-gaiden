@@ -204,6 +204,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/run-production-ai-agents-in-n8n-with-amazon-bedrock-agentcore-harness"
     },
+    "url:4a8b8862f08d1092a2734c923096240fcf5aab347ad09521d937effe5f38cda1": {
+      "article_id": "github-ai-ml-f26aa1d7",
+      "first_seen_at": "2026-08-14T16:08:42.817998Z",
+      "published_at": "2026-08-14T16:00:00Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps"
+    },
     "url:4a9b73e77846b899c80a1aedb22971ace82ebcc3d3b85836ae454a41eb1c3e86": {
       "first_seen_at": "2026-08-04T06:07:12.261432Z",
       "published_at": "2026-08-03T22:00:00Z",
@@ -357,6 +364,13 @@
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations"
     },
+    "url:8e9d4a60984ee94c46052a2065e96ea12b8c79af46543e156599572a446f6d94": {
+      "article_id": "aws-machine-learning-eb04407d",
+      "first_seen_at": "2026-08-14T16:08:42.817998Z",
+      "published_at": "2026-08-14T15:58:44Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-agentic-workflows-with-sagemaker-ai-and-bedrock-agentcore"
+    },
     "url:93e5dec2f2f712e34a34310fc188fb3e02f13f39022d255dcd7fb216a3339f34": {
       "article_id": "aws-machine-learning-8c775447",
       "first_seen_at": "2026-08-06T23:21:45.836993Z",
@@ -498,6 +512,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-visibility-for-codex-on-amazon-bedrock-with-opentelemetry-and-amazon-cloudwatch"
     },
+    "url:bc290ba394fd0d9149bf5cc4c18c982babca081925fc413d9da2b9ba7a12002f": {
+      "article_id": "hugging-face-9fcc2353",
+      "first_seen_at": "2026-08-14T16:08:42.817998Z",
+      "published_at": "2026-08-14T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/state-of-open-models-summer-2026"
+    },
     "url:bf8f6a60ac502b75f65dc978b5ca844c5be162e560d0e4e7f43c2a41b0be720c": {
       "article_id": "apple-ml-research-708b0043",
       "first_seen_at": "2026-08-06T06:08:02.329753Z",
@@ -566,6 +587,13 @@
       "published_at": "2026-08-11T14:45:00Z",
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/08/benchmark-is-worth-trusting"
+    },
+    "url:d551d175863afc120b391ddf8b9e668e3d6b674849bb97b70723a5fb13296298": {
+      "article_id": "aws-machine-learning-c485de21",
+      "first_seen_at": "2026-08-14T16:08:42.817998Z",
+      "published_at": "2026-08-14T16:02:10Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/custom-reward-functions-for-multi-turn-reinforcement-learning-with-amazon-nova-forge"
     },
     "url:d8531b3bebbaf6641750e3efb410170dc9d4eacb196bd3e1d8ae895c0bc27335": {
       "article_id": "google-deepmind-bc6e556d",

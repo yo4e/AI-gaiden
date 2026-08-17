@@ -1,14 +1,14 @@
-# 一次情報ソース台帳（第1弾）
+# 一次情報ソース台帳（第1弾・第2弾）
 
 このディレクトリには、外電通信が将来の「AI外電」および「テック外電」で利用することを想定した、**発信主体自身による一次情報の監視候補**を記録しています。メイン成果物は `PRIMARY_SOURCE_LEDGER.csv` であり、Excel等へ直接取り込めるUTF-8 with BOMのCSVです。今回の台帳は既存の自動収集設定を変更しません。したがって、現行の `config/feeds.yml` に新規フィードを追加するものではなく、選定・検証・将来導入のための独立した台帳です。
 
 | 項目 | 値 |
 |---|---:|
 | 確認日 | 2026-08-18（JST） |
-| 登録組織・プロジェクト数 | 100 |
-| 優先度A / B / C | 57 / 43 / 0 |
+| 登録組織・プロジェクト数 | 181 |
+| 優先度A / B / C | 99 / 82 / 0 |
 | 公式RSS/AtomのURLを確認して記録した件数 | 11 |
-| 機械取得手段を記録した件数 | 86 |
+| 機械取得候補（詳細台帳） | 174 |
 
 ## 収録範囲と記入規則
 
@@ -79,6 +79,20 @@
 ## AI外電より将来のテック外電向きの情報源
 
 `PRIMARY_SOURCE_LEDGER_TECH_FOCUS.csv` に抽出済みです。Cloudflare、Vercel、GitHub、GitLab、Docker、HashiCorp、Supabase、MongoDB、Elastic、Datadog、Postman、Stripe、NVIDIA、Arm、TSMC、Adobe、Figma、Shopify、Apple、Mozilla、Braveなどは、AIに直結する発表も扱いつつ、Web基盤・開発者ツール・半導体・ブラウザ・デザイン・コマースという拡張先の中心となります。
+
+
+
+## 第2弾：情報源単位の詳細台帳と監視推奨セット
+
+第2弾では第1弾の100組織を正本として保持したまま、81組織・プロジェクトを追加し、総数を**181**へ拡張しました。さらに、組織単位の台帳とは別に、Newsroom、Blog、Research、Developer、Release Notes、GitHub、RSS等を**1情報源＝1行**で保持する詳細台帳を新設しています。現行の`config/feeds.yml`、自動収集コード、GitHub Actionsは変更していません。
+
+| 成果物 | 件数 | 内容 |
+|---|---:|---|
+| `PRIMARY_SOURCE_LEDGER.csv` | 181組織 | 組織単位の正本。第1弾100件を維持し、第2弾81件を追加。 |
+| `PRIMARY_SOURCE_LEDGER_DETAILED.csv` | 753情報源 | 1情報源＝1行の詳細台帳。URL、種類、公式性、Feed、機械取得、JavaScript要否、優先度を構造化。 |
+| `PRIMARY_SOURCE_MONITORING_RECOMMENDATION.csv` | 85情報源 | AI外電に導入する候補。P1（日次）35件、P2（週次）30件、P3（補助）20件。 |
+
+詳細台帳で`feed_status=confirmed`とするのは、公式RSS/Atom URLを確認できた11件のみです。それ以外のRSS／Atom／JSON Feedは`unknown`または空欄とし、URLを推測していません。`machine_fetchability`は、`rss_atom`、`github_releases_api`、`github_api`、`html_diff`のいずれかを、現段階での機械取得手段として示します。HTML巡回は将来候補であり、現行のRSS-only収集実装への追加を意味しません。
 
 ## 参照・検証の根拠
 

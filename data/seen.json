@@ -69,6 +69,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai"
     },
+    "url:0eadff1b96c5b07c2a9da2a0da496ae04560f4cb6ca0e8a54de3a0e7ebbe46bc": {
+      "article_id": "aws-machine-learning-9a63870c",
+      "first_seen_at": "2026-08-18T04:01:01.822238Z",
+      "published_at": "2026-08-17T18:06:33Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-lightning-now-available-in-amazon-sagemaker-jumpstart"
+    },
     "url:1007367946328b2be18851f357f6ab064b9543e4d3f3d0909c45f5b537368c2b": {
       "article_id": "mistral-ai-0989c20a",
       "first_seen_at": "2026-08-11T16:13:54.723524Z",
@@ -117,6 +124,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-nops-shipped-finops-agents-75-faster-with-amazon-bedrock-agentcore"
     },
+    "url:1f08b431314013b7175a456038152cef5284350da4be43d8ed0e58d6940d1eb3": {
+      "article_id": "github-ai-ml-35157d75",
+      "first_seen_at": "2026-08-18T04:01:01.822238Z",
+      "published_at": "2026-08-17T16:00:00Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient"
+    },
     "url:2081fd8810403c1a0211ecffee53b72f418536664714228771ed593eb426abb9": {
       "article_id": "aws-machine-learning-c33164f7",
       "first_seen_at": "2026-08-07T21:58:33.543829Z",
@@ -137,6 +151,13 @@
       "published_at": "2026-08-06T00:00:00Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/baseten"
+    },
+    "url:245056c4c0a38fbd1a7e0a754221aa1deeaf7da8ea5e5fe455810cf26dc31d0e": {
+      "article_id": "aws-machine-learning-e9aeac35",
+      "first_seen_at": "2026-08-18T04:01:01.822238Z",
+      "published_at": "2026-08-17T16:19:56Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-openclaw-agents-that-transact-with-amazon-bedrock-agentcore-payments"
     },
     "url:249a5e1ede4df4c078023a6f0eb49ede54fb5bdd187586ea50eee351b3c1007c": {
       "article_id": "hugging-face-952b04c2",
@@ -546,6 +567,13 @@
       "published_at": "2026-08-14T00:00:00Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/state-of-open-models-summer-2026"
+    },
+    "url:bf50ec5ce617ac83f0c8191a946860d3cb0cd0d2aa8f71d8bb07d1b2c9c687ea": {
+      "article_id": "hugging-face-c1e03866",
+      "first_seen_at": "2026-08-18T04:01:01.822238Z",
+      "published_at": "2026-08-17T19:46:21Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2"
     },
     "url:bf8f6a60ac502b75f65dc978b5ca844c5be162e560d0e4e7f43c2a41b0be720c": {
       "article_id": "apple-ml-research-708b0043",

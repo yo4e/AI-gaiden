@@ -187,6 +187,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b"
     },
+    "url:2f00013902a29bc1e23dd248bb0d6a75ee356bf38627fa0f8884731fbff27534": {
+      "article_id": "openai-news-41c91561",
+      "first_seen_at": "2026-08-19T15:49:21.905842Z",
+      "published_at": "2026-08-19T07:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/replit"
+    },
     "url:353217afc4f706b5339de407629065a4820f98bc0f70c28c174d08c10ec6ab52": {
       "article_id": "hugging-face-32425e5c",
       "first_seen_at": "2026-08-13T22:06:40.301314Z",
@@ -416,6 +423,13 @@
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/technology/developers-tools/ai-agents-intensive-recap-2026"
     },
+    "url:7ba6c2e15df63364ad762702146a3e8eaef814f58d8cf8fa130ed5fffa71a477": {
+      "article_id": "apple-ml-research-894ee8da",
+      "first_seen_at": "2026-08-19T15:49:21.905842Z",
+      "published_at": "2026-08-19T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/human-like-behaviors-llms"
+    },
     "url:7e17b92474bcfd24464a27163487c58f8c3702b5d2deb1221ec1963be55fb02b": {
       "article_id": "github-ai-ml-588f1340",
       "first_seen_at": "2026-08-12T22:06:40.410035Z",
@@ -435,6 +449,13 @@
       "published_at": "2026-08-10T10:05:36Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation"
+    },
+    "url:8393c843a171d72369b2dfabe36ce65b3e11844d7844cfc40853fcf71ec3d4b3": {
+      "article_id": "openai-news-e9b26a3e",
+      "first_seen_at": "2026-08-19T15:49:21.905842Z",
+      "published_at": "2026-08-18T22:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/chatgpt-ads-expands-across-europe"
     },
     "url:841b4e2a79b2cbb57818447f04c68e6d0974f594b8daa220735dc7ca93e4ca62": {
       "article_id": "apple-ml-research-950c545d",
@@ -823,6 +844,13 @@
       "published_at": "2026-08-04T19:02:34Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows"
+    },
+    "url:f56fb1ee13437f3d1c1d8f00ac5022fe0f8999facb1f47e0532e714861148c87": {
+      "article_id": "hugging-face-86aee86b",
+      "first_seen_at": "2026-08-19T15:49:21.905842Z",
+      "published_at": "2026-08-19T13:48:49Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/LiquidAI/qad"
     },
     "url:f6d720104a1a5ec3fd02ae5c90f25e5ca51c2d02e4b82dc9a2ff973688a57c72": {
       "article_id": "apple-ml-research-a860be30",

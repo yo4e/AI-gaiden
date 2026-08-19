@@ -227,6 +227,13 @@
       "source": "google-ai",
       "url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships"
     },
+    "url:3b8b975a4a1492fdff3560d4ac07ada705bf84610c19d8ccb0e6f526f07d6361": {
+      "article_id": "aws-machine-learning-ebd754ff",
+      "first_seen_at": "2026-08-19T04:02:41.847930Z",
+      "published_at": "2026-08-18T17:13:13Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/customize-amazon-quick-embedded-chat-into-your-application"
+    },
     "url:3bbd8b07cb5a7e5a41480671273e089153a1edb0e012ee6b9c140ab34f7b4abe": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
       "published_at": "2026-07-27T16:00:00Z",
@@ -246,6 +253,13 @@
       "published_at": "2026-08-17T03:15:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age"
+    },
+    "url:412212f92aaf567f9a25ce7b56b88254c5c2a76252b819e4d4e994ee8053551d": {
+      "article_id": "aws-machine-learning-ead775af",
+      "first_seen_at": "2026-08-19T04:02:41.847930Z",
+      "published_at": "2026-08-18T17:02:52Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/improve-contract-search-accuracy-with-auto-generated-filters-in-amazon-bedrock"
     },
     "url:44555fb737bc2545bd6b3d31cd7e9a4709807d68ede8586899514ba10b54b77d": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
@@ -306,6 +320,13 @@
       "published_at": "2026-08-18T14:50:00Z",
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/08/mlperf-client-v2-0"
+    },
+    "url:5ba78b757300e8cc3ff5b4c8f26a93a1cc067af59a63302997722a2b18eff29a": {
+      "article_id": "hugging-face-795a7b96",
+      "first_seen_at": "2026-08-19T04:02:41.847930Z",
+      "published_at": "2026-08-18T18:09:38Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm"
     },
     "url:5c3907356da7f745f17db19dcd41ed48579567790b5c66239aec34ab1dfc55f6": {
       "article_id": "aws-machine-learning-1d6cc266",
@@ -415,6 +436,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation"
     },
+    "url:841b4e2a79b2cbb57818447f04c68e6d0974f594b8daa220735dc7ca93e4ca62": {
+      "article_id": "apple-ml-research-950c545d",
+      "first_seen_at": "2026-08-19T04:02:41.847930Z",
+      "published_at": "2026-08-18T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/semismooth-newton-optimal-transport"
+    },
     "url:8434f80dc8576dd4ddf9d8039fc98ca4a025b6495b48a22bc51919ab454ccf34": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
       "published_at": "2026-08-04T16:02:21Z",
@@ -434,6 +462,13 @@
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations"
     },
+    "url:8cd324ef73df5cc6140afb8b0599c7caa91b70e81b09115954d8b3ccf2314e84": {
+      "article_id": "aws-machine-learning-5ed8f11d",
+      "first_seen_at": "2026-08-19T04:02:41.847930Z",
+      "published_at": "2026-08-18T17:10:37Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/implement-vector-prompt-document-classification-using-amazon-bedrock"
+    },
     "url:8e9d4a60984ee94c46052a2065e96ea12b8c79af46543e156599572a446f6d94": {
       "article_id": "aws-machine-learning-eb04407d",
       "first_seen_at": "2026-08-14T16:08:42.817998Z",
@@ -447,6 +482,13 @@
       "published_at": "2026-08-06T18:57:55Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/securing-ai-agents-with-temporal-policies-in-amazon-bedrock-agentcore"
+    },
+    "url:9461bc7530aa1f1bca18e6617a0181f88c8cb2f1e3c10c6424b1c574e6b9f706": {
+      "article_id": "aws-machine-learning-a284f45e",
+      "first_seen_at": "2026-08-19T04:02:41.847930Z",
+      "published_at": "2026-08-18T18:56:14Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to-transact-safely-and-autonomously-at-scale"
     },
     "url:95f74aeac90a93bb12cebd08a06d378eabf5fb66ffb6f949438941dc9bb3bdbe": {
       "article_id": "openai-news-c69af76a",
@@ -480,6 +522,13 @@
       "published_at": "2026-08-12T00:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/ringcentral"
+    },
+    "url:9c25f4ae7a186d68926fabf7ba66321e74423e571b1f86a4351d93eff1c6252c": {
+      "article_id": "openai-news-09940515",
+      "first_seen_at": "2026-08-19T04:02:41.847930Z",
+      "published_at": "2026-08-18T11:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/pacing-model-development-cyber-capabilities"
     },
     "url:9c57623ef609667de3c28690663edbc3d6ea9d6e32d9bc0cafa73a9b64ae67ae": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
@@ -581,6 +630,13 @@
       "published_at": "2026-08-06T16:30:47Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-visibility-for-codex-on-amazon-bedrock-with-opentelemetry-and-amazon-cloudwatch"
+    },
+    "url:baf07daff59f271b90795fd50023fb349ec75ddad4cd8dc3dc0716042648ecd3": {
+      "article_id": "openai-news-c287e2b0",
+      "first_seen_at": "2026-08-19T04:02:41.847930Z",
+      "published_at": "2026-08-18T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/nvidia/chatgpt-work"
     },
     "url:bc290ba394fd0d9149bf5cc4c18c982babca081925fc413d9da2b9ba7a12002f": {
       "article_id": "hugging-face-9fcc2353",
@@ -755,11 +811,32 @@
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones"
     },
+    "url:f0aa91974e0ad6ca58685787e6b44fa037cfd800e1d56928380594665b146fc1": {
+      "article_id": "openai-news-f382d286",
+      "first_seen_at": "2026-08-19T04:02:41.847930Z",
+      "published_at": "2026-08-18T19:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security"
+    },
     "url:f1d4877545a986a0c7349b5eb5d1a44624b88463c561ca50722ab9ee15c187b7": {
       "first_seen_at": "2026-08-04T22:31:58.507698Z",
       "published_at": "2026-08-04T19:02:34Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows"
+    },
+    "url:f6d720104a1a5ec3fd02ae5c90f25e5ca51c2d02e4b82dc9a2ff973688a57c72": {
+      "article_id": "apple-ml-research-a860be30",
+      "first_seen_at": "2026-08-19T04:02:41.847930Z",
+      "published_at": "2026-08-18T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/mvicad2-delays-dilations"
+    },
+    "url:fb22a1b92cabad920f840e39d11d46404e81d9f892ffcd61cf24f969a4aedafe": {
+      "article_id": "aws-machine-learning-9b4b2246",
+      "first_seen_at": "2026-08-19T04:02:41.847930Z",
+      "published_at": "2026-08-18T17:05:48Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-jumio-built-a-real-time-feature-store-on-aws"
     },
     "url:fbeab4f946087e752299b768eda19c5424ff00a36e42d407a00da97ee1663fe7": {
       "first_seen_at": "2026-08-04T00:16:06.231356Z",

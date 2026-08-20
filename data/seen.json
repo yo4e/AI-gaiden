@@ -201,6 +201,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/replit"
     },
+    "url:3529facf086217e100399c8e607fb61928b5e904e2708b8762933a12a48de4af": {
+      "article_id": "aws-machine-learning-28246d22",
+      "first_seen_at": "2026-08-20T15:51:44.229283Z",
+      "published_at": "2026-08-20T15:20:03Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-intelligent-security-for-healthcare-apis-with-amazon-bedrock"
+    },
     "url:353217afc4f706b5339de407629065a4820f98bc0f70c28c174d08c10ec6ab52": {
       "article_id": "hugging-face-32425e5c",
       "first_seen_at": "2026-08-13T22:06:40.301314Z",
@@ -504,6 +511,13 @@
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations"
     },
+    "url:8a292f3e3fd39914cefe84e4a31c7b549c27da2954032d79c4ea0848464220ab": {
+      "article_id": "apple-ml-research-d5b1c5c7",
+      "first_seen_at": "2026-08-20T15:51:44.229283Z",
+      "published_at": "2026-08-20T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/scaling-laws-mixture-pretraining"
+    },
     "url:8cd324ef73df5cc6140afb8b0599c7caa91b70e81b09115954d8b3ccf2314e84": {
       "article_id": "aws-machine-learning-5ed8f11d",
       "first_seen_at": "2026-08-19T04:02:41.847930Z",
@@ -638,12 +652,26 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b"
     },
+    "url:ad89fb510e3c78c26282cfd40541dc61653b3d8c142b323e38b2c22c1766bfa5": {
+      "article_id": "openai-news-db583e47",
+      "first_seen_at": "2026-08-20T15:51:44.229283Z",
+      "published_at": "2026-08-20T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/stampli"
+    },
     "url:aec50bce133680e8ddf125ac991e61d50a8d53bb9eddfa9b035860d493aa2898": {
       "article_id": "aws-machine-learning-829fc29f",
       "first_seen_at": "2026-08-12T16:12:48.060680Z",
       "published_at": "2026-08-12T13:46:28Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-oneadvanced-deployed-over-50-ai-agents-on-uk-sovereign-aws"
+    },
+    "url:afd54bbe19c44fc2e616fa805e0fa788f08fdafd3f923e81779864556c01fdd7": {
+      "article_id": "mistral-ai-a0bbdde2",
+      "first_seen_at": "2026-08-20T15:51:44.229283Z",
+      "published_at": "2026-08-20T12:00:17Z",
+      "source": "mistral-ai",
+      "url": "https://mistral.ai/news/agentic-search"
     },
     "url:b19ec562c455e753267b0e04107e2217c787cdc2a4884378a6d93cdc79d11f47": {
       "article_id": "openai-news-859e2b45",
@@ -914,6 +942,13 @@
       "published_at": "2026-08-19T13:48:49Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/qad"
+    },
+    "url:f65c07c326de973a9c7b04ceb9e7672523ea8a92f583079c2a0d0d21f6661a9a": {
+      "article_id": "apple-ml-research-66128bb0",
+      "first_seen_at": "2026-08-20T15:51:44.229283Z",
+      "published_at": "2026-08-20T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/multilingual-knowledge-transfer-lexical-interventions"
     },
     "url:f6d720104a1a5ec3fd02ae5c90f25e5ca51c2d02e4b82dc9a2ff973688a57c72": {
       "article_id": "apple-ml-research-a860be30",

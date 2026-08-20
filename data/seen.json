@@ -14,6 +14,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-pixieset-achieved-35-ai-feature-adoption-by-solving-the-right-problem-with-amazon-bedrock"
     },
+    "url:05eeb3dab00fd81284bba0e20db85e14dd413e44629491b30772f23bfddd59ec": {
+      "article_id": "aws-machine-learning-b7b45239",
+      "first_seen_at": "2026-08-20T04:02:19.864644Z",
+      "published_at": "2026-08-19T22:09:56Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/automate-document-processing-with-quick-automate-and-the-idp-accelerator"
+    },
     "url:05f14b4e1e89cd91f110a5189c0427a8a5a082c150bca048d34aaf051ae98e82": {
       "article_id": "aws-machine-learning-a26c712e",
       "first_seen_at": "2026-08-13T16:12:48.826746Z",
@@ -430,6 +437,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/human-like-behaviors-llms"
     },
+    "url:7d8cf1a82fe7868bad7bd41cb63449dacedf08a95a54d7d16af1f00eba9887c8": {
+      "article_id": "aws-machine-learning-93fba2e6",
+      "first_seen_at": "2026-08-20T04:02:19.864644Z",
+      "published_at": "2026-08-19T22:06:09Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/asynchronous-patterns-for-calling-amazon-bedrock-agentcore-agents-in-serverless-pipelines"
+    },
     "url:7e17b92474bcfd24464a27163487c58f8c3702b5d2deb1221ec1963be55fb02b": {
       "article_id": "github-ai-ml-588f1340",
       "first_seen_at": "2026-08-12T22:06:40.410035Z",
@@ -442,6 +456,13 @@
       "published_at": "2026-08-04T18:39:14Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/introducing-web-search-on-amazon-bedrock-for-foundation-model-grounding"
+    },
+    "url:80d425e7482ca00d9b562e254a186798a0689fb5976322fdd0f911c7ccb89e1d": {
+      "article_id": "github-ai-ml-04787b60",
+      "first_seen_at": "2026-08-20T04:02:19.864644Z",
+      "published_at": "2026-08-19T17:50:23Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-managing-your-work"
     },
     "url:815edfe6383208a72cfe7f7d043ea0afc2543b1ffb0ccb04372202c8f4eb8186": {
       "article_id": "hugging-face-4007b14a",
@@ -638,6 +659,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt"
     },
+    "url:b26ec23879c13b42dd868f69597824477ae71fe9b0285eb90563f0dfc343459e": {
+      "article_id": "aws-machine-learning-76d3f544",
+      "first_seen_at": "2026-08-20T04:02:19.864644Z",
+      "published_at": "2026-08-19T20:40:45Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-fanatics-betting-and-gaming-built-a-multi-agent-customer-support-system"
+    },
     "url:b3d1173017d6c7da4589201ab0a6f82887d4074b431d1e395511c20c77d613e9": {
       "article_id": "apple-ml-research-48a265dd",
       "first_seen_at": "2026-08-07T16:12:23.815234Z",
@@ -651,6 +679,13 @@
       "published_at": "2026-08-06T16:30:47Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-visibility-for-codex-on-amazon-bedrock-with-opentelemetry-and-amazon-cloudwatch"
+    },
+    "url:b7dd99284a0453af1cc9f97fd2a0ccfaa9556a2245de5f973a7d1c776ec69e1c": {
+      "article_id": "aws-machine-learning-d12a1e3f",
+      "first_seen_at": "2026-08-20T04:02:19.864644Z",
+      "published_at": "2026-08-19T20:36:50Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/knowledgeforge-mining-gold-from-the-itsm-ticket-graveyard"
     },
     "url:baf07daff59f271b90795fd50023fb349ec75ddad4cd8dc3dc0716042648ecd3": {
       "article_id": "openai-news-c287e2b0",
@@ -749,6 +784,13 @@
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/08/benchmark-is-worth-trusting"
     },
+    "url:ccb42b7422acc16c284e03a9d4914a5de63a753976a5af65acc04a22f033ec38": {
+      "article_id": "apple-ml-research-0d4ae675",
+      "first_seen_at": "2026-08-20T04:02:19.864644Z",
+      "published_at": "2026-08-19T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/the-p-completeness-of-inverted-index-traversal"
+    },
     "url:d551d175863afc120b391ddf8b9e668e3d6b674849bb97b70723a5fb13296298": {
       "article_id": "aws-machine-learning-c485de21",
       "first_seen_at": "2026-08-14T16:08:42.817998Z",
@@ -777,6 +819,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/multi-vector-encoder"
     },
+    "url:d96b4129d44ca7f6a2f5011273cddcf5eaf2d08ba9d94228da4952ec404c0d84": {
+      "article_id": "google-ai-8ffdf7b0",
+      "first_seen_at": "2026-08-20T04:02:19.864644Z",
+      "published_at": "2026-08-19T19:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools"
+    },
     "url:db756ec4d6e59ca936da7aa8eca44d5d6459a0ef221677a8ea82662f0ffa317c": {
       "article_id": "aws-machine-learning-27a97a3d",
       "first_seen_at": "2026-08-06T06:08:02.329753Z",
@@ -789,6 +838,13 @@
       "published_at": "2026-08-03T07:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live"
+    },
+    "url:df8f12302a5b421ac18657dd3c98b85f0bbbcdb55f27a7a2a1e94cd20d3dde6b": {
+      "article_id": "openai-news-77b4e899",
+      "first_seen_at": "2026-08-20T04:02:19.864644Z",
+      "published_at": "2026-08-19T19:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models"
     },
     "url:dfb586131bf3d3cb04b45c447ddda1020a0bfabb4f918d58630b10079556383d": {
       "article_id": "hugging-face-8ba0a4cf",
@@ -838,6 +894,13 @@
       "published_at": "2026-08-18T19:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security"
+    },
+    "url:f1b19f2f1e664660449c3325cc5739c9544b8ac6d3a742c44dc51f1e0c625a28": {
+      "article_id": "aws-machine-learning-6b6cf5e1",
+      "first_seen_at": "2026-08-20T04:02:19.864644Z",
+      "published_at": "2026-08-19T22:13:20Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/domain-and-publish-date-filters-for-web-search-on-agentcore"
     },
     "url:f1d4877545a986a0c7349b5eb5d1a44624b88463c561ca50722ab9ee15c187b7": {
       "first_seen_at": "2026-08-04T22:31:58.507698Z",

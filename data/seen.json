@@ -117,6 +117,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/the-defenders-window"
     },
+    "url:13c6b8a9d4ea944c51fd5e30ad2ef86c2645b4f87eff7877c858595503fc8161": {
+      "article_id": "aws-machine-learning-b1cbf73e",
+      "first_seen_at": "2026-08-21T04:04:47.965899Z",
+      "published_at": "2026-08-20T16:31:28Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/authoring-dogwood-policies-from-natural-language-in-amazon-bedrock-agentcore"
+    },
     "url:1441b6270a33709513b41e535651cb1907aa5922af8fcaeb79f3394147edf14c": {
       "article_id": "github-ai-ml-1d67ad10",
       "first_seen_at": "2026-08-06T23:21:45.836993Z",
@@ -342,6 +349,13 @@
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/08/mlperf-client-v2-0"
     },
+    "url:5abe1b16819873d13507625a631a8dbc07a0a5c0e586d0f31acf533951b6615b": {
+      "article_id": "aws-machine-learning-a9a12102",
+      "first_seen_at": "2026-08-21T04:04:47.965899Z",
+      "published_at": "2026-08-20T21:46:03Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-cross-region-inference-for-openai-gpt-5-6-models-on-amazon-bedrock"
+    },
     "url:5ba78b757300e8cc3ff5b4c8f26a93a1cc067af59a63302997722a2b18eff29a": {
       "article_id": "hugging-face-795a7b96",
       "first_seen_at": "2026-08-19T04:02:41.847930Z",
@@ -565,6 +579,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/circles"
     },
+    "url:98b909c8e6cd78c796a83775527e4ce7aa1fa16fbbb500b04b01901c8f78ed59": {
+      "article_id": "aws-machine-learning-7db1ff6b",
+      "first_seen_at": "2026-08-21T04:04:47.965899Z",
+      "published_at": "2026-08-20T21:23:29Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-no-code-ml-workflow-with-snowflake-amazon-sagemaker-canvas-and-amazon-quick-part-2-data-preparation-and-model-building-with-amazon-sagemaker-canvas"
+    },
     "url:9a05a28afb7c8eb8e003cdda5e7988e79896dcd5d467549a81c874733a81edaf": {
       "article_id": "aws-machine-learning-2ae4977b",
       "first_seen_at": "2026-08-07T21:58:33.543829Z",
@@ -686,6 +707,13 @@
       "published_at": "2026-08-06T10:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt"
+    },
+    "url:b1d4c6cfcf5ba4873c1d5ab7628a5dc106404025cc7e19fd4bbb681fcb3db11c": {
+      "article_id": "aws-machine-learning-246302ce",
+      "first_seen_at": "2026-08-21T04:04:47.965899Z",
+      "published_at": "2026-08-20T21:23:38Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-no-code-ml-workflow-with-snowflake-amazon-sagemaker-canvas-and-amazon-quick-part-1-setting-up-your-snowflake-environment"
     },
     "url:b26ec23879c13b42dd868f69597824477ae71fe9b0285eb90563f0dfc343459e": {
       "article_id": "aws-machine-learning-76d3f544",
@@ -888,6 +916,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/how-enterprises-put-ai-to-work"
     },
+    "url:e4e1cd054e2498443ba52e80c9341b57224e5525893d6468803b3f819650abfe": {
+      "article_id": "apple-ml-research-c31699ba",
+      "first_seen_at": "2026-08-21T04:04:47.965899Z",
+      "published_at": "2026-08-20T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/progressive-refinement-pseudo-labeling"
+    },
     "url:e546c9507c4bdece8e78a9938c5519585e0b65f749ccceed110f32b1026fe6bd": {
       "article_id": "google-ai-ca8b9e0b",
       "first_seen_at": "2026-08-13T22:06:40.301314Z",
@@ -908,6 +943,13 @@
       "published_at": "2026-08-05T18:02:23Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-we-built-an-mcp-bridge-to-give-our-agentcore-hosted-ai-agent-access-to-local-mcp-tools"
+    },
+    "url:eab5285cfdebeb65a8ef35d4bffcfc39f4434e5c4addfd2ea652e42de6b3fb15": {
+      "article_id": "hugging-face-98036dcc",
+      "first_seen_at": "2026-08-21T04:04:47.965899Z",
+      "published_at": "2026-08-20T16:52:57Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark"
     },
     "url:ebc5821a44c45c7a5386a7b98a285e9f1b977894a7f66b75b993a724c0e9fd04": {
       "article_id": "google-deepmind-656bc718",
@@ -957,6 +999,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/mvicad2-delays-dilations"
     },
+    "url:f74fa5643a9d83b59d9fb43584797dac61fd4b1ce8ffb7b9ca74de783dee55b9": {
+      "article_id": "aws-machine-learning-b32df2af",
+      "first_seen_at": "2026-08-21T04:04:47.965899Z",
+      "published_at": "2026-08-20T21:23:23Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-no-code-ml-workflow-with-snowflake-amazon-sagemaker-canvas-and-amazon-quick-part-3-visualizing-insights-with-amazon-quick-sight"
+    },
     "url:fb22a1b92cabad920f840e39d11d46404e81d9f892ffcd61cf24f969a4aedafe": {
       "article_id": "aws-machine-learning-9b4b2246",
       "first_seen_at": "2026-08-19T04:02:41.847930Z",
@@ -969,6 +1018,13 @@
       "published_at": "2026-08-03T17:24:15Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/from-weeks-to-minutes-how-formula-1-uses-agentic-ai-on-aws-to-accelerate-data-operations"
+    },
+    "url:fc1a9abd82b35a9c86d54b1fb0f68bd137a90ec86cea086cc68200bb6a148bdd": {
+      "article_id": "openai-news-e1cd8451",
+      "first_seen_at": "2026-08-21T04:04:47.965899Z",
+      "published_at": "2026-08-20T07:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/introducing-ai-futures"
     },
     "url:ff38a160f9f7629841b74335c9a1a1b080e8be6e4f36590262218e5d80497b3c": {
       "article_id": "aws-machine-learning-252f8649",

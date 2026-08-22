@@ -525,6 +525,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/Dharma-AI/gpu-management"
     },
+    "url:85c0e5fdf1f282ab60c2588f8b5a737bcd7dbf7861a00b80478f6d9f4ae7d871": {
+      "article_id": "aws-machine-learning-25ec9759",
+      "first_seen_at": "2026-08-22T03:59:35.106781Z",
+      "published_at": "2026-08-21T17:06:17Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/agentic-data-operations-platform-adop-data-engineering-into-hours"
+    },
     "url:89df3427e525131aaaac50888389b5a09475c7e1001e5ab9fb1744efb73cc88b": {
       "article_id": "google-ai-461d392a",
       "first_seen_at": "2026-08-11T22:08:35.529397Z",
@@ -666,6 +673,13 @@
       "published_at": "2026-08-07T16:21:00Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/determining-playoff-clinching-scenarios-in-the-nhl-using-constraint-programming"
+    },
+    "url:a6c105c432ecc07f666d5ab8a878cea86cba004c8964d96e5901d795dc2c039c": {
+      "article_id": "aws-machine-learning-4ce4369b",
+      "first_seen_at": "2026-08-22T03:59:35.106781Z",
+      "published_at": "2026-08-21T16:57:01Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/accelerating-aircraft-ifec-diagnostics-with-agentic-ai-on-aws"
     },
     "url:a75caca250ebf501fe2294137e1e42a169455cc61b33fef053c8b0bee93e5a66": {
       "article_id": "apple-ml-research-1b8fa118",
@@ -854,6 +868,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/the-p-completeness-of-inverted-index-traversal"
     },
+    "url:d1829425ff1bd6fe6f80accb5f087bc4820cc24c3682db24266b665315289517": {
+      "article_id": "aws-machine-learning-f4860c03",
+      "first_seen_at": "2026-08-22T03:59:35.106781Z",
+      "published_at": "2026-08-21T17:02:35Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-tool-access-with-amazon-bedrock-agentcore-gateway"
+    },
     "url:d551d175863afc120b391ddf8b9e668e3d6b674849bb97b70723a5fb13296298": {
       "article_id": "aws-machine-learning-c485de21",
       "first_seen_at": "2026-08-14T16:08:42.817998Z",
@@ -936,6 +957,13 @@
       "published_at": "2026-08-20T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/progressive-refinement-pseudo-labeling"
+    },
+    "url:e50f0d14453db8d08e91592b51db83878bc57c8362c4d3075aaaac1ffc5c3201": {
+      "article_id": "aws-machine-learning-489f1fda",
+      "first_seen_at": "2026-08-22T03:59:35.106781Z",
+      "published_at": "2026-08-21T16:59:15Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/reduce-rag-costs-on-amazon-bedrock-with-query-aware-compression"
     },
     "url:e546c9507c4bdece8e78a9938c5519585e0b65f749ccceed110f32b1026fe6bd": {
       "article_id": "google-ai-ca8b9e0b",

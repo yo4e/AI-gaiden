@@ -328,6 +328,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly"
     },
+    "url:51cfe3db04ed0bd3efb5e0e3e4cae24a73d01c55252ca81f5edad4c7faa7f89b": {
+      "article_id": "openai-news-0af7f7d4",
+      "first_seen_at": "2026-08-25T16:04:07.812904Z",
+      "published_at": "2026-08-25T07:05:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence"
+    },
     "url:5367cc95a8fd98172eb15540985f3472c41b6f393d6d65c9bf889b4f9238cbc1": {
       "article_id": "openai-news-681282c2",
       "first_seen_at": "2026-08-10T22:01:43.331237Z",
@@ -390,6 +397,20 @@
       "published_at": "2026-08-13T16:02:10Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/monitor-on-premises-and-multi-cloud-ai-agents-with-agentcore-observability"
+    },
+    "url:5ede708d3a23a25755d68224434a7df6bcdabeb4466a31f479e83d5d357a765b": {
+      "article_id": "apple-ml-research-e606587b",
+      "first_seen_at": "2026-08-25T16:04:07.812904Z",
+      "published_at": "2026-08-25T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/starflow2-multimodal-generation"
+    },
+    "url:62003111f3b592c56acd9673289136816214f0ea1151bdbce20616ed93526390": {
+      "article_id": "openai-news-930ee8dc",
+      "first_seen_at": "2026-08-25T16:04:07.812904Z",
+      "published_at": "2026-08-25T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia"
     },
     "url:624979042481ff504b8cdd9f4fefd24e5c9226e8b96822c1d4945a834a37fbab": {
       "article_id": "hugging-face-a7333d02",
@@ -806,6 +827,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/knowledgeforge-mining-gold-from-the-itsm-ticket-graveyard"
     },
+    "url:b9406ae170bd91336ab3bb25f8a481be998406cd07a127a0b7b7880fe2ac0b53": {
+      "article_id": "openai-news-7d54784c",
+      "first_seen_at": "2026-08-25T16:04:07.812904Z",
+      "published_at": "2026-08-25T07:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/jalapeno-first-results"
+    },
     "url:bac12e9d90c3435ed86bb74e3c604a99961c0fe48aed88416fececa9664b14fd": {
       "article_id": "aws-machine-learning-fd4178ff",
       "first_seen_at": "2026-08-25T04:03:45.951557Z",
@@ -937,6 +965,13 @@
       "published_at": "2026-08-21T17:02:35Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-tool-access-with-amazon-bedrock-agentcore-gateway"
+    },
+    "url:d21068479952e40383665c65fe6b8de94dbcd998c34b8b8d4618ffe8cce61e93": {
+      "article_id": "hugging-face-594dfa9d",
+      "first_seen_at": "2026-08-25T16:04:07.812904Z",
+      "published_at": "2026-08-25T15:14:14Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-2"
     },
     "url:d551d175863afc120b391ddf8b9e668e3d6b674849bb97b70723a5fb13296298": {
       "article_id": "aws-machine-learning-c485de21",
@@ -1076,6 +1111,13 @@
       "published_at": "2026-08-19T22:13:20Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/domain-and-publish-date-filters-for-web-search-on-agentcore"
+    },
+    "url:f1c76f23a788b6884a2877cd63f8a9bdec3da0e05f2a60f5b1fd57979e05c843": {
+      "article_id": "hugging-face-61ba3a83",
+      "first_seen_at": "2026-08-25T16:04:07.812904Z",
+      "published_at": "2026-08-25T11:39:24Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing"
     },
     "url:f1d4877545a986a0c7349b5eb5d1a44624b88463c561ca50722ab9ee15c187b7": {
       "first_seen_at": "2026-08-04T22:31:58.507698Z",

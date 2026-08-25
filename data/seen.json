@@ -222,6 +222,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop"
     },
+    "url:35d31ebafcc15027dd0f6f6eb30e580fe67dbdb2e57923a460e2125e1c588fd0": {
+      "article_id": "aws-machine-learning-20f8d52d",
+      "first_seen_at": "2026-08-25T04:03:45.951557Z",
+      "published_at": "2026-08-24T19:32:14Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-new-ray-capabilities-on-sagemaker-hyperpod"
+    },
     "url:3760a4949caa8e909bb3fa0034c4318087e544037959fa8a071a488a2599495f": {
       "first_seen_at": "2026-08-04T00:16:06.231356Z",
       "published_at": "2026-08-03T16:30:58Z",
@@ -499,6 +506,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation"
     },
+    "url:82836b8dea5256ecb2a3bc73cc32bc190e1cb1702c3d3777cfc43d3567b0297c": {
+      "article_id": "aws-machine-learning-3e7917c2",
+      "first_seen_at": "2026-08-25T04:03:45.951557Z",
+      "published_at": "2026-08-24T16:13:09Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-a-restaurant-telephony-ai-host-with-amazon-connect"
+    },
     "url:8393c843a171d72369b2dfabe36ce65b3e11844d7844cfc40853fcf71ec3d4b3": {
       "article_id": "openai-news-e9b26a3e",
       "first_seen_at": "2026-08-19T15:49:21.905842Z",
@@ -607,6 +621,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-cohere-health-digitizes-clinical-policies-using-amazon-bedrock-agentcore"
     },
+    "url:9b54a38fa1b1a3f1fc1fd60d911784f4064b31ff199e66bfc392aa7f95235b93": {
+      "article_id": "hugging-face-af510260",
+      "first_seen_at": "2026-08-25T04:03:45.951557Z",
+      "published_at": "2026-08-25T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/gradio-workflow-guide"
+    },
     "url:9bafa93fe08b847d5d92140912eaaad9a7a6da1c55940aa1439e6fdd8c2d3c44": {
       "article_id": "openai-news-bf0b0d05",
       "first_seen_at": "2026-08-12T22:06:40.410035Z",
@@ -708,6 +729,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b"
     },
+    "url:abd52c9f1dde403ea312fe1dcc8f2b7fc27a242eb1ec73041b234fa7076d6a46": {
+      "article_id": "openai-news-c3c68dc4",
+      "first_seen_at": "2026-08-25T04:03:45.951557Z",
+      "published_at": "2026-08-24T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/gpt-5-6-in-kiro"
+    },
     "url:ad89fb510e3c78c26282cfd40541dc61653b3d8c142b323e38b2c22c1766bfa5": {
       "article_id": "openai-news-db583e47",
       "first_seen_at": "2026-08-20T15:51:44.229283Z",
@@ -777,6 +805,13 @@
       "published_at": "2026-08-19T20:36:50Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/knowledgeforge-mining-gold-from-the-itsm-ticket-graveyard"
+    },
+    "url:bac12e9d90c3435ed86bb74e3c604a99961c0fe48aed88416fececa9664b14fd": {
+      "article_id": "aws-machine-learning-fd4178ff",
+      "first_seen_at": "2026-08-25T04:03:45.951557Z",
+      "published_at": "2026-08-24T16:22:03Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/agentic-resource-discovery-ard-an-open-specification-for-agent-discovery"
     },
     "url:baf07daff59f271b90795fd50023fb349ec75ddad4cd8dc3dc0716042648ecd3": {
       "article_id": "openai-news-c287e2b0",
@@ -874,6 +909,20 @@
       "published_at": "2026-08-11T14:45:00Z",
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/08/benchmark-is-worth-trusting"
+    },
+    "url:cb7928ba1a13a260a9b5b33777912b232664293c964c4974a9c6bf8ececed27c": {
+      "article_id": "mistral-ai-3ade8303",
+      "first_seen_at": "2026-08-25T04:03:45.951557Z",
+      "published_at": "2026-08-24T16:02:41Z",
+      "source": "mistral-ai",
+      "url": "https://mistral.ai/news/mistral-x-humain"
+    },
+    "url:cb9d353d00004b4139732ab4afd6fe6104e09ec06b9a6e0c93e8533ba14eb6ad": {
+      "article_id": "aws-machine-learning-096fb74c",
+      "first_seen_at": "2026-08-25T04:03:45.951557Z",
+      "published_at": "2026-08-24T18:59:15Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/democratizing-institutional-knowledge-building-an-ai-powered-knowledge-management-system-with-aws"
     },
     "url:ccb42b7422acc16c284e03a9d4914a5de63a753976a5af65acc04a22f033ec38": {
       "article_id": "apple-ml-research-0d4ae675",

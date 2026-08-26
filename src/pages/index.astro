@@ -16,7 +16,9 @@ const articles = sortArticles(await getCollection('articles'));
 const grouped = groupArticlesByDate(articles);
 const latestDate = [...grouped.keys()][0];
 const latestArticles = latestDate ? grouped.get(latestDate) || [] : [];
-const latestArticleImages = selectSequentialNewsCardImages(latestArticles.map((article) => article.data));
+const latestArticleImages = selectSequentialNewsCardImages(
+  latestArticles.map((article) => article.data),
+);
 const recentDates = [...grouped.keys()].slice(0, 8);
 const headlineLines = SITE_HEADLINE.split('\n');
 const structuredData = {

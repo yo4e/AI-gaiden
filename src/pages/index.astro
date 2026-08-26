@@ -9,12 +9,16 @@ import {
   SITE_HEADLINE,
   formatJapaneseDate,
   formatJapaneseDateTime,
+  selectSequentialNewsCardImages,
 } from '../lib/site';
 
 const articles = sortArticles(await getCollection('articles'));
 const grouped = groupArticlesByDate(articles);
 const latestDate = [...grouped.keys()][0];
 const latestArticles = latestDate ? grouped.get(latestDate) || [] : [];
+const latestArticleImages = selectSequentialNewsCardImages(
+  latestArticles.map((article) => article.data),
+);
 const recentDates = [...grouped.keys()].slice(0, 8);
 const headlineLines = SITE_HEADLINE.split('\n');
 const structuredData = {
@@ -77,8 +81,12 @@ const structuredData = {
               </time>
             </p>
             <div class="news-list">
-              {latestArticles.map((article) => (
-                <NewsCard article={article} />
+              {latestArticles.map((article, index) => (
+                <NewsCard
+                  article={article}
+                  imageSource={latestArticleImages[index].src}
+                  imageIsSource={latestArticleImages[index].isSource}
+                />
               ))}
             </div>
           </>

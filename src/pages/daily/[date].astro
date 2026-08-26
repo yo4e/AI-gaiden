@@ -12,7 +12,12 @@ import {
   groupArticlesByDate,
   sortArticles,
 } from '../../lib/articles';
-import { defaultNewsImagePath, formatJapaneseDate, formatJapaneseDateTime } from '../../lib/site';
+import {
+  defaultNewsImagePath,
+  formatJapaneseDate,
+  formatJapaneseDateTime,
+  selectSequentialNewsCardImages,
+} from '../../lib/site';
 
 interface Props {
   date: string;
@@ -36,6 +41,7 @@ export async function getStaticPaths() {
 }
 
 const { date, articles, previous, next } = Astro.props;
+const articleImages = selectSequentialNewsCardImages(articles.map((article) => article.data));
 const seoTitle = dailyTitle(date, articles);
 const displayTitle = dailyDisplayTitle(date, articles.length);
 const description = dailyDescription(date, articles);
@@ -118,7 +124,13 @@ const structuredData = [
       このページは記事単位の公式RSS情報を日本時間の日付で集約した一覧です。各記事の本文と原文は個別ページ・公式発表でご確認ください。
     </p>
     <div class="news-list">
-      {articles.map((article) => <NewsCard article={article} />)}
+      {articles.map((article, index) => (
+        <NewsCard
+          article={article}
+          imageSource={articleImages[index].src}
+          imageIsSource={articleImages[index].isSource}
+        />
+      ))}
     </div>
     {
       (previous || next) && (

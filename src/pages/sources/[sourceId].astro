@@ -5,6 +5,7 @@ import NewsCard from '../../components/NewsCard.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { sources } from '../../data/sources';
 import { articlePath, sortArticles } from '../../lib/articles';
+import { selectSequentialNewsCardImages } from '../../lib/site';
 import { sourceCategoryLabel, sourceImagePolicyLabel } from '../../lib/sourcePresentation';
 
 interface Props {
@@ -26,6 +27,7 @@ export async function getStaticPaths() {
 const { source, articles } = Astro.props as Props;
 const articleCount = articles.length;
 const latestArticles = articles.slice(0, 5);
+const latestArticleImages = selectSequentialNewsCardImages(latestArticles.map((article) => article.data));
 const isThin = articleCount < 2;
 const canonicalPath = `/sources/${source.id}/`;
 const pageUrl = new URL(canonicalPath, Astro.site).href;
@@ -149,8 +151,12 @@ const structuredData = [
     {
       latestArticles.length > 0 ? (
         <div class="news-list">
-          {latestArticles.map((article) => (
-            <NewsCard article={article} />
+          {latestArticles.map((article, index) => (
+            <NewsCard
+              article={article}
+              imageSource={latestArticleImages[index].src}
+              imageIsSource={latestArticleImages[index].isSource}
+            />
           ))}
         </div>
       ) : (

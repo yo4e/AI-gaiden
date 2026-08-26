@@ -94,6 +94,28 @@ def test_default_image_variants_are_small_webp_assets() -> None:
         assert path.stat().st_size < 100_000
 
 
+def test_consecutive_card_images_use_deduplicated_selection() -> None:
+    site = read("src/lib/site.ts")
+    card = read("src/components/NewsCard.astro")
+
+    assert "export function selectSequentialNewsCardImages" in site
+    assert "if (src === previousSrc)" in site
+    assert "defaultNewsImagePath(item.articleId, previousSrc)" in site
+    assert "imageSource?: string" in card
+    assert "imageIsSource?: boolean" in card
+    assert "resolvedImageIsSource &&" in card
+
+    list_pages = [
+        read("src/pages/index.astro"),
+        read("src/pages/daily/[date].astro"),
+        read("src/pages/sources/[sourceId].astro"),
+    ]
+    for page in list_pages:
+        assert "selectSequentialNewsCardImages" in page
+        assert "imageSource={" in page
+        assert "imageIsSource={" in page
+
+
 def test_favicon_uses_the_a_mark() -> None:
     favicon = read("public/favicon.svg")
 

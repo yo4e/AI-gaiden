@@ -27,7 +27,9 @@ export async function getStaticPaths() {
 const { source, articles } = Astro.props as Props;
 const articleCount = articles.length;
 const latestArticles = articles.slice(0, 5);
-const latestArticleImages = selectSequentialNewsCardImages(latestArticles.map((article) => article.data));
+const latestArticleImages = selectSequentialNewsCardImages(
+  latestArticles.map((article) => article.data),
+);
 const isThin = articleCount < 2;
 const canonicalPath = `/sources/${source.id}/`;
 const pageUrl = new URL(canonicalPath, Astro.site).href;

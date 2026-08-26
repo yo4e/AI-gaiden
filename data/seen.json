@@ -83,6 +83,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-lightning-now-available-in-amazon-sagemaker-jumpstart"
     },
+    "url:0f881d1e2cf8e9d711b3c484743cffd9b3b29084c51eb9a475ae40ff8197f6cc": {
+      "article_id": "google-ai-4d16e3ef",
+      "first_seen_at": "2026-08-26T04:06:13.216249Z",
+      "published_at": "2026-08-25T16:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/products-and-platforms/products/search/home-decor-tips"
+    },
     "url:1007367946328b2be18851f357f6ab064b9543e4d3f3d0909c45f5b537368c2b": {
       "article_id": "mistral-ai-0989c20a",
       "first_seen_at": "2026-08-11T16:13:54.723524Z",
@@ -208,6 +215,20 @@
       "source": "openai-news",
       "url": "https://openai.com/index/replit"
     },
+    "url:30f2948e24a891190b3dbfd2e195d9b4e1e2bf24eab0246efe25b8fe2ccb31a5": {
+      "article_id": "github-ai-ml-89b70ef9",
+      "first_seen_at": "2026-08-26T04:06:13.216249Z",
+      "published_at": "2026-08-25T21:35:11Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production"
+    },
+    "url:33eae878317d27dcc0386f35e9a677d698ea074de44e94f879168ed6c243016a": {
+      "article_id": "openai-news-d351c239",
+      "first_seen_at": "2026-08-26T04:06:13.216249Z",
+      "published_at": "2026-08-25T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/introducing-admin-plugin"
+    },
     "url:3529facf086217e100399c8e607fb61928b5e904e2708b8762933a12a48de4af": {
       "article_id": "aws-machine-learning-28246d22",
       "first_seen_at": "2026-08-20T15:51:44.229283Z",
@@ -254,6 +275,13 @@
       "published_at": "2026-08-06T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/locking-pretrained-weights"
+    },
+    "url:3a60695b895f83bc5481f486225927f7423c8a21d27008af62a43cf86d22f686": {
+      "article_id": "aws-machine-learning-9f86887e",
+      "first_seen_at": "2026-08-26T04:06:13.216249Z",
+      "published_at": "2026-08-25T16:35:01Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/governed-reports-with-amazon-quick-desktop-and-amazon-fsx-for-netapp-ontap"
     },
     "url:3aca82d56d54fd7c01e7de7e7e84434a4975606e52a81db4d50ec34ea8b5ff18": {
       "article_id": "google-ai-e4792574",
@@ -1097,6 +1125,13 @@
       "published_at": "2026-08-06T15:06:15Z",
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones"
+    },
+    "url:ec596dac47b8163fa8f2f8957cf7431728879180b9e9df177844bd9d0a647272": {
+      "article_id": "aws-machine-learning-5c265fb1",
+      "first_seen_at": "2026-08-26T04:06:13.216249Z",
+      "published_at": "2026-08-25T19:00:09Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/agentic-observability-with-amazon-opensearch-service-mcp-apps"
     },
     "url:f0aa91974e0ad6ca58685787e6b44fa037cfd800e1d56928380594665b146fc1": {
       "article_id": "openai-news-f382d286",

@@ -27,13 +27,17 @@ interface Article {
 
 interface Props {
   article: Article;
+  imageSource?: string;
+  imageIsSource?: boolean;
 }
 
-const { article } = Astro.props;
+const { article, imageSource, imageIsSource } = Astro.props;
 const item = article.data;
 const internalPath = articlePath(item);
-const imageSource = item.imageUrl || defaultNewsImagePath(item.articleId);
-const imageClass = item.imageUrl
+const resolvedImageSource = imageSource || item.imageUrl || defaultNewsImagePath(item.articleId);
+const resolvedImageIsSource =
+  imageIsSource ?? Boolean(item.imageUrl && resolvedImageSource === item.imageUrl);
+const imageClass = resolvedImageIsSource
   ? 'news-card__image news-card__image--source'
   : 'news-card__image news-card__image--default';
 const hasFallback =
@@ -47,7 +51,7 @@ const hasFallback =
     <a class="news-card__image-wrap" href={internalPath} tabindex="-1" aria-hidden="true">
       <img
         class={imageClass}
-        src={imageSource}
+        src={resolvedImageSource}
         alt=""
         width="1200"
         height="900"
@@ -57,7 +61,7 @@ const hasFallback =
       />
     </a>
     {
-      item.imageUrl && (
+      resolvedImageIsSource && (
         <figcaption>
           画像: {item.sourceName}公式RSS
           {item.imageLicense && `（${item.imageLicense}）`}

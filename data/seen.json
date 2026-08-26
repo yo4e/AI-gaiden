@@ -42,6 +42,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows"
     },
+    "url:09db2a0bd84188bdf4753fc362646e95c84074323ad8265c9f876d5d6427aa45": {
+      "article_id": "aws-machine-learning-9d1b7e13",
+      "first_seen_at": "2026-08-26T16:36:07.201345Z",
+      "published_at": "2026-08-26T16:31:32Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/bring-your-own-model-with-amazon-sagemaker-ai-script-mode-in-sdk-v3"
+    },
     "url:0a728b4df1ea2e24ba1c82d26b599c97bdb14f7c45ec405936ae9072a6839848": {
       "article_id": "aws-machine-learning-cca0719b",
       "first_seen_at": "2026-08-06T23:21:45.836993Z",
@@ -144,6 +151,13 @@
       "published_at": "2026-08-10T16:30:46Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-nops-shipped-finops-agents-75-faster-with-amazon-bedrock-agentcore"
+    },
+    "url:17177c100c9150295f9a783a1f42c5ab7f67d636429664b84dc83f06cd3f4a18": {
+      "article_id": "hugging-face-8019eaa6",
+      "first_seen_at": "2026-08-26T16:36:07.201345Z",
+      "published_at": "2026-08-26T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/train-multi-vector-encoder"
     },
     "url:1b555e620b3576f24f15fcd669e7f4a7d191269cd47a4d21b232e7194d040769": {
       "article_id": "apple-ml-research-134c7e09",
@@ -303,6 +317,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-getting-started"
     },
+    "url:3c8a41d2ba407782092359430a0daeaf6a1fff5cf1d8b3039a111d5bb6840ab8": {
+      "article_id": "aws-machine-learning-17ea1831",
+      "first_seen_at": "2026-08-26T16:36:07.201345Z",
+      "published_at": "2026-08-26T15:48:10Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/connect-amazon-bedrock-agentcore-to-cross-account-knowledge-bases"
+    },
     "url:3d196224ab27a2df369cbcf0994d8b85125e1e44f774a26b897579f4f210801c": {
       "article_id": "openai-news-d9113ca7",
       "first_seen_at": "2026-08-10T16:12:13.389844Z",
@@ -316,6 +337,13 @@
       "published_at": "2026-08-17T03:15:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age"
+    },
+    "url:4121a7b15bd92f32985021f65e6604570d5b2530254425293ad83847ebc084fe": {
+      "article_id": "aws-machine-learning-e62d4a26",
+      "first_seen_at": "2026-08-26T16:36:07.201345Z",
+      "published_at": "2026-08-26T16:24:05Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/preparing-data-for-supervised-fine-tuning-part-2-advanced-data-strategies"
     },
     "url:412212f92aaf567f9a25ce7b56b88254c5c2a76252b819e4d4e994ee8053551d": {
       "article_id": "aws-machine-learning-ead775af",
@@ -513,6 +541,13 @@
       "published_at": "2026-08-21T11:59:48Z",
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games"
+    },
+    "url:76c95cd852987031f9d74cac0c4196a0b720408dd9b0815aa14b07f6ec6f1b45": {
+      "article_id": "openai-news-3d71f12e",
+      "first_seen_at": "2026-08-26T16:36:07.201345Z",
+      "published_at": "2026-08-26T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/loveholidays"
     },
     "url:7ba6c2e15df63364ad762702146a3e8eaef814f58d8cf8fa130ed5fffa71a477": {
       "article_id": "apple-ml-research-894ee8da",
@@ -1043,6 +1078,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-mobileye-transformed-support-operations-using-amazon-bedrock-agentcore"
     },
+    "url:db9c7c018a25e74f7db897dcd3ac755b6a85dbf6fb2e11be198b241ed42b48fc": {
+      "article_id": "aws-machine-learning-4b795064",
+      "first_seen_at": "2026-08-26T16:36:07.201345Z",
+      "published_at": "2026-08-26T16:24:02Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/preparing-data-for-supervised-fine-tuning-part-1-formatting-and-quality"
+    },
     "url:deec56a13e2b9b57f5b59222a713843e545d12e56c5cfa7a8c4462845968c02e": {
       "first_seen_at": "2026-08-04T00:16:06.231356Z",
       "published_at": "2026-08-03T07:00:00Z",
@@ -1187,6 +1229,13 @@
       "published_at": "2026-08-20T21:23:23Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-a-no-code-ml-workflow-with-snowflake-amazon-sagemaker-canvas-and-amazon-quick-part-3-visualizing-insights-with-amazon-quick-sight"
+    },
+    "url:f79c5348879621cc8defe01fcd3edcd96e5116c756cb03ddfe2b4fb6b7de4367": {
+      "article_id": "mlcommons-ce3c2b51",
+      "first_seen_at": "2026-08-26T16:36:07.201345Z",
+      "published_at": "2026-08-26T14:50:00Z",
+      "source": "mlcommons",
+      "url": "https://mlcommons.org/2026/08/endtoend-inference"
     },
     "url:fb22a1b92cabad920f840e39d11d46404e81d9f892ffcd61cf24f969a4aedafe": {
       "article_id": "aws-machine-learning-9b4b2246",

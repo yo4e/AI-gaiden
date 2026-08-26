@@ -23,6 +23,16 @@ const DEFAULT_NEWS_IMAGE_PATHS = [
   '/default-news-image-10.webp',
 ] as const;
 
+interface NewsCardImageInput {
+  articleId: string;
+  imageUrl?: string | null;
+}
+
+export interface NewsCardImageSelection {
+  src: string;
+  isSource: boolean;
+}
+
 export function isPreviewBuild(): boolean {
   return Boolean(process.env.CF_PAGES) && process.env.CF_PAGES_BRANCH !== 'main';
 }
@@ -56,17 +66,48 @@ export function formatJapaneseDateTime(value: string): string {
   }).format(new Date(value));
 }
 
-export function defaultNewsImagePath(seed: string): string {
+export function defaultNewsImagePath(seed: string, avoidPath?: string | null): string {
   const randomSuffix = seed.match(/[0-9a-f]{8}$/i)?.[0];
+  let index: number;
+
   if (randomSuffix) {
-    const index = Number.parseInt(randomSuffix, 16) % DEFAULT_NEWS_IMAGE_PATHS.length;
-    return DEFAULT_NEWS_IMAGE_PATHS[index];
+    index = Number.parseInt(randomSuffix, 16) % DEFAULT_NEWS_IMAGE_PATHS.length;
+  } else {
+    let hash = 2166136261;
+    for (const character of seed) {
+      hash ^= character.charCodeAt(0);
+      hash = Math.imul(hash, 16777619) >>> 0;
+    }
+    index = hash % DEFAULT_NEWS_IMAGE_PATHS.length;
   }
 
-  let hash = 2166136261;
-  for (const character of seed) {
-    hash ^= character.charCodeAt(0);
-    hash = Math.imul(hash, 16777619) >>> 0;
+  if (
+    avoidPath &&
+    DEFAULT_NEWS_IMAGE_PATHS.length > 1 &&
+    DEFAULT_NEWS_IMAGE_PATHS[index] === avoidPath
+  ) {
+    index = (index + 1) % DEFAULT_NEWS_IMAGE_PATHS.length;
   }
-  return DEFAULT_NEWS_IMAGE_PATHS[hash % DEFAULT_NEWS_IMAGE_PATHS.length];
+
+  return DEFAULT_NEWS_IMAGE_PATHS[index];
+}
+
+export function selectSequentialNewsCardImages(
+  items: readonly NewsCardImageInput[],
+): NewsCardImageSelection[] {
+  let previousSrc: string | null = null;
+
+  return items.map((item) => {
+    const sourceImage = item.imageUrl?.trim() || null;
+    let src = sourceImage || defaultNewsImagePath(item.articleId, previousSrc);
+    let isSource = Boolean(sourceImage);
+
+    if (src === previousSrc) {
+      src = defaultNewsImagePath(item.articleId, previousSrc);
+      isSource = false;
+    }
+
+    previousSrc = src;
+    return { src, isSource };
+  });
 }

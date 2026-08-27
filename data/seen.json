@@ -118,6 +118,13 @@
       "source": "microsoft-ai",
       "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/08/04/accelerating-frontier-transformation-enrich-employee-experience"
     },
+    "url:124856d6ff517a374771bf693f2024d7b169a9a9f4a7d25e69faa433d3df9936": {
+      "article_id": "aws-machine-learning-3f5710b5",
+      "first_seen_at": "2026-08-27T14:17:35.478713Z",
+      "published_at": "2026-08-26T16:36:35Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/nateras-intelligent-appointment-scheduling-with-amazon-bedrock-agentcore"
+    },
     "url:129511f54188e7df4ed8e9053336c86e351ea4b1cebcb97326b55267c4322922": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
       "published_at": "2026-08-04T00:00:00Z",
@@ -236,12 +243,26 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production"
     },
+    "url:33afd77e80915c13c870f925a3c81bbc969cba0a8eb373a7b275f1e659228763": {
+      "article_id": "apple-ml-research-b95b5c76",
+      "first_seen_at": "2026-08-27T14:17:35.478713Z",
+      "published_at": "2026-08-26T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/relightable-gaussians-3d-generation"
+    },
     "url:33eae878317d27dcc0386f35e9a677d698ea074de44e94f879168ed6c243016a": {
       "article_id": "openai-news-d351c239",
       "first_seen_at": "2026-08-26T04:06:13.216249Z",
       "published_at": "2026-08-25T00:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/introducing-admin-plugin"
+    },
+    "url:34e62ff4c7cf4defda5bd7747a692840f7012595a2eb1a543614fdc32b51c94b": {
+      "article_id": "openai-news-68aa6dd2",
+      "first_seen_at": "2026-08-27T14:17:35.478713Z",
+      "published_at": "2026-08-26T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead"
     },
     "url:3529facf086217e100399c8e607fb61928b5e904e2708b8762933a12a48de4af": {
       "article_id": "aws-machine-learning-28246d22",
@@ -535,6 +556,20 @@
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/technology/developers-tools/ai-agents-intensive-recap-2026"
     },
+    "url:737331cbffc8a092b5afd2188884ce2a48372d771166cb07df0e7429800d54ab": {
+      "article_id": "google-deepmind-7928ff07",
+      "first_seen_at": "2026-08-27T14:17:35.478713Z",
+      "published_at": "2026-08-26T17:01:00Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe"
+    },
+    "url:75b859b8cd50a88b1480e59956e69c4230f0ae75e564c38a740d1c9b41026da4": {
+      "article_id": "mlcommons-7388cc0a",
+      "first_seen_at": "2026-08-27T14:17:35.478713Z",
+      "published_at": "2026-08-27T13:13:02Z",
+      "source": "mlcommons",
+      "url": "https://mlcommons.org/2026/08/double-blind-reliability-evaluation"
+    },
     "url:76900827bd8bbfff398d6c8f0aa43bfe18128f59d845a59bc4f3689b51e7e07d": {
       "article_id": "google-deepmind-bc028812",
       "first_seen_at": "2026-08-21T15:50:46.094889Z",
@@ -596,6 +631,13 @@
       "published_at": "2026-08-24T16:13:09Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/building-a-restaurant-telephony-ai-host-with-amazon-connect"
+    },
+    "url:832a12c8f33a104e2b49b2d1442be1d80f1153a18abe85ca9b9a201d94b80ba6": {
+      "article_id": "openai-news-b3a20481",
+      "first_seen_at": "2026-08-27T14:17:35.478713Z",
+      "published_at": "2026-08-26T10:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/learning-never-stops"
     },
     "url:8393c843a171d72369b2dfabe36ce65b3e11844d7844cfc40853fcf71ec3d4b3": {
       "article_id": "openai-news-e9b26a3e",
@@ -704,6 +746,13 @@
       "published_at": "2026-08-07T16:26:58Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-cohere-health-digitizes-clinical-policies-using-amazon-bedrock-agentcore"
+    },
+    "url:9b368ab3b44b71646ac31c56aeacafc116c8c183c551b967038957d535a25386": {
+      "article_id": "github-ai-ml-8e809aab",
+      "first_seen_at": "2026-08-27T14:17:35.478713Z",
+      "published_at": "2026-08-26T20:12:53Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-automate-dependabot-pull-request-triage"
     },
     "url:9b54a38fa1b1a3f1fc1fd60d911784f4064b31ff199e66bfc392aa7f95235b93": {
       "article_id": "hugging-face-af510260",
@@ -981,6 +1030,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/diffusion-autoregressive-performance"
     },
+    "url:c9880544f2a2bcc8af539f698c23ee907616e3100e1463359d5958cf63760848": {
+      "article_id": "aws-machine-learning-f7d7edea",
+      "first_seen_at": "2026-08-27T14:17:35.478713Z",
+      "published_at": "2026-08-26T19:13:35Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/evaluate-any-agent-framework-with-amazon-bedrock-agentcore-evaluations"
+    },
     "url:c99ec862b4e71599bc42c6f96a94ea0c61758ad0ed0c0445d6331b28e4539a2c": {
       "first_seen_at": "2026-08-04T22:31:58.507698Z",
       "published_at": "2026-08-04T19:00:00Z",
@@ -1147,6 +1203,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities"
     },
+    "url:e71c780b6d875f94ab9ec400f88212626c8d9478b4bd58ce9a1bd39accb602b1": {
+      "article_id": "aws-machine-learning-17cda2b8",
+      "first_seen_at": "2026-08-27T14:17:35.478713Z",
+      "published_at": "2026-08-26T16:51:53Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-godaddy-transformed-its-analytics-with-amazon-quick"
+    },
     "url:ea850b1a9c912609462a439893945e59b89d629abde9532c3a32b7330d6d6442": {
       "article_id": "aws-machine-learning-8c14dce9",
       "first_seen_at": "2026-08-06T06:08:02.329753Z",
@@ -1175,12 +1238,26 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/agentic-observability-with-amazon-opensearch-service-mcp-apps"
     },
+    "url:ef45fbda0d5a49705547016cc4a15b82afb38700046306472cb1d67ce777c7ff": {
+      "article_id": "apple-ml-research-814a75ee",
+      "first_seen_at": "2026-08-27T14:17:35.478713Z",
+      "published_at": "2026-08-26T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/idea-prune-pipeline"
+    },
     "url:f0aa91974e0ad6ca58685787e6b44fa037cfd800e1d56928380594665b146fc1": {
       "article_id": "openai-news-f382d286",
       "first_seen_at": "2026-08-19T04:02:41.847930Z",
       "published_at": "2026-08-18T19:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security"
+    },
+    "url:f0dc85dcc6d3444f6482829995f5a83e6fdb56513a353598d7cfc58189cd6756": {
+      "article_id": "google-deepmind-1ab7f4ff",
+      "first_seen_at": "2026-08-27T14:17:35.478713Z",
+      "published_at": "2026-08-27T12:59:16Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations"
     },
     "url:f1b19f2f1e664660449c3325cc5739c9544b8ac6d3a742c44dc51f1e0c625a28": {
       "article_id": "aws-machine-learning-6b6cf5e1",
@@ -1201,6 +1278,13 @@
       "published_at": "2026-08-04T19:02:34Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows"
+    },
+    "url:f4412618f8cd919edf4553e282f7925e569550e7c2ccee6dafeb60f4887f77b4": {
+      "article_id": "apple-ml-research-8e39f087",
+      "first_seen_at": "2026-08-27T14:17:35.478713Z",
+      "published_at": "2026-08-26T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/proof-gen-optimized-distillation"
     },
     "url:f56fb1ee13437f3d1c1d8f00ac5022fe0f8999facb1f47e0532e714861148c87": {
       "article_id": "hugging-face-86aee86b",
@@ -1237,6 +1321,13 @@
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/08/endtoend-inference"
     },
+    "url:fa2791fbc9af008fbec5e3ce56bf40bc113bb8071f7a73cfd61c5d71ead84cf1": {
+      "article_id": "openai-news-3d5e7ded",
+      "first_seen_at": "2026-08-27T14:17:35.478713Z",
+      "published_at": "2026-08-26T10:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts"
+    },
     "url:fb22a1b92cabad920f840e39d11d46404e81d9f892ffcd61cf24f969a4aedafe": {
       "article_id": "aws-machine-learning-9b4b2246",
       "first_seen_at": "2026-08-19T04:02:41.847930Z",
@@ -1256,6 +1347,13 @@
       "published_at": "2026-08-20T07:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/introducing-ai-futures"
+    },
+    "url:fe23f369e01db08d4a0477172cd7e0c5a8e1ac1fb959a7f41cba80240e425604": {
+      "article_id": "openai-news-ac4c5d2b",
+      "first_seen_at": "2026-08-27T14:17:35.478713Z",
+      "published_at": "2026-08-27T03:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/expanding-our-presence-in-brazil"
     },
     "url:ff38a160f9f7629841b74335c9a1a1b080e8be6e4f36590262218e5d80497b3c": {
       "article_id": "aws-machine-learning-252f8649",

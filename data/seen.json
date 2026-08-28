@@ -215,6 +215,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/allenai/olmoearth-embeddings"
     },
+    "url:26c11393ee029ad8ff6f7eb3d40565cd96a076716564514d6fdec9138f6df84e": {
+      "article_id": "aws-machine-learning-557ff428",
+      "first_seen_at": "2026-08-28T00:26:39.012587Z",
+      "published_at": "2026-08-27T23:04:22Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-agentic-creative-workflows-with-amazon-quick-and-fal"
+    },
     "url:29b0e61ec6cd1ed38342bd3f0d233e41901ac8706bcd8411d89efe21c8f9b7d6": {
       "article_id": "openai-news-f3b45494",
       "first_seen_at": "2026-08-10T22:01:43.331237Z",
@@ -284,6 +291,13 @@
       "published_at": "2026-08-24T19:32:14Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/introducing-new-ray-capabilities-on-sagemaker-hyperpod"
+    },
+    "url:36cb96fb972f9cda3e8f25c74ee6da57f6b87f63a579c845216486a947c85eea": {
+      "article_id": "apple-ml-research-c71badc7",
+      "first_seen_at": "2026-08-28T00:26:39.012587Z",
+      "published_at": "2026-08-27T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/rubric-based-alignment"
     },
     "url:3760a4949caa8e909bb3fa0034c4318087e544037959fa8a071a488a2599495f": {
       "first_seen_at": "2026-08-04T00:16:06.231356Z",
@@ -447,6 +461,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/introducing-cross-region-inference-for-openai-gpt-5-6-models-on-amazon-bedrock"
     },
+    "url:5b17581a4141c14962ccd1aeacd2e9f88a03689f93fb27a50c803e74f55304b3": {
+      "article_id": "aws-machine-learning-fc4788ff",
+      "first_seen_at": "2026-08-28T00:26:39.012587Z",
+      "published_at": "2026-08-27T16:05:10Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/reduce-asr-inference-costs-by-75-with-nvidia-mps-on-amazon-ec2"
+    },
     "url:5ba78b757300e8cc3ff5b4c8f26a93a1cc067af59a63302997722a2b18eff29a": {
       "article_id": "hugging-face-795a7b96",
       "first_seen_at": "2026-08-19T04:02:41.847930Z",
@@ -460,6 +481,13 @@
       "published_at": "2026-08-11T16:09:06Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/first-orion-accelerates-qa-automation-using-amazon-nova-act"
+    },
+    "url:5c8d75ef9c12c05961137bb4431a14c551ac90466a167ec85821c6aa78285922": {
+      "article_id": "openai-news-a4f91924",
+      "first_seen_at": "2026-08-28T00:26:39.012587Z",
+      "published_at": "2026-08-27T09:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training"
     },
     "url:5d3aff0aba5d0b8a3f2e93df1ad39730fb85c89988a96a7dff89f13df3bf1726": {
       "article_id": "openai-news-93a243bd",
@@ -700,6 +728,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/building-agentic-workflows-with-sagemaker-ai-and-bedrock-agentcore"
     },
+    "url:90ba20dc32b53edf52ab24a1495bdf5c2efdd55baaf375e673bcc92bdc711912": {
+      "article_id": "google-deepmind-5ed99094",
+      "first_seen_at": "2026-08-28T00:26:39.012587Z",
+      "published_at": "2026-08-27T16:11:32Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control"
+    },
     "url:93e5dec2f2f712e34a34310fc188fb3e02f13f39022d255dcd7fb216a3339f34": {
       "article_id": "aws-machine-learning-8c775447",
       "first_seen_at": "2026-08-06T23:21:45.836993Z",
@@ -855,6 +890,13 @@
       "published_at": "2026-08-07T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/arbitrage-efficient-reasoning"
+    },
+    "url:a7db6e12c1ae453b9e9d3bf924c5f3a7af148e960f556ca8c2b7d5497640930b": {
+      "article_id": "google-ai-bfb338bb",
+      "first_seen_at": "2026-08-28T00:26:39.012587Z",
+      "published_at": "2026-08-27T16:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode"
     },
     "url:aa21db80f8b7b7664c23f0b5de6fc014a64920e8fdb45e2877008c81969f17ab": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
@@ -1078,6 +1120,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/the-p-completeness-of-inverted-index-traversal"
     },
+    "url:cd6609ad79310a0d482d61dd33f61ca6c0ec7d9d8ddbc10113b2399cfd1704d5": {
+      "article_id": "aws-machine-learning-c7c4de7d",
+      "first_seen_at": "2026-08-28T00:26:39.012587Z",
+      "published_at": "2026-08-27T16:11:27Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/deepgram-deepens-amazon-sagemaker-ai-observability-with-enhanced-metrics"
+    },
     "url:d1829425ff1bd6fe6f80accb5f087bc4820cc24c3682db24266b665315289517": {
       "article_id": "aws-machine-learning-f4860c03",
       "first_seen_at": "2026-08-22T03:59:35.106781Z",
@@ -1209,6 +1258,13 @@
       "published_at": "2026-08-26T16:51:53Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-godaddy-transformed-its-analytics-with-amazon-quick"
+    },
+    "url:e991f28971b78ffc4b870f48aedb48451906a0883992dfde8367c738a304e26f": {
+      "article_id": "aws-machine-learning-3dc2458c",
+      "first_seen_at": "2026-08-28T00:26:39.012587Z",
+      "published_at": "2026-08-27T18:36:08Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-openai-models-on-amazon-bedrock-for-in-country-inferencing-in-india"
     },
     "url:ea850b1a9c912609462a439893945e59b89d629abde9532c3a32b7330d6d6442": {
       "article_id": "aws-machine-learning-8c14dce9",

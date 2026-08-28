@@ -1099,6 +1099,13 @@
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/08/benchmark-is-worth-trusting"
     },
+    "url:cb1db0d5c74b6e9eeb890e2ee46bb06c7f0b7f7e54363ac96a62606a772bbfa5": {
+      "article_id": "openai-news-edb1d2d6",
+      "first_seen_at": "2026-08-28T15:27:43.616256Z",
+      "published_at": "2026-08-28T02:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand"
+    },
     "url:cb7928ba1a13a260a9b5b33777912b232664293c964c4974a9c6bf8ececed27c": {
       "article_id": "mistral-ai-3ade8303",
       "first_seen_at": "2026-08-25T04:03:45.951557Z",
@@ -1119,6 +1126,13 @@
       "published_at": "2026-08-19T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/the-p-completeness-of-inverted-index-traversal"
+    },
+    "url:cd443d00afaf49a9014b7e08a37b4965ae5a974bbbea3f9fd5d4068899ab8e69": {
+      "article_id": "microsoft-ai-c7ae56b7",
+      "first_seen_at": "2026-08-28T15:27:43.616256Z",
+      "published_at": "2026-08-26T15:00:00Z",
+      "source": "microsoft-ai",
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/08/26/accelerating-frontier-transformation-reinvent-customer-engagement"
     },
     "url:cd6609ad79310a0d482d61dd33f61ca6c0ec7d9d8ddbc10113b2399cfd1704d5": {
       "article_id": "aws-machine-learning-c7c4de7d",

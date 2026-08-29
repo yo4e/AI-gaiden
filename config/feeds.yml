@@ -148,6 +148,19 @@ feeds:
       - deep-learning
       - hardware
 
+  - id: sourcegraph-changelog
+    name: Sourcegraph Technical Changelog
+    url: https://sourcegraph.com/changelog/technical-changelog.rss
+    homepage: https://sourcegraph.com/changelog/releases
+    language: en
+    enabled: true
+    priority: 68
+    max_items_per_run: 5
+    image_policy: rss_only
+    categories:
+      - developer-tools
+      - artificial-intelligence
+
   - id: mlcommons
     name: MLCommons
     url: https://mlcommons.org/feed/

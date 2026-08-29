@@ -121,6 +121,16 @@ export const sources: Source[] = [
     imagePolicy: 'rss_only',
   },
   {
+    id: 'sourcegraph-changelog',
+    name: 'Sourcegraph Technical Changelog',
+    homepage: 'https://sourcegraph.com/changelog/releases',
+    feedUrl: 'https://sourcegraph.com/changelog/technical-changelog.rss',
+    description: 'Sourcegraphのコード検索、AIコーディング、開発者基盤に関する公式変更情報',
+    enabled: true,
+    categories: ['developer-tools', 'artificial-intelligence'],
+    imagePolicy: 'rss_only',
+  },
+  {
     id: 'mlcommons',
     name: 'MLCommons',
     homepage: 'https://mlcommons.org/',

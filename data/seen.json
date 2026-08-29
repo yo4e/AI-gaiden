@@ -531,6 +531,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/starflow2-multimodal-generation"
     },
+    "url:60f1daff5ce521484393650803ac03c58716d375052fe27a7187f34d134181c5": {
+      "article_id": "sourcegraph-changelog-9465daf0",
+      "first_seen_at": "2026-08-29T18:35:18.666106Z",
+      "published_at": "2026-08-27T20:40:38Z",
+      "source": "sourcegraph-changelog",
+      "url": "https://sourcegraph.com/changelog/releases/7.7.359"
+    },
     "url:62003111f3b592c56acd9673289136816214f0ea1151bdbce20616ed93526390": {
       "article_id": "openai-news-930ee8dc",
       "first_seen_at": "2026-08-25T16:04:07.812904Z",

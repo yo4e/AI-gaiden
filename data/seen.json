@@ -208,6 +208,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-openclaw-agents-that-transact-with-amazon-bedrock-agentcore-payments"
     },
+    "url:248c8d39f0ea551419cff5661f09d00bd73d21729cd29d2949b6ae020a3dc956": {
+      "article_id": "aws-machine-learning-7bf09be7",
+      "first_seen_at": "2026-08-29T10:10:04.614897Z",
+      "published_at": "2026-08-28T16:20:40Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/spreading-the-load-how-salesforce-met-multi-az-ha-with-sagemaker-inference-components"
+    },
     "url:249a5e1ede4df4c078023a6f0eb49ede54fb5bdd187586ea50eee351b3c1007c": {
       "article_id": "hugging-face-952b04c2",
       "first_seen_at": "2026-08-12T22:06:40.410035Z",
@@ -393,6 +400,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app"
     },
+    "url:49af65417091cab593ed830ed9ccd3147d47cf27510466ddf67d9946e4d6a324": {
+      "article_id": "apple-ml-research-8da42067",
+      "first_seen_at": "2026-08-29T10:10:04.614897Z",
+      "published_at": "2026-08-28T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/agent-seer-synthesizing-scenarios"
+    },
     "url:4a6b874ba5509dc494df62125cb5063d7247b899afb73b3adaa49b716ce55fe7": {
       "article_id": "aws-machine-learning-275b634e",
       "first_seen_at": "2026-08-06T06:08:02.329753Z",
@@ -412,6 +426,13 @@
       "published_at": "2026-08-03T22:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/apple-is-getting-this-wrong"
+    },
+    "url:4d3b17a749f42c957e926aa5ecda3aa5c4eeeaa5ba6fc6a0122239385ec004be": {
+      "article_id": "hugging-face-84b6b96c",
+      "first_seen_at": "2026-08-29T10:10:04.614897Z",
+      "published_at": "2026-08-28T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/open-asr-leaderboard-global-south"
     },
     "url:4e90420c69645ce576fce1fa06fbd03e9ca526dfc19600edad8ffcd0bf588612": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
@@ -597,6 +618,13 @@
       "published_at": "2026-08-27T13:13:02Z",
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/08/double-blind-reliability-evaluation"
+    },
+    "url:7625e7226ac0a816ad72721ec4c5f9ea2e93abbdfb23fec89e479619170b821d": {
+      "article_id": "aws-machine-learning-7b153bec",
+      "first_seen_at": "2026-08-29T10:10:04.614897Z",
+      "published_at": "2026-08-28T16:22:30Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-decathlon-runs-demand-forecasting-at-scale-with-chronos-2"
     },
     "url:76900827bd8bbfff398d6c8f0aa43bfe18128f59d845a59bc4f3689b51e7e07d": {
       "article_id": "google-deepmind-bc028812",
@@ -803,6 +831,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/ringcentral"
     },
+    "url:9c179a0af67d39a7b30ee5b96d2a545b4f735b192f9bf86803afdd3d217082eb": {
+      "article_id": "aws-machine-learning-05f387c3",
+      "first_seen_at": "2026-08-29T10:10:04.614897Z",
+      "published_at": "2026-08-28T19:31:05Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/batch-write-and-discover-records-in-amazon-sagemaker-feature-store"
+    },
     "url:9c25f4ae7a186d68926fabf7ba66321e74423e571b1f86a4351d93eff1c6252c": {
       "article_id": "openai-news-09940515",
       "first_seen_at": "2026-08-19T04:02:41.847930Z",
@@ -966,6 +1001,13 @@
       "published_at": "2026-08-07T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/scaling-categorical-flow-maps"
+    },
+    "url:b42ac281ecaf56c08abb695644df43cc6560bb332ec6641a0a17b2c01529c31f": {
+      "article_id": "openai-news-1356dd90",
+      "first_seen_at": "2026-08-29T10:10:04.614897Z",
+      "published_at": "2026-08-28T06:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex"
     },
     "url:b436cffff0d8ed3aa0ac95cac875373e4f3d90da0b2e6d33bb631b6a1e05777f": {
       "article_id": "aws-machine-learning-46c845b8",
@@ -1390,6 +1432,13 @@
       "published_at": "2026-08-26T14:50:00Z",
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/08/endtoend-inference"
+    },
+    "url:f80bee2d00329ffbcaf3322749eb470806add57f93dafcdd8e6ffb692ec42b44": {
+      "article_id": "apple-ml-research-776b3070",
+      "first_seen_at": "2026-08-29T10:10:04.614897Z",
+      "published_at": "2026-08-28T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/llms-not-consistently-bayesian"
     },
     "url:fa2791fbc9af008fbec5e3ce56bf40bc113bb8071f7a73cfd61c5d71ead84cf1": {
       "article_id": "openai-news-3d5e7ded",

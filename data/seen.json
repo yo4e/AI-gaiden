@@ -319,6 +319,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work"
     },
+    "url:38765f3001f64af7cbf0caf63000a60437f98e23a031bc6694bd499a604250b5": {
+      "article_id": "aws-machine-learning-a821a024",
+      "first_seen_at": "2026-08-31T20:52:26.324221Z",
+      "published_at": "2026-08-31T19:18:09Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/manage-agents-tools-and-skills-at-scale-with-aws-agent-registry"
+    },
     "url:388fcf76f805893583afbc4f1162f65a8fbb8ae6cc42f28a885840da4f39b22a": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
       "published_at": "2026-07-28T13:00:00Z",
@@ -453,6 +460,13 @@
       "published_at": "2026-08-10T17:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/building-an-ai-native-finance-function"
+    },
+    "url:57daf334c931638e45d327ab1379014fe7e8b38299d999cbcff5e2ca8603c3b0": {
+      "article_id": "aws-machine-learning-3ad6e63b",
+      "first_seen_at": "2026-08-31T20:52:26.324221Z",
+      "published_at": "2026-08-31T19:50:12Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/aws-recognized-as-a-leader-in-the-forrester-wave-ai-infrastructure-solutions-q4-2025"
     },
     "url:57f8b7f378e9c39afee2b695124e64c9f4d434320943b412f6cfb54e9fb0229e": {
       "article_id": "hugging-face-a0ab9baa",
@@ -748,6 +762,13 @@
       "published_at": "2026-08-20T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/scaling-laws-mixture-pretraining"
+    },
+    "url:8a7cdd78fd48385994a8dbca98a1e32138d055e0841fbba3f4c389fe7e61c2a0": {
+      "article_id": "openai-news-b9f651f5",
+      "first_seen_at": "2026-08-31T20:52:26.324221Z",
+      "published_at": "2026-08-31T04:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads"
     },
     "url:8cd324ef73df5cc6140afb8b0599c7caa91b70e81b09115954d8b3ccf2314e84": {
       "article_id": "aws-machine-learning-5ed8f11d",
@@ -1364,6 +1385,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/idea-prune-pipeline"
     },
+    "url:efabfc507247c9d223c0f258f4cfc916d88aad158419e5c955209a9636889223": {
+      "article_id": "aws-machine-learning-8416b7b0",
+      "first_seen_at": "2026-08-31T20:52:26.324221Z",
+      "published_at": "2026-08-31T18:56:12Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-multi-tenant-agentic-chat-applications-on-enterprise-data-with-amazon-bedrock-managed-knowledge-base"
+    },
     "url:f0aa91974e0ad6ca58685787e6b44fa037cfd800e1d56928380594665b146fc1": {
       "article_id": "openai-news-f382d286",
       "first_seen_at": "2026-08-19T04:02:41.847930Z",
@@ -1411,6 +1439,13 @@
       "published_at": "2026-08-19T13:48:49Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/qad"
+    },
+    "url:f6095a0e1ccbc10ecef4d670e60f5bafdc5ae220f419ae369d33ed4ae1d64bd8": {
+      "article_id": "aws-machine-learning-8df70b2d",
+      "first_seen_at": "2026-08-31T20:52:26.324221Z",
+      "published_at": "2026-08-31T19:08:45Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-observable-enterprise-agentic-retrieval-using-managed-amazon-bedrock-knowledge-base-with-aws-cloudformation"
     },
     "url:f65c07c326de973a9c7b04ceb9e7672523ea8a92f583079c2a0d0d21f6661a9a": {
       "article_id": "apple-ml-research-66128bb0",

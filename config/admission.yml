@@ -1,0 +1,4 @@
+sources:
+  sourcegraph-changelog:
+    mode: filtered
+    policy: ai_terms_v1

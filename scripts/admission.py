@@ -196,7 +196,9 @@ class AdmissionFeedReader(FeedReader):
         unknown_sources = set(self.rules) - set(config_by_id)
         if unknown_sources:
             unknown = ", ".join(sorted(unknown_sources))
-            raise AdmissionConfigurationError(f"Admission sources are not configured feeds: {unknown}")
+            raise AdmissionConfigurationError(
+                f"Admission sources are not configured feeds: {unknown}"
+            )
         expanded = expand_configs_for_admission(configs, self.rules)
         results = super().fetch_all(expanded)
         return apply_admission(results, self.rules, config_by_id)

@@ -9,6 +9,7 @@ from pathlib import Path
 if __package__ in {None, ""}:
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
+from scripts.admission import AdmissionFeedReader, load_admission_config  # noqa: E402
 from scripts.translator import TranslationError  # noqa: E402
 from scripts.updater import UpdateError, run_update  # noqa: E402
 
@@ -16,6 +17,12 @@ from scripts.updater import UpdateError, run_update  # noqa: E402
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Update AI外電 from configured official feeds")
     parser.add_argument("--config", type=Path, default=Path("config/feeds.yml"))
+    parser.add_argument(
+        "--admission-config",
+        type=Path,
+        default=Path("config/admission.yml"),
+        help="Article admission policy configuration",
+    )
     parser.add_argument("--seen", type=Path, default=Path("data/seen.json"))
     parser.add_argument("--content-dir", type=Path, default=Path("src/content/articles"))
     parser.add_argument("--cache", type=Path, default=Path(".cache/feed-state.json"))
@@ -34,12 +41,14 @@ def main() -> int:
     logging.getLogger("stanza").setLevel(logging.WARNING)
     args = parse_args()
     try:
+        reader = AdmissionFeedReader(args.cache, load_admission_config(args.admission_config))
         count = run_update(
             config_path=args.config,
             seen_path=args.seen,
             content_dir=args.content_dir,
             cache_path=args.cache,
             bootstrap_days=args.bootstrap_days,
+            reader=reader,
         )
     except (UpdateError, TranslationError, ValueError) as exc:
         logging.error("Update stopped safely: %s", exc)

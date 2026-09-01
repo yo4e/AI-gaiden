@@ -90,6 +90,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai"
     },
+    "url:0e71ce2ffcabb4c1d666aa52c9f07aaaadf722767f9fc7ea47e111d8a6e79174": {
+      "article_id": "mlcommons-b779251e",
+      "first_seen_at": "2026-09-01T18:36:04.461318Z",
+      "published_at": "2026-09-01T14:53:00Z",
+      "source": "mlcommons",
+      "url": "https://mlcommons.org/2026/09/mlperf-storage-v3-0-results"
+    },
     "url:0eadff1b96c5b07c2a9da2a0da496ae04560f4cb6ca0e8a54de3a0e7ebbe46bc": {
       "article_id": "aws-machine-learning-9a63870c",
       "first_seen_at": "2026-08-18T04:01:01.822238Z",
@@ -242,6 +249,13 @@
       "published_at": "2026-08-10T10:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands"
+    },
+    "url:2b99e5fb4a62d522a564d01d0fc411288c717a226db67fc3cba914d5f4d27e28": {
+      "article_id": "aws-machine-learning-f7d7d263",
+      "first_seen_at": "2026-09-01T18:36:04.461318Z",
+      "published_at": "2026-09-01T16:02:22Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/securing-amazon-quick-from-poc-to-production-agents-flows-and-spaces"
     },
     "url:2c563947428818b93259f9d0ea1b317a6ae63a349ada6ec8668a3f4447646bba": {
       "article_id": "hugging-face-7eeeaa9a",
@@ -559,6 +573,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/starflow2-multimodal-generation"
     },
+    "url:603f421f19ad47cccd1e570b55e6dc8715a4283bbca07dd4ea5dc7a7cd1ab675": {
+      "article_id": "aws-machine-learning-2fcd7af5",
+      "first_seen_at": "2026-09-01T18:36:04.461318Z",
+      "published_at": "2026-09-01T16:17:54Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/from-theory-to-delivery-how-atos-upskilled-400-engineers-in-agentic-ai"
+    },
     "url:60f1daff5ce521484393650803ac03c58716d375052fe27a7187f34d134181c5": {
       "article_id": "sourcegraph-changelog-9465daf0",
       "first_seen_at": "2026-08-29T18:35:18.666106Z",
@@ -605,6 +626,13 @@
       "published_at": "2026-08-03T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/alignment-multimodal-llms"
+    },
+    "url:6bf5b05134dd23a67198b53a5a74adf09cf948f7a401c3b4632f35e98f96ec3b": {
+      "article_id": "google-deepmind-68c1c77e",
+      "first_seen_at": "2026-09-01T18:36:04.461318Z",
+      "published_at": "2026-09-01T17:08:51Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini"
     },
     "url:6d4ec902c728a02128d0e9d0f2d97315b31b6e3516e9601be6e9577b06f5790c": {
       "article_id": "openai-news-18d88c0e",
@@ -812,6 +840,13 @@
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control"
     },
+    "url:91dad0068ec24e5bcea7adc0e407700bb8999e1b3de1e0bfc9b0e6a4ed61b3fe": {
+      "article_id": "hugging-face-e2532b10",
+      "first_seen_at": "2026-09-01T18:36:04.461318Z",
+      "published_at": "2026-09-01T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/webgpu-kernels"
+    },
     "url:93e5dec2f2f712e34a34310fc188fb3e02f13f39022d255dcd7fb216a3339f34": {
       "article_id": "aws-machine-learning-8c775447",
       "first_seen_at": "2026-08-06T23:21:45.836993Z",
@@ -988,6 +1023,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b"
     },
+    "url:ab46a267f212840f55ce0fca0e22055322d94e7d064bddcc231454dd875bafa7": {
+      "article_id": "google-ai-cdab1b66",
+      "first_seen_at": "2026-09-01T18:36:04.461318Z",
+      "published_at": "2026-09-01T16:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/products-and-platforms/products/workspace/google-pics"
+    },
     "url:abd52c9f1dde403ea312fe1dcc8f2b7fc27a242eb1ec73041b234fa7076d6a46": {
       "article_id": "openai-news-c3c68dc4",
       "first_seen_at": "2026-08-25T04:03:45.951557Z",
@@ -1015,6 +1057,20 @@
       "published_at": "2026-08-20T12:00:17Z",
       "source": "mistral-ai",
       "url": "https://mistral.ai/news/agentic-search"
+    },
+    "url:b0cbef382238cdd5b88df7d9e2e972c6de79dc01f5270d52514cbb50f83a1be1": {
+      "article_id": "openai-news-d5fc54b2",
+      "first_seen_at": "2026-09-01T18:36:04.461318Z",
+      "published_at": "2026-09-01T17:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/ai-native-company-workflows"
+    },
+    "url:b10699734bb6f1a8025da289af31c4b8b8f9390911f11548e473c56dc9e89bdd": {
+      "article_id": "aws-machine-learning-be58f779",
+      "first_seen_at": "2026-09-01T18:36:04.461318Z",
+      "published_at": "2026-09-01T16:03:41Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-how-jamf-built-real-time-spend-enforcement-for-amazon-bedrock"
     },
     "url:b19ec562c455e753267b0e04107e2217c787cdc2a4884378a6d93cdc79d11f47": {
       "article_id": "openai-news-859e2b45",
@@ -1114,6 +1170,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/taming-outlier-tokens"
     },
+    "url:c0364833b41073ca7c0ea92e6ee2f69465ad17ef62fa3529c77a9a8d4c268e7b": {
+      "article_id": "openai-news-eb74926b",
+      "first_seen_at": "2026-09-01T18:36:04.461318Z",
+      "published_at": "2026-09-01T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources"
+    },
     "url:c0986f6628d189a1ac370992d714e2906f134950b6ed170922abe5ac2caf0e49": {
       "article_id": "openai-news-da4f0b0e",
       "first_seen_at": "2026-08-13T22:06:40.301314Z",
@@ -1162,6 +1225,13 @@
       "published_at": "2026-08-07T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/diffusion-autoregressive-performance"
+    },
+    "url:c97ca18ed9b8f65fdef1ba6642622e8988f258e6c7551daea7175027be21f9a1": {
+      "article_id": "aws-machine-learning-6d76f2ed",
+      "first_seen_at": "2026-09-01T18:36:04.461318Z",
+      "published_at": "2026-09-01T15:47:00Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-zs-democratized-secure-ad-hoc-analytics-with-amazon-sagemaker"
     },
     "url:c9880544f2a2bcc8af539f698c23ee907616e3100e1463359d5958cf63760848": {
       "article_id": "aws-machine-learning-f7d7edea",
@@ -1252,6 +1322,13 @@
       "published_at": "2026-08-14T16:02:10Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/custom-reward-functions-for-multi-turn-reinforcement-learning-with-amazon-nova-forge"
+    },
+    "url:d629f41cf4256b4d9e5fdc56b75b6b3bac60d2078a5dbddb938b48004b088ecd": {
+      "article_id": "aws-machine-learning-0941301e",
+      "first_seen_at": "2026-09-01T18:36:04.461318Z",
+      "published_at": "2026-09-01T15:50:00Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-t54-built-a-trust-layer-with-amazon-bedrock-agentcore-payments"
     },
     "url:d8531b3bebbaf6641750e3efb410170dc9d4eacb196bd3e1d8ae895c0bc27335": {
       "article_id": "google-deepmind-bc6e556d",

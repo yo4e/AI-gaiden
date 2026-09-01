@@ -63,6 +63,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/automate-legacy-web-applications-with-amazon-bedrock-agentcore-browser-tool"
     },
+    "url:0b5a688ac44522d6851141a82925ed4d52e8227256bd0c561c149a506cd396f8": {
+      "article_id": "openai-news-aa1707d3",
+      "first_seen_at": "2026-09-01T08:43:39.886291Z",
+      "published_at": "2026-08-31T07:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/polimill"
+    },
     "url:0bc671dd2735ab91413c00dbc042fa8f4e9fb876acd613335d004c68d3d46d0a": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
       "published_at": "2026-07-28T13:00:00Z",
@@ -407,6 +414,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app"
     },
+    "url:4862f3d2c68fb1ad680a585cc64e80bc967fc99b89a1e7fef84c985e61d958c6": {
+      "article_id": "openai-news-ee3bbaa3",
+      "first_seen_at": "2026-09-01T08:43:39.886291Z",
+      "published_at": "2026-08-31T07:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety"
+    },
     "url:49af65417091cab593ed830ed9ccd3147d47cf27510466ddf67d9946e4d6a324": {
       "article_id": "apple-ml-research-8da42067",
       "first_seen_at": "2026-08-29T10:10:04.614897Z",
@@ -660,6 +674,13 @@
       "published_at": "2026-08-26T00:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/loveholidays"
+    },
+    "url:7a560348d1cc3306ab45f5620282443bd54c754ff4a7a0e2fd5107234dd30de4": {
+      "article_id": "aws-machine-learning-5a284af9",
+      "first_seen_at": "2026-09-01T08:43:39.886291Z",
+      "published_at": "2026-08-31T22:47:53Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/connect-an-agentcore-runtime-hosted-mcp-server-to-amazon-quick"
     },
     "url:7ba6c2e15df63364ad762702146a3e8eaef814f58d8cf8fa130ed5fffa71a477": {
       "article_id": "apple-ml-research-894ee8da",

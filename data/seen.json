@@ -278,6 +278,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production"
     },
+    "url:330fba64551db8b49d6a895e947e7fef4cfddc339a90e97ae91a354a6cbe9a0b": {
+      "article_id": "openai-news-54187260",
+      "first_seen_at": "2026-09-02T07:58:34.641049Z",
+      "published_at": "2026-09-01T01:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/gilbert-tobin"
+    },
     "url:33afd77e80915c13c870f925a3c81bbc969cba0a8eb373a7b275f1e659228763": {
       "article_id": "apple-ml-research-b95b5c76",
       "first_seen_at": "2026-08-27T14:17:35.478713Z",
@@ -1044,6 +1051,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/stampli"
     },
+    "url:ad90e6779ea3045b3b9ff330e4c9d1c6cd82a44459fb7cba10b171e8ac596ec8": {
+      "article_id": "hugging-face-b7fc57b9",
+      "first_seen_at": "2026-09-02T07:58:34.641049Z",
+      "published_at": "2026-09-01T21:39:07Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/allenai/benchmirt"
+    },
     "url:aec50bce133680e8ddf125ac991e61d50a8d53bb9eddfa9b035860d493aa2898": {
       "article_id": "aws-machine-learning-829fc29f",
       "first_seen_at": "2026-08-12T16:12:48.060680Z",
@@ -1427,6 +1441,13 @@
       "source": "google-ai",
       "url": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets"
     },
+    "url:e6646933ca959a5fc8d118c8b793de49bb6b72b8147d5eceda7d378fce794266": {
+      "article_id": "google-ai-ab389c78",
+      "first_seen_at": "2026-09-02T07:58:34.641049Z",
+      "published_at": "2026-09-01T20:45:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/technology/google-ai-updates-august-2026"
+    },
     "url:e66cc71d0943fe40ad6453dad08e9df8e67072ce6e9fa35d606a5faf12a1f86c": {
       "article_id": "openai-news-d2941603",
       "first_seen_at": "2026-08-07T21:58:33.543829Z",
@@ -1524,6 +1545,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows"
     },
+    "url:f2694bfa96c49e91da594bc0cb315cea9400ac30ae168e84999723429399dcd3": {
+      "article_id": "openai-news-31c39b9b",
+      "first_seen_at": "2026-09-02T07:58:34.641049Z",
+      "published_at": "2026-09-01T13:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/path-to-astra"
+    },
     "url:f4412618f8cd919edf4553e282f7925e569550e7c2ccee6dafeb60f4887f77b4": {
       "article_id": "apple-ml-research-8e39f087",
       "first_seen_at": "2026-08-27T14:17:35.478713Z",
@@ -1579,6 +1607,13 @@
       "published_at": "2026-08-28T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/llms-not-consistently-bayesian"
+    },
+    "url:f85c8e7bdc49608ebcf8fca8ac0a74b6edbac62f873c5035c805a451f668710c": {
+      "article_id": "aws-machine-learning-a77e7623",
+      "first_seen_at": "2026-09-02T07:58:34.641049Z",
+      "published_at": "2026-09-01T19:12:43Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws"
     },
     "url:fa2791fbc9af008fbec5e3ce56bf40bc113bb8071f7a73cfd61c5d71ead84cf1": {
       "article_id": "openai-news-3d5e7ded",

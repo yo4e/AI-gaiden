@@ -320,6 +320,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop"
     },
+    "url:355be2cf6d2d139c093acbd48b01fbf45b0b438dc490def24a131a7b38d15515": {
+      "article_id": "google-deepmind-13bc5101",
+      "first_seen_at": "2026-09-02T18:46:24.555427Z",
+      "published_at": "2026-09-02T16:18:31Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber"
+    },
     "url:35d31ebafcc15027dd0f6f6eb30e580fe67dbdb2e57923a460e2125e1c588fd0": {
       "article_id": "aws-machine-learning-20f8d52d",
       "first_seen_at": "2026-08-25T04:03:45.951557Z",
@@ -435,12 +442,26 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app"
     },
+    "url:445c9f3e3d31d26692ada3d219d7716f93c0849548f1c9d04fb56a45ef071d79": {
+      "article_id": "google-ai-efe732cf",
+      "first_seen_at": "2026-09-02T18:46:24.555427Z",
+      "published_at": "2026-09-02T15:40:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program"
+    },
     "url:4862f3d2c68fb1ad680a585cc64e80bc967fc99b89a1e7fef84c985e61d958c6": {
       "article_id": "openai-news-ee3bbaa3",
       "first_seen_at": "2026-09-01T08:43:39.886291Z",
       "published_at": "2026-08-31T07:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety"
+    },
+    "url:48c844993acdc266aa670a84c26c42d1753c21145209ae35b826896446723127": {
+      "article_id": "aws-machine-learning-8ae3add4",
+      "first_seen_at": "2026-09-02T18:46:24.555427Z",
+      "published_at": "2026-09-02T18:14:17Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/trinity-agentic-ai-powered-transition-planning-for-students-with-disabilities"
     },
     "url:49af65417091cab593ed830ed9ccd3147d47cf27510466ddf67d9946e4d6a324": {
       "article_id": "apple-ml-research-8da42067",
@@ -655,6 +676,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/dali-rajic-chief-revenue-officer"
     },
+    "url:6f1c4a7a7c68a392d91ba848ccd3f3a59d97452994ef6d356ecef2ce09e39142": {
+      "article_id": "aws-machine-learning-e9fa0088",
+      "first_seen_at": "2026-09-02T18:46:24.555427Z",
+      "published_at": "2026-09-02T18:18:47Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/from-code-to-diagrams-agentic-architecture-documentation-with-amazon-bedrock-agentcore"
+    },
     "url:6f8368ac763b73731923fdf243c388a7d207e8e71307ee44061b49625d794f6b": {
       "article_id": "openai-news-5b2f2ba9",
       "first_seen_at": "2026-08-13T22:06:40.301314Z",
@@ -825,6 +853,13 @@
       "published_at": "2026-08-31T04:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads"
+    },
+    "url:8c10bd00da2e478d246d8a5ed5ef6c67574eeadd8eaf7af8addbaf53aeec5060": {
+      "article_id": "hugging-face-5afcd318",
+      "first_seen_at": "2026-09-02T18:46:24.555427Z",
+      "published_at": "2026-09-02T13:49:14Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/ibm-research/real-time-intelligence"
     },
     "url:8cd324ef73df5cc6140afb8b0599c7caa91b70e81b09115954d8b3ccf2314e84": {
       "article_id": "aws-machine-learning-5ed8f11d",
@@ -1170,6 +1205,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/state-of-open-models-summer-2026"
     },
+    "url:be849b092a65b95dd81a8834fc8814c0756e5b23f029f2f0644c2b1a51f8c4c4": {
+      "article_id": "aws-machine-learning-68849896",
+      "first_seen_at": "2026-09-02T18:46:24.555427Z",
+      "published_at": "2026-09-02T18:26:35Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/modernizing-and-scaling-support-operations-with-generative-ai-on-aws"
+    },
     "url:bf50ec5ce617ac83f0c8191a946860d3cb0cd0d2aa8f71d8bb07d1b2c9c687ea": {
       "article_id": "hugging-face-c1e03866",
       "first_seen_at": "2026-08-18T04:01:01.822238Z",
@@ -1183,6 +1225,13 @@
       "published_at": "2026-08-05T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/taming-outlier-tokens"
+    },
+    "url:bf94848b24bf5829af64116a0a2951de10fd9b08277042a6ff433d873a03d354": {
+      "article_id": "google-deepmind-3241e851",
+      "first_seen_at": "2026-09-02T18:46:24.555427Z",
+      "published_at": "2026-09-02T16:24:24Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises"
     },
     "url:c0364833b41073ca7c0ea92e6ee2f69465ad17ef62fa3529c77a9a8d4c268e7b": {
       "article_id": "openai-news-eb74926b",
@@ -1315,6 +1364,13 @@
       "published_at": "2026-08-27T16:11:27Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/deepgram-deepens-amazon-sagemaker-ai-observability-with-enhanced-metrics"
+    },
+    "url:cdfbd0cf8534b8caffe428cbaf8d966ddb687cc8c0a20268cc04cc7e0adc77d1": {
+      "article_id": "aws-machine-learning-8b2f67e2",
+      "first_seen_at": "2026-09-02T18:46:24.555427Z",
+      "published_at": "2026-09-02T18:21:20Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-an-aws-team-detects-dashboard-content-failures-at-scale-using-amazon-bedrock"
     },
     "url:d1829425ff1bd6fe6f80accb5f087bc4820cc24c3682db24266b665315289517": {
       "article_id": "aws-machine-learning-f4860c03",
@@ -1525,6 +1581,13 @@
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations"
     },
+    "url:f188a766e989cb0e3cad70ec94cc816ab56f273a8b21c7449dc4d09aef7d2e3d": {
+      "article_id": "apple-ml-research-5a26d0de",
+      "first_seen_at": "2026-09-02T18:46:24.555427Z",
+      "published_at": "2026-09-02T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/refactor-vla-motor-programs"
+    },
     "url:f1b19f2f1e664660449c3325cc5739c9544b8ac6d3a742c44dc51f1e0c625a28": {
       "article_id": "aws-machine-learning-6b6cf5e1",
       "first_seen_at": "2026-08-20T04:02:19.864644Z",
@@ -1634,6 +1697,13 @@
       "published_at": "2026-08-03T17:24:15Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/from-weeks-to-minutes-how-formula-1-uses-agentic-ai-on-aws-to-accelerate-data-operations"
+    },
+    "url:fbfd060b861c994281af0eba5bc9e52ea37bdc3627cbdda346c6be2b71bb929f": {
+      "article_id": "github-ai-ml-17ad0fcf",
+      "first_seen_at": "2026-09-02T18:46:24.555427Z",
+      "published_at": "2026-09-02T18:00:00Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality"
     },
     "url:fc1a9abd82b35a9c86d54b1fb0f68bd137a90ec86cea086cc68200bb6a148bdd": {
       "article_id": "openai-news-e1cd8451",

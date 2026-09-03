@@ -28,6 +28,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/amazon-quick-for-microsoft-365-agentic-ai-where-you-work"
     },
+    "url:0600471a7eba1ecbe8d43353a9bf4eb45407a840c6d48969a92ce07a26395c2d": {
+      "article_id": "aws-machine-learning-68b2320c",
+      "first_seen_at": "2026-09-03T08:07:17.945680Z",
+      "published_at": "2026-09-02T21:22:05Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/accessing-openai-gpt-5-6-models-on-amazon-bedrock-from-australia-with-global-cross-region-inference"
+    },
     "url:077b61a0fed02bcc2a083d299a0c55e24311ad526ecaa535f96d02762c586c8f": {
       "article_id": "hugging-face-0946b371",
       "first_seen_at": "2026-08-11T16:13:54.723524Z",
@@ -400,6 +407,13 @@
       "published_at": "2026-07-27T16:00:00Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-getting-started"
+    },
+    "url:3bda12e16fd31e0e48f8154eb3f1f8588d033b9c1baf37b6558432d7c2a45b54": {
+      "article_id": "openai-news-5bf9cfad",
+      "first_seen_at": "2026-09-03T08:07:17.945680Z",
+      "published_at": "2026-09-02T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/atv-big-air-tour"
     },
     "url:3c8a41d2ba407782092359430a0daeaf6a1fff5cf1d8b3039a111d5bb6840ab8": {
       "article_id": "aws-machine-learning-17ea1831",
@@ -1018,6 +1032,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/pay-with-confidence-how-solv-labs-built-verifiable-auditable-agent-payments-on-amazon-bedrock-agentcore-payments"
     },
+    "url:a4a0601f1f87b20e4be18ed751f2cc31ca646819d9626dd5439c2eb5f7e48f83": {
+      "article_id": "github-ai-ml-70cce1bf",
+      "first_seen_at": "2026-09-03T08:07:17.945680Z",
+      "published_at": "2026-09-02T21:00:00Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/decoding-the-new-ai-lingo-loops-harnesses-squads-hill-climbing-oh-my"
+    },
     "url:a50effc579949c7646c13737d86c56aa19b241f0915ff56cb742177f552f4f68": {
       "article_id": "aws-machine-learning-7d0be8ef",
       "first_seen_at": "2026-08-06T23:21:45.836993Z",
@@ -1169,6 +1190,13 @@
       "published_at": "2026-08-06T16:30:47Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-visibility-for-codex-on-amazon-bedrock-with-opentelemetry-and-amazon-cloudwatch"
+    },
+    "url:b5500bc6503561c622e234c790899474b8b24e1670dad4cceb0dbc466610f3db": {
+      "article_id": "hugging-face-1c35904b",
+      "first_seen_at": "2026-09-03T08:07:17.945680Z",
+      "published_at": "2026-09-03T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/train-to-paint-with-code"
     },
     "url:b7dd99284a0453af1cc9f97fd2a0ccfaa9556a2245de5f973a7d1c776ec69e1c": {
       "article_id": "aws-machine-learning-d12a1e3f",

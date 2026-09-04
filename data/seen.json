@@ -299,6 +299,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production"
     },
+    "url:325e9dcd840a97e90ffb7c6d895af29ce36aa93bd90d00c36b3bf0be1def577e": {
+      "article_id": "openai-news-a87e0bef",
+      "first_seen_at": "2026-09-04T08:02:44.282023Z",
+      "published_at": "2026-09-03T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/playco-game-prototyping-with-astra"
+    },
     "url:330fba64551db8b49d6a895e947e7fef4cfddc339a90e97ae91a354a6cbe9a0b": {
       "article_id": "openai-news-54187260",
       "first_seen_at": "2026-09-02T07:58:34.641049Z",
@@ -394,6 +401,13 @@
       "published_at": "2026-08-06T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/locking-pretrained-weights"
+    },
+    "url:39210f987919e80e66f6bbb1aa542144273fd98d678c04dcbe26ae133654195a": {
+      "article_id": "openai-news-d6291547",
+      "first_seen_at": "2026-09-04T08:02:44.282023Z",
+      "published_at": "2026-09-03T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/safety-overview-gpt-6-astra"
     },
     "url:3a60695b895f83bc5481f486225927f7423c8a21d27008af62a43cf86d22f686": {
       "article_id": "aws-machine-learning-9f86887e",
@@ -930,6 +944,13 @@
       "published_at": "2026-09-01T00:00:00Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/webgpu-kernels"
+    },
+    "url:9281d6906e8350b6fb5c6bd18ae05f4165747246556cded5f72137db99dfe912": {
+      "article_id": "openai-news-483bf45f",
+      "first_seen_at": "2026-09-04T08:02:44.282023Z",
+      "published_at": "2026-09-03T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/legora-financial-statement-review-with-astra"
     },
     "url:93e5dec2f2f712e34a34310fc188fb3e02f13f39022d255dcd7fb216a3339f34": {
       "article_id": "aws-machine-learning-8c775447",
@@ -1809,6 +1830,13 @@
       "published_at": "2026-08-20T07:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/introducing-ai-futures"
+    },
+    "url:fc40ddafdd41e0cc6b8e9f206273b63f31eac9928f23628f7fa12ba2cbcd62f3": {
+      "article_id": "openai-news-2cb81f0e",
+      "first_seen_at": "2026-09-04T08:02:44.282023Z",
+      "published_at": "2026-09-03T13:15:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/daybreak-for-frontline-defenders"
     },
     "url:fe23f369e01db08d4a0477172cd7e0c5a8e1ac1fb959a7f41cba80240e425604": {
       "article_id": "openai-news-ac4c5d2b",

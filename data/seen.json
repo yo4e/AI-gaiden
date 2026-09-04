@@ -194,6 +194,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/train-multi-vector-encoder"
     },
+    "url:184a451fc248c54661fd642cd91ea7e5e5a954a4d78540e2f70a6e00078b9e56": {
+      "article_id": "aws-machine-learning-6c777a65",
+      "first_seen_at": "2026-09-04T18:28:36.682808Z",
+      "published_at": "2026-09-04T16:12:17Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/run-agent-driven-amazon-sagemaker-hyperpod-operations-with-instantstart"
+    },
     "url:1b555e620b3576f24f15fcd669e7f4a7d191269cd47a4d21b232e7194d040769": {
       "article_id": "apple-ml-research-134c7e09",
       "first_seen_at": "2026-08-18T15:49:35.191346Z",
@@ -291,6 +298,13 @@
       "published_at": "2026-08-19T07:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/replit"
+    },
+    "url:2ff277e441a4b0dab8ec201e1929a29ce4861d79fb1666b6c6ef5ad394fbb2c2": {
+      "article_id": "github-ai-ml-e777867c",
+      "first_seen_at": "2026-09-04T18:28:36.682808Z",
+      "published_at": "2026-09-04T16:04:14Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration"
     },
     "url:30f2948e24a891190b3dbfd2e195d9b4e1e2bf24eab0246efe25b8fe2ccb31a5": {
       "article_id": "github-ai-ml-89b70ef9",
@@ -1088,6 +1102,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/pay-with-confidence-how-solv-labs-built-verifiable-auditable-agent-payments-on-amazon-bedrock-agentcore-payments"
     },
+    "url:a3fb326ed52ac82e37e8eebd35d18b3eefe4eec39a733e9544f8eac91162b481": {
+      "article_id": "aws-machine-learning-1cc578b2",
+      "first_seen_at": "2026-09-04T18:28:36.682808Z",
+      "published_at": "2026-09-04T16:06:01Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-intuit-built-an-agentic-disaster-recovery-assistant-with-amazon-bedrock"
+    },
     "url:a4a0601f1f87b20e4be18ed751f2cc31ca646819d9626dd5439c2eb5f7e48f83": {
       "article_id": "github-ai-ml-70cce1bf",
       "first_seen_at": "2026-09-03T08:07:17.945680Z",
@@ -1275,6 +1296,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/jalapeno-first-results"
     },
+    "url:b9be5c650c491d2390da4ebe44ef271dbd4c09268bc369b5ff9b7f5119975441": {
+      "article_id": "aws-machine-learning-1fdc5b53",
+      "first_seen_at": "2026-09-04T18:28:36.682808Z",
+      "published_at": "2026-09-04T16:08:10Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/customizing-your-knowledge-base-on-amazon-bedrock-for-large-and-complex-documents-using-amazon-textract"
+    },
     "url:bac12e9d90c3435ed86bb74e3c604a99961c0fe48aed88416fececa9664b14fd": {
       "article_id": "aws-machine-learning-fd4178ff",
       "first_seen_at": "2026-08-25T04:03:45.951557Z",
@@ -1379,6 +1407,13 @@
       "published_at": "2026-08-12T17:45:20Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/part-2-amazon-bedrock-cost-attribution-with-amazon-athena-and-cudos"
+    },
+    "url:c620d7b2d0c6a9529b6c4a7972b85e9a5496d506de1f20cce6e3493f86273128": {
+      "article_id": "aws-machine-learning-0ac3cd00",
+      "first_seen_at": "2026-09-04T18:28:36.682808Z",
+      "published_at": "2026-09-04T17:20:04Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/designing-lifecycle-policies-for-agentcore-memory"
     },
     "url:c797381f6cd4b45af698941ec3ddb6aebb6d0308654d793fecd6d6ea1d0d1e69": {
       "article_id": "apple-ml-research-02c8e899",
@@ -1546,6 +1581,13 @@
       "published_at": "2026-08-19T19:00:00Z",
       "source": "google-ai",
       "url": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools"
+    },
+    "url:db4572b71eb09cccddf27d76236d4dc5d129d84d0c831a8ecd0d3b1f22ae58fe": {
+      "article_id": "aws-machine-learning-e6262d09",
+      "first_seen_at": "2026-09-04T18:28:36.682808Z",
+      "published_at": "2026-09-04T16:16:00Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-physical-ai-model-factory-with-nvidia-cosmos-3-on-sagemaker-hyperpod"
     },
     "url:db756ec4d6e59ca936da7aa8eca44d5d6459a0ef221677a8ea82662f0ffa317c": {
       "article_id": "aws-machine-learning-27a97a3d",

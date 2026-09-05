@@ -14,6 +14,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-pixieset-achieved-35-ai-feature-adoption-by-solving-the-right-problem-with-amazon-bedrock"
     },
+    "url:039a4975e102cb538c368495a2e6d022853c448b8779c7d611c9069b00b28b50": {
+      "article_id": "openai-news-a4107d48",
+      "first_seen_at": "2026-09-05T07:43:35.568433Z",
+      "published_at": "2026-09-03T11:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/gpt-6-astra"
+    },
     "url:05eeb3dab00fd81284bba0e20db85e14dd413e44629491b30772f23bfddd59ec": {
       "article_id": "aws-machine-learning-b7b45239",
       "first_seen_at": "2026-08-20T04:02:19.864644Z",
@@ -193,6 +200,13 @@
       "published_at": "2026-08-26T00:00:00Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/train-multi-vector-encoder"
+    },
+    "url:17e5ae8afd73524c07c8141a0425cb8bd8f0912d366709233f2ae149d03b9c04": {
+      "article_id": "aws-machine-learning-0b1a08bf",
+      "first_seen_at": "2026-09-05T07:43:35.568433Z",
+      "published_at": "2026-09-04T21:45:52Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/deploy-a-multimodal-whatsapp-ordering-assistant-with-amazon-bedrock-agentcore"
     },
     "url:184a451fc248c54661fd642cd91ea7e5e5a954a4d78540e2f70a6e00078b9e56": {
       "article_id": "aws-machine-learning-6c777a65",

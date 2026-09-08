@@ -229,6 +229,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/grpo-beyond-english"
     },
+    "url:1dcea8b0f8acab144d9449d9a882270327a9c7315cef0dad2195f7c1e05184af": {
+      "article_id": "openai-news-b8cf547a",
+      "first_seen_at": "2026-09-08T18:45:03.859334Z",
+      "published_at": "2026-09-08T11:30:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/introducing-chatgpt-images-2-5"
+    },
     "url:1f08b431314013b7175a456038152cef5284350da4be43d8ed0e58d6940d1eb3": {
       "article_id": "github-ai-ml-35157d75",
       "first_seen_at": "2026-08-18T04:01:01.822238Z",
@@ -312,6 +319,13 @@
       "published_at": "2026-08-12T14:00:51Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b"
+    },
+    "url:2c827cba158d2f26e6e9908863169f3221245661ed3a7c374917498ca5d75374": {
+      "article_id": "openai-news-738c0cdb",
+      "first_seen_at": "2026-09-08T18:45:03.859334Z",
+      "published_at": "2026-09-08T10:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/navier-stokes-solution"
     },
     "url:2f00013902a29bc1e23dd248bb0d6a75ee356bf38627fa0f8884731fbff27534": {
       "article_id": "openai-news-41c91561",
@@ -561,6 +575,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/agent-seer-synthesizing-scenarios"
     },
+    "url:4a36ea7ba6bb268a569ba1bda62fe3a651ce22624e6c80e44fc2f66bda887c59": {
+      "article_id": "openai-news-409cd90e",
+      "first_seen_at": "2026-09-08T18:45:03.859334Z",
+      "published_at": "2026-09-08T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms"
+    },
     "url:4a6b874ba5509dc494df62125cb5063d7247b899afb73b3adaa49b716ce55fe7": {
       "article_id": "aws-machine-learning-275b634e",
       "first_seen_at": "2026-08-06T06:08:02.329753Z",
@@ -593,6 +614,13 @@
       "published_at": "2026-07-27T18:00:00Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly"
+    },
+    "url:4fc56175fe1737a351bc315777a9833ce207af71356214c77fe512b758f8de9b": {
+      "article_id": "aws-machine-learning-dc9c57e3",
+      "first_seen_at": "2026-09-08T18:45:03.859334Z",
+      "published_at": "2026-09-08T16:23:21Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/automated-agent-evaluation-with-amazon-bedrock-agentcore-and-github-actions"
     },
     "url:51cfe3db04ed0bd3efb5e0e3e4cae24a73d01c55252ca81f5edad4c7faa7f89b": {
       "article_id": "openai-news-0af7f7d4",
@@ -670,6 +698,13 @@
       "published_at": "2026-08-27T09:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training"
+    },
+    "url:5cbcf08e288841ac31de1b5b3153da3ea3539df7d3ee35168c9c6d5f6a1c686c": {
+      "article_id": "hugging-face-f1ac7bcf",
+      "first_seen_at": "2026-09-08T18:45:03.859334Z",
+      "published_at": "2026-09-08T14:23:07Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom"
     },
     "url:5d3aff0aba5d0b8a3f2e93df1ad39730fb85c89988a96a7dff89f13df3bf1726": {
       "article_id": "openai-news-93a243bd",
@@ -829,6 +864,20 @@
       "source": "openai-news",
       "url": "https://openai.com/index/loveholidays"
     },
+    "url:78e3ba01c51c635935b63f3b8f4fc27b0604adf8969e087a04f36cbabadc307f": {
+      "article_id": "aws-machine-learning-93a52917",
+      "first_seen_at": "2026-09-08T18:45:03.859334Z",
+      "published_at": "2026-09-08T18:29:15Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-feature-store-introduces-updaterecord-for-feature-level-writes"
+    },
+    "url:7948c39493cbd65ea48c44d8291ea8805b71fa184ba9ab468b25c600c015d072": {
+      "article_id": "openai-news-2347a045",
+      "first_seen_at": "2026-09-08T18:45:03.859334Z",
+      "published_at": "2026-09-08T09:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/teen-development-research-grants"
+    },
     "url:7a560348d1cc3306ab45f5620282443bd54c754ff4a7a0e2fd5107234dd30de4": {
       "article_id": "aws-machine-learning-5a284af9",
       "first_seen_at": "2026-09-01T08:43:39.886291Z",
@@ -883,6 +932,13 @@
       "published_at": "2026-09-03T16:11:57Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/integrating-outlook-with-amazon-quick-for-ai-powered-email-automation"
+    },
+    "url:825546b9e9e150a70467a533edaf9570d45ce6f5d4a72a0aade47ee2011a3015": {
+      "article_id": "google-deepmind-25a6a4c2",
+      "first_seen_at": "2026-09-08T18:45:03.859334Z",
+      "published_at": "2026-09-08T14:00:15Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome"
     },
     "url:82836b8dea5256ecb2a3bc73cc32bc190e1cb1702c3d3777cfc43d3567b0297c": {
       "article_id": "aws-machine-learning-3e7917c2",
@@ -951,6 +1007,13 @@
       "published_at": "2026-08-31T04:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads"
+    },
+    "url:8b3a4550ce0344d8a996464def8b7f490ba8cf631d977aade6ff9f8faff0e7c9": {
+      "article_id": "aws-machine-learning-1dc97bba",
+      "first_seen_at": "2026-09-08T18:45:03.859334Z",
+      "published_at": "2026-09-08T16:21:57Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/benchmarking-small-llm-inference-on-sagemaker-ai-g7-vs-g5-and-g6"
     },
     "url:8c10bd00da2e478d246d8a5ed5ef6c67574eeadd8eaf7af8addbaf53aeec5060": {
       "article_id": "hugging-face-5afcd318",
@@ -1108,6 +1171,13 @@
       "published_at": "2026-08-05T18:50:02Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-lendingtree-built-a-multi-agent-mortgage-assistant-on-amazon-bedrock"
+    },
+    "url:a00fc889a2dd293b42049381f3a99cbbead2f5c6d3c52e4e209b3057ea2e2a3b": {
+      "article_id": "openai-news-51d9004d",
+      "first_seen_at": "2026-09-08T18:45:03.859334Z",
+      "published_at": "2026-09-08T13:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/the-work-now-within-reach"
     },
     "url:a0199333d441dca9a6dd8b9c3a7e9a65e6a3deeb8429dbd0c3bd81df9914e799": {
       "article_id": "apple-ml-research-5341c634",
@@ -1582,6 +1652,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/best-practices-for-building-agentic-automations-with-amazon-quick-automate"
     },
+    "url:d830873f8917c725955eaf0808704d194cc8b20850de2a1c483ebd0905bb102f": {
+      "article_id": "aws-machine-learning-6e87c997",
+      "first_seen_at": "2026-09-08T18:45:03.859334Z",
+      "published_at": "2026-09-08T17:03:20Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/govern-models-with-mlflow-and-amazon-sagemaker-ai-model-registry-sync-part-1"
+    },
     "url:d8531b3bebbaf6641750e3efb410170dc9d4eacb196bd3e1d8ae895c0bc27335": {
       "article_id": "google-deepmind-bc6e556d",
       "first_seen_at": "2026-08-13T22:06:40.301314Z",
@@ -1831,6 +1908,13 @@
       "published_at": "2026-08-31T19:08:45Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-observable-enterprise-agentic-retrieval-using-managed-amazon-bedrock-knowledge-base-with-aws-cloudformation"
+    },
+    "url:f60d4d32f299f7cfa5512c3face1db8b16a85975844847720e6a557bedd6750e": {
+      "article_id": "aws-machine-learning-3e786075",
+      "first_seen_at": "2026-09-08T18:45:03.859334Z",
+      "published_at": "2026-09-08T17:03:50Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/govern-models-with-mlflow-and-amazon-sagemaker-ai-model-registry-sync-part-2"
     },
     "url:f65c07c326de973a9c7b04ceb9e7672523ea8a92f583079c2a0d0d21f6661a9a": {
       "article_id": "apple-ml-research-66128bb0",

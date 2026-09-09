@@ -31,9 +31,11 @@ const latestArticleImages = selectSequentialNewsCardImages(
   latestArticles.map((article) => article.data),
 );
 const isThin = articleCount < 2;
+const isGitHubReleaseSource = source.sourceType === 'github_releases';
+const sourceKindLabel = isGitHubReleaseSource ? '公式GitHub Releases API' : '公式RSS/Atom';
 const canonicalPath = `/sources/${source.id}/`;
 const pageUrl = new URL(canonicalPath, Astro.site).href;
-const description = `${source.name}の公式RSS/Atom、取得設定、カテゴリ、画像方針、AI外電の掲載記事${articleCount}件を確認できます。`;
+const description = `${source.name}の${sourceKindLabel}、取得設定、カテゴリ、画像方針、AI外電の掲載記事${articleCount}件を確認できます。`;
 const structuredData = [
   {
     '@context': 'https://schema.org',
@@ -116,7 +118,7 @@ const structuredData = [
           <dd><a href={source.homepage} rel="noopener noreferrer">{source.homepage}</a></dd>
         </div>
         <div>
-          <dt>公式RSS・Atom URL</dt>
+          <dt>{isGitHubReleaseSource ? '公式GitHub Releases API' : '公式RSS・Atom URL'}</dt>
           <dd><a href={source.feedUrl} rel="noopener noreferrer">{source.feedUrl}</a></dd>
         </div>
         <div>
@@ -125,7 +127,7 @@ const structuredData = [
         </div>
         <div>
           <dt>画像方針</dt>
-          <dd>{sourceImagePolicyLabel(source.imagePolicy)}</dd>
+          <dd>{sourceImagePolicyLabel(source.imagePolicy, source.sourceType)}</dd>
         </div>
         <div>
           <dt>AI外電の記事数</dt>

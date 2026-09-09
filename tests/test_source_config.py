@@ -22,11 +22,11 @@ def test_repository_config_contains_initial_github_release_sources() -> None:
         config = configs[source_id]
         assert config.source_type == "github_releases"
         assert config.repository == repository
-        assert config.url == f"https://api.github.com/repos/{repository}/releases/latest"
-        assert config.max_items_per_run == 1
+        assert config.url == f"https://api.github.com/repos/{repository}/releases?per_page=20"
+        assert config.max_items_per_run == 5
 
 
-def test_github_release_config_rejects_non_latest_endpoint(tmp_path: Path) -> None:
+def test_github_release_config_rejects_non_release_list_endpoint(tmp_path: Path) -> None:
     config_path = tmp_path / "feeds.yml"
     config_path.write_text(
         """feeds:
@@ -34,19 +34,19 @@ def test_github_release_config_rejects_non_latest_endpoint(tmp_path: Path) -> No
     name: Unsafe Releases
     source_type: github_releases
     repository: example/example
-    url: https://api.github.com/repos/example/example/releases
+    url: https://api.github.com/repos/example/example/releases/latest
     homepage: https://github.com/example/example/releases
     language: en
     enabled: true
     priority: 1
-    max_items_per_run: 1
+    max_items_per_run: 5
     image_policy: rss_only
     categories: [artificial-intelligence]
 """,
         encoding="utf-8",
     )
 
-    with pytest.raises(ConfigurationError, match="official latest endpoint"):
+    with pytest.raises(ConfigurationError, match="official release-list endpoint"):
         load_feed_configs(config_path)
 
 

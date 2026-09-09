@@ -8,6 +8,7 @@ interface Props {
 }
 
 const { source, count } = Astro.props;
+const isGitHubReleaseSource = source.sourceType === 'github_releases';
 ---
 
 <article class="source-card" id={source.id}>
@@ -23,7 +24,7 @@ const { source, count } = Astro.props;
     <span class={source.enabled ? 'status-active' : ''}>
       {source.enabled ? '取得対象' : '一時停止'}
     </span>
-    <span>{sourceImagePolicyLabel(source.imagePolicy)}</span>
+    <span>{sourceImagePolicyLabel(source.imagePolicy, source.sourceType)}</span>
   </div>
   <p class="source-card__desc">{source.description}</p>
   <div class="source-card__categories" aria-label="カテゴリ">
@@ -36,6 +37,8 @@ const { source, count } = Astro.props;
   <div class="source-card__links">
     <a class="source-card__detail-link" href={`/sources/${source.id}/`}> 配信元ページを見る → </a>
     <a href={source.homepage} rel="noopener noreferrer">公式サイト ↗</a>
-    <a href={source.feedUrl} rel="noopener noreferrer">RSS ↗</a>
+    <a href={source.feedUrl} rel="noopener noreferrer">
+      {isGitHubReleaseSource ? 'GitHub Releases API ↗' : 'RSS ↗'}
+    </a>
   </div>
 </article>

@@ -8,8 +8,9 @@ from pathlib import Path
 
 import yaml
 
-from scripts.feed_reader import FeedReader, FeedResult
+from scripts.feed_reader import FeedResult
 from scripts.models import FeedConfig, NormalizedItem
+from scripts.source_reader import SourceReader
 
 LOGGER = logging.getLogger(__name__)
 FILTERED_SCAN_LIMIT = 20
@@ -184,8 +185,8 @@ def apply_admission(
     return output
 
 
-class AdmissionFeedReader(FeedReader):
-    """Feed reader that applies article admission after RSS normalization."""
+class AdmissionFeedReader(SourceReader):
+    """Source reader that applies article admission after transport normalization."""
 
     def __init__(self, cache_path: Path, rules: Mapping[str, AdmissionRule]) -> None:
         super().__init__(cache_path)

@@ -7,6 +7,7 @@ export type Source = {
   enabled: boolean;
   categories: string[];
   imagePolicy: 'rss_only';
+  sourceType?: 'rss' | 'github_releases';
 };
 
 export const sources: Source[] = [
@@ -139,5 +140,49 @@ export const sources: Source[] = [
     enabled: true,
     categories: ['benchmarks', 'safety', 'machine-learning'],
     imagePolicy: 'rss_only',
+  },
+  {
+    id: 'langchain-releases',
+    name: 'LangChain Releases',
+    homepage: 'https://github.com/langchain-ai/langchain/releases',
+    feedUrl: 'https://api.github.com/repos/langchain-ai/langchain/releases?per_page=20',
+    description: 'LangChain公式リポジトリの安定版リリース情報',
+    enabled: true,
+    categories: ['artificial-intelligence', 'developer-tools', 'open-source'],
+    imagePolicy: 'rss_only',
+    sourceType: 'github_releases',
+  },
+  {
+    id: 'vllm-releases',
+    name: 'vLLM Releases',
+    homepage: 'https://github.com/vllm-project/vllm/releases',
+    feedUrl: 'https://api.github.com/repos/vllm-project/vllm/releases?per_page=20',
+    description: 'vLLM公式リポジトリの安定版リリース情報',
+    enabled: true,
+    categories: ['artificial-intelligence', 'inference', 'open-source'],
+    imagePolicy: 'rss_only',
+    sourceType: 'github_releases',
+  },
+  {
+    id: 'ollama-releases',
+    name: 'Ollama Releases',
+    homepage: 'https://github.com/ollama/ollama/releases',
+    feedUrl: 'https://api.github.com/repos/ollama/ollama/releases?per_page=20',
+    description: 'Ollama公式リポジトリの安定版リリース情報',
+    enabled: true,
+    categories: ['artificial-intelligence', 'developer-tools', 'open-source'],
+    imagePolicy: 'rss_only',
+    sourceType: 'github_releases',
+  },
+  {
+    id: 'llama-cpp-releases',
+    name: 'llama.cpp Releases',
+    homepage: 'https://github.com/ggml-org/llama.cpp/releases',
+    feedUrl: 'https://api.github.com/repos/ggml-org/llama.cpp/releases?per_page=20',
+    description: 'llama.cpp公式リポジトリの安定版リリース情報',
+    enabled: true,
+    categories: ['artificial-intelligence', 'inference', 'open-source'],
+    imagePolicy: 'rss_only',
+    sourceType: 'github_releases',
   },
 ];

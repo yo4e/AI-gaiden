@@ -39,6 +39,9 @@ def parse_site_sources(source_text: str) -> dict[str, dict[str, object]]:
             raise ValueError(
                 f"src/data/sources.ts is missing source field: categories ({source_id})"
             )
+        source_type_match = re.search(
+            r"^\s*sourceType:\s*'([^']*)',?\s*$", body, re.MULTILINE
+        )
         parsed[source_id] = {
             "id": source_id,
             "name": _source_string(body, "name"),
@@ -47,6 +50,7 @@ def parse_site_sources(source_text: str) -> dict[str, dict[str, object]]:
             "enabled": enabled_match.group(1) == "true",
             "categories": tuple(re.findall(r"'([^']*)'", categories_match.group(1))),
             "image_policy": _source_string(body, "imagePolicy"),
+            "source_type": source_type_match.group(1) if source_type_match else "rss",
         }
     if not parsed:
         raise ValueError("No source objects found in src/data/sources.ts")
@@ -54,7 +58,7 @@ def parse_site_sources(source_text: str) -> dict[str, dict[str, object]]:
 
 
 def validate_source_consistency(configs: list, source_text: str) -> int:
-    """Ensure the Astro source catalog mirrors the feed configuration metadata."""
+    """Ensure the Astro source catalog mirrors the source configuration metadata."""
     site_sources = parse_site_sources(source_text)
     config_by_id = {config.id: config for config in configs}
     if set(site_sources) != set(config_by_id):
@@ -71,6 +75,7 @@ def validate_source_consistency(configs: list, source_text: str) -> int:
             "enabled": config.enabled,
             "categories": config.categories,
             "image_policy": config.image_policy,
+            "source_type": config.source_type,
         }
         actual = site_sources[source_id]
         if actual != expected:
@@ -112,7 +117,7 @@ def main() -> int:
     root = Path(__file__).resolve().parents[1]
     configs = load_feed_configs(root / "config/feeds.yml")
     if not any(config.enabled for config in configs):
-        raise ValueError("At least one official feed must be enabled")
+        raise ValueError("At least one official source must be enabled")
 
     content_dir = root / "src/content/articles"
     article_count, dedupe_keys, article_ids = validate_articles(content_dir, configs)
@@ -125,7 +130,7 @@ def main() -> int:
     source_count = validate_source_consistency(configs, source_text)
     benchmark_corpus_count, benchmark_candidate_count = validate_benchmark_assets(root)
     print(
-        f"Validated {len(configs)} feed configs and {source_count} site sources, "
+        f"Validated {len(configs)} source configs and {source_count} site sources, "
         f"{article_count} article files, "
         f"{len(dedupe_keys)} unique dedupe keys, "
         f"{benchmark_corpus_count} benchmark items and "

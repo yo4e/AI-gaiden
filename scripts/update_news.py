@@ -15,7 +15,7 @@ from scripts.updater import UpdateError, run_update  # noqa: E402
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Update AI外電 from configured official feeds")
+    parser = argparse.ArgumentParser(description="Update AI外電 from configured official sources")
     parser.add_argument("--config", type=Path, default=Path("config/feeds.yml"))
     parser.add_argument(
         "--admission-config",

@@ -7,7 +7,11 @@ export const RSS_NAMESPACES = {
   gaiden: 'https://github.com/yo4e/AI-gaiden/ns/rss',
 };
 
-const SOURCE_FEED_URLS = new Map(sources.map((source) => [source.id, source.feedUrl]));
+const SOURCE_FEED_URLS = new Map(
+  sources
+    .filter((source) => source.sourceType !== 'github_releases')
+    .map((source) => [source.id, source.feedUrl]),
+);
 
 type RssArticleData = Pick<
   ArticleData,
@@ -30,10 +34,8 @@ export function absoluteArticleUrl(article: RssArticle, site: URL): string {
   return new URL(articlePath(article.data), site).href;
 }
 
-function sourceFeedUrl(sourceId: string): string {
-  const feedUrl = SOURCE_FEED_URLS.get(sourceId);
-  if (!feedUrl) throw new Error(`RSS source feed is not configured: ${sourceId}`);
-  return feedUrl;
+function sourceFeedUrl(sourceId: string): string | undefined {
+  return SOURCE_FEED_URLS.get(sourceId);
 }
 
 function itemCustomData(data: RssArticleData): string {
@@ -57,19 +59,24 @@ function itemCustomData(data: RssArticleData): string {
 export function rssItemForArticle(article: RssArticle, site: URL): RSSFeedItem {
   const { data } = article;
   const link = absoluteArticleUrl(article, site);
+  const feedUrl = sourceFeedUrl(data.sourceId);
 
   return {
     title: data.titleJa,
-    // briefJa is the AI外電 short report. Do not use source RSS HTML, article HTML, or image data here.
+    // briefJa is the AI外電 short report. Do not use source HTML or image data here.
     description: data.briefJa,
     pubDate: new Date(data.publishedAt),
     link,
     categories: [data.sourceName],
-    source: {
-      title: data.sourceName,
-      // RSS 2.0 source.url identifies the source channel XML, not its homepage or article URL.
-      url: sourceFeedUrl(data.sourceId),
-    },
+    ...(feedUrl
+      ? {
+          source: {
+            title: data.sourceName,
+            // RSS 2.0 source.url identifies source channel XML. REST API URLs are omitted.
+            url: feedUrl,
+          },
+        }
+      : {}),
     customData: itemCustomData(data),
   };
 }

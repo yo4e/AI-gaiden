@@ -2,3 +2,11 @@ sources:
   sourcegraph-changelog:
     mode: filtered
     policy: ai_terms_v1
+  langchain-releases:
+    mode: all
+  vllm-releases:
+    mode: all
+  ollama-releases:
+    mode: all
+  llama-cpp-releases:
+    mode: all

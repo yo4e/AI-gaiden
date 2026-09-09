@@ -19,6 +19,7 @@ from scripts.models import FeedConfig
 TRACKING_PARAMETERS = {"ref", "source", "campaign"}
 WHITESPACE_RE = re.compile(r"\s+")
 FRONTMATTER_RE = re.compile(r"\A---\s*\n(.*?)\n---\s*(?:\n|\Z)", re.DOTALL)
+GITHUB_REPOSITORY_RE = re.compile(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+")
 
 
 class ConfigurationError(ValueError):
@@ -106,6 +107,22 @@ def make_dedupe_key(
     return f"fallback:{hashlib.sha256(fallback.encode()).hexdigest()}"
 
 
+def _validate_github_release_config(
+    *, feed_id: str, url: str, repository: str | None, homepage: str | None
+) -> str:
+    if not repository or not GITHUB_REPOSITORY_RE.fullmatch(repository):
+        raise ConfigurationError(f"GitHub Releases source needs owner/repository: {feed_id}")
+    expected_api = f"https://api.github.com/repos/{repository}/releases/latest"
+    if url != expected_api:
+        raise ConfigurationError(
+            f"GitHub Releases API URL must be the official latest endpoint: {feed_id}"
+        )
+    expected_homepage = f"https://github.com/{repository}/releases"
+    if homepage != expected_homepage:
+        raise ConfigurationError(f"GitHub Releases homepage is unexpected: {feed_id}")
+    return repository
+
+
 def load_feed_configs(path: Path) -> list[FeedConfig]:
     try:
         raw = yaml.safe_load(path.read_text(encoding="utf-8"))
@@ -126,10 +143,12 @@ def load_feed_configs(path: Path) -> list[FeedConfig]:
         feed_id = str(item["id"])
         if not re.fullmatch(r"[a-z0-9][a-z0-9-]*", feed_id) or feed_id in seen_ids:
             raise ConfigurationError(f"Feed id is invalid or duplicated: {feed_id}")
-        if not is_http_url(str(item["url"])):
+        url = str(item["url"])
+        if not is_http_url(url):
             raise ConfigurationError(f"Feed URL is not HTTP(S): {feed_id}")
-        homepage = item.get("homepage")
-        if homepage is not None and not is_http_url(str(homepage)):
+        homepage_value = item.get("homepage")
+        homepage = str(homepage_value) if homepage_value else None
+        if homepage is not None and not is_http_url(homepage):
             raise ConfigurationError(f"Homepage URL is not HTTP(S): {feed_id}")
         if item.get("image_policy", "rss_only") != "rss_only":
             raise ConfigurationError(f"Only rss_only image policy is permitted: {feed_id}")
@@ -139,18 +158,36 @@ def load_feed_configs(path: Path) -> list[FeedConfig]:
         categories = item.get("categories", [])
         if not isinstance(categories, list):
             raise ConfigurationError(f"categories must be a list: {feed_id}")
+
+        source_type = str(item.get("source_type", "rss")).strip().lower()
+        if source_type not in {"rss", "github_releases"}:
+            raise ConfigurationError(f"Unsupported source_type for {feed_id}: {source_type}")
+        repository_value = item.get("repository")
+        repository = str(repository_value) if repository_value else None
+        if source_type == "github_releases":
+            repository = _validate_github_release_config(
+                feed_id=feed_id,
+                url=url,
+                repository=repository,
+                homepage=homepage,
+            )
+        elif repository is not None:
+            raise ConfigurationError(f"repository is only valid for GitHub Releases: {feed_id}")
+
         configs.append(
             FeedConfig(
                 id=feed_id,
                 name=str(item["name"]),
-                url=str(item["url"]),
-                homepage=str(homepage) if homepage else None,
+                url=url,
+                homepage=homepage,
                 language=str(item["language"]),
                 enabled=bool(item["enabled"]),
                 priority=int(item["priority"]),
                 max_items_per_run=max_items,
                 image_policy="rss_only",
                 categories=tuple(str(category) for category in categories),
+                source_type=source_type,
+                repository=repository,
             )
         )
         seen_ids.add(feed_id)

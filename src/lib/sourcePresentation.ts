@@ -14,13 +14,18 @@ const CATEGORY_LABELS: Record<string, string> = {
   'deep-learning': 'ディープラーニング',
   hardware: 'ハードウェア',
   benchmarks: 'ベンチマーク',
+  inference: '推論',
 };
 
 export function sourceCategoryLabel(category: string): string {
   return CATEGORY_LABELS[category] || category.replaceAll('-', ' ');
 }
 
-export function sourceImagePolicyLabel(imagePolicy: Source['imagePolicy']): string {
+export function sourceImagePolicyLabel(
+  imagePolicy: Source['imagePolicy'],
+  sourceType: Source['sourceType'] = 'rss',
+): string {
+  if (sourceType === 'github_releases') return 'GitHub Releases APIから画像は取得しない';
   if (imagePolicy === 'rss_only') return '公式RSS・Atomに明示された画像のみ';
   return '画像を取得しない';
 }

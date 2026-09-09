@@ -275,7 +275,7 @@ def run_update(
     for result in failures:
         LOGGER.warning("Source failed: %s (%s)", result.config.id, result.error)
     if not successes:
-        raise UpdateError("All enabled sources failed; existing content was left unchanged")
+        raise UpdateError("All enabled feeds failed; existing content was left unchanged")
 
     fetched_items = [item for result in successes for item in result.items]
     eligible = [

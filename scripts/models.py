@@ -16,6 +16,8 @@ class FeedConfig:
     max_items_per_run: int
     image_policy: str
     categories: tuple[str, ...]
+    source_type: str = "rss"
+    repository: str | None = None
 
 
 @dataclass(frozen=True, slots=True)

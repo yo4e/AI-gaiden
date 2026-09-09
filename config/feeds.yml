@@ -179,12 +179,12 @@ feeds:
     name: LangChain Releases
     source_type: github_releases
     repository: langchain-ai/langchain
-    url: https://api.github.com/repos/langchain-ai/langchain/releases/latest
+    url: https://api.github.com/repos/langchain-ai/langchain/releases?per_page=20
     homepage: https://github.com/langchain-ai/langchain/releases
     language: en
     enabled: true
     priority: 64
-    max_items_per_run: 1
+    max_items_per_run: 5
     image_policy: rss_only
     categories:
       - artificial-intelligence
@@ -195,12 +195,12 @@ feeds:
     name: vLLM Releases
     source_type: github_releases
     repository: vllm-project/vllm
-    url: https://api.github.com/repos/vllm-project/vllm/releases/latest
+    url: https://api.github.com/repos/vllm-project/vllm/releases?per_page=20
     homepage: https://github.com/vllm-project/vllm/releases
     language: en
     enabled: true
     priority: 63
-    max_items_per_run: 1
+    max_items_per_run: 5
     image_policy: rss_only
     categories:
       - artificial-intelligence
@@ -211,12 +211,12 @@ feeds:
     name: Ollama Releases
     source_type: github_releases
     repository: ollama/ollama
-    url: https://api.github.com/repos/ollama/ollama/releases/latest
+    url: https://api.github.com/repos/ollama/ollama/releases?per_page=20
     homepage: https://github.com/ollama/ollama/releases
     language: en
     enabled: true
     priority: 62
-    max_items_per_run: 1
+    max_items_per_run: 5
     image_policy: rss_only
     categories:
       - artificial-intelligence
@@ -227,12 +227,12 @@ feeds:
     name: llama.cpp Releases
     source_type: github_releases
     repository: ggml-org/llama.cpp
-    url: https://api.github.com/repos/ggml-org/llama.cpp/releases/latest
+    url: https://api.github.com/repos/ggml-org/llama.cpp/releases?per_page=20
     homepage: https://github.com/ggml-org/llama.cpp/releases
     language: en
     enabled: true
     priority: 61
-    max_items_per_run: 1
+    max_items_per_run: 5
     image_policy: rss_only
     categories:
       - artificial-intelligence

@@ -84,12 +84,19 @@ def test_ai_terms_v1_rejects_ambiguous_single_signals(title: str) -> None:
     assert matches_ai_terms_v1(make_item(title)) is False
 
 
-def test_repository_admission_config_filters_sourcegraph_only() -> None:
+def test_repository_admission_config_covers_filtered_and_all_sources() -> None:
     rules = load_admission_config(Path("config/admission.yml"))
 
-    assert rules == {
-        "sourcegraph-changelog": AdmissionRule(mode="filtered", policy="ai_terms_v1")
-    }
+    assert rules["sourcegraph-changelog"] == AdmissionRule(
+        mode="filtered", policy="ai_terms_v1"
+    )
+    for source_id in (
+        "langchain-releases",
+        "vllm-releases",
+        "ollama-releases",
+        "llama-cpp-releases",
+    ):
+        assert rules[source_id] == AdmissionRule(mode="all")
 
 
 def test_filtered_sources_scan_deeper_without_changing_publication_cap() -> None:

@@ -5,7 +5,11 @@ from datetime import UTC
 
 import requests
 
-from scripts.github_release_reader import GitHubReleaseReader, normalize_release
+from scripts.github_release_reader import (
+    GitHubReleaseReader,
+    normalize_release,
+    normalize_release_list,
+)
 from scripts.models import FeedConfig
 
 
@@ -13,12 +17,12 @@ def make_config() -> FeedConfig:
     return FeedConfig(
         id="example-releases",
         name="Example Releases",
-        url="https://api.github.com/repos/example-org/example-ai/releases/latest",
+        url="https://api.github.com/repos/example-org/example-ai/releases?per_page=20",
         homepage="https://github.com/example-org/example-ai/releases",
         language="en",
         enabled=True,
         priority=50,
-        max_items_per_run=1,
+        max_items_per_run=5,
         image_policy="rss_only",
         categories=("artificial-intelligence",),
         source_type="github_releases",
@@ -51,7 +55,7 @@ def response_for(payload, *, status: int = 200, url: str | None = None) -> reque
     return response
 
 
-def test_normalizes_latest_stable_release() -> None:
+def test_normalizes_stable_release() -> None:
     item = normalize_release(release_payload(), make_config())
 
     assert item is not None
@@ -79,12 +83,72 @@ def test_rejects_draft_prerelease_and_cross_repository_urls() -> None:
     )
 
 
+def test_release_list_filters_nonstable_and_sorts_newest_first() -> None:
+    config = make_config()
+    payload = [
+        release_payload(
+            id=1,
+            name="v1.0.0",
+            tag_name="v1.0.0",
+            html_url="https://github.com/example-org/example-ai/releases/tag/v1.0.0",
+            published_at="2026-09-01T00:00:00Z",
+        ),
+        release_payload(
+            id=2,
+            name="v2.0.0-rc1",
+            tag_name="v2.0.0-rc1",
+            html_url="https://github.com/example-org/example-ai/releases/tag/v2.0.0-rc1",
+            published_at="2026-09-09T00:00:00Z",
+            prerelease=True,
+        ),
+        release_payload(
+            id=3,
+            name="v1.1.0",
+            tag_name="v1.1.0",
+            html_url="https://github.com/example-org/example-ai/releases/tag/v1.1.0",
+            published_at="2026-09-08T00:00:00Z",
+        ),
+        release_payload(
+            id=4,
+            name="draft",
+            tag_name="draft",
+            html_url="https://github.com/example-org/example-ai/releases/tag/draft",
+            published_at="2026-09-10T00:00:00Z",
+            draft=True,
+        ),
+    ]
+
+    items = normalize_release_list(payload, config)
+
+    assert [item.title for item in items] == ["v1.1.0", "v1.0.0"]
+
+
+def test_release_list_respects_per_source_cap() -> None:
+    config = make_config()
+    payload = [
+        release_payload(
+            id=index,
+            name=f"v1.0.{index}",
+            tag_name=f"v1.0.{index}",
+            html_url=f"https://github.com/example-org/example-ai/releases/tag/v1.0.{index}",
+            published_at=f"2026-09-{index:02d}T00:00:00Z",
+        )
+        for index in range(1, 8)
+    ]
+
+    items = normalize_release_list(payload, config)
+
+    assert len(items) == 5
+    assert items[0].title == "v1.0.7"
+    assert items[-1].title == "v1.0.3"
+
+
 def test_reader_sends_token_and_reuses_etag(tmp_path, monkeypatch) -> None:
     config = make_config()
     reader = GitHubReleaseReader(tmp_path / "github-releases.json")
     reader.cache = {"sources": {config.id: {"etag": '"release-etag"'}}}
     captured_headers = {}
-    response = response_for(release_payload())
+    response = response_for([release_payload()])
     response.headers["ETag"] = '"next-etag"'
 
     def fake_get(*args, **kwargs):
@@ -117,6 +181,23 @@ def test_reader_handles_not_modified_without_items(tmp_path, monkeypatch) -> Non
     assert result.success is True
     assert result.not_modified is True
     assert result.items == ()
+    assert changed is False
+
+
+def test_reader_rejects_nonlist_payload(tmp_path, monkeypatch) -> None:
+    config = make_config()
+    reader = GitHubReleaseReader(tmp_path / "github-releases.json")
+    monkeypatch.setattr(
+        reader.session,
+        "get",
+        lambda *args, **kwargs: response_for(release_payload()),
+    )
+
+    result, changed = reader._fetch(config)
+
+    assert result.success is False
+    assert result.items == ()
+    assert "must be a list" in (result.error or "")
     assert changed is False
 
 

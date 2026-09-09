@@ -12,6 +12,7 @@ from typing import Any
 from scripts.content_writer import article_id_for, build_brief, build_excerpt, write_article_files
 from scripts.feed_reader import FeedReader
 from scripts.models import NormalizedItem, PreparedItem
+from scripts.source_reader import SourceReader
 from scripts.translation_quality import check_translation_quality
 from scripts.translator import ArgosTranslator, TranslationError, Translator, limit_summary
 from scripts.utils import (
@@ -244,7 +245,7 @@ def run_update(
     cache_path: Path,
     bootstrap_days: int,
     now: datetime | None = None,
-    reader: FeedReader | None = None,
+    reader: FeedReader | SourceReader | None = None,
     translator: Translator | None = None,
 ) -> int:
     if not 1 <= bootstrap_days <= 7:
@@ -255,26 +256,26 @@ def run_update(
     recovered = recover_article_metadata(content_dir)
     known = _known_keys(seen, content_dir)
     initial_run = not known
-    feed_reader = reader or FeedReader(cache_path)
-    if isinstance(feed_reader, FeedReader):
+    source_reader = reader or SourceReader(cache_path)
+    if hasattr(source_reader, "use_conditional_requests"):
         # A first/bootstrap run must be able to widen its lookback even after a cached 304.
-        feed_reader.use_conditional_requests = not initial_run and bootstrap_days == 3
-    results = feed_reader.fetch_all(configs)
+        source_reader.use_conditional_requests = not initial_run and bootstrap_days == 3
+    results = source_reader.fetch_all(configs)
     successes = [result for result in results if result.success]
     failures = [result for result in results if not result.success]
     for result in successes:
         LOGGER.info(
-            "Feed succeeded: %s items=%d not_modified=%s",
+            "Source succeeded: %s items=%d not_modified=%s",
             result.config.id,
             len(result.items),
             result.not_modified,
         )
         if not result.not_modified and not result.items:
-            LOGGER.warning("Feed returned no usable entries: %s", result.config.id)
+            LOGGER.warning("Source returned no usable entries: %s", result.config.id)
     for result in failures:
-        LOGGER.warning("Feed failed: %s (%s)", result.config.id, result.error)
+        LOGGER.warning("Source failed: %s (%s)", result.config.id, result.error)
     if not successes:
-        raise UpdateError("All enabled feeds failed; existing content was left unchanged")
+        raise UpdateError("All enabled sources failed; existing content was left unchanged")
 
     fetched_items = [item for result in successes for item in result.items]
     eligible = [
@@ -302,7 +303,7 @@ def run_update(
 
     duplicate_count = len(fetched_items) - len(eligible) + (len(eligible) - len(unique))
     LOGGER.info(
-        "Feeds: configured=%d success=%d failed=%d fetched_items=%d "
+        "Sources: configured=%d success=%d failed=%d fetched_items=%d "
         "new=%d duplicates_or_filtered=%d",
         len([config for config in configs if config.enabled]),
         len(successes),

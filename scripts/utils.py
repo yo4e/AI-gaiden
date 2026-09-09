@@ -112,10 +112,10 @@ def _validate_github_release_config(
 ) -> str:
     if not repository or not GITHUB_REPOSITORY_RE.fullmatch(repository):
         raise ConfigurationError(f"GitHub Releases source needs owner/repository: {feed_id}")
-    expected_api = f"https://api.github.com/repos/{repository}/releases/latest"
+    expected_api = f"https://api.github.com/repos/{repository}/releases?per_page=20"
     if url != expected_api:
         raise ConfigurationError(
-            f"GitHub Releases API URL must be the official latest endpoint: {feed_id}"
+            f"GitHub Releases API URL must be the official release-list endpoint: {feed_id}"
         )
     expected_homepage = f"https://github.com/{repository}/releases"
     if homepage != expected_homepage:

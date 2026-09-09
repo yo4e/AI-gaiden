@@ -26,6 +26,7 @@ jobs:
       ARGOS_PACKAGES_DIR: ${{ github.workspace }}/.cache/argos/packages
       ARGOS_AUTO_INSTALL: '1'
       BOOTSTRAP_DAYS: ${{ inputs.bootstrap_days || '3' }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       SITE_URL: https://ai.gaiden.news
     steps:
       - name: Check out main
@@ -50,18 +51,21 @@ jobs:
           path: .cache/argos
           key: argos-en-ja-${{ runner.os }}-v1
 
-      - name: Restore feed HTTP validators
+      - name: Restore source HTTP validators
         uses: actions/cache@v6
         with:
-          path: .cache/feed-state.json
-          key: feed-state-${{ runner.os }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .cache/feed-state.json
+            .cache/feed-state-github-releases.json
+          key: source-state-${{ runner.os }}-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: |
+            source-state-${{ runner.os }}-
             feed-state-${{ runner.os }}-
 
       - name: Install Python dependencies
         run: python -m pip install -r requirements.lock
 
-      - name: Fetch official feeds and generate digest
+      - name: Fetch official sources and generate digest
         run: python scripts/update_news.py
 
       - name: Lint and test Python
@@ -123,4 +127,4 @@ jobs:
 
       - name: Report no new content
         if: steps.changes.outputs.has_changes != 'true'
-        run: echo 'No new official-feed items; no commit was created.'
+        run: echo 'No new official-source items; no commit was created.'

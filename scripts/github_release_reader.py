@@ -4,6 +4,7 @@ import logging
 import os
 import re
 from collections.abc import Mapping
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlsplit
@@ -27,9 +28,10 @@ from scripts.utils import (
 LOGGER = logging.getLogger(__name__)
 USER_AGENT = "AI-Gaiden/0.1 (+https://github.com/yo4e/AI-gaiden)"
 GITHUB_API_VERSION = "2022-11-28"
-MAX_RESPONSE_BYTES = 5 * 1024 * 1024
+MAX_RESPONSE_BYTES = 10 * 1024 * 1024
 MARKDOWN_LINK_RE = re.compile(r"!?\[([^]]*)\]\([^)]*\)")
 MARKDOWN_MARKER_RE = re.compile(r"(?:^|\s)(?:#{1,6}|[-*+]|\d+[.)])\s+")
+MIN_UTC = datetime.min.replace(tzinfo=UTC)
 
 
 def _plain_release_body(value: object) -> str:
@@ -96,8 +98,19 @@ def normalize_release(payload: Mapping[str, Any], config: FeedConfig) -> Normali
     )
 
 
+def normalize_release_list(payload: list[Any], config: FeedConfig) -> tuple[NormalizedItem, ...]:
+    items = [
+        item
+        for release in payload
+        if isinstance(release, Mapping)
+        if (item := normalize_release(release, config)) is not None
+    ]
+    items.sort(key=lambda item: item.published_at or MIN_UTC, reverse=True)
+    return tuple(items[: config.max_items_per_run])
+
+
 class GitHubReleaseReader:
-    """Fetch the latest stable release from explicitly configured official repositories."""
+    """Fetch recent stable releases from explicitly configured official repositories."""
 
     def __init__(self, cache_path: Path) -> None:
         self.cache_path = cache_path
@@ -164,9 +177,9 @@ class GitHubReleaseReader:
             if len(response.content) > MAX_RESPONSE_BYTES:
                 raise ValueError(f"GitHub API response exceeds {MAX_RESPONSE_BYTES} bytes")
             payload = response.json()
-            if not isinstance(payload, dict):
-                raise ValueError("GitHub Releases API response must be an object")
-            item = normalize_release(payload, config)
+            if not isinstance(payload, list):
+                raise ValueError("GitHub Releases API response must be a list")
+            items = normalize_release_list(payload, config)
         except (requests.RequestException, requests.JSONDecodeError, ValueError) as exc:
             return FeedResult(config, False, False, (), str(exc)), False
 
@@ -174,4 +187,4 @@ class GitHubReleaseReader:
         new_state = {key: value for key, value in new_state.items() if value}
         changed = state != new_state
         self.cache["sources"][config.id] = new_state
-        return FeedResult(config, True, False, (item,) if item else ()), changed
+        return FeedResult(config, True, False, items), changed

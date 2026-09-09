@@ -174,3 +174,67 @@ feeds:
       - benchmarks
       - safety
       - machine-learning
+
+  - id: langchain-releases
+    name: LangChain Releases
+    source_type: github_releases
+    repository: langchain-ai/langchain
+    url: https://api.github.com/repos/langchain-ai/langchain/releases/latest
+    homepage: https://github.com/langchain-ai/langchain/releases
+    language: en
+    enabled: true
+    priority: 64
+    max_items_per_run: 1
+    image_policy: rss_only
+    categories:
+      - artificial-intelligence
+      - developer-tools
+      - open-source
+
+  - id: vllm-releases
+    name: vLLM Releases
+    source_type: github_releases
+    repository: vllm-project/vllm
+    url: https://api.github.com/repos/vllm-project/vllm/releases/latest
+    homepage: https://github.com/vllm-project/vllm/releases
+    language: en
+    enabled: true
+    priority: 63
+    max_items_per_run: 1
+    image_policy: rss_only
+    categories:
+      - artificial-intelligence
+      - inference
+      - open-source
+
+  - id: ollama-releases
+    name: Ollama Releases
+    source_type: github_releases
+    repository: ollama/ollama
+    url: https://api.github.com/repos/ollama/ollama/releases/latest
+    homepage: https://github.com/ollama/ollama/releases
+    language: en
+    enabled: true
+    priority: 62
+    max_items_per_run: 1
+    image_policy: rss_only
+    categories:
+      - artificial-intelligence
+      - developer-tools
+      - open-source
+
+  - id: llama-cpp-releases
+    name: llama.cpp Releases
+    source_type: github_releases
+    repository: ggml-org/llama.cpp
+    url: https://api.github.com/repos/ggml-org/llama.cpp/releases/latest
+    homepage: https://github.com/ggml-org/llama.cpp/releases
+    language: en
+    enabled: true
+    priority: 61
+    max_items_per_run: 1
+    image_policy: rss_only
+    categories:
+      - artificial-intelligence
+      - inference
+      - open-source

@@ -1,9 +1,6 @@
 from pathlib import Path
 
-from scripts.validate_rss import (
-    RssValidationError,
-    validate_rss,
-)
+from scripts.validate_rss import validate_rss
 
 
 ARTICLE_URL = 'https://example.pages.dev/articles/2026/08/05/example-ai-1234abcd/'
@@ -73,7 +70,7 @@ def test_rss_item_still_requires_source_element(tmp_path: Path) -> None:
 
     try:
         validate_rss(feed)
-    except RssValidationError as exc:
+    except ValueError as exc:
         assert 'missing source attribution' in str(exc)
     else:
         raise AssertionError('RSS source omission must fail validation')
@@ -91,7 +88,7 @@ def test_github_releases_item_rejects_rest_api_source_element(tmp_path: Path) ->
 
     try:
         validate_rss(feed)
-    except RssValidationError as exc:
+    except ValueError as exc:
         assert 'must not contain source attribution' in str(exc)
     else:
         raise AssertionError('GitHub Releases source attribution must fail validation')

@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from scripts.validate_rss import RssValidationError, validate_rss
+from scripts.validate_rss import (\n    RssValidationError,\n    validate_rss,\n)
 
 
 ARTICLE_URL = 'https://example.pages.dev/articles/2026/08/05/example-ai-1234abcd/'

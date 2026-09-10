@@ -13,6 +13,10 @@ const SOURCE_FEED_URLS = new Map(
     .map((source) => [source.id, source.feedUrl]),
 );
 
+const SOURCE_TYPES = new Map(
+  sources.map((source) => [source.id, source.sourceType ?? 'rss'] as const),
+);
+
 type RssArticleData = Pick<
   ArticleData,
   | 'articleId'
@@ -38,7 +42,14 @@ function sourceFeedUrl(sourceId: string): string | undefined {
   return SOURCE_FEED_URLS.get(sourceId);
 }
 
-function itemCustomData(data: RssArticleData): string {
+function sourceType(sourceId: string): 'rss' | 'github_releases' {
+  return SOURCE_TYPES.get(sourceId) ?? 'rss';
+}
+
+function itemCustomData(
+  data: RssArticleData,
+  sourceTransport: 'rss' | 'github_releases',
+): string {
   const titleStatus = data.titleTranslationStatus
     ? `<gaiden:titleTranslationStatus>${data.titleTranslationStatus}</gaiden:titleTranslationStatus>`
     : '';
@@ -50,6 +61,7 @@ function itemCustomData(data: RssArticleData): string {
   return [
     `<atom:updated>${updatedAt}</atom:updated>`,
     `<gaiden:articleId>${data.articleId}</gaiden:articleId>`,
+    `<gaiden:sourceType>${sourceTransport}</gaiden:sourceType>`,
     `<gaiden:translationStatus>${data.translationStatus}</gaiden:translationStatus>`,
     titleStatus,
     summaryStatus,
@@ -60,6 +72,7 @@ export function rssItemForArticle(article: RssArticle, site: URL): RSSFeedItem {
   const { data } = article;
   const link = absoluteArticleUrl(article, site);
   const feedUrl = sourceFeedUrl(data.sourceId);
+  const sourceTransport = sourceType(data.sourceId);
 
   return {
     title: data.titleJa,
@@ -77,7 +90,7 @@ export function rssItemForArticle(article: RssArticle, site: URL): RSSFeedItem {
           },
         }
       : {}),
-    customData: itemCustomData(data),
+    customData: itemCustomData(data, sourceTransport),
   };
 }
 

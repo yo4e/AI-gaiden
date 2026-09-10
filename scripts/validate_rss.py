@@ -104,11 +104,22 @@ def validate_rss(
         category = _child(item, 'category')
         if category is None or not ''.join(category.itertext()).strip():
             raise RssValidationError(f'RSS item is missing a source category: {link}')
+
+        source_type = _text(item, 'sourceType')
+        if source_type not in {'rss', 'github_releases'}:
+            raise RssValidationError(f'RSS item has invalid source type: {link}')
         source = _child(item, 'source')
-        if source is None:
-            raise RssValidationError(f'RSS item is missing source attribution: {link}')
-        source_url = source.attrib.get('url', '')
-        _require_absolute_http_url(source_url, 'source URL')
+        if source_type == 'github_releases':
+            if source is not None:
+                raise RssValidationError(
+                    f'GitHub Releases RSS item must not contain source attribution: {link}'
+                )
+        else:
+            if source is None:
+                raise RssValidationError(f'RSS item is missing source attribution: {link}')
+            source_url = source.attrib.get('url', '')
+            _require_absolute_http_url(source_url, 'source URL')
+
         translation_status = next(
             (child for child in item if _local_name(child.tag) == 'translationStatus'), None
         )

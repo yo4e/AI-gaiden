@@ -1,7 +1,5 @@
 from pathlib import Path
 
-import pytest
-
 from scripts.validate_rss import RssValidationError, validate_rss
 
 
@@ -70,8 +68,12 @@ def test_github_releases_item_allows_missing_source_element(tmp_path: Path) -> N
 def test_rss_item_still_requires_source_element(tmp_path: Path) -> None:
     feed = _write_feed(tmp_path, source_type='rss', source_element='')
 
-    with pytest.raises(RssValidationError, match='missing source attribution'):
+    try:
         validate_rss(feed)
+    except RssValidationError as exc:
+        assert 'missing source attribution' in str(exc)
+    else:
+        raise AssertionError('RSS source omission must fail validation')
 
 
 def test_github_releases_item_rejects_rest_api_source_element(tmp_path: Path) -> None:
@@ -84,5 +86,9 @@ def test_github_releases_item_rejects_rest_api_source_element(tmp_path: Path) ->
         ),
     )
 
-    with pytest.raises(RssValidationError, match='must not contain source attribution'):
+    try:
         validate_rss(feed)
+    except RssValidationError as exc:
+        assert 'must not contain source attribution' in str(exc)
+    else:
+        raise AssertionError('GitHub Releases source attribution must fail validation')

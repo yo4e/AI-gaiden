@@ -49,12 +49,26 @@
       "source": "openai-news",
       "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine"
     },
+    "url:075fed980e67c694db46cedaac3bb03714e2e805b3a4b8d5ecbdb92fb4704bd4": {
+      "article_id": "hugging-face-2658e947",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-10T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/gradio-workflow-1111"
+    },
     "url:077b61a0fed02bcc2a083d299a0c55e24311ad526ecaa535f96d02762c586c8f": {
       "article_id": "hugging-face-0946b371",
       "first_seen_at": "2026-08-11T16:13:54.723524Z",
       "published_at": "2026-08-11T13:37:10Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/ibm-research/altk-evolve-sldd"
+    },
+    "url:07bd8fd1dfbce243219ab510a23e2e075464355c2c880bce5963b4529417d059": {
+      "article_id": "langchain-releases-9b27438a",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-10T19:13:10Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.2"
     },
     "url:081601c279be28d3ef5aa58c1540b9bc9f0ea3d8209b55f9f8aeb4a2083ecf36": {
       "article_id": "openai-news-303f6c98",
@@ -90,6 +104,13 @@
       "published_at": "2026-08-31T07:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/polimill"
+    },
+    "url:0bb946f0c421538942e425649beb92ebcc573674a0f10cbfe699bb79671506eb": {
+      "article_id": "openai-news-9aa8559a",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-10T07:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/introducing-chatgpt-financial-services"
     },
     "url:0bc671dd2735ab91413c00dbc042fa8f4e9fb876acd613335d004c68d3d46d0a": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
@@ -145,6 +166,13 @@
       "published_at": "2026-08-11T12:00:27Z",
       "source": "mistral-ai",
       "url": "https://mistral.ai/news/regional-inference-open-models-new-compute"
+    },
+    "url:1060a3206d41de1a5984f8d3d7663d309239eb1619db22b7f06e25356f5c7929": {
+      "article_id": "langchain-releases-5c0a4c52",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-08T14:20:40Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.1"
     },
     "url:10a29b4804e0e8482f58543b09461165ed139ffe5c09dda6219b0ee18fdea803": {
       "article_id": "aws-machine-learning-507f2eda",
@@ -299,6 +327,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-agentic-creative-workflows-with-amazon-quick-and-fal"
     },
+    "url:2947b34346514aae0973a6680404d2963975f73bc94fda59256d49b1711e016e": {
+      "article_id": "mistral-ai-f71efd3c",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-10T10:42:55Z",
+      "source": "mistral-ai",
+      "url": "https://mistral.ai/news/mistral-x-cloudera"
+    },
     "url:29b0e61ec6cd1ed38342bd3f0d233e41901ac8706bcd8411d89efe21c8f9b7d6": {
       "article_id": "openai-news-f3b45494",
       "first_seen_at": "2026-08-10T22:01:43.331237Z",
@@ -361,6 +396,13 @@
       "published_at": "2026-09-01T01:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/gilbert-tobin"
+    },
+    "url:338a77b082d6e9b86e328b08afac47f92cf7f3361fd27cb7a912724972c65194": {
+      "article_id": "google-ai-89810e91",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-10T16:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/products-and-platforms/products/search/running-race-training-tips"
     },
     "url:33afd77e80915c13c870f925a3c81bbc969cba0a8eb373a7b275f1e659228763": {
       "article_id": "apple-ml-research-b95b5c76",
@@ -438,6 +480,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/research-acceleration-view-inside-openai"
     },
+    "url:3802aa15c4b6ae22021ae0ee38d1b326bfae76ce787892fb81ed73e6ffa883e6": {
+      "article_id": "openai-news-feb21c35",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-10T07:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/expanding-ai-access-us-government"
+    },
     "url:38765f3001f64af7cbf0caf63000a60437f98e23a031bc6694bd499a604250b5": {
       "article_id": "aws-machine-learning-a821a024",
       "first_seen_at": "2026-08-31T20:52:26.324221Z",
@@ -464,6 +513,13 @@
       "published_at": "2026-09-03T00:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/safety-overview-gpt-6-astra"
+    },
+    "url:39842fa0b34b37cbe3f74a631eb53c7b3f91d6f6e5ad7b93c66d1420605c9599": {
+      "article_id": "openai-news-3f44f188",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-10T16:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials"
     },
     "url:3a60695b895f83bc5481f486225927f7423c8a21d27008af62a43cf86d22f686": {
       "article_id": "aws-machine-learning-9f86887e",
@@ -554,6 +610,20 @@
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program"
     },
+    "url:448701fe99745f6407d1f9b23e42fccd2eb4024678bc0261d1b932b6823732fb": {
+      "article_id": "vllm-releases-cc278a70",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-09T08:54:49Z",
+      "source": "vllm-releases",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0"
+    },
+    "url:46660cb2ea4362f69cbd737e0a8565a577f057222260acb4673428a053564622": {
+      "article_id": "hugging-face-3a6b1227",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-09T15:36:24Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series"
+    },
     "url:4862f3d2c68fb1ad680a585cc64e80bc967fc99b89a1e7fef84c985e61d958c6": {
       "article_id": "openai-news-ee3bbaa3",
       "first_seen_at": "2026-09-01T08:43:39.886291Z",
@@ -602,6 +672,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/apple-is-getting-this-wrong"
     },
+    "url:4d11ed62a144a3f4c2f6e00530d90722b7d8967436b129f93138ecb93c209d7e": {
+      "article_id": "mistral-ai-9f46efbf",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-08T12:00:22Z",
+      "source": "mistral-ai",
+      "url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier"
+    },
     "url:4d3b17a749f42c957e926aa5ecda3aa5c4eeeaa5ba6fc6a0122239385ec004be": {
       "article_id": "hugging-face-84b6b96c",
       "first_seen_at": "2026-08-29T10:10:04.614897Z",
@@ -614,6 +691,13 @@
       "published_at": "2026-07-27T18:00:00Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly"
+    },
+    "url:4f4661ca3038bcff734b931e86ecdd698705f1878edb8f11f9c4fd7242cb67ec": {
+      "article_id": "aws-machine-learning-9c9bcc48",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-10T21:58:09Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/reduce-llm-latency-with-prefix-aware-routing-on-amazon-sagemaker-inference"
     },
     "url:4fc56175fe1737a351bc315777a9833ce207af71356214c77fe512b758f8de9b": {
       "article_id": "aws-machine-learning-dc9c57e3",
@@ -635,6 +719,20 @@
       "published_at": "2026-08-10T17:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/building-an-ai-native-finance-function"
+    },
+    "url:5489804c76847f43095a050311a62ba5b583777f176dfe43eb7b907e3342f417": {
+      "article_id": "langchain-releases-04bdbd87",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-09T21:22:00Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.2"
+    },
+    "url:56bfec926244076beb99d79b294acced29a6c3e3551d80cd931e00b960b3116f": {
+      "article_id": "mistral-ai-10b71087",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-09T12:00:46Z",
+      "source": "mistral-ai",
+      "url": "https://mistral.ai/news/legacy-code-modernization"
     },
     "url:57daf334c931638e45d327ab1379014fe7e8b38299d999cbcff5e2ca8603c3b0": {
       "article_id": "aws-machine-learning-3ad6e63b",
@@ -768,6 +866,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/engineering/using-the-github-copilot-sdk-for-java"
     },
+    "url:6a886414536a09e3da65022e4b81fb0e9329e1e8f8d489895f13b523de737c68": {
+      "article_id": "openai-news-ca830495",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-10T15:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/put-data-to-work"
+    },
     "url:6aa592d3dc7a40084fc26ef49c0a2a4849efce3311e7000757ceedd84f35c52d": {
       "article_id": "aws-machine-learning-56997e2f",
       "first_seen_at": "2026-08-11T22:08:35.529397Z",
@@ -863,6 +968,13 @@
       "published_at": "2026-08-26T00:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/loveholidays"
+    },
+    "url:77adb66885449411a18b9aff250fee2a331f402f3913023bba76bcaaf9c7806e": {
+      "article_id": "google-ai-3f3f09c7",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-09T16:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/products-and-platforms/products/search/football-features-google-search"
     },
     "url:78e3ba01c51c635935b63f3b8f4fc27b0604adf8969e087a04f36cbabadc307f": {
       "article_id": "aws-machine-learning-93a52917",
@@ -968,6 +1080,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/semismooth-newton-optimal-transport"
     },
+    "url:842b571c183eead66594afac781aec1946d670d73e7ca2d1b4861c5249c9e1f4": {
+      "article_id": "aws-machine-learning-e56c8578",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-10T16:08:57Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-an-end-to-end-rfi-questionnaire-workflow-using-amazon-quick-automate"
+    },
     "url:8434f80dc8576dd4ddf9d8039fc98ca4a025b6495b48a22bc51919ab454ccf34": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
       "published_at": "2026-08-04T16:02:21Z",
@@ -1042,6 +1161,13 @@
       "published_at": "2026-08-27T16:11:32Z",
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control"
+    },
+    "url:914dba05ced926e890fec0e4d1b835891a0fe2ac1f00716b81bb7d94aacc2f82": {
+      "article_id": "aws-machine-learning-38288a41",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-10T21:37:49Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/reduce-inference-cold-starts-on-amazon-sagemaker-hyperpod-with-model-caching"
     },
     "url:91dad0068ec24e5bcea7adc0e407700bb8999e1b3de1e0bfc9b0e6a4ed61b3fe": {
       "article_id": "hugging-face-e2532b10",
@@ -1255,6 +1381,13 @@
       "source": "google-ai",
       "url": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode"
     },
+    "url:a7dff6d25b9078cb3b66ab9fbae60bbdc7463e4b955f403f6458a5d3f5e082bc": {
+      "article_id": "google-ai-162fe857",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-09T16:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film"
+    },
     "url:aa21db80f8b7b7664c23f0b5de6fc014a64920e8fdb45e2877008c81969f17ab": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
       "published_at": "2026-08-04T13:58:29Z",
@@ -1345,6 +1478,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-fanatics-betting-and-gaming-built-a-multi-agent-customer-support-system"
     },
+    "url:b32e9b847135398762b9f07d35cf91524321a4ec5b7684b5ff2392213918b73a": {
+      "article_id": "openai-news-28082e02",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-10T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/introducing-the-agents-api"
+    },
     "url:b3d1173017d6c7da4589201ab0a6f82887d4074b431d1e395511c20c77d613e9": {
       "article_id": "apple-ml-research-48a265dd",
       "first_seen_at": "2026-08-07T16:12:23.815234Z",
@@ -1429,6 +1569,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/modernizing-and-scaling-support-operations-with-generative-ai-on-aws"
     },
+    "url:bee05420180405fe5b361b2eda4b2d574475243ac58568b2edb21af1efd6eddb": {
+      "article_id": "aws-machine-learning-a59b3d43",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-10T18:16:37Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-quick-is-now-generally-available-on-desktop"
+    },
     "url:bf50ec5ce617ac83f0c8191a946860d3cb0cd0d2aa8f71d8bb07d1b2c9c687ea": {
       "article_id": "hugging-face-c1e03866",
       "first_seen_at": "2026-08-18T04:01:01.822238Z",
@@ -1456,6 +1603,13 @@
       "published_at": "2026-09-01T12:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources"
+    },
+    "url:c0844f5cb18abbe7df9a6783052f8d100a3ad40d8e5c9fd23eeeafd38996c04b": {
+      "article_id": "aws-machine-learning-dd5c3077",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-10T21:15:39Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/video-and-image-search-in-amazon-bedrock-knowledge-base-using-marengo-3-0"
     },
     "url:c0986f6628d189a1ac370992d714e2906f134950b6ed170922abe5ac2caf0e49": {
       "article_id": "openai-news-da4f0b0e",
@@ -1797,6 +1951,13 @@
       "published_at": "2026-08-27T18:36:08Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/introducing-openai-models-on-amazon-bedrock-for-in-country-inferencing-in-india"
+    },
+    "url:e9d0ce4e62f9dc498b6aaeb17594e841308fce5a8cc38b8509cd688651ae3164": {
+      "article_id": "github-ai-ml-fb027bf4",
+      "first_seen_at": "2026-09-11T08:07:55.145306Z",
+      "published_at": "2026-09-10T21:31:19Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser"
     },
     "url:ea850b1a9c912609462a439893945e59b89d629abde9532c3a32b7330d6d6442": {
       "article_id": "aws-machine-learning-8c14dce9",

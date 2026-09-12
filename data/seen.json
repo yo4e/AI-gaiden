@@ -707,6 +707,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/apple-is-getting-this-wrong"
     },
+    "url:4aeb82da9975e2f5f564fba46674441b8ef455135ac302c60f8f7eb501572ba0": {
+      "article_id": "openai-news-8bb34487",
+      "first_seen_at": "2026-09-12T07:58:53.794599Z",
+      "published_at": "2026-09-11T16:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/cognition-devin-testing-with-astra"
+    },
     "url:4d11ed62a144a3f4c2f6e00530d90722b7d8967436b129f93138ecb93c209d7e": {
       "article_id": "mistral-ai-9f46efbf",
       "first_seen_at": "2026-09-11T08:07:55.145306Z",

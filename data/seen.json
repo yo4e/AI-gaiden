@@ -922,6 +922,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-onestruction-built-the-ishigaki-ids-foundation-model-with-aws-genaiic"
     },
+    "url:6b10c3fe8ed5dda11bb4ff5e84159187ad116f30debe7345f618a34aec457b14": {
+      "article_id": "aws-machine-learning-1869feee",
+      "first_seen_at": "2026-09-14T19:52:22.108290Z",
+      "published_at": "2026-09-14T15:47:12Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws"
+    },
     "url:6bb3f934048965cc8fe40ff7286bc1d73fdff5cc902619e78dc98b0f853d7216": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
       "published_at": "2026-08-03T00:00:00Z",
@@ -1067,6 +1074,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/write-your-first-prompt-with-the-github-copilot-app"
     },
+    "url:7f82d995c515e5ba429e7e06d184bac39c4f16f7fff73a80b082fdc2812fc58f": {
+      "article_id": "openai-news-8c165d49",
+      "first_seen_at": "2026-09-14T19:52:22.108290Z",
+      "published_at": "2026-09-14T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/fyxer"
+    },
     "url:80911412e4d1c0f0cf5f71d0adb2b01d83689d9ff1dfcfa41904e7e4252c4a99": {
       "first_seen_at": "2026-08-04T22:31:58.507698Z",
       "published_at": "2026-08-04T18:39:14Z",
@@ -1135,6 +1149,13 @@
       "published_at": "2026-09-10T16:08:57Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-an-end-to-end-rfi-questionnaire-workflow-using-amazon-quick-automate"
+    },
+    "url:842d340f487b0523b08d90cc49e55b58b00b83662144bb5a86c66e3e6723a658": {
+      "article_id": "llama-cpp-releases-ced9a909",
+      "first_seen_at": "2026-09-14T19:52:22.108290Z",
+      "published_at": "2026-09-14T18:27:29Z",
+      "source": "llama-cpp-releases",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.4.1"
     },
     "url:8434f80dc8576dd4ddf9d8039fc98ca4a025b6495b48a22bc51919ab454ccf34": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
@@ -2236,6 +2257,27 @@
       "published_at": "2026-09-03T13:15:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/daybreak-for-frontline-defenders"
+    },
+    "url:fcde82ce22706b89161cc9a9efc20917066f5d76375bdf56f124810ddc3f753a": {
+      "article_id": "aws-machine-learning-049abf3a",
+      "first_seen_at": "2026-09-14T19:52:22.108290Z",
+      "published_at": "2026-09-14T15:42:06Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/automate-replenishment-with-mmf-databricks-genie-and-amazon-quick"
+    },
+    "url:fce2716ef9e8c4653018618fa9a121d39c9232801f6c507eada9cb3ddd62d928": {
+      "article_id": "aws-machine-learning-f5b4112b",
+      "first_seen_at": "2026-09-14T19:52:22.108290Z",
+      "published_at": "2026-09-14T15:58:57Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-ninth-wave-built-ai-powered-open-finance-onboarding-on-amazon-bedrock"
+    },
+    "url:fd1baec08311b505543d5a8c71d0a693c44e2ce54fd7ece1e317669825fe6f4e": {
+      "article_id": "google-ai-ac253236",
+      "first_seen_at": "2026-09-14T19:52:22.108290Z",
+      "published_at": "2026-09-14T16:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026"
     },
     "url:fe23f369e01db08d4a0477172cd7e0c5a8e1ac1fb959a7f41cba80240e425604": {
       "article_id": "openai-news-ac4c5d2b",

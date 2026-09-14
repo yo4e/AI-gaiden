@@ -1259,6 +1259,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams"
     },
+    "url:968c32634dc2a1cb83f007064d0bd309276c504696b107928b2bc3d51ba9601b": {
+      "article_id": "openai-news-32315b15",
+      "first_seen_at": "2026-09-14T09:01:03.709145Z",
+      "published_at": "2026-09-14T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra"
+    },
     "url:97e92714d577da88c6e3099e0cf9afb3cc981105dadc42fff6bf30703b8cd73b": {
       "first_seen_at": "2026-08-04T06:07:12.261432Z",
       "published_at": "2026-08-03T00:00:00Z",

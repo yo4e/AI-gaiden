@@ -1855,6 +1855,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-tool-access-with-amazon-bedrock-agentcore-gateway"
     },
+    "url:d1c93a9a4173c0b28918d3112f7fd3c28bf7b7db15700155a6cac479db0c87d4": {
+      "article_id": "aws-machine-learning-9b2674dd",
+      "first_seen_at": "2026-09-15T08:45:50.252131Z",
+      "published_at": "2026-09-14T21:22:45Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/abnormal-ai-amazon-bedrock-agentcore-for-agentic-email-security-at-scale"
+    },
     "url:d21068479952e40383665c65fe6b8de94dbcd998c34b8b8d4618ffe8cce61e93": {
       "article_id": "hugging-face-594dfa9d",
       "first_seen_at": "2026-08-25T16:04:07.812904Z",
@@ -2000,6 +2007,13 @@
       "published_at": "2026-08-21T00:00:00Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/asr-benchmark-optimization"
+    },
+    "url:e4887ae13cdf3e0d1a57b577c2d965898d8b92d3c1978971eeb1fa95871f6051": {
+      "article_id": "aws-machine-learning-a25818b2",
+      "first_seen_at": "2026-09-15T08:45:50.252131Z",
+      "published_at": "2026-09-14T20:35:45Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/manage-end-user-oauth-consent-for-ai-agents-with-amazon-bedrock-agentcore"
     },
     "url:e4e1cd054e2498443ba52e80c9341b57224e5525893d6468803b3f819650abfe": {
       "article_id": "apple-ml-research-c31699ba",
@@ -2285,6 +2299,13 @@
       "published_at": "2026-08-27T03:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/expanding-our-presence-in-brazil"
+    },
+    "url:ff082bc32dcf39bfd27812edc1e6795d89a33c6620e4fac168c5a51bfe3c1f63": {
+      "article_id": "google-ai-3697c2f8",
+      "first_seen_at": "2026-09-15T08:45:50.252131Z",
+      "published_at": "2026-09-14T19:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch"
     },
     "url:ff38a160f9f7629841b74335c9a1a1b080e8be6e4f36590262218e5d80497b3c": {
       "article_id": "aws-machine-learning-252f8649",

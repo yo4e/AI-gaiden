@@ -92,7 +92,7 @@ def test_ai_terms_v1_rejects_ambiguous_single_signals(title: str) -> None:
         ("New AI agent capabilities in Microsoft Foundry", ""),
         ("Copilot updates for enterprise developers", ""),
         ("Run LLM workloads efficiently in Azure", ""),
-        ("Azure platform update", "New networking and storage capabilities"),
+        ("Model inference improvements for production workloads", ""),
     ],
 )
 def test_ai_terms_v1_accepts_microsoft_cloud_ai_articles(title: str, summary: str) -> None:

@@ -1,5 +1,12 @@
 {
   "items": {
+    "url:00b756f2cca2320b1d11a38702c97b3b286a128efda93520625e8cbb21331a2f": {
+      "article_id": "aws-machine-learning-37a759f5",
+      "first_seen_at": "2026-09-16T18:56:14.102211Z",
+      "published_at": "2026-09-16T15:47:39Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-agent-system-prompts-with-amazon-bedrock-agentcore"
+    },
     "url:013cf06e857ce80e8c35cee5cc798d8411a0b5b9696bdfe840b80c5705f56dc0": {
       "article_id": "google-ai-c0831638",
       "first_seen_at": "2026-08-10T16:12:13.389844Z",
@@ -174,6 +181,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.1"
     },
+    "url:10828ea7861366737b117525e41bdcdbc3cf587fda3f145c968790957bbdc2f3": {
+      "article_id": "langchain-releases-23bb89d7",
+      "first_seen_at": "2026-09-16T18:56:14.102211Z",
+      "published_at": "2026-09-16T17:07:03Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.1"
+    },
     "url:10a29b4804e0e8482f58543b09461165ed139ffe5c09dda6219b0ee18fdea803": {
       "article_id": "aws-machine-learning-507f2eda",
       "first_seen_at": "2026-08-13T16:12:48.826746Z",
@@ -228,6 +242,13 @@
       "published_at": "2026-08-06T19:49:34Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app"
+    },
+    "url:1562b9a478adb2d95ad963875cef2be8c619ba26f57fed3a6b8119ced0730518": {
+      "article_id": "apple-ml-research-66062546",
+      "first_seen_at": "2026-09-16T18:56:14.102211Z",
+      "published_at": "2026-09-16T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/shared-selective-persistent-memory"
     },
     "url:167c901a4800acececb4fdc340f543511cf773629cebd13f55c38d60ff42b290": {
       "article_id": "aws-machine-learning-35086584",
@@ -548,6 +569,13 @@
       "published_at": "2026-09-10T16:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials"
+    },
+    "url:3a256cb3cf2344c6f1c3ca216535c1863c569bb39c991c5e4b2554e3662d658e": {
+      "article_id": "aws-machine-learning-b8ec3fd9",
+      "first_seen_at": "2026-09-16T18:56:14.102211Z",
+      "published_at": "2026-09-16T15:17:37Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-serverless-pii-redaction-pipeline-with-amazon-bedrock-data-automation"
     },
     "url:3a58c7f2bd5bba7015d814adea379a55390fae49a148cd8422ed28c0cc3eba53": {
       "article_id": "mlcommons-aebde0ab",
@@ -957,6 +985,13 @@
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking"
     },
+    "url:6ac27c68838b29eeea8939f0e49b9f8d5c9f70da6aec6f577cdae354b1b5aa63": {
+      "article_id": "openai-news-b1857583",
+      "first_seen_at": "2026-09-16T18:56:14.102211Z",
+      "published_at": "2026-09-16T13:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/reimagining-advertising-with-ai"
+    },
     "url:6b10c3fe8ed5dda11bb4ff5e84159187ad116f30debe7345f618a34aec457b14": {
       "article_id": "aws-machine-learning-1869feee",
       "first_seen_at": "2026-09-14T19:52:22.108290Z",
@@ -1101,6 +1136,13 @@
       "published_at": "2026-08-19T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/human-like-behaviors-llms"
+    },
+    "url:7d2872733a614740ea67cf0d6caa1be41e67dc215acdfe91a81bd31a341b0343": {
+      "article_id": "openai-news-94c841de",
+      "first_seen_at": "2026-09-16T18:56:14.102211Z",
+      "published_at": "2026-09-16T09:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/unlocking-new-ways-of-working"
     },
     "url:7d8cf1a82fe7868bad7bd41cb63449dacedf08a95a54d7d16af1f00eba9887c8": {
       "article_id": "aws-machine-learning-93fba2e6",
@@ -1452,6 +1494,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/grpo-with-trl-ifstruct"
     },
+    "url:a1bc8087954f92f12be2e395a6a00d330c3074fb2a5bc09f3ce96e2a8d468547": {
+      "article_id": "mlcommons-144301e7",
+      "first_seen_at": "2026-09-16T18:56:14.102211Z",
+      "published_at": "2026-09-16T14:45:00Z",
+      "source": "mlcommons",
+      "url": "https://mlcommons.org/2026/09/mlperf-inference-v6-1-results"
+    },
     "url:a1d018f16fad79f97456f75bff3df416e35d9a73410b1735dcbcc9bb4c30fb83": {
       "article_id": "hugging-face-6043e960",
       "first_seen_at": "2026-09-15T19:03:12.107388Z",
@@ -1575,6 +1624,13 @@
       "published_at": "2026-08-20T12:00:17Z",
       "source": "mistral-ai",
       "url": "https://mistral.ai/news/agentic-search"
+    },
+    "url:b0366f9850a9d166d4a5ba39bed68a6273ef6289577e4ca4c3d1ff2dc628de25": {
+      "article_id": "openai-news-7df9535a",
+      "first_seen_at": "2026-09-16T18:56:14.102211Z",
+      "published_at": "2026-09-16T16:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life"
     },
     "url:b0cbef382238cdd5b88df7d9e2e972c6de79dc01f5270d52514cbb50f83a1be1": {
       "article_id": "openai-news-d5fc54b2",

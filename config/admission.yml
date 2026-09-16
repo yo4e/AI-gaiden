@@ -2,6 +2,9 @@ sources:
   sourcegraph-changelog:
     mode: filtered
     policy: ai_terms_v1
+  microsoft-cloud:
+    mode: filtered
+    policy: ai_terms_v1
   langchain-releases:
     mode: all
   vllm-releases:

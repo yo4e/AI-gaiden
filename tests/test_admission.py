@@ -84,10 +84,41 @@ def test_ai_terms_v1_rejects_ambiguous_single_signals(title: str) -> None:
     assert matches_ai_terms_v1(make_item(title)) is False
 
 
+@pytest.mark.parametrize(
+    ("title", "summary"),
+    [
+        ("Azure AI adds model inference improvements", ""),
+        ("Build generative AI apps on Azure", ""),
+        ("New AI agent capabilities in Microsoft Foundry", ""),
+        ("Copilot updates for enterprise developers", ""),
+        ("Run LLM workloads efficiently in Azure", ""),
+        ("Model inference improvements for production workloads", ""),
+    ],
+)
+def test_ai_terms_v1_accepts_microsoft_cloud_ai_articles(title: str, summary: str) -> None:
+    assert matches_ai_terms_v1(make_item(title, summary)) is True
+
+
+@pytest.mark.parametrize(
+    ("title", "summary"),
+    [
+        ("Improve Azure network reliability", "Guidance for routing and connectivity"),
+        ("Cloud operations best practices", "Manage infrastructure across regions"),
+        ("Security updates for Azure Firewall", "New controls for network protection"),
+        ("Azure Storage product update", "General availability for storage features"),
+    ],
+)
+def test_ai_terms_v1_rejects_microsoft_cloud_non_ai_articles(title: str, summary: str) -> None:
+    assert matches_ai_terms_v1(make_item(title, summary)) is False
+
+
 def test_repository_admission_config_covers_filtered_and_all_sources() -> None:
     rules = load_admission_config(Path("config/admission.yml"))
 
     assert rules["sourcegraph-changelog"] == AdmissionRule(
+        mode="filtered", policy="ai_terms_v1"
+    )
+    assert rules["microsoft-cloud"] == AdmissionRule(
         mode="filtered", policy="ai_terms_v1"
     )
     for source_id in (

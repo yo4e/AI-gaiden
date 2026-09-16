@@ -66,6 +66,20 @@ feeds:
       - product
       - enterprise
 
+  - id: microsoft-cloud
+    name: Microsoft Cloud Blog
+    url: https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/
+    homepage: https://www.microsoft.com/en-us/microsoft-cloud/blog/
+    language: en
+    enabled: true
+    priority: 87
+    max_items_per_run: 5
+    image_policy: rss_only
+    categories:
+      - artificial-intelligence
+      - cloud
+      - enterprise
+
   - id: mistral-ai
     name: Mistral AI News
     url: https://mistral.ai/rss.xml

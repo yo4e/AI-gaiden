@@ -62,6 +62,16 @@ export const sources: Source[] = [
     imagePolicy: 'rss_only',
   },
   {
+    id: 'microsoft-cloud',
+    name: 'Microsoft Cloud Blog',
+    homepage: 'https://www.microsoft.com/en-us/microsoft-cloud/blog/',
+    feedUrl: 'https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/',
+    description: 'Microsoft Cloud BlogのうちAI関連シグナルを含む公式発表を選別して掲載',
+    enabled: true,
+    categories: ['artificial-intelligence', 'cloud', 'enterprise'],
+    imagePolicy: 'rss_only',
+  },
+  {
     id: 'mistral-ai',
     name: 'Mistral AI News',
     homepage: 'https://mistral.ai/news/',

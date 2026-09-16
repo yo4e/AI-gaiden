@@ -26,6 +26,16 @@ def test_repository_config_contains_initial_github_release_sources() -> None:
         assert config.max_items_per_run == 5
 
 
+def test_repository_config_contains_filtered_microsoft_cloud_feed() -> None:
+    configs = {config.id: config for config in load_feed_configs(ROOT / "config/feeds.yml")}
+
+    config = configs["microsoft-cloud"]
+    assert config.url == "https://www.microsoft.com/en-us/microsoft-cloud/blog/feed/"
+    assert config.homepage == "https://www.microsoft.com/en-us/microsoft-cloud/blog/"
+    assert config.max_items_per_run == 5
+    assert config.categories == ("artificial-intelligence", "cloud", "enterprise")
+
+
 def test_github_release_config_rejects_non_release_list_endpoint(tmp_path: Path) -> None:
     config_path = tmp_path / "feeds.yml"
     config_path.write_text(

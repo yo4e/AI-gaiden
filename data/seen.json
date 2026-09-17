@@ -418,6 +418,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production"
     },
+    "url:323f63404b35313df970bdab5ff1a7288f535ea82836022effcc548db68dfc14": {
+      "article_id": "aws-machine-learning-470d195f",
+      "first_seen_at": "2026-09-17T08:43:50.565657Z",
+      "published_at": "2026-09-16T18:59:25Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/fault-tolerant-distributed-training-on-amazon-eks-using-nvrx"
+    },
     "url:325e9dcd840a97e90ffb7c6d895af29ce36aa93bd90d00c36b3bf0be1def577e": {
       "article_id": "openai-news-a87e0bef",
       "first_seen_at": "2026-09-04T08:02:44.282023Z",
@@ -653,6 +660,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age"
     },
+    "url:41131ac1902ed4f3ac246dc93adac766ba983c9189403431163efadfa590f4b2": {
+      "article_id": "apple-ml-research-fc8969f2",
+      "first_seen_at": "2026-09-17T08:43:50.565657Z",
+      "published_at": "2026-09-16T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/trajectory-teacher-flow-matching"
+    },
     "url:4121a7b15bd92f32985021f65e6604570d5b2530254425293ad83847ebc084fe": {
       "article_id": "aws-machine-learning-e62d4a26",
       "first_seen_at": "2026-08-26T16:36:07.201345Z",
@@ -673,6 +687,13 @@
       "published_at": "2026-09-15T16:00:00Z",
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people"
+    },
+    "url:4410122683c569258d5a0a362f1b6f8fd8c0f990511414b3cd22c476b31d6130": {
+      "article_id": "openai-news-a761656c",
+      "first_seen_at": "2026-09-17T08:43:50.565657Z",
+      "published_at": "2026-09-16T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/how-to-connect-ai-usage-to-business-value"
     },
     "url:44555fb737bc2545bd6b3d31cd7e9a4709807d68ede8586899514ba10b54b77d": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
@@ -916,6 +937,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/starflow2-multimodal-generation"
     },
+    "url:5f9e60a4c699965776b8f495813eb1e4eb368f1b42d521a255efd59d8d2c4bb7": {
+      "article_id": "apple-ml-research-96e61fe1",
+      "first_seen_at": "2026-09-17T08:43:50.565657Z",
+      "published_at": "2026-09-16T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/glyph-column-description-tagging"
+    },
     "url:603f421f19ad47cccd1e570b55e6dc8715a4283bbca07dd4ea5dc7a7cd1ab675": {
       "article_id": "aws-machine-learning-2fcd7af5",
       "first_seen_at": "2026-09-01T18:36:04.461318Z",
@@ -1039,6 +1067,13 @@
       "published_at": "2026-08-13T11:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/builders-guide-to-gpt-5-6"
+    },
+    "url:71ca52f40c8e50d8b84b023998cf6a69cdd5419a0e4c15280e1e6cc200ed7b20": {
+      "article_id": "github-ai-ml-b4c9a319",
+      "first_seen_at": "2026-09-17T08:43:50.565657Z",
+      "published_at": "2026-09-17T00:26:43Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot"
     },
     "url:7347f06e7c916544f6e962de36961dbcdf8c00a50f21f56435f6b7de8971923e": {
       "article_id": "openai-news-bfe94563",
@@ -1266,6 +1301,13 @@
       "published_at": "2026-08-11T17:00:00Z",
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations"
+    },
+    "url:89f08439e44b921964429a77c4928a2fd021bdaaaa2ba208d282c9929bc58342": {
+      "article_id": "apple-ml-research-4852ded8",
+      "first_seen_at": "2026-09-17T08:43:50.565657Z",
+      "published_at": "2026-09-16T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/value-induction-llm-behaviour"
     },
     "url:8a292f3e3fd39914cefe84e4a31c7b549c27da2954032d79c4ea0848464220ab": {
       "article_id": "apple-ml-research-d5b1c5c7",
@@ -1863,6 +1905,20 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/designing-lifecycle-policies-for-agentcore-memory"
     },
+    "url:c66ed5d68a420ac4314ff9a9de372dd3d7dde72a7e914e947b757f3f67d6a39c": {
+      "article_id": "apple-ml-research-c9aef1f4",
+      "first_seen_at": "2026-09-17T08:43:50.565657Z",
+      "published_at": "2026-09-16T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/denoising-aware-credit-assignment"
+    },
+    "url:c6ae3beb79b8ee8b38c58e22c5cd35dce8e7b5ea3dd1e6e0d984ebc779e82d3f": {
+      "article_id": "aws-machine-learning-f3dc3ccc",
+      "first_seen_at": "2026-09-17T08:43:50.565657Z",
+      "published_at": "2026-09-16T19:00:00Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/improving-hcls-ai-reasoning-with-open-source-agent-skills"
+    },
     "url:c797381f6cd4b45af698941ec3ddb6aebb6d0308654d793fecd6d6ea1d0d1e69": {
       "article_id": "apple-ml-research-02c8e899",
       "first_seen_at": "2026-08-08T04:31:57.464657Z",
@@ -2293,6 +2349,13 @@
       "published_at": "2026-09-01T13:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/path-to-astra"
+    },
+    "url:f3899afd4d6a0a2de4790fb5c615ac53b070686d5705d2fd135b1814acc6d5b3": {
+      "article_id": "openai-news-6c9d1176",
+      "first_seen_at": "2026-09-17T08:43:50.565657Z",
+      "published_at": "2026-09-16T17:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/model-misalignment-reporting-framework"
     },
     "url:f4412618f8cd919edf4553e282f7925e569550e7c2ccee6dafeb60f4887f77b4": {
       "article_id": "apple-ml-research-8e39f087",

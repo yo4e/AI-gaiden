@@ -84,6 +84,20 @@
       "source": "openai-news",
       "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows"
     },
+    "url:09178a0dd908c4320418a4232a2f6a91336757a13ab109e2baa94092130564aa": {
+      "article_id": "aws-machine-learning-a545ba32",
+      "first_seen_at": "2026-09-17T19:05:12.502267Z",
+      "published_at": "2026-09-17T17:55:20Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/reduce-time-to-hire-for-quality-candidates-with-ai-powered-amazon-connect-talent"
+    },
+    "url:098d67a62da719d6324a3943771aa31f3832f5d9ced271f4b9dd9b6476218d01": {
+      "article_id": "aws-machine-learning-d09d2dfe",
+      "first_seen_at": "2026-09-17T19:05:12.502267Z",
+      "published_at": "2026-09-17T15:36:42Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-mrh-trowe-enabled-secure-self-service-ai-agents-in-financial-services"
+    },
     "url:09db2a0bd84188bdf4753fc362646e95c84074323ad8265c9f876d5d6427aa45": {
       "article_id": "aws-machine-learning-9d1b7e13",
       "first_seen_at": "2026-08-26T16:36:07.201345Z",
@@ -570,6 +584,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/safety-overview-gpt-6-astra"
     },
+    "url:39325f0179a7e74752bf843e04ec8e7e89a972f32506c598811dfa73a45ccfb0": {
+      "article_id": "aws-machine-learning-e6c8b68a",
+      "first_seen_at": "2026-09-17T19:05:12.502267Z",
+      "published_at": "2026-09-17T15:42:31Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/a-serverless-data-driven-git-metrics-dashboard-using-amazon-quick-sight"
+    },
     "url:39842fa0b34b37cbe3f74a631eb53c7b3f91d6f6e5ad7b93c66d1420605c9599": {
       "article_id": "openai-news-3f44f188",
       "first_seen_at": "2026-09-11T08:07:55.145306Z",
@@ -818,6 +839,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/automated-agent-evaluation-with-amazon-bedrock-agentcore-and-github-actions"
     },
+    "url:50ae7c32754eac7764b85638aa46276ce04304eb7048ac83ae5a1a511c5ecf56": {
+      "article_id": "apple-ml-research-62c2cfd9",
+      "first_seen_at": "2026-09-17T19:05:12.502267Z",
+      "published_at": "2026-09-17T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/reversal-bench-rl-cliff"
+    },
     "url:51cfe3db04ed0bd3efb5e0e3e4cae24a73d01c55252ca81f5edad4c7faa7f89b": {
       "article_id": "openai-news-0af7f7d4",
       "first_seen_at": "2026-08-25T16:04:07.812904Z",
@@ -922,6 +950,13 @@
       "published_at": "2026-08-11T10:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/daybreak-models-are-now-available-on-aws"
+    },
+    "url:5e78358b6e49a01a4b989c9ca016fa9dfafca7db79134f16ef22dc9d4e8cccfc": {
+      "article_id": "mlcommons-c189eab3",
+      "first_seen_at": "2026-09-17T19:05:12.502267Z",
+      "published_at": "2026-09-17T15:00:00Z",
+      "source": "mlcommons",
+      "url": "https://mlcommons.org/2026/09/chairs-mlperf-inference-v6-1"
     },
     "url:5e7836db2c1590662c40c19382d6bdf91af2a53f42f19fbd97ff6c18495188d4": {
       "article_id": "aws-machine-learning-81ee5ea6",
@@ -1891,6 +1926,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/chatgpt-for-teens"
     },
+    "url:c5c96ab0697aa5bf9ed6068c81dfbca130cd3c544c4991300c8e8be3c27a4d42": {
+      "article_id": "aws-machine-learning-0e84b7ba",
+      "first_seen_at": "2026-09-17T19:05:12.502267Z",
+      "published_at": "2026-09-17T15:41:03Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/a-shared-agentic-platform-for-wood-mackenzie-on-amazon-bedrock-agentcore"
+    },
     "url:c5cc2137750496da11923242447637e42cccdf5767caa0a4839bc039c033297b": {
       "article_id": "aws-machine-learning-5f171162",
       "first_seen_at": "2026-08-12T22:06:40.410035Z",
@@ -1918,6 +1960,13 @@
       "published_at": "2026-09-16T19:00:00Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/improving-hcls-ai-reasoning-with-open-source-agent-skills"
+    },
+    "url:c74b7537edb199606977ba898afcaffcd9652a94143f417359b18550a5392879": {
+      "article_id": "langchain-releases-b381fce3",
+      "first_seen_at": "2026-09-17T19:05:12.502267Z",
+      "published_at": "2026-09-17T18:07:04Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.1a1"
     },
     "url:c797381f6cd4b45af698941ec3ddb6aebb6d0308654d793fecd6d6ea1d0d1e69": {
       "article_id": "apple-ml-research-02c8e899",
@@ -1952,6 +2001,13 @@
       "published_at": "2026-08-06T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/deepambigqa-multihop-questions"
+    },
+    "url:caa079bc52c86f18f9cbb9923dc94850c3920ee28a66ba807f3b380eeec1c659": {
+      "article_id": "aws-machine-learning-090f00b7",
+      "first_seen_at": "2026-09-17T19:05:12.502267Z",
+      "published_at": "2026-09-17T15:53:13Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/selecting-a-vector-store-for-amazon-bedrock-knowledge-bases"
     },
     "url:caf21556159d27e6ed3777eaa5ab4a5c9256af015b3dc88e2870aa4c964c8194": {
       "article_id": "mlcommons-f7e7de66",

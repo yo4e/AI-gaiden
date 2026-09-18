@@ -390,12 +390,26 @@
       "source": "openai-news",
       "url": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands"
     },
+    "url:2ad49dd9b65fe3aef9a784214d6883e36da0e0e55e33778bed2d2eed5e0619c0": {
+      "article_id": "google-ai-64fa4a73",
+      "first_seen_at": "2026-09-18T18:32:19.193378Z",
+      "published_at": "2026-09-18T14:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench"
+    },
     "url:2b99e5fb4a62d522a564d01d0fc411288c717a226db67fc3cba914d5f4d27e28": {
       "article_id": "aws-machine-learning-f7d7d263",
       "first_seen_at": "2026-09-01T18:36:04.461318Z",
       "published_at": "2026-09-01T16:02:22Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/securing-amazon-quick-from-poc-to-production-agents-flows-and-spaces"
+    },
+    "url:2ba3db2ddc592fd6fddc0470161438eca7b0e5a18958de16fe36ddccb33c03e9": {
+      "article_id": "aws-machine-learning-7651c17e",
+      "first_seen_at": "2026-09-18T18:32:19.193378Z",
+      "published_at": "2026-09-18T15:38:53Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/migrating-multi-model-ai-agents-to-amazon-bedrock-agentcore-runtime"
     },
     "url:2c563947428818b93259f9d0ea1b317a6ae63a349ada6ec8668a3f4447646bba": {
       "article_id": "hugging-face-7eeeaa9a",
@@ -466,6 +480,13 @@
       "published_at": "2026-09-01T01:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/gilbert-tobin"
+    },
+    "url:332bec2b752a921dc0773efff01ad676064470aa9e86f80b5eb30a32d60686fb": {
+      "article_id": "google-ai-a6af3539",
+      "first_seen_at": "2026-09-18T18:32:19.193378Z",
+      "published_at": "2026-09-18T13:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-flow-fashion-week"
     },
     "url:338a77b082d6e9b86e328b08afac47f92cf7f3361fd27cb7a912724972c65194": {
       "article_id": "google-ai-89810e91",
@@ -1047,6 +1068,13 @@
       "published_at": "2026-08-10T19:30:00Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/engineering/using-the-github-copilot-sdk-for-java"
+    },
+    "url:69854448ea9a16b5342c6b707b26e88ff58603602bede43187b62463d30f8d3e": {
+      "article_id": "aws-machine-learning-072ca2ef",
+      "first_seen_at": "2026-09-18T18:32:19.193378Z",
+      "published_at": "2026-09-18T13:08:34Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-inference-gateway"
     },
     "url:6a886414536a09e3da65022e4b81fb0e9329e1e8f8d489895f13b523de737c68": {
       "article_id": "openai-news-ca830495",
@@ -1654,6 +1682,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/accelerating-aircraft-ifec-diagnostics-with-agentic-ai-on-aws"
     },
+    "url:a6fcd04e2285ba1fc4c508d6caaa61edd4f837d631a64f81374d12406e56478e": {
+      "article_id": "aws-machine-learning-be8ab95f",
+      "first_seen_at": "2026-09-18T18:32:19.193378Z",
+      "published_at": "2026-09-18T16:52:01Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-on-amazon-bedrock"
+    },
     "url:a75caca250ebf501fe2294137e1e42a169455cc61b33fef053c8b0bee93e5a66": {
       "article_id": "apple-ml-research-1b8fa118",
       "first_seen_at": "2026-08-08T04:31:57.464657Z",
@@ -1674,6 +1709,13 @@
       "published_at": "2026-09-09T16:00:00Z",
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film"
+    },
+    "url:a8a255e92e884ae99aa964a1616db35c42aa05ef6e66f6c2ebe5716fb51b13e4": {
+      "article_id": "langchain-releases-2ca2a18e",
+      "first_seen_at": "2026-09-18T18:32:19.193378Z",
+      "published_at": "2026-09-18T17:31:25Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.2"
     },
     "url:aa21db80f8b7b7664c23f0b5de6fc014a64920e8fdb45e2877008c81969f17ab": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
@@ -1729,6 +1771,13 @@
       "published_at": "2026-08-20T12:00:17Z",
       "source": "mistral-ai",
       "url": "https://mistral.ai/news/agentic-search"
+    },
+    "url:b02dba448db72934509fe9b4f75bea3637f42dd1185ea0d7ddd2b1eea991710c": {
+      "article_id": "github-ai-ml-6ce27342",
+      "first_seen_at": "2026-09-18T18:32:19.193378Z",
+      "published_at": "2026-09-18T15:00:00Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp"
     },
     "url:b0366f9850a9d166d4a5ba39bed68a6273ef6289577e4ca4c3d1ff2dc628de25": {
       "article_id": "openai-news-7df9535a",
@@ -1827,6 +1876,13 @@
       "published_at": "2026-08-19T20:36:50Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/knowledgeforge-mining-gold-from-the-itsm-ticket-graveyard"
+    },
+    "url:b81a99111a5a86711c99d41ed073572ee8ddebce77cc7e3eead3a07ff5c3a222": {
+      "article_id": "aws-machine-learning-29f6ec18",
+      "first_seen_at": "2026-09-18T18:32:19.193378Z",
+      "published_at": "2026-09-18T15:31:34Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/the-new-agentcore-runtime-elastic-optimized-and-consistently-fast-starts"
     },
     "url:b9406ae170bd91336ab3bb25f8a481be998406cd07a127a0b7b7880fe2ac0b53": {
       "article_id": "openai-news-7d54784c",
@@ -2002,6 +2058,13 @@
       "published_at": "2026-08-07T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/diffusion-autoregressive-performance"
+    },
+    "url:c87efd876aae4ae7c6acc1d475e2b83c9d8fc57abdb7c37d24f6b4673cfcfffd": {
+      "article_id": "aws-machine-learning-11eae6a3",
+      "first_seen_at": "2026-09-18T18:32:19.193378Z",
+      "published_at": "2026-09-18T15:25:23Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/deploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents"
     },
     "url:c97ca18ed9b8f65fdef1ba6642622e8988f258e6c7551daea7175027be21f9a1": {
       "article_id": "aws-machine-learning-6d76f2ed",
@@ -2364,6 +2427,13 @@
       "published_at": "2026-08-06T15:06:15Z",
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones"
+    },
+    "url:ec00b4db1e4d25b12af2ba5d8d78b5fec87626f7e17b372e834e1683dae54dba": {
+      "article_id": "apple-ml-research-d8aa4919",
+      "first_seen_at": "2026-09-18T18:32:19.193378Z",
+      "published_at": "2026-09-18T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/dynamically-scaled-activation-steering"
     },
     "url:ec596dac47b8163fa8f2f8957cf7431728879180b9e9df177844bd9d0a647272": {
       "article_id": "aws-machine-learning-5c265fb1",

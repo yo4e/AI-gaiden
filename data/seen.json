@@ -292,6 +292,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/run-agent-driven-amazon-sagemaker-hyperpod-operations-with-instantstart"
     },
+    "url:192794312f979cbd50ee7eab3653eaf23d7dcaf9f5076493368af8f38e17a29e": {
+      "article_id": "openai-news-cfbc49d8",
+      "first_seen_at": "2026-09-18T08:19:24.592517Z",
+      "published_at": "2026-09-17T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/astra-for-law"
+    },
     "url:1b555e620b3576f24f15fcd669e7f4a7d191269cd47a4d21b232e7194d040769": {
       "article_id": "apple-ml-research-134c7e09",
       "first_seen_at": "2026-08-18T15:49:35.191346Z",
@@ -403,6 +410,13 @@
       "published_at": "2026-09-08T10:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/navier-stokes-solution"
+    },
+    "url:2d2129e34a831321cab8e3c490d886d54a67cfd65f8c53b6d76fd68806518f30": {
+      "article_id": "ollama-releases-c5e94df4",
+      "first_seen_at": "2026-09-18T08:19:24.592517Z",
+      "published_at": "2026-09-15T21:21:07Z",
+      "source": "ollama-releases",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.34.2"
     },
     "url:2f00013902a29bc1e23dd248bb0d6a75ee356bf38627fa0f8884731fbff27534": {
       "article_id": "openai-news-41c91561",
@@ -873,6 +887,13 @@
       "published_at": "2026-09-09T12:00:46Z",
       "source": "mistral-ai",
       "url": "https://mistral.ai/news/legacy-code-modernization"
+    },
+    "url:57bb3f72439b837e28ac1b35aca7b555ce4d9b9e8eaa5b3871ead9d0c35fee24": {
+      "article_id": "google-ai-552e81e5",
+      "first_seen_at": "2026-09-18T08:19:24.592517Z",
+      "published_at": "2026-09-17T20:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform"
     },
     "url:57daf334c931638e45d327ab1379014fe7e8b38299d999cbcff5e2ca8603c3b0": {
       "article_id": "aws-machine-learning-3ad6e63b",
@@ -1660,6 +1681,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b"
     },
+    "url:aa2e5507de45a3e9bf92928a12dad3bcdf8f8849f67ed53c00aa0683e4d426e4": {
+      "article_id": "langchain-releases-2710494a",
+      "first_seen_at": "2026-09-18T08:19:24.592517Z",
+      "published_at": "2026-09-17T22:24:57Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.1a2"
+    },
     "url:ab46a267f212840f55ce0fca0e22055322d94e7d064bddcc231454dd875bafa7": {
       "article_id": "google-ai-cdab1b66",
       "first_seen_at": "2026-09-01T18:36:04.461318Z",
@@ -2092,6 +2120,13 @@
       "published_at": "2026-08-25T15:14:14Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/ibm-granite/granite-4-2"
+    },
+    "url:d22acfa5d0cc1d093c4a65f65bd5a5e37fe40593680fa261c56e48d108a9e1af": {
+      "article_id": "openai-news-03fb1cf8",
+      "first_seen_at": "2026-09-18T08:19:24.592517Z",
+      "published_at": "2026-09-17T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/cooley-gopublic"
     },
     "url:d3d379a848ac4d3495cc1e66ac819a0f604b997049ba38bbcd33168e5d3d1129": {
       "article_id": "aws-machine-learning-7ccea127",

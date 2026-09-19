@@ -1179,6 +1179,13 @@
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe"
     },
+    "url:74306f66506c671620fb91abd78561b6295c7a561bfc57e0ec10acdfbc41627e": {
+      "article_id": "microsoft-ai-5077f5e8",
+      "first_seen_at": "2026-09-19T08:07:25.465807Z",
+      "published_at": "2026-09-16T22:36:04Z",
+      "source": "microsoft-ai",
+      "url": "https://blogs.microsoft.com/blog/2026/09/16/microsofts-commitment-for-ai-in-education"
+    },
     "url:75b859b8cd50a88b1480e59956e69c4230f0ae75e564c38a740d1c9b41026da4": {
       "article_id": "mlcommons-7388cc0a",
       "first_seen_at": "2026-08-27T14:17:35.478713Z",
@@ -1591,6 +1598,13 @@
       "published_at": "2026-08-05T18:50:02Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-lendingtree-built-a-multi-agent-mortgage-assistant-on-amazon-bedrock"
+    },
+    "url:a00923bf4ddda715364788a2da3f2ff96c940524eada89a0c5609e53d1b669fd": {
+      "article_id": "openai-news-71cd6f4b",
+      "first_seen_at": "2026-09-19T08:07:25.465807Z",
+      "published_at": "2026-09-18T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/australian-youth-safety-blueprint"
     },
     "url:a00fc889a2dd293b42049381f3a99cbbead2f5c6d3c52e4e209b3057ea2e2a3b": {
       "article_id": "openai-news-51d9004d",
@@ -2552,6 +2566,13 @@
       "published_at": "2026-08-20T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/multilingual-knowledge-transfer-lexical-interventions"
+    },
+    "url:f686afe1e576c13612342df580bc6ce5ffea24cf2c9b088a96630d200cdd4f2f": {
+      "article_id": "aws-machine-learning-7918ab39",
+      "first_seen_at": "2026-09-19T08:07:25.465807Z",
+      "published_at": "2026-09-18T20:52:14Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-year-to-date-launches-in-review"
     },
     "url:f6d720104a1a5ec3fd02ae5c90f25e5ca51c2d02e4b82dc9a2ff973688a57c72": {
       "article_id": "apple-ml-research-a860be30",

@@ -84,6 +84,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows"
     },
+    "url:08ffdb24bebd9aa2ffda2f849b7e7af9dba92daa36ecb3bc96d64f49fd7ead95": {
+      "article_id": "openai-news-97df8849",
+      "first_seen_at": "2026-09-21T20:00:41.036980Z",
+      "published_at": "2026-09-21T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai"
+    },
     "url:09178a0dd908c4320418a4232a2f6a91336757a13ab109e2baa94092130564aa": {
       "article_id": "aws-machine-learning-a545ba32",
       "first_seen_at": "2026-09-17T19:05:12.502267Z",
@@ -187,6 +194,13 @@
       "published_at": "2026-08-11T12:00:27Z",
       "source": "mistral-ai",
       "url": "https://mistral.ai/news/regional-inference-open-models-new-compute"
+    },
+    "url:10538c022345675d1abd4a83236ec639afd16c383bf12f43a3ea4520388033d1": {
+      "article_id": "openai-news-b7feae12",
+      "first_seen_at": "2026-09-21T20:00:41.036980Z",
+      "published_at": "2026-09-21T10:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/building-standards-next-phase-ai"
     },
     "url:1060a3206d41de1a5984f8d3d7663d309239eb1619db22b7f06e25356f5c7929": {
       "article_id": "langchain-releases-5c0a4c52",
@@ -320,6 +334,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient"
     },
+    "url:1f462f4963220aae0447fa746a11bd405afc6058b30e5ab29d6bd8dfc2ceffba": {
+      "article_id": "aws-machine-learning-54847c0a",
+      "first_seen_at": "2026-09-21T20:00:41.036980Z",
+      "published_at": "2026-09-21T18:30:34Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/xais-grok-4-6-is-now-available-in-amazon-bedrock"
+    },
     "url:2081fd8810403c1a0211ecffee53b72f418536664714228771ed593eb426abb9": {
       "article_id": "aws-machine-learning-c33164f7",
       "first_seen_at": "2026-08-07T21:58:33.543829Z",
@@ -432,12 +453,26 @@
       "source": "ollama-releases",
       "url": "https://github.com/ollama/ollama/releases/tag/v0.34.2"
     },
+    "url:2dc3df9e1d22fbbde948c3cb6dddbd10751ab35eb525cb6797e797d9f782694e": {
+      "article_id": "aws-machine-learning-4a8a536c",
+      "first_seen_at": "2026-09-21T20:00:41.036980Z",
+      "published_at": "2026-09-21T16:24:40Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/reducing-medical-claims-review-time-with-ai-on-aws-the-exl-medical-idp-solution"
+    },
     "url:2f00013902a29bc1e23dd248bb0d6a75ee356bf38627fa0f8884731fbff27534": {
       "article_id": "openai-news-41c91561",
       "first_seen_at": "2026-08-19T15:49:21.905842Z",
       "published_at": "2026-08-19T07:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/replit"
+    },
+    "url:2f8d9b98fc157bb338d3eee240b684935f4eb48a8a141e592a8d2b7cadec3422": {
+      "article_id": "openai-news-9bd0ee33",
+      "first_seen_at": "2026-09-21T20:00:41.036980Z",
+      "published_at": "2026-09-21T07:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths"
     },
     "url:2ff277e441a4b0dab8ec201e1929a29ce4861d79fb1666b6c6ef5ad394fbb2c2": {
       "article_id": "github-ai-ml-e777867c",
@@ -860,6 +895,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly"
     },
+    "url:4f34f6c24e9c2c7378ba8d7343ae5db84c140a45a258f27715304ac4e28d9610": {
+      "article_id": "aws-machine-learning-bf1bc2f8",
+      "first_seen_at": "2026-09-21T20:00:41.036980Z",
+      "published_at": "2026-09-21T16:27:34Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-benchling-secured-multi-tenant-ai-agents-with-amazon-bedrock-agentcore"
+    },
     "url:4f4661ca3038bcff734b931e86ecdd698705f1878edb8f11f9c4fd7242cb67ec": {
       "article_id": "aws-machine-learning-9c9bcc48",
       "first_seen_at": "2026-09-11T08:07:55.145306Z",
@@ -1068,6 +1110,13 @@
       "published_at": "2026-08-10T19:30:00Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/engineering/using-the-github-copilot-sdk-for-java"
+    },
+    "url:693b3130e25cc8808f585a694f7201006d36e37cb71c7b8ae2099287d6befd80": {
+      "article_id": "hugging-face-fb23598f",
+      "first_seen_at": "2026-09-21T20:00:41.036980Z",
+      "published_at": "2026-09-21T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/tokenizers-v1"
     },
     "url:69854448ea9a16b5342c6b707b26e88ff58603602bede43187b62463d30f8d3e": {
       "article_id": "aws-machine-learning-072ca2ef",
@@ -1442,6 +1491,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/building-agentic-workflows-with-sagemaker-ai-and-bedrock-agentcore"
     },
+    "url:8fe4474fdbb9c4c46a22f878515427114b676069cfc965f6786182578d7743d9": {
+      "article_id": "openai-news-2e12deb4",
+      "first_seen_at": "2026-09-21T20:00:41.036980Z",
+      "published_at": "2026-09-21T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra"
+    },
     "url:90ba20dc32b53edf52ab24a1495bdf5c2efdd55baaf375e673bcc92bdc711912": {
       "article_id": "google-deepmind-5ed99094",
       "first_seen_at": "2026-08-28T00:26:39.012587Z",
@@ -1779,6 +1835,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/allenai/benchmirt"
     },
+    "url:ae2a66f3c360fd1788ea542ecd106283297aa5851d8fa012405023e8db53a75a": {
+      "article_id": "hugging-face-f55e20d6",
+      "first_seen_at": "2026-09-21T20:00:41.036980Z",
+      "published_at": "2026-09-21T13:44:34Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an"
+    },
     "url:aec50bce133680e8ddf125ac991e61d50a8d53bb9eddfa9b035860d493aa2898": {
       "article_id": "aws-machine-learning-829fc29f",
       "first_seen_at": "2026-08-12T16:12:48.060680Z",
@@ -1891,6 +1954,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/ai-driven-development-lifecycle-using-amazon-bedrock-agentcore"
     },
+    "url:b7c2312ca456708012258df9f4b9fd1b712061637639d54ff721154c9a6f073e": {
+      "article_id": "aws-machine-learning-4f54f7cd",
+      "first_seen_at": "2026-09-21T20:00:41.036980Z",
+      "published_at": "2026-09-21T16:34:21Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/run-positron-on-amazon-sagemaker-ai-for-data-science-workflows"
+    },
     "url:b7dd99284a0453af1cc9f97fd2a0ccfaa9556a2245de5f973a7d1c776ec69e1c": {
       "article_id": "aws-machine-learning-d12a1e3f",
       "first_seen_at": "2026-08-20T04:02:19.864644Z",
@@ -1904,6 +1974,13 @@
       "published_at": "2026-09-18T15:31:34Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/the-new-agentcore-runtime-elastic-optimized-and-consistently-fast-starts"
+    },
+    "url:b838928be91f5e369eb9ec692fb3f97e4f88583af2af7a5ea87e3ca5bae2be22": {
+      "article_id": "langchain-releases-8c6fb4bc",
+      "first_seen_at": "2026-09-21T20:00:41.036980Z",
+      "published_at": "2026-09-21T18:32:44Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.3"
     },
     "url:b9406ae170bd91336ab3bb25f8a481be998406cd07a127a0b7b7880fe2ac0b53": {
       "article_id": "openai-news-7d54784c",
@@ -2212,6 +2289,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/cooley-gopublic"
     },
+    "url:d2871d486c61275aa18316221b2aa4fe0c0c7a730e7f24a395d9c1672c5c3fc3": {
+      "article_id": "openai-news-29638b68",
+      "first_seen_at": "2026-09-21T20:00:41.036980Z",
+      "published_at": "2026-09-21T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/v7"
+    },
     "url:d3d379a848ac4d3495cc1e66ac819a0f604b997049ba38bbcd33168e5d3d1129": {
       "article_id": "aws-machine-learning-7ccea127",
       "first_seen_at": "2026-09-15T19:03:12.107388Z",
@@ -2365,6 +2449,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/asr-benchmark-optimization"
     },
+    "url:e456ad33f99c6f888c6b09a77c8dd62420d539d497d18f091410194d255ba6ff": {
+      "article_id": "aws-machine-learning-09c4476c",
+      "first_seen_at": "2026-09-21T20:00:41.036980Z",
+      "published_at": "2026-09-21T16:36:10Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-bmw-group-detects-cost-anomalies-across-14000-cloud-accounts"
+    },
     "url:e4887ae13cdf3e0d1a57b577c2d965898d8b92d3c1978971eeb1fa95871f6051": {
       "article_id": "aws-machine-learning-a25818b2",
       "first_seen_at": "2026-09-15T08:45:50.252131Z",
@@ -2476,6 +2567,13 @@
       "published_at": "2026-08-31T18:56:12Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-multi-tenant-agentic-chat-applications-on-enterprise-data-with-amazon-bedrock-managed-knowledge-base"
+    },
+    "url:f0382e4400df69e289d7a9b8459fc02d4d7fdf4a0731d43ea8982ac8baeca7ad": {
+      "article_id": "langchain-releases-dc60808a",
+      "first_seen_at": "2026-09-21T20:00:41.036980Z",
+      "published_at": "2026-09-21T15:51:23Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.4"
     },
     "url:f0aa91974e0ad6ca58685787e6b44fa037cfd800e1d56928380594665b146fc1": {
       "article_id": "openai-news-f382d286",

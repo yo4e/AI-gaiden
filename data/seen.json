@@ -1662,6 +1662,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-intuit-built-an-agentic-disaster-recovery-assistant-with-amazon-bedrock"
     },
+    "url:a427807c783e103a94f36909d29caec814c873e10658a532fb2c0bfc1bac7ab9": {
+      "article_id": "langchain-releases-2f16a4cf",
+      "first_seen_at": "2026-09-21T09:02:34.972385Z",
+      "published_at": "2026-09-20T18:54:54Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.1a3"
+    },
     "url:a4a0601f1f87b20e4be18ed751f2cc31ca646819d9626dd5439c2eb5f7e48f83": {
       "article_id": "github-ai-ml-70cce1bf",
       "first_seen_at": "2026-09-03T08:07:17.945680Z",

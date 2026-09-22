@@ -882,6 +882,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/apple-is-getting-this-wrong"
     },
+    "url:4aa18653035bc8a31d1e0a9cf2bfc17beb5ec559cdf19fe756ecfea103dbef8b": {
+      "article_id": "aws-machine-learning-9d2a7684",
+      "first_seen_at": "2026-09-22T18:58:12.681575Z",
+      "published_at": "2026-09-22T17:18:13Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/evaluate-skill-equipped-agents-with-strands-evals-and-amazon-bedrock-agentcore"
+    },
     "url:4aeb82da9975e2f5f564fba46674441b8ef455135ac302c60f8f7eb501572ba0": {
       "article_id": "openai-news-8bb34487",
       "first_seen_at": "2026-09-12T07:58:53.794599Z",
@@ -1084,6 +1091,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/from-theory-to-delivery-how-atos-upskilled-400-engineers-in-agentic-ai"
     },
+    "url:60efaf744a4d6c2c20e9e8f1dc0a4ae280a89a1d1a7f55c198827b62cda36b8e": {
+      "article_id": "openai-news-ac5fb33d",
+      "first_seen_at": "2026-09-22T18:58:12.681575Z",
+      "published_at": "2026-09-22T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/priorities-principles-third-party-assessments"
+    },
     "url:60f1daff5ce521484393650803ac03c58716d375052fe27a7187f34d134181c5": {
       "article_id": "sourcegraph-changelog-9465daf0",
       "first_seen_at": "2026-08-29T18:35:18.666106Z",
@@ -1124,6 +1138,13 @@
       "published_at": "2026-08-10T19:30:00Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/engineering/using-the-github-copilot-sdk-for-java"
+    },
+    "url:689d78c6e007ab8e2c4f1996bb4d798c0801548871029acd469c087e5a6afc90": {
+      "article_id": "hugging-face-163fdca5",
+      "first_seen_at": "2026-09-22T18:58:12.681575Z",
+      "published_at": "2026-09-22T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/transformers-llama-cpp-quants"
     },
     "url:693b3130e25cc8808f585a694f7201006d36e37cb71c7b8ae2099287d6befd80": {
       "article_id": "hugging-face-fb23598f",
@@ -1228,6 +1249,13 @@
       "published_at": "2026-09-17T00:26:43Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot"
+    },
+    "url:7322241f50811c86635013fca1c2dec777d6bc59ec939d3fe261730326e52f31": {
+      "article_id": "aws-machine-learning-e13e9060",
+      "first_seen_at": "2026-09-22T18:58:12.681575Z",
+      "published_at": "2026-09-22T17:28:01Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/claude-opus-5-5-is-now-available-on-aws"
     },
     "url:7347f06e7c916544f6e962de36961dbcdf8c00a50f21f56435f6b7de8971923e": {
       "article_id": "openai-news-bfe94563",
@@ -1455,6 +1483,13 @@
       "published_at": "2026-08-21T17:06:17Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/agentic-data-operations-platform-adop-data-engineering-into-hours"
+    },
+    "url:86d2176de98238d5ddb9673084584074f310cd71ea2f47b8326fb696fa5ccc1c": {
+      "article_id": "aws-machine-learning-de6ba1c8",
+      "first_seen_at": "2026-09-22T18:58:12.681575Z",
+      "published_at": "2026-09-22T18:10:22Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/bring-more-intelligence-to-everyday-work-with-gpt-6-sol-and-gpt-6-luna-on-amazon-bedrock"
     },
     "url:89df3427e525131aaaac50888389b5a09475c7e1001e5ab9fb1744efb73cc88b": {
       "article_id": "google-ai-461d392a",
@@ -1703,6 +1738,13 @@
       "published_at": "2026-09-15T16:18:19Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-and-latency-with-amazon-bedrock-prompt-caching"
+    },
+    "url:a10857a666ba24b577ffd0f4ed2dce1b834f378e21b3c7e372adeacc0cde8ba3": {
+      "article_id": "aws-machine-learning-c3c7ba35",
+      "first_seen_at": "2026-09-22T18:58:12.681575Z",
+      "published_at": "2026-09-22T15:35:53Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/right-size-generative-ai-endpoints-with-concurrency-sweeps-on-amazon-sagemaker-ai"
     },
     "url:a139f80b159295ada71d0ef039c73160eae68aeaf5d134012254faf54b7cc66b": {
       "article_id": "hugging-face-e741df88",
@@ -2554,6 +2596,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser"
     },
+    "url:e9f63aa1f7aaa02f4024a14154a47668586b26d73f72e5b77e702319146aa96f": {
+      "article_id": "hugging-face-2370fd94",
+      "first_seen_at": "2026-09-22T18:58:12.681575Z",
+      "published_at": "2026-09-22T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/evaleval-aisi"
+    },
     "url:ea850b1a9c912609462a439893945e59b89d629abde9532c3a32b7330d6d6442": {
       "article_id": "aws-machine-learning-8c14dce9",
       "first_seen_at": "2026-08-06T06:08:02.329753Z",
@@ -2678,6 +2727,13 @@
       "published_at": "2026-08-26T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/proof-gen-optimized-distillation"
+    },
+    "url:f5545f3f8433406a9d04d71df0684a915606a9424a0098e11ac6db1443f5028c": {
+      "article_id": "aws-machine-learning-082c421a",
+      "first_seen_at": "2026-09-22T18:58:12.681575Z",
+      "published_at": "2026-09-22T15:46:07Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-reactiv-automates-mobile-commerce-80-faster-with-amazon-bedrock-agentcore"
     },
     "url:f56fb1ee13437f3d1c1d8f00ac5022fe0f8999facb1f47e0532e714861148c87": {
       "article_id": "hugging-face-86aee86b",

@@ -599,6 +599,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/automated-reasoning-policy-refinement-in-amazon-bedrock"
     },
+    "url:3762ff1d2e3077743459b4a4b0c86d251f9dbb8c8de965295dae58726c4aa26e": {
+      "article_id": "vllm-releases-4b493dbb",
+      "first_seen_at": "2026-09-22T08:37:29.831184Z",
+      "published_at": "2026-09-22T05:20:54Z",
+      "source": "vllm-releases",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.30.0"
+    },
     "url:3763c3e63f841c3b3b74d16d1ba5de9c93b7101a863852074f838c2e6bfac109": {
       "article_id": "openai-news-b9c428fc",
       "first_seen_at": "2026-08-06T23:21:45.836993Z",
@@ -826,6 +833,13 @@
       "published_at": "2026-08-31T07:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety"
+    },
+    "url:489ca63f7086104273970243213c0cdfa0b1faa8ca60ca7719ce5b0a7465943d": {
+      "article_id": "langchain-releases-56af3219",
+      "first_seen_at": "2026-09-22T08:37:29.831184Z",
+      "published_at": "2026-09-22T04:30:11Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-deepseek%3D%3D1.1.1"
     },
     "url:48c844993acdc266aa670a84c26c42d1753c21145209ae35b826896446723127": {
       "article_id": "aws-machine-learning-8ae3add4",
@@ -1159,6 +1173,13 @@
       "published_at": "2026-09-14T15:47:12Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws"
+    },
+    "url:6b3083011aeb49b1cc1d670c7a6b978a0e574dd3aa04f209e3cfec07c825f88d": {
+      "article_id": "hugging-face-7ef5d9ed",
+      "first_seen_at": "2026-09-22T08:37:29.831184Z",
+      "published_at": "2026-09-22T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/omlx"
     },
     "url:6bb3f934048965cc8fe40ff7286bc1d73fdff5cc902619e78dc98b0f853d7216": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
@@ -2017,6 +2038,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/state-of-open-models-summer-2026"
     },
+    "url:bc336eb30c3a2e6882875ccbb0c70adfc32a7d10b5c40dc89956b5b647cf8b60": {
+      "article_id": "langchain-releases-915b24c5",
+      "first_seen_at": "2026-09-22T08:37:29.831184Z",
+      "published_at": "2026-09-22T04:44:04Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.6.2"
+    },
     "url:be849b092a65b95dd81a8834fc8814c0756e5b23f029f2f0644c2b1a51f8c4c4": {
       "article_id": "aws-machine-learning-68849896",
       "first_seen_at": "2026-09-02T18:46:24.555427Z",
@@ -2386,6 +2414,13 @@
       "published_at": "2026-09-04T16:16:00Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-a-physical-ai-model-factory-with-nvidia-cosmos-3-on-sagemaker-hyperpod"
+    },
+    "url:db682d7e2b74b93ca5ff1c889afe9f4940cbfe10a99ecca331453c421e5b4db7": {
+      "article_id": "langchain-releases-58f1c38c",
+      "first_seen_at": "2026-09-22T08:37:29.831184Z",
+      "published_at": "2026-09-22T04:16:11Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openrouter%3D%3D0.2.9"
     },
     "url:db756ec4d6e59ca936da7aa8eca44d5d6459a0ef221677a8ea82662f0ffa317c": {
       "article_id": "aws-machine-learning-27a97a3d",

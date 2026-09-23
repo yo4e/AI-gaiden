@@ -195,6 +195,13 @@
       "source": "mistral-ai",
       "url": "https://mistral.ai/news/regional-inference-open-models-new-compute"
     },
+    "url:1043d9fe80283e6f409b90e0f5f76b98d960cc337ee42f5d79ea8cfadd9a93c0": {
+      "article_id": "google-deepmind-2834471c",
+      "first_seen_at": "2026-09-23T19:06:23.325697Z",
+      "published_at": "2026-09-23T16:00:57Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory"
+    },
     "url:10538c022345675d1abd4a83236ec639afd16c383bf12f43a3ea4520388033d1": {
       "article_id": "openai-news-b7feae12",
       "first_seen_at": "2026-09-21T20:00:41.036980Z",
@@ -494,6 +501,13 @@
       "published_at": "2026-09-11T18:26:10Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github"
+    },
+    "url:30aa7c0acfe7f3809f1c0c2e3d8197e23f507daa6c3cae8fb2a05da2a018d4df": {
+      "article_id": "hugging-face-3de05ddd",
+      "first_seen_at": "2026-09-23T19:06:23.325697Z",
+      "published_at": "2026-09-23T18:41:40Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp"
     },
     "url:30f2948e24a891190b3dbfd2e195d9b4e1e2bf24eab0246efe25b8fe2ccb31a5": {
       "article_id": "github-ai-ml-89b70ef9",
@@ -924,6 +938,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/open-asr-leaderboard-global-south"
     },
+    "url:4e56c7312349a760a0edf744bd151f1352583693dfaa6156b9b09ca8e15ad634": {
+      "article_id": "openai-news-139be80b",
+      "first_seen_at": "2026-09-23T19:06:23.325697Z",
+      "published_at": "2026-09-23T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/ringg"
+    },
     "url:4e90420c69645ce576fce1fa06fbd03e9ca526dfc19600edad8ffcd0bf588612": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
       "published_at": "2026-07-27T18:00:00Z",
@@ -951,6 +972,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/automated-agent-evaluation-with-amazon-bedrock-agentcore-and-github-actions"
     },
+    "url:4fc9d4e9cdff20afb0c78812570efe292877d966bbf330d6ea341acaf0ebf854": {
+      "article_id": "mlcommons-b3c8e0e1",
+      "first_seen_at": "2026-09-23T19:06:23.325697Z",
+      "published_at": "2026-09-23T14:11:00Z",
+      "source": "mlcommons",
+      "url": "https://mlcommons.org/2026/09/join-airis-biomedical-ai"
+    },
     "url:50ae7c32754eac7764b85638aa46276ce04304eb7048ac83ae5a1a511c5ecf56": {
       "article_id": "apple-ml-research-62c2cfd9",
       "first_seen_at": "2026-09-17T19:05:12.502267Z",
@@ -964,6 +992,20 @@
       "published_at": "2026-08-25T07:05:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence"
+    },
+    "url:52b80abd4e046c041ffbe2a48399ded2b227e51686189386944c8dd9b0045fd6": {
+      "article_id": "openai-news-336cbdca",
+      "first_seen_at": "2026-09-23T19:06:23.325697Z",
+      "published_at": "2026-09-23T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra"
+    },
+    "url:52e46e8371e1f69996c0f8fdcd7f1aabc16e63bd6bcc1139e79b18fa15fc40d2": {
+      "article_id": "openai-news-457fe3d6",
+      "first_seen_at": "2026-09-23T19:06:23.325697Z",
+      "published_at": "2026-09-23T16:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/two-years-of-openai-academy"
     },
     "url:5367cc95a8fd98172eb15540985f3472c41b6f393d6d65c9bf889b4f9238cbc1": {
       "article_id": "openai-news-681282c2",
@@ -1264,6 +1306,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot"
     },
+    "url:721de6922a1a6b9fd6bd57fa34562f9aeea663205ca74e2ce3b1bd45fa3a35b7": {
+      "article_id": "google-deepmind-16b86c56",
+      "first_seen_at": "2026-09-23T19:06:23.325697Z",
+      "published_at": "2026-09-23T15:25:14Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech"
+    },
     "url:7322241f50811c86635013fca1c2dec777d6bc59ec939d3fe261730326e52f31": {
       "article_id": "aws-machine-learning-e13e9060",
       "first_seen_at": "2026-09-22T18:58:12.681575Z",
@@ -1512,6 +1561,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/bring-more-intelligence-to-everyday-work-with-gpt-6-sol-and-gpt-6-luna-on-amazon-bedrock"
     },
+    "url:8772414765b134fe3b8873daf43a31b101922bac916843adc16c2c5fdd271500": {
+      "article_id": "google-ai-739a2173",
+      "first_seen_at": "2026-09-23T19:06:23.325697Z",
+      "published_at": "2026-09-23T18:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion"
+    },
     "url:89df3427e525131aaaac50888389b5a09475c7e1001e5ab9fb1744efb73cc88b": {
       "article_id": "google-ai-461d392a",
       "first_seen_at": "2026-08-11T22:08:35.529397Z",
@@ -1602,6 +1658,13 @@
       "published_at": "2026-09-03T12:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/legora-financial-statement-review-with-astra"
+    },
+    "url:9328fa400dd37e6b9e773781e78a2a50934d49d24282a5ac7e2d36068da55aca": {
+      "article_id": "openai-news-e217842b",
+      "first_seen_at": "2026-09-23T19:06:23.325697Z",
+      "published_at": "2026-09-23T13:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense"
     },
     "url:93e5dec2f2f712e34a34310fc188fb3e02f13f39022d255dcd7fb216a3339f34": {
       "article_id": "aws-machine-learning-8c775447",
@@ -1795,6 +1858,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/pay-with-confidence-how-solv-labs-built-verifiable-auditable-agent-payments-on-amazon-bedrock-agentcore-payments"
     },
+    "url:a2b457221961f9263e3ee4cb7a7028384c9748a857491fd2b0b1c09a3f4dccc5": {
+      "article_id": "aws-machine-learning-8dc953aa",
+      "first_seen_at": "2026-09-23T19:06:23.325697Z",
+      "published_at": "2026-09-23T18:21:54Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/agentic-conversational-video-intelligence-built-on-aws"
+    },
     "url:a3fb326ed52ac82e37e8eebd35d18b3eefe4eec39a733e9544f8eac91162b481": {
       "article_id": "aws-machine-learning-1cc578b2",
       "first_seen_at": "2026-09-04T18:28:36.682808Z",
@@ -1919,6 +1989,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/allenai/benchmirt"
     },
+    "url:adfc9716558ca6b5ec069670983997e3594216792ae01ceb681cf2c43a457991": {
+      "article_id": "github-ai-ml-42285f74",
+      "first_seen_at": "2026-09-23T19:06:23.325697Z",
+      "published_at": "2026-09-23T18:29:49Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app"
+    },
     "url:ae2a66f3c360fd1788ea542ecd106283297aa5851d8fa012405023e8db53a75a": {
       "article_id": "hugging-face-f55e20d6",
       "first_seen_at": "2026-09-21T20:00:41.036980Z",
@@ -1989,6 +2066,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-a-no-code-ml-workflow-with-snowflake-amazon-sagemaker-canvas-and-amazon-quick-part-1-setting-up-your-snowflake-environment"
     },
+    "url:b21a6659fc0a3c9188d238004d162db4e4bca5e50bb156bcd1bd54e41b8b4b28": {
+      "article_id": "langchain-releases-f22b9400",
+      "first_seen_at": "2026-09-23T19:06:23.325697Z",
+      "published_at": "2026-09-23T17:56:03Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.4"
+    },
     "url:b26ec23879c13b42dd868f69597824477ae71fe9b0285eb90563f0dfc343459e": {
       "article_id": "aws-machine-learning-76d3f544",
       "first_seen_at": "2026-08-20T04:02:19.864644Z",
@@ -2023,6 +2107,13 @@
       "published_at": "2026-08-06T16:30:47Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-visibility-for-codex-on-amazon-bedrock-with-opentelemetry-and-amazon-cloudwatch"
+    },
+    "url:b45d69150568a41c7c8d0e965415108ec9764820ec42b2563aeefefdb1257114": {
+      "article_id": "aws-machine-learning-488f77b1",
+      "first_seen_at": "2026-09-23T19:06:23.325697Z",
+      "published_at": "2026-09-23T18:41:09Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/from-portal-hopping-to-instant-answers-hemas-journey-with-mcp-and-amazon-bedrock"
     },
     "url:b5500bc6503561c622e234c790899474b8b24e1670dad4cceb0dbc466610f3db": {
       "article_id": "hugging-face-1c35904b",
@@ -2506,6 +2597,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/preparing-data-for-supervised-fine-tuning-part-1-formatting-and-quality"
     },
+    "url:dcb175f6d7c5d772e1328060dc47eb9e8eeadcf7b1b6d5ab174fdb1cff9b3893": {
+      "article_id": "langchain-releases-be333b27",
+      "first_seen_at": "2026-09-23T19:06:23.325697Z",
+      "published_at": "2026-09-23T15:31:52Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.5"
+    },
     "url:deec56a13e2b9b57f5b59222a713843e545d12e56c5cfa7a8c4462845968c02e": {
       "first_seen_at": "2026-08-04T00:16:06.231356Z",
       "published_at": "2026-08-03T07:00:00Z",
@@ -2708,6 +2806,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/refactor-vla-motor-programs"
     },
+    "url:f19afc2ba2812abde440566f83f5ca91bfe07d01f15f44b9f6bc389b6894295c": {
+      "article_id": "aws-machine-learning-668f9474",
+      "first_seen_at": "2026-09-23T19:06:23.325697Z",
+      "published_at": "2026-09-23T18:17:44Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/use-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock"
+    },
     "url:f1b19f2f1e664660449c3325cc5739c9544b8ac6d3a742c44dc51f1e0c625a28": {
       "article_id": "aws-machine-learning-6b6cf5e1",
       "first_seen_at": "2026-08-20T04:02:19.864644Z",
@@ -2741,6 +2846,13 @@
       "published_at": "2026-09-01T13:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/path-to-astra"
+    },
+    "url:f2ff7f76056120414cf01f1bb6ef7b8e983d9d91ccfa0c5266573b74a0f9d93f": {
+      "article_id": "openai-news-63fa4f2e",
+      "first_seen_at": "2026-09-23T19:06:23.325697Z",
+      "published_at": "2026-09-23T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/invideo-builds-with-gpt-6-astra"
     },
     "url:f3899afd4d6a0a2de4790fb5c615ac53b070686d5705d2fd135b1814acc6d5b3": {
       "article_id": "openai-news-6c9d1176",

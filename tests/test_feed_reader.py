@@ -99,7 +99,9 @@ def test_fetch_all_rejects_duplicate_feed_url(
     assert fetched == ["first"]
     assert results[0].success is True
     assert results[1].success is False
-    assert results[1].error == "URL https://example.com/feed.xml was already requested during this run"
+    assert results[1].error == (
+        "URL https://example.com/feed.xml was already requested during this run"
+    )
 
 
 def test_fetch_accepts_feed_xml_served_as_text_plain(

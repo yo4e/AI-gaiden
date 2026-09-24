@@ -4,7 +4,6 @@ import logging
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
-from urllib.parse import urlsplit
 
 import feedparser
 import requests
@@ -150,24 +149,24 @@ class FeedReader:
 
     def fetch_all(self, configs: list[FeedConfig]) -> list[FeedResult]:
         results: list[FeedResult] = []
-        visited_hosts: set[str] = set()
+        visited_urls: set[str] = set()
         cache_changed = False
         for config in configs:
             if not config.enabled:
                 continue
-            host = (urlsplit(config.url).hostname or "").lower()
-            if host in visited_hosts:
+            request_url = config.url.strip()
+            if request_url in visited_urls:
                 results.append(
                     FeedResult(
                         config=config,
                         success=False,
                         not_modified=False,
                         items=(),
-                        error=f"Host {host} was already requested during this run",
+                        error=f"URL {request_url} was already requested during this run",
                     )
                 )
                 continue
-            visited_hosts.add(host)
+            visited_urls.add(request_url)
             result, changed = self._fetch(config)
             results.append(result)
             cache_changed = cache_changed or changed

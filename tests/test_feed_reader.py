@@ -1,11 +1,12 @@
 from __future__ import annotations
 
+from dataclasses import replace
 from datetime import UTC
 
 import pytest
 import requests
 
-from scripts.feed_reader import FeedParseError, FeedReader, parse_feed_bytes
+from scripts.feed_reader import FeedParseError, FeedReader, FeedResult, parse_feed_bytes
 from scripts.models import FeedConfig
 
 
@@ -57,6 +58,50 @@ def test_marks_missing_date_unknown(feed_config: FeedConfig) -> None:
     assert item.date_status == "unknown"
     assert item.published_at is None
     assert item.dedupe_key == ""
+
+
+def test_fetch_all_allows_distinct_feed_urls_on_same_host(
+    tmp_path, feed_config: FeedConfig, monkeypatch
+) -> None:
+    first = replace(feed_config, id="first", url="https://example.com/first.xml")
+    second = replace(feed_config, id="second", url="https://example.com/second.xml")
+    reader = FeedReader(tmp_path / "feed-state.json")
+    fetched: list[str] = []
+
+    def fake_fetch(config: FeedConfig) -> tuple[FeedResult, bool]:
+        fetched.append(config.id)
+        return FeedResult(config, True, False, ()), False
+
+    monkeypatch.setattr(reader, "_fetch", fake_fetch)
+
+    results = reader.fetch_all([first, second])
+
+    assert fetched == ["first", "second"]
+    assert [result.success for result in results] == [True, True]
+
+
+def test_fetch_all_rejects_duplicate_feed_url(
+    tmp_path, feed_config: FeedConfig, monkeypatch
+) -> None:
+    first = replace(feed_config, id="first", url="https://example.com/feed.xml")
+    second = replace(feed_config, id="second", url="https://example.com/feed.xml")
+    reader = FeedReader(tmp_path / "feed-state.json")
+    fetched: list[str] = []
+
+    def fake_fetch(config: FeedConfig) -> tuple[FeedResult, bool]:
+        fetched.append(config.id)
+        return FeedResult(config, True, False, ()), False
+
+    monkeypatch.setattr(reader, "_fetch", fake_fetch)
+
+    results = reader.fetch_all([first, second])
+
+    assert fetched == ["first"]
+    assert results[0].success is True
+    assert results[1].success is False
+    assert results[1].error == (
+        "URL https://example.com/feed.xml was already requested during this run"
+    )
 
 
 def test_fetch_accepts_feed_xml_served_as_text_plain(

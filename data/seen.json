@@ -397,12 +397,33 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/allenai/olmoearth-embeddings"
     },
+    "url:253ae037ec0ab2fb674b47fe03d400fd27700c0738848f0cf4eb2141a936ce80": {
+      "article_id": "mlcommons-bc710f64",
+      "first_seen_at": "2026-09-24T19:14:22.068281Z",
+      "published_at": "2026-09-24T14:50:00Z",
+      "source": "mlcommons",
+      "url": "https://mlcommons.org/2026/09/mlperf-training-llm-post-training"
+    },
+    "url:2690558920b683f436705f883e7be7c7b496af0690c85cbb72e9d0479d551ca1": {
+      "article_id": "github-ai-ml-0c4ee4c0",
+      "first_seen_at": "2026-09-24T19:14:22.068281Z",
+      "published_at": "2026-09-24T18:26:12Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent"
+    },
     "url:26c11393ee029ad8ff6f7eb3d40565cd96a076716564514d6fdec9138f6df84e": {
       "article_id": "aws-machine-learning-557ff428",
       "first_seen_at": "2026-08-28T00:26:39.012587Z",
       "published_at": "2026-08-27T23:04:22Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-agentic-creative-workflows-with-amazon-quick-and-fal"
+    },
+    "url:280bf64dcca75cee1131d5bb93c25f96667780da531e337a02f3b047e97fb8cc": {
+      "article_id": "hugging-face-443ffaa3",
+      "first_seen_at": "2026-09-24T19:14:22.068281Z",
+      "published_at": "2026-09-24T14:08:57Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark"
     },
     "url:2947b34346514aae0973a6680404d2963975f73bc94fda59256d49b1711e016e": {
       "article_id": "mistral-ai-f71efd3c",
@@ -529,6 +550,13 @@
       "published_at": "2026-09-03T12:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/playco-game-prototyping-with-astra"
+    },
+    "url:32a3e2c202b80eb5d733f216e80a7673e29009c38633bc412a740b5fa6614e78": {
+      "article_id": "langchain-releases-ae0cad36",
+      "first_seen_at": "2026-09-24T19:14:22.068281Z",
+      "published_at": "2026-09-24T18:11:22Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.5"
     },
     "url:330fba64551db8b49d6a895e947e7fef4cfddc339a90e97ae91a354a6cbe9a0b": {
       "article_id": "openai-news-54187260",
@@ -813,6 +841,13 @@
       "published_at": "2026-08-18T17:02:52Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/improve-contract-search-accuracy-with-auto-generated-filters-in-amazon-bedrock"
+    },
+    "url:415e037d984fa04b5aa5927376b595ed068d458f95b58ac73c15f4cc40f31be5": {
+      "article_id": "apple-ml-research-df820d04",
+      "first_seen_at": "2026-09-24T19:14:22.068281Z",
+      "published_at": "2026-09-24T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/latent-space-distillation"
     },
     "url:419a0d7bd8653188b6f438f24918653839815edcf001cf2cbbd21c040a0085a3": {
       "article_id": "google-ai-493285a4",
@@ -1251,6 +1286,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/reimagining-advertising-with-ai"
     },
+    "url:6add3dd62456569f19427e4518304eb7a3c8cee0553623d704af2a296d149679": {
+      "article_id": "google-deepmind-e4877f38",
+      "first_seen_at": "2026-09-24T19:14:22.068281Z",
+      "published_at": "2026-09-24T16:20:39Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar"
+    },
     "url:6b10c3fe8ed5dda11bb4ff5e84159187ad116f30debe7345f618a34aec457b14": {
       "article_id": "aws-machine-learning-1869feee",
       "first_seen_at": "2026-09-14T19:52:22.108290Z",
@@ -1270,6 +1312,13 @@
       "published_at": "2026-08-03T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/alignment-multimodal-llms"
+    },
+    "url:6bd938505802ab3f15af06d3ee52df170584c761dae0010cf00fc0e5be5d8cb1": {
+      "article_id": "apple-ml-research-fcfd6093",
+      "first_seen_at": "2026-09-24T19:14:22.068281Z",
+      "published_at": "2026-09-24T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/practical-recipe-federated-asr"
     },
     "url:6bf5b05134dd23a67198b53a5a74adf09cf948f7a401c3b4632f35e98f96ec3b": {
       "article_id": "google-deepmind-68c1c77e",
@@ -1395,6 +1444,13 @@
       "published_at": "2026-08-26T00:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/loveholidays"
+    },
+    "url:779a1ba64af323a34a47ec8faadab92b3dda7836d54ea3b4e91007e1a0fc79b7": {
+      "article_id": "aws-machine-learning-05165b3e",
+      "first_seen_at": "2026-09-24T19:14:22.068281Z",
+      "published_at": "2026-09-24T16:20:12Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/speaker-labeled-transcription-with-whisperx-on-sagemaker-ai"
     },
     "url:77adb66885449411a18b9aff250fee2a331f402f3913023bba76bcaaf9c7806e": {
       "article_id": "google-ai-3f3f09c7",
@@ -1560,6 +1616,13 @@
       "published_at": "2026-08-21T17:06:17Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/agentic-data-operations-platform-adop-data-engineering-into-hours"
+    },
+    "url:866a8e04c42b89dd2ca978aa830c13aa588510bad0d1ee6073d406898dd576a4": {
+      "article_id": "langchain-releases-af592523",
+      "first_seen_at": "2026-09-24T19:14:22.068281Z",
+      "published_at": "2026-09-24T11:31:31Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.6"
     },
     "url:86d2176de98238d5ddb9673084584074f310cd71ea2f47b8326fb696fa5ccc1c": {
       "article_id": "aws-machine-learning-de6ba1c8",
@@ -2429,6 +2492,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/democratizing-institutional-knowledge-building-an-ai-powered-knowledge-management-system-with-aws"
     },
+    "url:cca310b8dce1d42c7ad3300fbcae136961e31264b13bdaf7784c9e1d8a584dc9": {
+      "article_id": "aws-machine-learning-19d8a642",
+      "first_seen_at": "2026-09-24T19:14:22.068281Z",
+      "published_at": "2026-09-24T16:12:47Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-multi-account-ai-agent-with-agentcore-gateway-and-mcp"
+    },
     "url:ccb42b7422acc16c284e03a9d4914a5de63a753976a5af65acc04a22f033ec38": {
       "article_id": "apple-ml-research-0d4ae675",
       "first_seen_at": "2026-08-20T04:02:19.864644Z",
@@ -3013,6 +3083,13 @@
       "published_at": "2026-08-20T07:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/introducing-ai-futures"
+    },
+    "url:fc1f450c208d7c015ac4544da4f94ef578ff7faa4b61c0b19e1084966612dcf0": {
+      "article_id": "aws-machine-learning-750bd1b0",
+      "first_seen_at": "2026-09-24T19:14:22.068281Z",
+      "published_at": "2026-09-24T16:06:46Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/aderant-builds-intelligent-ticket-triage-with-amazon-nova"
     },
     "url:fc40ddafdd41e0cc6b8e9f206273b63f31eac9928f23628f7fa12ba2cbcd62f3": {
       "article_id": "openai-news-2cb81f0e",

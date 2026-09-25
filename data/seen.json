@@ -842,6 +842,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/improve-contract-search-accuracy-with-auto-generated-filters-in-amazon-bedrock"
     },
+    "url:4135fa3a00799524e73b45e5e8a18ea8c11a9949e9197f51bf60e5f284bf0180": {
+      "article_id": "github-ai-ml-d6e6dc4f",
+      "first_seen_at": "2026-09-25T08:53:41.525854Z",
+      "published_at": "2026-09-24T20:00:00Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui"
+    },
     "url:415e037d984fa04b5aa5927376b595ed068d458f95b58ac73c15f4cc40f31be5": {
       "article_id": "apple-ml-research-df820d04",
       "first_seen_at": "2026-09-24T19:14:22.068281Z",

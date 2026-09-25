@@ -348,6 +348,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/xais-grok-4-6-is-now-available-in-amazon-bedrock"
     },
+    "url:200ef5722dc3e64e236fbe2afb65931465b502d3310b9dac2171e05519c1d86a": {
+      "article_id": "aws-machine-learning-3d9f12c1",
+      "first_seen_at": "2026-09-25T19:17:44.183699Z",
+      "published_at": "2026-09-25T16:18:07Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/accelerate-multimodal-rl-training-with-skyrl-on-amazon-sagemaker-hyperpod"
+    },
     "url:2081fd8810403c1a0211ecffee53b72f418536664714228771ed593eb426abb9": {
       "article_id": "aws-machine-learning-c33164f7",
       "first_seen_at": "2026-08-07T21:58:33.543829Z",
@@ -438,6 +445,13 @@
       "published_at": "2026-08-10T10:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands"
+    },
+    "url:2a26e0bf4bcecd1520a435deb3774222f33a0175794eb75f5b1c4d20e46f5f47": {
+      "article_id": "aws-machine-learning-8c11e054",
+      "first_seen_at": "2026-09-25T19:17:44.183699Z",
+      "published_at": "2026-09-25T16:09:46Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/deploying-real-time-personalized-speech-with-qwen3-tts-on-amazon-sagemaker-ai"
     },
     "url:2ad49dd9b65fe3aef9a784214d6883e36da0e0e55e33778bed2d2eed5e0619c0": {
       "article_id": "google-ai-64fa4a73",
@@ -1501,6 +1515,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/human-like-behaviors-llms"
     },
+    "url:7d128752a2cf63b44ec1ea9348a23b27b029e1b62fd126d7e4b91340997ac54b": {
+      "article_id": "github-ai-ml-b21dd1fa",
+      "first_seen_at": "2026-09-25T19:17:44.183699Z",
+      "published_at": "2026-09-25T18:00:00Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases"
+    },
     "url:7d2872733a614740ea67cf0d6caa1be41e67dc215acdfe91a81bd31a341b0343": {
       "article_id": "openai-news-94c841de",
       "first_seen_at": "2026-09-16T18:56:14.102211Z",
@@ -1534,6 +1555,13 @@
       "published_at": "2026-08-04T18:39:14Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/introducing-web-search-on-amazon-bedrock-for-foundation-model-grounding"
+    },
+    "url:809c19bea702503bd68aea35a8e949f66140fc69d7a619ddd83ae709fea96ea7": {
+      "article_id": "aws-machine-learning-4be8459b",
+      "first_seen_at": "2026-09-25T19:17:44.183699Z",
+      "published_at": "2026-09-25T16:15:22Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/narrateai-production-ready-llm-quality-assurance-on-amazon-bedrock"
     },
     "url:80d425e7482ca00d9b562e254a186798a0689fb5976322fdd0f911c7ccb89e1d": {
       "article_id": "github-ai-ml-04787b60",
@@ -1757,6 +1785,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to-transact-safely-and-autonomously-at-scale"
     },
+    "url:95f314d9972fcd384b1f5504b60da9ec16098cd7e2786cba33337dfe9c55d3d4": {
+      "article_id": "aws-machine-learning-bae576d1",
+      "first_seen_at": "2026-09-25T19:17:44.183699Z",
+      "published_at": "2026-09-25T16:29:50Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/scaling-moe-reinforcement-learning-on-amazon-eks-with-efa-and-deepep-with-40-more-throughput"
+    },
     "url:95f74aeac90a93bb12cebd08a06d378eabf5fb66ffb6f949438941dc9bb3bdbe": {
       "article_id": "openai-news-c69af76a",
       "first_seen_at": "2026-08-10T16:12:13.389844Z",
@@ -1864,6 +1899,13 @@
       "published_at": "2026-08-06T16:43:19Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/control-agent-behaviors-and-cost-beyond-a-single-action-new-capabilities-in-amazon-bedrock-agentcore"
+    },
+    "url:9de028fbe46cac8b155a7c08a35dfcf47f00596edbfe763bda6c0737c9cb02fb": {
+      "article_id": "openai-news-69569f5e",
+      "first_seen_at": "2026-09-25T19:17:44.183699Z",
+      "published_at": "2026-09-25T19:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/proaction"
     },
     "url:9eb8c760edade595b4c7ef0228c2cef0f074914ff1416d4158875e0a6200acd3": {
       "article_id": "aws-machine-learning-fc27445c",
@@ -2205,6 +2247,13 @@
       "published_at": "2026-09-03T16:16:28Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/ai-driven-development-lifecycle-using-amazon-bedrock-agentcore"
+    },
+    "url:b5f17340702c12cc13c19c48f48614e495985464981a483f50eac6d4358b8b5e": {
+      "article_id": "langchain-releases-cfd0da3e",
+      "first_seen_at": "2026-09-25T19:17:44.183699Z",
+      "published_at": "2026-09-25T12:57:38Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.6.3"
     },
     "url:b7c2312ca456708012258df9f4b9fd1b712061637639d54ff721154c9a6f073e": {
       "article_id": "aws-machine-learning-4f54f7cd",
@@ -2972,6 +3021,13 @@
       "published_at": "2026-08-26T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/proof-gen-optimized-distillation"
+    },
+    "url:f47736df57dec501d1957ae2e6c6fb52a03e716415db73c09c5cc6297d0e9f87": {
+      "article_id": "aws-machine-learning-920cf10e",
+      "first_seen_at": "2026-09-25T19:17:44.183699Z",
+      "published_at": "2026-09-25T15:54:42Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-datacor-built-self-service-rental-analytics-with-amazon-quick-sight"
     },
     "url:f5545f3f8433406a9d04d71df0684a915606a9424a0098e11ac6db1443f5028c": {
       "article_id": "aws-machine-learning-082c421a",

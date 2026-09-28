@@ -105,6 +105,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-mrh-trowe-enabled-secure-self-service-ai-agents-in-financial-services"
     },
+    "url:09d1d26fa19dd694ec40f7bb3bc136d48191abcd2b19156a45d7567a4b7fa32e": {
+      "article_id": "hugging-face-f3d83199",
+      "first_seen_at": "2026-09-28T09:53:24.281543Z",
+      "published_at": "2026-09-28T09:44:05Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/Hcompany/holo4"
+    },
     "url:09db2a0bd84188bdf4753fc362646e95c84074323ad8265c9f876d5d6427aa45": {
       "article_id": "aws-machine-learning-9d1b7e13",
       "first_seen_at": "2026-08-26T16:36:07.201345Z",

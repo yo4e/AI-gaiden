@@ -49,6 +49,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/amazon-quick-for-microsoft-365-agentic-ai-where-you-work"
     },
+    "url:05f4f9748885e1c59e65c4eac32533835fff3ea66ca004e45b09b1a9c9c85fe0": {
+      "article_id": "aws-machine-learning-7f45134e",
+      "first_seen_at": "2026-09-29T20:02:41.127327Z",
+      "published_at": "2026-09-29T19:34:14Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/bring-near-astra-intelligence-to-everyday-work-with-gpt-6-1-sol-on-amazon-bedrock"
+    },
     "url:0600471a7eba1ecbe8d43353a9bf4eb45407a840c6d48969a92ce07a26395c2d": {
       "article_id": "aws-machine-learning-68b2320c",
       "first_seen_at": "2026-09-03T08:07:17.945680Z",
@@ -1147,6 +1154,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/aws-recognized-as-a-leader-in-the-forrester-wave-ai-infrastructure-solutions-q4-2025"
     },
+    "url:57ed632908ae012313cd5937b1b26f4658aa9139bb778b0f0951c1d208f8ffae": {
+      "article_id": "langchain-releases-ed65e898",
+      "first_seen_at": "2026-09-29T20:02:41.127327Z",
+      "published_at": "2026-09-29T15:22:20Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.5"
+    },
     "url:57f8b7f378e9c39afee2b695124e64c9f4d434320943b412f6cfb54e9fb0229e": {
       "article_id": "hugging-face-a0ab9baa",
       "first_seen_at": "2026-08-13T22:06:40.301314Z",
@@ -1259,6 +1273,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/from-theory-to-delivery-how-atos-upskilled-400-engineers-in-agentic-ai"
     },
+    "url:6071f63e21f6425413eb63722b1604896ffdb702f04f5beb8c9ad701e7ae765e": {
+      "article_id": "openai-news-5c067df7",
+      "first_seen_at": "2026-09-29T20:02:41.127327Z",
+      "published_at": "2026-09-29T10:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/devday-2026-recap"
+    },
     "url:60efaf744a4d6c2c20e9e8f1dc0a4ae280a89a1d1a7f55c198827b62cda36b8e": {
       "article_id": "openai-news-ac5fb33d",
       "first_seen_at": "2026-09-22T18:58:12.681575Z",
@@ -1362,6 +1383,13 @@
       "published_at": "2026-09-24T16:20:39Z",
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar"
+    },
+    "url:6ae68113c18a4270f54a3a967157a4599710478adc45c0961bd3021ae35ce6c4": {
+      "article_id": "aws-machine-learning-215d2436",
+      "first_seen_at": "2026-09-29T20:02:41.127327Z",
+      "published_at": "2026-09-29T16:27:57Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/prompt-engineering-fundamentals-for-amazon-quick"
     },
     "url:6b10c3fe8ed5dda11bb4ff5e84159187ad116f30debe7345f618a34aec457b14": {
       "article_id": "aws-machine-learning-1869feee",
@@ -1529,6 +1557,13 @@
       "source": "google-ai",
       "url": "https://blog.google/products-and-platforms/products/search/football-features-google-search"
     },
+    "url:784b650133d84c83954d5d708b7a85b3d4a70c075e81dcb7dc2377f48f6dac46": {
+      "article_id": "aws-machine-learning-0bf9ea1b",
+      "first_seen_at": "2026-09-29T20:02:41.127327Z",
+      "published_at": "2026-09-29T15:55:17Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-conde-nast-built-multimodal-video-discovery-with-amazon-bedrock"
+    },
     "url:78e3ba01c51c635935b63f3b8f4fc27b0604adf8969e087a04f36cbabadc307f": {
       "article_id": "aws-machine-learning-93a52917",
       "first_seen_at": "2026-09-08T18:45:03.859334Z",
@@ -1660,6 +1695,13 @@
       "published_at": "2026-09-28T22:13:16Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/grok-4-7-is-now-available-on-amazon-bedrock"
+    },
+    "url:82ea29af1bd53c0dc09a3545f08e6f58eebf48eb892b26520b270de38e97387b": {
+      "article_id": "aws-machine-learning-e0671ad6",
+      "first_seen_at": "2026-09-29T20:02:41.127327Z",
+      "published_at": "2026-09-29T16:14:24Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-an-ai-powered-contract-intelligence-platform-with-amazon-quick-and-amazon-bedrock-agentcore"
     },
     "url:832a12c8f33a104e2b49b2d1442be1d80f1153a18abe85ca9b9a201d94b80ba6": {
       "article_id": "openai-news-b3a20481",
@@ -1957,6 +1999,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/beyond-the-price-per-token-choosing-the-right-openai-model-on-amazon-bedrock-for-your-workload"
     },
+    "url:9c841a4594a16547cc731d82a946031ad815a08d211f83b16614c6dc97613a0e": {
+      "article_id": "aws-machine-learning-afaea016",
+      "first_seen_at": "2026-09-29T20:02:41.127327Z",
+      "published_at": "2026-09-29T16:27:33Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/prompt-engineering-by-quick-component-patterns-and-pitfalls"
+    },
     "url:9c980868c23ca002eb7f08b08c24455bac730da795770a83d77edadb51dcb49e": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
       "published_at": "2026-07-28T16:27:42Z",
@@ -2219,6 +2268,13 @@
       "published_at": "2026-08-12T13:46:28Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-oneadvanced-deployed-over-50-ai-agents-on-uk-sovereign-aws"
+    },
+    "url:afa8c33f8eb7996a39419deadd5b14c638139f7bae71a907c422a5531afc3651": {
+      "article_id": "hugging-face-94017413",
+      "first_seen_at": "2026-09-29T20:02:41.127327Z",
+      "published_at": "2026-09-29T13:07:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source"
     },
     "url:afd54bbe19c44fc2e616fa805e0fa788f08fdafd3f923e81779864556c01fdd7": {
       "article_id": "mistral-ai-a0bbdde2",
@@ -2744,6 +2800,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/announcing-instance-preference-lists-for-amazon-sagemaker-ai-training-jobs"
     },
+    "url:d4eadc6264742490b3b97c71e5dcc4a49ac48417fe72ce4c324d8e49b75b908b": {
+      "article_id": "langchain-releases-b5c86ce8",
+      "first_seen_at": "2026-09-29T20:02:41.127327Z",
+      "published_at": "2026-09-29T14:53:11Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.6"
+    },
     "url:d551d175863afc120b391ddf8b9e668e3d6b674849bb97b70723a5fb13296298": {
       "article_id": "aws-machine-learning-c485de21",
       "first_seen_at": "2026-08-14T16:08:42.817998Z",
@@ -2764,6 +2827,13 @@
       "published_at": "2026-09-01T15:50:00Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-t54-built-a-trust-layer-with-amazon-bedrock-agentcore-payments"
+    },
+    "url:d6b9f5e651b1891e950e0096b862ca9527c5eacf458b2804fa20b6d4b208ad61": {
+      "article_id": "openai-news-76fd42cc",
+      "first_seen_at": "2026-09-29T20:02:41.127327Z",
+      "published_at": "2026-09-29T10:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol"
     },
     "url:d6dfaf3677dfbc70980417f20f4d36cb2c1bb8ce9862bd7140a4cb02e9234f41": {
       "article_id": "aws-machine-learning-3b741822",
@@ -2849,12 +2919,26 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/preparing-data-for-supervised-fine-tuning-part-1-formatting-and-quality"
     },
+    "url:dc53fce90c6f36f5c727235e1a467f2d849dcd49be3c83b393c97ef4331e392f": {
+      "article_id": "hugging-face-9fbcfd9d",
+      "first_seen_at": "2026-09-29T20:02:41.127327Z",
+      "published_at": "2026-09-29T15:30:38Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/nvidia/kumo-tabular"
+    },
     "url:dcb175f6d7c5d772e1328060dc47eb9e8eeadcf7b1b6d5ab174fdb1cff9b3893": {
       "article_id": "langchain-releases-be333b27",
       "first_seen_at": "2026-09-23T19:06:23.325697Z",
       "published_at": "2026-09-23T15:31:52Z",
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.5"
+    },
+    "url:dec620cb7225d2434a9b02e6e0197b1952a6412dcad780af2099d9910f2c9ee8": {
+      "article_id": "openai-news-638b7288",
+      "first_seen_at": "2026-09-29T20:02:41.127327Z",
+      "published_at": "2026-09-29T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/introducing-dots"
     },
     "url:deec56a13e2b9b57f5b59222a713843e545d12e56c5cfa7a8c4462845968c02e": {
       "first_seen_at": "2026-08-04T00:16:06.231356Z",
@@ -2896,6 +2980,13 @@
       "published_at": "2026-09-06T09:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/an-alien-mind"
+    },
+    "url:e1da41ea41831abed9cd482b909e2f6b1f815294a03f98e5461853f5ae5af667": {
+      "article_id": "apple-ml-research-b0193b87",
+      "first_seen_at": "2026-09-29T20:02:41.127327Z",
+      "published_at": "2026-09-29T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/communication-bottleneck-serialization"
     },
     "url:e3ddd7a65cd3a566e91c60250d01ee8b4672eaf661344d99931e4cbb3eebb307": {
       "article_id": "hugging-face-0f954385",

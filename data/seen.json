@@ -63,6 +63,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/accessing-openai-gpt-5-6-models-on-amazon-bedrock-from-australia-with-global-cross-region-inference"
     },
+    "url:061338e668ed697490e5190ccd3e1fba28ac269698517daa2fcec5875990601f": {
+      "article_id": "openai-news-0de760bf",
+      "first_seen_at": "2026-09-30T20:05:27.043874Z",
+      "published_at": "2026-09-30T10:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work"
+    },
     "url:073b13b14ae0138b1424f5cc2e744960df78c0d7dd4268101cf3c123a809ae5f": {
       "article_id": "openai-news-8a302923",
       "first_seen_at": "2026-09-07T08:24:37.472006Z",
@@ -97,6 +104,13 @@
       "published_at": "2026-08-10T10:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows"
+    },
+    "url:08aa8115cb5d9c8920990d12b97d16085506bd37a1c5f14f480292bcdf0b5484": {
+      "article_id": "google-deepmind-e99b37ba",
+      "first_seen_at": "2026-09-30T20:05:27.043874Z",
+      "published_at": "2026-09-30T15:03:07Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/introducing-synthid-bio"
     },
     "url:08ffdb24bebd9aa2ffda2f849b7e7af9dba92daa36ecb3bc96d64f49fd7ead95": {
       "article_id": "openai-news-97df8849",
@@ -1189,6 +1203,13 @@
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/08/mlperf-client-v2-0"
     },
+    "url:59ac649abb99214213a2829dcf3cdcac0e1cacd07ea717051b9fe129a1f607d8": {
+      "article_id": "aws-machine-learning-c38d3402",
+      "first_seen_at": "2026-09-30T20:05:27.043874Z",
+      "published_at": "2026-09-30T15:21:57Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-multi-agent-music-production-pipeline-on-amazon-bedrock-agentcore-runtime-instances"
+    },
     "url:5a499aeeb99b0744b94bd57e804129765e0a65e99abbc8c946e1de7155ff6d21": {
       "article_id": "aws-machine-learning-b024ee89",
       "first_seen_at": "2026-09-28T21:16:07.869479Z",
@@ -1514,6 +1535,13 @@
       "published_at": "2026-09-16T22:36:04Z",
       "source": "microsoft-ai",
       "url": "https://blogs.microsoft.com/blog/2026/09/16/microsofts-commitment-for-ai-in-education"
+    },
+    "url:74c2ff7e2707d1f61043b51abcb8a4e28720706a6f4caf05256394e578267110": {
+      "article_id": "hugging-face-64cce203",
+      "first_seen_at": "2026-09-30T20:05:27.043874Z",
+      "published_at": "2026-09-30T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/open-tts-leaderboard"
     },
     "url:75b859b8cd50a88b1480e59956e69c4230f0ae75e564c38a740d1c9b41026da4": {
       "article_id": "mlcommons-7388cc0a",
@@ -1861,6 +1889,13 @@
       "published_at": "2026-09-21T12:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra"
+    },
+    "url:90249c2a3882c6d31b88e7cea8a85045e4eeb6a0a24ec30e6774300a2c2f9921": {
+      "article_id": "openai-news-3af6b113",
+      "first_seen_at": "2026-09-30T20:05:27.043874Z",
+      "published_at": "2026-09-30T10:30:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign"
     },
     "url:90ba20dc32b53edf52ab24a1495bdf5c2efdd55baaf375e673bcc92bdc711912": {
       "article_id": "google-deepmind-5ed99094",
@@ -2395,6 +2430,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/from-portal-hopping-to-instant-answers-hemas-journey-with-mcp-and-amazon-bedrock"
     },
+    "url:b49099cde7e97e60f531fdab0739ace017515f672d5de4fd5e17e7dadf65f19d": {
+      "article_id": "google-deepmind-7a23fc8b",
+      "first_seen_at": "2026-09-30T20:05:27.043874Z",
+      "published_at": "2026-09-30T20:01:45Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence"
+    },
     "url:b5500bc6503561c622e234c790899474b8b24e1670dad4cceb0dbc466610f3db": {
       "article_id": "hugging-face-1c35904b",
       "first_seen_at": "2026-09-03T08:07:17.945680Z",
@@ -2842,6 +2884,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-t54-built-a-trust-layer-with-amazon-bedrock-agentcore-payments"
     },
+    "url:d63fd7904589a452419d9086c340cd70931c69c728b4714f5acd4bf5fc4d211a": {
+      "article_id": "apple-ml-research-4cc551ad",
+      "first_seen_at": "2026-09-30T20:05:27.043874Z",
+      "published_at": "2026-09-30T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/effectiveness-fluency-llm-conditioning"
+    },
     "url:d6b9f5e651b1891e950e0096b862ca9527c5eacf458b2804fa20b6d4b208ad61": {
       "article_id": "openai-news-76fd42cc",
       "first_seen_at": "2026-09-29T20:02:41.127327Z",
@@ -3163,6 +3212,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-multi-tenant-agentic-chat-applications-on-enterprise-data-with-amazon-bedrock-managed-knowledge-base"
     },
+    "url:f02e3585bdb4614bde3c2b0b9c9b5ad641dea0714490757d51910a7c80602a1b": {
+      "article_id": "aws-machine-learning-a6662312",
+      "first_seen_at": "2026-09-30T20:05:27.043874Z",
+      "published_at": "2026-09-30T15:37:15Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/query-claims-in-natural-language-with-amazon-bedrock-knowledge-bases"
+    },
     "url:f0382e4400df69e289d7a9b8459fc02d4d7fdf4a0731d43ea8982ac8baeca7ad": {
       "article_id": "langchain-releases-dc60808a",
       "first_seen_at": "2026-09-21T20:00:41.036980Z",
@@ -3336,6 +3392,13 @@
       "published_at": "2026-09-01T19:12:43Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws"
+    },
+    "url:f87baa38b03278bfed1e73133f871134d6f2083103abee0b82d7427ff2f29c40": {
+      "article_id": "langchain-releases-035315d4",
+      "first_seen_at": "2026-09-30T20:05:27.043874Z",
+      "published_at": "2026-09-30T15:12:17Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.7"
     },
     "url:f9027d80e820682e90d7e8a7deab6fe99d243c44073836087c19a4dccdea5fb4": {
       "article_id": "openai-news-ce37ca4f",

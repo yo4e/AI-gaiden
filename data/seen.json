@@ -383,6 +383,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient"
     },
+    "url:1f33fd17ae9a946de28dc561b29e94cc71dbdb44040d2ee88cee3f7ddc282221": {
+      "article_id": "mlcommons-8ddf67c1",
+      "first_seen_at": "2026-10-01T20:22:22.987634Z",
+      "published_at": "2026-10-01T18:01:16Z",
+      "source": "mlcommons",
+      "url": "https://mlcommons.org/2026/10/agent-privacy-risk-taxonomy-v0-1"
+    },
     "url:1f462f4963220aae0447fa746a11bd405afc6058b30e5ab29d6bd8dfc2ceffba": {
       "article_id": "aws-machine-learning-54847c0a",
       "first_seen_at": "2026-09-21T20:00:41.036980Z",
@@ -480,6 +487,13 @@
       "published_at": "2026-09-24T14:08:57Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark"
+    },
+    "url:28b251faa5b0082ef80dcaf6fc1fc5f759eaafa6c5a1d0a2a55f5ecc4b8a7294": {
+      "article_id": "apple-ml-research-113c97f1",
+      "first_seen_at": "2026-10-01T20:22:22.987634Z",
+      "published_at": "2026-10-01T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/rltl-dr-self-improvement"
     },
     "url:2947b34346514aae0973a6680404d2963975f73bc94fda59256d49b1711e016e": {
       "article_id": "mistral-ai-f71efd3c",
@@ -670,6 +684,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/sam-altman-un-security-council-remarks"
     },
+    "url:34c43cec913dfaccea2cea7ed42e0080d0b90483bc350862be201f76dd3aabd3": {
+      "article_id": "aws-machine-learning-b921395b",
+      "first_seen_at": "2026-10-01T20:22:22.987634Z",
+      "published_at": "2026-10-01T19:49:06Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/serve-live-governed-data-in-ai-built-apps-with-amazon-quick"
+    },
     "url:34e62ff4c7cf4defda5bd7747a692840f7012595a2eb1a543614fdc32b51c94b": {
       "article_id": "openai-news-68aa6dd2",
       "first_seen_at": "2026-08-27T14:17:35.478713Z",
@@ -793,6 +814,13 @@
       "published_at": "2026-09-17T15:42:31Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/a-serverless-data-driven-git-metrics-dashboard-using-amazon-quick-sight"
+    },
+    "url:393d9953f42c221c5b9e21694952e67a890a49f7bf7c0c49ed05db0e7a438451": {
+      "article_id": "aws-machine-learning-f44b5f10",
+      "first_seen_at": "2026-10-01T20:22:22.987634Z",
+      "published_at": "2026-10-01T16:32:23Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/implementing-multi-environment-access-for-claude-platform-on-aws"
     },
     "url:39842fa0b34b37cbe3f74a631eb53c7b3f91d6f6e5ad7b93c66d1420605c9599": {
       "article_id": "openai-news-3f44f188",
@@ -1336,6 +1364,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/allenai/tutormoments"
     },
+    "url:637d3dfa247fa816a4c4160f323cf7816f7979e28cc1acd637f643ec28fcb5fc": {
+      "article_id": "openai-news-f1af3f50",
+      "first_seen_at": "2026-10-01T20:22:22.987634Z",
+      "published_at": "2026-10-01T16:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/albertsons-reimagining-retail"
+    },
     "url:639d81441a0d947392fec3ea925322625063884e4fab0a9a5833310a2d78f30b": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
       "published_at": "2026-08-04T13:00:00Z",
@@ -1355,6 +1390,13 @@
       "published_at": "2026-08-10T19:30:00Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/engineering/using-the-github-copilot-sdk-for-java"
+    },
+    "url:67198745ebf529c8c209e54d56be0e93d5aabc176aa6799246283ea9d03a1b7a": {
+      "article_id": "aws-machine-learning-6ff1e3ec",
+      "first_seen_at": "2026-10-01T20:22:22.987634Z",
+      "published_at": "2026-10-01T17:34:56Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-agent-memory-with-nvidia-nemo-agent-toolkit-and-amazon-s3-vectors"
     },
     "url:689d78c6e007ab8e2c4f1996bb4d798c0801548871029acd469c087e5a6afc90": {
       "article_id": "hugging-face-163fdca5",
@@ -1528,6 +1570,13 @@
       "published_at": "2026-08-26T17:01:00Z",
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe"
+    },
+    "url:737dfbe33a956c8e1a0080a117fd69d77e2eb1fe46ba8c96ce06a5e9e0fab8e8": {
+      "article_id": "aws-machine-learning-36da56dd",
+      "first_seen_at": "2026-10-01T20:22:22.987634Z",
+      "published_at": "2026-10-01T16:51:04Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/uplifting-conversion-across-the-acquisition-funnel-with-personalization-using-contextual-bandits-on-aws"
     },
     "url:74306f66506c671620fb91abd78561b6295c7a561bfc57e0ec10acdfbc41627e": {
       "article_id": "microsoft-ai-5077f5e8",
@@ -2458,6 +2507,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.6.3"
     },
+    "url:b7b8cdbba070bf33b22ff1417a4f762a4f7f9a6c653bf85fad3f065e9c4b77f7": {
+      "article_id": "aws-machine-learning-88f5776f",
+      "first_seen_at": "2026-10-01T20:22:22.987634Z",
+      "published_at": "2026-10-01T16:40:24Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-ambient-agents-with-amazon-bedrock-agentcore-from-event-driven-signals-to-human-in-the-loop-workflows"
+    },
     "url:b7c2312ca456708012258df9f4b9fd1b712061637639d54ff721154c9a6f073e": {
       "article_id": "aws-machine-learning-4f54f7cd",
       "first_seen_at": "2026-09-21T20:00:41.036980Z",
@@ -2471,6 +2527,13 @@
       "published_at": "2026-08-19T20:36:50Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/knowledgeforge-mining-gold-from-the-itsm-ticket-graveyard"
+    },
+    "url:b8087b88cb63ae7fc829eff8f3b1641fe52f1b99617f195c5f0644b836600735": {
+      "article_id": "openai-news-186a319a",
+      "first_seen_at": "2026-10-01T20:22:22.987634Z",
+      "published_at": "2026-10-01T17:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/the-eternal-complement"
     },
     "url:b81a99111a5a86711c99d41ed073572ee8ddebce77cc7e3eead3a07ff5c3a222": {
       "article_id": "aws-machine-learning-29f6ec18",
@@ -2632,6 +2695,13 @@
       "published_at": "2026-08-12T13:42:48Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/tiered-kv-cache-for-large-llms-on-amazon-sagemaker-hyperpod-with-curvine"
+    },
+    "url:c3350a643117dde463dc934ecbd7f411e79554a0ce47a99d651e5806a4921598": {
+      "article_id": "mlcommons-1b797341",
+      "first_seen_at": "2026-10-01T20:22:22.987634Z",
+      "published_at": "2026-10-01T14:50:00Z",
+      "source": "mlcommons",
+      "url": "https://mlcommons.org/2026/10/dlrmv4-training"
     },
     "url:c3b0ed374d41680783fa20fc63770995e488c58603f5ef9d743356c3fd37e97e": {
       "article_id": "openai-news-c95c7b5e",
@@ -2890,6 +2960,13 @@
       "published_at": "2026-09-30T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/effectiveness-fluency-llm-conditioning"
+    },
+    "url:d64d271c1ab9f5d801791ed4dbd6d140261b47e71582d9f966327cf0c6db611f": {
+      "article_id": "apple-ml-research-5228cf50",
+      "first_seen_at": "2026-10-01T20:22:22.987634Z",
+      "published_at": "2026-10-01T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/harness-autonomous-ml-engineering"
     },
     "url:d6b9f5e651b1891e950e0096b862ca9527c5eacf458b2804fa20b6d4b208ad61": {
       "article_id": "openai-news-76fd42cc",
@@ -3413,6 +3490,13 @@
       "published_at": "2026-09-22T21:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/better-prompt-caching-for-gpt-6"
+    },
+    "url:f928531f963725197f57d3d7a6b9eda31eac73aae3207919a7217bf822b2451c": {
+      "article_id": "hugging-face-cc2000b5",
+      "first_seen_at": "2026-10-01T20:22:22.987634Z",
+      "published_at": "2026-10-01T15:01:43Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/allenai/olmocore3"
     },
     "url:fa2791fbc9af008fbec5e3ce56bf40bc113bb8071f7a73cfd61c5d71ead84cf1": {
       "article_id": "openai-news-3d5e7ded",

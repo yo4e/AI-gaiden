@@ -3316,6 +3316,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-datacor-built-self-service-rental-analytics-with-amazon-quick-sight"
     },
+    "url:f4b333ddf552aaba782a11af3482df1c9c05c8d02e535e87f863a6df22ad0821": {
+      "article_id": "apple-ml-research-cc2d66ab",
+      "first_seen_at": "2026-10-01T10:14:00.105445Z",
+      "published_at": "2026-09-30T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/sclate-agent-training-evaluation"
+    },
     "url:f5545f3f8433406a9d04d71df0684a915606a9424a0098e11ac6db1443f5028c": {
       "article_id": "aws-machine-learning-082c421a",
       "first_seen_at": "2026-09-22T18:58:12.681575Z",

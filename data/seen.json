@@ -439,6 +439,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/set-up-openai-chatgpt-codex-with-litellm-on-amazon-ecs-and-amazon-bedrock"
     },
+    "url:236dbb8238cdf625118730f1fcaab635d506047f0e13b256b9809f63993bc86d": {
+      "article_id": "aws-machine-learning-34825321",
+      "first_seen_at": "2026-10-02T19:58:45.453740Z",
+      "published_at": "2026-10-02T15:46:05Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/add-secure-web-search-to-claude-desktop-with-amazon-bedrock-agentcore"
+    },
     "url:23ccd9ff0c11ef81ec2380b190cca16b9bf8060ea7b88f5f2fe29d03a80c6c2f": {
       "article_id": "hugging-face-f07d5d44",
       "first_seen_at": "2026-08-06T23:21:45.836993Z",
@@ -863,6 +870,13 @@
       "published_at": "2026-08-17T08:00:00Z",
       "source": "google-ai",
       "url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships"
+    },
+    "url:3adf82e6716a48e97371c4978181d9427e807e6dc914088dee634342ea7570ad": {
+      "article_id": "github-ai-ml-3b343016",
+      "first_seen_at": "2026-10-02T19:58:45.453740Z",
+      "published_at": "2026-10-02T15:00:00Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out"
     },
     "url:3b8b975a4a1492fdff3560d4ac07ada705bf84610c19d8ccb0e6f526f07d6361": {
       "article_id": "aws-machine-learning-ebd754ff",
@@ -1739,6 +1753,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/fyxer"
     },
+    "url:80045661ac99ba741eea6b22dc5483ce8c6734b693ebc640150ff5656a77db5e": {
+      "article_id": "langchain-releases-c14c215f",
+      "first_seen_at": "2026-10-02T19:58:45.453740Z",
+      "published_at": "2026-10-02T15:46:49Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-text-splitters%3D%3D1.1.3"
+    },
     "url:80911412e4d1c0f0cf5f71d0adb2b01d83689d9ff1dfcfa41904e7e4252c4a99": {
       "first_seen_at": "2026-08-04T22:31:58.507698Z",
       "published_at": "2026-08-04T18:39:14Z",
@@ -1758,6 +1779,13 @@
       "published_at": "2026-08-19T17:50:23Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-managing-your-work"
+    },
+    "url:813f4b8521bddb77fa640b7b64b035f4cfb1baa088ff76dbd5d50ef577520e78": {
+      "article_id": "aws-machine-learning-45cae3cf",
+      "first_seen_at": "2026-10-02T19:58:45.453740Z",
+      "published_at": "2026-10-02T15:44:20Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/fine-tune-a-search-agent-with-multi-turn-rl-on-amazon-sagemaker-ai"
     },
     "url:815edfe6383208a72cfe7f7d043ea0afc2543b1ffb0ccb04372202c8f4eb8186": {
       "article_id": "hugging-face-4007b14a",
@@ -1869,6 +1897,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.6"
     },
+    "url:86745252420db89333393bf99d197ab1225c672bbc400d3c019cef86fb7d8734": {
+      "article_id": "ollama-releases-64b3611e",
+      "first_seen_at": "2026-10-02T19:58:45.453740Z",
+      "published_at": "2026-09-29T20:14:22Z",
+      "source": "ollama-releases",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.35.1"
+    },
     "url:86d2176de98238d5ddb9673084584074f310cd71ea2f47b8326fb696fa5ccc1c": {
       "article_id": "aws-machine-learning-de6ba1c8",
       "first_seen_at": "2026-09-22T18:58:12.681575Z",
@@ -1889,6 +1924,13 @@
       "published_at": "2026-09-23T18:00:00Z",
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion"
+    },
+    "url:882596cbc7639eb42bf210ab4eea91363285a86aec67b5711dcb8d9b7dff3b7d": {
+      "article_id": "openai-news-3787bbe6",
+      "first_seen_at": "2026-10-02T19:58:45.453740Z",
+      "published_at": "2026-10-02T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/chatham-financial"
     },
     "url:89df3427e525131aaaac50888389b5a09475c7e1001e5ab9fb1744efb73cc88b": {
       "article_id": "google-ai-461d392a",
@@ -2318,6 +2360,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.1a2"
     },
+    "url:aacb8ca8a4a96bc0cfecf6685ab1bf86aa3d3c1f13feb6fac21b8b58211ab9da": {
+      "article_id": "google-ai-ff00c755",
+      "first_seen_at": "2026-10-02T19:58:45.453740Z",
+      "published_at": "2026-10-02T15:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026"
+    },
     "url:aae8bc1ed323e6eb5db60d7270ba0a316a158b1a4d2aec1bcd05cabbfc765f09": {
       "article_id": "aws-machine-learning-2a0ede17",
       "first_seen_at": "2026-09-28T21:16:07.869479Z",
@@ -2612,6 +2661,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.6.2"
     },
+    "url:bd7fa85e5bd0311f32d40a6179bd30f377e2b8a9ef9e065c98055aeabfcd1d5c": {
+      "article_id": "apple-ml-research-8142f8e3",
+      "first_seen_at": "2026-10-02T19:58:45.453740Z",
+      "published_at": "2026-10-02T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/language-discrimination-multilingual-learning"
+    },
     "url:be849b092a65b95dd81a8834fc8814c0756e5b23f029f2f0644c2b1a51f8c4c4": {
       "article_id": "aws-machine-learning-68849896",
       "first_seen_at": "2026-09-02T18:46:24.555427Z",
@@ -2716,6 +2772,13 @@
       "published_at": "2026-10-01T14:50:00Z",
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/10/dlrmv4-training"
+    },
+    "url:c38af6e5cae43e23a64c1d509c6a587da67c166f4c093fc7e47ef57f26c07a7c": {
+      "article_id": "openai-news-bd4abc5c",
+      "first_seen_at": "2026-10-02T19:58:45.453740Z",
+      "published_at": "2026-10-02T16:15:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/practical-guide-building-gpt-6"
     },
     "url:c3b0ed374d41680783fa20fc63770995e488c58603f5ef9d743356c3fd37e97e": {
       "article_id": "openai-news-c95c7b5e",
@@ -3219,6 +3282,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-godaddy-transformed-its-analytics-with-amazon-quick"
     },
+    "url:e81b1dea7ce0fb42c97855621c52f6a49d0893d2f06b0ac1c6c329bdc3da8830": {
+      "article_id": "hugging-face-9eefcc94",
+      "first_seen_at": "2026-10-02T19:58:45.453740Z",
+      "published_at": "2026-10-02T15:19:50Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/allenai/astabrief"
+    },
     "url:e991f28971b78ffc4b870f48aedb48451906a0883992dfde8367c738a304e26f": {
       "article_id": "aws-machine-learning-3dc2458c",
       "first_seen_at": "2026-08-28T00:26:39.012587Z",
@@ -3504,6 +3574,13 @@
       "published_at": "2026-09-30T15:12:17Z",
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.7"
+    },
+    "url:f8b71528f0b4b4ef710101301cd3b5e0c645f2e82626ab00ded0cda5e160760e": {
+      "article_id": "aws-machine-learning-2eda51e9",
+      "first_seen_at": "2026-10-02T19:58:45.453740Z",
+      "published_at": "2026-10-02T15:48:26Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/sweep-thousands-of-leases-for-compliance-using-amazon-quick-and-the-adjudicated-query-pattern"
     },
     "url:f9027d80e820682e90d7e8a7deab6fe99d243c44073836087c19a4dccdea5fb4": {
       "article_id": "openai-news-ce37ca4f",

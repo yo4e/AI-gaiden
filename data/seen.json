@@ -418,6 +418,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-trends-automates-root-cause-analysis-with-amazon-bedrock"
     },
+    "url:2167384f51e2a4466793a69c16672f4e00ce182695dce33954cb527247ddf545": {
+      "article_id": "openai-news-9a7ac704",
+      "first_seen_at": "2026-10-02T09:51:37.325293Z",
+      "published_at": "2026-10-01T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/the-den-family-social"
+    },
     "url:22405ea1e27b33a112e5993768ccd8037502e8807b567c66afebae15a259b5d8": {
       "article_id": "openai-news-251db3d5",
       "first_seen_at": "2026-08-17T15:44:03.722743Z",
@@ -1188,6 +1195,13 @@
       "published_at": "2026-09-09T12:00:46Z",
       "source": "mistral-ai",
       "url": "https://mistral.ai/news/legacy-code-modernization"
+    },
+    "url:56c490db040147f1def4aa82fd8798b0218ca38f4ad181a049f33c2fdbcde858": {
+      "article_id": "hugging-face-53c7f932",
+      "first_seen_at": "2026-10-02T09:51:37.325293Z",
+      "published_at": "2026-10-02T04:01:31Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata"
     },
     "url:57bb3f72439b837e28ac1b35aca7b555ce4d9b9e8eaa5b3871ead9d0c35fee24": {
       "article_id": "google-ai-552e81e5",
@@ -3072,6 +3086,13 @@
       "published_at": "2026-09-23T15:31:52Z",
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.5"
+    },
+    "url:dcc08529cd2f3a6abf53dcfd91b2b5089fe4f013223661f389c4042995b40ee4": {
+      "article_id": "aws-machine-learning-8dd016ec",
+      "first_seen_at": "2026-10-02T09:51:37.325293Z",
+      "published_at": "2026-10-01T22:06:14Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/scaling-cloud-migrations-with-agentic-ai-on-amazon-bedrock-agentcore"
     },
     "url:dec620cb7225d2434a9b02e6e0197b1952a6412dcad780af2099d9910f2c9ee8": {
       "article_id": "openai-news-638b7288",

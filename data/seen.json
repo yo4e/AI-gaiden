@@ -2905,6 +2905,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/democratizing-institutional-knowledge-building-an-ai-powered-knowledge-management-system-with-aws"
     },
+    "url:cc3d0ac48231448ce58666765641670f54b8dd433c8df85dffcc57804ac94ee3": {
+      "article_id": "apple-ml-research-9ce74c8c",
+      "first_seen_at": "2026-10-03T09:14:22.992763Z",
+      "published_at": "2026-10-02T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/limits-confidence-diffusion"
+    },
     "url:cca310b8dce1d42c7ad3300fbcae136961e31264b13bdaf7784c9e1d8a584dc9": {
       "article_id": "aws-machine-learning-19d8a642",
       "first_seen_at": "2026-09-24T19:14:22.068281Z",

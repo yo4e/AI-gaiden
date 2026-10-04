@@ -2661,6 +2661,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.6.2"
     },
+    "url:bd1136d0fcfd6f1357de280adaee84cea07cc88c30626783f53af728070f9fc3": {
+      "article_id": "hugging-face-c13ba280",
+      "first_seen_at": "2026-10-04T09:53:14.467936Z",
+      "published_at": "2026-10-03T22:56:48Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox"
+    },
     "url:bd7fa85e5bd0311f32d40a6179bd30f377e2b8a9ef9e065c98055aeabfcd1d5c": {
       "article_id": "apple-ml-research-8142f8e3",
       "first_seen_at": "2026-10-02T19:58:45.453740Z",

@@ -21,6 +21,13 @@
       "source": "google-ai",
       "url": "https://blog.google/products/ads-commerce/google-ads-analytics-ai-updates"
     },
+    "url:031c3906bd6f632eb5d29a6482ef98bf21b5ad43a5a9984cdf4c228b3f1aa7cd": {
+      "article_id": "apple-ml-research-8bb1c41d",
+      "first_seen_at": "2026-10-05T22:03:36.189687Z",
+      "published_at": "2026-10-05T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/ontological-boundary-negotiation"
+    },
     "url:03907da2ffad6deeb69b2a444e4252adcd3d23c494143b585b837a6453db694e": {
       "article_id": "aws-machine-learning-1ac90812",
       "first_seen_at": "2026-08-11T16:13:54.723524Z",
@@ -69,6 +76,13 @@
       "published_at": "2026-09-30T10:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work"
+    },
+    "url:069aacfc7f9e43f3ff1928aaaa1148737f170a8a5e92e3e206510c67a575f7db": {
+      "article_id": "aws-machine-learning-ddc2601c",
+      "first_seen_at": "2026-10-05T22:03:36.189687Z",
+      "published_at": "2026-10-05T17:23:19Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/new-agent-skill-amazon-sagemaker-optimized-generative-ai-inference-for-your-coding-agent"
     },
     "url:073b13b14ae0138b1424f5cc2e744960df78c0d7dd4268101cf3c123a809ae5f": {
       "article_id": "openai-news-8a302923",
@@ -501,6 +515,13 @@
       "published_at": "2026-09-24T14:08:57Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark"
+    },
+    "url:28a10813ff05ef0a0983ca4afb9e6ec450b38816dc483310e316be9fc5140c0d": {
+      "article_id": "aws-machine-learning-8b5315b8",
+      "first_seen_at": "2026-10-05T22:03:36.189687Z",
+      "published_at": "2026-10-05T15:53:56Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/agentic-retrieval-with-langchain-and-amazon-bedrock-knowledge-bases"
     },
     "url:28b251faa5b0082ef80dcaf6fc1fc5f759eaafa6c5a1d0a2a55f5ecc4b8a7294": {
       "article_id": "apple-ml-research-113c97f1",
@@ -1113,6 +1134,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/open-asr-leaderboard-global-south"
     },
+    "url:4d588743fb5570036c6eb819d22884363248df6d096e0a82f84b850ae7178311": {
+      "article_id": "aws-machine-learning-59260d87",
+      "first_seen_at": "2026-10-05T22:03:36.189687Z",
+      "published_at": "2026-10-05T15:56:28Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/making-amazon-quick-enterprise-ready-automated-auditable-cross-account-resource-promotion"
+    },
     "url:4e56c7312349a760a0edf744bd151f1352583693dfaa6156b9b09ca8e15ad634": {
       "article_id": "openai-news-139be80b",
       "first_seen_at": "2026-09-23T19:06:23.325697Z",
@@ -1223,6 +1251,13 @@
       "published_at": "2026-10-02T04:01:31Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata"
+    },
+    "url:5765adb99a8997fc31c10ad094a57db1f45352d5d78892cd0f95dfadca4fa579": {
+      "article_id": "aws-machine-learning-d66deed5",
+      "first_seen_at": "2026-10-05T22:03:36.189687Z",
+      "published_at": "2026-10-05T17:25:20Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/supercharge-regulated-workloads-with-claude-code-and-amazon-bedrock"
     },
     "url:57bb3f72439b837e28ac1b35aca7b555ce4d9b9e8eaa5b3871ead9d0c35fee24": {
       "article_id": "google-ai-552e81e5",
@@ -1725,6 +1760,13 @@
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize"
     },
+    "url:7ce1dacb4f2add5e1d2594f379e6822ef702235d8f27e6972ef618843ff950f7": {
+      "article_id": "llama-cpp-releases-c7c68982",
+      "first_seen_at": "2026-10-05T22:03:36.189687Z",
+      "published_at": "2026-10-05T16:56:22Z",
+      "source": "llama-cpp-releases",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.6.0"
+    },
     "url:7d128752a2cf63b44ec1ea9348a23b27b029e1b62fd126d7e4b91340997ac54b": {
       "article_id": "github-ai-ml-b21dd1fa",
       "first_seen_at": "2026-09-25T19:17:44.183699Z",
@@ -1896,6 +1938,13 @@
       "published_at": "2026-08-21T17:06:17Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/agentic-data-operations-platform-adop-data-engineering-into-hours"
+    },
+    "url:86270e4804bb2ac11cfff1ed3a54fa1fc8e02228d1ad8f7d898297128a59bbce": {
+      "article_id": "aws-machine-learning-15fd3419",
+      "first_seen_at": "2026-10-05T22:03:36.189687Z",
+      "published_at": "2026-10-05T15:51:38Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/downgrading-user-roles-in-amazon-quick"
     },
     "url:866a8e04c42b89dd2ca978aa830c13aa588510bad0d1ee6073d406898dd576a4": {
       "article_id": "langchain-releases-af592523",
@@ -3017,6 +3066,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/v7"
     },
+    "url:d2b5b29b4c815525619915dcf133df4d932068a91ccef332cbfb8777febef4ef": {
+      "article_id": "openai-news-d4685e90",
+      "first_seen_at": "2026-10-05T22:03:36.189687Z",
+      "published_at": "2026-10-05T15:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/eu-text-provenance"
+    },
     "url:d3bef0a6f505ce058db2e5dca26b6fcbdef5a9b113fc527c29dde963d0f31e94": {
       "article_id": "llama-cpp-releases-493d3832",
       "first_seen_at": "2026-09-24T08:32:27.085053Z",
@@ -3100,6 +3156,13 @@
       "published_at": "2026-08-13T17:04:18Z",
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/introducing-gemini-3-7-flash"
+    },
+    "url:d8885d98544ba54844d4d88a982939683be9bd5fe47c375a58e9133fb3bd611a": {
+      "article_id": "github-ai-ml-46b6b28b",
+      "first_seen_at": "2026-10-05T22:03:36.189687Z",
+      "published_at": "2026-10-05T15:59:40Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review"
     },
     "url:d8a6f610df930550ee1402387d3fde50558fa99d5d579bc261f23983fb759891": {
       "article_id": "langchain-releases-e0f02e18",

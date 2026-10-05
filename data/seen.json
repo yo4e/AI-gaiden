@@ -579,6 +579,13 @@
       "source": "ollama-releases",
       "url": "https://github.com/ollama/ollama/releases/tag/v0.34.2"
     },
+    "url:2d8e70fb45cef7470a5baf361c95df26b5ff7249933c340d169f562e1258ded9": {
+      "article_id": "openai-news-2d8a753f",
+      "first_seen_at": "2026-10-05T10:33:47.536612Z",
+      "published_at": "2026-10-05T10:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement"
+    },
     "url:2dc3df9e1d22fbbde948c3cb6dddbd10751ab35eb525cb6797e797d9f782694e": {
       "article_id": "aws-machine-learning-4a8a536c",
       "first_seen_at": "2026-09-21T20:00:41.036980Z",
@@ -2070,6 +2077,13 @@
       "published_at": "2026-07-27T09:32:20Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams"
+    },
+    "url:9668af85ed2e1acf35b791be9e7a32b9a72b354fe13dca2998ddc5313107c6fd": {
+      "article_id": "vllm-releases-21ab3718",
+      "first_seen_at": "2026-10-05T10:33:47.536612Z",
+      "published_at": "2026-10-05T06:44:55Z",
+      "source": "vllm-releases",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0"
     },
     "url:968c32634dc2a1cb83f007064d0bd309276c504696b107928b2bc3d51ba9601b": {
       "article_id": "openai-news-32315b15",

@@ -516,6 +516,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark"
     },
+    "url:2896758265cec81d95898858cf3558ac9cdd51e4e22038c8fc6ca0aa5193f521": {
+      "article_id": "openai-news-099eb72c",
+      "first_seen_at": "2026-10-06T20:22:28.789262Z",
+      "published_at": "2026-10-06T16:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/atlassian-partnership"
+    },
     "url:28a10813ff05ef0a0983ca4afb9e6ec450b38816dc483310e316be9fc5140c0d": {
       "article_id": "aws-machine-learning-8b5315b8",
       "first_seen_at": "2026-10-05T22:03:36.189687Z",
@@ -614,6 +621,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/reducing-medical-claims-review-time-with-ai-on-aws-the-exl-medical-idp-solution"
     },
+    "url:2ee55c894d54d6ef378cd7d1845a6619020ac025413730085d4544511aa3cd8a": {
+      "article_id": "google-deepmind-5c4437d5",
+      "first_seen_at": "2026-10-06T20:22:28.789262Z",
+      "published_at": "2026-10-06T19:57:04Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model"
+    },
     "url:2f00013902a29bc1e23dd248bb0d6a75ee356bf38627fa0f8884731fbff27534": {
       "article_id": "openai-news-41c91561",
       "first_seen_at": "2026-08-19T15:49:21.905842Z",
@@ -641,6 +655,13 @@
       "published_at": "2026-09-04T16:04:14Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration"
+    },
+    "url:30441d231d7d72e0d92f7c1f1175f1c9cfcd05b652ea48ed10164f4e41a82ae7": {
+      "article_id": "aws-machine-learning-368f52f8",
+      "first_seen_at": "2026-10-06T20:22:28.789262Z",
+      "published_at": "2026-10-06T15:45:42Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-voice-travel-concierge-with-amazon-bedrock-agentcore-managed-knowledge-base-and-nova-sonic"
     },
     "url:30a36306f538ac1af96f572883174082173478c732479a6c198f0eda11dd4fde": {
       "article_id": "github-ai-ml-f584c891",
@@ -1586,6 +1607,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/dali-rajic-chief-revenue-officer"
     },
+    "url:6f131bbed5e7925d040e498e9f355192a661ee34bb8a5418a070e852a4c72a41": {
+      "article_id": "mistral-ai-27631e8a",
+      "first_seen_at": "2026-10-06T20:22:28.789262Z",
+      "published_at": "2026-10-06T12:00:27Z",
+      "source": "mistral-ai",
+      "url": "https://mistral.ai/news/mistral-large-4"
+    },
     "url:6f1c4a7a7c68a392d91ba848ccd3f3a59d97452994ef6d356ecef2ce09e39142": {
       "article_id": "aws-machine-learning-e9fa0088",
       "first_seen_at": "2026-09-02T18:46:24.555427Z",
@@ -1966,6 +1994,13 @@
       "published_at": "2026-09-29T20:14:22Z",
       "source": "ollama-releases",
       "url": "https://github.com/ollama/ollama/releases/tag/v0.35.1"
+    },
+    "url:86ad3a433e68df89cb44fce0322e61a3bcfa4b65a04bc96c5a3e6a50c44f9dc2": {
+      "article_id": "aws-machine-learning-0640220b",
+      "first_seen_at": "2026-10-06T20:22:28.789262Z",
+      "published_at": "2026-10-06T15:47:02Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/manage-amazon-sagemaker-hyperpod-spaces-directly-from-sagemaker-studio"
     },
     "url:86d2176de98238d5ddb9673084584074f310cd71ea2f47b8326fb696fa5ccc1c": {
       "article_id": "aws-machine-learning-de6ba1c8",
@@ -2864,6 +2899,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/chatgpt-for-teens"
     },
+    "url:c4f8aa8005950198d923b7bcdcbf3d41a6058d02cd7c2338515e42cc91030b45": {
+      "article_id": "aws-machine-learning-0f356d96",
+      "first_seen_at": "2026-10-06T20:22:28.789262Z",
+      "published_at": "2026-10-06T19:19:15Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-a-context-aware-ai-assistant-on-agentcore-and-openclaw"
+    },
     "url:c5c96ab0697aa5bf9ed6068c81dfbca130cd3c544c4991300c8e8be3c27a4d42": {
       "article_id": "aws-machine-learning-0e84b7ba",
       "first_seen_at": "2026-09-17T19:05:12.502267Z",
@@ -3030,6 +3072,13 @@
       "published_at": "2026-09-02T18:21:20Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-an-aws-team-detects-dashboard-content-failures-at-scale-using-amazon-bedrock"
+    },
+    "url:ce977c433c98399ab51c8a1c0e93720c23ab3c1e80436f86a6767085beda91d9": {
+      "article_id": "aws-machine-learning-7e776e95",
+      "first_seen_at": "2026-10-06T20:22:28.789262Z",
+      "published_at": "2026-10-06T15:53:28Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/responsible-ai-governance-how-aws-positions-customers-to-align-with-iso-iec-420052025"
     },
     "url:d1829425ff1bd6fe6f80accb5f087bc4820cc24c3682db24266b665315289517": {
       "article_id": "aws-machine-learning-f4860c03",
@@ -3603,12 +3652,26 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-reactiv-automates-mobile-commerce-80-faster-with-amazon-bedrock-agentcore"
     },
+    "url:f56c96610a01b244677105c36d999b3b1f7611a076548205ac8eefd42c1503e1": {
+      "article_id": "aws-machine-learning-a2123122",
+      "first_seen_at": "2026-10-06T20:22:28.789262Z",
+      "published_at": "2026-10-06T15:50:23Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/best-practices-for-amazon-sagemaker-hyperpod-administration-and-governance"
+    },
     "url:f56fb1ee13437f3d1c1d8f00ac5022fe0f8999facb1f47e0532e714861148c87": {
       "article_id": "hugging-face-86aee86b",
       "first_seen_at": "2026-08-19T15:49:21.905842Z",
       "published_at": "2026-08-19T13:48:49Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/qad"
+    },
+    "url:f57eff9c23a4454b476bbb268bd95c2d23fd7e230b5d7db7db7e5bb00c25353b": {
+      "article_id": "openai-news-df880eb2",
+      "first_seen_at": "2026-10-06T20:22:28.789262Z",
+      "published_at": "2026-10-06T10:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/advancing-computer-use-with-ironclad"
     },
     "url:f6095a0e1ccbc10ecef4d670e60f5bafdc5ae220f419ae369d33ed4ae1d64bd8": {
       "article_id": "aws-machine-learning-8df70b2d",
@@ -3700,6 +3763,13 @@
       "published_at": "2026-10-01T15:01:43Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/allenai/olmocore3"
+    },
+    "url:f9e50d04dc76de5ab84338e31eaed2a5825c8781af89d9eee25b43b9cad6943e": {
+      "article_id": "langchain-releases-ba2836a1",
+      "first_seen_at": "2026-10-06T20:22:28.789262Z",
+      "published_at": "2026-10-06T15:47:08Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.7"
     },
     "url:fa2791fbc9af008fbec5e3ce56bf40bc113bb8071f7a73cfd61c5d71ead84cf1": {
       "article_id": "openai-news-3d5e7ded",

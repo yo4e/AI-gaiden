@@ -1037,6 +1037,13 @@
       "source": "vllm-releases",
       "url": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0"
     },
+    "url:45bf667b5a8961f21f313772ff8281c3b2031e7b92b315f19655cfe521bbd10a": {
+      "article_id": "microsoft-ai-607f702d",
+      "first_seen_at": "2026-10-06T10:26:01.658237Z",
+      "published_at": "2026-10-05T13:00:00Z",
+      "source": "microsoft-ai",
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/general/2026/10/05/sovereign-ai-accelerate-innovation-with-control-and-choice"
+    },
     "url:46660cb2ea4362f69cbd737e0a8565a577f057222260acb4673428a053564622": {
       "article_id": "hugging-face-3a6b1227",
       "first_seen_at": "2026-09-11T08:07:55.145306Z",
@@ -3185,6 +3192,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/simpledesign-protein-codesign"
     },
+    "url:d9303becb2aa56308df4baef5aca8081494414337071fb0d85f1a64ce1348df7": {
+      "article_id": "aws-machine-learning-ce92e26d",
+      "first_seen_at": "2026-10-06T10:26:01.658237Z",
+      "published_at": "2026-10-05T23:25:17Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-glm-5-3-on-amazon-bedrock"
+    },
     "url:d9524ab76177d5beaf9939ac752ba4ff34bad2c29295f021a9af357762a73ae0": {
       "article_id": "hugging-face-7a2a4737",
       "first_seen_at": "2026-08-18T15:49:35.191346Z",
@@ -3762,6 +3776,13 @@
       "published_at": "2026-08-27T03:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/expanding-our-presence-in-brazil"
+    },
+    "url:fe424883c3cacf664f5b2b38c48ff03e276a793b02e58aafe0d44ea5db932443": {
+      "article_id": "hugging-face-d1f8b966",
+      "first_seen_at": "2026-10-06T10:26:01.658237Z",
+      "published_at": "2026-10-06T06:44:39Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/tiiuae/falcon-emirati"
     },
     "url:ff082bc32dcf39bfd27812edc1e6795d89a33c6620e4fac168c5a51bfe3c1f63": {
       "article_id": "google-ai-3697c2f8",

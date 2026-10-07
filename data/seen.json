@@ -1,5 +1,12 @@
 {
   "items": {
+    "url:00427e47df5ef3064509e152a77372922244883355c7072ea1ab24de41848a25": {
+      "article_id": "openai-news-38a95e7a",
+      "first_seen_at": "2026-10-07T10:21:30.164111Z",
+      "published_at": "2026-10-06T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics"
+    },
     "url:00b756f2cca2320b1d11a38702c97b3b286a128efda93520625e8cbb21331a2f": {
       "article_id": "aws-machine-learning-37a759f5",
       "first_seen_at": "2026-09-16T18:56:14.102211Z",
@@ -2189,6 +2196,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/circles"
     },
+    "url:9855b0d96c10185bbf388a1e6db9fbd389aad75ec863da6015dd1cea41a15001": {
+      "article_id": "apple-ml-research-43df33d0",
+      "first_seen_at": "2026-10-07T10:21:30.164111Z",
+      "published_at": "2026-10-06T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/rised-multi-environment-selection"
+    },
     "url:98b909c8e6cd78c796a83775527e4ce7aa1fa16fbbb500b04b01901c8f78ed59": {
       "article_id": "aws-machine-learning-7db1ff6b",
       "first_seen_at": "2026-08-21T04:04:47.965899Z",
@@ -3484,6 +3498,13 @@
       "published_at": "2026-09-28T00:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/basis-tax-workbook-with-astra"
+    },
+    "url:ebb413cc5359756bf9234b81256f87104efa96c0b88df88826702769f053f0a0": {
+      "article_id": "openai-news-0e20b88d",
+      "first_seen_at": "2026-10-07T10:21:30.164111Z",
+      "published_at": "2026-10-06T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/jump-trading"
     },
     "url:ebc5821a44c45c7a5386a7b98a285e9f1b977894a7f66b75b993a724c0e9fd04": {
       "article_id": "google-deepmind-656bc718",

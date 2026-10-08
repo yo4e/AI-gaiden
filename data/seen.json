@@ -362,6 +362,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-nops-shipped-finops-agents-75-faster-with-amazon-bedrock-agentcore"
     },
+    "url:16b7810afb00bdc03cf91abd83f9b804b576e5ff42133c9ae8d1a12944f61774": {
+      "article_id": "hugging-face-7ae5e625",
+      "first_seen_at": "2026-10-08T20:43:18.129330Z",
+      "published_at": "2026-10-07T13:21:03Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/tiiuae/falcon-asr"
+    },
     "url:17177c100c9150295f9a783a1f42c5ab7f67d636429664b84dc83f06cd3f4a18": {
       "article_id": "hugging-face-8019eaa6",
       "first_seen_at": "2026-08-26T16:36:07.201345Z",
@@ -1024,6 +1031,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.7.1"
     },
+    "url:40a44871ce5df89b9d11d192d53399e6adb2a7fc519f0c9648d325fd7e7a7e10": {
+      "article_id": "langchain-releases-f8726877",
+      "first_seen_at": "2026-10-08T20:43:18.129330Z",
+      "published_at": "2026-10-08T16:07:53Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.7.0"
+    },
     "url:41131ac1902ed4f3ac246dc93adac766ba983c9189403431163efadfa590f4b2": {
       "article_id": "apple-ml-research-fc8969f2",
       "first_seen_at": "2026-09-17T08:43:50.565657Z",
@@ -1321,6 +1335,13 @@
       "published_at": "2026-10-02T04:01:31Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata"
+    },
+    "url:575f2b8d33878f21ab301c9aaec61383a00be6912d89fa55822346091922b1c9": {
+      "article_id": "aws-machine-learning-45f0de1c",
+      "first_seen_at": "2026-10-08T20:43:18.129330Z",
+      "published_at": "2026-10-08T16:20:04Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod"
     },
     "url:5765adb99a8997fc31c10ad094a57db1f45352d5d78892cd0f95dfadca4fa579": {
       "article_id": "aws-machine-learning-d66deed5",
@@ -1865,6 +1886,13 @@
       "source": "llama-cpp-releases",
       "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.6.0"
     },
+    "url:7d118aeafab68e400dcb39a3e894b997ef6a523448c11849a946fbf59327779b": {
+      "article_id": "langchain-releases-38a6c210",
+      "first_seen_at": "2026-10-08T20:43:18.129330Z",
+      "published_at": "2026-10-08T20:11:32Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.9"
+    },
     "url:7d128752a2cf63b44ec1ea9348a23b27b029e1b62fd126d7e4b91340997ac54b": {
       "article_id": "github-ai-ml-b21dd1fa",
       "first_seen_at": "2026-09-25T19:17:44.183699Z",
@@ -1962,6 +1990,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/building-a-restaurant-telephony-ai-host-with-amazon-connect"
     },
+    "url:82c764b2e29df4c958f92e02ccb0fb0eaa83599635dcb63d078d97f844f5206e": {
+      "article_id": "mlcommons-8cd8e85c",
+      "first_seen_at": "2026-10-08T20:43:18.129330Z",
+      "published_at": "2026-10-08T18:05:44Z",
+      "source": "mlcommons",
+      "url": "https://mlcommons.org/2026/10/ai-risk-for-business-guide"
+    },
     "url:82d69157ca4267f6fd07f088d2bdc4359f01f46324aca746885e864bd0ed009c": {
       "article_id": "aws-machine-learning-177f7c69",
       "first_seen_at": "2026-09-29T09:55:12.194166Z",
@@ -2030,6 +2065,13 @@
       "published_at": "2026-08-04T16:02:21Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/automated-web-insight-extraction-with-amazon-bedrock-agentcore"
+    },
+    "url:855092fba1df7e8a668bec1b409ac85f8b110a1f64384b826a3381f6d67156e4": {
+      "article_id": "openai-news-9833cfa4",
+      "first_seen_at": "2026-10-08T20:43:18.129330Z",
+      "published_at": "2026-10-08T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/pollo-ai"
     },
     "url:859cdcef3df01ae8d929e50b9f9da9f8126fe435aacd0a43ca0bd2b8ba0b3f21": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
@@ -2550,6 +2592,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.2"
     },
+    "url:a9f660862b14122b754b81c8b73ed12b4ae45c1ac84de6206c010c00eb55daad": {
+      "article_id": "apple-ml-research-d497893e",
+      "first_seen_at": "2026-10-08T20:43:18.129330Z",
+      "published_at": "2026-10-08T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/normalizing-trajectory-models"
+    },
     "url:aa21db80f8b7b7664c23f0b5de6fc014a64920e8fdb45e2877008c81969f17ab": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
       "published_at": "2026-08-04T13:58:29Z",
@@ -2562,6 +2611,13 @@
       "published_at": "2026-09-17T22:24:57Z",
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.1a2"
+    },
+    "url:aa69c76b276e52af31d3d754674d0fab328ff6d0b755232eb954e469fe5b2918": {
+      "article_id": "aws-machine-learning-ade7021d",
+      "first_seen_at": "2026-10-08T20:43:18.129330Z",
+      "published_at": "2026-10-08T18:33:29Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments"
     },
     "url:aacb8ca8a4a96bc0cfecf6685ab1bf86aa3d3c1f13feb6fac21b8b58211ab9da": {
       "article_id": "google-ai-ff00c755",
@@ -3039,6 +3095,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/improving-hcls-ai-reasoning-with-open-source-agent-skills"
     },
+    "url:c6c16ae06fb845935c17a345def59e79cdaecdfd61900fb526ba694f98ee421e": {
+      "article_id": "langchain-releases-f40e3675",
+      "first_seen_at": "2026-10-08T20:43:18.129330Z",
+      "published_at": "2026-10-08T15:41:22Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.8"
+    },
     "url:c74b7537edb199606977ba898afcaffcd9652a94143f417359b18550a5392879": {
       "article_id": "langchain-releases-b381fce3",
       "first_seen_at": "2026-09-17T19:05:12.502267Z",
@@ -3360,6 +3423,13 @@
       "source": "google-ai",
       "url": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools"
     },
+    "url:d9e485b409fe8517ac6e3a5ba39a5770caf1a72ddba21f80f7ddf66c5e1760f2": {
+      "article_id": "openai-news-9909d684",
+      "first_seen_at": "2026-10-08T20:43:18.129330Z",
+      "published_at": "2026-10-08T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations"
+    },
     "url:daa797ee943974350fccaa4f3fa1205a9777e20bb6bac528a7cbf14d38e472e1": {
       "article_id": "github-ai-ml-a5a3b35e",
       "first_seen_at": "2026-10-07T20:39:53.894203Z",
@@ -3387,6 +3457,13 @@
       "published_at": "2026-08-05T18:09:03Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-mobileye-transformed-support-operations-using-amazon-bedrock-agentcore"
+    },
+    "url:db7b9e6fe248e3146f87743abb423de6e3dc46759771b422f1331a63b0725822": {
+      "article_id": "openai-news-0b47eba8",
+      "first_seen_at": "2026-10-08T20:43:18.129330Z",
+      "published_at": "2026-10-08T16:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/oracle"
     },
     "url:db9c7c018a25e74f7db897dcd3ac755b6a85dbf6fb2e11be198b241ed42b48fc": {
       "article_id": "aws-machine-learning-4b795064",

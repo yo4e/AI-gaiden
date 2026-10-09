@@ -1114,6 +1114,13 @@
       "source": "microsoft-ai",
       "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/general/2026/10/05/sovereign-ai-accelerate-innovation-with-control-and-choice"
     },
+    "url:45d6a2b79938283a07ca47b39fd2409f4bc34d8465757047a15ff56c4f0b15f8": {
+      "article_id": "openai-news-fded3683",
+      "first_seen_at": "2026-10-09T10:40:24.529975Z",
+      "published_at": "2026-10-08T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/legalon-halves-codex-costs"
+    },
     "url:46660cb2ea4362f69cbd737e0a8565a577f057222260acb4673428a053564622": {
       "article_id": "hugging-face-3a6b1227",
       "first_seen_at": "2026-09-11T08:07:55.145306Z",
@@ -1335,6 +1342,13 @@
       "published_at": "2026-10-02T04:01:31Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata"
+    },
+    "url:570fe3204556675e8dd927e7dbd15e7142796fd7ecb68cb1f56d47b91d75ac01": {
+      "article_id": "openai-news-7e06e6fe",
+      "first_seen_at": "2026-10-09T10:40:24.529975Z",
+      "published_at": "2026-10-09T07:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/sophos"
     },
     "url:575f2b8d33878f21ab301c9aaec61383a00be6912d89fa55822346091922b1c9": {
       "article_id": "aws-machine-learning-45f0de1c",
@@ -2267,6 +2281,20 @@
       "published_at": "2026-08-18T18:56:14Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to-transact-safely-and-autonomously-at-scale"
+    },
+    "url:9503050a530eab40c78f684c757f2618c1e700461a6c0cfbefe5276d9cfbe49b": {
+      "article_id": "langchain-releases-3184e491",
+      "first_seen_at": "2026-10-09T10:40:24.529975Z",
+      "published_at": "2026-10-08T22:14:22Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.4"
+    },
+    "url:95b91ef337a82fbc2d2056c4727c36c24d55471d1d0757a614e12b120f8cb01b": {
+      "article_id": "ollama-releases-32f67d80",
+      "first_seen_at": "2026-10-09T10:40:24.529975Z",
+      "published_at": "2026-10-08T16:53:47Z",
+      "source": "ollama-releases",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.2"
     },
     "url:95f314d9972fcd384b1f5504b60da9ec16098cd7e2786cba33337dfe9c55d3d4": {
       "article_id": "aws-machine-learning-bae576d1",
@@ -4070,6 +4098,13 @@
       "published_at": "2026-08-10T16:34:37Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/run-interactive-ides-on-amazon-eks-with-sagemaker-ai-to-power-up-your-ai-workflows"
+    },
+    "url:ffd2818196374b7e8d985c5ba0d85a7cf6f6fd71833912309c34424b62f62e05": {
+      "article_id": "hugging-face-3e896b46",
+      "first_seen_at": "2026-10-09T10:40:24.529975Z",
+      "published_at": "2026-10-08T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/building-with-ml-intern"
     },
     "url:fffbcba03b0b217e48932bf108f9544d9d15dfe90cc71dd430d68dae9df9e2d9": {
       "article_id": "hugging-face-033410ff",

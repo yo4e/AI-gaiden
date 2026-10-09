@@ -996,6 +996,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/connect-amazon-bedrock-agentcore-to-cross-account-knowledge-bases"
     },
+    "url:3c8f1a5658927de75dccb850bef57d16f3b84d983eb57b8d87f2e87a6748dd4a": {
+      "article_id": "aws-machine-learning-ec9b6e98",
+      "first_seen_at": "2026-10-09T20:08:49.252081Z",
+      "published_at": "2026-10-09T15:35:02Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock"
+    },
     "url:3d196224ab27a2df369cbcf0994d8b85125e1e44f774a26b897579f4f210801c": {
       "article_id": "openai-news-d9113ca7",
       "first_seen_at": "2026-08-10T16:12:13.389844Z",
@@ -2378,6 +2385,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/ringcentral"
     },
+    "url:9bf93d58cc35db9987f8bca45379eba94bc31d29b6afb6124531fcd7a11cbc41": {
+      "article_id": "openai-news-293a0bfd",
+      "first_seen_at": "2026-10-09T20:08:49.252081Z",
+      "published_at": "2026-10-09T07:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/asana-browser-agent"
+    },
     "url:9c179a0af67d39a7b30ee5b96d2a545b4f735b192f9bf86803afdd3d217082eb": {
       "article_id": "aws-machine-learning-05f387c3",
       "first_seen_at": "2026-08-29T10:10:04.614897Z",
@@ -3562,6 +3576,13 @@
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform"
     },
+    "url:e05551817b225bef5e8ca8d6225aa3fed9bb03ffd013a0306b4527b10407beb2": {
+      "article_id": "hugging-face-7d790371",
+      "first_seen_at": "2026-10-09T20:08:49.252081Z",
+      "published_at": "2026-10-09T15:20:29Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/allenai/impactful-scheduling"
+    },
     "url:e063daae6225e156953956818763e28a3d67a709a94829ba10d52a2df2fa945f": {
       "article_id": "openai-news-fa2d12eb",
       "first_seen_at": "2026-08-12T16:12:48.060680Z",
@@ -3840,6 +3861,13 @@
       "published_at": "2026-09-01T13:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/path-to-astra"
+    },
+    "url:f269df2714354eb99f82cd469f5f495f6e6954a4ced1f81cb325eae7ac180fad": {
+      "article_id": "aws-machine-learning-9e7ad631",
+      "first_seen_at": "2026-10-09T20:08:49.252081Z",
+      "published_at": "2026-10-09T15:38:39Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026"
     },
     "url:f2ff7f76056120414cf01f1bb6ef7b8e983d9d91ccfa0c5266573b74a0f9d93f": {
       "article_id": "openai-news-63fa4f2e",

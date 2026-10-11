@@ -3535,6 +3535,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/scaling-cloud-migrations-with-agentic-ai-on-amazon-bedrock-agentcore"
     },
+    "url:de32d3b9322608aa8c64b95de984eaf59e404a66175caa536feb9a8e10426b36": {
+      "article_id": "ollama-releases-51e19027",
+      "first_seen_at": "2026-10-11T10:05:45.878687Z",
+      "published_at": "2026-10-11T01:39:04Z",
+      "source": "ollama-releases",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.3"
+    },
     "url:dec620cb7225d2434a9b02e6e0197b1952a6412dcad780af2099d9910f2c9ee8": {
       "article_id": "openai-news-638b7288",
       "first_seen_at": "2026-09-29T20:02:41.127327Z",

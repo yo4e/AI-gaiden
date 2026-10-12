@@ -1003,6 +1003,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock"
     },
+    "url:3c96e8812836b2c3959a6a92cae28001cc1f34857f2d5f8bafa6a8caaea71437": {
+      "article_id": "langchain-releases-a70e9b6d",
+      "first_seen_at": "2026-10-12T22:31:15.104803Z",
+      "published_at": "2026-10-12T19:28:41Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.5"
+    },
     "url:3d196224ab27a2df369cbcf0994d8b85125e1e44f774a26b897579f4f210801c": {
       "article_id": "openai-news-d9113ca7",
       "first_seen_at": "2026-08-10T16:12:13.389844Z",
@@ -1106,6 +1113,13 @@
       "published_at": "2026-09-02T15:40:00Z",
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program"
+    },
+    "url:446280555baf13989bca7be53edd415fb04020f248034c3b3a56b08be8b4ac05": {
+      "article_id": "langchain-releases-1c3278d1",
+      "first_seen_at": "2026-10-12T22:31:15.104803Z",
+      "published_at": "2026-10-12T14:40:14Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.6"
     },
     "url:448701fe99745f6407d1f9b23e42fccd2eb4024678bc0261d1b932b6823732fb": {
       "article_id": "vllm-releases-cc278a70",
@@ -1307,6 +1321,13 @@
       "published_at": "2026-08-25T07:05:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence"
+    },
+    "url:52431ca79a409b52659fbc257b3fe0cbd3c4cb5ff22254096727c096cc4e8df2": {
+      "article_id": "aws-machine-learning-80b22a97",
+      "first_seen_at": "2026-10-12T22:31:15.104803Z",
+      "published_at": "2026-10-12T15:51:46Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/deploy-decision-models-with-llama-cpp-on-amazon-sagemaker-ai"
     },
     "url:52b80abd4e046c041ffbe2a48399ded2b227e51686189386944c8dd9b0045fd6": {
       "article_id": "openai-news-336cbdca",
@@ -1670,6 +1691,13 @@
       "published_at": "2026-09-22T00:00:00Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/omlx"
+    },
+    "url:6b4a7d58b32909d7acd0e5fbe8b34c5548de72806c25d8cab9e1e333392e433f": {
+      "article_id": "aws-machine-learning-b35754b1",
+      "first_seen_at": "2026-10-12T22:31:15.104803Z",
+      "published_at": "2026-10-12T17:52:22Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/accessing-openai-gpt-models-on-amazon-bedrock-with-global-cross-region-inference-in-thailand-malaysia-singapore-indonesia-and-taiwan"
     },
     "url:6bb3f934048965cc8fe40ff7286bc1d73fdff5cc902619e78dc98b0f853d7216": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
@@ -2226,6 +2254,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/building-agentic-workflows-with-sagemaker-ai-and-bedrock-agentcore"
     },
+    "url:8fc32d90ac57504370f365589dc1d3c010e9a00f6aa23a33eafbeeca21473ed7": {
+      "article_id": "apple-ml-research-90f8c923",
+      "first_seen_at": "2026-10-12T22:31:15.104803Z",
+      "published_at": "2026-10-12T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/llm-translation-quality-annotation"
+    },
     "url:8fe4474fdbb9c4c46a22f878515427114b676069cfc965f6786182578d7743d9": {
       "article_id": "openai-news-2e12deb4",
       "first_seen_at": "2026-09-21T20:00:41.036980Z",
@@ -2253,6 +2288,13 @@
       "published_at": "2026-09-10T21:37:49Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/reduce-inference-cold-starts-on-amazon-sagemaker-hyperpod-with-model-caching"
+    },
+    "url:91597643c193a9c7e9c907164a09265d1b6cd5df8a0598ba02dae9e04ba2e194": {
+      "article_id": "github-ai-ml-fd3d7684",
+      "first_seen_at": "2026-10-12T22:31:15.104803Z",
+      "published_at": "2026-10-12T17:43:59Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase"
     },
     "url:91dad0068ec24e5bcea7adc0e407700bb8999e1b3de1e0bfc9b0e6a4ed61b3fe": {
       "article_id": "hugging-face-e2532b10",
@@ -2689,6 +2731,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/gpt-5-6-in-kiro"
     },
+    "url:ad1bab0fb2e7ec83f38d5d1bd1b560b7b20c56489085b005c21dda48a478b003": {
+      "article_id": "langchain-releases-17ca7d8f",
+      "first_seen_at": "2026-10-12T22:31:15.104803Z",
+      "published_at": "2026-10-12T14:33:09Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.7.1"
+    },
     "url:ad3571e52966313e0228002afadb0d88b8d4fcda755aa23f771f10e7b6be7680": {
       "article_id": "aws-machine-learning-77b59b31",
       "first_seen_at": "2026-09-28T21:16:07.869479Z",
@@ -2730,6 +2779,13 @@
       "published_at": "2026-08-12T13:46:28Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-oneadvanced-deployed-over-50-ai-agents-on-uk-sovereign-aws"
+    },
+    "url:af41e11c1664671d783ba3ef7985fe8e91b8b0cabdcd1b496bc6c82c633b1cad": {
+      "article_id": "langchain-releases-900751f2",
+      "first_seen_at": "2026-10-12T22:31:15.104803Z",
+      "published_at": "2026-10-12T14:14:03Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.10"
     },
     "url:afa8c33f8eb7996a39419deadd5b14c638139f7bae71a907c422a5531afc3651": {
       "article_id": "hugging-face-94017413",
@@ -2800,6 +2856,13 @@
       "published_at": "2026-09-23T17:56:03Z",
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.4"
+    },
+    "url:b241a2d905cc81c183f1b6b1affb4ded72cd28d9c93e8c4c8df890975c8724f4": {
+      "article_id": "aws-machine-learning-8094eaed",
+      "first_seen_at": "2026-10-12T22:31:15.104803Z",
+      "published_at": "2026-10-12T15:50:14Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/run-multi-node-inference-workloads-using-ray-llm-deep-learning-containers"
     },
     "url:b26ec23879c13b42dd868f69597824477ae71fe9b0285eb90563f0dfc343459e": {
       "article_id": "aws-machine-learning-76d3f544",

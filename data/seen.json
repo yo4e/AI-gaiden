@@ -230,6 +230,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai"
     },
+    "url:0e6665874199cc3c1c757e3cf1ff0b30762b6e52527742940cd1a2bc134b8909": {
+      "article_id": "aws-machine-learning-cdee9645",
+      "first_seen_at": "2026-10-13T20:43:12.907993Z",
+      "published_at": "2026-10-13T16:03:31Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock"
+    },
     "url:0e6716dcfbe57d916445691b834b44a2311a461f4dc53018b6d9308bf8e8d8c3": {
       "article_id": "microsoft-ai-49d94899",
       "first_seen_at": "2026-09-03T18:43:24.314666Z",
@@ -403,6 +410,13 @@
       "published_at": "2026-08-18T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/grpo-beyond-english"
+    },
+    "url:1dc99b611b2499a3b88164db8987de9abe06ce048ee9d7f334432d8aa41fb6b9": {
+      "article_id": "google-deepmind-240c24e7",
+      "first_seen_at": "2026-10-13T20:43:12.907993Z",
+      "published_at": "2026-10-13T19:43:07Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely"
     },
     "url:1dcea8b0f8acab144d9449d9a882270327a9c7315cef0dad2195f7c1e05184af": {
       "article_id": "openai-news-b8cf547a",
@@ -934,6 +948,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-a-serverless-pii-redaction-pipeline-with-amazon-bedrock-data-automation"
     },
+    "url:3a474d73c07650bcabb4521a937b5c9483554198dd26c3ede05e140dec801109": {
+      "article_id": "apple-ml-research-9bbe7619",
+      "first_seen_at": "2026-10-13T20:43:12.907993Z",
+      "published_at": "2026-10-13T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/mix-dont-tune"
+    },
     "url:3a58c7f2bd5bba7015d814adea379a55390fae49a148cd8422ed28c0cc3eba53": {
       "article_id": "mlcommons-aebde0ab",
       "first_seen_at": "2026-09-15T19:03:12.107388Z",
@@ -1260,6 +1281,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/making-amazon-quick-enterprise-ready-automated-auditable-cross-account-resource-promotion"
     },
+    "url:4e31b829ae6885914a657352bbac8811fbc1f8727398eacb2a4f78ce30e284bb": {
+      "article_id": "google-deepmind-409d7088",
+      "first_seen_at": "2026-10-13T20:43:12.907993Z",
+      "published_at": "2026-10-13T16:01:52Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-argon"
+    },
     "url:4e324623ab7ca6fee0e142410ae1fff634372bb9b83078fd1d25f73483da7134": {
       "article_id": "openai-news-b1197777",
       "first_seen_at": "2026-10-07T20:39:53.894203Z",
@@ -1357,12 +1385,26 @@
       "source": "openai-news",
       "url": "https://openai.com/index/two-years-of-openai-academy"
     },
+    "url:532983178914e7154ea96fb14552d2a1dd60c506a976febd1a585c4ef13d6800": {
+      "article_id": "github-ai-ml-c08f237f",
+      "first_seen_at": "2026-10-13T20:43:12.907993Z",
+      "published_at": "2026-10-13T17:56:33Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise"
+    },
     "url:5367cc95a8fd98172eb15540985f3472c41b6f393d6d65c9bf889b4f9238cbc1": {
       "article_id": "openai-news-681282c2",
       "first_seen_at": "2026-08-10T22:01:43.331237Z",
       "published_at": "2026-08-10T17:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/building-an-ai-native-finance-function"
+    },
+    "url:53911f98c21c784fce1ad32ff03581a81f8dabebaf6d23b86827f6c51a0cda80": {
+      "article_id": "hugging-face-228ef0fc",
+      "first_seen_at": "2026-10-13T20:43:12.907993Z",
+      "published_at": "2026-10-13T17:05:48Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b"
     },
     "url:5489804c76847f43095a050311a62ba5b583777f176dfe43eb7b907e3342f417": {
       "article_id": "langchain-releases-04bdbd87",
@@ -1984,6 +2026,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/write-your-first-prompt-with-the-github-copilot-app"
     },
+    "url:7f176d6cec1f7ea9f202722d1bdf7989d73d2c394597d02d638633cdc1824a42": {
+      "article_id": "aws-machine-learning-229ee4a5",
+      "first_seen_at": "2026-10-13T20:43:12.907993Z",
+      "published_at": "2026-10-13T15:52:20Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-long-horizon-agents-with-grok-4-7-on-amazon-bedrock"
+    },
     "url:7f82d995c515e5ba429e7e06d184bac39c4f16f7fff73a80b082fdc2812fc58f": {
       "article_id": "openai-news-8c165d49",
       "first_seen_at": "2026-09-14T19:52:22.108290Z",
@@ -2261,6 +2310,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/implement-vector-prompt-document-classification-using-amazon-bedrock"
     },
+    "url:8d45898e533e591d4241f4c1821bbb7b4d6f05ca764b796c7fbe29eb68dd7bc4": {
+      "article_id": "openai-news-144aea81",
+      "first_seen_at": "2026-10-13T20:43:12.907993Z",
+      "published_at": "2026-10-13T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/higgsfield-longer-videos-voice"
+    },
     "url:8e9d4a60984ee94c46052a2065e96ea12b8c79af46543e156599572a446f6d94": {
       "article_id": "aws-machine-learning-eb04407d",
       "first_seen_at": "2026-08-14T16:08:42.817998Z",
@@ -2288,6 +2344,13 @@
       "published_at": "2026-09-30T10:30:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign"
+    },
+    "url:905be18b05885f16fcf21b253fb6b4b3d3f59b1414e1841e692388cf48104a5d": {
+      "article_id": "aws-machine-learning-a066f03a",
+      "first_seen_at": "2026-10-13T20:43:12.907993Z",
+      "published_at": "2026-10-13T15:54:49Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-shipstation-global-built-an-ai-it-help-desk-on-amazon-bedrock-agentcore"
     },
     "url:90ba20dc32b53edf52ab24a1495bdf5c2efdd55baaf375e673bcc92bdc711912": {
       "article_id": "google-deepmind-5ed99094",
@@ -3011,6 +3074,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/agentic-resource-discovery-ard-an-open-specification-for-agent-discovery"
     },
+    "url:bad119951c4635420dfedaf1c9e29fc1cbe03213012db2038b3b2a53da42f431": {
+      "article_id": "aws-machine-learning-870a476e",
+      "first_seen_at": "2026-10-13T20:43:12.907993Z",
+      "published_at": "2026-10-13T20:10:33Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-agents-that-transact-with-anchor-browser-and-agentcore-payments"
+    },
     "url:baf07daff59f271b90795fd50023fb349ec75ddad4cd8dc3dc0716042648ecd3": {
       "article_id": "openai-news-c287e2b0",
       "first_seen_at": "2026-08-19T04:02:41.847930Z",
@@ -3130,6 +3200,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/deploying-anthropic-claude-apps-gateway-for-aws-for-enterprise-workloads"
     },
+    "url:c15fbff6c860fb47841e60a6bc80e272e48cff10de78e1718cbfb3e6c48c2615": {
+      "article_id": "aws-machine-learning-1ea16180",
+      "first_seen_at": "2026-10-13T20:43:12.907993Z",
+      "published_at": "2026-10-13T17:17:25Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements"
+    },
     "url:c24e45e869c7b353ed209f04ffb04c9eff75167c9d6d4abbb5320d4327573b61": {
       "article_id": "github-ai-ml-7010c55d",
       "first_seen_at": "2026-09-03T18:43:24.314666Z",
@@ -3234,6 +3311,13 @@
       "published_at": "2026-08-07T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/diffusion-autoregressive-performance"
+    },
+    "url:c8448cf80bf381238faa4ff27f4182a2e37d2fc22b53ba0e544c682341091eda": {
+      "article_id": "mlcommons-df4358df",
+      "first_seen_at": "2026-10-13T20:43:12.907993Z",
+      "published_at": "2026-10-13T14:25:00Z",
+      "source": "mlcommons",
+      "url": "https://mlcommons.org/2026/10/open-submissions-endpoints-v1-0"
     },
     "url:c87efd876aae4ae7c6acc1d475e2b83c9d8fc57abdb7c37d24f6b4673cfcfffd": {
       "article_id": "aws-machine-learning-11eae6a3",
@@ -3534,6 +3618,13 @@
       "published_at": "2026-08-18T00:00:00Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/multi-vector-encoder"
+    },
+    "url:d96a2391b623b2cb26cccc9034a5b5415f5ab7d9111c82be0f5983c8615db4d0": {
+      "article_id": "google-deepmind-ee83f796",
+      "first_seen_at": "2026-10-13T20:43:12.907993Z",
+      "published_at": "2026-10-13T16:01:58Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics"
     },
     "url:d96b4129d44ca7f6a2f5011273cddcf5eaf2d08ba9d94228da4952ec404c0d84": {
       "article_id": "google-ai-8ffdf7b0",
@@ -3841,6 +3932,13 @@
       "published_at": "2026-08-25T19:00:09Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/agentic-observability-with-amazon-opensearch-service-mcp-apps"
+    },
+    "url:ed1be8ea5f53c7373a9c44e9eac0273d1adbb7107c6453b9da7b6d9e6a52dfb0": {
+      "article_id": "google-ai-376d61b1",
+      "first_seen_at": "2026-10-13T20:43:12.907993Z",
+      "published_at": "2026-10-13T16:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon"
     },
     "url:ee4dc087c20018324226a16e2a13651b155ce78c88fcc91e4606b45fe6d0efda": {
       "article_id": "mistral-ai-9ed53d22",

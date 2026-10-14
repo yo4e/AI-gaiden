@@ -684,6 +684,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths"
     },
+    "url:2fbafa8be8d3a6c95283bc9c273c30f402663716e16457fb1e8357c4cd024061": {
+      "article_id": "ollama-releases-4a143fb4",
+      "first_seen_at": "2026-10-14T08:48:33.299506Z",
+      "published_at": "2026-10-12T19:00:12Z",
+      "source": "ollama-releases",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.4"
+    },
     "url:2fc54b690d7b20a2e14328388fc3694e3eecf9d62246b7618620635188f7c454": {
       "article_id": "openai-news-9d1967d2",
       "first_seen_at": "2026-09-29T09:55:12.194166Z",
@@ -3010,6 +3017,13 @@
       "published_at": "2026-09-25T12:57:38Z",
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.6.3"
+    },
+    "url:b76b11a1199f73b7027f051c73b169df83c2a00e9a8c2e410a485803d662c4b8": {
+      "article_id": "google-deepmind-68e6d36a",
+      "first_seen_at": "2026-10-14T08:48:33.299506Z",
+      "published_at": "2026-10-14T02:00:14Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi"
     },
     "url:b7b8cdbba070bf33b22ff1417a4f762a4f7f9a6c653bf85fad3f065e9c4b77f7": {
       "article_id": "aws-machine-learning-88f5776f",

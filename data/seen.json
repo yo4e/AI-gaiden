@@ -321,6 +321,13 @@
       "source": "microsoft-ai",
       "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/08/04/accelerating-frontier-transformation-enrich-employee-experience"
     },
+    "url:11a03795fbf5afda58caa475bce0241b34dccdd90176dc064bb9db4a9e572ffe": {
+      "article_id": "langchain-releases-fb1729e0",
+      "first_seen_at": "2026-10-15T19:12:51.300814Z",
+      "published_at": "2026-10-15T18:32:35Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.11"
+    },
     "url:124856d6ff517a374771bf693f2024d7b169a9a9f4a7d25e69faa433d3df9936": {
       "article_id": "aws-machine-learning-3f5710b5",
       "first_seen_at": "2026-08-27T14:17:35.478713Z",
@@ -873,6 +880,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/rubric-based-alignment"
     },
+    "url:370d8453b070a7bffccc481b1ad8507eb64ebfc9e3d43f800d25d724a2c186ac": {
+      "article_id": "mistral-ai-fde85fc6",
+      "first_seen_at": "2026-10-15T19:12:51.300814Z",
+      "published_at": "2026-10-15T12:00:00Z",
+      "source": "mistral-ai",
+      "url": "https://mistral.ai/news/timestral"
+    },
     "url:371498512643a2e7ba275515cb39939bd3d65248e75501ca2c4da593c3442f9f": {
       "article_id": "apple-ml-research-fad09db2",
       "first_seen_at": "2026-09-11T18:37:35.354590Z",
@@ -940,6 +954,13 @@
       "published_at": "2026-07-28T13:00:00Z",
       "source": "google-ai",
       "url": "https://blog.google/products-and-platforms/products/search/ai-mode-real-world-tips"
+    },
+    "url:39052ad94a8a76cc68a2cb5d2b6325203b5875584233fbb5d6de6b8d63fe42e3": {
+      "article_id": "hugging-face-88a6b132",
+      "first_seen_at": "2026-10-15T19:12:51.300814Z",
+      "published_at": "2026-10-15T09:08:45Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes"
     },
     "url:3911ae4f80259ae6509bd10c2f91b0a59d4638da1199977399af51ef046e9bc8": {
       "article_id": "apple-ml-research-e4c42712",
@@ -1018,6 +1039,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out"
     },
+    "url:3b88e631408680364ea9a152f6e9efd2ecc78ea8cf4125966179efcad826634d": {
+      "article_id": "google-deepmind-08e5cd11",
+      "first_seen_at": "2026-10-15T19:12:51.300814Z",
+      "published_at": "2026-10-15T16:08:03Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery"
+    },
     "url:3b8b975a4a1492fdff3560d4ac07ada705bf84610c19d8ccb0e6f526f07d6361": {
       "article_id": "aws-machine-learning-ebd754ff",
       "first_seen_at": "2026-08-19T04:02:41.847930Z",
@@ -1065,6 +1093,13 @@
       "published_at": "2026-10-12T19:28:41Z",
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.5"
+    },
+    "url:3cdc2bfbf99ead073c08a4726292dc6dcc956fb0d29e224d199e8d3c883efd54": {
+      "article_id": "mlcommons-e70d8e68",
+      "first_seen_at": "2026-10-15T19:12:51.300814Z",
+      "published_at": "2026-10-15T15:41:59Z",
+      "source": "mlcommons",
+      "url": "https://mlcommons.org/2026/10/nsf-stride-ai-efficiency-challenge"
     },
     "url:3d196224ab27a2df369cbcf0994d8b85125e1e44f774a26b897579f4f210801c": {
       "article_id": "openai-news-d9113ca7",
@@ -2485,6 +2520,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to-transact-safely-and-autonomously-at-scale"
     },
+    "url:94ee28b93f9d2d830319b5f76c0aa72745ffecd9af8552d923f3dc0ab202dce3": {
+      "article_id": "openai-news-54a909d5",
+      "first_seen_at": "2026-10-15T19:12:51.300814Z",
+      "published_at": "2026-10-14T07:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/block-ai-powered-security"
+    },
     "url:9503050a530eab40c78f684c757f2618c1e700461a6c0cfbefe5276d9cfbe49b": {
       "article_id": "langchain-releases-3184e491",
       "first_seen_at": "2026-10-09T10:40:24.529975Z",
@@ -2781,6 +2823,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/determining-playoff-clinching-scenarios-in-the-nhl-using-constraint-programming"
     },
+    "url:a60f4a701f887ae8f46b94e06646a5fb82b2851c561d6cf99f41823c6f66011d": {
+      "article_id": "openai-news-5b88b0cd",
+      "first_seen_at": "2026-10-15T19:12:51.300814Z",
+      "published_at": "2026-10-15T13:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions"
+    },
     "url:a6c105c432ecc07f666d5ab8a878cea86cba004c8964d96e5901d795dc2c039c": {
       "article_id": "aws-machine-learning-4ce4369b",
       "first_seen_at": "2026-08-22T03:59:35.106781Z",
@@ -2822,6 +2871,13 @@
       "published_at": "2026-09-09T16:00:00Z",
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film"
+    },
+    "url:a80ac8068cf5aba129cce427a0c39c85407534c6c1637e95a52f2e6d9a18b64d": {
+      "article_id": "apple-ml-research-0ec995d7",
+      "first_seen_at": "2026-10-15T19:12:51.300814Z",
+      "published_at": "2026-10-15T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/mlx-distributed-inference"
     },
     "url:a8a255e92e884ae99aa964a1616db35c42aa05ef6e66f6c2ebe5716fb51b13e4": {
       "article_id": "langchain-releases-2ca2a18e",
@@ -3717,6 +3773,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/multi-vector-encoder"
     },
+    "url:d956efead7a56cece310fb11da42ca4198a57cb3323b511e2ee1a26e2217f06e": {
+      "article_id": "mlcommons-f68899aa",
+      "first_seen_at": "2026-10-15T19:12:51.300814Z",
+      "published_at": "2026-10-15T15:00:00Z",
+      "source": "mlcommons",
+      "url": "https://mlcommons.org/2026/10/mlperf-endpoints-matters-to-buyers"
+    },
     "url:d96a2391b623b2cb26cccc9034a5b5415f5ab7d9111c82be0f5983c8615db4d0": {
       "article_id": "google-deepmind-ee83f796",
       "first_seen_at": "2026-10-13T20:43:12.907993Z",
@@ -4010,6 +4073,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark"
     },
+    "url:eb67409897ed2136a753e14173e61feab2317d6d8d361b6603fffb8a60da143f": {
+      "article_id": "hugging-face-389eaadd",
+      "first_seen_at": "2026-10-15T19:12:51.300814Z",
+      "published_at": "2026-10-15T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/flux-3"
+    },
     "url:eb674100bb687fff764326a192483a4161fa4fa5dc17727e3c5a9e490b0e4544": {
       "article_id": "openai-news-a7b9b948",
       "first_seen_at": "2026-09-28T21:16:07.869479Z",
@@ -4051,6 +4121,13 @@
       "published_at": "2026-10-13T16:00:00Z",
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon"
+    },
+    "url:ee4bdfee28f7d805cf226337b56fbdc64cd7e3aead21edd74362c89180242047": {
+      "article_id": "aws-machine-learning-204f9377",
+      "first_seen_at": "2026-10-15T19:12:51.300814Z",
+      "published_at": "2026-10-15T15:05:35Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control"
     },
     "url:ee4dc087c20018324226a16e2a13651b155ce78c88fcc91e4606b45fe6d0efda": {
       "article_id": "mistral-ai-9ed53d22",
@@ -4261,6 +4338,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/mvicad2-delays-dilations"
     },
+    "url:f727b4e1831e7a08543a22d379f849c9a924a54986db4946136025a8bdd9d5cb": {
+      "article_id": "llama-cpp-releases-bf14d736",
+      "first_seen_at": "2026-10-15T19:12:51.300814Z",
+      "published_at": "2026-10-15T17:13:19Z",
+      "source": "llama-cpp-releases",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.7.0"
+    },
     "url:f74fa5643a9d83b59d9fb43584797dac61fd4b1ce8ffb7b9ca74de783dee55b9": {
       "article_id": "aws-machine-learning-b32df2af",
       "first_seen_at": "2026-08-21T04:04:47.965899Z",
@@ -4372,6 +4456,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/daybreak-for-frontline-defenders"
     },
+    "url:fc94b0a99c247635aa467810c950dc067d124cdd9f6491c27b7b576c152f764f": {
+      "article_id": "aws-machine-learning-faa2e992",
+      "first_seen_at": "2026-10-15T19:12:51.300814Z",
+      "published_at": "2026-10-15T17:43:35Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart"
+    },
     "url:fcde82ce22706b89161cc9a9efc20917066f5d76375bdf56f124810ddc3f753a": {
       "article_id": "aws-machine-learning-049abf3a",
       "first_seen_at": "2026-09-14T19:52:22.108290Z",
@@ -4413,6 +4504,13 @@
       "published_at": "2026-09-14T19:00:00Z",
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch"
+    },
+    "url:ff0cf28c5d7530571030bbc53285abf8be3ed6fb11c617ba5f382a8208219854": {
+      "article_id": "hugging-face-f2dbdc43",
+      "first_seen_at": "2026-10-15T19:12:51.300814Z",
+      "published_at": "2026-10-15T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/meta-muse-spark-open"
     },
     "url:ff38a160f9f7629841b74335c9a1a1b080e8be6e4f36590262218e5d80497b3c": {
       "article_id": "aws-machine-learning-252f8649",

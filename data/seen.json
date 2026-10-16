@@ -1413,6 +1413,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-benchling-secured-multi-tenant-ai-agents-with-amazon-bedrock-agentcore"
     },
+    "url:4f379e8b58549775d4b2d8fc2d5035db0b7f5a44f382c97b5b9879b119c6b55b": {
+      "article_id": "aws-machine-learning-8add611a",
+      "first_seen_at": "2026-10-16T18:50:31.266995Z",
+      "published_at": "2026-10-16T15:23:10Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws"
+    },
     "url:4f4661ca3038bcff734b931e86ecdd698705f1878edb8f11f9c4fd7242cb67ec": {
       "article_id": "aws-machine-learning-9c9bcc48",
       "first_seen_at": "2026-09-11T08:07:55.145306Z",
@@ -3548,6 +3555,13 @@
       "published_at": "2026-08-06T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/deepambigqa-multihop-questions"
+    },
+    "url:c9a6184923cc1a5837b490017ed569bb9f0183f7b39ff2df0ab9b46fbcc327c4": {
+      "article_id": "hugging-face-b4c89cbf",
+      "first_seen_at": "2026-10-16T18:50:31.266995Z",
+      "published_at": "2026-10-16T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/reflection-beam"
     },
     "url:caa079bc52c86f18f9cbb9923dc94850c3920ee28a66ba807f3b380eeec1c659": {
       "article_id": "aws-machine-learning-090f00b7",

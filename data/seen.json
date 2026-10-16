@@ -147,6 +147,13 @@
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/introducing-synthid-bio"
     },
+    "url:08cebc8f97d4c11cb0c2601762467e3a67f16f7ef81017a5818f1ffeb9d0ed52": {
+      "article_id": "apple-ml-research-e1b2a905",
+      "first_seen_at": "2026-10-16T08:16:07.594781Z",
+      "published_at": "2026-10-15T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/selection-structured-reasoning"
+    },
     "url:08ffdb24bebd9aa2ffda2f849b7e7af9dba92daa36ecb3bc96d64f49fd7ead95": {
       "article_id": "openai-news-97df8849",
       "first_seen_at": "2026-09-21T20:00:41.036980Z",
@@ -347,6 +354,13 @@
       "published_at": "2026-08-17T05:30:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/the-defenders-window"
+    },
+    "url:138e9b7e7d9747243aa585f555fbf6f3d58b687e3498b374de6b74802266db21": {
+      "article_id": "hugging-face-6253dafd",
+      "first_seen_at": "2026-10-16T08:16:07.594781Z",
+      "published_at": "2026-10-16T01:44:47Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining"
     },
     "url:13c6b8a9d4ea944c51fd5e30ad2ef86c2645b4f87eff7877c858595503fc8161": {
       "article_id": "aws-machine-learning-b1cbf73e",
@@ -767,6 +781,13 @@
       "published_at": "2026-08-25T21:35:11Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production"
+    },
+    "url:32165ee6af8945a5bd83e4231d3e052413905bc21e8455b93c147e03ace99490": {
+      "article_id": "openai-news-91b7ca82",
+      "first_seen_at": "2026-10-16T08:16:07.594781Z",
+      "published_at": "2026-10-15T19:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan"
     },
     "url:323f63404b35313df970bdab5ff1a7288f535ea82836022effcc548db68dfc14": {
       "article_id": "aws-machine-learning-470d195f",
@@ -2124,6 +2145,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/asynchronous-patterns-for-calling-amazon-bedrock-agentcore-agents-in-serverless-pipelines"
     },
+    "url:7da99f40f855b50457e2a875a83af3ff50f9ca243f7093426cd6c39de6e33052": {
+      "article_id": "ollama-releases-18a7cbee",
+      "first_seen_at": "2026-10-16T08:16:07.594781Z",
+      "published_at": "2026-10-14T19:45:22Z",
+      "source": "ollama-releases",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.5"
+    },
     "url:7e17b92474bcfd24464a27163487c58f8c3702b5d2deb1221ec1963be55fb02b": {
       "article_id": "github-ai-ml-588f1340",
       "first_seen_at": "2026-08-12T22:06:40.410035Z",
@@ -2436,6 +2464,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/code-switching-detection"
     },
+    "url:8fc272f28c8a0129df9cf25f82ba232387c9484d86476ab2e307267b043f8a2c": {
+      "article_id": "apple-ml-research-8f9ffdf0",
+      "first_seen_at": "2026-10-16T08:16:07.594781Z",
+      "published_at": "2026-10-15T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/plan-retrieve-tool-discovery"
+    },
     "url:8fc32d90ac57504370f365589dc1d3c010e9a00f6aa23a33eafbeeca21473ed7": {
       "article_id": "apple-ml-research-90f8c923",
       "first_seen_at": "2026-10-12T22:31:15.104803Z",
@@ -2519,6 +2554,13 @@
       "published_at": "2026-08-18T18:56:14Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to-transact-safely-and-autonomously-at-scale"
+    },
+    "url:94eadcab22c41e356a1d9bf1e35dbdb6491d04804b7eea5ceec3829024496784": {
+      "article_id": "openai-news-9b1d9cc7",
+      "first_seen_at": "2026-10-16T08:16:07.594781Z",
+      "published_at": "2026-10-15T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/sullivan-cromwell"
     },
     "url:94ee28b93f9d2d830319b5f76c0aa72745ffecd9af8552d923f3dc0ab202dce3": {
       "article_id": "openai-news-54a909d5",
@@ -3646,6 +3688,13 @@
       "published_at": "2026-10-05T15:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/eu-text-provenance"
+    },
+    "url:d330643595776f9f542e9f48a636499dcc2c3968ee0ccb07e6ba5a41a8cbcae0": {
+      "article_id": "hugging-face-6aa9daf8",
+      "first_seen_at": "2026-10-16T08:16:07.594781Z",
+      "published_at": "2026-10-15T20:34:01Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1"
     },
     "url:d3bef0a6f505ce058db2e5dca26b6fcbdef5a9b113fc527c29dde963d0f31e94": {
       "article_id": "llama-cpp-releases-493d3832",

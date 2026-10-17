@@ -56,6 +56,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/gpt-6-astra"
     },
+    "url:03deac55d9f496d6e3aae8652c545f49f1bac9f9c00a25a0c984b7aa30a091ab": {
+      "article_id": "aws-machine-learning-41d49b09",
+      "first_seen_at": "2026-10-17T07:52:50.310038Z",
+      "published_at": "2026-10-16T20:48:16Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-trust-in-ai-agents-a-production-ready-evaluation-framework-with-amazon-bedrock-agentcore"
+    },
     "url:05eeb3dab00fd81284bba0e20db85e14dd413e44629491b30772f23bfddd59ec": {
       "article_id": "aws-machine-learning-b7b45239",
       "first_seen_at": "2026-08-20T04:02:19.864644Z",
@@ -2624,6 +2631,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra"
     },
+    "url:9732b2763df5a67ab9455b8255aee23064fe436ed165bb52468ec0f54969accf": {
+      "article_id": "openai-news-7afe56f1",
+      "first_seen_at": "2026-10-17T07:52:50.310038Z",
+      "published_at": "2026-10-16T19:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/itau-generative-ai"
+    },
     "url:97e92714d577da88c6e3099e0cf9afb3cc981105dadc42fff6bf30703b8cd73b": {
       "first_seen_at": "2026-08-04T06:07:12.261432Z",
       "published_at": "2026-08-03T00:00:00Z",
@@ -2739,6 +2753,13 @@
       "published_at": "2026-09-25T19:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/proaction"
+    },
+    "url:9e63539289a31c8631b61e2dab00ee4355731974576a94679adaae67ea1b4655": {
+      "article_id": "openai-news-9e76835f",
+      "first_seen_at": "2026-10-17T07:52:50.310038Z",
+      "published_at": "2026-10-16T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin"
     },
     "url:9eb8c760edade595b4c7ef0228c2cef0f074914ff1416d4158875e0a6200acd3": {
       "article_id": "aws-machine-learning-fc27445c",
@@ -3206,6 +3227,13 @@
       "published_at": "2026-09-25T12:57:38Z",
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.6.3"
+    },
+    "url:b6756c0a180ee554226c332b456c2b3fe634b3c508ea217138686c0c0ae92870": {
+      "article_id": "openai-news-6cb9d8ec",
+      "first_seen_at": "2026-10-17T07:52:50.310038Z",
+      "published_at": "2026-10-16T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/benefit-street-partners"
     },
     "url:b76b11a1199f73b7027f051c73b169df83c2a00e9a8c2e410a485803d662c4b8": {
       "article_id": "google-deepmind-68e6d36a",
@@ -4309,6 +4337,13 @@
       "published_at": "2026-09-23T12:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/invideo-builds-with-gpt-6-astra"
+    },
+    "url:f3881ffb51f5cdaacce8ff76ba68a3a4748303de6f4f9385ad9d377f5c099749": {
+      "article_id": "langchain-releases-ffef7021",
+      "first_seen_at": "2026-10-17T07:52:50.310038Z",
+      "published_at": "2026-10-16T19:28:44Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.12"
     },
     "url:f3899afd4d6a0a2de4790fb5c615ac53b070686d5705d2fd135b1814acc6d5b3": {
       "article_id": "openai-news-6c9d1176",

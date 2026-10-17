@@ -1763,6 +1763,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/allenai/tutormoments"
     },
+    "url:630ca87cf322b200196ee5e5a3bed69887799dafff1269e49879cc19a8524632": {
+      "article_id": "ollama-releases-3ca9bdd1",
+      "first_seen_at": "2026-10-17T17:53:06.624459Z",
+      "published_at": "2026-10-16T22:00:46Z",
+      "source": "ollama-releases",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.6"
+    },
     "url:637d3dfa247fa816a4c4160f323cf7816f7979e28cc1acd637f643ec28fcb5fc": {
       "article_id": "openai-news-f1af3f50",
       "first_seen_at": "2026-10-01T20:22:22.987634Z",

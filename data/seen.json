@@ -2305,6 +2305,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/chatgpt-ads-expands-across-europe"
     },
+    "url:83a753b4160cba93855aa4361255dc1036593f3714dcb4c0d1799bf3d520a424": {
+      "article_id": "vllm-releases-69b5e8cd",
+      "first_seen_at": "2026-10-18T08:07:15.643256Z",
+      "published_at": "2026-10-18T06:50:48Z",
+      "source": "vllm-releases",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0"
+    },
     "url:841b4e2a79b2cbb57818447f04c68e6d0974f594b8daa220735dc7ca93e4ca62": {
       "article_id": "apple-ml-research-950c545d",
       "first_seen_at": "2026-08-19T04:02:41.847930Z",

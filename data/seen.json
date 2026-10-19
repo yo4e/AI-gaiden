@@ -446,6 +446,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/grpo-beyond-english"
     },
+    "url:1be45fb0ef68a5f78aff9b0c3266fee630ee825083130359fdbcd0f3a60737cf": {
+      "article_id": "github-ai-ml-84f6742d",
+      "first_seen_at": "2026-10-19T20:37:37.104054Z",
+      "published_at": "2026-10-19T18:47:22Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code"
+    },
     "url:1dc99b611b2499a3b88164db8987de9abe06ce048ee9d7f334432d8aa41fb6b9": {
       "article_id": "google-deepmind-240c24e7",
       "first_seen_at": "2026-10-13T20:43:12.907993Z",
@@ -1665,6 +1672,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/first-orion-accelerates-qa-automation-using-amazon-nova-act"
     },
+    "url:5c52b7d34becd1ccf770a5f22540c4c3de16ae5f8db819babc6348fdbc423c77": {
+      "article_id": "hugging-face-e82c2da5",
+      "first_seen_at": "2026-10-19T20:37:37.104054Z",
+      "published_at": "2026-10-19T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/hf-torchneuron"
+    },
     "url:5c8d75ef9c12c05961137bb4431a14c551ac90466a167ec85821c6aa78285922": {
       "article_id": "openai-news-a4f91924",
       "first_seen_at": "2026-08-28T00:26:39.012587Z",
@@ -1685,6 +1699,13 @@
       "published_at": "2026-08-11T10:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/daybreak-models-are-now-available-on-aws"
+    },
+    "url:5dbd2520b728f6ec6522c300a4b397ea9f929e934ed55771333b7f9919cda14e": {
+      "article_id": "aws-machine-learning-0613f2a8",
+      "first_seen_at": "2026-10-19T20:37:37.104054Z",
+      "published_at": "2026-10-19T16:49:19Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock"
     },
     "url:5e78358b6e49a01a4b989c9ca016fa9dfafca7db79134f16ef22dc9d4e8cccfc": {
       "article_id": "mlcommons-c189eab3",
@@ -1963,6 +1984,13 @@
       "published_at": "2026-09-17T00:26:43Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot"
+    },
+    "url:71cf1fc71504fea52775e091c313e410cd3c585ba29a14cfb567ca5e5b037a31": {
+      "article_id": "aws-machine-learning-edcabe07",
+      "first_seen_at": "2026-10-19T20:37:37.104054Z",
+      "published_at": "2026-10-19T16:05:17Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/push-based-kv-transfer-to-improve-ttft-and-tpot-for-disaggregated-inference-in-vllm"
     },
     "url:721de6922a1a6b9fd6bd57fa34562f9aeea663205ca74e2ce3b1bd45fa3a35b7": {
       "article_id": "google-deepmind-16b86c56",
@@ -3136,6 +3164,13 @@
       "published_at": "2026-09-01T16:03:41Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-how-jamf-built-real-time-spend-enforcement-for-amazon-bedrock"
+    },
+    "url:b1493241111afdbc5195ec11969e7a203e4621516a02f333109d8f6c9bb5758f": {
+      "article_id": "aws-machine-learning-1c66759e",
+      "first_seen_at": "2026-10-19T20:37:37.104054Z",
+      "published_at": "2026-10-19T16:03:23Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm"
     },
     "url:b19ec562c455e753267b0e04107e2217c787cdc2a4884378a6d93cdc79d11f47": {
       "article_id": "openai-news-859e2b45",
@@ -4630,6 +4665,13 @@
       "published_at": "2026-08-10T16:34:37Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/run-interactive-ides-on-amazon-eks-with-sagemaker-ai-to-power-up-your-ai-workflows"
+    },
+    "url:ff73299d4de8ba03519315c94ad6a23ee443c8c2d865a508291bee7701c95bea": {
+      "article_id": "aws-machine-learning-9ab28f02",
+      "first_seen_at": "2026-10-19T20:37:37.104054Z",
+      "published_at": "2026-10-19T16:23:22Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-deepgram-optimized-voice-ai-at-scale-with-aws-trainium"
     },
     "url:ffd2818196374b7e8d985c5ba0d85a7cf6f6fd71833912309c34424b62f62e05": {
       "article_id": "hugging-face-3e896b46",

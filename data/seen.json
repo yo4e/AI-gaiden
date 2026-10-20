@@ -453,6 +453,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code"
     },
+    "url:1dbe22633003a2af4fddcdba3c780b2ba9f507be061699ce02dd407e5165c7ab": {
+      "article_id": "openai-news-62a47321",
+      "first_seen_at": "2026-10-20T08:38:39.944290Z",
+      "published_at": "2026-10-19T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/low-resource-programming-languages"
+    },
     "url:1dc99b611b2499a3b88164db8987de9abe06ce048ee9d7f334432d8aa41fb6b9": {
       "article_id": "google-deepmind-240c24e7",
       "first_seen_at": "2026-10-13T20:43:12.907993Z",
@@ -795,6 +802,13 @@
       "published_at": "2026-08-25T21:35:11Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production"
+    },
+    "url:31fe2af5984c5f8efa7c1b6ccf6738cd49c66448a2a987aa955d316105d9abd0": {
+      "article_id": "aws-machine-learning-2e8a5a1e",
+      "first_seen_at": "2026-10-20T08:38:39.944290Z",
+      "published_at": "2026-10-19T21:14:44Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-jumpstart-2026-year-to-date-in-review"
     },
     "url:32165ee6af8945a5bd83e4231d3e052413905bc21e8455b93c147e03ace99490": {
       "article_id": "openai-news-91b7ca82",
@@ -1462,6 +1476,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/allenai/hiro-acev2"
     },
+    "url:5071b6ceb6a21c737e7eb65d13eb0f3524e36c0b0ad1a3f66334afdea16e78c9": {
+      "article_id": "aws-machine-learning-7c99fc26",
+      "first_seen_at": "2026-10-20T08:38:39.944290Z",
+      "published_at": "2026-10-19T22:39:24Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience"
+    },
     "url:50ae7c32754eac7764b85638aa46276ce04304eb7048ac83ae5a1a511c5ecf56": {
       "article_id": "apple-ml-research-62c2cfd9",
       "first_seen_at": "2026-09-17T19:05:12.502267Z",
@@ -1942,6 +1963,13 @@
       "published_at": "2026-09-01T17:08:51Z",
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini"
+    },
+    "url:6c2a7f9e70f3b163982bc02220ded152109d00e8bc5599703dfe35d0d9e33178": {
+      "article_id": "aws-machine-learning-2ccaf9f3",
+      "first_seen_at": "2026-10-20T08:38:39.944290Z",
+      "published_at": "2026-10-19T23:32:19Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/structured-outputs-for-anthropic-claude-models-on-amazon-bedrock"
     },
     "url:6d4ec902c728a02128d0e9d0f2d97315b31b6e3516e9601be6e9577b06f5790c": {
       "article_id": "openai-news-18d88c0e",

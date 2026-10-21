@@ -1067,6 +1067,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials"
     },
+    "url:39cad894cdd240fbe2dba606200e547216d43a1655f56c86db3d6329a851a826": {
+      "article_id": "openai-news-f757b610",
+      "first_seen_at": "2026-10-21T19:20:18.284662Z",
+      "published_at": "2026-10-21T17:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/att-legal"
+    },
     "url:39e60f901a735303e0c0ae9b731fee2baf79f5edd599caf7944297514c7c53bb": {
       "article_id": "hugging-face-95ba895e",
       "first_seen_at": "2026-10-20T19:20:01.517723Z",
@@ -1129,6 +1136,13 @@
       "published_at": "2026-08-18T17:13:13Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/customize-amazon-quick-embedded-chat-into-your-application"
+    },
+    "url:3b94502ba2eceec312332bb2a34cd9fe21dc6b485387916d8c489b6dcff2ba79": {
+      "article_id": "langchain-releases-7aa043d4",
+      "first_seen_at": "2026-10-21T19:20:18.284662Z",
+      "published_at": "2026-10-21T17:31:04Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-perplexity%3D%3D1.4.2"
     },
     "url:3bbd8b07cb5a7e5a41480671273e089153a1edb0e012ee6b9c140ab34f7b4abe": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
@@ -1219,6 +1233,13 @@
       "published_at": "2026-10-12T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/self-compacting-language-agents"
+    },
+    "url:40a01666d562060bfdf96e1bee46311ea36b1fbc4128b476c54664266fe1cab8": {
+      "article_id": "hugging-face-67ff1254",
+      "first_seen_at": "2026-10-21T19:20:18.284662Z",
+      "published_at": "2026-10-21T17:35:36Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
     },
     "url:40a44871ce5df89b9d11d192d53399e6adb2a7fc519f0c9648d325fd7e7a7e10": {
       "article_id": "langchain-releases-f8726877",
@@ -1742,6 +1763,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/reduce-asr-inference-costs-by-75-with-nvidia-mps-on-amazon-ec2"
     },
+    "url:5b4e08461387ba3b44832eb32623a231bc98422af2b9c0aa208f73f388840205": {
+      "article_id": "hugging-face-da28209d",
+      "first_seen_at": "2026-10-21T19:20:18.284662Z",
+      "published_at": "2026-10-21T16:04:43Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1"
+    },
     "url:5ba78b757300e8cc3ff5b4c8f26a93a1cc067af59a63302997722a2b18eff29a": {
       "article_id": "hugging-face-795a7b96",
       "first_seen_at": "2026-08-19T04:02:41.847930Z",
@@ -1894,6 +1922,13 @@
       "published_at": "2026-09-15T13:00:00Z",
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/technology/ai/ai-economy-atlas-september-2026"
+    },
+    "url:64ddfb139fec8a1cb4597ec213ad7265ff7b827324c2efbb180615bde9f68d90": {
+      "article_id": "openai-news-5c8a735c",
+      "first_seen_at": "2026-10-21T19:20:18.284662Z",
+      "published_at": "2026-10-21T04:50:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
     },
     "url:65c11cd6697d24998d9d17cfaffde38706fc2f1b41e928f72fde891ca215539a": {
       "article_id": "github-ai-ml-a7943a0b",
@@ -2479,6 +2514,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/pollo-ai"
     },
+    "url:856c26ca4c2d04bcedc9cb9fdb44809b32952d1d2e61bb97c33ffc0e2dda8f57": {
+      "article_id": "mistral-ai-6de1ae2a",
+      "first_seen_at": "2026-10-21T19:20:18.284662Z",
+      "published_at": "2026-10-21T12:00:20Z",
+      "source": "mistral-ai",
+      "url": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering"
+    },
     "url:859cdcef3df01ae8d929e50b9f9da9f8126fe435aacd0a43ca0bd2b8ba0b3f21": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
       "published_at": "2026-07-30T15:09:09Z",
@@ -2716,6 +2758,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to-transact-safely-and-autonomously-at-scale"
     },
+    "url:94a5f6526eada9bc0f52700eb51d921a09fcfe01b2b364c8982be81ac1418089": {
+      "article_id": "hugging-face-f339c364",
+      "first_seen_at": "2026-10-21T19:20:18.284662Z",
+      "published_at": "2026-10-21T18:26:30Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/nvidia/kumo-relational"
+    },
     "url:94eadcab22c41e356a1d9bf1e35dbdb6491d04804b7eea5ceec3829024496784": {
       "article_id": "openai-news-9b1d9cc7",
       "first_seen_at": "2026-10-16T08:16:07.594781Z",
@@ -2743,6 +2792,13 @@
       "published_at": "2026-10-08T16:53:47Z",
       "source": "ollama-releases",
       "url": "https://github.com/ollama/ollama/releases/tag/v0.40.2"
+    },
+    "url:95dedf578de78f3ec264f66e37a7c309d1f2cf3d8987fe8b4de9182187d1ff7b": {
+      "article_id": "openai-news-2ee57920",
+      "first_seen_at": "2026-10-21T19:20:18.284662Z",
+      "published_at": "2026-10-21T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/openai-models-google-cloud"
     },
     "url:95f314d9972fcd384b1f5504b60da9ec16098cd7e2786cba33337dfe9c55d3d4": {
       "article_id": "aws-machine-learning-bae576d1",
@@ -2846,6 +2902,13 @@
       "published_at": "2026-08-28T19:31:05Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/batch-write-and-discover-records-in-amazon-sagemaker-feature-store"
+    },
+    "url:9c25b784b73611021a106affd453c96c6d0f1eac635f6fb88d9601dac8d92822": {
+      "article_id": "aws-machine-learning-0caef911",
+      "first_seen_at": "2026-10-21T19:20:18.284662Z",
+      "published_at": "2026-10-21T19:19:50Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-u-s-hunger-connects-leaders-and-data-using-amazon-quick"
     },
     "url:9c25f4ae7a186d68926fabf7ba66321e74423e571b1f86a4351d93eff1c6252c": {
       "article_id": "openai-news-09940515",
@@ -3277,6 +3340,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-how-jamf-built-real-time-spend-enforcement-for-amazon-bedrock"
     },
+    "url:b1215e1aefc04c61e203617a80fd84e7760e29072f8e8c5c2b0a50c22fe019fd": {
+      "article_id": "openai-news-260e22dd",
+      "first_seen_at": "2026-10-21T19:20:18.284662Z",
+      "published_at": "2026-10-21T13:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
+    },
     "url:b1493241111afdbc5195ec11969e7a203e4621516a02f333109d8f6c9bb5758f": {
       "article_id": "aws-machine-learning-1c66759e",
       "first_seen_at": "2026-10-19T20:37:37.104054Z",
@@ -3619,6 +3689,13 @@
       "published_at": "2026-08-12T14:01:59Z",
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands"
+    },
+    "url:c2ed162a157709f5cb47598d7a4a9ff0ca7927682ea3c9a0e259f86971bb2de7": {
+      "article_id": "hugging-face-1e266e63",
+      "first_seen_at": "2026-10-21T19:20:18.284662Z",
+      "published_at": "2026-10-21T14:58:18Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5"
     },
     "url:c2ed76bfcf51bfba74a867f5c453c4e233f7f3c0b5425ebf063cced04764f8e0": {
       "article_id": "aws-machine-learning-f5a49205",
@@ -4143,6 +4220,13 @@
       "published_at": "2026-10-11T01:39:04Z",
       "source": "ollama-releases",
       "url": "https://github.com/ollama/ollama/releases/tag/v0.40.3"
+    },
+    "url:de9db6f384cbc788775550a92a01be7699e7a41c8058849be39721a76c544e4d": {
+      "article_id": "openai-news-4c5c4cca",
+      "first_seen_at": "2026-10-21T19:20:18.284662Z",
+      "published_at": "2026-10-21T07:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities"
     },
     "url:dec620cb7225d2434a9b02e6e0197b1952a6412dcad780af2099d9910f2c9ee8": {
       "article_id": "openai-news-638b7288",

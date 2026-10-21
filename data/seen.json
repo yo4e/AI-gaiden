@@ -1602,6 +1602,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b"
     },
+    "url:542ed0bcb34611a395d9f3fa0d9c60868e4f6cf0d4a0e34eb7162ebc02151388": {
+      "article_id": "aws-machine-learning-24a8347b",
+      "first_seen_at": "2026-10-21T08:39:34.760912Z",
+      "published_at": "2026-10-20T21:14:10Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/beyond-the-kv-cache-training-and-serving-i14s-laplace-3b-linear-attention-model-on-aws-trainium2-with-native-pytorch"
+    },
     "url:5489804c76847f43095a050311a62ba5b583777f176dfe43eb7b907e3342f417": {
       "article_id": "langchain-releases-04bdbd87",
       "first_seen_at": "2026-09-11T08:07:55.145306Z",
@@ -2200,6 +2207,13 @@
       "published_at": "2026-09-29T15:55:17Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-conde-nast-built-multimodal-video-discovery-with-amazon-bedrock"
+    },
+    "url:78cebe09803b57417ff218b15d870961ff466abfed4da57b0fd3b78c08861131": {
+      "article_id": "google-ai-e7279072",
+      "first_seen_at": "2026-10-21T08:39:34.760912Z",
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026"
     },
     "url:78e3ba01c51c635935b63f3b8f4fc27b0604adf8969e087a04f36cbabadc307f": {
       "article_id": "aws-machine-learning-93a52917",
@@ -3129,6 +3143,13 @@
       "published_at": "2026-10-08T18:33:29Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments"
+    },
+    "url:aa8847d44cbae3328f3c5cbb65bcffcd3b77355e99faf584c20aa718f2bc61fa": {
+      "article_id": "openai-news-a938b563",
+      "first_seen_at": "2026-10-21T08:39:34.760912Z",
+      "published_at": "2026-10-20T07:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/terminal-x"
     },
     "url:aacb8ca8a4a96bc0cfecf6685ab1bf86aa3d3c1f13feb6fac21b8b58211ab9da": {
       "article_id": "google-ai-ff00c755",

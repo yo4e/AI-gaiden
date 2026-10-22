@@ -3,6 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
+import requests
 
 from scripts.admission import (
     FILTERED_SCAN_LIMIT,
@@ -16,6 +17,9 @@ from scripts.admission import (
 )
 from scripts.feed_reader import FeedResult
 from scripts.models import FeedConfig, NormalizedItem
+from scripts.utils import load_feed_configs
+
+ROOT = Path(__file__).resolve().parents[1]
 
 
 def make_config(*, source_id: str = "sourcegraph-changelog", max_items: int = 5) -> FeedConfig:
@@ -118,9 +122,8 @@ def test_repository_admission_config_covers_filtered_and_all_sources() -> None:
     assert rules["sourcegraph-changelog"] == AdmissionRule(
         mode="filtered", policy="ai_terms_v1"
     )
-    assert rules["microsoft-cloud"] == AdmissionRule(
-        mode="filtered", policy="ai_terms_v1"
-    )
+    for source_id in ("microsoft-ai", "microsoft-cloud"):
+        assert rules[source_id] == AdmissionRule(mode="filtered", policy="ai_terms_v1")
     for source_id in (
         "langchain-releases",
         "vllm-releases",
@@ -128,6 +131,56 @@ def test_repository_admission_config_covers_filtered_and_all_sources() -> None:
         "llama-cpp-releases",
     ):
         assert rules[source_id] == AdmissionRule(mode="all")
+
+
+@pytest.mark.parametrize("source_id", ["microsoft-ai", "microsoft-cloud"])
+def test_microsoft_feeds_filter_shared_articles_with_repository_config(
+    source_id: str, tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    configs = {config.id: config for config in load_feed_configs(ROOT / "config/feeds.yml")}
+    config = configs[source_id]
+    rules = load_admission_config(ROOT / "config/admission.yml")
+    reader = AdmissionFeedReader(
+        tmp_path / "feed-state.json",
+        {key: rule for key, rule in rules.items() if key == source_id},
+    )
+    # Shared synthetic RSS: AI entries follow a full publication cap of non-AI entries.
+    articles = [
+        (f"Azure network reliability update {index}", "Routing and connectivity guidance")
+        for index in range(config.max_items_per_run)
+    ]
+    ai_articles = [
+        ("Azure AI model update", "New capabilities for developers"),
+        ("Copilot enterprise update", "New capabilities for developers"),
+        ("Cloud product update", "Build generative AI applications"),
+        ("Model inference improvements", "New capabilities for developers"),
+        ("LLM workload update", "New capabilities for developers"),
+        ("AI agent tools update", "New capabilities for developers"),
+    ]
+    articles.extend(ai_articles)
+    entries = "".join(
+        f"<item><title>{title}</title><description>{summary}</description>"
+        f"<link>https://example.com/shared-article-{index}</link>"
+        "<pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate></item>"
+        for index, (title, summary) in enumerate(articles)
+    )
+    response = requests.Response()
+    response.status_code = 200
+    response.headers["Content-Type"] = "application/rss+xml"
+    response.url = configs["microsoft-cloud"].url
+    response._content = (
+        f'<rss version="2.0"><channel><title>Shared feed</title>{entries}</channel></rss>'
+    ).encode()
+    monkeypatch.setattr(reader.rss_reader.session, "get", lambda *args, **kwargs: response)
+
+    (result,) = reader.fetch_all([config])
+
+    assert result.success is True
+    assert result.config == config
+    assert [item.title for item in result.items] == [
+        title for title, _ in ai_articles[: config.max_items_per_run]
+    ]
+    assert all(item.source_id == source_id for item in result.items)
 
 
 def test_filtered_sources_scan_deeper_without_changing_publication_cap() -> None:

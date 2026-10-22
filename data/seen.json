@@ -1359,6 +1359,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/legalon-halves-codex-costs"
     },
+    "url:463357464b6d7cac1748e834faa7e50a175dda0933f1f9df2170a1d3cb015af5": {
+      "article_id": "aws-machine-learning-c2558df2",
+      "first_seen_at": "2026-10-22T19:15:04.868039Z",
+      "published_at": "2026-10-22T18:06:35Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine"
+    },
     "url:46660cb2ea4362f69cbd737e0a8565a577f057222260acb4673428a053564622": {
       "article_id": "hugging-face-3a6b1227",
       "first_seen_at": "2026-09-11T08:07:55.145306Z",
@@ -1580,6 +1587,13 @@
       "published_at": "2026-09-30T01:13:12Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/introducing-anthropic-models-on-amazon-bedrock-for-in-region-inference-in-seoul-and-singapore"
+    },
+    "url:51a8b9803784fc1a8b3550952d3a97d961f581827a860c97ecd75fa0e75ba790": {
+      "article_id": "aws-machine-learning-a396b1ef",
+      "first_seen_at": "2026-10-22T19:15:04.868039Z",
+      "published_at": "2026-10-22T18:01:53Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-iskaypet-unified-corporate-knowledge-with-amazon-bedrock-managed-knowledge-bases"
     },
     "url:51cfe3db04ed0bd3efb5e0e3e4cae24a73d01c55252ca81f5edad4c7faa7f89b": {
       "article_id": "openai-news-0af7f7d4",
@@ -1930,6 +1944,13 @@
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026"
     },
+    "url:6400feb681472530a689e8c59132cfe6d13f5863532ecd60e409a4825c59746b": {
+      "article_id": "openai-news-274ee758",
+      "first_seen_at": "2026-10-22T19:15:04.868039Z",
+      "published_at": "2026-10-22T06:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/forward-deployed-engineering-means"
+    },
     "url:64730bcdfc3a35229b481acfce94fb07b15462de1b2e63893c551ff0e8190f0a": {
       "article_id": "google-ai-09c545af",
       "first_seen_at": "2026-09-15T19:03:12.107388Z",
@@ -1964,6 +1985,13 @@
       "published_at": "2026-10-01T17:34:56Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-agent-memory-with-nvidia-nemo-agent-toolkit-and-amazon-s3-vectors"
+    },
+    "url:67297d2df9a3d7f196c35fa6ebbaab936e2f788f3fe9d6bed07634b74dd71599": {
+      "article_id": "hugging-face-01a96c28",
+      "first_seen_at": "2026-10-22T19:15:04.868039Z",
+      "published_at": "2026-10-22T16:11:31Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3"
     },
     "url:67f5f61696a2949df2730f40424ad824b9d13bbf8b547c153b8cdb7135436103": {
       "article_id": "hugging-face-a213a704",
@@ -2207,6 +2235,13 @@
       "published_at": "2026-08-27T13:13:02Z",
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/08/double-blind-reliability-evaluation"
+    },
+    "url:75c7b038c9e562c067f306b3925e62f399cceaa124f2ca21590faf1eb1715b44": {
+      "article_id": "aws-machine-learning-3e692648",
+      "first_seen_at": "2026-10-22T19:15:04.868039Z",
+      "published_at": "2026-10-22T18:00:01Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions"
     },
     "url:761b7236f25c2d223e273684cfce405aca6479aa35c4490c163ef837a91cbb7e": {
       "article_id": "apple-ml-research-b8e754be",
@@ -2680,6 +2715,13 @@
       "published_at": "2026-10-14T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/code-switching-detection"
+    },
+    "url:8f93170faf71fda6558b8b2fe173c510270a35c328858f29fd60d0b5eecac8cd": {
+      "article_id": "google-deepmind-08fa5da1",
+      "first_seen_at": "2026-10-22T19:15:04.868039Z",
+      "published_at": "2026-10-22T14:30:24Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types"
     },
     "url:8fc272f28c8a0129df9cf25f82ba232387c9484d86476ab2e307267b043f8a2c": {
       "article_id": "apple-ml-research-8f9ffdf0",
@@ -3473,6 +3515,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/train-to-paint-with-code"
     },
+    "url:b59dab6824688f36820558e6176976b4c6242ef944c727d56540cad1d82bc4ca": {
+      "article_id": "langchain-releases-c0560521",
+      "first_seen_at": "2026-10-22T19:15:04.868039Z",
+      "published_at": "2026-10-22T17:47:38Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.0"
+    },
     "url:b5dfb93ee9936b169e4518f3b211559104467f38c21654f28558b834220067ac": {
       "article_id": "aws-machine-learning-de6d9e0b",
       "first_seen_at": "2026-09-03T18:43:24.314666Z",
@@ -3626,6 +3675,13 @@
       "published_at": "2026-10-02T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/language-discrimination-multilingual-learning"
+    },
+    "url:be319d98e9e8716242c5d15539cea92b423bafdb060c07988b9a1d8e742b614e": {
+      "article_id": "aws-machine-learning-e992eb44",
+      "first_seen_at": "2026-10-22T19:15:04.868039Z",
+      "published_at": "2026-10-22T18:00:04Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus"
     },
     "url:be849b092a65b95dd81a8834fc8814c0756e5b23f029f2f0644c2b1a51f8c4c4": {
       "article_id": "aws-machine-learning-68849896",
@@ -4193,6 +4249,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations"
     },
+    "url:da0587182704033afb595bab10209414cc52ee1d92a1e207d8bfa2beb0a29cef": {
+      "article_id": "aws-machine-learning-f8b0d352",
+      "first_seen_at": "2026-10-22T19:15:04.868039Z",
+      "published_at": "2026-10-22T17:48:22Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/deploy-ai-in-a-hipaa-eligible-environment-with-amazon-quick"
+    },
     "url:daa797ee943974350fccaa4f3fa1205a9777e20bb6bac528a7cbf14d38e472e1": {
       "article_id": "github-ai-ml-a5a3b35e",
       "first_seen_at": "2026-10-07T20:39:53.894203Z",
@@ -4527,6 +4590,13 @@
       "published_at": "2026-10-13T16:00:00Z",
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon"
+    },
+    "url:eda525050cea8fce4b13823379a8b9659ff224375e0356616ea34596cdb17cc5": {
+      "article_id": "openai-news-fb0db7db",
+      "first_seen_at": "2026-10-22T19:15:04.868039Z",
+      "published_at": "2026-10-22T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/uber-chatgpt-work-rollout"
     },
     "url:ee4bdfee28f7d805cf226337b56fbdc64cd7e3aead21edd74362c89180242047": {
       "article_id": "aws-machine-learning-204f9377",

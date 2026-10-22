@@ -251,6 +251,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai"
     },
+    "url:0e5fad3ca5f8a881acf7d04bb62a3859c2c74e88d36ad866cc1ffd77a9610def": {
+      "article_id": "hugging-face-3a77341c",
+      "first_seen_at": "2026-10-22T08:41:38.804028Z",
+      "published_at": "2026-10-22T07:51:31Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1"
+    },
     "url:0e6665874199cc3c1c757e3cf1ff0b30762b6e52527742940cd1a2bc134b8909": {
       "article_id": "aws-machine-learning-cdee9645",
       "first_seen_at": "2026-10-13T20:43:12.907993Z",
@@ -1198,6 +1205,13 @@
       "published_at": "2026-08-10T14:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/responsible-ai-infrastructure-texas"
+    },
+    "url:3f1a11956436b167380065dcbfb11acfb4b7400895eeef122ae6e9ec1be674ee": {
+      "article_id": "openai-news-6ebd2619",
+      "first_seen_at": "2026-10-22T08:41:38.804028Z",
+      "published_at": "2026-10-21T21:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/broad-access-through-consistent-standards"
     },
     "url:3fcefd9c665fb2c2484965cf43548bc94be5c40db4dc345287024e6c77f2703e": {
       "article_id": "openai-news-ef99459d",
@@ -2786,6 +2800,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.4"
     },
+    "url:9591b1cd4f512684d53a4a51a22aff083b1c8b85c63332bd4cea4f6fd6f5dd87": {
+      "article_id": "aws-machine-learning-68fda636",
+      "first_seen_at": "2026-10-22T08:41:38.804028Z",
+      "published_at": "2026-10-21T23:38:38Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/securing-quick-access-from-corporate-networks-with-aws-privatelink"
+    },
     "url:95b91ef337a82fbc2d2056c4727c36c24d55471d1d0757a614e12b120f8cb01b": {
       "article_id": "ollama-releases-32f67d80",
       "first_seen_at": "2026-10-09T10:40:24.529975Z",
@@ -3403,6 +3424,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/introducing-the-agents-api"
     },
+    "url:b39131c17298f1111bc3a78cd324f6d456a9c7c6b15d2d3a6516ec50514e88fe": {
+      "article_id": "aws-machine-learning-82c1c5e1",
+      "first_seen_at": "2026-10-22T08:41:38.804028Z",
+      "published_at": "2026-10-21T20:00:22Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan"
+    },
     "url:b3d1173017d6c7da4589201ab0a6f82887d4074b431d1e395511c20c77d613e9": {
       "article_id": "apple-ml-research-48a265dd",
       "first_seen_at": "2026-08-07T16:12:23.815234Z",
@@ -3556,6 +3584,13 @@
       "published_at": "2026-08-18T00:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/nvidia/chatgpt-work"
+    },
+    "url:bb132bf741e1159b4d9c3028f89f923d2bb7de74d7f5c66e1f9e61655ed4a429": {
+      "article_id": "ollama-releases-f6377851",
+      "first_seen_at": "2026-10-22T08:41:38.804028Z",
+      "published_at": "2026-10-21T16:20:30Z",
+      "source": "ollama-releases",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.8"
     },
     "url:bbf506f2762571d042a129a6b7c33b0388b5edb9686b5a58ab92b8fb3924f8ab": {
       "article_id": "apple-ml-research-baa1e2cf",
@@ -3843,6 +3878,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/reflection-beam"
     },
+    "url:ca1e9b27c57e709059a075d0da512c4c75e8313b36aa854e305f27695f0bc19a": {
+      "article_id": "langchain-releases-d10ccabb",
+      "first_seen_at": "2026-10-22T08:41:38.804028Z",
+      "published_at": "2026-10-21T21:39:16Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.7"
+    },
     "url:caa079bc52c86f18f9cbb9923dc94850c3920ee28a66ba807f3b380eeec1c659": {
       "article_id": "aws-machine-learning-090f00b7",
       "first_seen_at": "2026-09-17T19:05:12.502267Z",
@@ -4059,6 +4101,13 @@
       "published_at": "2026-09-03T16:08:28Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/best-practices-for-building-agentic-automations-with-amazon-quick-automate"
+    },
+    "url:d7f891d2a048125a896b09bda64a4eae2ce4cc959c41c7eb49501c0496feb6a1": {
+      "article_id": "langchain-releases-d2bd3549",
+      "first_seen_at": "2026-10-22T08:41:38.804028Z",
+      "published_at": "2026-10-21T20:43:48Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.13"
     },
     "url:d830873f8917c725955eaf0808704d194cc8b20850de2a1c483ebd0905bb102f": {
       "article_id": "aws-machine-learning-6e87c997",
@@ -4646,6 +4695,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/sclate-agent-training-evaluation"
     },
+    "url:f4cbbc5a6a498cf536c75d354ffbcb82119d405c2b69cf3f26ec8d9b6bbb1c5c": {
+      "article_id": "aws-machine-learning-f18be973",
+      "first_seen_at": "2026-10-22T08:41:38.804028Z",
+      "published_at": "2026-10-21T23:36:47Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them"
+    },
     "url:f5545f3f8433406a9d04d71df0684a915606a9424a0098e11ac6db1443f5028c": {
       "article_id": "aws-machine-learning-082c421a",
       "first_seen_at": "2026-09-22T18:58:12.681575Z",
@@ -4792,6 +4848,13 @@
       "published_at": "2026-08-18T17:05:48Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-jumio-built-a-real-time-feature-store-on-aws"
+    },
+    "url:fb630ea19b93482d041617e83dcecd98df3c8bc92dc1f2fed742033a162fb777": {
+      "article_id": "aws-machine-learning-d4b88605",
+      "first_seen_at": "2026-10-22T08:41:38.804028Z",
+      "published_at": "2026-10-21T21:23:26Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/adaptive-agentic-intelligence-framework-using-strands-agents"
     },
     "url:fbeab4f946087e752299b768eda19c5424ff00a36e42d407a00da97ee1663fe7": {
       "first_seen_at": "2026-08-04T00:16:06.231356Z",

@@ -453,6 +453,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/astra-for-law"
     },
+    "url:1a543055a02f9816518cc03996b6a0ed89e5e65a847f479103d96112c902ed21": {
+      "article_id": "openai-news-b522d570",
+      "first_seen_at": "2026-10-23T08:37:46.417444Z",
+      "published_at": "2026-10-23T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership"
+    },
     "url:1b555e620b3576f24f15fcd669e7f4a7d191269cd47a4d21b232e7194d040769": {
       "article_id": "apple-ml-research-134c7e09",
       "first_seen_at": "2026-08-18T15:49:35.191346Z",
@@ -1074,6 +1081,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials"
     },
+    "url:39a2c26df5548ff5b1c5ffa067016d597359abdc295db9c157cc84989cc2958d": {
+      "article_id": "ollama-releases-13c4bfbc",
+      "first_seen_at": "2026-10-23T08:37:46.417444Z",
+      "published_at": "2026-10-22T01:33:10Z",
+      "source": "ollama-releases",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.9"
+    },
     "url:39cad894cdd240fbe2dba606200e547216d43a1655f56c86db3d6329a851a826": {
       "article_id": "openai-news-f757b610",
       "first_seen_at": "2026-10-21T19:20:18.284662Z",
@@ -1580,6 +1594,13 @@
       "published_at": "2026-09-28T19:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/how-we-will-do-better-for-australia"
+    },
+    "url:51888f116f5b083740bce79640ccacdc80055a08000c769931982fc83218805e": {
+      "article_id": "hugging-face-8ae84015",
+      "first_seen_at": "2026-10-23T08:37:46.417444Z",
+      "published_at": "2026-10-22T22:24:34Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training"
     },
     "url:51a49ded898e9c302243bedebe01078aed5374581b6a270346379b1b0a4024cc": {
       "article_id": "aws-machine-learning-0a50cd1e",
@@ -2645,6 +2666,13 @@
       "published_at": "2026-10-07T16:54:33Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/open-d1"
+    },
+    "url:891b7e0bbf66f86d27b770f3dc53e0fbecfc246eeadf29503262f6d9c70adad7": {
+      "article_id": "openai-news-2074667e",
+      "first_seen_at": "2026-10-23T08:37:46.417444Z",
+      "published_at": "2026-10-22T19:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/decisions-api"
     },
     "url:89df3427e525131aaaac50888389b5a09475c7e1001e5ab9fb1744efb73cc88b": {
       "article_id": "google-ai-461d392a",

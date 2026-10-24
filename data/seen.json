@@ -439,6 +439,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/ted-taylor-restaurant"
     },
+    "url:173b2ddf9d58603a17345ad9e92a3f48eeebd3b998fe470fffa9c046565eefcc": {
+      "article_id": "ollama-releases-b90e73d8",
+      "first_seen_at": "2026-10-24T18:12:08.230802Z",
+      "published_at": "2026-10-24T00:30:13Z",
+      "source": "ollama-releases",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.11"
+    },
     "url:17e5ae8afd73524c07c8141a0425cb8bd8f0912d366709233f2ae149d03b9c04": {
       "article_id": "aws-machine-learning-0b1a08bf",
       "first_seen_at": "2026-09-05T07:43:35.568433Z",

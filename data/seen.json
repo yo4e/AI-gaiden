@@ -4968,6 +4968,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/sweep-thousands-of-leases-for-compliance-using-amazon-quick-and-the-adjudicated-query-pattern"
     },
+    "url:f8c156dba7886826388b35c0408d87e493aa3c6ad59ba61bfe6146ea7a6b00f6": {
+      "article_id": "openai-news-cb0d1ec8",
+      "first_seen_at": "2026-10-24T08:13:15.004040Z",
+      "published_at": "2026-10-23T10:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/securing-our-frontier-model-training-environment"
+    },
     "url:f9027d80e820682e90d7e8a7deab6fe99d243c44073836087c19a4dccdea5fb4": {
       "article_id": "openai-news-ce37ca4f",
       "first_seen_at": "2026-09-23T08:39:33.148997Z",

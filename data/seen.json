@@ -369,6 +369,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/learn-teach-chatgpt-work-codex"
     },
+    "url:13747e6775fbfd487c23a07a131b8d0aacb631ca6ceb266b7779d6b1ec5c0ca3": {
+      "article_id": "apple-ml-research-f53ea542",
+      "first_seen_at": "2026-10-26T20:33:22.505611Z",
+      "published_at": "2026-10-26T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/gharp-head-animation"
+    },
     "url:1380f7766171a5a616fa9c577a9838fc6a9a2eedb637829cee254df1dadbabf0": {
       "article_id": "openai-news-57206b09",
       "first_seen_at": "2026-08-17T15:44:03.722743Z",
@@ -641,6 +648,13 @@
       "published_at": "2026-08-27T23:04:22Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-agentic-creative-workflows-with-amazon-quick-and-fal"
+    },
+    "url:27334100e818b98514ff319836bc3b78479c8228c2a09656f9dea445b0edf902": {
+      "article_id": "openai-news-de86e22e",
+      "first_seen_at": "2026-10-26T20:33:22.505611Z",
+      "published_at": "2026-10-26T10:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/chatgpt-expanding-world-of-work"
     },
     "url:27a9dd31448e30ea2bdc3f244cfa730612ad66ffe254d5daaf5e641862777fb8": {
       "article_id": "aws-machine-learning-c823ec78",
@@ -978,6 +992,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/introducing-new-ray-capabilities-on-sagemaker-hyperpod"
     },
+    "url:35e334c198740f7416638922d137b34400b1d3f32a340ea04060840443b03b8a": {
+      "article_id": "openai-news-726a5400",
+      "first_seen_at": "2026-10-26T20:33:22.505611Z",
+      "published_at": "2026-10-26T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra"
+    },
     "url:36cb96fb972f9cda3e8f25c74ee6da57f6b87f63a579c845216486a947c85eea": {
       "article_id": "apple-ml-research-c71badc7",
       "first_seen_at": "2026-08-28T00:26:39.012587Z",
@@ -1186,6 +1207,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-perplexity%3D%3D1.4.2"
     },
+    "url:3bb7f581684ef39f682a46396a665f075fa27df6a09a63af3f2472fe000dfd23": {
+      "article_id": "aws-machine-learning-d52ce9ed",
+      "first_seen_at": "2026-10-26T20:33:22.505611Z",
+      "published_at": "2026-10-26T17:27:20Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock"
+    },
     "url:3bbd8b07cb5a7e5a41480671273e089153a1edb0e012ee6b9c140ab34f7b4abe": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
       "published_at": "2026-07-27T16:00:00Z",
@@ -1345,6 +1373,13 @@
       "published_at": "2026-10-20T00:00:00Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/anylanguagemodel-1-0"
+    },
+    "url:4253eb49870be4f8293c5d1a5b717e737afc4e2e70f57960a14e2835c8d9313c": {
+      "article_id": "aws-machine-learning-38331fe3",
+      "first_seen_at": "2026-10-26T20:33:22.505611Z",
+      "published_at": "2026-10-26T17:15:14Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-agentic-retrieval-on-a-managed-amazon-bedrock-knowledge-base-with-cdk"
     },
     "url:4410122683c569258d5a0a362f1b6f8fd8c0f990511414b3cd22c476b31d6130": {
       "article_id": "openai-news-a761656c",
@@ -2271,6 +2306,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/uplifting-conversion-across-the-acquisition-funnel-with-personalization-using-contextual-bandits-on-aws"
     },
+    "url:742d30efdc4090c11a97794f6a72e90c1243857798823aeed51fe879a1c3fcd7": {
+      "article_id": "openai-news-ab91b6f2",
+      "first_seen_at": "2026-10-26T20:33:22.505611Z",
+      "published_at": "2026-10-26T07:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/openai-cut-incident-investigation"
+    },
     "url:74306f66506c671620fb91abd78561b6295c7a561bfc57e0ec10acdfbc41627e": {
       "article_id": "microsoft-ai-5077f5e8",
       "first_seen_at": "2026-09-19T08:07:25.465807Z",
@@ -2411,6 +2453,13 @@
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize"
     },
+    "url:7c109bf5e7c5155862b1b1b83546ebfa43764730d1b2715afdf488c05e7fdca5": {
+      "article_id": "aws-machine-learning-ec2ed162",
+      "first_seen_at": "2026-10-26T20:33:22.505611Z",
+      "published_at": "2026-10-26T17:56:58Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/fleet-wide-computer-vision-lifecycle-at-the-edge-with-sagemaker-sdk-v3"
+    },
     "url:7ce1dacb4f2add5e1d2594f379e6822ef702235d8f27e6972ef618843ff950f7": {
       "article_id": "llama-cpp-releases-c7c68982",
       "first_seen_at": "2026-10-05T22:03:36.189687Z",
@@ -2459,6 +2508,13 @@
       "published_at": "2026-08-12T19:00:00Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/write-your-first-prompt-with-the-github-copilot-app"
+    },
+    "url:7e73eebe3e909303c4c59a7dc0b734e92c38bcdbedd7db32071af67e1885bb5c": {
+      "article_id": "openai-news-0396825e",
+      "first_seen_at": "2026-10-26T20:33:22.505611Z",
+      "published_at": "2026-10-26T07:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/fanatics-streamline-fan-experience"
     },
     "url:7f176d6cec1f7ea9f202722d1bdf7989d73d2c394597d02d638633cdc1824a42": {
       "article_id": "aws-machine-learning-229ee4a5",
@@ -3014,6 +3070,13 @@
       "published_at": "2026-08-07T16:26:58Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-cohere-health-digitizes-clinical-policies-using-amazon-bedrock-agentcore"
+    },
+    "url:9a15b40232fdbf825a34f1cb708e4553949c400aff4f3528a83f8e0a1a014861": {
+      "article_id": "google-ai-4a1f96e9",
+      "first_seen_at": "2026-10-26T20:33:22.505611Z",
+      "published_at": "2026-10-26T16:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks"
     },
     "url:9b368ab3b44b71646ac31c56aeacafc116c8c183c551b967038957d535a25386": {
       "article_id": "github-ai-ml-8e809aab",

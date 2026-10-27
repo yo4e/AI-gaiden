@@ -2,9 +2,9 @@
 articleId: llama-cpp-releases-c7c68982
 titleJa: v0.6.0の特長
 titleOriginal: v0.6.0
-description: llama.cpp Releasesは10月6日、「v0.6.0の特長」を公式フィードで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。
-briefJa: llama.cpp Releasesは10月6日、「v0.6.0の特長」を公式フィードで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。
-excerptJa: llama.cpp Releasesは10月6日、「v0.6.0の特長」を公式フィードで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください
+description: llama.cpp Releasesは10月6日、「v0.6.0の特長」を公式GitHub Releasesで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。
+briefJa: llama.cpp Releasesは10月6日、「v0.6.0の特長」を公式GitHub Releasesで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。
+excerptJa: llama.cpp Releasesは10月6日、「v0.6.0の特長」を公式GitHub Releasesで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください
 publishedAt: '2026-10-05T16:56:22Z'
 dateJst: '2026-10-06'
 sourceId: llama-cpp-releases
@@ -32,8 +32,10 @@ translationFallbackReasons:
 dedupeKey: url:7ce1dacb4f2add5e1d2594f379e6822ef702235d8f27e6972ef618843ff950f7
 fetchedAt: '2026-10-06T07:03:36+09:00'
 generatedAt: '2026-10-06T07:03:36+09:00'
-updatedAt: '2026-10-06T07:03:36+09:00'
+updatedAt: '2026-10-27T01:13:24Z'
 humanEdited: false
-correctionHistory: []
+correctionHistory:
+- date: '2026-10-27T01:13:24Z'
+  description: 取得元の表記をRSSからGitHub Releasesに訂正しました。
 noindex: false
 ---

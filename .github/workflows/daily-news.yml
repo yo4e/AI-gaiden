@@ -62,8 +62,16 @@ jobs:
             source-state-${{ runner.os }}-
             feed-state-${{ runner.os }}-
 
-      - name: Install Python dependencies
-        run: python -m pip install -r requirements.lock
+      - name: Verify Python dependency lock
+        run: |
+          python -m pip install uv==0.12.17
+          python scripts/lock_requirements.py --check
+
+      - name: Install and report locked Python dependencies
+        run: |
+          python -m pip install -r requirements.lock
+          python -m pip check
+          python -m pip list --format=freeze
 
       - name: Fetch official sources and generate digest
         run: python scripts/update_news.py

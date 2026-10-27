@@ -2,9 +2,9 @@
 articleId: langchain-releases-2ca2a18e
 titleJa: langchain==1.4.2
 titleOriginal: langchain==1.4.2
-description: LangChain Releasesは9月19日、「langchain==1.4.2」を公式フィードで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。
-briefJa: LangChain Releasesは9月19日、「langchain==1.4.2」を公式フィードで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。
-excerptJa: LangChain Releasesは9月19日、「langchain==1.4.2」を公式フィードで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください
+description: LangChain Releasesは9月19日、「langchain==1.4.2」を公式GitHub Releasesで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。
+briefJa: LangChain Releasesは9月19日、「langchain==1.4.2」を公式GitHub Releasesで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。
+excerptJa: LangChain Releasesは9月19日、「langchain==1.4.2」を公式GitHub Releasesで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください
 publishedAt: '2026-09-18T17:31:25Z'
 dateJst: '2026-09-19'
 sourceId: langchain-releases
@@ -30,8 +30,10 @@ translationFallbackReasons:
 dedupeKey: url:a8a255e92e884ae99aa964a1616db35c42aa05ef6e66f6c2ebe5716fb51b13e4
 fetchedAt: '2026-09-19T03:32:19+09:00'
 generatedAt: '2026-09-19T03:32:19+09:00'
-updatedAt: '2026-09-19T03:32:19+09:00'
+updatedAt: '2026-10-27T01:13:24Z'
 humanEdited: false
-correctionHistory: []
+correctionHistory:
+- date: '2026-10-27T01:13:24Z'
+  description: 取得元の表記をRSSからGitHub Releasesに訂正しました。
 noindex: false
 ---

@@ -92,6 +92,10 @@ npm run validate:rss
 
 ローカル開発では `SITE_URL` を省略すると `http://localhost:4321` を使います。Cloudflare Pages上の本番・Previewビルドでは、canonical、OG、JSON-LD、RSS、sitemapの基準URLを `https://ai.gaiden.news` に固定します。
 
+Python依存更新は [`docs/DEPENDENCY_UPDATES.md`](docs/DEPENDENCY_UPDATES.md) に従い、`requirements.in` と `requirements.lock` を同時に更新します。CIと日次処理はlockの整合性を確認してからインストールし、実使用版をログに残します。
+
+解析設定と公開説明の確認範囲・残る確認事項は [`docs/ANALYTICS_REVIEW.md`](docs/ANALYTICS_REVIEW.md) を参照してください。
+
 ## ニュース更新
 
 初回だけArgos公式パッケージインデックスから英日モデルを取得します。以降はローカルのモデルを再利用します。
@@ -223,6 +227,6 @@ GitHub Actionsが生成コンテンツをmainへpushすると、Cloudflare Pages
 
 ## Phase 2候補
 
-Blueskyへの日次告知、投稿済みID管理、カスタムドメイン、Search Console、Cloudflare Web Analytics、継続的な公式フィード追加、人間による追記欄、本番翻訳モデルの選定はPhase 2以降へ残しています。オフライン比較基盤自体は [`docs/TRANSLATION_BENCHMARK.md`](docs/TRANSLATION_BENCHMARK.md) に記載しています。
+Blueskyへの日次告知、投稿済みID管理、カスタムドメイン、Search Console、継続的な公式フィード追加、人間による追記欄、本番翻訳モデルの選定はPhase 2以降へ残しています。Cloudflare Web Analyticsは既存のゾーン設定による本番計測を2026年10月27日に確認済みです。追加のクリック計測等は未実装で、確認範囲は [`docs/ANALYTICS_REVIEW.md`](docs/ANALYTICS_REVIEW.md) に記載しています。オフライン比較基盤自体は [`docs/TRANSLATION_BENCHMARK.md`](docs/TRANSLATION_BENCHMARK.md) に記載しています。
 
 詳細仕様は [`docs/IMPLEMENTATION_SPEC.md`](docs/IMPLEMENTATION_SPEC.md)、作業規則は [`AGENTS.md`](AGENTS.md) を参照してください。

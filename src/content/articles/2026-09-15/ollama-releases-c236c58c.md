@@ -2,9 +2,9 @@
 articleId: ollama-releases-c236c58c
 titleJa: v0.34.1の特長
 titleOriginal: v0.34.1
-description: Ollama Releasesは9月15日、「v0.34.1の特長」を公式フィードで発表しました。公式RSSによると、MLX のセーフテナーの ollama が実験をしなくなりました。 GGUFモデルは、より安全な変換と定量化のためのllama.cppツーリングを使用する必要があります。
-briefJa: Ollama Releasesは9月15日、「v0.34.1の特長」を公式フィードで発表しました。公式RSSによると、MLX のセーフテナーの ollama が実験をしなくなりました。 GGUFモデルは、より安全な変換と定量化のためのllama.cppツーリングを使用する必要があります。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。
-excerptJa: Ollama Releasesは9月15日、「v0.34.1の特長」を公式フィードで発表しました。公式RSSによると、MLX のセーフテナーの ollama が実験をしなくなりました。 GGUFモデルは、より安全な変換と定量化のためのll…
+description: Ollama Releasesは9月15日、「v0.34.1の特長」を公式GitHub Releasesで発表しました。公式リリースによると、MLX のセーフテナーの ollama が実験をしなくなりました。 GGUFモデルは、より安全な変換と定量化のためのllama.cppツーリングを使用する必要があります。
+briefJa: Ollama Releasesは9月15日、「v0.34.1の特長」を公式GitHub Releasesで発表しました。公式リリースによると、MLX のセーフテナーの ollama が実験をしなくなりました。 GGUFモデルは、より安全な変換と定量化のためのllama.cppツーリングを使用する必要があります。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。
+excerptJa: Ollama Releasesは9月15日、「v0.34.1の特長」を公式GitHub Releasesで発表しました。公式リリースによると、MLX のセーフテナーの ollama が実験をしなくなりました。 GGUFモデルは、より安全な…
 publishedAt: '2026-09-14T22:14:03Z'
 dateJst: '2026-09-15'
 sourceId: ollama-releases
@@ -28,8 +28,10 @@ translationFallbackReasons: []
 dedupeKey: url:14336f7ca56961d502e6c900b3be8d1aeb737ad7296879068d440ba597720fb9
 fetchedAt: '2026-09-16T17:40:03+09:00'
 generatedAt: '2026-09-16T17:40:03+09:00'
-updatedAt: '2026-09-16T17:40:03+09:00'
+updatedAt: '2026-10-27T01:13:24Z'
 humanEdited: false
-correctionHistory: []
+correctionHistory:
+- date: '2026-10-27T01:13:24Z'
+  description: 取得元の表記をRSSからGitHub Releasesに訂正しました。
 noindex: false
 ---

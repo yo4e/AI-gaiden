@@ -2,9 +2,9 @@
 articleId: ollama-releases-64b3611e
 titleJa: v0.35.1の特長
 titleOriginal: v0.35.1
-description: Ollama Releasesは9月30日、「v0.35.1の特長」を公式フィードで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。
-briefJa: Ollama Releasesは9月30日、「v0.35.1の特長」を公式フィードで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。
-excerptJa: Ollama Releasesは9月30日、「v0.35.1の特長」を公式フィードで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください
+description: Ollama Releasesは9月30日、「v0.35.1の特長」を公式GitHub Releasesで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。
+briefJa: Ollama Releasesは9月30日、「v0.35.1の特長」を公式GitHub Releasesで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。
+excerptJa: Ollama Releasesは9月30日、「v0.35.1の特長」を公式GitHub Releasesで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください
 publishedAt: '2026-09-29T20:14:22Z'
 dateJst: '2026-09-30'
 sourceId: ollama-releases
@@ -30,8 +30,10 @@ translationFallbackReasons:
 dedupeKey: url:86745252420db89333393bf99d197ab1225c672bbc400d3c019cef86fb7d8734
 fetchedAt: '2026-10-03T04:58:45+09:00'
 generatedAt: '2026-10-03T04:58:45+09:00'
-updatedAt: '2026-10-03T04:58:45+09:00'
+updatedAt: '2026-10-27T01:13:24Z'
 humanEdited: false
-correctionHistory: []
+correctionHistory:
+- date: '2026-10-27T01:13:24Z'
+  description: 取得元の表記をRSSからGitHub Releasesに訂正しました。
 noindex: false
 ---

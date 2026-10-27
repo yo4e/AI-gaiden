@@ -2,9 +2,9 @@
 articleId: langchain-releases-690505de
 titleJa: langchain-openai==1.7.2
 titleOriginal: langchain-openai==1.7.2
-description: 'LangChain Releasesは10月14日、「langchain-openai==1.7.2」を公式フィードで発表しました。公式RSSによると、langchain-openai==1.7.1 リリース(openai): 1.7.2 (#41245) 修正(openai): output index ドリフト…'
-briefJa: 'LangChain Releasesは10月14日、「langchain-openai==1.7.2」を公式フィードで発表しました。公式RSSによると、langchain-openai==1.7.1 リリース(openai): 1.7.2 (#41245) 修正(openai): output index ドリフト (#41121) 時に 1 つのブロックで応答ストリーム項目を保持します。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。'
-excerptJa: 'LangChain Releasesは10月14日、「langchain-openai==1.7.2」を公式フィードで発表しました。公式RSSによると、langchain-openai==1.7.1 リリース(openai): 1.7.2…'
+description: 'LangChain Releasesは10月14日、「langchain-openai==1.7.2」を公式GitHub Releasesで発表しました。公式リリースによると、langchain-openai==1.7.1 リリース(openai): 1.7.2 (#41245) 修正(openai): output…'
+briefJa: 'LangChain Releasesは10月14日、「langchain-openai==1.7.2」を公式GitHub Releasesで発表しました。公式リリースによると、langchain-openai==1.7.1 リリース(openai): 1.7.2 (#41245) 修正(openai): output index ドリフト (#41121) 時に 1 つのブロックで応答ストリーム項目を保持します。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。'
+excerptJa: LangChain Releasesは10月14日、「langchain-openai==1.7.2」を公式GitHub Releasesで発表しました。公式リリースによると、langchain-openai==1.7.1 リリース(op…
 publishedAt: '2026-10-14T13:51:15Z'
 dateJst: '2026-10-14'
 sourceId: langchain-releases
@@ -28,8 +28,10 @@ translationFallbackReasons: []
 dedupeKey: url:2ac0e6e409f8005ae4b4d7c2c04ee3dc5857068d97fe1b120aab2f19742f831c
 fetchedAt: '2026-10-15T04:27:31+09:00'
 generatedAt: '2026-10-15T04:27:31+09:00'
-updatedAt: '2026-10-15T04:27:31+09:00'
+updatedAt: '2026-10-27T01:13:24Z'
 humanEdited: false
-correctionHistory: []
+correctionHistory:
+- date: '2026-10-27T01:13:24Z'
+  description: 取得元の表記をRSSからGitHub Releasesに訂正しました。
 noindex: false
 ---

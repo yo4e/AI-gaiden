@@ -2,9 +2,9 @@
 articleId: langchain-releases-b379adc8
 titleJa: langchain-openai==1.6.4
 titleOriginal: langchain-openai==1.6.4
-description: 'LangChain Releasesは9月23日、「langchain-openai==1.6.4」を公式フィードで発表しました。公式RSSによると、langchain-openai==1.6.3リリース(openai): 1.6.4 (#40775) chore(モデルプロファイル)): リフレッシュ野外モデルプロ…'
-briefJa: 'LangChain Releasesは9月23日、「langchain-openai==1.6.4」を公式フィードで発表しました。公式RSSによると、langchain-openai==1.6.3リリース(openai): 1.6.4 (#40775) chore(モデルプロファイル)): リフレッシュ野外モデルプロファイルデータ(#40774)。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。'
-excerptJa: 'LangChain Releasesは9月23日、「langchain-openai==1.6.4」を公式フィードで発表しました。公式RSSによると、langchain-openai==1.6.3リリース(openai): 1.6.4 (…'
+description: 'LangChain Releasesは9月23日、「langchain-openai==1.6.4」を公式GitHub Releasesで発表しました。公式リリースによると、langchain-openai==1.6.3リリース(openai): 1.6.4 (#40775) chore(モデルプロファイル)): リ…'
+briefJa: 'LangChain Releasesは9月23日、「langchain-openai==1.6.4」を公式GitHub Releasesで発表しました。公式リリースによると、langchain-openai==1.6.3リリース(openai): 1.6.4 (#40775) chore(モデルプロファイル)): リフレッシュ野外モデルプロファイルデータ(#40774)。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。'
+excerptJa: LangChain Releasesは9月23日、「langchain-openai==1.6.4」を公式GitHub Releasesで発表しました。公式リリースによると、langchain-openai==1.6.3リリース(open…
 publishedAt: '2026-09-22T22:37:09Z'
 dateJst: '2026-09-23'
 sourceId: langchain-releases
@@ -28,8 +28,10 @@ translationFallbackReasons: []
 dedupeKey: url:2cae723c95a95b2c6a5e79b2702e33b09db42f2d9f72da3d44af7119a7e73e9a
 fetchedAt: '2026-09-23T17:39:33+09:00'
 generatedAt: '2026-09-23T17:39:33+09:00'
-updatedAt: '2026-09-23T17:39:33+09:00'
+updatedAt: '2026-10-27T01:13:24Z'
 humanEdited: false
-correctionHistory: []
+correctionHistory:
+- date: '2026-10-27T01:13:24Z'
+  description: 取得元の表記をRSSからGitHub Releasesに訂正しました。
 noindex: false
 ---

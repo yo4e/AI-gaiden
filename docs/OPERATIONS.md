@@ -154,3 +154,17 @@ GitHub Actionsは3時間ごとに起動するが、新着ニュースがない�
 - 配信元RSSへのアクセス頻度を下げる必要が生じた場合
 - Actionsの実行時間や失敗率が増えた場合
 - 更新鮮度より運用コストを優先する段階へ移行した場合
+
+## GitHub Releasesの旧記事表記を訂正する（Issue #78）
+
+新規記事の生成は取得方式を保持して表記を選びます。既存のMarkdownは通常のニュース更新で上書きされないため、旧定型文は次の専用スクリプトで確認します。
+
+```bash
+python scripts/correct_release_wording.py --updated-at <訂正時点のタイムゾーン付きISO日時>
+# 表示された候補を確認した後、ローカル差分へ適用する
+python scripts/correct_release_wording.py --updated-at <同じ日時> --apply
+```
+
+既定はdry-runです。GitHub Releasesの配信元だけに対し、既知の定型文を訂正し、descriptionと抜粋の長さを制限内に保ちます。短報末尾の自動翻訳の注意書きは保ちます。`updatedAt` と読者向け `correctionHistory` を更新し、記事ID・公開日・取得日・原文・URL・翻訳状態・既読管理は維持します。`humanEdited`、既存訂正履歴、Markdown本文がある記事は保護し、対象候補全体の検証が成功してから書き込みます。既存の保護記事は別途レビューしてください。再実行で同じ訂正を重ねません。
+
+2026-10-27のローカル訂正案は69件（LangChain 46、Ollama 15、llama.cpp 4、vLLM 4）、保護対象0件でした。これは公開済みという意味ではありません。公開前にmainの更新と競合を確認し、差分・訂正日時をレビューしてください。

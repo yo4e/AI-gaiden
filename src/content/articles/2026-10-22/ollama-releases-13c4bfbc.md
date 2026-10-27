@@ -2,9 +2,9 @@
 articleId: ollama-releases-13c4bfbc
 titleJa: v0.40.9の特長
 titleOriginal: v0.40.9
-description: Ollama Releasesは10月22日、「v0.40.9の特長」を公式フィードで発表しました。公式RSSによると、スピーチオラマは、AppleシリコンでPhononでスピーチを生成できるようになりました。 ollama run はテキストやチャットモデルの応答を音声が生成されると、アプリは OpenAI-com…
-briefJa: Ollama Releasesは10月22日、「v0.40.9の特長」を公式フィードで発表しました。公式RSSによると、スピーチオラマは、AppleシリコンでPhononでスピーチを生成できるようになりました。 ollama run はテキストやチャットモデルの応答を音声が生成されると、アプリは OpenAI-compatible /v1/audio/speech エンドポイントを介してオーディオをストリーミングできます。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。
-excerptJa: Ollama Releasesは10月22日、「v0.40.9の特長」を公式フィードで発表しました。公式RSSによると、スピーチオラマは、AppleシリコンでPhononでスピーチを生成できるようになりました。 ollama run はテ…
+description: Ollama Releasesは10月22日、「v0.40.9の特長」を公式GitHub Releasesで発表しました。公式リリースによると、スピーチオラマは、AppleシリコンでPhononでスピーチを生成できるようになりました。 ollama run はテキストやチャットモデルの応答を音声が生成されると、アプリ…
+briefJa: Ollama Releasesは10月22日、「v0.40.9の特長」を公式GitHub Releasesで発表しました。公式リリースによると、スピーチオラマは、AppleシリコンでPhononでスピーチを生成できるようになりました。 ollama run はテキストやチャットモデルの応答を音声が生成されると、アプリは OpenAI-compatible /v1/audio/speech エンドポイントを介してオーディオをストリーミングできます。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。
+excerptJa: Ollama Releasesは10月22日、「v0.40.9の特長」を公式GitHub Releasesで発表しました。公式リリースによると、スピーチオラマは、AppleシリコンでPhononでスピーチを生成できるようになりました。 o…
 publishedAt: '2026-10-22T01:33:10Z'
 dateJst: '2026-10-22'
 sourceId: ollama-releases
@@ -28,8 +28,10 @@ translationFallbackReasons: []
 dedupeKey: url:39a2c26df5548ff5b1c5ffa067016d597359abdc295db9c157cc84989cc2958d
 fetchedAt: '2026-10-23T17:37:46+09:00'
 generatedAt: '2026-10-23T17:37:46+09:00'
-updatedAt: '2026-10-23T17:37:46+09:00'
+updatedAt: '2026-10-27T01:13:24Z'
 humanEdited: false
-correctionHistory: []
+correctionHistory:
+- date: '2026-10-27T01:13:24Z'
+  description: 取得元の表記をRSSからGitHub Releasesに訂正しました。
 noindex: false
 ---

@@ -125,6 +125,8 @@ Python:
 
 依存は必要最小限とし、未使用パッケージを追加しない。
 
+Python依存は `requirements.in` と `requirements.lock` を同時に更新する。`scripts/lock_requirements.py` はuv固定版・Python 3.12・universal・既存索引条件で再生成する。CIと日次workflowは `--check` で不整合を失敗させてからlockをインストールし、`pip check` とインストール済み版のログを残す。詳細は `docs/DEPENDENCY_UPDATES.md`。
+
 ## 5. 推奨ディレクトリ構成
 
 ```text
@@ -426,6 +428,8 @@ categories: string[]
 Google AIは8月3日、「〇〇」を公開しました。公式RSSによると、今回の発表では〇〇が紹介されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。
 ```
 
+取得方式は正規化データから翻訳済みデータまで `source_type` として保持する。`rss` は従来の「公式フィード」「公式RSS」を維持し、`github_releases` は「公式GitHub Releases」「公式リリース」とする。通常翻訳・概要フォールバック・長文切り詰め・短いdescriptionの補完でも同じ取得方式を使用する。URL、出典、RSS XMLの契約は変更しない。
+
 ### 10.2 ルール
 
 - 1項目あたり120〜320日本語文字を目安とする。
@@ -617,9 +621,10 @@ noindex: false
 ### 13.7 `/privacy/`
 
 - 運営名「外電通信」と実際の運営主体の記載
-- 初期段階でCookie、広告、個人情報収集を行わないこと
+- 独自のCookie、広告、氏名・メール等の入力機能を設置していないこと
 - Cloudflareの配信基盤を使用すること
-- Analyticsを導入した場合は改訂すること
+- Cloudflare Web Analyticsの既存利用、本番hostname、EUの訪問者を除外する現設定を説明すること
+- 独自機能と配信基盤の通信情報・解析を区別し、未確認の「未導入」「稼働中」を断定しない。現設定の確認範囲と公開前の確認は `docs/ANALYTICS_REVIEW.md` に記録する
 
 ### 13.8 運営表記
 
@@ -1106,7 +1111,7 @@ Phase 1の運用確認後に別設計で実施する。
 - 投稿失敗時の再実行
 - カスタムドメイン
 - Search Console
-- Cloudflare Web Analytics
+- 既存Cloudflare Web Analyticsの運用指標整備と追加計測の判断（本番の基礎計測は2026年10月27日に確認済み。`docs/ANALYTICS_REVIEW.md`参照）
 - フィード追加
 - 人間による注目記事への追記欄
 - 本番翻訳モデルの選定と切り替え（オフライン比較基盤はIssue #16で追加）

@@ -36,6 +36,7 @@ class NormalizedItem:
     image_license: str | None
     dedupe_key: str
     source_homepage: str | None = None
+    source_type: str = "rss"
 
 
 @dataclass(frozen=True, slots=True)
@@ -64,3 +65,4 @@ class PreparedItem:
     summary_fallback_applied: bool = False
     title_fallback_reasons: tuple[str, ...] = ()
     summary_fallback_reasons: tuple[str, ...] = ()
+    source_type: str = "rss"

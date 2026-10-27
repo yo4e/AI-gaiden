@@ -495,12 +495,26 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code"
     },
+    "url:1c5b51464767c2ad29498f22c3230eb67bc2e05dfccf5184d942345b7a68fe50": {
+      "article_id": "hugging-face-e1f775f8",
+      "first_seen_at": "2026-10-27T20:07:29.250572Z",
+      "published_at": "2026-10-27T17:16:52Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm3"
+    },
     "url:1cfb6291fa158d05a5bad0e638547e0ff07dabd8e5700299a43b136146616242": {
       "article_id": "openai-news-1a84479d",
       "first_seen_at": "2026-10-20T19:20:01.517723Z",
       "published_at": "2026-10-20T00:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/openai-to-acquire-orchestra-bio"
+    },
+    "url:1d6c5c59e46e52b936cbc7b983785a69d62ade05b868a690011ee911fd57d509": {
+      "article_id": "hugging-face-64a33ccc",
+      "first_seen_at": "2026-10-27T20:07:29.250572Z",
+      "published_at": "2026-10-27T16:12:42Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/allenai/novelty-bench"
     },
     "url:1dbe22633003a2af4fddcdba3c780b2ba9f507be061699ce02dd407e5165c7ab": {
       "article_id": "openai-news-62a47321",
@@ -789,6 +803,13 @@
       "source": "ollama-releases",
       "url": "https://github.com/ollama/ollama/releases/tag/v0.34.2"
     },
+    "url:2d6948b5b0022bc88fdce0d88dbe37553c1574838021250d122bac6659cdce49": {
+      "article_id": "aws-machine-learning-2a7ddbc7",
+      "first_seen_at": "2026-10-27T20:07:29.250572Z",
+      "published_at": "2026-10-27T18:03:12Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/aws-named-a-leader-in-the-2026-gartner-magic-quadrant-for-contact-center-as-a-service"
+    },
     "url:2d8e70fb45cef7470a5baf361c95df26b5ff7249933c340d169f562e1258ded9": {
       "article_id": "openai-news-2d8a753f",
       "first_seen_at": "2026-10-05T10:33:47.536612Z",
@@ -802,6 +823,13 @@
       "published_at": "2026-09-21T16:24:40Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/reducing-medical-claims-review-time-with-ai-on-aws-the-exl-medical-idp-solution"
+    },
+    "url:2eb317e634c166703036d7ea05369063a800e59313ae68b2d81a408642c4e111": {
+      "article_id": "aws-machine-learning-7be37441",
+      "first_seen_at": "2026-10-27T20:07:29.250572Z",
+      "published_at": "2026-10-27T16:53:02Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/fix-evaluation-bias-to-unlock-better-models-on-amazon-bedrock"
     },
     "url:2ee55c894d54d6ef378cd7d1845a6619020ac025413730085d4544511aa3cd8a": {
       "article_id": "google-deepmind-5c4437d5",
@@ -1825,6 +1853,13 @@
       "published_at": "2026-08-10T16:25:36Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents"
+    },
+    "url:58ff7a6a906611649d17700f9aefc9064e08f319742bc1a046b07aaf8a54f2fe": {
+      "article_id": "aws-machine-learning-e9774c87",
+      "first_seen_at": "2026-10-27T20:07:29.250572Z",
+      "published_at": "2026-10-27T17:00:39Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/announcing-soci-indexed-images-for-faster-sagemaker-ai-jobs"
     },
     "url:59190604ac3647d11d421f6b3f8c762389c9ca2ef6c94251e03d42ca0393f921": {
       "article_id": "mlcommons-55b01b68",
@@ -3676,6 +3711,13 @@
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence"
     },
+    "url:b4af5d547e592189c47807a1ce9a6e1d15b9535fa1b4bb5d9508c0026cab47f2": {
+      "article_id": "aws-machine-learning-3632a95c",
+      "first_seen_at": "2026-10-27T20:07:29.250572Z",
+      "published_at": "2026-10-27T16:50:55Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/exowatt-beats-frontier-models-on-accuracy-with-sagemaker-serverless-model-customization"
+    },
     "url:b5500bc6503561c622e234c790899474b8b24e1670dad4cceb0dbc466610f3db": {
       "article_id": "hugging-face-1c35904b",
       "first_seen_at": "2026-09-03T08:07:17.945680Z",
@@ -3983,6 +4025,20 @@
       "published_at": "2026-08-18T11:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/chatgpt-for-teens"
+    },
+    "url:c417f8e3d39d0b893c07541bfe85fce19056b39882f88193551609651d5af4ff": {
+      "article_id": "openai-news-e9d57099",
+      "first_seen_at": "2026-10-27T20:07:29.250572Z",
+      "published_at": "2026-10-27T07:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/oracle-apps-in-chatgpt"
+    },
+    "url:c44dc9ed271ff418b14ac5c964f0f9272d3413bd0c2b38b09efd327bf214a17d": {
+      "article_id": "openai-news-c9020e8b",
+      "first_seen_at": "2026-10-27T20:07:29.250572Z",
+      "published_at": "2026-10-27T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/check-point-daybreak"
     },
     "url:c4f8aa8005950198d923b7bcdcbf3d41a6058d02cd7c2338515e42cc91030b45": {
       "article_id": "aws-machine-learning-0f356d96",
@@ -4674,6 +4730,13 @@
       "published_at": "2026-10-07T15:50:00Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/beyond-hours-saved-building-the-business-case-for-agentic-automation"
+    },
+    "url:e960e8891f7d7ad86d1b82fb38dd6339695a2e548b1364f330e5b8eceb6d79af": {
+      "article_id": "google-deepmind-a2142b2c",
+      "first_seen_at": "2026-10-27T20:07:29.250572Z",
+      "published_at": "2026-10-27T16:01:38Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation"
     },
     "url:e991f28971b78ffc4b870f48aedb48451906a0883992dfde8367c738a304e26f": {
       "article_id": "aws-machine-learning-3dc2458c",

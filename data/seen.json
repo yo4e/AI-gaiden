@@ -2495,6 +2495,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/asynchronous-patterns-for-calling-amazon-bedrock-agentcore-agents-in-serverless-pipelines"
     },
+    "url:7d972df501d01ba1f64ace9f515a56fb23b6429c84e2c13cce6a1dfa0631bf43": {
+      "article_id": "openai-news-558f0ef3",
+      "first_seen_at": "2026-10-27T09:05:55.750045Z",
+      "published_at": "2026-10-26T13:45:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security"
+    },
     "url:7da99f40f855b50457e2a875a83af3ff50f9ca243f7093426cd6c39de6e33052": {
       "article_id": "ollama-releases-18a7cbee",
       "first_seen_at": "2026-10-16T08:16:07.594781Z",
@@ -2848,6 +2855,13 @@
       "published_at": "2026-08-14T15:58:44Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/building-agentic-workflows-with-sagemaker-ai-and-bedrock-agentcore"
+    },
+    "url:8eb6001a836a6e50b8fb133e1590f182de0e7997306db3a54dcb8d2c2e5a6daa": {
+      "article_id": "openai-news-187fbd11",
+      "first_seen_at": "2026-10-27T09:05:55.750045Z",
+      "published_at": "2026-10-26T14:30:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
     },
     "url:8f8c726fbdb30a61c539a826b3f2c20aa1af7074558cd7c31eba67c89b69ee35": {
       "article_id": "apple-ml-research-8cdd300b",
@@ -3382,6 +3396,13 @@
       "published_at": "2026-10-14T07:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/third-moment-research"
+    },
+    "url:a9c488820a62ac4adcd9d66c87dfdb487fb6897ef015ab83ccdf2e6a9db2968a": {
+      "article_id": "openai-news-2e8a470f",
+      "first_seen_at": "2026-10-27T09:05:55.750045Z",
+      "published_at": "2026-10-26T22:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/greptile-code-review-codex-astra"
     },
     "url:a9f660862b14122b754b81c8b73ed12b4ae45c1ac84de6206c010c00eb55daad": {
       "article_id": "apple-ml-research-d497893e",
@@ -5058,6 +5079,13 @@
       "published_at": "2026-10-01T15:01:43Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/allenai/olmocore3"
+    },
+    "url:f978f7c73c30df668db72235749a0b171fab549f89b1a2ca6403cfa4c1e15f2e": {
+      "article_id": "langchain-releases-6b509903",
+      "first_seen_at": "2026-10-27T09:05:55.750045Z",
+      "published_at": "2026-10-26T23:08:48Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.7.3"
     },
     "url:f9e50d04dc76de5ab84338e31eaed2a5825c8781af89d9eee25b43b9cad6943e": {
       "article_id": "langchain-releases-ba2836a1",

@@ -2,9 +2,9 @@
 articleId: ollama-releases-f6377851
 titleJa: v0.40.8の特長
 titleOriginal: v0.40.8
-description: 'Ollama Releasesは10月22日、「v0.40.8の特長」を公式フィードで発表しました。公式RSSによると、Recursive FlintはRecursiveのコーディングモデルをOllamaに持って来ます。 作業コーディングエージェントがリポジトリ全体で行うように設計されている: 不慣れなコードを理解し…'
-briefJa: 'Ollama Releasesは10月22日、「v0.40.8の特長」を公式フィードで発表しました。公式RSSによると、Recursive FlintはRecursiveのコーディングモデルをOllamaに持って来ます。 作業コーディングエージェントがリポジトリ全体で行うように設計されている: 不慣れなコードを理解し、バグを追跡し、機能を実行し、テストを追加します。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。'
-excerptJa: Ollama Releasesは10月22日、「v0.40.8の特長」を公式フィードで発表しました。公式RSSによると、Recursive FlintはRecursiveのコーディングモデルをOllamaに持って来ます。 作業コーディング…
+description: Ollama Releasesは10月22日、「v0.40.8の特長」を公式GitHub Releasesで発表しました。公式リリースによると、Recursive FlintはRecursiveのコーディングモデルをOllamaに持って来ます。 作業コーディングエージェントがリポジトリ全体で行うように設計されている:…
+briefJa: 'Ollama Releasesは10月22日、「v0.40.8の特長」を公式GitHub Releasesで発表しました。公式リリースによると、Recursive FlintはRecursiveのコーディングモデルをOllamaに持って来ます。 作業コーディングエージェントがリポジトリ全体で行うように設計されている: 不慣れなコードを理解し、バグを追跡し、機能を実行し、テストを追加します。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。'
+excerptJa: Ollama Releasesは10月22日、「v0.40.8の特長」を公式GitHub Releasesで発表しました。公式リリースによると、Recursive FlintはRecursiveのコーディングモデルをOllamaに持って来…
 publishedAt: '2026-10-21T16:20:30Z'
 dateJst: '2026-10-22'
 sourceId: ollama-releases
@@ -28,8 +28,10 @@ translationFallbackReasons: []
 dedupeKey: url:bb132bf741e1159b4d9c3028f89f923d2bb7de74d7f5c66e1f9e61655ed4a429
 fetchedAt: '2026-10-22T17:41:38+09:00'
 generatedAt: '2026-10-22T17:41:38+09:00'
-updatedAt: '2026-10-22T17:41:38+09:00'
+updatedAt: '2026-10-27T01:13:24Z'
 humanEdited: false
-correctionHistory: []
+correctionHistory:
+- date: '2026-10-27T01:13:24Z'
+  description: 取得元の表記をRSSからGitHub Releasesに訂正しました。
 noindex: false
 ---

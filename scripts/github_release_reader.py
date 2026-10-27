@@ -95,6 +95,7 @@ def normalize_release(payload: Mapping[str, Any], config: FeedConfig) -> Normali
             published_at=published_at,
         ),
         source_homepage=config.homepage,
+        source_type=config.source_type,
     )
 
 

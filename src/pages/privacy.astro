@@ -23,18 +23,30 @@ import { OPERATOR_STATEMENT, REPOSITORY_URL } from '../lib/site';
 
     <h2>Cookieと個人情報</h2>
     <p>
-      AI外電は現在、独自のCookie、広告、会員機能、問い合わせフォームを設置せず、利用者の個人情報を収集・保存しません。
+      AI外電は現在、独自のCookie、広告、会員機能、問い合わせフォームを設置していません。氏名やメールアドレスなどを入力・保存する機能もありません。
     </p>
 
     <h2>アクセス解析</h2>
     <p>
-      現在、アクセス解析ツールは導入していません。将来導入する場合は、利用するサービスと取得情報を明記したうえで本方針を改訂します。
+      AI外電では、閲覧状況や表示性能を把握し、サイトの改善に役立てるため、Cloudflare Web
+      Analyticsを利用しています。本番サイト（ai.gaiden.news）のページ閲覧数、参照元、ブラウザー・端末の種類、ページの表示性能などを集計します。
+    </p>
+    <p>
+      現在の設定では、EUからの訪問者のデータをこのアクセス解析から除外しています。広告向けの行動追跡や、個人を識別するための独自の解析コードは設置していません。
+    </p>
+    <p>
+      Cloudflareは、この計測にCookie、localStorage、個人を識別するフィンガープリントを使用しないと説明しています。
+      詳細は<a href="https://developers.cloudflare.com/web-analytics/" rel="noopener noreferrer"
+        >Cloudflare Web Analyticsの説明</a
+      >と<a href="https://www.cloudflare.com/privacypolicy/" rel="noopener noreferrer"
+        >Cloudflareのプライバシーポリシー</a
+      >をご確認ください。
     </p>
 
     <h2>配信基盤</h2>
     <p>
       サイト配信にはCloudflare
-      Pagesを使用します。配信時の技術的な通信情報は、Cloudflareのポリシーに従って処理される場合があります。
+      Pagesを使用します。IPアドレスやリクエストに関する技術的な通信情報は、配信・セキュリティ・サービス運用のためにCloudflareのポリシーに従って処理される場合があります。
     </p>
 
     <h2>外部リンク</h2>
@@ -49,6 +61,6 @@ import { OPERATOR_STATEMENT, REPOSITORY_URL } from '../lib/site';
       >で受け付けます。
     </p>
 
-    <p><small>制定日: 2026年8月3日</small></p>
+    <p><small>制定日: 2026年8月3日／改訂日: 2026年10月27日</small></p>
   </article>
 </BaseLayout>

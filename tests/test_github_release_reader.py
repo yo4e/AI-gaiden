@@ -217,3 +217,33 @@ def test_reader_fails_safely_on_rate_limit(tmp_path, monkeypatch) -> None:
     assert result.items == ()
     assert "rate limit exhausted" in (result.error or "")
     assert changed is False
+
+
+def test_release_transport_survives_translation_and_summary_failure() -> None:
+    from scripts.translator import TranslationError, Translator
+    from scripts.updater import _prepare_item
+
+    class ReleaseTranslator(Translator):
+        fail_summary = False
+
+        def translate(self, text: str) -> str:
+            if "v1.2.3" in text:
+                return "Example AI v1.2.3を公開"
+            if self.fail_summary:
+                raise TranslationError("summary unavailable")
+            return "ツールを呼び出すための機能が追加されています"
+
+    item = normalize_release(release_payload(), make_config())
+    assert item is not None
+    assert item.source_type == "github_releases"
+    translator = ReleaseTranslator()
+    for failure in (False, True):
+        translator.fail_summary = failure
+        prepared = _prepare_item(item, translator)
+        assert prepared.source_type == "github_releases"
+        assert prepared.summary_fallback_applied == failure
+        assert "公式GitHub Releases" in prepared.brief_ja
+        assert "公式RSS" not in prepared.brief_ja
+        assert "公式フィード" not in prepared.brief_ja
+        assert prepared.url == item.url
+        assert prepared.canonical_url == item.canonical_url

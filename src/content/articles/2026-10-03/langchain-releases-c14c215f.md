@@ -2,9 +2,9 @@
 articleId: langchain-releases-c14c215f
 titleJa: langchain-text-splitters==1.1.3
 titleOriginal: langchain-text-splitters==1.1.3
-description: LangChain Releasesは10月3日、「langchain-text-splitters==1.1.3」を公式フィードで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。
-briefJa: LangChain Releasesは10月3日、「langchain-text-splitters==1.1.3」を公式フィードで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。
-excerptJa: LangChain Releasesは10月3日、「langchain-text-splitters==1.1.3」を公式フィードで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください
+description: LangChain Releasesは10月3日、「langchain-text-splitters==1.1.3」を公式GitHub Releasesで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確…
+briefJa: LangChain Releasesは10月3日、「langchain-text-splitters==1.1.3」を公式GitHub Releasesで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。
+excerptJa: LangChain Releasesは10月3日、「langchain-text-splitters==1.1.3」を公式GitHub Releasesで発表しました。概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください
 publishedAt: '2026-10-02T15:46:49Z'
 dateJst: '2026-10-03'
 sourceId: langchain-releases
@@ -30,8 +30,10 @@ translationFallbackReasons:
 dedupeKey: url:80045661ac99ba741eea6b22dc5483ce8c6734b693ebc640150ff5656a77db5e
 fetchedAt: '2026-10-03T04:58:45+09:00'
 generatedAt: '2026-10-03T04:58:45+09:00'
-updatedAt: '2026-10-03T04:58:45+09:00'
+updatedAt: '2026-10-27T01:13:24Z'
 humanEdited: false
-correctionHistory: []
+correctionHistory:
+- date: '2026-10-27T01:13:24Z'
+  description: 取得元の表記をRSSからGitHub Releasesに訂正しました。
 noindex: false
 ---

@@ -175,3 +175,40 @@ def test_human_edited_existing_article_is_not_overwritten(tmp_path) -> None:
         == []
     )
     assert existing_path.read_bytes() == before
+
+
+@pytest.mark.parametrize("source_type", ["rss", "github_releases"])
+@pytest.mark.parametrize(
+    "summary", ["研究用ツールの更新内容が公開されています", "", "更新内容です" * 100]
+)
+def test_transport_wording_in_brief_and_metadata(source_type, summary) -> None:
+    item = make_item(source_type=source_type)
+    brief = build_brief(item, summary)
+    data = article_data_from_item(
+        replace(item, brief_ja=brief), generated_at=datetime(2026, 8, 3, 3, tzinfo=UTC)
+    )
+    validate_article_data(data)
+    for field in ("briefJa", "description", "excerptJa"):
+        if source_type == "github_releases":
+            assert "公式GitHub Releases" in data[field]
+            assert "公式RSS" not in data[field]
+            assert "公式フィード" not in data[field]
+        else:
+            assert "公式フィード" in data[field]
+    if summary:
+        assert ("公式リリースによると" if source_type == "github_releases"
+                else "公式RSSによると") in brief
+    else:
+        assert "概要の翻訳を掲載できないため" in brief
+    assert data["canonicalUrl"] == item.canonical_url
+    assert data["sourceUrl"] == item.url
+
+
+@pytest.mark.parametrize("source_type", ["rss", "github_releases"])
+def test_short_description_fallback_uses_transport(source_type) -> None:
+    data = article_data_from_item(
+        make_item(source_type=source_type, brief_ja="短い説明"),
+        generated_at=datetime(2026, 8, 3, 3, tzinfo=UTC),
+    )
+    expected = "公式GitHub Releases" if source_type == "github_releases" else "公式RSS"
+    assert expected in data["description"]

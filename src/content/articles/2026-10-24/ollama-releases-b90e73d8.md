@@ -2,9 +2,9 @@
 articleId: ollama-releases-b90e73d8
 titleJa: v0.40.11の特長
 titleOriginal: v0.40.11
-description: Ollama Releasesは10月24日、「v0.40.11の特長」を公式フィードで発表しました。公式RSSによると、Speech Ollama は、macOS で音声を生成できるようになりました。 ollama は、音声が生成されると、テキストやチャットモデルの応答を aloud で実行し、アプリは OpenA…
-briefJa: Ollama Releasesは10月24日、「v0.40.11の特長」を公式フィードで発表しました。公式RSSによると、Speech Ollama は、macOS で音声を生成できるようになりました。 ollama は、音声が生成されると、テキストやチャットモデルの応答を aloud で実行し、アプリは OpenAI-compatible /v1/audio/speech エンドポイントを介してオーディオをストリーミングできます。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。
-excerptJa: Ollama Releasesは10月24日、「v0.40.11の特長」を公式フィードで発表しました。公式RSSによると、Speech Ollama は、macOS で音声を生成できるようになりました。 ollama は、音声が生成される…
+description: Ollama Releasesは10月24日、「v0.40.11の特長」を公式GitHub Releasesで発表しました。公式リリースによると、Speech Ollama は、macOS で音声を生成できるようになりました。 ollama は、音声が生成されると、テキストやチャットモデルの応答を aloud で実行…
+briefJa: Ollama Releasesは10月24日、「v0.40.11の特長」を公式GitHub Releasesで発表しました。公式リリースによると、Speech Ollama は、macOS で音声を生成できるようになりました。 ollama は、音声が生成されると、テキストやチャットモデルの応答を aloud で実行し、アプリは OpenAI-compatible /v1/audio/speech エンドポイントを介してオーディオをストリーミングできます。内容は自動翻訳・定型編集されています。詳細や正確な仕様は、リンク先の公式発表をご確認ください。
+excerptJa: Ollama Releasesは10月24日、「v0.40.11の特長」を公式GitHub Releasesで発表しました。公式リリースによると、Speech Ollama は、macOS で音声を生成できるようになりました。 ollam…
 publishedAt: '2026-10-24T00:30:13Z'
 dateJst: '2026-10-24'
 sourceId: ollama-releases
@@ -28,8 +28,10 @@ translationFallbackReasons: []
 dedupeKey: url:173b2ddf9d58603a17345ad9e92a3f48eeebd3b998fe470fffa9c046565eefcc
 fetchedAt: '2026-10-25T03:12:08+09:00'
 generatedAt: '2026-10-25T03:12:08+09:00'
-updatedAt: '2026-10-25T03:12:08+09:00'
+updatedAt: '2026-10-27T01:13:24Z'
 humanEdited: false
-correctionHistory: []
+correctionHistory:
+- date: '2026-10-27T01:13:24Z'
+  description: 取得元の表記をRSSからGitHub Releasesに訂正しました。
 noindex: false
 ---

@@ -40,20 +40,23 @@ def article_relative_path(date_value: str, article_id: str) -> Path:
 def build_brief(item: Any, summary_ja: str) -> str:
     published_jst = item.published_at.astimezone(JST)
     date_text = f"{published_jst.month}月{published_jst.day}日"
-    prefix = f"{item.source_name}は{date_text}、「{item.title_ja}」を公式フィードで発表しました。"
+    is_release = item.source_type == "github_releases"
+    announcement = "公式GitHub Releases" if is_release else "公式フィード"
+    attribution = "公式リリース" if is_release else "公式RSS"
+    prefix = f"{item.source_name}は{date_text}、「{item.title_ja}」を{announcement}で発表しました。"
     if summary_ja:
         summary = summary_ja.strip().rstrip("。.!！")
-        middle = f"公式RSSによると、{summary}。"
+        middle = f"{attribution}によると、{summary}。"
     else:
         middle = "概要の翻訳を掲載できないため、発表内容は公式リンクでご確認ください。"
     suffix = (
         "内容は自動翻訳・定型編集されています。詳細や正確な仕様は、"
         "リンク先の公式発表をご確認ください。"
     )
-    available = 320 - len(prefix) - len(suffix) - len("公式RSSによると、。")
+    available = 320 - len(prefix) - len(suffix) - len(f"{attribution}によると、。")
     if summary_ja and available < len(summary):
         summary = f"{summary[: max(1, available - 1)].rstrip()}…"
-        middle = f"公式RSSによると、{summary}。"
+        middle = f"{attribution}によると、{summary}。"
     brief = prefix + middle + suffix
     if len(brief) < 120:
         brief += "原文タイトルと配信元も併記しています。"
@@ -75,8 +78,9 @@ def _description(item: PreparedItem) -> str:
         boundary = max(candidate.rfind("。"), candidate.rfind("！"), candidate.rfind("？"))
         text = candidate[: boundary + 1] if boundary >= 119 else f"{candidate[:159].rstrip()}…"
     if len(text) < 120:
+        attribution = "公式GitHub Releases" if item.source_type == "github_releases" else "公式RSS"
         text = (
-            f"{item.title_ja}。{item.source_name}の公式RSSをもとにした日本語短報です。"
+            f"{item.title_ja}。{item.source_name}の{attribution}をもとにした日本語短報です。"
             "原文タイトルと公式発表へのリンクを併記しています。"
         )
     return text[:160]

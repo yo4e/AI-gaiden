@@ -481,6 +481,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership"
     },
+    "url:1aab6efabbe27417e2d827f045553fb01450a3542da964c12eb0044c14bb22ab": {
+      "article_id": "langchain-releases-ac02f6fb",
+      "first_seen_at": "2026-10-28T09:46:47.149690Z",
+      "published_at": "2026-10-27T23:48:24Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.7"
+    },
     "url:1b555e620b3576f24f15fcd669e7f4a7d191269cd47a4d21b232e7194d040769": {
       "article_id": "apple-ml-research-134c7e09",
       "first_seen_at": "2026-08-18T15:49:35.191346Z",
@@ -536,6 +543,13 @@
       "published_at": "2026-09-08T11:30:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/introducing-chatgpt-images-2-5"
+    },
+    "url:1e3ebf94e41ebe19793bfa16d9a1ceac171abfb39683d16886169781f84081b8": {
+      "article_id": "openai-news-44a3a3d2",
+      "first_seen_at": "2026-10-28T09:46:47.149690Z",
+      "published_at": "2026-10-27T15:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/retell-ai"
     },
     "url:1f08b431314013b7175a456038152cef5284350da4be43d8ed0e58d6940d1eb3": {
       "article_id": "github-ai-ml-35157d75",
@@ -2340,6 +2354,13 @@
       "published_at": "2026-10-01T16:51:04Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/uplifting-conversion-across-the-acquisition-funnel-with-personalization-using-contextual-bandits-on-aws"
+    },
+    "url:740c5733ca5094b5da389e6d6bcbd2c2cbf7d5019cc80b0e74b6424261c1132e": {
+      "article_id": "ollama-releases-7b7bc460",
+      "first_seen_at": "2026-10-28T09:46:47.149690Z",
+      "published_at": "2026-10-27T00:07:12Z",
+      "source": "ollama-releases",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.12"
     },
     "url:742d30efdc4090c11a97794f6a72e90c1243857798823aeed51fe879a1c3fcd7": {
       "article_id": "openai-news-ab91b6f2",

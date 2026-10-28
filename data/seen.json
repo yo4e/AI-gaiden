@@ -1027,6 +1027,13 @@
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber"
     },
+    "url:3592c2289faff55994bbf1d7c7ee2607b0798e9e58c202a26865e5cf03d94a1e": {
+      "article_id": "aws-machine-learning-63000364",
+      "first_seen_at": "2026-10-28T20:20:27.243969Z",
+      "published_at": "2026-10-28T18:12:13Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/accelerating-software-delivery-with-agentic-qa-automation-using-amazon-nova-act-part-3"
+    },
     "url:35d31ebafcc15027dd0f6f6eb30e580fe67dbdb2e57923a460e2125e1c588fd0": {
       "article_id": "aws-machine-learning-20f8d52d",
       "first_seen_at": "2026-08-25T04:03:45.951557Z",
@@ -1310,6 +1317,13 @@
       "published_at": "2026-08-10T14:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/responsible-ai-infrastructure-texas"
+    },
+    "url:3e32bae570ff21ee59e510c657138291c10e18dd5aba048c9dfb1703176c3b65": {
+      "article_id": "google-deepmind-3617118e",
+      "first_seen_at": "2026-10-28T20:20:27.243969Z",
+      "published_at": "2026-10-28T17:00:58Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model"
     },
     "url:3f1a11956436b167380065dcbfb11acfb4b7400895eeef122ae6e9ec1be674ee": {
       "article_id": "openai-news-6ebd2619",
@@ -1931,6 +1945,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1"
     },
+    "url:5b54fb74a59ffe3f5477d37587644f8b6e63ed68b1baf1e62d83c9f2b5e66405": {
+      "article_id": "aws-machine-learning-d3810f2c",
+      "first_seen_at": "2026-10-28T20:20:27.243969Z",
+      "published_at": "2026-10-28T18:19:54Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/distributed-training-with-ray-train-dlcs-and-efa-on-eks"
+    },
     "url:5ba78b757300e8cc3ff5b4c8f26a93a1cc067af59a63302997722a2b18eff29a": {
       "article_id": "hugging-face-795a7b96",
       "first_seen_at": "2026-08-19T04:02:41.847930Z",
@@ -2292,6 +2313,13 @@
       "published_at": "2026-08-13T11:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/builders-guide-to-gpt-5-6"
+    },
+    "url:709cc8e2bd467b7916899fb3ec62dbecfa135fc3209b011a85a1239ca7c1f0f6": {
+      "article_id": "openai-news-5c6f1716",
+      "first_seen_at": "2026-10-28T20:20:27.243969Z",
+      "published_at": "2026-10-28T09:30:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/legora"
     },
     "url:71ca52f40c8e50d8b84b023998cf6a69cdd5419a0e4c15280e1e6cc200ed7b20": {
       "article_id": "github-ai-ml-b4c9a319",
@@ -3306,6 +3334,13 @@
       "published_at": "2026-09-03T00:00:00Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/grpo-with-trl-ifstruct"
+    },
+    "url:a15f6ab37c7893ad744089ed28b17b6228801b3ba89488036a6f38471cad143a": {
+      "article_id": "aws-machine-learning-c92b0d2b",
+      "first_seen_at": "2026-10-28T20:20:27.243969Z",
+      "published_at": "2026-10-28T18:28:26Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore"
     },
     "url:a1bc8087954f92f12be2e395a6a00d330c3074fb2a5bc09f3ce96e2a8d468547": {
       "article_id": "mlcommons-144301e7",
@@ -4619,6 +4654,13 @@
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact"
     },
+    "url:dfe8f4ca2517538c6c73eb912a13c1e31caec330308f1fbcb7540eb93cc52ed4": {
+      "article_id": "llama-cpp-releases-09304520",
+      "first_seen_at": "2026-10-28T20:20:27.243969Z",
+      "published_at": "2026-10-28T12:47:51Z",
+      "source": "llama-cpp-releases",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.8.0"
+    },
     "url:e04d1da693503b0f1282c2e253e5172059c771fc995159d2f4bd4a20f0f195fa": {
       "article_id": "google-ai-8d80f208",
       "first_seen_at": "2026-10-07T20:39:53.894203Z",
@@ -4653,6 +4695,13 @@
       "published_at": "2026-09-29T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/communication-bottleneck-serialization"
+    },
+    "url:e2ed7680c50ae3f074e04f962f033e8bab070f352fa8087e45258e537064a005": {
+      "article_id": "openai-news-6fd13522",
+      "first_seen_at": "2026-10-28T20:20:27.243969Z",
+      "published_at": "2026-10-28T10:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/the-future-of-the-firm"
     },
     "url:e2ff5c2e78222da2abceb57a3d37dd90a9a3ec8f3abe689f9c0e50057dd1dd8d": {
       "article_id": "aws-machine-learning-cd672b0d",
@@ -4835,6 +4884,13 @@
       "published_at": "2026-08-25T19:00:09Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/agentic-observability-with-amazon-opensearch-service-mcp-apps"
+    },
+    "url:ec733f799e1aaee3d1ac15d7aac92b358c82bd195281ac7a4de4982266b1d5fd": {
+      "article_id": "hugging-face-134cc30d",
+      "first_seen_at": "2026-10-28T20:20:27.243969Z",
+      "published_at": "2026-10-28T14:58:17Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
     },
     "url:ed1be8ea5f53c7373a9c44e9eac0273d1adbb7107c6453b9da7b6d9e6a52dfb0": {
       "article_id": "google-ai-376d61b1",
@@ -5191,6 +5247,13 @@
       "published_at": "2026-08-18T17:05:48Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-jumio-built-a-real-time-feature-store-on-aws"
+    },
+    "url:fb4453fe7d722c3bc58e3398b83a7426a1f48b184ecd7f8db1754f4b865165f0": {
+      "article_id": "langchain-releases-3a861839",
+      "first_seen_at": "2026-10-28T20:20:27.243969Z",
+      "published_at": "2026-10-28T15:00:02Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.1"
     },
     "url:fb630ea19b93482d041617e83dcecd98df3c8bc92dc1f2fed742033a162fb777": {
       "article_id": "aws-machine-learning-d4b88605",

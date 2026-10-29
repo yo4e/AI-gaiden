@@ -663,6 +663,13 @@
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/09/mlperf-training-llm-post-training"
     },
+    "url:255532568ba55074da7d697359ffad17235303304efb6aef78a6bd7e83b9083e": {
+      "article_id": "ollama-releases-7e37eeb5",
+      "first_seen_at": "2026-10-29T10:04:45.208014Z",
+      "published_at": "2026-10-28T19:55:04Z",
+      "source": "ollama-releases",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.13"
+    },
     "url:2690558920b683f436705f883e7be7c7b496af0690c85cbb72e9d0479d551ca1": {
       "article_id": "github-ai-ml-0c4ee4c0",
       "first_seen_at": "2026-09-24T19:14:22.068281Z",
@@ -3369,6 +3376,13 @@
       "published_at": "2026-09-23T18:21:54Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/agentic-conversational-video-intelligence-built-on-aws"
+    },
+    "url:a395c7da350b5086cc15f6b616a71f222298172ced3c491458f1fd1d38e79b77": {
+      "article_id": "openai-news-1bc397ab",
+      "first_seen_at": "2026-10-29T10:04:45.208014Z",
+      "published_at": "2026-10-28T13:15:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/openai-servicenow-partnership-expansion"
     },
     "url:a3fb326ed52ac82e37e8eebd35d18b3eefe4eec39a733e9544f8eac91162b481": {
       "article_id": "aws-machine-learning-1cc578b2",

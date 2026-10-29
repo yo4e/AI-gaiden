@@ -293,6 +293,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-lightning-now-available-in-amazon-sagemaker-jumpstart"
     },
+    "url:0f01adb2acab0a67ba71c0b077a856b8d5e6ddb0aecdbfc3051cca05fba1e4d6": {
+      "article_id": "openai-news-58e6e9c9",
+      "first_seen_at": "2026-10-29T20:21:15.611725Z",
+      "published_at": "2026-10-29T09:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
+    },
     "url:0f881d1e2cf8e9d711b3c484743cffd9b3b29084c51eb9a475ae40ff8197f6cc": {
       "article_id": "google-ai-4d16e3ef",
       "first_seen_at": "2026-08-26T04:06:13.216249Z",
@@ -544,6 +551,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/introducing-chatgpt-images-2-5"
     },
+    "url:1dda19717c518d488a54cc7fa37aec0a01b617a6411024a19badb8a5ddded04d": {
+      "article_id": "aws-machine-learning-05fe9297",
+      "first_seen_at": "2026-10-29T20:21:15.611725Z",
+      "published_at": "2026-10-29T16:54:52Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-moengage-turned-over-400-apis-into-agent-tools-with-agentcore-gateway"
+    },
     "url:1e3ebf94e41ebe19793bfa16d9a1ceac171abfb39683d16886169781f84081b8": {
       "article_id": "openai-news-44a3a3d2",
       "first_seen_at": "2026-10-28T09:46:47.149690Z",
@@ -621,6 +635,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/set-up-openai-chatgpt-codex-with-litellm-on-amazon-ecs-and-amazon-bedrock"
     },
+    "url:22f6423ae84cfcd8f9f5aecb6304d6bf3b467762642aab4428eb8da08af8015d": {
+      "article_id": "mlcommons-608294c5",
+      "first_seen_at": "2026-10-29T20:21:15.611725Z",
+      "published_at": "2026-10-29T13:23:00Z",
+      "source": "mlcommons",
+      "url": "https://mlcommons.org/2026/10/composability-ai-safety"
+    },
     "url:236dbb8238cdf625118730f1fcaab635d506047f0e13b256b9809f63993bc86d": {
       "article_id": "aws-machine-learning-34825321",
       "first_seen_at": "2026-10-02T19:58:45.453740Z",
@@ -669,6 +690,13 @@
       "published_at": "2026-10-28T19:55:04Z",
       "source": "ollama-releases",
       "url": "https://github.com/ollama/ollama/releases/tag/v0.40.13"
+    },
+    "url:257119d00aa2b7e8bb74d92fccb3c738033c4cb2bc04b2ba81b8e19a933a771a": {
+      "article_id": "mlcommons-75635047",
+      "first_seen_at": "2026-10-29T20:21:15.611725Z",
+      "published_at": "2026-10-29T14:50:55Z",
+      "source": "mlcommons",
+      "url": "https://mlcommons.org/2026/10/introducing-candela"
     },
     "url:2690558920b683f436705f883e7be7c7b496af0690c85cbb72e9d0479d551ca1": {
       "article_id": "github-ai-ml-0c4ee4c0",
@@ -1054,6 +1082,13 @@
       "published_at": "2026-10-26T00:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/introducing-gpt-6-1-terra"
+    },
+    "url:364e712e0335d807c83b2da7640779de88eb13b64c210eed2eb55265f0bcede2": {
+      "article_id": "aws-machine-learning-c38d1287",
+      "first_seen_at": "2026-10-29T20:21:15.611725Z",
+      "published_at": "2026-10-29T18:20:27Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-intent-driven-ui-testing-with-amazon-nova-act"
     },
     "url:36cb96fb972f9cda3e8f25c74ee6da57f6b87f63a579c845216486a947c85eea": {
       "article_id": "apple-ml-research-c71badc7",
@@ -1444,6 +1479,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-agentic-retrieval-on-a-managed-amazon-bedrock-knowledge-base-with-cdk"
     },
+    "url:427c3156a62caeb103d1a7051883cd60dc06e7efba1f6897268d78047a55795b": {
+      "article_id": "langchain-releases-7aaa38bf",
+      "first_seen_at": "2026-10-29T20:21:15.611725Z",
+      "published_at": "2026-10-29T19:04:29Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.2"
+    },
     "url:4410122683c569258d5a0a362f1b6f8fd8c0f990511414b3cd22c476b31d6130": {
       "article_id": "openai-news-a761656c",
       "first_seen_at": "2026-09-17T08:43:50.565657Z",
@@ -1791,6 +1833,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b"
     },
+    "url:5399dbf32efb644bb70c8ce273a5dcba59d370e75c88a6512b2566c9a097cb72": {
+      "article_id": "mlcommons-ebe69c69",
+      "first_seen_at": "2026-10-29T20:21:15.611725Z",
+      "published_at": "2026-10-29T14:45:00Z",
+      "source": "mlcommons",
+      "url": "https://mlcommons.org/2026/10/ailuminate-safety-1-2-1-and-jailbreak-1-1"
+    },
     "url:542ed0bcb34611a395d9f3fa0d9c60868e4f6cf0d4a0e34eb7162ebc02151388": {
       "article_id": "aws-machine-learning-24a8347b",
       "first_seen_at": "2026-10-21T08:39:34.760912Z",
@@ -1923,6 +1972,13 @@
       "published_at": "2026-10-23T16:21:36Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations"
+    },
+    "url:5a25565ab71a8d06b3b9b7c297f43e971826147872a9d3b2d4139c7630900b65": {
+      "article_id": "mistral-ai-45b2ff2c",
+      "first_seen_at": "2026-10-29T20:21:15.611725Z",
+      "published_at": "2026-10-29T12:00:07Z",
+      "source": "mistral-ai",
+      "url": "https://mistral.ai/news/mistral-large-4-oss"
     },
     "url:5a499aeeb99b0744b94bd57e804129765e0a65e99abbc8c946e1de7155ff6d21": {
       "article_id": "aws-machine-learning-b024ee89",
@@ -2105,6 +2161,13 @@
       "published_at": "2026-10-01T16:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/albertsons-reimagining-retail"
+    },
+    "url:6394645bd5105adc5435eb92d86f0a9234c4d9608ebffb6215783e8187d812db": {
+      "article_id": "hugging-face-6c50ea19",
+      "first_seen_at": "2026-10-29T20:21:15.611725Z",
+      "published_at": "2026-10-29T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/anydecisionmodel"
     },
     "url:639d81441a0d947392fec3ea925322625063884e4fab0a9a5833310a2d78f30b": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
@@ -2327,6 +2390,13 @@
       "published_at": "2026-10-28T09:30:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/legora"
+    },
+    "url:718617961cab3abcc8e8a05120222629543523589403679efbd4712495667d4b": {
+      "article_id": "hugging-face-202c625e",
+      "first_seen_at": "2026-10-29T20:21:15.611725Z",
+      "published_at": "2026-10-29T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/announcing-project-protostar"
     },
     "url:71ca52f40c8e50d8b84b023998cf6a69cdd5419a0e4c15280e1e6cc200ed7b20": {
       "article_id": "github-ai-ml-b4c9a319",
@@ -3044,6 +3114,13 @@
       "published_at": "2026-09-23T13:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense"
+    },
+    "url:9349f418e7bc7ab45091d36c0bfe75e2136622d8b5dbcf107bb7aa7386820b2a": {
+      "article_id": "openai-news-5dea6984",
+      "first_seen_at": "2026-10-29T20:21:15.611725Z",
+      "published_at": "2026-10-29T17:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/updated-model-spec"
     },
     "url:93e5dec2f2f712e34a34310fc188fb3e02f13f39022d255dcd7fb216a3339f34": {
       "article_id": "aws-machine-learning-8c775447",
@@ -3823,6 +3900,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/benefit-street-partners"
     },
+    "url:b6b30743068c26272d898fb0a6f1ecbc2f9f86806ca564a0085874621ca143e5": {
+      "article_id": "hugging-face-d202d188",
+      "first_seen_at": "2026-10-29T20:21:15.611725Z",
+      "published_at": "2026-10-29T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/mistral-large4"
+    },
     "url:b76b11a1199f73b7027f051c73b169df83c2a00e9a8c2e410a485803d662c4b8": {
       "article_id": "google-deepmind-68e6d36a",
       "first_seen_at": "2026-10-14T08:48:33.299506Z",
@@ -4152,6 +4236,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/denoising-aware-credit-assignment"
     },
+    "url:c69b58c8afe4ed5cc82e12b04e34a7d8e66d04bcadb39c5b00b07c12cab81cca": {
+      "article_id": "aws-machine-learning-d2c65c77",
+      "first_seen_at": "2026-10-29T20:21:15.611725Z",
+      "published_at": "2026-10-29T16:58:57Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs"
+    },
     "url:c6ae3beb79b8ee8b38c58e22c5cd35dce8e7b5ea3dd1e6e0d984ebc779e82d3f": {
       "article_id": "aws-machine-learning-f3dc3ccc",
       "first_seen_at": "2026-09-17T08:43:50.565657Z",
@@ -4276,6 +4367,13 @@
       "published_at": "2026-10-02T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/limits-confidence-diffusion"
+    },
+    "url:cc3f17ee395433717c58af5a342762b15706badf19e5542cbd8d63583f1fc44d": {
+      "article_id": "aws-machine-learning-9514c98f",
+      "first_seen_at": "2026-10-29T20:21:15.611725Z",
+      "published_at": "2026-10-29T18:14:17Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-repeatable-php-to-java-migration-engine-with-kiro"
     },
     "url:cca310b8dce1d42c7ad3300fbcae136961e31264b13bdaf7784c9e1d8a584dc9": {
       "article_id": "aws-machine-learning-19d8a642",
@@ -4508,6 +4606,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/introducing-glm-5-3-on-amazon-bedrock"
     },
+    "url:d948735545c20cf3072195dbbc120386d43c1319abb3514dc8f0d2f4f07f9bdc": {
+      "article_id": "openai-news-f3c2f8ac",
+      "first_seen_at": "2026-10-29T20:21:15.611725Z",
+      "published_at": "2026-10-29T07:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/ropes-gray-ai-diligence"
+    },
     "url:d9524ab76177d5beaf9939ac752ba4ff34bad2c29295f021a9af357762a73ae0": {
       "article_id": "hugging-face-7a2a4737",
       "first_seen_at": "2026-08-18T15:49:35.191346Z",
@@ -4598,6 +4703,13 @@
       "published_at": "2026-09-29T15:30:38Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/nvidia/kumo-tabular"
+    },
+    "url:dc6fc3af3c8a0ac8cf590ec660128d66170b921172abc1c006c10d79b9d3bdbe": {
+      "article_id": "aws-machine-learning-60e03a7e",
+      "first_seen_at": "2026-10-29T20:21:15.611725Z",
+      "published_at": "2026-10-29T20:16:40Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-the-uk-amazon-quick-user-group-grew-in-2026"
     },
     "url:dcb175f6d7c5d772e1328060dc47eb9e8eeadcf7b1b6d5ab174fdb1cff9b3893": {
       "article_id": "langchain-releases-be333b27",
@@ -4758,6 +4870,13 @@
       "published_at": "2026-08-20T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/progressive-refinement-pseudo-labeling"
+    },
+    "url:e508e29ae812fe586e8d04934be66406c6967422e675f969f84a3d3abfd18b22": {
+      "article_id": "hugging-face-da34945c",
+      "first_seen_at": "2026-10-29T20:21:15.611725Z",
+      "published_at": "2026-10-29T13:37:07Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1"
     },
     "url:e50f0d14453db8d08e91592b51db83878bc57c8362c4d3075aaaac1ffc5c3201": {
       "article_id": "aws-machine-learning-489f1fda",

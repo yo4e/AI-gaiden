@@ -175,6 +175,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/reduce-time-to-hire-for-quality-candidates-with-ai-powered-amazon-connect-talent"
     },
+    "url:09599579b5b9218fce7c9e000f2a569af1f03813d8b0a33e9969130380c5af91": {
+      "article_id": "langchain-releases-f1e57ff3",
+      "first_seen_at": "2026-10-30T10:08:04.020084Z",
+      "published_at": "2026-10-29T20:56:12Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.3"
+    },
     "url:098d67a62da719d6324a3943771aa31f3832f5d9ced271f4b9dd9b6476218d01": {
       "article_id": "aws-machine-learning-d09d2dfe",
       "first_seen_at": "2026-09-17T19:05:12.502267Z",
@@ -2147,6 +2154,13 @@
       "published_at": "2026-08-07T17:53:32Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/allenai/tutormoments"
+    },
+    "url:62e772e6623036cbd95f9284b4d1153d7fe6a111b9271ece9ae203b64f8d34b8": {
+      "article_id": "microsoft-ai-f89e7814",
+      "first_seen_at": "2026-10-30T10:08:04.020084Z",
+      "published_at": "2026-10-29T15:00:00Z",
+      "source": "microsoft-ai",
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/general/2026/10/29/accelerating-frontier-transformation-reshape-business-processes"
     },
     "url:630ca87cf322b200196ee5e5a3bed69887799dafff1269e49879cc19a8524632": {
       "article_id": "ollama-releases-3ca9bdd1",

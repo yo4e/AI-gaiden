@@ -35,6 +35,13 @@
       "source": "google-ai",
       "url": "https://blog.google/products/ads-commerce/google-ads-analytics-ai-updates"
     },
+    "url:019edb616369c3322f4c44a55e04677f77bd523e681eb1a6308bc4ebad0c1377": {
+      "article_id": "openai-news-fa724398",
+      "first_seen_at": "2026-11-03T21:03:56.416119Z",
+      "published_at": "2026-11-03T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer"
+    },
     "url:031c3906bd6f632eb5d29a6482ef98bf21b5ad43a5a9984cdf4c228b3f1aa7cd": {
       "article_id": "apple-ml-research-8bb1c41d",
       "first_seen_at": "2026-10-05T22:03:36.189687Z",
@@ -335,6 +342,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
     },
+    "url:0f2d755e3513ed127d81cc3b88b23a320fe9c2f9530be76a781c0130eff5f409": {
+      "article_id": "aws-machine-learning-8f165bad",
+      "first_seen_at": "2026-11-03T21:03:56.416119Z",
+      "published_at": "2026-11-03T16:49:29Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/bring-structured-and-unstructured-data-together-with-amazon-quick"
+    },
     "url:0f881d1e2cf8e9d711b3c484743cffd9b3b29084c51eb9a475ae40ff8197f6cc": {
       "article_id": "google-ai-4d16e3ef",
       "first_seen_at": "2026-08-26T04:06:13.216249Z",
@@ -404,6 +418,13 @@
       "published_at": "2026-10-15T18:32:35Z",
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.11"
+    },
+    "url:11cf6983315e03b571df65381a5d93c1e12296819ae8b3f3076320bb5582a337": {
+      "article_id": "aws-machine-learning-950d1d9b",
+      "first_seen_at": "2026-11-03T21:03:56.416119Z",
+      "published_at": "2026-11-03T16:40:54Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-ultra-low-latency-voice-ai-applications-on-aws"
     },
     "url:124856d6ff517a374771bf693f2024d7b169a9a9f4a7d25e69faa433d3df9936": {
       "article_id": "aws-machine-learning-3f5710b5",
@@ -691,6 +712,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/add-secure-web-search-to-claude-desktop-with-amazon-bedrock-agentcore"
     },
+    "url:23c4f130369cb97228de41513e9312b1e0dc594d86d03dc60f268cab647b367c": {
+      "article_id": "google-deepmind-bf6c0fe0",
+      "first_seen_at": "2026-11-03T21:03:56.416119Z",
+      "published_at": "2026-11-03T17:01:49Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity"
+    },
     "url:23ccd9ff0c11ef81ec2380b190cca16b9bf8060ea7b88f5f2fe29d03a80c6c2f": {
       "article_id": "hugging-face-f07d5d44",
       "first_seen_at": "2026-08-06T23:21:45.836993Z",
@@ -732,6 +760,13 @@
       "published_at": "2026-09-24T14:50:00Z",
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/09/mlperf-training-llm-post-training"
+    },
+    "url:25493a43cba550c7fe81484acae2a066a0e92a0ab7396a9764a18c9bb949ba12": {
+      "article_id": "openai-news-140a8adb",
+      "first_seen_at": "2026-11-03T21:03:56.416119Z",
+      "published_at": "2026-11-03T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world"
     },
     "url:255532568ba55074da7d697359ffad17235303304efb6aef78a6bd7e83b9083e": {
       "article_id": "ollama-releases-7e37eeb5",
@@ -1103,6 +1138,13 @@
       "published_at": "2026-08-26T00:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead"
+    },
+    "url:34e7d62615202d0de65fe802c6c6ca14703e67df603d58e71ec501e575fe9eda": {
+      "article_id": "openai-news-5b22d780",
+      "first_seen_at": "2026-11-03T21:03:56.416119Z",
+      "published_at": "2026-11-03T08:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/cisco-cyber"
     },
     "url:3529facf086217e100399c8e607fb61928b5e904e2708b8762933a12a48de4af": {
       "article_id": "aws-machine-learning-28246d22",
@@ -1729,6 +1771,13 @@
       "source": "mistral-ai",
       "url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier"
     },
+    "url:4d3938441f216409a8f1b94cf7b0fdb4871145e54a0ab57799f0fbd11992bc85": {
+      "article_id": "hugging-face-a4f88192",
+      "first_seen_at": "2026-11-03T21:03:56.416119Z",
+      "published_at": "2026-11-03T16:35:36Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/ibm-research/palette-deck-building"
+    },
     "url:4d3b17a749f42c957e926aa5ecda3aa5c4eeeaa5ba6fc6a0122239385ec004be": {
       "article_id": "hugging-face-84b6b96c",
       "first_seen_at": "2026-08-29T10:10:04.614897Z",
@@ -2280,6 +2329,13 @@
       "published_at": "2026-10-01T16:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/albertsons-reimagining-retail"
+    },
+    "url:63945bc794809749828fed7a75412a51f17402e819c90a409ec9b785e40cb075": {
+      "article_id": "hugging-face-6e7b4b54",
+      "first_seen_at": "2026-11-03T21:03:56.416119Z",
+      "published_at": "2026-11-03T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/cwe-bench"
     },
     "url:6394645bd5105adc5435eb92d86f0a9234c4d9608ebffb6215783e8187d812db": {
       "article_id": "hugging-face-6c50ea19",
@@ -3156,6 +3212,13 @@
       "published_at": "2026-10-13T12:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/higgsfield-longer-videos-voice"
+    },
+    "url:8d86676710497099b1091deb38df79f93e8f69b79a1b2cfae325c64584a4dfbe": {
+      "article_id": "hugging-face-e09822fa",
+      "first_seen_at": "2026-11-03T21:03:56.416119Z",
+      "published_at": "2026-11-03T17:15:21Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/allenai/statebench"
     },
     "url:8e9d4a60984ee94c46052a2065e96ea12b8c79af46543e156599572a446f6d94": {
       "article_id": "aws-machine-learning-eb04407d",
@@ -4137,6 +4200,13 @@
       "published_at": "2026-09-21T18:32:44Z",
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.3"
+    },
+    "url:b893963b25899acfe9a611f5e7fb37bd88b570558be4e7c4802c02d4eac0443e": {
+      "article_id": "aws-machine-learning-5841f2d2",
+      "first_seen_at": "2026-11-03T21:03:56.416119Z",
+      "published_at": "2026-11-03T16:43:20Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-gen-digital-built-norton-revamps-ai-curated-news-engine-with-amazon-bedrock-agentcore-web-search"
     },
     "url:b9406ae170bd91336ab3bb25f8a481be998406cd07a127a0b7b7880fe2ac0b53": {
       "article_id": "openai-news-7d54784c",
@@ -5263,6 +5333,13 @@
       "source": "mistral-ai",
       "url": "https://mistral.ai/news/hallo-deutschland"
     },
+    "url:ef37b1dfd26f981c9986358678fd6f3bda23d890b130f3a046185f258ae8e17e": {
+      "article_id": "aws-machine-learning-9109bb18",
+      "first_seen_at": "2026-11-03T21:03:56.416119Z",
+      "published_at": "2026-11-03T16:47:40Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/servicenow-on-behalf-of-token-exchange-with-bedrock-agentcore-gateway"
+    },
     "url:ef45fbda0d5a49705547016cc4a15b82afb38700046306472cb1d67ce777c7ff": {
       "article_id": "apple-ml-research-814a75ee",
       "first_seen_at": "2026-08-27T14:17:35.478713Z",
@@ -5680,6 +5757,13 @@
       "published_at": "2026-10-06T06:44:39Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/tiiuae/falcon-emirati"
+    },
+    "url:feb2718171ef695108386d5d5e4f8730b52d981bac741e8cfc1fa7e9849dab9e": {
+      "article_id": "aws-machine-learning-76836f4e",
+      "first_seen_at": "2026-11-03T21:03:56.416119Z",
+      "published_at": "2026-11-03T16:41:13Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-semantic-layer-for-agentic-ai-with-edb-postgres-ai-and-amazon-bedrock-agentcore"
     },
     "url:ff082bc32dcf39bfd27812edc1e6795d89a33c6620e4fac168c5a51bfe3c1f63": {
       "article_id": "google-ai-3697c2f8",

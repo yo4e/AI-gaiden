@@ -286,6 +286,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.8"
     },
+    "url:0d297090385ad5a7245151aa36b61200b4bbf9fa9e2ae1ab47c6dc913703fe4d": {
+      "article_id": "openai-news-baefbc43",
+      "first_seen_at": "2026-11-03T10:58:05.698052Z",
+      "published_at": "2026-11-02T18:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai"
+    },
     "url:0e5fad3ca5f8a881acf7d04bb62a3859c2c74e88d36ad866cc1ffd77a9610def": {
       "article_id": "hugging-face-3a77341c",
       "first_seen_at": "2026-10-22T08:41:38.804028Z",
@@ -760,6 +767,13 @@
       "published_at": "2026-10-26T10:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/chatgpt-expanding-world-of-work"
+    },
+    "url:277870ffc8d71544c0465c137654062f6f2bf7e7d7a1ec8af9071c966d86edc3": {
+      "article_id": "openai-news-c01c2c54",
+      "first_seen_at": "2026-11-03T10:58:05.698052Z",
+      "published_at": "2026-11-02T15:30:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/scaling-git-at-openai"
     },
     "url:27a9dd31448e30ea2bdc3f244cfa730612ad66ffe254d5daaf5e641862777fb8": {
       "article_id": "aws-machine-learning-c823ec78",
@@ -3663,6 +3677,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/accelerating-aircraft-ifec-diagnostics-with-agentic-ai-on-aws"
     },
+    "url:a6f54d325d31634f891659b5f3c8f6d5a46072f111d8835330333b2acd151981": {
+      "article_id": "hugging-face-2b1dbc9f",
+      "first_seen_at": "2026-11-03T10:58:05.698052Z",
+      "published_at": "2026-11-03T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/transformers-mic"
+    },
     "url:a6fcd04e2285ba1fc4c508d6caaa61edd4f837d631a64f81374d12406e56478e": {
       "article_id": "aws-machine-learning-be8ab95f",
       "first_seen_at": "2026-09-18T18:32:19.193378Z",
@@ -4012,6 +4033,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/exowatt-beats-frontier-models-on-accuracy-with-sagemaker-serverless-model-customization"
     },
+    "url:b53d42e9c538fd7656efa2b9632258068870d4d2b093dcc174fbb6da1f0f9bef": {
+      "article_id": "ollama-releases-0ad275b6",
+      "first_seen_at": "2026-11-03T10:58:05.698052Z",
+      "published_at": "2026-11-03T01:40:40Z",
+      "source": "ollama-releases",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.14"
+    },
     "url:b5500bc6503561c622e234c790899474b8b24e1670dad4cceb0dbc466610f3db": {
       "article_id": "hugging-face-1c35904b",
       "first_seen_at": "2026-09-03T08:07:17.945680Z",
@@ -4172,6 +4200,13 @@
       "published_at": "2026-09-22T04:44:04Z",
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.6.2"
+    },
+    "url:bca108e4c77bd86b238b884ff1c18e5c63018f84444ba049fc49aa2f4ac03dcf": {
+      "article_id": "openai-news-002bc5e6",
+      "first_seen_at": "2026-11-03T10:58:05.698052Z",
+      "published_at": "2026-11-02T18:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties"
     },
     "url:bd1136d0fcfd6f1357de280adaee84cea07cc88c30626783f53af728070f9fc3": {
       "article_id": "hugging-face-c13ba280",
@@ -5596,6 +5631,13 @@
       "published_at": "2026-09-03T13:15:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/daybreak-for-frontline-defenders"
+    },
+    "url:fc87a45dcfbf03d417250555e1df3237ca0ef7928116e265a011dfff6b14fbc2": {
+      "article_id": "openai-news-13a3d398",
+      "first_seen_at": "2026-11-03T10:58:05.698052Z",
+      "published_at": "2026-11-03T08:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/heimstaden"
     },
     "url:fc94b0a99c247635aa467810c950dc067d124cdd9f6491c27b7b576c152f764f": {
       "article_id": "aws-machine-learning-faa2e992",

@@ -3129,6 +3129,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/chatham-financial"
     },
+    "url:882614252e809bfa28613b93f23d34857bb20434c3722a7225c11a3c58f890fa": {
+      "article_id": "langchain-releases-996a9b46",
+      "first_seen_at": "2026-11-04T11:02:12.971735Z",
+      "published_at": "2026-11-04T00:11:25Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.1"
+    },
     "url:88e871d5a8d26738db20168d7fe4b9e05a7b8640818c7b2a626052e0332f27b0": {
       "article_id": "hugging-face-4ee909b1",
       "first_seen_at": "2026-10-07T20:39:53.894203Z",

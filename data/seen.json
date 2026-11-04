@@ -572,6 +572,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code"
     },
+    "url:1be4fdd8e6ca80f0ec0127711bf05d7cfcd7194eac7f7e3b9f6a7d04824358c9": {
+      "article_id": "openai-news-77f48b8a",
+      "first_seen_at": "2026-11-04T21:21:28.109238Z",
+      "published_at": "2026-11-04T14:30:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/openai-to-acquire-pierre"
+    },
     "url:1c5b51464767c2ad29498f22c3230eb67bc2e05dfccf5184d942345b7a68fe50": {
       "article_id": "hugging-face-e1f775f8",
       "first_seen_at": "2026-10-27T20:07:29.250572Z",
@@ -669,6 +676,13 @@
       "published_at": "2026-09-25T16:18:07Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/accelerate-multimodal-rl-training-with-skyrl-on-amazon-sagemaker-hyperpod"
+    },
+    "url:20366c4b5aede8776073d7a8ed676f14f1cba14da215004f375df34e85a1b15e": {
+      "article_id": "aws-machine-learning-40197244",
+      "first_seen_at": "2026-11-04T21:21:28.109238Z",
+      "published_at": "2026-11-04T16:30:40Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/four-layers-of-context-engineering-for-production-ai-agents-how-deep-insight-applies-them-in-working-code"
     },
     "url:2081fd8810403c1a0211ecffee53b72f418536664714228771ed593eb426abb9": {
       "article_id": "aws-machine-learning-c33164f7",
@@ -1083,6 +1097,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.5"
     },
+    "url:32d4e91d243ef07f0795379b14445becfcb04565dd858a765f3d75a5b4c512ce": {
+      "article_id": "hugging-face-0c6df335",
+      "first_seen_at": "2026-11-04T21:21:28.109238Z",
+      "published_at": "2026-11-04T17:50:10Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor"
+    },
     "url:330fba64551db8b49d6a895e947e7fef4cfddc339a90e97ae91a354a6cbe9a0b": {
       "article_id": "openai-news-54187260",
       "first_seen_at": "2026-09-02T07:58:34.641049Z",
@@ -1472,6 +1493,13 @@
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model"
     },
+    "url:3ef6e5218bbc9326f7a57aa1d0f29b6e9a0ac814aa953bf5b344e1794d56628d": {
+      "article_id": "aws-machine-learning-f097a4d5",
+      "first_seen_at": "2026-11-04T21:21:28.109238Z",
+      "published_at": "2026-11-04T16:25:57Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-indegene-is-modernizing-and-scaling-enterprise-data-quality-in-life-sciences"
+    },
     "url:3f1a11956436b167380065dcbfb11acfb4b7400895eeef122ae6e9ec1be674ee": {
       "article_id": "openai-news-6ebd2619",
       "first_seen_at": "2026-10-22T08:41:38.804028Z",
@@ -1701,6 +1729,13 @@
       "published_at": "2026-10-12T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/distributed-gpu-cloud"
+    },
+    "url:4a2d84d32c3ea23afcc1ddca11818f4cab3772424d29e2c7b7f2b726015ee0e7": {
+      "article_id": "langchain-releases-f9e22fe2",
+      "first_seen_at": "2026-11-04T21:21:28.109238Z",
+      "published_at": "2026-11-04T15:50:04Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.5"
     },
     "url:4a36ea7ba6bb268a569ba1bda62fe3a651ce22624e6c80e44fc2f66bda887c59": {
       "article_id": "openai-news-409cd90e",
@@ -2873,6 +2908,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/fanatics-streamline-fan-experience"
     },
+    "url:7ef0cc3466090054e33279ca40929af5cd8e435b2ffe80e0d229a1b0427fb1fa": {
+      "article_id": "langchain-releases-68abc72a",
+      "first_seen_at": "2026-11-04T21:21:28.109238Z",
+      "published_at": "2026-11-04T16:55:54Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.7.4"
+    },
     "url:7f176d6cec1f7ea9f202722d1bdf7989d73d2c394597d02d638633cdc1824a42": {
       "article_id": "aws-machine-learning-229ee4a5",
       "first_seen_at": "2026-10-13T20:43:12.907993Z",
@@ -3012,6 +3054,13 @@
       "source": "vllm-releases",
       "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0"
     },
+    "url:83d7690781e8e88d58126539f1bb03ac962e34d981be3a46db6742e0c576baf4": {
+      "article_id": "aws-machine-learning-74570c00",
+      "first_seen_at": "2026-11-04T21:21:28.109238Z",
+      "published_at": "2026-11-04T16:23:33Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-u-mobile-built-agentic-telco-operations-with-amazon-bedrock-agentcore"
+    },
     "url:841b4e2a79b2cbb57818447f04c68e6d0974f594b8daa220735dc7ca93e4ca62": {
       "article_id": "apple-ml-research-950c545d",
       "first_seen_at": "2026-08-19T04:02:41.847930Z",
@@ -3038,6 +3087,13 @@
       "published_at": "2026-08-04T16:02:21Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/automated-web-insight-extraction-with-amazon-bedrock-agentcore"
+    },
+    "url:84437d19b97cb6bc1701b676d4569eff1df3c7d28d6677f94bd5608ee4fd469c": {
+      "article_id": "langchain-releases-6e5060ad",
+      "first_seen_at": "2026-11-04T21:21:28.109238Z",
+      "published_at": "2026-11-04T16:51:12Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.10"
     },
     "url:84abd1857de5dfd951d90dcfdd8cecc910571c46b00c6ecbe7661909d42cb5b5": {
       "article_id": "openai-news-ef1ecd9b",
@@ -3546,6 +3602,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/ai-powered-metadata-correction-and-harmonization"
     },
+    "url:9c71789b7bdcc8e46c6b644358bd6e3390a3fb8b63c0723bd1f65408dfcaea54": {
+      "article_id": "langchain-releases-67e77e81",
+      "first_seen_at": "2026-11-04T21:21:28.109238Z",
+      "published_at": "2026-11-04T20:47:50Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.7.2"
+    },
     "url:9c7bb2a9ee64a00a950dbf3d08a75c8af671ca52d7818b9ad5bd3501742e6b3b": {
       "article_id": "aws-machine-learning-1f48fab9",
       "first_seen_at": "2026-09-11T18:37:35.354590Z",
@@ -3565,6 +3628,13 @@
       "published_at": "2026-07-28T16:27:42Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/allenai/olmoearth-infrastructure"
+    },
+    "url:9dccbf755eee5d2d6d841d2cb2563c30f29074d586c2ff8599d178121c47a766": {
+      "article_id": "llama-cpp-releases-94b4f60f",
+      "first_seen_at": "2026-11-04T21:21:28.109238Z",
+      "published_at": "2026-11-04T13:08:06Z",
+      "source": "llama-cpp-releases",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.9.0"
     },
     "url:9dd811c7faac69549d927640c410f91f272fa0bb141c9a3d8bb0e1b19f8e9dd8": {
       "article_id": "aws-machine-learning-d1bb24a2",
@@ -3677,6 +3747,13 @@
       "published_at": "2026-09-23T18:21:54Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/agentic-conversational-video-intelligence-built-on-aws"
+    },
+    "url:a3433e936d2c04bfa7722c64f05b5efdfdc6024634f8a182254f80d5e66c1036": {
+      "article_id": "openai-news-d1aa42ad",
+      "first_seen_at": "2026-11-04T21:21:28.109238Z",
+      "published_at": "2026-11-04T07:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/daybreak-red-aws-govcloud"
     },
     "url:a395c7da350b5086cc15f6b616a71f222298172ced3c491458f1fd1d38e79b77": {
       "article_id": "openai-news-1bc397ab",
@@ -3802,6 +3879,13 @@
       "published_at": "2026-10-30T09:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens"
+    },
+    "url:a87ec7a4b5e96d706fdb35ad044003b24a3e3173c1adf97f8c99922f2e0aaaeb": {
+      "article_id": "aws-machine-learning-8f5571a7",
+      "first_seen_at": "2026-11-04T21:21:28.109238Z",
+      "published_at": "2026-11-04T16:33:03Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/smart-approvals-in-amazon-quick-human-oversight-where-it-matters"
     },
     "url:a8a255e92e884ae99aa964a1616db35c42aa05ef6e66f6c2ebe5716fb51b13e4": {
       "article_id": "langchain-releases-2ca2a18e",
@@ -4746,6 +4830,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/eu-text-provenance"
     },
+    "url:d32d8e40f63cd24bb75202141929143557926f578f67e86cb2aa89960702aada": {
+      "article_id": "aws-machine-learning-e4475926",
+      "first_seen_at": "2026-11-04T21:21:28.109238Z",
+      "published_at": "2026-11-04T18:46:36Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/use-decision-models-with-amazon-bedrock-agentcore-evaluations"
+    },
     "url:d330643595776f9f542e9f48a636499dcc2c3968ee0ccb07e6ba5a41a8cbcae0": {
       "article_id": "hugging-face-6aa9daf8",
       "first_seen_at": "2026-10-16T08:16:07.594781Z",
@@ -5304,6 +5395,13 @@
       "published_at": "2026-10-28T14:58:17Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+    },
+    "url:ed0410e4df19aef3b017a7cf6e74f9648f21d38d1b402bb251aaca25bc00c420": {
+      "article_id": "langchain-releases-6ace3801",
+      "first_seen_at": "2026-11-04T21:21:28.109238Z",
+      "published_at": "2026-11-04T17:07:37Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.9"
     },
     "url:ed1be8ea5f53c7373a9c44e9eac0273d1adbb7107c6453b9da7b6d9e6a52dfb0": {
       "article_id": "google-ai-376d61b1",

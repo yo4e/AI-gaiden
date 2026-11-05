@@ -796,6 +796,13 @@
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/10/introducing-candela"
     },
+    "url:25fa4dd18ec78a48a9233cc009a7e10d7c8c98f49986ed2e5b02c4eebf5890b1": {
+      "article_id": "openai-news-d5b48225",
+      "first_seen_at": "2026-11-05T11:02:24.094320Z",
+      "published_at": "2026-11-05T02:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure"
+    },
     "url:2690558920b683f436705f883e7be7c7b496af0690c85cbb72e9d0479d551ca1": {
       "article_id": "github-ai-ml-0c4ee4c0",
       "first_seen_at": "2026-09-24T19:14:22.068281Z",
@@ -872,6 +879,13 @@
       "published_at": "2026-09-10T10:42:55Z",
       "source": "mistral-ai",
       "url": "https://mistral.ai/news/mistral-x-cloudera"
+    },
+    "url:295354ff422b0d4db922748e7c3d1bbebb7a9ab588c6d205b09352b92e57d424": {
+      "article_id": "openai-news-11e01874",
+      "first_seen_at": "2026-11-05T11:02:24.094320Z",
+      "published_at": "2026-11-04T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/introducing-images-2-6"
     },
     "url:29b0e61ec6cd1ed38342bd3f0d233e41901ac8706bcd8411d89efe21c8f9b7d6": {
       "article_id": "openai-news-f3b45494",
@@ -2558,6 +2572,13 @@
       "published_at": "2026-10-19T23:32:19Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/structured-outputs-for-anthropic-claude-models-on-amazon-bedrock"
+    },
+    "url:6c98838815577443eb463f957e92fb06b6d37b88a22b881d87468c529716f7b8": {
+      "article_id": "langchain-releases-6e22cdee",
+      "first_seen_at": "2026-11-05T11:02:24.094320Z",
+      "published_at": "2026-11-05T00:22:12Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.6"
     },
     "url:6d4ec902c728a02128d0e9d0f2d97315b31b6e3516e9601be6e9577b06f5790c": {
       "article_id": "openai-news-18d88c0e",
@@ -4579,6 +4600,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/designing-lifecycle-policies-for-agentcore-memory"
     },
+    "url:c65c7708e93995ca45416c5ef4b52b70460b293ce45783d81126b519537db1b3": {
+      "article_id": "hugging-face-c5e05154",
+      "first_seen_at": "2026-11-05T11:02:24.094320Z",
+      "published_at": "2026-11-05T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/phonon-tts"
+    },
     "url:c66ed5d68a420ac4314ff9a9de372dd3d7dde72a7e914e947b757f3f67d6a39c": {
       "article_id": "apple-ml-research-c9aef1f4",
       "first_seen_at": "2026-09-17T08:43:50.565657Z",
@@ -5779,6 +5807,13 @@
       "published_at": "2026-10-21T21:23:26Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/adaptive-agentic-intelligence-framework-using-strands-agents"
+    },
+    "url:fbaa86a829ad59fd10c58d013d5956116602b056ae7817da772b6c91267e6908": {
+      "article_id": "openai-news-5f62842a",
+      "first_seen_at": "2026-11-05T11:02:24.094320Z",
+      "published_at": "2026-11-04T08:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root"
     },
     "url:fbeab4f946087e752299b768eda19c5424ff00a36e42d407a00da97ee1663fe7": {
       "first_seen_at": "2026-08-04T00:16:06.231356Z",

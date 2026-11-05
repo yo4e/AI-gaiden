@@ -481,6 +481,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app"
     },
+    "url:14e90e72d3401ddf817f6448fcef8d95a77a43c8c720ccf3b66937d995ee0634": {
+      "article_id": "openai-news-b84450d5",
+      "first_seen_at": "2026-11-05T21:29:30.813744Z",
+      "published_at": "2026-11-05T09:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/introducing-gpt-6-cyber"
+    },
     "url:1562b9a478adb2d95ad963875cef2be8c619ba26f57fed3a6b8119ced0730518": {
       "article_id": "apple-ml-research-66062546",
       "first_seen_at": "2026-09-16T18:56:14.102211Z",
@@ -522,6 +529,13 @@
       "published_at": "2026-10-24T00:30:13Z",
       "source": "ollama-releases",
       "url": "https://github.com/ollama/ollama/releases/tag/v0.40.11"
+    },
+    "url:1750855042e8ceec185ecc41375648d063f395028a9c6496aadc44e5c1df3652": {
+      "article_id": "google-deepmind-5a6324c2",
+      "first_seen_at": "2026-11-05T21:29:30.813744Z",
+      "published_at": "2026-11-05T17:05:16Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips"
     },
     "url:17e5ae8afd73524c07c8141a0425cb8bd8f0912d366709233f2ae149d03b9c04": {
       "article_id": "aws-machine-learning-0b1a08bf",
@@ -1709,6 +1723,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one"
     },
+    "url:485654c1f98a7cdcb6064f6e64d0e23046003494af425773d67115f9624ac235": {
+      "article_id": "google-ai-b3d30d4d",
+      "first_seen_at": "2026-11-05T21:29:30.813744Z",
+      "published_at": "2026-11-05T17:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash"
+    },
     "url:4862f3d2c68fb1ad680a585cc64e80bc967fc99b89a1e7fef84c985e61d958c6": {
       "article_id": "openai-news-ee3bbaa3",
       "first_seen_at": "2026-09-01T08:43:39.886291Z",
@@ -2225,6 +2246,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm"
     },
+    "url:5bd02a39074589ea287cbb3366029f6e2bf7736e86fb59723fcd5e861472d65a": {
+      "article_id": "mistral-ai-ecff3496",
+      "first_seen_at": "2026-11-05T21:29:30.813744Z",
+      "published_at": "2026-11-05T12:00:14Z",
+      "source": "mistral-ai",
+      "url": "https://mistral.ai/news/build-with-studio"
+    },
     "url:5c3907356da7f745f17db19dcd41ed48579567790b5c66239aec34ab1dfc55f6": {
       "article_id": "aws-machine-learning-1d6cc266",
       "first_seen_at": "2026-08-11T16:13:54.723524Z",
@@ -2343,6 +2371,13 @@
       "published_at": "2026-08-27T20:40:38Z",
       "source": "sourcegraph-changelog",
       "url": "https://sourcegraph.com/changelog/releases/7.7.359"
+    },
+    "url:614ec411e822a540898f15e570bc65f7c99b1de4d8e763c931bcb2cccaf8f043": {
+      "article_id": "aws-machine-learning-ffbc732e",
+      "first_seen_at": "2026-11-05T21:29:30.813744Z",
+      "published_at": "2026-11-05T21:04:24Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/getting-started-with-web-answer-on-amazon-bedrock-agentcore"
     },
     "url:62003111f3b592c56acd9673289136816214f0ea1151bdbce20616ed93526390": {
       "article_id": "openai-news-930ee8dc",
@@ -4138,6 +4173,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.4"
     },
+    "url:b21fa54b837dba6b3505f76961e5e0c8433748c069a6448982cb59402022e336": {
+      "article_id": "apple-ml-research-ff02c962",
+      "first_seen_at": "2026-11-05T21:29:30.813744Z",
+      "published_at": "2026-11-05T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/faster-retrieval"
+    },
     "url:b241a2d905cc81c183f1b6b1affb4ded72cd28d9c93e8c4c8df890975c8724f4": {
       "article_id": "aws-machine-learning-8094eaed",
       "first_seen_at": "2026-10-12T22:31:15.104803Z",
@@ -5570,6 +5612,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-an-ai-powered-product-tagging-system-with-amazon-sagemaker-serverless-model-customization"
     },
+    "url:f25b9201ad6bdcc6fc966e82e19169484871d5662fdac1ebb6313d2e0a7a1d5f": {
+      "article_id": "hugging-face-e29af1f7",
+      "first_seen_at": "2026-11-05T21:29:30.813744Z",
+      "published_at": "2026-11-05T19:35:16Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
+    },
     "url:f2694bfa96c49e91da594bc0cb315cea9400ac30ae168e84999723429399dcd3": {
       "article_id": "openai-news-31c39b9b",
       "first_seen_at": "2026-09-02T07:58:34.641049Z",
@@ -5786,6 +5835,13 @@
       "published_at": "2026-08-26T10:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts"
+    },
+    "url:fad370bb7b6d436415c6f4ddb8a02e1562eca0569d93ed1a33f1eed45345207d": {
+      "article_id": "aws-machine-learning-ccd6f67f",
+      "first_seen_at": "2026-11-05T21:29:30.813744Z",
+      "published_at": "2026-11-05T18:06:43Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-amazon-marketplace-evaluates-content-quality-with-amazon-sagemaker-ai"
     },
     "url:fb22a1b92cabad920f840e39d11d46404e81d9f892ffcd61cf24f969a4aedafe": {
       "article_id": "aws-machine-learning-9b4b2246",

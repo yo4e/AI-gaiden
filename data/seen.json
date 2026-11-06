@@ -467,6 +467,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/authoring-dogwood-policies-from-natural-language-in-amazon-bedrock-agentcore"
     },
+    "url:13e4c95dcbaa6d34090ed25c81da95ae0ecffa6f5294ed82e0ecb8b302653aea": {
+      "article_id": "hugging-face-7f56a695",
+      "first_seen_at": "2026-11-06T11:00:29.770083Z",
+      "published_at": "2026-11-06T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/open-asr-leaderboard-liva"
+    },
     "url:14336f7ca56961d502e6c900b3be8d1aeb737ad7296879068d440ba597720fb9": {
       "article_id": "ollama-releases-c236c58c",
       "first_seen_at": "2026-09-16T08:40:03.992373Z",
@@ -2043,6 +2050,13 @@
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/10/ailuminate-safety-1-2-1-and-jailbreak-1-1"
     },
+    "url:53eff4b4e1cfd4521d9907e4a091045621fa672eafe264489e13eb555913a7dd": {
+      "article_id": "ollama-releases-f7e492f6",
+      "first_seen_at": "2026-11-06T11:00:29.770083Z",
+      "published_at": "2026-11-03T22:52:31Z",
+      "source": "ollama-releases",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.15"
+    },
     "url:542ed0bcb34611a395d9f3fa0d9c60868e4f6cf0d4a0e34eb7162ebc02151388": {
       "article_id": "aws-machine-learning-24a8347b",
       "first_seen_at": "2026-10-21T08:39:34.760912Z",
@@ -2378,6 +2392,13 @@
       "published_at": "2026-11-05T21:04:24Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/getting-started-with-web-answer-on-amazon-bedrock-agentcore"
+    },
+    "url:616c68177b707eae60eb2b7e618a86105e3926c540e149caa916945e5a2342dd": {
+      "article_id": "openai-news-d5656976",
+      "first_seen_at": "2026-11-06T11:00:29.770083Z",
+      "published_at": "2026-11-05T17:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/australian-universities-ai-native-graduates"
     },
     "url:62003111f3b592c56acd9673289136816214f0ea1151bdbce20616ed93526390": {
       "article_id": "openai-news-930ee8dc",
@@ -4404,6 +4425,13 @@
       "source": "ollama-releases",
       "url": "https://github.com/ollama/ollama/releases/tag/v0.40.8"
     },
+    "url:bbd492caba72ca544b8bac3280d7afac87555fa4b30c0b12388bcfae24236fa4": {
+      "article_id": "openai-news-7e9a1fc0",
+      "first_seen_at": "2026-11-06T11:00:29.770083Z",
+      "published_at": "2026-11-05T20:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/cultfit-builds-with-codex"
+    },
     "url:bbf506f2762571d042a129a6b7c33b0388b5edb9686b5a58ab92b8fb3924f8ab": {
       "article_id": "apple-ml-research-baa1e2cf",
       "first_seen_at": "2026-09-28T21:16:07.869479Z",
@@ -5124,6 +5152,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/oracle"
     },
+    "url:db9792e954d447010915e606e8fdb998d92778fb38af9f5ff78336a8db2d0092": {
+      "article_id": "openai-news-ff88b13c",
+      "first_seen_at": "2026-11-06T11:00:29.770083Z",
+      "published_at": "2026-11-05T08:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/merge-builds-with-openai"
+    },
     "url:db9c7c018a25e74f7db897dcd3ac755b6a85dbf6fb2e11be198b241ed42b48fc": {
       "article_id": "aws-machine-learning-4b795064",
       "first_seen_at": "2026-08-26T16:36:07.201345Z",
@@ -5158,6 +5193,13 @@
       "published_at": "2026-10-01T22:06:14Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/scaling-cloud-migrations-with-agentic-ai-on-amazon-bedrock-agentcore"
+    },
+    "url:dcc9028e84e8faeb34c01468da6e3729727d680c0b84f416a0a369479b4528e4": {
+      "article_id": "langchain-releases-d7d8e0b8",
+      "first_seen_at": "2026-11-06T11:00:29.770083Z",
+      "published_at": "2026-11-05T22:56:58Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.2"
     },
     "url:de08f1cfdedd109d1ecdd3b97781af5fe7d7838d76c57e844b9245f90e07f193": {
       "article_id": "aws-machine-learning-d89c0368",

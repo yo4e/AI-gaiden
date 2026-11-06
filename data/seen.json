@@ -412,6 +412,13 @@
       "source": "microsoft-ai",
       "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/08/04/accelerating-frontier-transformation-enrich-employee-experience"
     },
+    "url:1109c7dc5eeb22026df6e0e3a4d210dc57d40b1dd329c076293e52eddbe1cc91": {
+      "article_id": "aws-machine-learning-496a6d35",
+      "first_seen_at": "2026-11-06T20:56:17.139475Z",
+      "published_at": "2026-11-06T17:13:13Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/serverless-mcp-server-for-ai-agent-data-lake-access-on-amazon-ecs-fargate"
+    },
     "url:11a03795fbf5afda58caa475bce0241b34dccdd90176dc064bb9db4a9e572ffe": {
       "article_id": "langchain-releases-fb1729e0",
       "first_seen_at": "2026-10-15T19:12:51.300814Z",
@@ -550,6 +557,13 @@
       "published_at": "2026-09-04T21:45:52Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/deploy-a-multimodal-whatsapp-ordering-assistant-with-amazon-bedrock-agentcore"
+    },
+    "url:17e756367fad950697ec2074d88e75eb1cf2d497dc09090f9fa7de0a6bea3c1b": {
+      "article_id": "aws-machine-learning-cae2b9d3",
+      "first_seen_at": "2026-11-06T20:56:17.139475Z",
+      "published_at": "2026-11-06T17:09:18Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-1"
     },
     "url:184a451fc248c54661fd642cd91ea7e5e5a954a4d78540e2f70a6e00078b9e56": {
       "article_id": "aws-machine-learning-6c777a65",
@@ -1012,6 +1026,13 @@
       "published_at": "2026-09-21T16:24:40Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/reducing-medical-claims-review-time-with-ai-on-aws-the-exl-medical-idp-solution"
+    },
+    "url:2e5ff519dea4168bfd3fbf07af16154daa1a34320c1e2185dea81f0ecd518bd7": {
+      "article_id": "aws-machine-learning-98385f17",
+      "first_seen_at": "2026-11-06T20:56:17.139475Z",
+      "published_at": "2026-11-06T17:34:45Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/taxonomy-of-agentic-primitives-in-amazon-quick"
     },
     "url:2eb317e634c166703036d7ea05369063a800e59313ae68b2d81a408642c4e111": {
       "article_id": "aws-machine-learning-7be37441",
@@ -2225,6 +2246,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-real-time-voice-applications-with-vllm-omni-on-sagemaker-ai-part-1"
     },
+    "url:5a90caffb2c87d2e6e8eb5c3f6e99436fe1d4b1da4789f4c2ad70b79f5a9dd5d": {
+      "article_id": "hugging-face-faa5aa3f",
+      "first_seen_at": "2026-11-06T20:56:17.139475Z",
+      "published_at": "2026-11-06T14:00:48Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/allenai/toyblocks"
+    },
     "url:5abe1b16819873d13507625a631a8dbc07a0a5c0e586d0f31acf533951b6615b": {
       "article_id": "aws-machine-learning-a9a12102",
       "first_seen_at": "2026-08-21T04:04:47.965899Z",
@@ -2343,6 +2371,13 @@
       "published_at": "2026-08-25T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/starflow2-multimodal-generation"
+    },
+    "url:5f721228af3682c2417b4131d4680ee3211f1024fcf682ecae1568fe5c5140e2": {
+      "article_id": "openai-news-aa38ee4f",
+      "first_seen_at": "2026-11-06T20:56:17.139475Z",
+      "published_at": "2026-11-06T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science"
     },
     "url:5f9e60a4c699965776b8f495813eb1e4eb368f1b42d521a255efd59d8d2c4bb7": {
       "article_id": "apple-ml-research-96e61fe1",
@@ -3061,6 +3096,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/integrating-outlook-with-amazon-quick-for-ai-powered-email-automation"
     },
+    "url:819549b983fd9118af23e6dd5e48bbf3e95ea8e30cf14630f24b1b5f1369fa27": {
+      "article_id": "aws-machine-learning-8348ea62",
+      "first_seen_at": "2026-11-06T20:56:17.139475Z",
+      "published_at": "2026-11-06T18:01:00Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints"
+    },
     "url:825546b9e9e150a70467a533edaf9570d45ce6f5d4a72a0aade47ee2011a3015": {
       "article_id": "google-deepmind-25a6a4c2",
       "first_seen_at": "2026-09-08T18:45:03.859334Z",
@@ -3768,6 +3810,13 @@
       "published_at": "2026-10-07T00:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/gpt-6-for-everyone"
+    },
+    "url:a0a44ed09dc9a1089b4e099f4e0fbf8e71ea906b8e386a1df3e114e9f9678292": {
+      "article_id": "openai-news-147bf980",
+      "first_seen_at": "2026-11-06T20:56:17.139475Z",
+      "published_at": "2026-11-06T08:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/partnering-with-hacktron"
     },
     "url:a0a76519ad261018b2db18c7cceaf8b2e3bc4dadb0298f00013751155608c146": {
       "article_id": "aws-machine-learning-5332dd08",
@@ -5304,6 +5353,13 @@
       "published_at": "2026-09-29T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/communication-bottleneck-serialization"
+    },
+    "url:e22092f79218deeb38201f8398d01991e103624f4f60bf9b3590277225154361": {
+      "article_id": "aws-machine-learning-d396a586",
+      "first_seen_at": "2026-11-06T20:56:17.139475Z",
+      "published_at": "2026-11-06T17:09:23Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2"
     },
     "url:e2ed7680c50ae3f074e04f962f033e8bab070f352fa8087e45258e537064a005": {
       "article_id": "openai-news-6fd13522",

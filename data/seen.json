@@ -42,6 +42,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer"
     },
+    "url:02e9abf47eaf3fa01f98fe0d8703230a8e6faa4dd4f2fb401bd0d8381c4ff554": {
+      "article_id": "openai-news-83232c95",
+      "first_seen_at": "2026-11-09T23:47:55.988666Z",
+      "published_at": "2026-11-09T08:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/coderabbit-codex-daybreak"
+    },
     "url:031c3906bd6f632eb5d29a6482ef98bf21b5ad43a5a9984cdf4c228b3f1aa7cd": {
       "article_id": "apple-ml-research-8bb1c41d",
       "first_seen_at": "2026-10-05T22:03:36.189687Z",
@@ -628,6 +635,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/openai-to-acquire-orchestra-bio"
     },
+    "url:1cff1239c8922e0328f0923e4b64a28c0cd58f2a58a05e8f606d4f283b0bb042": {
+      "article_id": "aws-machine-learning-285b415e",
+      "first_seen_at": "2026-11-09T23:47:55.988666Z",
+      "published_at": "2026-11-09T20:01:20Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-super-vl-is-now-available-in-amazon-sagemaker-jumpstart"
+    },
     "url:1d6c5c59e46e52b936cbc7b983785a69d62ade05b868a690011ee911fd57d509": {
       "article_id": "hugging-face-64a33ccc",
       "first_seen_at": "2026-10-27T20:07:29.250572Z",
@@ -1027,6 +1041,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/reducing-medical-claims-review-time-with-ai-on-aws-the-exl-medical-idp-solution"
     },
+    "url:2e34e84f0999c607fcd026638ba274edf1639ff07c6ab06d851f57d1a6442eba": {
+      "article_id": "openai-news-463815f9",
+      "first_seen_at": "2026-11-09T23:47:55.988666Z",
+      "published_at": "2026-11-09T08:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/kuken"
+    },
     "url:2e5ff519dea4168bfd3fbf07af16154daa1a34320c1e2185dea81f0ecd518bd7": {
       "article_id": "aws-machine-learning-98385f17",
       "first_seen_at": "2026-11-06T20:56:17.139475Z",
@@ -1271,6 +1292,13 @@
       "published_at": "2026-10-29T18:20:27Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/building-intent-driven-ui-testing-with-amazon-nova-act"
+    },
+    "url:36cab5f07224ae958d99389e89cdf4704baf65ccbc768af34c8d1dfba8e51842": {
+      "article_id": "langchain-releases-ba32904d",
+      "first_seen_at": "2026-11-09T23:47:55.988666Z",
+      "published_at": "2026-11-09T20:54:19Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.7.3"
     },
     "url:36cb96fb972f9cda3e8f25c74ee6da57f6b87f63a579c845216486a947c85eea": {
       "article_id": "apple-ml-research-c71badc7",
@@ -2092,6 +2120,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.2"
     },
+    "url:55d059b88c6c576a2f3d9ab40518505078744d93ab6e7c4bc3d7b8ab49056416": {
+      "article_id": "hugging-face-10dbb221",
+      "first_seen_at": "2026-11-09T23:47:55.988666Z",
+      "published_at": "2026-11-09T12:34:29Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts"
+    },
     "url:56bfec926244076beb99d79b294acced29a6c3e3551d80cd931e00b960b3116f": {
       "article_id": "mistral-ai-10b71087",
       "first_seen_at": "2026-09-11T08:07:55.145306Z",
@@ -2182,6 +2217,13 @@
       "published_at": "2026-08-10T16:25:36Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents"
+    },
+    "url:5892c0cb7396af2cb5ccfea10dbd89838561a51a8c00e94e726c509f8ffd880e": {
+      "article_id": "aws-machine-learning-92a20a61",
+      "first_seen_at": "2026-11-09T23:47:55.988666Z",
+      "published_at": "2026-11-09T20:04:37Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws"
     },
     "url:58ff7a6a906611649d17700f9aefc9064e08f319742bc1a046b07aaf8a54f2fe": {
       "article_id": "aws-machine-learning-e9774c87",
@@ -2964,6 +3006,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases"
     },
+    "url:7d1e00daeb767a073fac0c069876c4817a99d754d2ea1775b2b77980c3007f96": {
+      "article_id": "aws-machine-learning-312c74ae",
+      "first_seen_at": "2026-11-09T23:47:55.988666Z",
+      "published_at": "2026-11-09T18:55:43Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-crossnokaye-grounds-physical-ai-with-amazon-bedrock-agentcore"
+    },
     "url:7d2872733a614740ea67cf0d6caa1be41e67dc215acdfe91a81bd31a341b0343": {
       "article_id": "openai-news-94c841de",
       "first_seen_at": "2026-09-16T18:56:14.102211Z",
@@ -3563,6 +3612,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.4"
     },
+    "url:952d2516af2e905436adea3bc1ec3df5f6a7559eef98c6b3c275da646bdd61ac": {
+      "article_id": "openai-news-faf23634",
+      "first_seen_at": "2026-11-09T23:47:55.988666Z",
+      "published_at": "2026-11-09T13:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/control-room"
+    },
     "url:9591b1cd4f512684d53a4a51a22aff083b1c8b85c63332bd4cea4f6fd6f5dd87": {
       "article_id": "aws-machine-learning-68fda636",
       "first_seen_at": "2026-10-22T08:41:38.804028Z",
@@ -3783,6 +3839,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/stack-overflow-chatgpt-plugin"
     },
+    "url:9e6aebddb26b309846fc1ea978a8bff7bfc5b11c9c9ccd61cd5ed0a60dff87b0": {
+      "article_id": "ollama-releases-62ae5783",
+      "first_seen_at": "2026-11-09T23:47:55.988666Z",
+      "published_at": "2026-11-09T18:21:19Z",
+      "source": "ollama-releases",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.16"
+    },
     "url:9eb8c760edade595b4c7ef0228c2cef0f074914ff1416d4158875e0a6200acd3": {
       "article_id": "aws-machine-learning-fc27445c",
       "first_seen_at": "2026-08-06T06:08:02.329753Z",
@@ -3929,6 +3992,13 @@
       "published_at": "2026-08-06T16:21:54Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/enforcing-data-residency-with-single-region-claude-code-on-amazon-bedrock"
+    },
+    "url:a5a8b63aa261f43b9a75dc16d0e562194fd9c0ec6333e6b3c38d5dd8e655a6a8": {
+      "article_id": "aws-machine-learning-ebcaa980",
+      "first_seen_at": "2026-11-09T23:47:55.988666Z",
+      "published_at": "2026-11-09T19:05:54Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/pluggable-agentic-ai-framework-a-seven-layer-composable-enterprise-agentic-ai-reference-architecture-on-amazon-bedrock-agentcore"
     },
     "url:a5bc54280bf29efc8ba4026101ad5cf8b064542a06824bd9a96bcd6a316715e4": {
       "first_seen_at": "2026-08-03T03:07:13.737060Z",
@@ -4110,6 +4180,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/gpt-5-6-in-kiro"
     },
+    "url:ac8f18750241a65f1eaff59406bf9b8d8a419cb23f6d29d213a586908db91264": {
+      "article_id": "hugging-face-5c80ea6e",
+      "first_seen_at": "2026-11-09T23:47:55.988666Z",
+      "published_at": "2026-11-09T15:05:57Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan"
+    },
     "url:ad1bab0fb2e7ec83f38d5d1bd1b560b7b20c56489085b005c21dda48a478b003": {
       "article_id": "langchain-releases-17ca7d8f",
       "first_seen_at": "2026-10-12T22:31:15.104803Z",
@@ -4123,6 +4200,13 @@
       "published_at": "2026-09-28T16:15:17Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/generate-images-and-video-with-vllm-omni-on-sagemaker-ai-part-2"
+    },
+    "url:ad4b3f90fa39cf5e09308af559f75bccd59210367bafecf59a767646d8ef7deb": {
+      "article_id": "microsoft-ai-6eec9737",
+      "first_seen_at": "2026-11-09T23:47:55.988666Z",
+      "published_at": "2026-11-09T16:00:00Z",
+      "source": "microsoft-ai",
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/general/2026/11/09/introducing-frontier-accelerate-one-microsoft-path-to-expertise-investments-and-skills"
     },
     "url:ad89fb510e3c78c26282cfd40541dc61653b3d8c142b323e38b2c22c1766bfa5": {
       "article_id": "openai-news-db583e47",
@@ -4193,6 +4277,13 @@
       "published_at": "2026-09-16T16:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life"
+    },
+    "url:b09ddd384e886e5e7c7c97df4fc733aef4481ff3fe83ce65176529e77d20e62e": {
+      "article_id": "aws-machine-learning-2f432fb1",
+      "first_seen_at": "2026-11-09T23:47:55.988666Z",
+      "published_at": "2026-11-09T20:13:18Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/single-shot-and-agentic-retrieval-with-amazon-bedrock-managed-knowledge-base"
     },
     "url:b0cbef382238cdd5b88df7d9e2e972c6de79dc01f5270d52514cbb50f83a1be1": {
       "article_id": "openai-news-d5fc54b2",
@@ -4836,6 +4927,13 @@
       "published_at": "2026-09-17T15:53:13Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/selecting-a-vector-store-for-amazon-bedrock-knowledge-bases"
+    },
+    "url:caa9073cefb43725f1a58e80c726b61b1142cf3c90f98b3ffe382a94354b7081": {
+      "article_id": "openai-news-448259f3",
+      "first_seen_at": "2026-11-09T23:47:55.988666Z",
+      "published_at": "2026-11-09T19:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace"
     },
     "url:caf21556159d27e6ed3777eaa5ab4a5c9256af015b3dc88e2870aa4c964c8194": {
       "article_id": "mlcommons-f7e7de66",

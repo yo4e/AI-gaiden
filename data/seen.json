@@ -2616,6 +2616,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/work-management-context-for-ai-agents-with-smartsheet-mcp-on-aws"
     },
+    "url:69d4d9d74efa01629a6c751d8fa58a99d17f0aecb815f679bbfeeb3edf259e44": {
+      "article_id": "openai-news-b6631f7c",
+      "first_seen_at": "2026-11-10T11:19:38.124673Z",
+      "published_at": "2026-11-10T09:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/closing-ai-guidance-gap-education"
+    },
     "url:6a886414536a09e3da65022e4b81fb0e9329e1e8f8d489895f13b523de737c68": {
       "article_id": "openai-news-ca830495",
       "first_seen_at": "2026-09-11T08:07:55.145306Z",
@@ -2719,6 +2726,13 @@
       "published_at": "2026-08-18T11:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/partnering-with-codeai"
+    },
+    "url:6e8a06229c5b50c1450ede1e238e96508f9a16ac1acf2a18a10b767d529c025f": {
+      "article_id": "langchain-releases-cfe1387d",
+      "first_seen_at": "2026-11-10T11:19:38.124673Z",
+      "published_at": "2026-11-10T04:08:27Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.7"
     },
     "url:6eaab463a55def8752bc46f2c536b71667c705dda0554f0b21cc44218f91b669": {
       "article_id": "openai-news-181c00e0",
@@ -3929,6 +3943,13 @@
       "published_at": "2026-09-15T16:00:44Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
+    },
+    "url:a22fd9bbbe2056925d2578d77e350569eaa1c0058c84ad612a9c5d0a6cda883a": {
+      "article_id": "aws-machine-learning-1cdcf62e",
+      "first_seen_at": "2026-11-10T11:19:38.124673Z",
+      "published_at": "2026-11-10T00:21:34Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-skills-and-agents-work-in-aws-quick"
     },
     "url:a2903b1976e9e15dd87644aa5c64129d8a190e3a3571cfa9e28254ce2bfe057a": {
       "article_id": "aws-machine-learning-a69175ac",

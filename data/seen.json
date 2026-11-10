@@ -266,6 +266,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/polimill"
     },
+    "url:0bb116f4895a4ed5bfe2300294bcd7bb658ae9a26a5e4ca2e236fc7ac2081d8d": {
+      "article_id": "langchain-releases-ac5c8209",
+      "first_seen_at": "2026-11-10T21:19:52.271120Z",
+      "published_at": "2026-11-10T18:37:31Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.10"
+    },
     "url:0bb946f0c421538942e425649beb92ebcc573674a0f10cbfe699bb79671506eb": {
       "article_id": "openai-news-9aa8559a",
       "first_seen_at": "2026-09-11T08:07:55.145306Z",
@@ -335,12 +342,26 @@
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/09/mlperf-storage-v3-0-results"
     },
+    "url:0e9fb0eb84f13acffdc59012e1c88f7c2f202f69132c55eacdf5e3a2b2ad057d": {
+      "article_id": "google-deepmind-aaf9eff3",
+      "first_seen_at": "2026-11-10T21:19:52.271120Z",
+      "published_at": "2026-11-10T12:02:28Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code"
+    },
     "url:0eadff1b96c5b07c2a9da2a0da496ae04560f4cb6ca0e8a54de3a0e7ebbe46bc": {
       "article_id": "aws-machine-learning-9a63870c",
       "first_seen_at": "2026-08-18T04:01:01.822238Z",
       "published_at": "2026-08-17T18:06:33Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-lightning-now-available-in-amazon-sagemaker-jumpstart"
+    },
+    "url:0f0020abcf733229d29f4d40e095eae692bb4a4c21852ac4cbeb6daf98f1617e": {
+      "article_id": "openai-news-5a49cb42",
+      "first_seen_at": "2026-11-10T21:19:52.271120Z",
+      "published_at": "2026-11-10T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life"
     },
     "url:0f01adb2acab0a67ba71c0b077a856b8d5e6ddb0aecdbfc3051cca05fba1e4d6": {
       "article_id": "openai-news-58e6e9c9",
@@ -473,6 +494,13 @@
       "published_at": "2026-10-16T01:44:47Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining"
+    },
+    "url:13a34de7d52df6b34d60df0f0565e1317490297ec53de32206616b63bc7973f2": {
+      "article_id": "aws-machine-learning-1d4ea946",
+      "first_seen_at": "2026-11-10T21:19:52.271120Z",
+      "published_at": "2026-11-10T18:11:08Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/autonomous-treasury-agents-how-trovata-built-an-ai-native-solution-on-amazon-bedrock-and-agentcore"
     },
     "url:13c6b8a9d4ea944c51fd5e30ad2ef86c2645b4f87eff7877c858595503fc8161": {
       "article_id": "aws-machine-learning-b1cbf73e",
@@ -1793,6 +1821,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety"
     },
+    "url:4895a9783a95645627eec273c6758b9e757b1f57a79b89882e7a491e30b26959": {
+      "article_id": "aws-machine-learning-9241afe0",
+      "first_seen_at": "2026-11-10T21:19:52.271120Z",
+      "published_at": "2026-11-10T16:59:43Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-tcs-built-an-agentic-test-orchestrator-with-amazon-bedrock-agentcore"
+    },
     "url:489ca63f7086104273970243213c0cdfa0b1faa8ca60ca7719ce5b0a7465943d": {
       "article_id": "langchain-releases-56af3219",
       "first_seen_at": "2026-09-22T08:37:29.831184Z",
@@ -2120,6 +2155,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.2"
     },
+    "url:55cb0588b3e8436e78b20ba92abf5954e8afdc53ea4465ca363bb0d676246b75": {
+      "article_id": "google-deepmind-7de3d78e",
+      "first_seen_at": "2026-11-10T21:19:52.271120Z",
+      "published_at": "2026-11-10T16:03:47Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available"
+    },
     "url:55d059b88c6c576a2f3d9ab40518505078744d93ab6e7c4bc3d7b8ab49056416": {
       "article_id": "hugging-face-10dbb221",
       "first_seen_at": "2026-11-09T23:47:55.988666Z",
@@ -2414,6 +2456,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/starflow2-multimodal-generation"
     },
+    "url:5f3963726dbe36e6ccf9753b6647e286ea2d25f750c2d86a74f9ab28836d655f": {
+      "article_id": "hugging-face-b5438b07",
+      "first_seen_at": "2026-11-10T21:19:52.271120Z",
+      "published_at": "2026-11-10T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/decision"
+    },
     "url:5f721228af3682c2417b4131d4680ee3211f1024fcf682ecae1568fe5c5140e2": {
       "article_id": "openai-news-aa38ee4f",
       "first_seen_at": "2026-11-06T20:56:17.139475Z",
@@ -2685,6 +2734,13 @@
       "published_at": "2026-10-12T17:52:22Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/accessing-openai-gpt-models-on-amazon-bedrock-with-global-cross-region-inference-in-thailand-malaysia-singapore-indonesia-and-taiwan"
+    },
+    "url:6b6709b612e5913e3ffca54a85bc91991cc77a4b3fa814c431fece64c1da4ed4": {
+      "article_id": "google-deepmind-ed3eef25",
+      "first_seen_at": "2026-11-10T21:19:52.271120Z",
+      "published_at": "2026-11-09T19:51:47Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence"
     },
     "url:6bb3f934048965cc8fe40ff7286bc1d73fdff5cc902619e78dc98b0f853d7216": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
@@ -3714,6 +3770,13 @@
       "published_at": "2026-08-20T21:23:29Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-a-no-code-ml-workflow-with-snowflake-amazon-sagemaker-canvas-and-amazon-quick-part-2-data-preparation-and-model-building-with-amazon-sagemaker-canvas"
+    },
+    "url:991ad48e8559b2fefa9ff7bc2bbc96fe5e673f91d6bb1c78428d1dddc9dc303e": {
+      "article_id": "openai-news-84156a2a",
+      "first_seen_at": "2026-11-10T21:19:52.271120Z",
+      "published_at": "2026-11-10T10:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/introducing-businesses-chatgpt"
     },
     "url:996c88dfa31d64c0a9d691ce9aa9d84c870ff31a54172125d0220f44806491fe": {
       "article_id": "google-ai-be69e18b",
@@ -4901,6 +4964,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/deploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents"
     },
+    "url:c979be8e72cc92b8a0fbd6a0e885370f88efbc63bec0740a46271d303ac6a351": {
+      "article_id": "google-ai-989eeadd",
+      "first_seen_at": "2026-11-10T21:19:52.271120Z",
+      "published_at": "2026-11-10T13:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare"
+    },
     "url:c97ca18ed9b8f65fdef1ba6642622e8988f258e6c7551daea7175027be21f9a1": {
       "article_id": "aws-machine-learning-6d76f2ed",
       "first_seen_at": "2026-09-01T18:36:04.461318Z",
@@ -4983,6 +5053,13 @@
       "published_at": "2026-08-24T16:02:41Z",
       "source": "mistral-ai",
       "url": "https://mistral.ai/news/mistral-x-humain"
+    },
+    "url:cb93d68b445c05b0e3dc3bb4de519fde744154508905db1326dcde436121a9ef": {
+      "article_id": "hugging-face-c26a77c5",
+      "first_seen_at": "2026-11-10T21:19:52.271120Z",
+      "published_at": "2026-11-10T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/hub-gcp-marketplace"
     },
     "url:cb9d353d00004b4139732ab4afd6fe6104e09ec06b9a6e0c93e8533ba14eb6ad": {
       "article_id": "aws-machine-learning-096fb74c",
@@ -5130,6 +5207,13 @@
       "published_at": "2026-09-15T16:01:47Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/announcing-instance-preference-lists-for-amazon-sagemaker-ai-training-jobs"
+    },
+    "url:d3f687b6e93365cd97037a4bfa3f9b091bfd18d876b7b0be9cad7d34fbac8436": {
+      "article_id": "aws-machine-learning-ed83db3d",
+      "first_seen_at": "2026-11-10T21:19:52.271120Z",
+      "published_at": "2026-11-10T16:56:36Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-tokenomics-data-lake"
     },
     "url:d4eadc6264742490b3b97c71e5dcc4a49ac48417fe72ce4c324d8e49b75b908b": {
       "article_id": "langchain-releases-b5c86ce8",
@@ -5472,6 +5556,13 @@
       "published_at": "2026-09-06T09:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/an-alien-mind"
+    },
+    "url:e192e4f92a704298f96f725cc3ae96c30d788d917e1f7b38ef8d7e63567c6b73": {
+      "article_id": "google-ai-9b525b73",
+      "first_seen_at": "2026-11-10T21:19:52.271120Z",
+      "published_at": "2026-11-10T14:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration"
     },
     "url:e1da41ea41831abed9cd482b909e2f6b1f815294a03f98e5461853f5ae5af667": {
       "article_id": "apple-ml-research-b0193b87",
@@ -5878,6 +5969,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/model-misalignment-reporting-framework"
     },
+    "url:f3fc54cd1d78c100d666a9c2ab2fb50b602d94d149788dbd0586059b0a0e8b98": {
+      "article_id": "openai-news-bab2c1b0",
+      "first_seen_at": "2026-11-10T21:19:52.271120Z",
+      "published_at": "2026-11-10T07:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/ai-effect-on-freelance-work"
+    },
     "url:f4412618f8cd919edf4553e282f7925e569550e7c2ccee6dafeb60f4887f77b4": {
       "article_id": "apple-ml-research-8e39f087",
       "first_seen_at": "2026-08-27T14:17:35.478713Z",
@@ -6066,6 +6164,13 @@
       "published_at": "2026-11-05T18:06:43Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-amazon-marketplace-evaluates-content-quality-with-amazon-sagemaker-ai"
+    },
+    "url:fafff4292c09fd9370c59269226818b22b187de9757f1096f65549cc01bfa598": {
+      "article_id": "google-ai-80215ff0",
+      "first_seen_at": "2026-11-10T21:19:52.271120Z",
+      "published_at": "2026-11-10T19:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices"
     },
     "url:fb22a1b92cabad920f840e39d11d46404e81d9f892ffcd61cf24f969a4aedafe": {
       "article_id": "aws-machine-learning-9b4b2246",

@@ -614,6 +614,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/astra-for-law"
     },
+    "url:19b4fcb1faac9c9bdbccd358c8d8e12a9188d32981764b2e3beec26a5de09e66": {
+      "article_id": "hugging-face-e20475cf",
+      "first_seen_at": "2026-11-11T11:06:03.819115Z",
+      "published_at": "2026-11-11T05:01:16Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/qvac/botpsy"
+    },
     "url:1a543055a02f9816518cc03996b6a0ed89e5e65a847f479103d96112c902ed21": {
       "article_id": "openai-news-b522d570",
       "first_seen_at": "2026-10-23T08:37:46.417444Z",
@@ -2783,6 +2790,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/partnering-with-codeai"
     },
+    "url:6d77a575f579de9bddf060a1269b34c406ecd2d2de042436b64417f39ef25e85": {
+      "article_id": "aws-machine-learning-5beacfb1",
+      "first_seen_at": "2026-11-11T11:06:03.819115Z",
+      "published_at": "2026-11-10T22:35:03Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/the-agent-evaluation-playbook-built-in-deepeval-and-autoeval-on-agentcore"
+    },
     "url:6e8a06229c5b50c1450ede1e238e96508f9a16ac1acf2a18a10b767d529c025f": {
       "article_id": "langchain-releases-cfe1387d",
       "first_seen_at": "2026-11-10T11:19:38.124673Z",
@@ -2824,6 +2838,13 @@
       "published_at": "2026-10-28T09:30:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/legora"
+    },
+    "url:70a4e650e182855f3e0e975862b2026729fbd69f20022b1ef4ae3b813ec30744": {
+      "article_id": "aws-machine-learning-fd9e13ee",
+      "first_seen_at": "2026-11-11T11:06:03.819115Z",
+      "published_at": "2026-11-11T01:07:19Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock"
     },
     "url:718617961cab3abcc8e8a05120222629543523589403679efbd4712495667d4b": {
       "article_id": "hugging-face-202c625e",
@@ -3235,6 +3256,13 @@
       "published_at": "2026-08-24T16:13:09Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/building-a-restaurant-telephony-ai-host-with-amazon-connect"
+    },
+    "url:82be3972cee0a1dbca0d7e1dcc774875b75954392b37941e44f3efd5ad1fe9b6": {
+      "article_id": "aws-machine-learning-69ff8092",
+      "first_seen_at": "2026-11-11T11:06:03.819115Z",
+      "published_at": "2026-11-10T23:34:05Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-daily-dependency-watcher-with-langgraph-and-amazon-bedrock-agentcore-web-search"
     },
     "url:82c764b2e29df4c958f92e02ccb0fb0eaa83599635dcb63d078d97f844f5206e": {
       "article_id": "mlcommons-8cd8e85c",
@@ -4270,6 +4298,13 @@
       "published_at": "2026-11-09T15:05:57Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan"
+    },
+    "url:ac94b61a25ade5edbf713f0897cc9ad6ba8f24621b9aed0d512136947920d1f0": {
+      "article_id": "openai-news-275994f0",
+      "first_seen_at": "2026-11-11T11:06:03.819115Z",
+      "published_at": "2026-11-11T08:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/chatgpt-plus-for-veterans"
     },
     "url:ad1bab0fb2e7ec83f38d5d1bd1b560b7b20c56489085b005c21dda48a478b003": {
       "article_id": "langchain-releases-17ca7d8f",
@@ -5549,6 +5584,13 @@
       "published_at": "2026-08-12T06:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/how-enterprises-put-ai-to-work"
+    },
+    "url:e09fad6dcc25f1ba697cd45e185fe8f5ec3b5d7d479a5ffc72c9feac3611ce3e": {
+      "article_id": "google-ai-dcab074b",
+      "first_seen_at": "2026-11-11T11:06:03.819115Z",
+      "published_at": "2026-11-11T09:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu"
     },
     "url:e0f75446731d598ce3aa65499f449c5b7555321e70d85cabfdb7b6f4f8659ba0": {
       "article_id": "openai-news-e7165f0e",

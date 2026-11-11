@@ -42,6 +42,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer"
     },
+    "url:02bfed5e7aa817ea9dcb99d63f8534e8e78ab10e8ae50e00c6e9b6a68bd6b403": {
+      "article_id": "google-ai-56f1bcb6",
+      "first_seen_at": "2026-11-11T22:00:31.549073Z",
+      "published_at": "2026-11-11T18:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api"
+    },
     "url:02e9abf47eaf3fa01f98fe0d8703230a8e6faa4dd4f2fb401bd0d8381c4ff554": {
       "article_id": "openai-news-83232c95",
       "first_seen_at": "2026-11-09T23:47:55.988666Z",
@@ -446,6 +453,13 @@
       "published_at": "2026-11-06T17:13:13Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/serverless-mcp-server-for-ai-agent-data-lake-access-on-amazon-ecs-fargate"
+    },
+    "url:11568aa8dfcf9a3c07504fe25196e1495017d378dc1ddce0dd1b3a34d4b9b5b8": {
+      "article_id": "hugging-face-bd01a6cd",
+      "first_seen_at": "2026-11-11T22:00:31.549073Z",
+      "published_at": "2026-11-11T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/token-pooling"
     },
     "url:11a03795fbf5afda58caa475bce0241b34dccdd90176dc064bb9db4a9e572ffe": {
       "article_id": "langchain-releases-fb1729e0",
@@ -1605,6 +1619,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/responsible-ai-infrastructure-texas"
     },
+    "url:3d65ccc2f5cdce6978b37fa7c64320f9c0126555eece5a35f17a2f7ec9258a94": {
+      "article_id": "google-ai-2b915aa5",
+      "first_seen_at": "2026-11-11T22:00:31.549073Z",
+      "published_at": "2026-11-11T16:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop"
+    },
     "url:3e32bae570ff21ee59e510c657138291c10e18dd5aba048c9dfb1703176c3b65": {
       "article_id": "google-deepmind-3617118e",
       "first_seen_at": "2026-10-28T20:20:27.243969Z",
@@ -2176,6 +2197,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts"
     },
+    "url:55ff14dc4213127df72a8039620109cd467ed21c91f1958dfd8ce815a783074c": {
+      "article_id": "openai-news-a1f2e5e7",
+      "first_seen_at": "2026-11-11T22:00:31.549073Z",
+      "published_at": "2026-11-11T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/jiostar-vijay-seshadri"
+    },
     "url:56bfec926244076beb99d79b294acced29a6c3e3551d80cd931e00b960b3116f": {
       "article_id": "mistral-ai-10b71087",
       "first_seen_at": "2026-09-11T08:07:55.145306Z",
@@ -2608,6 +2636,13 @@
       "published_at": "2026-10-21T04:50:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
+    },
+    "url:65b96c238445cdedc96b3e82ec1a6dd0c150d0317effbb199d997528a4ce6af2": {
+      "article_id": "openai-news-cd423cb6",
+      "first_seen_at": "2026-11-11T22:00:31.549073Z",
+      "published_at": "2026-11-12T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/gilbert-tobin-sam-nickless"
     },
     "url:65c11cd6697d24998d9d17cfaffde38706fc2f1b41e928f72fde891ca215539a": {
       "article_id": "github-ai-ml-a7943a0b",
@@ -3375,6 +3410,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/pollo-ai"
     },
+    "url:8556616005ab5618b6a17228f71d82490b36f02317ea82abe405dea04455b30d": {
+      "article_id": "aws-machine-learning-cab3f299",
+      "first_seen_at": "2026-11-11T22:00:31.549073Z",
+      "published_at": "2026-11-11T20:45:45Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-dxc-technology-built-a-multi-model-ai-substrate-on-amazon-bedrock"
+    },
     "url:856c26ca4c2d04bcedc9cb9fdb44809b32952d1d2e61bb97c33ffc0e2dda8f57": {
       "article_id": "mistral-ai-6de1ae2a",
       "first_seen_at": "2026-10-21T19:20:18.284662Z",
@@ -3958,6 +4000,20 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-lendingtree-built-a-multi-agent-mortgage-assistant-on-amazon-bedrock"
     },
+    "url:9ebaee35fc0c942120133cd2377b269696e8ce95c53e0fb7a4382fc05997ef1d": {
+      "article_id": "langchain-releases-2fdf5a53",
+      "first_seen_at": "2026-11-11T22:00:31.549073Z",
+      "published_at": "2026-11-11T16:14:24Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.1.0"
+    },
+    "url:9ff7f94fbe2a901a7a9619c348b989d8edabb47dd4726c4f984faef732f65c48": {
+      "article_id": "aws-machine-learning-ef4e9de5",
+      "first_seen_at": "2026-11-11T22:00:31.549073Z",
+      "published_at": "2026-11-11T16:05:33Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/accelerating-product-development-with-ai-driven-lifecycle-management-ai-pdlc-in-aws-quick"
+    },
     "url:a00923bf4ddda715364788a2da3f2ff96c940524eada89a0c5609e53d1b669fd": {
       "article_id": "openai-news-71cd6f4b",
       "first_seen_at": "2026-09-19T08:07:25.465807Z",
@@ -4474,6 +4530,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/run-multi-node-inference-workloads-using-ray-llm-deep-learning-containers"
     },
+    "url:b25a782d8681abe916482ac9266a2dd81f7e5489ad0a1b0a9d044142f68d7958": {
+      "article_id": "apple-ml-research-4e4e3b65",
+      "first_seen_at": "2026-11-11T22:00:31.549073Z",
+      "published_at": "2026-11-10T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/evaluating-evaluators-llm-judges"
+    },
     "url:b26ec23879c13b42dd868f69597824477ae71fe9b0285eb90563f0dfc343459e": {
       "article_id": "aws-machine-learning-76d3f544",
       "first_seen_at": "2026-08-20T04:02:19.864644Z",
@@ -4586,6 +4649,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/mistral-large4"
     },
+    "url:b748887c6b0f3420662b3d88f128dfbd732f24f902a10f33a355d7f4c63fee3a": {
+      "article_id": "langchain-releases-6a0fe886",
+      "first_seen_at": "2026-11-11T22:00:31.549073Z",
+      "published_at": "2026-11-11T15:22:07Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.0"
+    },
     "url:b76b11a1199f73b7027f051c73b169df83c2a00e9a8c2e410a485803d662c4b8": {
       "article_id": "google-deepmind-68e6d36a",
       "first_seen_at": "2026-10-14T08:48:33.299506Z",
@@ -4662,6 +4732,13 @@
       "published_at": "2026-09-04T16:08:10Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/customizing-your-knowledge-base-on-amazon-bedrock-for-large-and-complex-documents-using-amazon-textract"
+    },
+    "url:ba0fcf4e325b4115c73c9ef83ebd1ffebf008c30d8d75edc5ffce3b5226c5537": {
+      "article_id": "google-deepmind-99a08ac8",
+      "first_seen_at": "2026-11-11T22:00:31.549073Z",
+      "published_at": "2026-11-11T15:00:15Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease"
     },
     "url:bac12e9d90c3435ed86bb74e3c604a99961c0fe48aed88416fececa9664b14fd": {
       "article_id": "aws-machine-learning-fd4178ff",
@@ -4865,6 +4942,13 @@
       "published_at": "2026-08-12T13:42:48Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/tiered-kv-cache-for-large-llms-on-amazon-sagemaker-hyperpod-with-curvine"
+    },
+    "url:c330de1fdfea7e7b04a66e899b9cfdf60a90b6b68345fe7bac1fb88929530756": {
+      "article_id": "langchain-releases-244e2951",
+      "first_seen_at": "2026-11-11T22:00:31.549073Z",
+      "published_at": "2026-11-11T15:47:22Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.5.0"
     },
     "url:c3350a643117dde463dc934ecbd7f411e79554a0ce47a99d651e5806a4921598": {
       "article_id": "mlcommons-1b797341",
@@ -5165,6 +5249,13 @@
       "published_at": "2026-10-06T15:53:28Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/responsible-ai-governance-how-aws-positions-customers-to-align-with-iso-iec-420052025"
+    },
+    "url:d0eeb55e629a0ebb58fb452c3debdbbe6f72040b66eb840dcf84c03f07e9f23b": {
+      "article_id": "apple-ml-research-a0241e6c",
+      "first_seen_at": "2026-11-11T22:00:31.549073Z",
+      "published_at": "2026-11-10T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/gating-memorization-in-context"
     },
     "url:d1829425ff1bd6fe6f80accb5f087bc4820cc24c3682db24266b665315289517": {
       "article_id": "aws-machine-learning-f4860c03",
@@ -5648,6 +5739,20 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/asr-benchmark-optimization"
     },
+    "url:e3fb265c4a7f0c03e332381c674e35ece02aac3c1eec6df11ee65ed9b8e8bec6": {
+      "article_id": "aws-machine-learning-9fad478f",
+      "first_seen_at": "2026-11-11T22:00:31.549073Z",
+      "published_at": "2026-11-11T21:05:59Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/the-attendees-guide-to-the-aws-reinvent-2026-ai-ml-track"
+    },
+    "url:e4303a9fd1df8d9ee77b1d5e2b23be5b4a7d68cda0c4e82a370fcdf4379c17a1": {
+      "article_id": "apple-ml-research-958917dc",
+      "first_seen_at": "2026-11-11T22:00:31.549073Z",
+      "published_at": "2026-11-10T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/weighted-state-souping"
+    },
     "url:e456ad33f99c6f888c6b09a77c8dd62420d539d497d18f091410194d255ba6ff": {
       "article_id": "aws-machine-learning-09c4476c",
       "first_seen_at": "2026-09-21T20:00:41.036980Z",
@@ -6130,6 +6235,13 @@
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/08/endtoend-inference"
     },
+    "url:f7a9a6198fff75f59bb659cfec6c2eb57a6ff37a3dfd1ebe328870cb3dce72b6": {
+      "article_id": "aws-machine-learning-d0ac8a9c",
+      "first_seen_at": "2026-11-11T22:00:31.549073Z",
+      "published_at": "2026-11-11T19:19:21Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/accelerating-generative-ai-delivery-with-reusable-assets"
+    },
     "url:f80bee2d00329ffbcaf3322749eb470806add57f93dafcdd8e6ffb692ec42b44": {
       "article_id": "apple-ml-research-776b3070",
       "first_seen_at": "2026-08-29T10:10:04.614897Z",
@@ -6310,6 +6422,13 @@
       "published_at": "2026-09-14T16:00:00Z",
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026"
+    },
+    "url:fd6c66a0e11b0365f1aac7cb93812d47aa9e3a0a45aebb07749269ae48d61de4": {
+      "article_id": "aws-machine-learning-bf9917e8",
+      "first_seen_at": "2026-11-11T22:00:31.549073Z",
+      "published_at": "2026-11-11T20:52:48Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/automating-aws-agent-registry-updates-with-push-based-architecture"
     },
     "url:fe23f369e01db08d4a0477172cd7e0c5a8e1ac1fb959a7f41cba80240e425604": {
       "article_id": "openai-news-ac4c5d2b",

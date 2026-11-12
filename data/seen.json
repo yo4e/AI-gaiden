@@ -307,6 +307,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai"
     },
+    "url:0ca05117dff37c920736c0c682df0331c92f6f42bc6c48478f82dd9e6f4f469c": {
+      "article_id": "aws-machine-learning-b1674166",
+      "first_seen_at": "2026-11-12T21:51:36.485105Z",
+      "published_at": "2026-11-12T21:47:07Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-natera-designed-an-agentic-ai-system-for-lab-ops-with-amazon-bedrock-agentcore"
+    },
     "url:0ce62f77c11c71b3afdc72d0e3dcbb2abd52b36ba09b3041d21be8e565d54ded": {
       "article_id": "langchain-releases-6e24bf4d",
       "first_seen_at": "2026-11-02T23:08:35.254956Z",
@@ -1703,6 +1710,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/self-compacting-language-agents"
     },
+    "url:409a77b0b17a5148c50fa2d34fd8e289467f415901180490ea46c922f91886bd": {
+      "article_id": "aws-machine-learning-02e9bedd",
+      "first_seen_at": "2026-11-12T21:51:36.485105Z",
+      "published_at": "2026-11-12T18:43:19Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock"
+    },
     "url:40a01666d562060bfdf96e1bee46311ea36b1fbc4128b476c54664266fe1cab8": {
       "article_id": "hugging-face-67ff1254",
       "first_seen_at": "2026-10-21T19:20:18.284662Z",
@@ -2420,6 +2434,13 @@
       "published_at": "2026-10-28T18:19:54Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/distributed-training-with-ray-train-dlcs-and-efa-on-eks"
+    },
+    "url:5b69826eead48a963c75ef963ac20caffa1fff8564f7b5d1ca73cdf7b0254da4": {
+      "article_id": "google-deepmind-04569050",
+      "first_seen_at": "2026-11-12T21:51:36.485105Z",
+      "published_at": "2026-11-12T18:00:50Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen"
     },
     "url:5ba78b757300e8cc3ff5b4c8f26a93a1cc067af59a63302997722a2b18eff29a": {
       "article_id": "hugging-face-795a7b96",
@@ -3431,6 +3452,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/helping-websites-express-ai-training-preferences"
     },
+    "url:84ec87286cb35a64f463f0646caa372ff180d409581b33a91619e73354134567": {
+      "article_id": "hugging-face-e672d172",
+      "first_seen_at": "2026-11-12T21:51:36.485105Z",
+      "published_at": "2026-11-12T19:07:35Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite"
+    },
     "url:855092fba1df7e8a668bec1b409ac85f8b110a1f64384b826a3381f6d67156e4": {
       "article_id": "openai-news-9833cfa4",
       "first_seen_at": "2026-10-08T20:43:18.129330Z",
@@ -4168,6 +4196,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.1a3"
     },
+    "url:a491aa90d650ab2bf91e0a7d38a72e157edfbef974240c627de775007f1696bc": {
+      "article_id": "openai-news-d048b96b",
+      "first_seen_at": "2026-11-12T21:51:36.485105Z",
+      "published_at": "2026-11-12T20:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/amplitude"
+    },
     "url:a4a0601f1f87b20e4be18ed751f2cc31ca646819d9626dd5439c2eb5f7e48f83": {
       "article_id": "github-ai-ml-70cce1bf",
       "first_seen_at": "2026-09-03T08:07:17.945680Z",
@@ -4389,6 +4424,13 @@
       "published_at": "2026-11-11T08:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/chatgpt-plus-for-veterans"
+    },
+    "url:ace29fcbd859ed1956133b4d1adce210c181e67ebd3a5f35e6c54acc88527318": {
+      "article_id": "aws-machine-learning-532cdd92",
+      "first_seen_at": "2026-11-12T21:51:36.485105Z",
+      "published_at": "2026-11-12T20:51:55Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/four-amazon-bedrock-inference-choices-that-affect-cost"
     },
     "url:ad1bab0fb2e7ec83f38d5d1bd1b560b7b20c56489085b005c21dda48a478b003": {
       "article_id": "langchain-releases-17ca7d8f",
@@ -4733,6 +4775,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/the-eternal-complement"
     },
+    "url:b8142a42ae71ac2069bdf742cbaf8a5e32f492df5df88aee880bc66da1d0d414": {
+      "article_id": "aws-machine-learning-8d2650b0",
+      "first_seen_at": "2026-11-12T21:51:36.485105Z",
+      "published_at": "2026-11-12T19:29:55Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets"
+    },
     "url:b81a99111a5a86711c99d41ed073572ee8ddebce77cc7e3eead3a07ff5c3a222": {
       "article_id": "aws-machine-learning-29f6ec18",
       "first_seen_at": "2026-09-18T18:32:19.193378Z",
@@ -5013,6 +5062,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/oracle-apps-in-chatgpt"
     },
+    "url:c42330bc780a526148da04cd54d03f779fb331d39e566c30676f4fb8a6886d94": {
+      "article_id": "apple-ml-research-e039fc7a",
+      "first_seen_at": "2026-11-12T21:51:36.485105Z",
+      "published_at": "2026-11-12T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/theoretical-limits-alignment"
+    },
     "url:c44dc9ed271ff418b14ac5c964f0f9272d3413bd0c2b38b09efd327bf214a17d": {
       "article_id": "openai-news-c9020e8b",
       "first_seen_at": "2026-10-27T20:07:29.250572Z",
@@ -5222,6 +5278,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/democratizing-institutional-knowledge-building-an-ai-powered-knowledge-management-system-with-aws"
     },
+    "url:cbda9238a3684b28e47a3f036110852a357804594dae3b990092eac946cda973": {
+      "article_id": "hugging-face-356486ba",
+      "first_seen_at": "2026-11-12T21:51:36.485105Z",
+      "published_at": "2026-11-12T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/3d-lora-finetuning"
+    },
     "url:cc3d0ac48231448ce58666765641670f54b8dd433c8df85dffcc57804ac94ee3": {
       "article_id": "apple-ml-research-9ce74c8c",
       "first_seen_at": "2026-10-03T09:14:22.992763Z",
@@ -5424,6 +5487,13 @@
       "published_at": "2026-09-29T10:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/introducing-gpt-6-1-sol"
+    },
+    "url:d6d23163b98ddfa1ea7abe70bc203135c9b8d10c4c268a6dbaa304f2c460d6b1": {
+      "article_id": "google-ai-82f781aa",
+      "first_seen_at": "2026-11-12T21:51:36.485105Z",
+      "published_at": "2026-11-12T18:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade"
     },
     "url:d6dfaf3677dfbc70980417f20f4d36cb2c1bb8ce9862bd7140a4cb02e9234f41": {
       "article_id": "aws-machine-learning-3b741822",
@@ -5927,6 +5997,13 @@
       "published_at": "2026-08-20T16:52:57Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark"
+    },
+    "url:eb3a22dd21641de82869148702c197df1531585db0c040d0f2dc27df1a0bf955": {
+      "article_id": "aws-machine-learning-30434e15",
+      "first_seen_at": "2026-11-12T21:51:36.485105Z",
+      "published_at": "2026-11-12T18:41:12Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-a-self-service-llm-gateway-with-amazon-bedrock-and-litellm"
     },
     "url:eb67409897ed2136a753e14173e61feab2317d6d8d361b6603fffb8a60da143f": {
       "article_id": "hugging-face-389eaadd",

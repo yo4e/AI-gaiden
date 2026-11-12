@@ -859,6 +859,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/allenai/olmoearth-embeddings"
     },
+    "url:24bc76c8a5ccec322485553c1470d088716fc7d8a25ad6560773467131c959e9": {
+      "article_id": "aws-machine-learning-faa528e6",
+      "first_seen_at": "2026-11-12T11:24:17.722385Z",
+      "published_at": "2026-11-11T23:30:03Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/detecting-and-recovering-from-silent-data-corruption-on-amazon-sagemaker-hyperpod"
+    },
     "url:24c1285ad5edaaad29cb254c385a91d6885a8eca530b69bf1a48f21996d72d22": {
       "article_id": "aws-machine-learning-3dd98a5d",
       "first_seen_at": "2026-10-31T09:44:06.874430Z",
@@ -1397,6 +1404,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/research-acceleration-view-inside-openai"
     },
+    "url:37a8e4c6f059815446f80c338d77d660767530e94e96a1afc688a634620287ce": {
+      "article_id": "aws-machine-learning-43af4ab0",
+      "first_seen_at": "2026-11-12T11:24:17.722385Z",
+      "published_at": "2026-11-11T23:13:16Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore"
+    },
     "url:37acfe428526cde8f1d9fac5c3c1ca73487cc6d2e887f82684a7926aa7e8be11": {
       "article_id": "ollama-releases-7a2af6e0",
       "first_seen_at": "2026-10-08T10:41:20.799513Z",
@@ -1869,6 +1883,13 @@
       "published_at": "2026-09-02T18:14:17Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/trinity-agentic-ai-powered-transition-planning-for-students-with-disabilities"
+    },
+    "url:4922ca6fb0dd92994c349853518621d0422aac137e6c9a194fc01e08fc5408aa": {
+      "article_id": "openai-news-4dbfb614",
+      "first_seen_at": "2026-11-12T11:24:17.722385Z",
+      "published_at": "2026-11-12T09:30:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/business/customer-stories/holidays-extras-codex"
     },
     "url:49af65417091cab593ed830ed9ccd3147d47cf27510466ddf67d9946e4d6a324": {
       "article_id": "apple-ml-research-8da42067",
@@ -2929,6 +2950,13 @@
       "published_at": "2026-08-07T09:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/hsp-gruppe"
+    },
+    "url:734803aa3d8891741cad54a4e0303f38afa11ce7db2562b451303f5d63edc355": {
+      "article_id": "aws-machine-learning-cc3e9cc0",
+      "first_seen_at": "2026-11-12T11:24:17.722385Z",
+      "published_at": "2026-11-11T23:33:03Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/semantic-diffing-of-formal-policies-with-anti-unification"
     },
     "url:7359c9bb4052aeb40e8235825a4a8259c5d95e9b83f2b21f70d4f0981e961ee5": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
@@ -4425,6 +4453,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.10"
     },
+    "url:af92f8b8f091c9ba6921faa9a80364b72df0f71432da38f019ea43fe3de577fa": {
+      "article_id": "aws-machine-learning-66b0cab9",
+      "first_seen_at": "2026-11-12T11:24:17.722385Z",
+      "published_at": "2026-11-11T23:35:47Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/openai-codex-on-amazon-bedrock"
+    },
     "url:afa8c33f8eb7996a39419deadd5b14c638139f7bae71a907c422a5531afc3651": {
       "article_id": "hugging-face-94017413",
       "first_seen_at": "2026-09-29T20:02:41.127327Z",
@@ -5397,6 +5432,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/best-practices-for-building-agentic-automations-with-amazon-quick-automate"
     },
+    "url:d7c1da8cb7dc41da688b7a9908111a63cf9fb297a134e952ad2db42224ad8dc2": {
+      "article_id": "openai-news-ba5f238f",
+      "first_seen_at": "2026-11-12T11:24:17.722385Z",
+      "published_at": "2026-11-12T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/children-first-declaration"
+    },
     "url:d7f891d2a048125a896b09bda64a4eae2ce4cc959c41c7eb49501c0496feb6a1": {
       "article_id": "langchain-releases-d2bd3549",
       "first_seen_at": "2026-10-22T08:41:38.804028Z",
@@ -5619,6 +5661,13 @@
       "published_at": "2026-08-03T07:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live"
+    },
+    "url:df6566d4fc91840890def19461933475d9c7a30723709bdf51469ad99565d346": {
+      "article_id": "aws-machine-learning-5a3145f1",
+      "first_seen_at": "2026-11-12T11:24:17.722385Z",
+      "published_at": "2026-11-12T01:18:23Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-autonomous-ai-agents-with-amazon-bedrock-and-spring-ai"
     },
     "url:df8f12302a5b421ac18657dd3c98b85f0bbbcdb55f27a7a2a1e94cd20d3dde6b": {
       "article_id": "openai-news-77b4e899",

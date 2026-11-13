@@ -2714,6 +2714,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3"
     },
+    "url:67672a694e389b29af5588bf1be29a978063408e3c6a0262fcadf6da500500d7": {
+      "article_id": "openai-news-d2414c2e",
+      "first_seen_at": "2026-11-13T11:07:38.888044Z",
+      "published_at": "2026-11-12T20:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/business/customer-stories/amplitude"
+    },
     "url:67f5f61696a2949df2730f40424ad824b9d13bbf8b547c153b8cdb7135436103": {
       "article_id": "hugging-face-a213a704",
       "first_seen_at": "2026-10-07T20:39:53.894203Z",
@@ -3541,6 +3548,13 @@
       "published_at": "2026-09-23T18:00:00Z",
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion"
+    },
+    "url:87d176270cb26539c898439e05e992134124297c2047677c38ce9d6618f13d06": {
+      "article_id": "aws-machine-learning-278ddb77",
+      "first_seen_at": "2026-11-13T11:07:38.888044Z",
+      "published_at": "2026-11-12T22:03:34Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/deploy-frontier-ai-models-on-aws-trainium-with-sglang-neuron"
     },
     "url:882596cbc7639eb42bf210ab4eea91363285a86aec67b5711dcb8d9b7dff3b7d": {
       "article_id": "openai-news-3787bbe6",
@@ -4810,6 +4824,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/jalapeno-first-results"
     },
+    "url:b9840fd67063a36a400d5e1d91fe182c1b415df6997c889b681a58ba22957843": {
+      "article_id": "openai-news-8ccd75ef",
+      "first_seen_at": "2026-11-13T11:07:38.888044Z",
+      "published_at": "2026-11-12T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/business/customer-stories/gondola"
+    },
     "url:b9be5c650c491d2390da4ebe44ef271dbd4c09268bc369b5ff9b7f5119975441": {
       "article_id": "aws-machine-learning-1fdc5b53",
       "first_seen_at": "2026-09-04T18:28:36.682808Z",
@@ -4851,6 +4872,13 @@
       "published_at": "2026-10-21T16:20:30Z",
       "source": "ollama-releases",
       "url": "https://github.com/ollama/ollama/releases/tag/v0.40.8"
+    },
+    "url:bb4deecac7ca31683d3e8c8dee18504496f41072dd8936606afb77877fc5451f": {
+      "article_id": "llama-cpp-releases-6ad05262",
+      "first_seen_at": "2026-11-13T11:07:38.888044Z",
+      "published_at": "2026-11-13T10:20:19Z",
+      "source": "llama-cpp-releases",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0"
     },
     "url:bbd492caba72ca544b8bac3280d7afac87555fa4b30c0b12388bcfae24236fa4": {
       "article_id": "openai-news-7e9a1fc0",
@@ -5354,6 +5382,13 @@
       "published_at": "2026-11-10T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/gating-memorization-in-context"
+    },
+    "url:d121304c3de64e9ed00c84f1cdeeb2e33c08e49aeaf086709f8f6a82b67bcb78": {
+      "article_id": "github-ai-ml-4b8e203d",
+      "first_seen_at": "2026-11-13T11:07:38.888044Z",
+      "published_at": "2026-11-12T22:54:52Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills"
     },
     "url:d1829425ff1bd6fe6f80accb5f087bc4820cc24c3682db24266b665315289517": {
       "article_id": "aws-machine-learning-f4860c03",

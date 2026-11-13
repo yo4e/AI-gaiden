@@ -1167,6 +1167,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration"
     },
+    "url:3003d0e4ec081578c9279b3ff133c3ce905de8d1e5470f7f005ea40a227936ee": {
+      "article_id": "langchain-releases-782f495c",
+      "first_seen_at": "2026-11-13T21:27:00.403114Z",
+      "published_at": "2026-11-13T16:48:27Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.8.0"
+    },
     "url:30441d231d7d72e0d92f7c1f1175f1c9cfcd05b652ea48ed10164f4e41a82ae7": {
       "article_id": "aws-machine-learning-368f52f8",
       "first_seen_at": "2026-10-06T20:22:28.789262Z",
@@ -2512,6 +2519,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock"
     },
+    "url:5e58f673d3a366d25ac9372b70a6d262e294cedf67e06c90dbdfa218b2ba0d29": {
+      "article_id": "aws-machine-learning-a849bc39",
+      "first_seen_at": "2026-11-13T21:27:00.403114Z",
+      "published_at": "2026-11-13T18:01:15Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-model-improvement-flywheel-with-amazon-sagemaker-hyperpod-data-capture"
+    },
     "url:5e78358b6e49a01a4b989c9ca016fa9dfafca7db79134f16ef22dc9d4e8cccfc": {
       "article_id": "mlcommons-c189eab3",
       "first_seen_at": "2026-09-17T19:05:12.502267Z",
@@ -2553,6 +2567,13 @@
       "published_at": "2026-09-16T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/glyph-column-description-tagging"
+    },
+    "url:5fc66b49260043b9fbe203d0347191bfc1d5c6f3736f064a0c6b5cf21a606a3b": {
+      "article_id": "aws-machine-learning-c90d2c65",
+      "first_seen_at": "2026-11-13T21:27:00.403114Z",
+      "published_at": "2026-11-13T18:44:02Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/cost-attribution-and-controls-for-ai-developer-and-productivity-tools-on-amazon-bedrock"
     },
     "url:60345c944361e4138ad47cca923a3c05467960c84a22ebd0d238a91a6cf8bc60": {
       "article_id": "aws-machine-learning-01ce4e1a",
@@ -2727,6 +2748,13 @@
       "published_at": "2026-10-07T12:45:31Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026"
+    },
+    "url:6841e619fcd7e8d9370258a227590a244c9afe604f7f173c18d14806c323db86": {
+      "article_id": "hugging-face-f79b8098",
+      "first_seen_at": "2026-11-13T21:27:00.403114Z",
+      "published_at": "2026-11-13T14:05:22Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
     },
     "url:689d78c6e007ab8e2c4f1996bb4d798c0801548871029acd469c087e5a6afc90": {
       "article_id": "hugging-face-163fdca5",
@@ -3201,6 +3229,13 @@
       "published_at": "2026-09-16T09:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/unlocking-new-ways-of-working"
+    },
+    "url:7d4d71d056da02862d0b2ec1b87dadd7019731481c576401840bf8ff718ee663": {
+      "article_id": "openai-news-7ddf6f33",
+      "first_seen_at": "2026-11-13T21:27:00.403114Z",
+      "published_at": "2026-11-13T15:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/introducing-chatgpt-wallet"
     },
     "url:7d8cf1a82fe7868bad7bd41cb63449dacedf08a95a54d7d16af1f00eba9887c8": {
       "article_id": "aws-machine-learning-93fba2e6",
@@ -3884,6 +3919,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra"
     },
+    "url:96c7f67bef86f8316048a87fd511efdf23e6f81e02406769c1ce381b73c81b1f": {
+      "article_id": "hugging-face-2d255087",
+      "first_seen_at": "2026-11-13T21:27:00.403114Z",
+      "published_at": "2026-11-13T17:02:35Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/allenai/xybench"
+    },
     "url:9732b2763df5a67ab9455b8255aee23064fe436ed165bb52468ec0f54969accf": {
       "article_id": "openai-news-7afe56f1",
       "first_seen_at": "2026-10-17T07:52:50.310038Z",
@@ -4348,6 +4390,13 @@
       "published_at": "2026-10-14T07:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/third-moment-research"
+    },
+    "url:a8cb743586dc52b9f3a44c7d3d37468528b76e76383fda18c4450a4202daaae8": {
+      "article_id": "aws-machine-learning-3c201f3d",
+      "first_seen_at": "2026-11-13T21:27:00.403114Z",
+      "published_at": "2026-11-13T19:35:35Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot"
     },
     "url:a9c488820a62ac4adcd9d66c87dfdb487fb6897ef015ab83ccdf2e6a9db2968a": {
       "article_id": "openai-news-2e8a470f",
@@ -5354,6 +5403,13 @@
       "published_at": "2026-08-27T16:11:27Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/deepgram-deepens-amazon-sagemaker-ai-observability-with-enhanced-metrics"
+    },
+    "url:cdc8eef67bc55a0d0fa5ca86f75a39576cb4cd55b8ad20129c59ea60f80062cd": {
+      "article_id": "hugging-face-5cf89275",
+      "first_seen_at": "2026-11-13T21:27:00.403114Z",
+      "published_at": "2026-11-13T18:00:39Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place"
     },
     "url:cdd1118267ee925c63286ac83c83df800f6195e85e821a17d4745982cb7ef8b5": {
       "article_id": "hugging-face-3f867406",

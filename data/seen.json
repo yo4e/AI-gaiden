@@ -1139,6 +1139,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/replit"
     },
+    "url:2f429c1a2fc201bc6e9a1536e3730e740ba9e71ce44c6ce81237125ee1c41374": {
+      "article_id": "aws-machine-learning-2176f34a",
+      "first_seen_at": "2026-11-14T10:34:00.019073Z",
+      "published_at": "2026-11-13T22:02:39Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime"
+    },
     "url:2f8d9b98fc157bb338d3eee240b684935f4eb48a8a141e592a8d2b7cadec3422": {
       "article_id": "openai-news-9bd0ee33",
       "first_seen_at": "2026-09-21T20:00:41.036980Z",
@@ -1834,6 +1841,13 @@
       "published_at": "2026-09-09T08:54:49Z",
       "source": "vllm-releases",
       "url": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0"
+    },
+    "url:4536e10993f7030af8c202010afc26234a100576c2a235c65b97303580c3bc39": {
+      "article_id": "aws-machine-learning-c25dea31",
+      "first_seen_at": "2026-11-14T10:34:00.019073Z",
+      "published_at": "2026-11-13T23:22:09Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/production-mlops-at-gs-caltex-with-amazon-sagemaker-canvas-part-1"
     },
     "url:45bf667b5a8961f21f313772ff8281c3b2031e7b92b315f19655cfe521bbd10a": {
       "article_id": "microsoft-ai-607f702d",
@@ -4398,6 +4412,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot"
     },
+    "url:a99dfdd20d85acbbb850aa77912a8df97b492b8fb6a1e7bebe1dab199cebab4f": {
+      "article_id": "openai-news-e5c89655",
+      "first_seen_at": "2026-11-14T10:34:00.019073Z",
+      "published_at": "2026-11-13T08:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/business/customer-stories/shield"
+    },
     "url:a9c488820a62ac4adcd9d66c87dfdb487fb6897ef015ab83ccdf2e6a9db2968a": {
       "article_id": "openai-news-2e8a470f",
       "first_seen_at": "2026-10-27T09:05:55.750045Z",
@@ -4725,6 +4746,13 @@
       "published_at": "2026-09-23T18:41:09Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/from-portal-hopping-to-instant-answers-hemas-journey-with-mcp-and-amazon-bedrock"
+    },
+    "url:b47584a6c89b5823261078d32badd815b1f54d913eae6bd6d311e89d60015b86": {
+      "article_id": "aws-machine-learning-092005c2",
+      "first_seen_at": "2026-11-14T10:34:00.019073Z",
+      "published_at": "2026-11-13T21:53:40Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/openfold3-on-amazon-sagemaker-jumpstart-predict-biomolecular-structures"
     },
     "url:b49099cde7e97e60f531fdab0739ace017515f672d5de4fd5e17e7dadf65f19d": {
       "article_id": "google-deepmind-7a23fc8b",
@@ -5403,6 +5431,13 @@
       "published_at": "2026-08-27T16:11:27Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/deepgram-deepens-amazon-sagemaker-ai-observability-with-enhanced-metrics"
+    },
+    "url:cd8fc130788a632d051e37efa6742c1b82066f608f0d1cd76ab86a8be028980a": {
+      "article_id": "aws-machine-learning-1f046ead",
+      "first_seen_at": "2026-11-14T10:34:00.019073Z",
+      "published_at": "2026-11-13T22:30:12Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard"
     },
     "url:cdc8eef67bc55a0d0fa5ca86f75a39576cb4cd55b8ad20129c59ea60f80062cd": {
       "article_id": "hugging-face-5cf89275",

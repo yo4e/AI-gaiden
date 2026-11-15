@@ -1006,6 +1006,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands"
     },
+    "url:29da70c6592fc36fa6aef7a9d730d58de83504c8808b3d05153a6ef8e6ad6e9f": {
+      "article_id": "microsoft-ai-cb03f645",
+      "first_seen_at": "2026-11-15T11:03:34.443220Z",
+      "published_at": "2026-11-12T17:03:22Z",
+      "source": "microsoft-ai",
+      "url": "https://blogs.microsoft.com/blog/2026/11/12/from-ai-ambition-to-business-impact"
+    },
     "url:2a26e0bf4bcecd1520a435deb3774222f33a0175794eb75f5b1c4d20e46f5f47": {
       "article_id": "aws-machine-learning-8c11e054",
       "first_seen_at": "2026-09-25T19:17:44.183699Z",
@@ -3952,6 +3959,13 @@
       "published_at": "2026-08-03T00:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/circles"
+    },
+    "url:981658b8b9c1f2605940dfccda6a5d9d1beb16a901b22607c13fa299df72e43d": {
+      "article_id": "microsoft-ai-f319a428",
+      "first_seen_at": "2026-11-15T11:03:34.443220Z",
+      "published_at": "2026-11-12T16:27:13Z",
+      "source": "microsoft-ai",
+      "url": "https://blogs.microsoft.com/blog/2026/11/12/scaling-ai-value-without-losing-control-lessons-from-frontier-firms"
     },
     "url:9855b0d96c10185bbf388a1e6db9fbd389aad75ec863da6015dd1cea41a15001": {
       "article_id": "apple-ml-research-43df33d0",

@@ -1125,6 +1125,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/taxonomy-of-agentic-primitives-in-amazon-quick"
     },
+    "url:2e8f421d2ee2a3dfd36bfcc5be1c93ba1a42b98e60398a99d5e21362ce523fd9": {
+      "article_id": "openai-news-aad1bafc",
+      "first_seen_at": "2026-11-16T11:33:15.233327Z",
+      "published_at": "2026-11-15T22:00:01Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/step-toward-defining-the-standard-model"
+    },
     "url:2eb317e634c166703036d7ea05369063a800e59313ae68b2d81a408642c4e111": {
       "article_id": "aws-machine-learning-7be37441",
       "first_seen_at": "2026-10-27T20:07:29.250572Z",
@@ -1292,6 +1299,13 @@
       "published_at": "2026-08-26T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/relightable-gaussians-3d-generation"
+    },
+    "url:33b95c2112c46efd095543028e60f6116680e85e464182b74c65e43667746d78": {
+      "article_id": "openai-news-33620b6c",
+      "first_seen_at": "2026-11-16T11:33:15.233327Z",
+      "published_at": "2026-11-15T22:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/our-new-blog-for-science"
     },
     "url:33eae878317d27dcc0386f35e9a677d698ea074de44e94f879168ed6c243016a": {
       "article_id": "openai-news-d351c239",
@@ -2769,6 +2783,13 @@
       "published_at": "2026-10-07T12:45:31Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026"
+    },
+    "url:683a552668f141c7ca6f484e0806a89d72f480c5d860afd3f8b5a76c0e5d534e": {
+      "article_id": "langchain-releases-7fc4c176",
+      "first_seen_at": "2026-11-16T11:33:15.233327Z",
+      "published_at": "2026-11-15T21:49:09Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-groq%3D%3D1.2.0"
     },
     "url:6841e619fcd7e8d9370258a227590a244c9afe604f7f173c18d14806c323db86": {
       "article_id": "hugging-face-f79b8098",
@@ -5139,6 +5160,13 @@
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands"
     },
+    "url:c2de3dd4b16d325ea192c982752ca562870b6a14b065d98b7c701f384924c34e": {
+      "article_id": "langchain-releases-d0790615",
+      "first_seen_at": "2026-11-16T11:33:15.233327Z",
+      "published_at": "2026-11-15T22:38:03Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-mistralai%3D%3D1.2.0"
+    },
     "url:c2ed162a157709f5cb47598d7a4a9ff0ca7927682ea3c9a0e259f86971bb2de7": {
       "article_id": "hugging-face-1e266e63",
       "first_seen_at": "2026-10-21T19:20:18.284662Z",
@@ -6201,6 +6229,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
     },
+    "url:ecfc2ce5483dc89204d86e6bedcc1deecbdd0908ff821679b74d59be11555115": {
+      "article_id": "langchain-releases-05c5ec34",
+      "first_seen_at": "2026-11-16T11:33:15.233327Z",
+      "published_at": "2026-11-15T21:34:41Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-deepseek%3D%3D1.2.0"
+    },
     "url:ed0410e4df19aef3b017a7cf6e74f9648f21d38d1b402bb251aaca25bc00c420": {
       "article_id": "langchain-releases-6ace3801",
       "first_seen_at": "2026-11-04T21:21:28.109238Z",
@@ -6529,6 +6564,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws"
     },
+    "url:f860fa769f3e646a81698c0e214f03427e9daa42005a31d1a0743e948ba8add9": {
+      "article_id": "langchain-releases-fe7ab15c",
+      "first_seen_at": "2026-11-16T11:33:15.233327Z",
+      "published_at": "2026-11-15T21:35:20Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-xai%3D%3D1.4.0"
+    },
     "url:f87baa38b03278bfed1e73133f871134d6f2083103abee0b82d7427ff2f29c40": {
       "article_id": "langchain-releases-035315d4",
       "first_seen_at": "2026-09-30T20:05:27.043874Z",
@@ -6758,6 +6800,13 @@
       "published_at": "2026-10-20T17:48:27Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/fine-tuning-gpt-oss-20b-for-multilingual-reasoning-on-amazon-sagemaker-hyperpod"
+    },
+    "url:ff7833693fa2a06713dc923ab6354b82d0a99faf362cef1531beb712e1bb1855": {
+      "article_id": "openai-news-be5e4ec0",
+      "first_seen_at": "2026-11-16T11:33:15.233327Z",
+      "published_at": "2026-11-16T09:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/lvmh-media-division-partnership"
     },
     "url:ffd2818196374b7e8d985c5ba0d85a7cf6f6fd71833912309c34424b62f62e05": {
       "article_id": "hugging-face-3e896b46",

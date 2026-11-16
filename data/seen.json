@@ -468,6 +468,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/token-pooling"
     },
+    "url:11608d311d0047796796c8a9dbfb8536ab8ca24d06e0399d24ff383d018c7550": {
+      "article_id": "google-ai-6db64ee2",
+      "first_seen_at": "2026-11-16T23:45:55.463910Z",
+      "published_at": "2026-11-16T14:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026"
+    },
     "url:11a03795fbf5afda58caa475bce0241b34dccdd90176dc064bb9db4a9e572ffe": {
       "article_id": "langchain-releases-fb1729e0",
       "first_seen_at": "2026-10-15T19:12:51.300814Z",
@@ -1097,6 +1104,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/aws-named-a-leader-in-the-2026-gartner-magic-quadrant-for-contact-center-as-a-service"
     },
+    "url:2d7a5d6b20fff3cd431e56c6c45800450e6e12e3351b563ba22db14d6cc86266": {
+      "article_id": "openai-news-bf7e24b7",
+      "first_seen_at": "2026-11-16T23:45:55.463910Z",
+      "published_at": "2026-11-16T17:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers"
+    },
     "url:2d8e70fb45cef7470a5baf361c95df26b5ff7249933c340d169f562e1258ded9": {
       "article_id": "openai-news-2d8a753f",
       "first_seen_at": "2026-10-05T10:33:47.536612Z",
@@ -1486,6 +1500,13 @@
       "published_at": "2026-07-28T13:00:00Z",
       "source": "google-ai",
       "url": "https://blog.google/products-and-platforms/products/search/ai-mode-real-world-tips"
+    },
+    "url:38a73038f401258c1101cee1b87d010cae924cf6e06991abb42f655846d02772": {
+      "article_id": "aws-machine-learning-1f6aee07",
+      "first_seen_at": "2026-11-16T23:45:55.463910Z",
+      "published_at": "2026-11-16T18:16:07Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-moengage-built-agentic-customer-engagement-on-amazon-bedrock-agentcore"
     },
     "url:39052ad94a8a76cc68a2cb5d2b6325203b5875584233fbb5d6de6b8d63fe42e3": {
       "article_id": "hugging-face-88a6b132",
@@ -3619,6 +3640,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.1"
     },
+    "url:86f7c7c99bd2479f548cfa432fc6d14fe43504724813ab968b918893edb71982": {
+      "article_id": "aws-machine-learning-42d2d9ad",
+      "first_seen_at": "2026-11-16T23:45:55.463910Z",
+      "published_at": "2026-11-16T21:53:46Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/taxonomy-of-multi-agent-design-patterns-anti-patterns-and-lessons-from-manufacturing"
+    },
     "url:872457bb1f6a4e1ad755dbb79e013467d95e7e9d6ce83087adc34414a4aa26e5": {
       "article_id": "ollama-releases-900cb256",
       "first_seen_at": "2026-09-30T09:47:18.782304Z",
@@ -3758,6 +3786,13 @@
       "published_at": "2026-10-26T14:30:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
+    },
+    "url:8ec21efa2c62273428cb36f48412c205c966c9e1c9840d1b4a0d5276d99867ca": {
+      "article_id": "hugging-face-23f1fae1",
+      "first_seen_at": "2026-11-16T23:45:55.463910Z",
+      "published_at": "2026-11-16T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/openrouter"
     },
     "url:8f8c726fbdb30a61c539a826b3f2c20aa1af7074558cd7c31eba67c89b69ee35": {
       "article_id": "apple-ml-research-8cdd300b",
@@ -3982,6 +4017,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/itau-generative-ai"
     },
+    "url:97659ce0a0e0a6a7f1ffc4bfa9534a4a428828afed79355d19bdcea9e3379cd8": {
+      "article_id": "mlcommons-44ed59e3",
+      "first_seen_at": "2026-11-16T23:45:55.463910Z",
+      "published_at": "2026-11-16T15:45:00Z",
+      "source": "mlcommons",
+      "url": "https://mlcommons.org/2026/11/mlperf-training-v6-1-results"
+    },
     "url:97e92714d577da88c6e3099e0cf9afb3cc981105dadc42fff6bf30703b8cd73b": {
       "first_seen_at": "2026-08-04T06:07:12.261432Z",
       "published_at": "2026-08-03T00:00:00Z",
@@ -4008,6 +4050,13 @@
       "published_at": "2026-08-20T21:23:29Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-a-no-code-ml-workflow-with-snowflake-amazon-sagemaker-canvas-and-amazon-quick-part-2-data-preparation-and-model-building-with-amazon-sagemaker-canvas"
+    },
+    "url:98ebc3310aca9936cd72e7299856342e6a452864cd54905fa6f643266b805ee3": {
+      "article_id": "aws-machine-learning-49cff06a",
+      "first_seen_at": "2026-11-16T23:45:55.463910Z",
+      "published_at": "2026-11-16T22:43:30Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-memory-aware-ai-agents-with-agentic-retrieve-on-amazon-bedrock-managed-knowledge-base"
     },
     "url:991ad48e8559b2fefa9ff7bc2bbc96fe5e673f91d6bb1c78428d1dddc9dc303e": {
       "article_id": "openai-news-84156a2a",
@@ -4174,6 +4223,13 @@
       "published_at": "2026-11-11T16:14:24Z",
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.1.0"
+    },
+    "url:9fe6d2ae73e55f52b8078f1806f466588569fb6faa3605540c1891f86e100648": {
+      "article_id": "openai-news-f74d0cc3",
+      "first_seen_at": "2026-11-16T23:45:55.463910Z",
+      "published_at": "2026-11-16T08:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/our-first-phase-of-embedded-assessments"
     },
     "url:9ff7f94fbe2a901a7a9619c348b989d8edabb47dd4726c4f984faef732f65c48": {
       "article_id": "aws-machine-learning-ef4e9de5",
@@ -5321,6 +5377,13 @@
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/10/open-submissions-endpoints-v1-0"
     },
+    "url:c876496118766282bf936d94e85af52c106c72c558b1b21810f2463c7a54d531": {
+      "article_id": "vllm-releases-507c7381",
+      "first_seen_at": "2026-11-16T23:45:55.463910Z",
+      "published_at": "2026-11-16T23:22:00Z",
+      "source": "vllm-releases",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+    },
     "url:c87efd876aae4ae7c6acc1d475e2b83c9d8fc57abdb7c37d24f6b4673cfcfffd": {
       "article_id": "aws-machine-learning-11eae6a3",
       "first_seen_at": "2026-09-18T18:32:19.193378Z",
@@ -5712,6 +5775,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review"
     },
+    "url:d89fddf149fe8e05c834f619343e601f035bcc28309f46b962a8a83d053d8644": {
+      "article_id": "aws-machine-learning-0ec59232",
+      "first_seen_at": "2026-11-16T23:45:55.463910Z",
+      "published_at": "2026-11-16T17:29:29Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform"
+    },
     "url:d8a6f610df930550ee1402387d3fde50558fa99d5d579bc261f23983fb759891": {
       "article_id": "langchain-releases-e0f02e18",
       "first_seen_at": "2026-09-11T18:37:35.354590Z",
@@ -5732,6 +5802,13 @@
       "published_at": "2026-09-11T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/simpledesign-protein-codesign"
+    },
+    "url:d91fd06de7b8771ee8ad78bbe6c6a0f8795962915436321f9652c6b42b553b9c": {
+      "article_id": "openai-news-974cbabe",
+      "first_seen_at": "2026-11-16T23:45:55.463910Z",
+      "published_at": "2026-11-16T12:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/science-at-the-frontier"
     },
     "url:d9303becb2aa56308df4baef5aca8081494414337071fb0d85f1a64ce1348df7": {
       "article_id": "aws-machine-learning-ce92e26d",
@@ -5872,6 +5949,13 @@
       "published_at": "2026-11-05T22:56:58Z",
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.2"
+    },
+    "url:dd659f011024f04f24b0b918544913431aa1336cb6fdeb78ce4549a3a5fdd29c": {
+      "article_id": "openai-news-ce282de2",
+      "first_seen_at": "2026-11-16T23:45:55.463910Z",
+      "published_at": "2026-11-16T17:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/strengthening-online-child-safety"
     },
     "url:de08f1cfdedd109d1ecdd3b97781af5fe7d7838d76c57e844b9245f90e07f193": {
       "article_id": "aws-machine-learning-d89c0368",
@@ -6626,6 +6710,13 @@
       "published_at": "2026-08-26T10:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts"
+    },
+    "url:fa3c1ec1e457a5f68b920319274a3aba57461a2d01448af71022a1d7e55562c2": {
+      "article_id": "aws-machine-learning-68440984",
+      "first_seen_at": "2026-11-16T23:45:55.463910Z",
+      "published_at": "2026-11-16T22:06:08Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-duco-transforms-financial-data-automation-with-amazon-bedrock-agentcore"
     },
     "url:fad370bb7b6d436415c6f4ddb8a02e1562eca0569d93ed1a33f1eed45345207d": {
       "article_id": "aws-machine-learning-ccd6f67f",

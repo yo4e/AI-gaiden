@@ -579,6 +579,13 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/shared-selective-persistent-memory"
     },
+    "url:1673851a5d77ce2c5516c9f5f26b715679ed95ca66c25ebfadf91fbacb6e0117": {
+      "article_id": "aws-machine-learning-908da874",
+      "first_seen_at": "2026-11-17T22:56:41.365027Z",
+      "published_at": "2026-11-17T20:25:23Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/secure-oauth-patterns-for-snowflake-cortex-ai-through-amazon-bedrock-agentcore"
+    },
     "url:167c901a4800acececb4fdc340f543511cf773629cebd13f55c38d60ff42b290": {
       "article_id": "aws-machine-learning-35086584",
       "first_seen_at": "2026-08-10T22:01:43.331237Z",
@@ -1223,6 +1230,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-a-voice-travel-concierge-with-amazon-bedrock-agentcore-managed-knowledge-base-and-nova-sonic"
     },
+    "url:3047d7657748ea760feb4367a861eff886526fc9a8d7d29ee939532b2c42b6aa": {
+      "article_id": "openai-news-6e76530a",
+      "first_seen_at": "2026-11-17T22:56:41.365027Z",
+      "published_at": "2026-11-17T08:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/introducing-chatgpt-for-sales"
+    },
     "url:30a36306f538ac1af96f572883174082173478c732479a6c198f0eda11dd4fde": {
       "article_id": "github-ai-ml-f584c891",
       "first_seen_at": "2026-09-11T18:37:35.354590Z",
@@ -1619,6 +1633,13 @@
       "published_at": "2026-10-02T15:00:00Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out"
+    },
+    "url:3b3be741a87f5e2153e626602817efd9dcc9c3fb90f3d3d29d39838acce03d65": {
+      "article_id": "openai-news-a86693e0",
+      "first_seen_at": "2026-11-17T22:56:41.365027Z",
+      "published_at": "2026-11-17T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/introducing-openai-for-chile"
     },
     "url:3b88e631408680364ea9a152f6e9efd2ecc78ea8cf4125966179efcad826634d": {
       "article_id": "google-deepmind-08e5cd11",
@@ -3488,6 +3509,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws"
     },
+    "url:830da74434e8505c737e91eb0dcd32bca128e663d8b67dd821f376fcc24bd3aa": {
+      "article_id": "google-ai-2e0e0015",
+      "first_seen_at": "2026-11-17T22:56:41.365027Z",
+      "published_at": "2026-11-17T17:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features"
+    },
     "url:832a12c8f33a104e2b49b2d1442be1d80f1153a18abe85ca9b9a201d94b80ba6": {
       "article_id": "openai-news-b3a20481",
       "first_seen_at": "2026-08-27T14:17:35.478713Z",
@@ -3689,6 +3717,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.1"
     },
+    "url:889385642a21d0837ffef2bc4a94f5844483c740fd05f971753d961d96a7fad5": {
+      "article_id": "langchain-releases-beb8f905",
+      "first_seen_at": "2026-11-17T22:56:41.365027Z",
+      "published_at": "2026-11-17T20:39:43Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.8.1"
+    },
     "url:88e871d5a8d26738db20168d7fe4b9e05a7b8640818c7b2a626052e0332f27b0": {
       "article_id": "hugging-face-4ee909b1",
       "first_seen_at": "2026-10-07T20:39:53.894203Z",
@@ -3800,6 +3835,13 @@
       "published_at": "2026-11-16T00:00:00Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/openrouter"
+    },
+    "url:8f6af8c44a4a1bfb5de31585ff7d049da9f0b0c7303ae5eb79fd652e216c50e9": {
+      "article_id": "openai-news-e6c9d670",
+      "first_seen_at": "2026-11-17T22:56:41.365027Z",
+      "published_at": "2026-11-17T17:45:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
     },
     "url:8f8c726fbdb30a61c539a826b3f2c20aa1af7074558cd7c31eba67c89b69ee35": {
       "article_id": "apple-ml-research-8cdd300b",
@@ -3926,6 +3968,13 @@
       "published_at": "2026-10-21T18:26:30Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/nvidia/kumo-relational"
+    },
+    "url:94bde3db0a23b9ce7250d34b7399822396ecec37ae07a7d0340a162106c478b1": {
+      "article_id": "langchain-releases-53bf121b",
+      "first_seen_at": "2026-11-17T22:56:41.365027Z",
+      "published_at": "2026-11-17T22:42:53Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.2"
     },
     "url:94eadcab22c41e356a1d9bf1e35dbdb6491d04804b7eea5ceec3829024496784": {
       "article_id": "openai-news-9b1d9cc7",
@@ -4099,6 +4148,13 @@
       "published_at": "2026-08-26T20:12:53Z",
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-automate-dependabot-pull-request-triage"
+    },
+    "url:9b44c6a129423e3479311f4d16234c468124b6cc1a29f99b53fd043e7dbe90e0": {
+      "article_id": "aws-machine-learning-9b09072d",
+      "first_seen_at": "2026-11-17T22:56:41.365027Z",
+      "published_at": "2026-11-17T22:44:51Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/reducing-token-costs-and-latency-in-amazon-bedrock-agentcore-json-workloads"
     },
     "url:9b54a38fa1b1a3f1fc1fd60d911784f4064b31ff199e66bfc392aa7f95235b93": {
       "article_id": "hugging-face-af510260",
@@ -4635,6 +4691,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/generate-images-and-video-with-vllm-omni-on-sagemaker-ai-part-2"
     },
+    "url:ad4895029a4e8a1454b38130d2951cc25aa6f3c34d030bcbae8434fe479891de": {
+      "article_id": "mlcommons-6f19b5a1",
+      "first_seen_at": "2026-11-17T22:56:41.365027Z",
+      "published_at": "2026-11-17T21:07:57Z",
+      "source": "mlcommons",
+      "url": "https://mlcommons.org/2026/11/mlperf-training-v6-1-insights"
+    },
     "url:ad4b3f90fa39cf5e09308af559f75bccd59210367bafecf59a767646d8ef7deb": {
       "article_id": "microsoft-ai-6eec9737",
       "first_seen_at": "2026-11-09T23:47:55.988666Z",
@@ -4844,6 +4907,13 @@
       "published_at": "2026-08-06T16:30:47Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-visibility-for-codex-on-amazon-bedrock-with-opentelemetry-and-amazon-cloudwatch"
+    },
+    "url:b43ef08ac3ed4f7af6f4fa4f8f60d0d2c49772fc6e540a21a0c9e441265578ef": {
+      "article_id": "openai-news-fb2cea46",
+      "first_seen_at": "2026-11-17T22:56:41.365027Z",
+      "published_at": "2026-11-17T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/astra-law-6-2"
     },
     "url:b45d69150568a41c7c8d0e965415108ec9764820ec42b2563aeefefdb1257114": {
       "article_id": "aws-machine-learning-488f77b1",
@@ -6327,6 +6397,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
     },
+    "url:ecd295cd80fbdb5f0bdd3a6049720c3cb955c7794916b348e1fbc196d4c17c77": {
+      "article_id": "aws-machine-learning-964f44d0",
+      "first_seen_at": "2026-11-17T22:56:41.365027Z",
+      "published_at": "2026-11-17T21:14:55Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/cut-generative-ai-costs-code-for-rules-models-for-judgment"
+    },
     "url:ecfc2ce5483dc89204d86e6bedcc1deecbdd0908ff821679b74d59be11555115": {
       "article_id": "langchain-releases-05c5ec34",
       "first_seen_at": "2026-11-16T11:33:15.233327Z",
@@ -6403,6 +6480,13 @@
       "published_at": "2026-10-20T16:09:19Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/allenai/fairstress"
+    },
+    "url:ef90af83544e1ea49520c8f0315d86be36e338f1a22d58d1d17375ad26e71c19": {
+      "article_id": "aws-machine-learning-f4b81171",
+      "first_seen_at": "2026-11-17T22:56:41.365027Z",
+      "published_at": "2026-11-17T21:11:51Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-real-time-endpoints-now-support-kv-cache-aware-routing"
     },
     "url:efabfc507247c9d223c0f258f4cfc916d88aad158419e5c955209a9636889223": {
       "article_id": "aws-machine-learning-8416b7b0",
@@ -6779,6 +6863,13 @@
       "published_at": "2026-08-03T17:24:15Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/from-weeks-to-minutes-how-formula-1-uses-agentic-ai-on-aws-to-accelerate-data-operations"
+    },
+    "url:fbeca82073091b7eabe0a1af3e552e28f37f353b888a4d9167b2edc98178e7ed": {
+      "article_id": "aws-machine-learning-64da38e9",
+      "first_seen_at": "2026-11-17T22:56:41.365027Z",
+      "published_at": "2026-11-17T20:31:04Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/govern-and-discover-records-with-common-metadata-in-aws-agent-registry"
     },
     "url:fbfd060b861c994281af0eba5bc9e52ea37bdc3627cbdda346c6be2b71bb929f": {
       "article_id": "github-ai-ml-17ad0fcf",

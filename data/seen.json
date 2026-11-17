@@ -356,6 +356,13 @@
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/09/mlperf-storage-v3-0-results"
     },
+    "url:0e7f690aa4ff229bd2e8f2756081d691fec5b134a3dc763b1e89b65c9c3becc6": {
+      "article_id": "openai-news-2f3cf5ca",
+      "first_seen_at": "2026-11-17T11:58:45.284426Z",
+      "published_at": "2026-11-17T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai"
+    },
     "url:0e9fb0eb84f13acffdc59012e1c88f7c2f202f69132c55eacdf5e3a2b2ad057d": {
       "article_id": "google-deepmind-aaf9eff3",
       "first_seen_at": "2026-11-10T21:19:52.271120Z",
@@ -4977,6 +4984,13 @@
       "published_at": "2026-09-18T15:31:34Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/the-new-agentcore-runtime-elastic-optimized-and-consistently-fast-starts"
+    },
+    "url:b82b64ef90f76e66fb0003e74649f67052cf66f11ce4f6f63d50fd3308925680": {
+      "article_id": "openai-news-5bf23055",
+      "first_seen_at": "2026-11-17T11:58:45.284426Z",
+      "published_at": "2026-11-16T09:30:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/business/customer-stories/revolut"
     },
     "url:b838928be91f5e369eb9ec692fb3f97e4f88583af2af7a5ea87e3ca5bae2be22": {
       "article_id": "langchain-releases-8c6fb4bc",

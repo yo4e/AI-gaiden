@@ -2107,6 +2107,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/making-amazon-quick-enterprise-ready-automated-auditable-cross-account-resource-promotion"
     },
+    "url:4df567e64846f78674c5776162311be11b2f8e2bf8e52723529eaf159029fb79": {
+      "article_id": "aws-machine-learning-9040e345",
+      "first_seen_at": "2026-11-18T11:51:05.719013Z",
+      "published_at": "2026-11-17T23:33:26Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/managed-nvidia-dynamo-on-amazon-sagemaker-hyperpod-inference"
+    },
     "url:4e31b829ae6885914a657352bbac8811fbc1f8727398eacb2a4f78ce30e284bb": {
       "article_id": "google-deepmind-409d7088",
       "first_seen_at": "2026-10-13T20:43:12.907993Z",
@@ -4378,6 +4385,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
     },
+    "url:a1de396d3910fa2e0f79d5fc1596f0a162b45e4ee5be0f06557fa126a8cc5915": {
+      "article_id": "openai-news-8d2b5b47",
+      "first_seen_at": "2026-11-18T11:51:05.719013Z",
+      "published_at": "2026-11-18T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership"
+    },
     "url:a22fd9bbbe2056925d2578d77e350569eaa1c0058c84ad612a9c5d0a6cda883a": {
       "article_id": "aws-machine-learning-1cdcf62e",
       "first_seen_at": "2026-11-10T11:19:38.124673Z",
@@ -5788,6 +5802,13 @@
       "published_at": "2026-09-01T15:50:00Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-t54-built-a-trust-layer-with-amazon-bedrock-agentcore-payments"
+    },
+    "url:d635ebbfdbb6654d6d42b2abfa4a8e29f5bc55974719b98d3ab4107353ed83e8": {
+      "article_id": "apple-ml-research-377e6ebc",
+      "first_seen_at": "2026-11-18T11:51:05.719013Z",
+      "published_at": "2026-11-16T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/split-scale-latent-3d"
     },
     "url:d63fd7904589a452419d9086c340cd70931c69c728b4714f5acd4bf5fc4d211a": {
       "article_id": "apple-ml-research-4cc551ad",

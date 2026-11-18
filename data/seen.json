@@ -35,12 +35,26 @@
       "source": "google-ai",
       "url": "https://blog.google/products/ads-commerce/google-ads-analytics-ai-updates"
     },
+    "url:0191a8cf5007a7e305ee6ecc84767aeda711b30a6ec196d8a24db74bf6e9ec9a": {
+      "article_id": "google-ai-a95addbd",
+      "first_seen_at": "2026-11-18T22:37:25.110974Z",
+      "published_at": "2026-11-18T17:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices"
+    },
     "url:019edb616369c3322f4c44a55e04677f77bd523e681eb1a6308bc4ebad0c1377": {
       "article_id": "openai-news-fa724398",
       "first_seen_at": "2026-11-03T21:03:56.416119Z",
       "published_at": "2026-11-03T00:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer"
+    },
+    "url:02a9f081f7220770d133b5928d994e7885fa25ce0b6eff6c1d405f4bdfe338d0": {
+      "article_id": "aws-machine-learning-49a4e2b7",
+      "first_seen_at": "2026-11-18T22:37:25.110974Z",
+      "published_at": "2026-11-18T21:48:19Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-airbnb-uses-cost-per-task-to-operate-coding-agents-on-amazon-bedrock"
     },
     "url:02bfed5e7aa817ea9dcb99d63f8534e8e78ab10e8ae50e00c6e9b6a68bd6b403": {
       "article_id": "google-ai-56f1bcb6",
@@ -649,6 +663,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/run-agent-driven-amazon-sagemaker-hyperpod-operations-with-instantstart"
     },
+    "url:184d931227f2504de1a33bebb5615518a5072d45e1bfb93a37850e8332740e3a": {
+      "article_id": "openai-news-6ed54860",
+      "first_seen_at": "2026-11-18T22:37:25.110974Z",
+      "published_at": "2026-11-18T10:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/the-silent-consensus"
+    },
     "url:192794312f979cbd50ee7eab3653eaf23d7dcaf9f5076493368af8f38e17a29e": {
       "article_id": "openai-news-cfbc49d8",
       "first_seen_at": "2026-09-18T08:19:24.592517Z",
@@ -978,6 +999,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark"
     },
+    "url:285e2a7964b05cb3f9b5cd1eae5d2d84e2c5118610d0ada97433a000b966845c": {
+      "article_id": "langchain-releases-5c12d78a",
+      "first_seen_at": "2026-11-18T22:37:25.110974Z",
+      "published_at": "2026-11-18T16:53:05Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.8.2"
+    },
     "url:2896758265cec81d95898858cf3558ac9cdd51e4e22038c8fc6ca0aa5193f521": {
       "article_id": "openai-news-099eb72c",
       "first_seen_at": "2026-10-06T20:22:28.789262Z",
@@ -1187,6 +1215,13 @@
       "published_at": "2026-11-13T22:02:39Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime"
+    },
+    "url:2f7a78547e9d1e5ca210ad952116ef2ace39a90bb4ba33ff1c068004f380fbf2": {
+      "article_id": "aws-machine-learning-599a23f7",
+      "first_seen_at": "2026-11-18T22:37:25.110974Z",
+      "published_at": "2026-11-18T20:53:41Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/private-certificate-authority-support-in-amazon-bedrock-agentcore-identity"
     },
     "url:2f8d9b98fc157bb338d3eee240b684935f4eb48a8a141e592a8d2b7cadec3422": {
       "article_id": "openai-news-9bd0ee33",
@@ -1752,6 +1787,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/broad-access-through-consistent-standards"
     },
+    "url:3f871130631574cad1b545f81d63c01931472e83c2302d025d75f69980ecd948": {
+      "article_id": "aws-machine-learning-7a66c39f",
+      "first_seen_at": "2026-11-18T22:37:25.110974Z",
+      "published_at": "2026-11-18T22:31:04Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-sagemaker-jumpstart-model-leaderboard"
+    },
     "url:3fcefd9c665fb2c2484965cf43548bc94be5c40db4dc345287024e6c77f2703e": {
       "article_id": "openai-news-ef99459d",
       "first_seen_at": "2026-09-23T08:39:33.148997Z",
@@ -1821,6 +1863,13 @@
       "published_at": "2026-09-16T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/trajectory-teacher-flow-matching"
+    },
+    "url:411c3a13a5d37b3ffb11e8b5334269d4014dd4dbb8f2bb212ecbdc7fecf8c71f": {
+      "article_id": "langchain-releases-4970a5df",
+      "first_seen_at": "2026-11-18T22:37:25.110974Z",
+      "published_at": "2026-11-18T17:27:44Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-deepseek%3D%3D1.2.1"
     },
     "url:4121a7b15bd92f32985021f65e6604570d5b2530254425293ad83847ebc084fe": {
       "article_id": "aws-machine-learning-e62d4a26",
@@ -2232,6 +2281,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence"
     },
+    "url:52211e5ecdc6473a0532362c40be7b0ecd26d5fbe5c6cb75887b9679f4d4ac5e": {
+      "article_id": "aws-machine-learning-dff66786",
+      "first_seen_at": "2026-11-18T22:37:25.110974Z",
+      "published_at": "2026-11-18T21:38:22Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/design-responsible-ai-controls-for-amazon-aurora-postgresql"
+    },
     "url:52431ca79a409b52659fbc257b3fe0cbd3c4cb5ff22254096727c096cc4e8df2": {
       "article_id": "aws-machine-learning-80b22a97",
       "first_seen_at": "2026-10-12T22:31:15.104803Z",
@@ -2540,6 +2596,13 @@
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen"
     },
+    "url:5b89a2db7f60ae9099b72ca73768977f61c082125cbaf94b72c9c9bced5f17aa": {
+      "article_id": "hugging-face-43364a31",
+      "first_seen_at": "2026-11-18T22:37:25.110974Z",
+      "published_at": "2026-11-18T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/rumble-2-flash"
+    },
     "url:5ba78b757300e8cc3ff5b4c8f26a93a1cc067af59a63302997722a2b18eff29a": {
       "article_id": "hugging-face-795a7b96",
       "first_seen_at": "2026-08-19T04:02:41.847930Z",
@@ -2805,6 +2868,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/engineering/using-the-github-copilot-sdk-for-java"
     },
+    "url:661a8f3992c265990a5ee1d31b218031494d847a4049a80ce3537987bed3dab7": {
+      "article_id": "langchain-releases-4a4875d2",
+      "first_seen_at": "2026-11-18T22:37:25.110974Z",
+      "published_at": "2026-11-18T17:27:22Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-groq%3D%3D1.2.1"
+    },
     "url:661f64ddb5f472a2675ed75a0fb09828b0ce7323472abe119ea9528dee004ac6": {
       "article_id": "openai-news-8996805a",
       "first_seen_at": "2026-10-07T20:39:53.894203Z",
@@ -2833,6 +2903,13 @@
       "source": "openai-news",
       "url": "https://openai.com/business/customer-stories/amplitude"
     },
+    "url:67952d9a918d2536a7bf3b37b6c05ec5dc7c7c22fdf68db178458bb74b4d4f2d": {
+      "article_id": "openai-news-5664faa9",
+      "first_seen_at": "2026-11-18T22:37:25.110974Z",
+      "published_at": "2026-11-18T08:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/inside-the-codex-sandbox"
+    },
     "url:67f5f61696a2949df2730f40424ad824b9d13bbf8b547c153b8cdb7135436103": {
       "article_id": "hugging-face-a213a704",
       "first_seen_at": "2026-10-07T20:39:53.894203Z",
@@ -2860,6 +2937,13 @@
       "published_at": "2026-09-22T00:00:00Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/transformers-llama-cpp-quants"
+    },
+    "url:68ddb817fe4001c0fc7b71404e8ed33269a5f57651ec2110d7ae5f13ebb157e7": {
+      "article_id": "openai-news-405633d0",
+      "first_seen_at": "2026-11-18T22:37:25.110974Z",
+      "published_at": "2026-11-18T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/advancing-chip-design-with-our-models"
     },
     "url:693b3130e25cc8808f585a694f7201006d36e37cb71c7b8ae2099287d6befd80": {
       "article_id": "hugging-face-fb23598f",
@@ -3159,6 +3243,13 @@
       "published_at": "2026-09-30T00:00:00Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/open-tts-leaderboard"
+    },
+    "url:74e7247aa9b4db486a2fdf9bd62f370dca26e850015d9a79c4db5837256a11f0": {
+      "article_id": "langchain-releases-9178df1c",
+      "first_seen_at": "2026-11-18T22:37:25.110974Z",
+      "published_at": "2026-11-18T17:29:52Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-xai%3D%3D1.4.1"
     },
     "url:75b859b8cd50a88b1480e59956e69c4230f0ae75e564c38a740d1c9b41026da4": {
       "article_id": "mlcommons-7388cc0a",
@@ -4135,6 +4226,13 @@
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026"
     },
+    "url:99be0c0a7e074380d1a5d6cdb0953a68d68217eb3d8f50443a74e9d288a8cea0": {
+      "article_id": "openai-news-089038af",
+      "first_seen_at": "2026-11-18T22:37:25.110974Z",
+      "published_at": "2026-11-18T06:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/managing-frontier-ai-risk"
+    },
     "url:9a05a28afb7c8eb8e003cdda5e7988e79896dcd5d467549a81c874733a81edaf": {
       "article_id": "aws-machine-learning-2ae4977b",
       "first_seen_at": "2026-08-07T21:58:33.543829Z",
@@ -4398,6 +4496,13 @@
       "published_at": "2026-11-10T00:21:34Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-skills-and-agents-work-in-aws-quick"
+    },
+    "url:a272cda257e80f9ade377c93a708cc5f0eb28b79d5704385a0231b4499c3a608": {
+      "article_id": "aws-machine-learning-4636f59e",
+      "first_seen_at": "2026-11-18T22:37:25.110974Z",
+      "published_at": "2026-11-18T20:13:18Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-salesforce-is-advancing-global-scale-model-serving-with-cross-region-inference-routing-in-amazon-sagemaker-ai"
     },
     "url:a2903b1976e9e15dd87644aa5c64129d8a190e3a3571cfa9e28254ce2bfe057a": {
       "article_id": "aws-machine-learning-a69175ac",
@@ -4753,6 +4858,13 @@
       "published_at": "2026-08-12T13:46:28Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-oneadvanced-deployed-over-50-ai-agents-on-uk-sovereign-aws"
+    },
+    "url:aef632472a5e3af7f91b4cd9c5d8e0ecee47135327c9822e26d24027e878b6a3": {
+      "article_id": "hugging-face-52eada12",
+      "first_seen_at": "2026-11-18T22:37:25.110974Z",
+      "published_at": "2026-11-18T15:00:23Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse"
     },
     "url:af41e11c1664671d783ba3ef7985fe8e91b8b0cabdcd1b496bc6c82c633b1cad": {
       "article_id": "langchain-releases-900751f2",
@@ -5537,6 +5649,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.7"
     },
+    "url:ca9ca0837de1673fe7157c5aacee390a01e91aa92b23247bd7648dbf04542dc2": {
+      "article_id": "google-deepmind-4b420648",
+      "first_seen_at": "2026-11-18T22:37:25.110974Z",
+      "published_at": "2026-11-18T18:13:42Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/genie-4-is-now-available"
+    },
     "url:caa079bc52c86f18f9cbb9923dc94850c3920ee28a66ba807f3b380eeec1c659": {
       "article_id": "aws-machine-learning-090f00b7",
       "first_seen_at": "2026-09-17T19:05:12.502267Z",
@@ -6278,6 +6397,13 @@
       "source": "google-ai",
       "url": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets"
     },
+    "url:e55c8f2df06c07ffc92b5ea28b360b047797a023e968816743ef7e472d87d336": {
+      "article_id": "hugging-face-466f8a85",
+      "first_seen_at": "2026-11-18T22:37:25.110974Z",
+      "published_at": "2026-11-18T18:53:43Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time"
+    },
     "url:e6646933ca959a5fc8d118c8b793de49bb6b72b8147d5eceda7d378fce794266": {
       "article_id": "google-ai-ab389c78",
       "first_seen_at": "2026-09-02T07:58:34.641049Z",
@@ -6403,6 +6529,13 @@
       "published_at": "2026-09-18T00:00:00Z",
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/dynamically-scaled-activation-steering"
+    },
+    "url:ec56b5eff9affb1c339e466ce0f8237f0117032663d5db85034279f9f2a19228": {
+      "article_id": "hugging-face-abeb8625",
+      "first_seen_at": "2026-11-18T22:37:25.110974Z",
+      "published_at": "2026-11-18T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/moe-expert-streaming"
     },
     "url:ec596dac47b8163fa8f2f8957cf7431728879180b9e9df177844bd9d0a647272": {
       "article_id": "aws-machine-learning-5c265fb1",
@@ -6536,6 +6669,13 @@
       "published_at": "2026-08-18T19:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security"
+    },
+    "url:f0b81ce3c14612880642c854f15f292b941326a9491f444584b41bfe82ab7a56": {
+      "article_id": "hugging-face-2643fc6f",
+      "first_seen_at": "2026-11-18T22:37:25.110974Z",
+      "published_at": "2026-11-18T19:54:56Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin"
     },
     "url:f0dc85dcc6d3444f6482829995f5a83e6fdb56513a353598d7cfc58189cd6756": {
       "article_id": "google-deepmind-1ab7f4ff",
@@ -6961,6 +7101,20 @@
       "published_at": "2026-11-11T20:52:48Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/automating-aws-agent-registry-updates-with-push-based-architecture"
+    },
+    "url:fd9bebbff7e692862dad0cea3083003ab322baa30f38c6a3bb8661b8a80eee16": {
+      "article_id": "google-deepmind-e664f9f2",
+      "first_seen_at": "2026-11-18T22:37:25.110974Z",
+      "published_at": "2026-11-18T21:35:43Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-neon"
+    },
+    "url:fe1beb7ae0be80886f57857b96cfd5c663f7d202c93495e5612d9ef9860e1a5b": {
+      "article_id": "langchain-releases-2d24709e",
+      "first_seen_at": "2026-11-18T22:37:25.110974Z",
+      "published_at": "2026-11-18T22:30:43Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.5.2"
     },
     "url:fe23f369e01db08d4a0477172cd7e0c5a8e1ac1fb959a7f41cba80240e425604": {
       "article_id": "openai-news-ac4c5d2b",

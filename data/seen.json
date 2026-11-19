@@ -112,6 +112,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/agentic-engineering-intelligence-with-amazon-nova-multimodal-embeddings-and-amazon-bedrock-agentcore"
     },
+    "url:056cf0b58a3dbace68332c5ef6b35e38e3aab513ff13bc25aa1cb803bce8b627": {
+      "article_id": "google-ai-68c2febb",
+      "first_seen_at": "2026-11-19T22:41:08.993989Z",
+      "published_at": "2026-11-19T18:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval"
+    },
     "url:05eeb3dab00fd81284bba0e20db85e14dd413e44629491b30772f23bfddd59ec": {
       "article_id": "aws-machine-learning-b7b45239",
       "first_seen_at": "2026-08-20T04:02:19.864644Z",
@@ -1222,6 +1229,13 @@
       "published_at": "2026-11-13T22:02:39Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime"
+    },
+    "url:2f6854a60f3bdf7510e4f93a5b54c99726ccceb11b84bbbd72b75bc0be38f61e": {
+      "article_id": "aws-machine-learning-269faa31",
+      "first_seen_at": "2026-11-19T22:41:08.993989Z",
+      "published_at": "2026-11-19T22:16:22Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/run-your-whole-selling-business-in-aws-quick"
     },
     "url:2f7a78547e9d1e5ca210ad952116ef2ace39a90bb4ba33ff1c068004f380fbf2": {
       "article_id": "aws-machine-learning-599a23f7",
@@ -2834,6 +2848,13 @@
       "source": "ollama-releases",
       "url": "https://github.com/ollama/ollama/releases/tag/v0.40.6"
     },
+    "url:63610b904de29506452ac1fba7c8cb0b4b76c98f0fb6fd62dc6626d364874233": {
+      "article_id": "google-ai-fb13d78a",
+      "first_seen_at": "2026-11-19T22:41:08.993989Z",
+      "published_at": "2026-11-19T17:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson"
+    },
     "url:637d3dfa247fa816a4c4160f323cf7816f7979e28cc1acd637f643ec28fcb5fc": {
       "article_id": "openai-news-f1af3f50",
       "first_seen_at": "2026-10-01T20:22:22.987634Z",
@@ -2881,6 +2902,13 @@
       "published_at": "2026-10-21T04:50:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
+    },
+    "url:655235a8f0a364326aa02d01fe8ba212cba76276cd7455fe59ee7380dd90134c": {
+      "article_id": "aws-machine-learning-99c45658",
+      "first_seen_at": "2026-11-19T22:41:08.993989Z",
+      "published_at": "2026-11-19T22:20:23Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-the-bmw-group-governs-hundreds-of-agents-across-thousands-of-developers"
     },
     "url:65b96c238445cdedc96b3e82ec1a6dd0c150d0317effbb199d997528a4ce6af2": {
       "article_id": "openai-news-cd423cb6",
@@ -3230,6 +3258,13 @@
       "source": "google-ai",
       "url": "https://blog.google/innovation-and-ai/technology/developers-tools/ai-agents-intensive-recap-2026"
     },
+    "url:735d1f9416d3ebe29eda2dc6b8ca22f34615537abf1071f67dc7800af18273e8": {
+      "article_id": "aws-machine-learning-d66ddd22",
+      "first_seen_at": "2026-11-19T22:41:08.993989Z",
+      "published_at": "2026-11-19T21:28:18Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-now-detects-latency-drift-idle-gpus-and-missed-optimizations-on-your-inference-endpoints"
+    },
     "url:737331cbffc8a092b5afd2188884ce2a48372d771166cb07df0e7429800d54ab": {
       "article_id": "google-deepmind-7928ff07",
       "first_seen_at": "2026-08-27T14:17:35.478713Z",
@@ -3509,6 +3544,13 @@
       "published_at": "2026-11-04T16:55:54Z",
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.7.4"
+    },
+    "url:7f0852611831db2f4be23321c60fde2b7273679e491c7acb1cf4c832ec18ddb6": {
+      "article_id": "langchain-releases-5a2e92c0",
+      "first_seen_at": "2026-11-19T22:41:08.993989Z",
+      "published_at": "2026-11-19T21:36:51Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.8.4"
     },
     "url:7f176d6cec1f7ea9f202722d1bdf7989d73d2c394597d02d638633cdc1824a42": {
       "article_id": "aws-machine-learning-229ee4a5",
@@ -4066,6 +4108,13 @@
       "published_at": "2026-09-23T13:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense"
+    },
+    "url:9342dbf934e428aa00c16520441f258a949ccd62bcb28471deb475c04ce3c227": {
+      "article_id": "openai-news-1f5073fc",
+      "first_seen_at": "2026-11-19T22:41:08.993989Z",
+      "published_at": "2026-11-19T08:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast"
     },
     "url:9349f418e7bc7ab45091d36c0bfe75e2136622d8b5dbcf107bb7aa7386820b2a": {
       "article_id": "openai-news-5dea6984",
@@ -5817,6 +5866,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-an-aws-team-detects-dashboard-content-failures-at-scale-using-amazon-bedrock"
     },
+    "url:ce67f2f6f2f691bd3d26e546deef2823569fa75d9dd958250245072b87f560db": {
+      "article_id": "aws-machine-learning-4edc98b7",
+      "first_seen_at": "2026-11-19T22:41:08.993989Z",
+      "published_at": "2026-11-19T20:01:06Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks"
+    },
     "url:ce977c433c98399ab51c8a1c0e93720c23ab3c1e80436f86a6767085beda91d9": {
       "article_id": "aws-machine-learning-7e776e95",
       "first_seen_at": "2026-10-06T20:22:28.789262Z",
@@ -5879,6 +5935,13 @@
       "published_at": "2026-09-21T00:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/v7"
+    },
+    "url:d288a90f22f7891f32d77e0e2e7e19250e1fcc21f9c988eca21d6b1f41303bc0": {
+      "article_id": "langchain-releases-26f79cd6",
+      "first_seen_at": "2026-11-19T22:41:08.993989Z",
+      "published_at": "2026-11-19T22:35:57Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.4"
     },
     "url:d2b5b29b4c815525619915dcf133df4d932068a91ccef332cbfb8777febef4ef": {
       "article_id": "openai-news-d4685e90",
@@ -7005,6 +7068,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.7"
     },
+    "url:fa2689f1fbd1cba21c2863ae26201ce717337ba3870b79254bb29318b3230264": {
+      "article_id": "langchain-releases-683e6faf",
+      "first_seen_at": "2026-11-19T22:41:08.993989Z",
+      "published_at": "2026-11-19T15:03:19Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openrouter%3D%3D0.3.0"
+    },
     "url:fa2791fbc9af008fbec5e3ce56bf40bc113bb8071f7a73cfd61c5d71ead84cf1": {
       "article_id": "openai-news-3d5e7ded",
       "first_seen_at": "2026-08-27T14:17:35.478713Z",
@@ -7115,6 +7185,13 @@
       "published_at": "2026-10-15T17:43:35Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart"
+    },
+    "url:fcc41c907b856729e707b2a10b556260eba9b742f141123544de487c57635e99": {
+      "article_id": "aws-machine-learning-399201a7",
+      "first_seen_at": "2026-11-19T22:41:08.993989Z",
+      "published_at": "2026-11-19T21:23:20Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/inside-amazon-connect-talent-the-science-of-structured-ai-interviews"
     },
     "url:fcde82ce22706b89161cc9a9efc20917066f5d76375bdf56f124810ddc3f753a": {
       "article_id": "aws-machine-learning-049abf3a",

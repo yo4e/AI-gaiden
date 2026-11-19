@@ -579,6 +579,13 @@
       "source": "github-ai-ml",
       "url": "https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app"
     },
+    "url:1471104375f835f45826c33816d227db6fd6f7ca6dca486dfdda7b88a024c13c": {
+      "article_id": "aws-machine-learning-7d592ecd",
+      "first_seen_at": "2026-11-19T11:47:23.227486Z",
+      "published_at": "2026-11-19T00:15:58Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/full-fine-tuning-fft-on-sagemaker-ai-serverless-model-customization"
+    },
     "url:14e90e72d3401ddf817f6448fcef8d95a77a43c8c720ccf3b66937d995ee0634": {
       "article_id": "openai-news-b84450d5",
       "first_seen_at": "2026-11-05T21:29:30.813744Z",
@@ -2351,6 +2358,13 @@
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/10/ailuminate-safety-1-2-1-and-jailbreak-1-1"
     },
+    "url:53d809d7420a3923e8bad7c3bd224d7d2c9da9cb37fe0d761411713f6da0b90e": {
+      "article_id": "openai-news-ecbcc299",
+      "first_seen_at": "2026-11-19T11:47:23.227486Z",
+      "published_at": "2026-11-18T08:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/business/customer-stories/sumitomo-life"
+    },
     "url:53eff4b4e1cfd4521d9907e4a091045621fa672eafe264489e13eb555913a7dd": {
       "article_id": "ollama-releases-f7e492f6",
       "first_seen_at": "2026-11-06T11:00:29.770083Z",
@@ -2490,6 +2504,13 @@
       "published_at": "2026-11-09T20:04:37Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws"
+    },
+    "url:58da586369f33999eb920dc2411502d48d9dc9ca37a4ab1a788d83ffd176938a": {
+      "article_id": "openai-news-880e1000",
+      "first_seen_at": "2026-11-19T11:47:23.227486Z",
+      "published_at": "2026-11-18T08:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/research-acceleration-jagged-frontier"
     },
     "url:58ff7a6a906611649d17700f9aefc9064e08f319742bc1a046b07aaf8a54f2fe": {
       "article_id": "aws-machine-learning-e9774c87",
@@ -2707,6 +2728,13 @@
       "published_at": "2026-11-10T00:00:00Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/decision"
+    },
+    "url:5f52b8439779b93d10e80669b1afb87e81d5ef1ae08e8e72a82fb41a3e9e3d31": {
+      "article_id": "langchain-releases-db22fa86",
+      "first_seen_at": "2026-11-19T11:47:23.227486Z",
+      "published_at": "2026-11-19T00:38:57Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.8.3"
     },
     "url:5f721228af3682c2417b4131d4680ee3211f1024fcf682ecae1568fe5c5140e2": {
       "article_id": "openai-news-aa38ee4f",
@@ -6257,6 +6285,13 @@
       "source": "llama-cpp-releases",
       "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.8.0"
     },
+    "url:e0342a634eb3ce38156b0d9b1ca4abbfba44d7c2a44c213534dd02fbbd190ec8": {
+      "article_id": "aws-machine-learning-79cb874f",
+      "first_seen_at": "2026-11-19T11:47:23.227486Z",
+      "published_at": "2026-11-18T23:58:22Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/exa-boosts-embedding-throughput-by-50-to-index-billions-of-documents-on-aws-ai-chips"
+    },
     "url:e04d1da693503b0f1282c2e253e5172059c771fc995159d2f4bd4a20f0f195fa": {
       "article_id": "google-ai-8d80f208",
       "first_seen_at": "2026-10-07T20:39:53.894203Z",
@@ -6585,6 +6620,13 @@
       "published_at": "2026-10-22T00:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/uber-chatgpt-work-rollout"
+    },
+    "url:ee04cc19c2fce4d9f0c1b7cf87ebea1c74f189f865bccedbc59fa345a4a25310": {
+      "article_id": "aws-machine-learning-c5f2c9b8",
+      "first_seen_at": "2026-11-19T11:47:23.227486Z",
+      "published_at": "2026-11-18T23:03:29Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-workload-recovery-and-expanded-infrastructure-checks-on-amazon-sagemaker-hyperpod"
     },
     "url:ee4bdfee28f7d805cf226337b56fbdc64cd7e3aead21edd74362c89180242047": {
       "article_id": "aws-machine-learning-204f9377",

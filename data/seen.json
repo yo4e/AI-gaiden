@@ -2890,6 +2890,13 @@
       "source": "ollama-releases",
       "url": "https://github.com/ollama/ollama/releases/tag/v0.40.6"
     },
+    "url:6345fcfaa01a824d18d8c56ea798b193a80b0275247443d53016ff92a16683a1": {
+      "article_id": "apple-ml-research-5f74fc51",
+      "first_seen_at": "2026-11-20T22:16:25.715618Z",
+      "published_at": "2026-11-20T00:00:00Z",
+      "source": "apple-ml-research",
+      "url": "https://machinelearning.apple.com/research/depth-pro-2-monocular"
+    },
     "url:63610b904de29506452ac1fba7c8cb0b4b76c98f0fb6fd62dc6626d364874233": {
       "article_id": "google-ai-fb13d78a",
       "first_seen_at": "2026-11-19T22:41:08.993989Z",
@@ -2986,6 +2993,13 @@
       "published_at": "2026-10-01T17:34:56Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-agent-memory-with-nvidia-nemo-agent-toolkit-and-amazon-s3-vectors"
+    },
+    "url:6728ab5448c93c9a0f6731c28710b0905b1eed12efbd4f1d431840469bde1aaf": {
+      "article_id": "aws-machine-learning-9ce4ac5d",
+      "first_seen_at": "2026-11-20T22:16:25.715618Z",
+      "published_at": "2026-11-20T20:22:00Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents"
     },
     "url:67297d2df9a3d7f196c35fa6ebbaab936e2f788f3fe9d6bed07634b74dd71599": {
       "article_id": "hugging-face-01a96c28",
@@ -3224,6 +3238,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/builders-guide-to-gpt-5-6"
     },
+    "url:701a571706ec6c00de8bbc6af8a9bc31d2eec98a2272e87a59a9e6a4a97a82f1": {
+      "article_id": "hugging-face-879a1045",
+      "first_seen_at": "2026-11-20T22:16:25.715618Z",
+      "published_at": "2026-11-20T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/harness-adapters-at-scale"
+    },
     "url:709cc8e2bd467b7916899fb3ec62dbecfa135fc3209b011a85a1239ca7c1f0f6": {
       "article_id": "openai-news-5c6f1716",
       "first_seen_at": "2026-10-28T20:20:27.243969Z",
@@ -3461,6 +3482,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/connect-an-agentcore-runtime-hosted-mcp-server-to-amazon-quick"
     },
+    "url:7ad44f990f0c53ef2e2a537716dcd0f4d19ea5c4fbcd3c1cf3877b1b8eae8965": {
+      "article_id": "openai-news-c465e933",
+      "first_seen_at": "2026-11-20T22:16:25.715618Z",
+      "published_at": "2026-11-20T10:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/combatting-adversarial-distillation"
+    },
     "url:7b8542d687a9973af788f7d23eaeedbc3812dd354c5667f2199115561ee2eaac": {
       "article_id": "langchain-releases-8e86f490",
       "first_seen_at": "2026-10-07T20:39:53.894203Z",
@@ -3649,6 +3677,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/fine-tune-a-search-agent-with-multi-turn-rl-on-amazon-sagemaker-ai"
     },
+    "url:8145fefb47ff1ca9fa5560e62b69bf54a222274ffe6f44de71f6b3dfaaa8f955": {
+      "article_id": "openai-news-7aa2287e",
+      "first_seen_at": "2026-11-20T22:16:25.715618Z",
+      "published_at": "2026-11-20T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/business/customer-stories/hebbia"
+    },
     "url:815edfe6383208a72cfe7f7d043ea0afc2543b1ffb0ccb04372202c8f4eb8186": {
       "article_id": "hugging-face-4007b14a",
       "first_seen_at": "2026-08-10T10:39:12.380171Z",
@@ -3669,6 +3704,13 @@
       "published_at": "2026-11-06T18:01:00Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints"
+    },
+    "url:824c03b970f1dc58cad676334e63167d2af3b369add30c83b73e4ecb318d913d": {
+      "article_id": "hugging-face-ea8f7e9b",
+      "first_seen_at": "2026-11-20T22:16:25.715618Z",
+      "published_at": "2026-11-20T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/inkling2mini"
     },
     "url:825546b9e9e150a70467a533edaf9570d45ce6f5d4a72a0aade47ee2011a3015": {
       "article_id": "google-deepmind-25a6a4c2",
@@ -5335,6 +5377,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-gen-digital-built-norton-revamps-ai-curated-news-engine-with-amazon-bedrock-agentcore-web-search"
     },
+    "url:b91e0d0a1a224c11a62d1e0f60f7f07af31ed698d834cd3a95994ff7ef51ffa2": {
+      "article_id": "aws-machine-learning-c5664515",
+      "first_seen_at": "2026-11-20T22:16:25.715618Z",
+      "published_at": "2026-11-20T18:24:06Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-enhanced-observability-in-amazon-sagemaker-hyperpod-to-diagnose-gpu-training-issues"
+    },
     "url:b9406ae170bd91336ab3bb25f8a481be998406cd07a127a0b7b7880fe2ac0b53": {
       "article_id": "openai-news-7d54784c",
       "first_seen_at": "2026-08-25T16:04:07.812904Z",
@@ -5544,6 +5593,13 @@
       "published_at": "2026-10-13T17:17:25Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements"
+    },
+    "url:c1a2af93db54bfcf7c217cb74db83cfc0f90565b5c1b91d5871ab9ee0c953910": {
+      "article_id": "openai-news-727ae384",
+      "first_seen_at": "2026-11-20T22:16:25.715618Z",
+      "published_at": "2026-11-20T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/introducing-medchembench"
     },
     "url:c24e45e869c7b353ed209f04ffb04c9eff75167c9d6d4abbb5320d4327573b61": {
       "article_id": "github-ai-ml-7010c55d",
@@ -6327,6 +6383,13 @@
       "published_at": "2026-11-05T22:56:58Z",
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.2"
+    },
+    "url:dced9529f2aa51e250233263cc19a7eec1bfc217a5152c2a15d72e090bbfcd0c": {
+      "article_id": "mlcommons-c94976e5",
+      "first_seen_at": "2026-11-20T22:16:25.715618Z",
+      "published_at": "2026-11-20T15:00:00Z",
+      "source": "mlcommons",
+      "url": "https://mlcommons.org/2026/11/mlperf-endpoints-how-to-submit"
     },
     "url:dd659f011024f04f24b0b918544913431aa1336cb6fdeb78ce4549a3a5fdd29c": {
       "article_id": "openai-news-ce282de2",
@@ -7165,6 +7228,13 @@
       "published_at": "2026-11-10T19:00:00Z",
       "source": "google-ai",
       "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices"
+    },
+    "url:fb0117cbcf0e24c7c7764b83b1ac52c8586f5235b11b407b42ecf668ef6c65e0": {
+      "article_id": "aws-machine-learning-6540ca7c",
+      "first_seen_at": "2026-11-20T22:16:25.715618Z",
+      "published_at": "2026-11-20T20:37:31Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai"
     },
     "url:fb22a1b92cabad920f840e39d11d46404e81d9f892ffcd61cf24f969a4aedafe": {
       "article_id": "aws-machine-learning-9b4b2246",

@@ -154,6 +154,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work"
     },
+    "url:06863d94c187626f5c0040cd089396ebd8c0fde1a55f3f9834e8ca12590ad8ad": {
+      "article_id": "aws-machine-learning-752516f4",
+      "first_seen_at": "2026-11-20T11:48:20.870273Z",
+      "published_at": "2026-11-20T00:34:07Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2"
+    },
     "url:069aacfc7f9e43f3ff1928aaaa1148737f170a8a5e92e3e206510c67a575f7db": {
       "article_id": "aws-machine-learning-ddc2601c",
       "first_seen_at": "2026-10-05T22:03:36.189687Z",
@@ -656,6 +663,13 @@
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips"
     },
+    "url:17b7a2b39f098895a2208f48f1507c3092e017b4481f6732b70b65df4c04b2b0": {
+      "article_id": "openai-news-c041895e",
+      "first_seen_at": "2026-11-20T11:48:20.870273Z",
+      "published_at": "2026-11-19T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/business/learn/pr-scans-demo"
+    },
     "url:17e5ae8afd73524c07c8141a0425cb8bd8f0912d366709233f2ae149d03b9c04": {
       "article_id": "aws-machine-learning-0b1a08bf",
       "first_seen_at": "2026-09-05T07:43:35.568433Z",
@@ -760,6 +774,13 @@
       "published_at": "2026-10-27T16:12:42Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/allenai/novelty-bench"
+    },
+    "url:1d80e465e65b9589fb7494780c2262908b5bc9f051b8d4e5f817cc13a72fe218": {
+      "article_id": "aws-machine-learning-e1911700",
+      "first_seen_at": "2026-11-20T11:48:20.870273Z",
+      "published_at": "2026-11-20T00:33:30Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock"
     },
     "url:1dbe22633003a2af4fddcdba3c780b2ba9f507be061699ce02dd407e5165c7ab": {
       "article_id": "openai-news-62a47321",
@@ -1041,12 +1062,26 @@
       "source": "apple-ml-research",
       "url": "https://machinelearning.apple.com/research/rltl-dr-self-improvement"
     },
+    "url:28b59beabe4d5a664a7e9fe8f17d3c5270a78f75aec438952aefa075c0d1f4c4": {
+      "article_id": "langchain-releases-0c9b37f1",
+      "first_seen_at": "2026-11-20T11:48:20.870273Z",
+      "published_at": "2026-11-19T23:16:20Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.8.5"
+    },
     "url:28e7ba2670cd654fe2e58384083f22febe6c57823bcfd8c2be70dd69b7d617a8": {
       "article_id": "aws-machine-learning-ba0bfd6b",
       "first_seen_at": "2026-10-07T20:39:53.894203Z",
       "published_at": "2026-10-07T18:34:44Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock"
+    },
+    "url:2940d0d6c78b0628c1b23a2074746624bebeb52e5a7a159be0613dee53f37f5b": {
+      "article_id": "langchain-releases-e5d8772d",
+      "first_seen_at": "2026-11-20T11:48:20.870273Z",
+      "published_at": "2026-11-19T23:00:20Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.12"
     },
     "url:2947b34346514aae0973a6680404d2963975f73bc94fda59256d49b1711e016e": {
       "article_id": "mistral-ai-f71efd3c",
@@ -1647,6 +1682,13 @@
       "published_at": "2026-10-20T00:00:00Z",
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/hf-torchtpu"
+    },
+    "url:39ef67dcebcbe731d115c0c7e2e97654f71a6d90cdf3ba4c5e0517589b2fd725": {
+      "article_id": "aws-machine-learning-3081ce35",
+      "first_seen_at": "2026-11-20T11:48:20.870273Z",
+      "published_at": "2026-11-19T23:02:16Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/enable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments"
     },
     "url:3a256cb3cf2344c6f1c3ca216535c1863c569bb39c991c5e4b2554e3662d658e": {
       "article_id": "aws-machine-learning-b8ec3fd9",
@@ -3670,6 +3712,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/building-an-ai-powered-contract-intelligence-platform-with-amazon-quick-and-amazon-bedrock-agentcore"
     },
+    "url:82fe289fe466dcc1d4f71a60b5a7fb88a90a6df5cf719a456eac5a721e5f3552": {
+      "article_id": "openai-news-74d6563a",
+      "first_seen_at": "2026-11-20T11:48:20.870273Z",
+      "published_at": "2026-11-19T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/business/learn/codex-security-plugin-demo"
+    },
     "url:8303b0c207ffaa69706b939d2f979d73e542dedfbeeafc4fb817dbbeb3dd1f59": {
       "article_id": "aws-machine-learning-6da7c228",
       "first_seen_at": "2026-10-07T20:39:53.894203Z",
@@ -4747,6 +4796,13 @@
       "published_at": "2026-11-04T16:33:03Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/smart-approvals-in-amazon-quick-human-oversight-where-it-matters"
+    },
+    "url:a890a236270cc5e31862345b7933987a42b139de2dead494b477fbf1189784a9": {
+      "article_id": "openai-news-e8a5908b",
+      "first_seen_at": "2026-11-20T11:48:20.870273Z",
+      "published_at": "2026-11-19T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/business/learn/deploying-daybreak-red"
     },
     "url:a8a255e92e884ae99aa964a1616db35c42aa05ef6e66f6c2ebe5716fb51b13e4": {
       "article_id": "langchain-releases-2ca2a18e",
@@ -6180,6 +6236,13 @@
       "published_at": "2026-10-22T17:48:22Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/deploy-ai-in-a-hipaa-eligible-environment-with-amazon-quick"
+    },
+    "url:da30645137037f0052cd70ab3b09df0b31abc0303db9422eaa375a651d60b969": {
+      "article_id": "openai-news-596a7399",
+      "first_seen_at": "2026-11-20T11:48:20.870273Z",
+      "published_at": "2026-11-19T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/business/learn/daybreak-blue-onboarding-demo"
     },
     "url:daa797ee943974350fccaa4f3fa1205a9777e20bb6bac528a7cbf14d38e472e1": {
       "article_id": "github-ai-ml-a5a3b35e",

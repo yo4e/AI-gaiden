@@ -712,6 +712,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/qvac/botpsy"
     },
+    "url:1a10f1676d46fc01a909d8eab6d17033b89331ee5fd1f1e04952fc2f6f54665c": {
+      "article_id": "openai-news-852e271f",
+      "first_seen_at": "2026-11-22T21:05:56.972988Z",
+      "published_at": "2026-11-22T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/perplexity-and-intelligence"
+    },
     "url:1a543055a02f9816518cc03996b6a0ed89e5e65a847f479103d96112c902ed21": {
       "article_id": "openai-news-b522d570",
       "first_seen_at": "2026-10-23T08:37:46.417444Z",

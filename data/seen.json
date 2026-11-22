@@ -3538,6 +3538,13 @@
       "source": "llama-cpp-releases",
       "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.6.0"
     },
+    "url:7cedfd958b6d7a17aac27279cf924c6c9cfe349c622f25dcf3f62dba260366a9": {
+      "article_id": "aws-machine-learning-dbeb8f75",
+      "first_seen_at": "2026-11-22T11:33:28.338533Z",
+      "published_at": "2026-11-22T01:59:13Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick"
+    },
     "url:7d118aeafab68e400dcb39a3e894b997ef6a523448c11849a946fbf59327779b": {
       "article_id": "langchain-releases-38a6c210",
       "first_seen_at": "2026-10-08T20:43:18.129330Z",

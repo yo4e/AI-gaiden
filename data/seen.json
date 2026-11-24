@@ -21,6 +21,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-agent-system-prompts-with-amazon-bedrock-agentcore"
     },
+    "url:00d52199bef25f9eda98fa79c30b3c80d4e34af93f50b3c1b0911b599d05708b": {
+      "article_id": "hugging-face-d0665dd6",
+      "first_seen_at": "2026-11-24T02:16:29.753267Z",
+      "published_at": "2026-11-23T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/agentic-evals"
+    },
     "url:0123a5a77136303ad32736f1e149d6f727172bf89ecc4a7584c89a994e46d584": {
       "article_id": "aws-machine-learning-bc132133",
       "first_seen_at": "2026-09-28T21:16:07.869479Z",
@@ -468,6 +475,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.1"
     },
+    "url:10878202550bbbf922d1872ab8ac87272ec1fb51ba1f61195752ed3c5f3ba59c": {
+      "article_id": "openai-news-f6901c59",
+      "first_seen_at": "2026-11-24T02:16:29.753267Z",
+      "published_at": "2026-11-23T08:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal"
+    },
     "url:109261365670d3352ab7b526fd27e6a8cff82a81550b40ee3d9c3c2b1786532b": {
       "article_id": "vllm-releases-e46386f5",
       "first_seen_at": "2026-11-02T11:18:36.886209Z",
@@ -530,6 +544,13 @@
       "published_at": "2026-08-26T16:36:35Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/nateras-intelligent-appointment-scheduling-with-amazon-bedrock-agentcore"
+    },
+    "url:1259b534687dd8b3171199ff6c1e4d274ef5d072ac6513620703d8171072ee72": {
+      "article_id": "openai-news-e3c8d9a9",
+      "first_seen_at": "2026-11-24T02:16:29.753267Z",
+      "published_at": "2026-11-23T08:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support"
     },
     "url:129511f54188e7df4ed8e9053336c86e351ea4b1cebcb97326b55267c4322922": {
       "first_seen_at": "2026-08-04T17:06:29.660372Z",
@@ -991,6 +1012,13 @@
       "published_at": "2026-10-28T19:55:04Z",
       "source": "ollama-releases",
       "url": "https://github.com/ollama/ollama/releases/tag/v0.40.13"
+    },
+    "url:2566fc35e31229f455b8bd0a14409ef897692616ea6ef2bb7bdfd48c2698e709": {
+      "article_id": "langchain-releases-1c38be56",
+      "first_seen_at": "2026-11-24T02:16:29.753267Z",
+      "published_at": "2026-11-23T17:21:22Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-nomic%3D%3D1.1.0"
     },
     "url:257119d00aa2b7e8bb74d92fccb3c738033c4cb2bc04b2ba81b8e19a933a771a": {
       "article_id": "mlcommons-75635047",
@@ -2294,6 +2322,13 @@
       "published_at": "2026-09-10T21:58:09Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/reduce-llm-latency-with-prefix-aware-routing-on-amazon-sagemaker-inference"
+    },
+    "url:4f5fe20de68e9dfdec37bc312e73f8b092a226bb2cfacfa2a0e45f240086046a": {
+      "article_id": "google-ai-9146f348",
+      "first_seen_at": "2026-11-24T02:16:29.753267Z",
+      "published_at": "2026-11-23T17:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps"
     },
     "url:4fc56175fe1737a351bc315777a9833ce207af71356214c77fe512b758f8de9b": {
       "article_id": "aws-machine-learning-dc9c57e3",
@@ -4025,6 +4060,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/decisions-api"
     },
+    "url:895b540db6a8889e694ca9f9b509808f44f14c578e93735626eea109f5cda62f": {
+      "article_id": "google-deepmind-4edf1f26",
+      "first_seen_at": "2026-11-24T02:16:29.753267Z",
+      "published_at": "2026-11-23T16:59:40Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification"
+    },
     "url:89df3427e525131aaaac50888389b5a09475c7e1001e5ab9fb1744efb73cc88b": {
       "article_id": "google-ai-461d392a",
       "first_seen_at": "2026-08-11T22:08:35.529397Z",
@@ -5111,6 +5153,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life"
     },
+    "url:b0689cf87ab570a441c88635b910134907af4a34b0ffafe4d1af03d0273e75fa": {
+      "article_id": "openai-news-80880f8c",
+      "first_seen_at": "2026-11-24T02:16:29.753267Z",
+      "published_at": "2026-11-23T21:20:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/introducing-shirudo"
+    },
     "url:b09ddd384e886e5e7c7c97df4fc733aef4481ff3fe83ce65176529e77d20e62e": {
       "article_id": "aws-machine-learning-2f432fb1",
       "first_seen_at": "2026-11-09T23:47:55.988666Z",
@@ -5433,6 +5482,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/customizing-your-knowledge-base-on-amazon-bedrock-for-large-and-complex-documents-using-amazon-textract"
     },
+    "url:b9d1053164c006049b092ed2027e89e5a3743d0a710d2e66d2d382dcb95ef22e": {
+      "article_id": "langchain-releases-72ea8271",
+      "first_seen_at": "2026-11-24T02:16:29.753267Z",
+      "published_at": "2026-11-23T17:04:52Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-chroma%3D%3D1.2.0"
+    },
     "url:ba0fcf4e325b4115c73c9ef83ebd1ffebf008c30d8d75edc5ffce3b5226c5537": {
       "article_id": "google-deepmind-99a08ac8",
       "first_seen_at": "2026-11-11T22:00:31.549073Z",
@@ -5678,6 +5734,13 @@
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/10/dlrmv4-training"
     },
+    "url:c36030c5dc637b1c4cf312aa00f13f1e40702a6c68c4ac4ee6d1f6a1f0aed7bd": {
+      "article_id": "langchain-releases-a7ad6a4b",
+      "first_seen_at": "2026-11-24T02:16:29.753267Z",
+      "published_at": "2026-11-23T20:48:58Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-huggingface%3D%3D1.3.0"
+    },
     "url:c38af6e5cae43e23a64c1d509c6a587da67c166f4c093fc7e47ef57f26c07a7c": {
       "article_id": "openai-news-bd4abc5c",
       "first_seen_at": "2026-10-02T19:58:45.453740Z",
@@ -5719,6 +5782,13 @@
       "published_at": "2026-10-06T19:19:15Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/building-a-context-aware-ai-assistant-on-agentcore-and-openclaw"
+    },
+    "url:c518a03fea920a1bf8614c2d62a28ac5c01ff89a9c9a733d37a8cf925657420a": {
+      "article_id": "langchain-releases-c73f8fec",
+      "first_seen_at": "2026-11-24T02:16:29.753267Z",
+      "published_at": "2026-11-23T17:09:50Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-exa%3D%3D1.2.0"
     },
     "url:c59142aad3a717b875d2006884606848f9530a186a95383c4c7e572935374417": {
       "article_id": "github-ai-ml-d16d265a",
@@ -6747,6 +6817,13 @@
       "source": "hugging-face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark"
     },
+    "url:eb2701ff66febea2729388256362b1e990ea44c9d3e87f78378f64a362cb43e9": {
+      "article_id": "hugging-face-2af8fae1",
+      "first_seen_at": "2026-11-24T02:16:29.753267Z",
+      "published_at": "2026-11-23T17:20:37Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/allenai/robotrack"
+    },
     "url:eb3a22dd21641de82869148702c197df1531585db0c040d0f2dc27df1a0bf955": {
       "article_id": "aws-machine-learning-30434e15",
       "first_seen_at": "2026-11-12T21:51:36.485105Z",
@@ -7228,6 +7305,13 @@
       "published_at": "2026-10-26T23:08:48Z",
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.7.3"
+    },
+    "url:f9bd82dcc84144a976df35ddc8359b370cf94a8395874aed71aeb9975a9784fc": {
+      "article_id": "langchain-releases-fb8cf7b8",
+      "first_seen_at": "2026-11-24T02:16:29.753267Z",
+      "published_at": "2026-11-23T17:13:23Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.8.0"
     },
     "url:f9e50d04dc76de5ab84338e31eaed2a5825c8781af89d9eee25b43b9cad6943e": {
       "article_id": "langchain-releases-ba2836a1",

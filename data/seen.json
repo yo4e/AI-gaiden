@@ -5237,6 +5237,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/run-multi-node-inference-workloads-using-ray-llm-deep-learning-containers"
     },
+    "url:b24333cc89f9425e4c7b7f37e91c2730963337e70f4eaef977a7aab882a8bf68": {
+      "article_id": "aws-machine-learning-beba845a",
+      "first_seen_at": "2026-11-24T13:51:43.480488Z",
+      "published_at": "2026-11-24T05:01:14Z",
+      "source": "aws-machine-learning",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls"
+    },
     "url:b25a782d8681abe916482ac9266a2dd81f7e5489ad0a1b0a9d044142f68d7958": {
       "article_id": "apple-ml-research-4e4e3b65",
       "first_seen_at": "2026-11-11T22:00:31.549073Z",
@@ -6453,6 +6460,13 @@
       "published_at": "2026-08-26T16:24:02Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/preparing-data-for-supervised-fine-tuning-part-1-formatting-and-quality"
+    },
+    "url:dbf3279a2f3448f95b8e3d987c47d03af8e9a44eacb8a22c6bd7e0f0d2858399": {
+      "article_id": "ollama-releases-091bd51d",
+      "first_seen_at": "2026-11-24T13:51:43.480488Z",
+      "published_at": "2026-11-24T04:18:13Z",
+      "source": "ollama-releases",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.18"
     },
     "url:dc53fce90c6f36f5c727235e1a467f2d849dcd49be3c83b393c97ef4331e392f": {
       "article_id": "hugging-face-9fbcfd9d",

@@ -3141,6 +3141,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/closing-ai-guidance-gap-education"
     },
+    "url:6a28e842b3bf4bfd8400220ee7c0735b0ecf3e38a0b3cb368303e1e3a450e25f": {
+      "article_id": "hugging-face-48015803",
+      "first_seen_at": "2026-11-24T23:56:41.249118Z",
+      "published_at": "2026-11-24T16:34:13Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance"
+    },
     "url:6a886414536a09e3da65022e4b81fb0e9329e1e8f8d489895f13b523de737c68": {
       "article_id": "openai-news-ca830495",
       "first_seen_at": "2026-09-11T08:07:55.145306Z",
@@ -3482,6 +3489,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/loveholidays"
     },
+    "url:7758c04a629331bf96383fb7f46e256dce8c50dc19007956b18ca6b429d0aeb8": {
+      "article_id": "openai-news-97181632",
+      "first_seen_at": "2026-11-24T23:56:41.249118Z",
+      "published_at": "2026-11-24T11:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/searching-for-distant-planets-with-astra"
+    },
     "url:779a1ba64af323a34a47ec8faadab92b3dda7836d54ea3b4e91007e1a0fc79b7": {
       "article_id": "aws-machine-learning-05165b3e",
       "first_seen_at": "2026-09-24T19:14:22.068281Z",
@@ -3649,6 +3663,13 @@
       "published_at": "2026-10-30T17:32:20Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock"
+    },
+    "url:7e14b56be674430859075a7f0bce62ec43b4bbfbd056d91f846c666ac01fbfaf": {
+      "article_id": "openai-news-59037594",
+      "first_seen_at": "2026-11-24T23:56:41.249118Z",
+      "published_at": "2026-11-24T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/business/customer-stories/intentful-dots"
     },
     "url:7e17b92474bcfd24464a27163487c58f8c3702b5d2deb1221ec1963be55fb02b": {
       "article_id": "github-ai-ml-588f1340",
@@ -4066,6 +4087,13 @@
       "published_at": "2026-11-23T16:59:40Z",
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification"
+    },
+    "url:89a905d5eae9fa3ef5a8af6c1b3d6471a3626169568a0058a355675d3a41557f": {
+      "article_id": "openai-news-bf342da7",
+      "first_seen_at": "2026-11-24T23:56:41.249118Z",
+      "published_at": "2026-11-24T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/business/customer-stories/ifood"
     },
     "url:89df3427e525131aaaac50888389b5a09475c7e1001e5ab9fb1744efb73cc88b": {
       "article_id": "google-ai-461d392a",
@@ -4770,6 +4798,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/openai-servicenow-partnership-expansion"
     },
+    "url:a3c9028eefd69cfd15ff27f48e02556532b9ed7a8c483b2a5ba430ca611a8783": {
+      "article_id": "openai-news-2c8b2bac",
+      "first_seen_at": "2026-11-24T23:56:41.249118Z",
+      "published_at": "2026-11-24T00:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/business/customer-stories/clay-plugins-openai"
+    },
     "url:a3fb326ed52ac82e37e8eebd35d18b3eefe4eec39a733e9544f8eac91162b481": {
       "article_id": "aws-machine-learning-1cc578b2",
       "first_seen_at": "2026-09-04T18:28:36.682808Z",
@@ -4873,6 +4908,13 @@
       "published_at": "2026-09-28T20:17:43Z",
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.3"
+    },
+    "url:a7a0adf7d6c734e350c9ea11283c0fe8c513cc2bb1d3bcd56555bd53c3f8d9a6": {
+      "article_id": "google-ai-813a4bbe",
+      "first_seen_at": "2026-11-24T23:56:41.249118Z",
+      "published_at": "2026-11-24T16:00:00Z",
+      "source": "google-ai",
+      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state"
     },
     "url:a7db6e12c1ae453b9e9d3bf924c5f3a7af148e960f556ca8c2b7d5497640930b": {
       "article_id": "google-ai-bfb338bb",
@@ -5019,6 +5061,13 @@
       "published_at": "2026-08-24T12:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/gpt-5-6-in-kiro"
+    },
+    "url:ac2f786b30f6d45772c42167559dc1dfd027b2c713b30efaaeedeee5585de3fa": {
+      "article_id": "openai-news-37156f1f",
+      "first_seen_at": "2026-11-24T23:56:41.249118Z",
+      "published_at": "2026-11-24T13:00:00Z",
+      "source": "openai-news",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
     },
     "url:ac8f18750241a65f1eaff59406bf9b8d8a419cb23f6d29d213a586908db91264": {
       "article_id": "hugging-face-5c80ea6e",

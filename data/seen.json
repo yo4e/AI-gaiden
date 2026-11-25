@@ -14,6 +14,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/sentinelone"
     },
+    "url:0077e07924e43bf73f6b214e80c2636fd705749c1e6b72af3b822ac4ce5e9fb4": {
+      "article_id": "hugging-face-b86e48fe",
+      "first_seen_at": "2026-11-25T13:04:13.719173Z",
+      "published_at": "2026-11-25T10:22:09Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga"
+    },
     "url:00b756f2cca2320b1d11a38702c97b3b286a128efda93520625e8cbb21331a2f": {
       "article_id": "aws-machine-learning-37a759f5",
       "first_seen_at": "2026-09-16T18:56:14.102211Z",

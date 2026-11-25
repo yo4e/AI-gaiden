@@ -2918,6 +2918,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/getting-started-with-web-answer-on-amazon-bedrock-agentcore"
     },
+    "url:616293296550946fa78f0e19ab2c464c501f2e1f6e0b1ba1716bfe4b1f96cb5a": {
+      "article_id": "google-deepmind-94126497",
+      "first_seen_at": "2026-11-25T23:40:34.740997Z",
+      "published_at": "2026-11-24T13:07:53Z",
+      "source": "google-deepmind",
+      "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity"
+    },
     "url:616c68177b707eae60eb2b7e618a86105e3926c540e149caa916945e5a2342dd": {
       "article_id": "openai-news-d5656976",
       "first_seen_at": "2026-11-06T11:00:29.770083Z",
@@ -4074,6 +4081,13 @@
       "source": "langchain-releases",
       "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.8.1"
     },
+    "url:88bd06d7e0e9b82f43a3c7b49740216e6a1dfae7affc60d91ec0a4415c5ccb91": {
+      "article_id": "hugging-face-ecd38770",
+      "first_seen_at": "2026-11-25T23:40:34.740997Z",
+      "published_at": "2026-11-25T18:52:55Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents"
+    },
     "url:88e871d5a8d26738db20168d7fe4b9e05a7b8640818c7b2a626052e0332f27b0": {
       "article_id": "hugging-face-4ee909b1",
       "first_seen_at": "2026-10-07T20:39:53.894203Z",
@@ -4749,6 +4763,13 @@
       "source": "mlcommons",
       "url": "https://mlcommons.org/2026/09/mlperf-inference-v6-1-results"
     },
+    "url:a1c1631c31cd850c2163cf51f73c51f367630f56f3998798e676202c9c384e17": {
+      "article_id": "mlcommons-17884db6",
+      "first_seen_at": "2026-11-25T23:40:34.740997Z",
+      "published_at": "2026-11-25T16:40:42Z",
+      "source": "mlcommons",
+      "url": "https://mlcommons.org/2026/11/ailuminate-jailbreak-2026-official-results"
+    },
     "url:a1d018f16fad79f97456f75bff3df416e35d9a73410b1735dcbcc9bb4c30fb83": {
       "article_id": "hugging-face-6043e960",
       "first_seen_at": "2026-09-15T19:03:12.107388Z",
@@ -5209,6 +5230,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life"
     },
+    "url:b05cb6b9da022bcabbbea61833f4a0b8efbe93d2a8f3dae9ee78ce6fc59191d8": {
+      "article_id": "langchain-releases-7e202007",
+      "first_seen_at": "2026-11-25T23:40:34.740997Z",
+      "published_at": "2026-11-25T21:52:39Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.5"
+    },
     "url:b0689cf87ab570a441c88635b910134907af4a34b0ffafe4d1af03d0273e75fa": {
       "article_id": "openai-news-80880f8c",
       "first_seen_at": "2026-11-24T02:16:29.753267Z",
@@ -5600,6 +5628,13 @@
       "published_at": "2026-11-05T20:00:00Z",
       "source": "openai-news",
       "url": "https://openai.com/index/cultfit-builds-with-codex"
+    },
+    "url:bbd93c6708a5734971e359892450fe964b08ef20fe159c02226f43b020d6a626": {
+      "article_id": "github-ai-ml-3800ac13",
+      "first_seen_at": "2026-11-25T23:40:34.740997Z",
+      "published_at": "2026-11-25T15:00:00Z",
+      "source": "github-ai-ml",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization"
     },
     "url:bbf506f2762571d042a129a6b7c33b0388b5edb9686b5a58ab92b8fb3924f8ab": {
       "article_id": "apple-ml-research-baa1e2cf",
@@ -6607,6 +6642,13 @@
       "source": "openai-news",
       "url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live"
     },
+    "url:df3be113c8aed13fbadf7f5fd23bf1c3fea1d6aa84ef1d6c6b80d5e4f468adf1": {
+      "article_id": "hugging-face-83093700",
+      "first_seen_at": "2026-11-25T23:40:34.740997Z",
+      "published_at": "2026-11-25T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb"
+    },
     "url:df6566d4fc91840890def19461933475d9c7a30723709bdf51469ad99565d346": {
       "article_id": "aws-machine-learning-5a3145f1",
       "first_seen_at": "2026-11-12T11:24:17.722385Z",
@@ -7472,6 +7514,13 @@
       "published_at": "2026-11-17T20:31:04Z",
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/govern-and-discover-records-with-common-metadata-in-aws-agent-registry"
+    },
+    "url:fbfb87c9825e59f92e185acb5e0891ca1613fcf20385a9e160c065e8ae6fc3cb": {
+      "article_id": "langchain-releases-193834ab",
+      "first_seen_at": "2026-11-25T23:40:34.740997Z",
+      "published_at": "2026-11-25T21:41:59Z",
+      "source": "langchain-releases",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.13"
     },
     "url:fbfd060b861c994281af0eba5bc9e52ea37bdc3627cbdda346c6be2b71bb929f": {
       "article_id": "github-ai-ml-17ad0fcf",

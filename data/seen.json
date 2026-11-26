@@ -3810,6 +3810,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints"
     },
+    "url:819f2bb8e324e5e7f3ab174fd75a2e35e495da76ab1ed0dc431b91e93d876cbf": {
+      "article_id": "hugging-face-8a8fa21f",
+      "first_seen_at": "2026-11-26T23:53:42.151387Z",
+      "published_at": "2026-11-26T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/training-swarms"
+    },
     "url:824c03b970f1dc58cad676334e63167d2af3b369add30c83b73e4ecb318d913d": {
       "article_id": "hugging-face-ea8f7e9b",
       "first_seen_at": "2026-11-20T22:16:25.715618Z",

@@ -5825,6 +5825,13 @@
       "source": "google-deepmind",
       "url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands"
     },
+    "url:c2bd7953104652e48b060cb836c5b0b220f5916987e34c7cb4215ee5c922c5b1": {
+      "article_id": "hugging-face-f1535ec7",
+      "first_seen_at": "2026-11-27T12:34:31.049928Z",
+      "published_at": "2026-11-27T00:00:00Z",
+      "source": "hugging-face",
+      "url": "https://huggingface.co/blog/video-trainium3"
+    },
     "url:c2de3dd4b16d325ea192c982752ca562870b6a14b065d98b7c701f384924c34e": {
       "article_id": "langchain-releases-d0790615",
       "first_seen_at": "2026-11-16T11:33:15.233327Z",

@@ -2827,6 +2827,13 @@
       "source": "aws-machine-learning",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-a-model-improvement-flywheel-with-amazon-sagemaker-hyperpod-data-capture"
     },
+    "url:5e7004317a04e455b2d7c268b38d427dd400738eb1e0417e9f8c4ebf885673a9": {
+      "article_id": "ollama-releases-0193591f",
+      "first_seen_at": "2026-11-27T23:30:23.065718Z",
+      "published_at": "2026-11-26T17:52:02Z",
+      "source": "ollama-releases",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.19"
+    },
     "url:5e78358b6e49a01a4b989c9ca016fa9dfafca7db79134f16ef22dc9d4e8cccfc": {
       "article_id": "mlcommons-c189eab3",
       "first_seen_at": "2026-09-17T19:05:12.502267Z",
